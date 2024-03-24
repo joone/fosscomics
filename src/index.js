@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 const postMethods = require("./posts");
+const aboutMethod = require("./about");
 const config = require("./config");
 const addHomePage = require("./homepage");
 
@@ -15,4 +16,9 @@ const posts = fs
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
 postMethods.createPosts(posts);
+
 addHomePage(posts);
+
+// Create about page
+const about = aboutMethod.readAbout(config.dev.about);
+aboutMethod.createAbout(about);

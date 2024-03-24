@@ -9,7 +9,7 @@ const posthtml = data => `
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${data.attributes.description}" />
+        <meta name="description" content="About this blog" />
         <link rel="stylesheet" href="../assets/styles/fonts.css">
         <link rel="stylesheet" href="../assets/styles/main.css">
         <title>${data.attributes.title}</title>
@@ -23,7 +23,6 @@ const posthtml = data => `
                 <nav>
                   <a href="/">Home</a>
                   <a href="/posts">All posts</a>
-                  <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
@@ -31,21 +30,11 @@ const posthtml = data => `
               <article class="content">
                   <div class="title">
                     <h1 class="title">${data.attributes.title}</h1>
-                    <div class="meta">Posted on ${new Date(data.attributes.date).toDateString()}</div>
                   </div>
                   <section class="body">
                     ${data.body}
                   </section>
               </article>
-              <div class="comments">
-                <script src="https://utteranc.es/client.js"
-                            repo="joone/fosscomics"
-                            issue-term="pathname"
-                            theme="github-light"
-                            crossorigin="anonymous"
-                            async>
-                </script>
-              </div>
             </main>
 
             <footer>
@@ -65,31 +54,27 @@ const posthtml = data => `
 </html>
 `;
 
-const createPost = postPath => {
-  const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}.md`, "utf8");
+const readAbout = aboutPath => {
+  const data = fs.readFileSync(aboutPath, "utf8");
   const content = fm(data);
   content.body = marked.parse(content.body);
-  content.path = postPath;
+  content.path = aboutPath;
   return content;
 };
 
-const createPosts = posts => {
-  posts.forEach(post => {
-    if (!fs.existsSync(`${config.dev.outdir}/${post.path}`))
-      fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
+const createAbout = about => {
+  fs.writeFile(
+    `${config.dev.outdir}/about.html`,
+    posthtml(about),
+    e => {
+      if (e) throw e;
+      console.log(`${about.path}/about.html was created successfully`);
+    }
+  );
 
-    fs.writeFile(
-      `${config.dev.outdir}/${post.path}/index.html`,
-      posthtml(post),
-      e => {
-        if (e) throw e;
-        console.log(`${post.path}/index.html was created successfully`);
-      }
-    );
-  });
-};
+} 
 
 module.exports = {
-  createPost: createPost,
-  createPosts: createPosts
+  readAbout: readAbout,
+  createAbout: createAbout
 };

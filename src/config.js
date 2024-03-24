@@ -6,7 +6,8 @@ const config = {
   authorWebsite: "https://joone.github.io",
   blogDescription: "Comics about Free and Open Source Software",
   dev: {
-    postsdir: "./content",
+    postsdir: "./content/posts",
+    about: "./content/about.md",
     outdir: "./docs"
   }
 };
