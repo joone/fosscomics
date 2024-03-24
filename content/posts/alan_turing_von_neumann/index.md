@@ -1,6 +1,6 @@
 ---
 title: 2. Alan Turing and Von Neumann
-date: "2018-12-21"
+date: "2019-05-29"
 description: story about Alan Turing and Von Neumann
 ---
 
