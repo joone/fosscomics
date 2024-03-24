@@ -17,11 +17,11 @@
 html,
 body {
   width: 100%;
-  background: #1e3b5a;
+  background: #ffffff;
 }
 
 .grotesk {
-  width: 100%;
+  width: 80%;
   height: 100%;
   font-family: "EB Garamond", serif;
   line-height: 1.5;
@@ -79,7 +79,7 @@ body {
 .grotesk h4,
 .grotesk h5,
 .grotesk h6 {
-  color: #c1d6df;
+  color: #000000;
   font-family: lyon, serif;
 }
 
@@ -89,7 +89,7 @@ body {
 .grotesk li,
 .grotesk blockquote,
 .grotesk q {
-  color: #99b7c3;
+  color: #000000;
 }
 
 .grotesk h1,
@@ -123,13 +123,13 @@ body {
 
 .grotesk pre code {
   background: none;
-  color: #99b7c3;
+  color: #000000;
   padding: 0;
 }
 
 .grotesk code {
   background-color: rgba(153, 183, 195, 0.07);
-  color: #c1d6df;
+  color: #000000;
   padding: 0.2rem;
   border-radius: 0.2rem;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .grotesk a {
-  color: #d8e9f0;
+  color: #425bc9;
   text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .grotesk small {
-  color: #99b7c3;
+  color: #000000;
 }
 
 .grotesk h1 a,
