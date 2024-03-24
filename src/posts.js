@@ -86,6 +86,17 @@ const createPosts = posts => {
         console.log(`${post.path}/index.html was created successfully`);
       }
     );
+
+    // Copy images folder from ${config.dev.postsdir}/${postPath} to ${config.dev.outdir}/${postPath}
+    if (!fs.existsSync(`${config.dev.outdir}/${post.path}/images`))
+      fs.mkdirSync(`${config.dev.outdir}/${post.path}/images`);
+
+    fs.readdirSync(`${config.dev.postsdir}/${post.path}/images`).forEach(image => {
+      fs.copyFileSync(
+        `${config.dev.postsdir}/${post.path}/images/${image}`,
+        `${config.dev.outdir}/${post.path}/images/${image}`
+      );
+    });
   });
 };
 
