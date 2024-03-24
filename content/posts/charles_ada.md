@@ -22,7 +22,7 @@ In 1822, the British mathematician Charles Babbage designed a difference engine 
 
 ![A girl is using a abacus](images/image3.png)
 
-### Charles Babbage and his difference engine
+## Charles Babbage and his difference engine
 Ada Lovelace, born in 1815, the daughter of George Gordon Byron, a representative Romantic poet in England, grew up with a single mother because her father had earlier abandoned her family. Since her mother was afraid that her daughter would take after her father, she only allowed Ada to learn mathematics and science instead of literature.
 
  ![Text image: Ada, with a puzzled expression, says, "Why does my mom only want me to learn mathematics?"](images/image10.png)
@@ -58,6 +58,6 @@ Charles: Well, I’m not sure if it will work.
 
 From 1989 to 1991, the Science Museum in London completed the actual differential engine No. 2 using the design left by Charles Babbage, which was surprisingly able to calculate 31 digits. Although not all of her theories have been tested or fully developed, Ada Lovelace’s theory of computer programming became the basis for today’s computer programming.
 
-### References
+## References
 1. https://en.wikipedia.org/wiki/Charles_Babbage
 2. https://en.wikipedia.org/wiki/Ada_Lovelace
