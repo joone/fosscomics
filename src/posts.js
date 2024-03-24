@@ -18,7 +18,7 @@ const posthtml = data => `
     <body>
         <div class="grotesk">
             <header>
-                <a href="/..">Go back home</a>
+                <a href="..">Go back home</a>
                 <p>—</p>
             </header>
 
