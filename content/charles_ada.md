@@ -1,7 +1,7 @@
 ---
 title: 1. Charles Babbage & Ada Lovelace
 date: "2018-12-21"
-description: how Charles Babbage & Ada Lovelace worked together to build a computer
+description: In the 19th century, Charles Babbage designed the difference engine, and Ada Lovelace created the first algorithm, shaping the foundation of modern computing and programming concepts.
 tags: Charles Babbage,Ada Lovelace
 ---
 
