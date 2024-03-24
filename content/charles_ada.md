@@ -53,5 +53,5 @@ Charles: Well, I’m not sure if it will work.
 From 1989 to 1991, the Science Museum in London completed the actual differential engine No. 2 using the design left by Charles Babbage, which was surprisingly able to calculate 31 digits. Although not all of her theories have been tested or fully developed, Ada Lovelace’s theory of computer programming became the basis for today’s computer programming.
 
 ### References
-[1] https://en.wikipedia.org/wiki/Charles_Babbage
-[2] https://en.wikipedia.org/wiki/Ada_Lovelace
+1. https://en.wikipedia.org/wiki/Charles_Babbage
+2. https://en.wikipedia.org/wiki/Ada_Lovelace
