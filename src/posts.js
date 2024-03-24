@@ -30,6 +30,15 @@ const posthtml = data => `
                 <hr />
                 ${data.body}
             </div>
+            <div class="comments">
+            <script src="https://utteranc.es/client.js"
+                        repo="joone/fosscomics"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                        </script>
+            </div>
 
             <footer>
                 ${`<p>© ${new Date().getFullYear()} ${
