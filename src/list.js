@@ -1,43 +1,43 @@
 const config = require("./config");
-const fm = require("front-matter");
 const fs = require("fs");
-const marked = require("./marked");
 
-const posthtml = data => `
+const listpage = posts => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="About this blog" />
-        <link rel="stylesheet" href="../assets/styles/fonts.css">
-        <link rel="stylesheet" href="../assets/styles/main.css">
-        <title>${data.attributes.title}</title>
+        <meta name="description" content="${config.blogDescription}" />
+        <link rel="stylesheet" href="./assets/styles/fonts.css">
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <title>${config.blogName}</title>
     </head>
     <body>
         <div class="content">
             <header>
-                <div class="main">
-                  F/OSS Comics
-                </div>
+                <div class="main">${config.blogName}</div>
                 <nav>
                   <a href="/">Home</a>
-                  <a href="/posts.html">All posts</a>
-                  About
+                  All posts
+                  <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
-            <main>
-              <article class="content">
-                  <div class="title">
-                    <h1 class="title">${data.attributes.title}</h1>
-                  </div>
-                  <section class="body">
-                    ${data.body}
-                  </section>
-              </article>
-            </main>
+              <h1 class="page-title">All articles</p>
+              <ul class="posts">
 
+                ${posts
+                  .map(
+                    post => `<li class="post">
+                    <a href="./${post.path}">${
+                      post.attributes.title
+                    }</a><span class="meta">
+                        ${new Date(
+                          post.attributes.date
+                        ).toDateString()}</span>
+                    </li>`
+                  )
+                  .join("")}
             <footer>
               <div style="display:flex">
                 <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
@@ -55,27 +55,11 @@ const posthtml = data => `
 </html>
 `;
 
-const readAbout = aboutPath => {
-  const data = fs.readFileSync(aboutPath, "utf8");
-  const content = fm(data);
-  content.body = marked.parse(content.body);
-  content.path = aboutPath;
-  return content;
+const addListPage = posts => {
+  fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), e => {
+    if (e) throw e;
+    console.log(`index.html was created successfully`);
+  });
 };
 
-const createAbout = about => {
-  fs.writeFile(
-    `${config.dev.outdir}/about.html`,
-    posthtml(about),
-    e => {
-      if (e) throw e;
-      console.log(`${about.path}/about.html was created successfully`);
-    }
-  );
-
-} 
-
-module.exports = {
-  readAbout: readAbout,
-  createAbout: createAbout
-};
+module.exports = addListPage;

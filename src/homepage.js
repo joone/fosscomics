@@ -17,7 +17,8 @@ const homepage = posts => `
             <header>
                 <div class="main">${config.blogName}</div>
                 <nav>
-                  <a href="/posts">All posts</a>
+                  Home
+                  <a href="/posts.html">All posts</a>
                   <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
