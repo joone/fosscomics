@@ -66,7 +66,7 @@ const posthtml = data => `
 `;
 
 const createPost = postPath => {
-  const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}.md`, "utf8");
+  const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}/index.md`, "utf8");
   const content = fm(data);
   content.body = marked.parse(content.body);
   content.path = postPath;
