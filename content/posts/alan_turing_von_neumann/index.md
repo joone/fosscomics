@@ -5,15 +5,15 @@ description: story about Alan Turing and Von Neumann
 ---
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image2.png "image_tooltip")
 
 Who initially made the type of computer we use today? After the Second World War,  many countries tried to develop a computer, but Alan Turing, an English mathematician, was the first to propose a theoretical model of the computer.
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
-I will find a way to prove Gödel's incompleteness theorems.
+"I will find a way to prove Gödel's incompleteness theorems."
 
 At the time, a famous mathematician, [David Hilbert](https://en.wikipedia.org/wiki/David_Hilbert), introduced [a problem](https://en.wikipedia.org/wiki/Hilbert%27s_second_problem), which is about whether we could find an algorithm (machine) that could solve all the mathematical problems. [Gödel's incompleteness theorems](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems), proposed by the Austro-Hungarian mathematician, logician and philosopher Kurt Gödel, are widely interpreted as showing that Hilbert's program to find a complete and consistent set of axioms for all mathematics is impossible [5]. Turing wanted to prove if Gödel's incompleteness theorems were right using his own way by designing a machine. Finally, in 1937, he published a paper, ["On Computable Numbers, with an Application](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) that mentioned the [Turing machine](https://en.wikipedia.org/wiki/Turing_machine). It was an abstract machine that processed the symbols written on a strip of tape as the rules of the symbols defined in the table, which defines the mathematical model of the computer [1]. The symbols written in the tape could be thought of as software.
 
