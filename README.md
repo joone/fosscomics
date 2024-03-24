@@ -8,7 +8,7 @@ Explore the comics at [fosscomics.com](https://fosscomics.com).
 
 This repository hosts the source code used to generate the static website for F/OSS Comics.
 
-The static webpage generator was adapted from [kartiknair's blog](https://github.com/kartiknair/blog) and is styled using the [Archie theme](https://github.com/athul/archie). We've customized the generator to better suit the needs of the F/OSS Comics series.
+The static webpage generator was adapted from [kartiknair's blog](https://github.com/kartiknair/blog) and is styled using the [Archie theme](https://github.com/athul/archie). I've customized the generator to better suit the needs of the F/OSS Comics series.
 
 ## Contributions
 
