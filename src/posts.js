@@ -28,7 +28,7 @@ const posthtml = data => `
                 </nav>
             </header>
             <main>
-              <article class="content">
+              <article>
                   <div class="title">
                     <h1 class="title">${data.attributes.title}</h1>
                     <div class="meta">Posted on ${new Date(data.attributes.date).toDateString()}</div>

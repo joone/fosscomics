@@ -20,6 +20,10 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
+  section {
+    font-size: 1.2rem;
+  }
+
   ::selection {
     background: var(--maincolor);
     color: #fff;
@@ -129,7 +133,6 @@
     max-width: 700px;
     padding: 0 1ch;
     word-wrap: break-word;
-    font-size: 1.2rem;
   }
   
   /* Header */
