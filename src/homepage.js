@@ -15,26 +15,25 @@ const homepage = posts => `
     <body>
         <div class="content">
             <header>
-                <h1>${config.blogName}</h1>
-                <p>—</p>
-                <p>This blog is written by <a href="${config.authorWebsite}">${
-  config.authorName
-}</a>, ${config.authorDescription}.</p>
-                <hr />
+                <div class="main">${config.blogName}</div>
             </header>
 
             <main class="list">
+            <div class="site-description">
+              <p>Comis about Free and Open Source Software</p>
+            </div>
+
                 ${posts
                   .map(
-                    post => `<div class="post">
-                    <h3><a href="./${post.path}">${
+                    post => `<section class="list-item">
+                    <h1><a href="./${post.path}">${
                       post.attributes.title
-                    }</a></h3>
+                    }</a></h1>
                         <small>${new Date(
                           parseInt(post.attributes.date)
                         ).toDateString()}</small>
                       <p>${post.attributes.description}</p>
-                    </div>`
+                    </section>`
                   )
                   .join("")}
             </main>
