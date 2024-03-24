@@ -29,7 +29,7 @@ const homepage = posts => `
                       post.attributes.title
                     }</a></h1>
                         <time>${new Date(
-                          parseInt(post.attributes.date)
+                          post.attributes.date
                         ).toDateString()}</time>
                       <div class="description">${post.attributes.description}</div>
                     </section>`
