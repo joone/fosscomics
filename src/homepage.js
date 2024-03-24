@@ -20,7 +20,7 @@ const homepage = posts => `
 
             <main class="list">
               <div class="site-description">
-                <p>Comis about Free and Open Source Software</p>
+                <p>Comics about Free and Open Source Software</p>
               </div>
                 ${posts
                   .map(
