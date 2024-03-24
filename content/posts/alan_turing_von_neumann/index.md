@@ -2,6 +2,7 @@
 title: 2. Alan Turing and Von Neumann
 date: "2019-05-29"
 description: story about Alan Turing and Von Neumann
+tags: Alan Turing, Von Neumann, EDVAC, EDSAC, Automatic Computing Engine
 ---
 
 
