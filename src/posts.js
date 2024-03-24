@@ -10,8 +10,7 @@ const posthtml = data => `
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${data.attributes.description}" />
-        <link rel="stylesheet" href="../assets/styles/grotesk.light.css">
-        <link rel="stylesheet" href="../assets/styles/highlights.css">
+        <link rel="stylesheet" href="../assets/styles/fonts.css">
         <link rel="stylesheet" href="../assets/styles/main.css">
         <title>${data.attributes.title}</title>
     </head>

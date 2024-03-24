@@ -8,12 +8,12 @@ const homepage = posts => `
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${config.blogDescription}" />
-        <link rel="stylesheet" href="./assets/styles/grotesk.light.css">
+        <link rel="stylesheet" href="./assets/styles/fonts.css">
         <link rel="stylesheet" href="./assets/styles/main.css">
         <title>${config.blogName}</title>
     </head>
     <body>
-        <div class="grotesk">
+        <div class="content">
             <header>
                 <h1>${config.blogName}</h1>
                 <p>—</p>
@@ -22,8 +22,8 @@ const homepage = posts => `
 }</a>, ${config.authorDescription}.</p>
                 <hr />
             </header>
-            
-            <div class="posts">
+
+            <main class="list">
                 ${posts
                   .map(
                     post => `<div class="post">
@@ -37,7 +37,7 @@ const homepage = posts => `
                     </div>`
                   )
                   .join("")}
-            </div>
+            </main>
 
             <footer>
               ${`<p>© ${new Date().getFullYear()} ${
