@@ -8,7 +8,7 @@ const addListPage = require("./list");
 
 const posts = fs
   .readdirSync(config.dev.postsdir)
-  .map(post => postMethods.createPost(post))
+  .map(post => postMethods.readArticle(post))
   .sort(function(a, b) {
     return b.attributes.date - a.attributes.date;
   });

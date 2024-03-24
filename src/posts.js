@@ -65,7 +65,7 @@ const posthtml = data => `
 </html>
 `;
 
-const createPost = postPath => {
+const readArticle = postPath => {
   const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}/index.md`, "utf8");
   const content = fm(data);
   content.body = marked.parse(content.body);
@@ -101,6 +101,6 @@ const createPosts = posts => {
 };
 
 module.exports = {
-  createPost: createPost,
+  readArticle: readArticle,
   createPosts: createPosts
 };
