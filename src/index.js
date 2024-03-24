@@ -5,14 +5,26 @@ const aboutMethod = require("./about");
 const config = require("./config");
 const addHomePage = require("./homepage");
 const addListPage = require("./list");
+const createTagPage = require("./tag");
+const createTagListPage = require("./tag_list");
+const { create } = require("domain");
 
 function gatherTags(posts) {
-  const tags = new Set();
+  const tags = new Map(); // Changed to a Map
   posts.forEach(post => {
     const tagArray = post.attributes.tags.split(",");
-    tagArray.forEach(tag => tags.add(tag));
+    tagArray.forEach(tag => {
+      tag = tag.trim(); // Remove leading and trailing whitespace
+      tag = tag.replace(/\s+/g, "_"); // Replace spaces with underscores
+      if (!tags.has(tag)) {
+        tags.set(tag, []); // Initialize an empty array for new tags
+      }
+      tags.get(tag).push(post.path); 
+    });
   });
-  return Array.from(tags);
+ 
+  // Convert Map to desired output 
+  return tags;
 }
 
 // Read all markdown articles from content/posts and sort them by date
@@ -34,6 +46,18 @@ addListPage(posts);
 // Create tags page
 const tags = gatherTags(posts);
 console.log(tags);
+
+tags.forEach((value, key) => {
+  console.log(`Key: ${key}, Values: ${value}`);
+});
+
+createTagListPage(tags);
+
+for (let [tag, posts] of tags) {
+  console.log(tag, posts);
+  createTagPage(tag, posts);
+}
+
 
 // Create about page
 const about = aboutMethod.readAbout(config.dev.about);

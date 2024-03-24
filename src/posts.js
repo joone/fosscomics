@@ -70,6 +70,7 @@ const readArticle = postPath => {
   const content = fm(data);
   content.body = marked.parse(content.body);
   content.path = postPath;
+  console.log(content.attributes.tags)
   return content;
 };
 
