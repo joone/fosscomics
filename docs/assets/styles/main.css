@@ -165,7 +165,11 @@
     color: #999;
     letter-spacing: -0.5px;
   }
-  
+
+  .description {
+    font-size: 1rem;
+  }
+
   /* Footer */
   footer {
     display: flex;
@@ -196,7 +200,7 @@
   time {
     color: grey;
   }
-  
+
   /* Posts */
   article .title {
     margin-bottom: 1em;
