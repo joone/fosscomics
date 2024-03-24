@@ -13,11 +13,9 @@
     line-height: 1.6em;
   }
 
-  /* for iOS and Mozilla on Android */
+  /* for iOS */
   @media only screen and (hover: none) and (pointer: coarse){
-    html {
-      font-size: 15px;
-    }
+
   }
 
   body{
