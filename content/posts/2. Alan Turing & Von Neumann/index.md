@@ -81,11 +81,9 @@ In fact, Britain made the first computer, Colossus, in order to break German cip
 In the United States, immigrants such as Von Neumann contributed greatly to the development of early computers and continued to develop commercial computers. Finally, the computer era began with their efforts.
 
 ![alt_text](images/image4.png)
-Von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer.
-
-Alan Turing obtained a Ph.D. from Princeton university and proposed a theoretical model of the computer.
-
-Kurt Gödel was an Austro-Hungarian-born Austrian, and later American. His research on the incompleteness theorems led to the birth of the Turing machine.
+> Von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. \
+> Alan Turing obtained a Ph.D. from Princeton university and proposed a theoretical model of the computer. \
+> Kurt Gödel was an Austro-Hungarian-born Austrian, and later American. His research on the incompleteness theorems led to the birth of the Turing machine.
 
 ## References
 
