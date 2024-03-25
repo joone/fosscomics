@@ -71,9 +71,9 @@ In 1953, IBM introduced the [IBM 650](https://www.google.com/url?q=https://en.w
 
 Donald Knuth: “I also started computer programming with IBM 650 for the first time.”
 
-Professor Donald Knuth, widely known for his book series, “T[he Art of Computer Programming](https://www.google.com/url?q=https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming\&sa=D\&source=editors\&ust=1711339501391677\&usg=AOvVaw2RoJgnA1TmIYqghmctSqKX),” first learned computer programming with the IBM 650 \[2]. After this, a number of companies began to make commercial computers In the 1950s, and software engineers first made their appearance.
+Professor Donald Knuth, widely known for his book series, “T[he Art of Computer Programming](https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming),” first learned computer programming with the IBM 650 \[2]. After this, a number of companies began to make commercial computers In the 1950s, and software engineers first made their appearance.
 
-References:
+## References
 
-*   \[1] https\://en.wikipedia.org/wiki/John\_Mauchly
-*   \[2] [http://www.catonmat.net/blog/donald-knuths-first-computer](https://www.google.com/url?q=http://www.catonmat.net/blog/donald-knuths-first-computer\&sa=D\&source=editors\&ust=1711339501392299\&usg=AOvVaw3eyYrusgw9QKNRyKxMnkrj)/
+1. John Mauchly, [wikipedia](https://en.wikipedia.org/wiki/John_Mauchly)
+2. Donald Knuth's First Computer, [blog](http://www.catonmat.net/blog/donald-knuths-first-computer)
