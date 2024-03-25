@@ -49,9 +49,9 @@ addListPage(posts);
 const tagMap = gatherTags(posts);
 console.log(tagMap);
 
-tagMap.forEach((value, key) => {
+/*tagMap.forEach((value, key) => {
   console.log(`Key: ${key}, Values: ${value}`);
-});
+});*/
 
 createTagListPage(tagMap);
 
@@ -59,7 +59,6 @@ for (let [tag, posts] of tagMap) {
   console.log(tag, posts);
   createTagPage(tag, posts);
 }
-
 
 // Create about page
 const about = aboutMethod.readAbout(config.dev.about);
