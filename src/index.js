@@ -4,7 +4,7 @@ const postMethods = require("./posts");
 const aboutMethod = require("./about");
 const config = require("./config");
 const addHomePage = require("./homepage");
-const addListPage = require("./list");
+const createAllPostsPage = require("./list");
 const createTagPage = require("./tag");
 const createTagListPage = require("./tag_list");
 const { create } = require("domain");
@@ -43,7 +43,7 @@ postMethods.createPosts(posts);
 
 
 addHomePage(posts);
-addListPage(posts);
+createAllPostsPage(posts);
 
 // Create tags page
 const tagMap = gatherTags(posts);

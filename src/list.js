@@ -23,7 +23,7 @@ const listpage = posts => `
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
-              <h1 class="page-title">All articles</h1>
+              <h1 class="page-title">All posts</h1>
               <ul class="posts">
                 ${posts
                   .map(
@@ -55,11 +55,11 @@ const listpage = posts => `
 </html>
 `;
 
-const addListPage = posts => {
+const createAllPostsPage = posts => {
   fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), e => {
     if (e) throw e;
     console.log(`index.html was created successfully`);
   });
 };
 
-module.exports = addListPage;
+module.exports = createAllPostsPage;
