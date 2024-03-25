@@ -11,6 +11,7 @@ These comics offer a brief introduction to the history of Free and Open Source S
 
 If you find any errors or have suggestions, please leave a comment on the comic or submit a pull request on [GitHub](https://github.com/joone/fosscomics).
 
-Your support would help maintain the domain name, upgrade my iPad with pencil, and purchase reference books. You can sponsor this comic work here:  https://github.com/sponsors/joone
+Your support will contribute to maintaining the domain name, upgrading devices and gear, and purchasing reference books. You can sponsor this comic project by following this link.
+https://github.com/sponsors/joone
 
 Thank you!
