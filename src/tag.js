@@ -18,7 +18,7 @@ const tagPage = (tag, posts) => `
                 <div class="main">${config.blogName}</div>
                 <nav>
                   <a href="/">Home</a>
-                  All posts
+                  <a href="/posts.html">All posts</a>
                   <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
