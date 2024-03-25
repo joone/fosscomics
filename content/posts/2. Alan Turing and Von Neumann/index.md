@@ -54,7 +54,7 @@ They asked Alan Turing to make a stored-program computer like EDVAC. Finally, he
 > “We need a computer like EDVAC” \
 > “I also have a good idea”
 
-When we look at [his paper,](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140) published in 1946, although the report was written later than the EDVAC report by Von Neumann, it also** **included a detailed design for the stored-program computer. Moreover, the hardware is minimally designed to run arithmetic instructions in software, which is the same design philosophy and approach of the RISC CPU today. However, the development of ACE was delayed due to his wartime work and the secrecy required, and he returned to Cambridge for a sabbatical year in 1947 without having finished working on ACE[4].
+When we look at [his paper,](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140) published in 1946, although the report was written later than the EDVAC report by Von Neumann, it also included a detailed design for the stored-program computer. Moreover, the hardware is minimally designed to run arithmetic instructions in software, which is the same design philosophy and approach of the RISC CPU today. However, the development of ACE was delayed due to his wartime work and the secrecy required, and he returned to Cambridge for a sabbatical year in 1947 without having finished working on ACE[4].
 
 
 ![alt_text](images/image3.png)
