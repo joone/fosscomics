@@ -32,7 +32,7 @@ const posts = fs
   .readdirSync(config.dev.postsdir)
   .map(post => postMethods.readArticle(post))
   .sort(function(a, b) {
-    return b.attributes.date - a.attributes.date;
+    return new Date(b.attributes.date) - new Date(a.attributes.date);
   });
 
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
