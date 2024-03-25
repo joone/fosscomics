@@ -1,6 +1,6 @@
 # F/OSS Comics
 
-F/OSS Comics is a comic series dedicated to Free and Open Source Software. The comics aim to educate and entertain readers about the world of open-source software.
+F/OSS Comics is a comic series dedicated to Free and Open Source Software. The comics aim to educate and entertain readers about the world of free and open source software.
 
 Explore the comics at [fosscomics.com](https://fosscomics.com).
 
