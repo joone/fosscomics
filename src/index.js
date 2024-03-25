@@ -7,7 +7,6 @@ const createHomePage = require("./homepage");
 const createAllPostsPage = require("./list");
 const createTagPage = require("./tag");
 const createTagListPage = require("./tag_list");
-const { create } = require("domain");
 
 function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
@@ -43,6 +42,7 @@ postMethods.createPosts(posts);
 
 
 createHomePage(posts);
+//createPagenation(posts);
 createAllPostsPage(posts);
 
 // Create tags page
