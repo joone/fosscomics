@@ -27,7 +27,7 @@ const tagListPage = tags => `
               <div class="tag-cloud">
               <ul class="tags">
                 ${tags.map(tag => `<li class="post">
-                    <a href="${tag}">${tag}</a>
+                    <a href="${tag.path}">${tag.name}</a>
                     </li>`
                   ).join("")}
               </ul>
@@ -49,9 +49,15 @@ const tagListPage = tags => `
 </html>
 `;
 
-function createTagListPage(tags) {
+function createTagListPage(tagMap) {
 
-  tagArray = Array.from(tags.keys());
+  //tagArray = Array.from(tags.keys());
+
+  let tagArray = [];
+  for (let [tag, posts] of tagMap) {
+    console.log(tag, posts);
+     tagArray.push({ name:  tag, path: tag.replace(/\s+/g, "_") });
+  }
 
   if (!fs.existsSync(`${config.dev.outdir}/tags/`))
       fs.mkdirSync(`${config.dev.outdir}/tags/`);

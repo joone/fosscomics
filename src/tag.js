@@ -56,9 +56,10 @@ const tagPage = (tag, posts) => `
 `;
 
 function createTagPage(tag, posts) {
-  if (!fs.existsSync(`${config.dev.outdir}/tags/${tag}`))
-      fs.mkdirSync(`${config.dev.outdir}/tags/${tag}`);
-  fs.writeFile(`${config.dev.outdir}/tags/${tag}/index.html`, tagPage(tag, posts), e => {
+  let tagPath = tag.replace(/\s+/g, "_"); // Replace spaces with underscores
+  if (!fs.existsSync(`${config.dev.outdir}/tags/${tagPath}`))
+      fs.mkdirSync(`${config.dev.outdir}/tags/${tagPath}`);
+  fs.writeFile(`${config.dev.outdir}/tags/${tagPath}/index.html`, tagPage(tag, posts), e => {
     if (e) throw e;
     console.log(`index.html was created successfully`);
   });

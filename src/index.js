@@ -15,7 +15,6 @@ function gatherTags(posts) {
     const tagArray = post.attributes.tags.split(",");
     tagArray.forEach(tag => {
       tag = tag.trim(); // Remove leading and trailing whitespace
-      tag = tag.replace(/\s+/g, "_"); // Replace spaces with underscores
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
