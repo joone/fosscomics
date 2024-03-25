@@ -12,7 +12,7 @@ The static webpage generator was adapted from [kartiknair's blog](https://github
 
 ## Contributions
 
-We welcome contributions and feedback on the comics and the website. If you have suggestions or want to contribute, please submit a pull request or join the discusstions.
+I welcome contributions and feedback on the comics and the website. If you have suggestions or want to contribute, please submit a pull request or join the discusstions.
 
 ## Acknowledgments
 
