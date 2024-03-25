@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The groundbreaking Unix and C language, which would go on to change the world, were being developed..." />
+        <link rel="stylesheet" href="../assets/styles/fonts.css">
+        <link rel="stylesheet" href="../assets/styles/main.css">
+        <title>8. UNIX and C Language</title>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  <a href="..">F/OSS Comics</a>
+                </div>
+                <nav>
+                  <a href="/">Home</a>
+                  <a href="/posts.html">All posts</a>
+                  <a href="/about.html">About</a>
+                  <a href="/tags">Tags</a>
+                </nav>
+            </header>
+            <main>
+              <article>
+                  <div class="title">
+                    <h1 class="title">8. UNIX and C Language</h1>
+                    <div class="meta">Posted on Sun Sep 03 2023</div>
+                  </div>
+                  <section class="body">
+                    <p>In the 1960&#39;s, <a href="https://www.google.com/url?q=https://medium.com/fosscomics/7-its-and-hacker-culture-8cb036b94785&sa=D&source=editors&ust=1711344879882873&usg=AOvVaw0a-im6RARwtJfYmVcuPAh2">the Incompatible Timesharing System (ITS)</a> was being heavily developed at MIT. Meanwhile, at another location on the east coast of the United States, there was another lab with the same hacker spirit: AT&amp;T Bell Laboratories.</p>
+<p>The groundbreaking Unix and C language, which would go on to change the world, were being developed.</p>
+<p>  <img src="images/image15.png" alt=""></p>
+<p>              Here is MIT                                                          Meanwhile at Bell Lab.</p>
+<p>“I feel the force somewhere…”                                          </p>
+<p>Coincidentally, the people who were working on <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Multics&sa=D&source=editors&ust=1711344879883517&usg=AOvVaw1WsfkGn9ueJ5KMD3PM-psp">Multics</a> were also working on ITS and Unix, including <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Ken_Thompson&sa=D&source=editors&ust=1711344879883636&usg=AOvVaw3VfiS3JXIsREHVC84_ZKmD">Ken Thompson</a> and <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Dennis_Ritchie&sa=D&source=editors&ust=1711344879883745&usg=AOvVaw3mrGLO9EgJ8_2QgGx_LpUV">Dennis Ritchie</a> from Bell Labs.</p>
+<p><img src="images/image1.png" alt=""></p>
+<p>&quot;I think we need to step away from the Multics project now.&quot;<br>“Yeah, the development time has become way longer than we expected.&quot;</p>
+<p>The Multics project began in 1964, but due to the large code size and complexity, the schedule fell far behind Bell Labs&#39; expectations.</p>
+<p><img src="images/image4.png" alt="벨연구소: 우리는 내부 일정을 맞추기가 어려워 프로젝트에서 손을 땝니다.">“Overdesigned and overbuilt and over everything. It was close to unusable[1].”<a href="#cmnt1">[a]</a></p>
+<p>In 1969, Bell Lab. pulled out of the development of Multics.</p>
+<p><img src="images/image12.png" alt=""></p>
+<p>“We’re leaving because we can&#39;t meet our schedule.”</p>
+<p>Based on his experience developing Multics, Ken Thompson creates a new operating system by himself at Bell Labs.</p>
+<p><img src="images/image11.png" alt="톰켄슨: 데니스, 내가 새롭게 운영체제를 만들고 있는데, 멀틱스에 좀 아이디어를 가져오고 좀 더 단순하게 만들어 보려고. 데니스: 좋은 생각인데, 나도 관심있어."></p>
+<p>“Dennis, I&#39;m building a new operating system, taking some ideas from Multics. I&#39;m making it smaller and simpler.” “That’s a good idea. Shall I join you?”</p>
+<p>Ken Thompson reimplemented many of the key features he had developed in Multics in Unix.</p>
+<p><img src="images/image6.png" alt=""></p>
+<p>“I can&#39;t make something out of nothing”</p>
+<p>He adapted the file system he had already implemented in Multics in Unix on PDP-7, and Dennis Richie joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on PDP-7.</p>
+<p><img src="images/image14.png" alt=""></p>
+<p>“First of all, I&#39;m working on a file system. How about we call it Unix?” “How about mapping devices to files?”</p>
+<p>Then, <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/PDP-11&sa=D&source=editors&ust=1711344879886132&usg=AOvVaw23fq7sK9DzSW9io1VkCf8l">PDP-11</a> was introduced, which differed in CPU instructions from the PDP-7.</p>
+<p><img src="images/image2.png" alt="데니스: 켄, PDP-11이 새로 들어왔는데, 여기에 유닉스를 포팅하면 어떨까? 켄톰슨: 좋은 생각인데, 문제는 어셈블리어 코딩을 다시 해야한다는 거지."></p>
+<p>&quot;Ken, we have a new PDP-11, why don&#39;t we port Unix to it?&quot; &quot;That&#39;s a great idea, but the problem is that the CPU instructions are different, so we&#39;ll have to re-write the Unix code with the PDP-11 assembly language.&quot;</p>
+<p><img src="images/image9.png" alt="켄톰슨: 드디어 포팅 끝\~\~\~ 데니스: 이봐, 톰 매번 새 컴퓨터가 나올 때 마다, 매번 코드를 다시 짤 수는 없잖아"></p>
+<p>“Wow, I finally finished porting!&quot; &quot;But we can&#39;t rewrite the Unix code in assembly every time we buy a new computer, right?</p>
+<p><img src="images/image8.png" alt="켄톰슨: 그래, 데니스 우리 B언어로 유닉스를 다시 만들어볼까? 데니스: 좋은 생각인데, PDP-11정도면 B언어로 유닉스를 포팅할 수 있을거"></p>
+<p>“Dennis, shall we rewrite Unix in the B language? Now we are able to build an OS kernel without assembly.&quot; &quot;Maybe we can port Unix to PDP-11 using the B language&quot;  </p>
+<p>B language was also developed for use in Multics by Ken Thompson and Dennis Ritchie in 1969.</p>
+<p><img src="images/image5.png" alt="데니스 리치: 우선 B언어를 PDP-11에 포팅해야 하는데 문제가 있네."></p>
+<p>&quot;First we need to port the B language to the PDP-11, but there&#39;s a problem.&quot;</p>
+<p>In 1971, Dennis Ritchie added a character type to the B language and rewrote the compiler code to generate PDP-11 machine code[3].<img src="images/image10.png" alt="톰켄스: 데니스  B언어 포팅은 잘되가? 데니스 리치: 문제가 많아. 우선 PDP-11에서는 문제 데이터 타입에 접근하기가 어려워. 다른 새기능을 사용할 수 없고."></p>
+<p>“Dennis, how&#39;s the B language porting going?” “There are a lot of issues, first of all, it’s hard to access the character data type on PDP-11.”</p>
+<p><img src="images/image13.png" alt="톰 켄프슨: 하하, 이번 기회에  B언어를 싹 뜯어 고치는거야. 데니스 리치: 다시 짜야할지도로 모르는데.."></p>
+<p>&quot;Haha, why don&#39;t you completely update the B language this time?” &quot;I might have to rewrite it from scratch.&quot;</p>
+<p>In 1973, basic functionalities were complete, and it was called C, which was just the next version of B.</p>
+<p><img src="images/image3.png" alt="데니스리치: C언어로 부르면 어떨까? 톰슨: 우와 잘 동작하는데?"></p>
+<p>“How about calling it C?” &quot;Sounds good&quot;</p>
+<p>Dennis Richie began rewriting Unix in C that same year.</p>
+<p><img src="images/image7.png" alt=""></p>
+<p>&quot;Hmm, I don&#39;t have to code in assembly anymore&quot;</p>
+<p>Dennis added the structure type to the C language to define the user&#39;s custom data. Now, the C language is powerful enough to write Unix kernels.</p>
+<p><img src="images/image16.png" alt=""></p>
+<p>Although Unix and C were created in a short period of time by Ken Thompson and Dannis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.</p>
+<p>References[1] <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Multics&sa=D&source=editors&ust=1711344879888583&usg=AOvVaw3KOzRZV4Bg5nkYSLTn8kqS">https://en.wikipedia.org/wiki/Multics</a></p>
+<p>[2] <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Unix&sa=D&source=editors&ust=1711344879888771&usg=AOvVaw1-JX-aUjOghyVGNHrRNue3">https://en.wikipedia.org/wiki/Unix</a></p>
+<p>[3] <a href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/History_of_Unix&sa=D&source=editors&ust=1711344879888975&usg=AOvVaw2IJl5n0Yyu08-R1gOXeBbw">https://en.wikipedia.org/wiki/History_of_Unix</a></p>
+<p>[4] <a href="https://www.google.com/url?q=https://www.bell-labs.com/usr/dmr/www/chist.html&sa=D&source=editors&ust=1711344879889175&usg=AOvVaw28B03hl4Jnb4ZydNOed8ka">The Development of the C Language</a></p>
+<p>[5]<a href="https://www.google.com/url?q=http://www.read.seas.harvard.edu/~kohler/class/aosref/ritchie84evolution.pdf&sa=D&source=editors&ust=1711344879889388&usg=AOvVaw2ethH7iccsYo2HjvNCjaOv"> The Evolution of the Unix Time-sharing System</a></p>
+<p>In the 1960s, while the Incompatible Timesharing System (ITS) was being developed at MIT, there was another place in the eastern United States with a hacker spirit: AT&amp;T Bell Laboratories. Here, the world-changing Unix and C languages were being developed.</p>
+<p>Coincidentally, the same people who had worked on Multics were also working on ITS and Unix, including Ken Thompson and Dennis Ritchie, both of whom had worked on Multics.</p>
+<p>Eventually, Bell Labs dropped out of Maltix development in 1969.</p>
+<p>Upon returning to Bell Labs, Ken Thompson used his experience with Multics to create a new operating system on his own.</p>
+<p>Ken Thompson reimplemented many of the key features he had developed in Multics in Unix.</p>
+<p>He started by adapting the file system he had already implemented in Multix to the PDP-7, and Dennis Leach joined him in the development. Once development was well underway, a team was assembled and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on PDP-7.</p>
+<p>Later, the PDP-11 was introduced, which had different CPU instructions than the PDP-7.</p>
+<p>Also in 1969, Ken Thompson and Dennis Leach developed a programming language for use in Multics.</p>
+<p>In 1971, Dennis Leach added character types to B language and rewrote the compiler to generate PDP-11 machine language [3].</p>
+<p>In 1973, basic features were implemented and the language was called C. It was the next version of B, so we just called it C.</p>
+<p>Dennis Leach began rewriting Unix in C that same year.</p>
+<p>He added structure types to the language to define data. Now, C is powerful enough to write the Unix kernel.</p>
+<p>Although Unix and C were created in a short period of time by Ken Thompson and Danny Rich, most computers, including cell phones, still run on Unix today. In addition, operating system kernels are still developed in C today.</p>
+<p><a href="#cmnt_ref1">[a]</a>https://en.wikipedia.org/wiki/Multics</p>
+
+                  </section>
+              </article>
+              <div class="comments">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/fosscomics/" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2024 Joone Hur |  <a href="https://github.com/joone/archie">Archie Theme</a> | Built with <a href="https://github.com/joone/fosscomics">fosscomics</a>
+              </div>
+            </footer>
+        </div>
+    </body>
+</html>
