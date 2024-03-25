@@ -19,7 +19,9 @@ function gatherTags(posts) {
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
-      tags.get(tag).push(post.path); 
+      tags.get(tag).push({path: post.path,
+        title: post.attributes.title, date: post.attributes.date, description: post.attributes.description
+      });
     });
   });
  
@@ -40,20 +42,21 @@ if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 // Create posts in docs/posts
 postMethods.createPosts(posts);
 
+
 addHomePage(posts);
 addListPage(posts);
 
 // Create tags page
-const tags = gatherTags(posts);
-console.log(tags);
+const tagMap = gatherTags(posts);
+console.log(tagMap);
 
-tags.forEach((value, key) => {
+tagMap.forEach((value, key) => {
   console.log(`Key: ${key}, Values: ${value}`);
 });
 
-createTagListPage(tags);
+createTagListPage(tagMap);
 
-for (let [tag, posts] of tags) {
+for (let [tag, posts] of tagMap) {
   console.log(tag, posts);
   createTagPage(tag, posts);
 }

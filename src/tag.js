@@ -1,7 +1,7 @@
 const config = require("./config");
 const fs = require("fs");
 
-const tagPage = posts => `
+const tagPage = (tag, posts) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,17 +23,17 @@ const tagPage = posts => `
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
-              <h1 class="page-title">All articles</p>
+              <h1 class="page-title">Entries tagged - "${tag}"</p>
               <ul class="posts">
 
                 ${posts
                   .map(
-                    postPath => `<li class="post">
-                    <a href="/${postPath}">${
-                      postPath
+                    post => `<li class="post">
+                    <a href="/${post.path}">${
+                      post.title
                     }</a><span class="meta">
                         ${new Date(
-                          "2021-01-01"
+                          post.date
                         ).toDateString()}</span>
                     </li>`
                   )
@@ -58,7 +58,7 @@ const tagPage = posts => `
 function createTagPage(tag, posts) {
   if (!fs.existsSync(`${config.dev.outdir}/tags/${tag}`))
       fs.mkdirSync(`${config.dev.outdir}/tags/${tag}`);
-  fs.writeFile(`${config.dev.outdir}/tags/${tag}/index.html`, tagPage(posts), e => {
+  fs.writeFile(`${config.dev.outdir}/tags/${tag}/index.html`, tagPage(tag, posts), e => {
     if (e) throw e;
     console.log(`index.html was created successfully`);
   });
