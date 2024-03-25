@@ -12,6 +12,15 @@ const posthtml = data => `
         <meta name="description" content="${data.attributes.description}" />
         <link rel="stylesheet" href="../assets/styles/fonts.css">
         <link rel="stylesheet" href="../assets/styles/main.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M0CWE9F5HJ');
+        </script>
         <title>${data.attributes.title}</title>
     </head>
     <body>
