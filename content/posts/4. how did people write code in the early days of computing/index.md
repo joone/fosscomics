@@ -58,7 +58,7 @@ For example, the early programmers used punch cards as a development tool. First
 
 Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.
 
-:![img\_0677](images/image4.png)
+![](images/image4.png)
 > "Can you take a look at my code?"\
 > "Next person"
 

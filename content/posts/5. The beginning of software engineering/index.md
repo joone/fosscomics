@@ -31,7 +31,7 @@ After studying mathematics in university, she began working as a programmer at M
 ![](images/image5.png "size:70%")
 > “At the time, computer science and software engineering were not part of the regular curriculum. So programmers had to work through hands-on experience.”
 
-Following this, she became a system programming expert and participated in the Apollo 11 mission. At the time, the Apollo 11 mission did not include any budget and schedule for software development, and there was no mention of software in the requirements \[1]. However, software was important enough to control the flight of the spacecraft and the lunar lander. Margaret took her daughter to the office on weekends to develop more reliable software.
+Following this, she became a system programming expert and participated in the Apollo 11 mission. At the time, the Apollo 11 mission did not include any budget and schedule for software development, and there was no mention of software in the requirements[&lbrack;1&rbrack;][1] However, software was important enough to control the flight of the spacecraft and the lunar lander. Margaret took her daughter to the office on weekends to develop more reliable software.
 
 ![](images/image7.png "size:70%")
 > “Mom, when are we going home?” \
@@ -42,15 +42,15 @@ Eventually, in 1968, as many as 400 people participated in the development of th
 ![](images/image4.png)
 > "Moon landing success!"
 
-In particular, she first used the term “software engineering” at the beginning of the Apollo missions so that software could be recognized as an independent domain like hardware. She also helped to create a course work about computer programming at MIT\[4].
+In particular, she first used the term “software engineering” at the beginning of the Apollo missions so that software could be recognized as an independent domain like hardware. She also helped to create a course work about computer programming at MIT[&lbrack;4&rbrack;][4].
 
-An interesting fact is that many software developers were women until the 1960s, but this is a significant difference compared to the current situation where men dominate the computer programming field. The reason is that at the time, software development was less important than hardware development, so women were mainly in charge, and they were also paid less than men\[2]. If you look for black and white photos of early computers on the Internet, you can see a lot of women in front of the computers.
+An interesting fact is that many software developers were women until the 1960s, but this is a significant difference compared to the current situation where men dominate the computer programming field. The reason is that at the time, software development was less important than hardware development, so women were mainly in charge, and they were also paid less than men[&lbrack;2&rbrack;][2]. If you look for black and white photos of early computers on the Internet, you can see a lot of women in front of the computers.
 
 ![img\_0698](images/image1.png)
 > Coding…  “The salary is too low for what I’m doing” \
 > Designing a hardware
 
-All the people who did the programming by connecting the functional unit boards at ENIAC were women\[3].
+All the people who did the programming by connecting the functional unit boards at ENIAC were women[&lbrack;3&rbrack;][3].
 
 ![Two women technicians are programming in front of an ENIAC computer](images/image11.png "size:80%")
 
@@ -67,7 +67,7 @@ Eventually, she found out that the computer wasn't working properly because of t
 And while attaching the moth to the workbook, she left a note saying that it was the first computer bug
 
 ![](images/image6.png "size:90%")
-“I found the first computer bug.([a picture from Wikipedia](https://en.wikipedia.org/wiki/Harvard_Mark_II%23/media/File:First_Computer_Bug,_1945.jpg))
+> “I found the first computer bug.([a picture from Wikipedia](https://en.wikipedia.org/wiki/Harvard_Mark_II%23/media/File:First_Computer_Bug,_1945.jpg))
 
 In the early days when computers were used, women played a pioneering role in software development and created the foundation for software engineering to be born.
 
@@ -77,3 +77,8 @@ In the early days when computers were used, women played a pioneering role in so
 2. Computer Programming Used To Be Women’s Work, [Smithsonian Magazine](http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/)
 3. How Female ENIAC Programmers Pioneered the Software Industry, [Intel iQ](https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/)
 4. Margaret Hamilton, [wikipedia](https://en.wikipedia.org/wiki/Margaret\_Hamilton\_(scientist))
+
+[1]: https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/ "Her Code Got Humans on the Moon—And Invented Software Itself, wired.com"
+[2]: http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/ "Computer Programming Used To Be Women’s Work, Smithsonian Magazine"
+[3]: https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/ "How Female ENIAC Programmers Pioneered the Software Industry, Intel iQ"
+[4]: https://en.wikipedia.org/wiki/Margaret\_Hamilton\_(scientist) "Margaret Hamilton, wikipedia"
