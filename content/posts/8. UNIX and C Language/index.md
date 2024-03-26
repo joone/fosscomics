@@ -9,10 +9,7 @@ In the 1960's, [the Incompatible Timesharing System (ITS)](https://en.wikipedia.
 
 The groundbreaking Unix and C language, which would go on to change the world, were being developed.
 
-  ![](images/image15.png)
-
-              Here is MIT                                                          Meanwhile at Bell Lab.
-
+![](images/image15.png "MIT vs. Bell Lab.")
 > “I feel the force somewhere…”                                          
 
 Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also working on ITS and Unix, including [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) and [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs.
