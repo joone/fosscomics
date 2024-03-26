@@ -25,35 +25,35 @@ In 1822, the British mathematician Charles Babbage designed a difference engine 
 Ada Lovelace, born in 1815, the daughter of George Gordon Byron, a representative Romantic poet in England, grew up with a single mother because her father had earlier abandoned her family. Since her mother was afraid that her daughter would take after her father, she only allowed Ada to learn mathematics and science instead of literature.
 
  ![Text image: Ada, with a puzzled expression, says, "Why does my mom only want me to learn mathematics?"](images/image10.png)
-"Why does my mom only want me to learn mathematics?"
+> "Why does my mom only want me to learn mathematics?"
 
 Famous scientists taught Ada at the time, including De Morgan who is famous for De Morgan’s law. As a result, she showed a great talent for mathematics which he recognized.
 
 ![Text image: Ada in learning De Morgan's law from De Morgan"](images/image1.png)
-"This allows the logical sum to be a logical product." \
-"This is De Morgan's law!"
+> "This allows the logical sum to be a logical product." \
+> "This is De Morgan's law!"
 
 Ada saw the difference engine created by Charles Babbage by chance when she was seventeen years old.
 
 ![Text image: "](images/image9.png)
-"This is the difference engine!" \
-"Wow, I would like to participate in your research."
+> "This is the difference engine!" \
+> "Wow, I would like to participate in your research."
 
 She created an algorithm to obtain the Bernoulli number for the purpose of describing the analytical engine, which is considered to be the first computer program.
 
 ![Text image: "](images/image5.png)
-"A good example is needed to explain the difference machine."
+> "A good example is needed to explain the difference machine."
 
 At the time, Ada first introduced the concepts of loops, goto, and control statements, which are important concepts used in programming languages, in her algorithms. This is why she is called the world’s first programmer. There is also a programming language called Ada which is named after her.
 
 ![Text image: Ada is asking"](images/image7.png)
-"Loop? Goto? If?"
+> "Loop? Goto? If?"
 
 However, Charles Babbage was not able to complete the difference engine and analytic engine due to technical limitations, so Ada never got to implement her algorithm.
 
 ![Text image: Ada is asking"](images/image6.png)
-"When can I run my algorithm on the machine?" \
-"Well, I’m not sure if it will work.z"
+> "When can I run my algorithm on the machine?" \
+> "Well, I’m not sure if it will work.z"
 
 From 1989 to 1991, the Science Museum in London completed the actual differential engine No. 2 using the design left by Charles Babbage, which was surprisingly able to calculate 31 digits. Although not all of her theories have been tested or fully developed, Ada Lovelace’s theory of computer programming became the basis for today’s computer programming.
 
