@@ -16,7 +16,6 @@ if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 // Create posts in docs/posts
 postMethods.createPosts(posts);
 
-home.createHomePage(posts);
 home.createPagenation(posts);
 createAllPostsPage(posts);
 

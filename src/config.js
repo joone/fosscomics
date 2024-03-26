@@ -7,6 +7,7 @@ const config = {
   blogDescription: "Comics about Free and Open Source Software",
   dev: {
     postsdir: "./content/posts",
+    content: "./content",
     about: "./content/about.md",
     outdir: "./docs"
   }

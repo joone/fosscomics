@@ -1,15 +1,15 @@
 const config = require("./config");
 const fs = require("fs");
 
-const homepage = posts => `
+const homepage = (posts, prev, next) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${config.blogDescription}" />
-        <link rel="stylesheet" href="./assets/styles/fonts.css">
-        <link rel="stylesheet" href="./assets/styles/main.css">
+        <link rel="stylesheet" href="/assets/styles/fonts.css">
+        <link rel="stylesheet" href="/assets/styles/main.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
         <script>
@@ -26,7 +26,7 @@ const homepage = posts => `
             <header>
                 <div class="main">${config.blogName}</div>
                 <nav>
-                  Home
+                  <a href="/">Home</a>
                   <a href="/posts.html">All posts</a>
                   <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
@@ -54,6 +54,11 @@ const homepage = posts => `
                   )
                   .join("")}
             </main>
+            <nav role="navigation" class="post-navigation">
+              <h1 class="assistive-text">Post navigation</h1>
+              ${prev ? `<div class="nav-previous"><a href="/page/${prev}.html"><span class="meta-nav">←</span>prev</a></div>` : `<div class="nav-previous"><span class="meta-nav">←</span>prev</div>`}
+              ${next ? `<div class="nav-next"><a href="page/${next}.html">next<span class="meta-nav">→</span></a></div>` : `<div class="nav-next">next<span class="meta-nav">→</span></div>`}
+            </nav>
 
             <footer>
               <div style="display:flex">
@@ -83,17 +88,30 @@ const createPagenation = posts => {
   const postsPerPage = 5;
   const numPages = Math.ceil(posts.length / postsPerPage);
 
+
   if (fs.existsSync(`${config.dev.outdir}/page`))
     fs.rmdirSync(`${config.dev.outdir}/page`, { recursive: true });
 
   fs.mkdirSync(`${config.dev.outdir}/page`);
 
+   // copy content/page/1.html to docs/page/1.html
+   if (fs.existsSync(`${config.dev.content}/page/1.html`))
+   fs.copyFileSync(`${config.dev.content}/page/1.html`, `${config.dev.outdir}/page/1.html`);
 
   for (let i = 0; i < numPages; i++) {
-    const startIndex = (numPages - i - 1) * postsPerPage;
-    const endIndex = startIndex + postsPerPage;
-    const pagePosts = posts.slice(startIndex, endIndex);
-    fs.writeFile(`${config.dev.outdir}/page/${i + 1}.html`, homepage(pagePosts), e => {
+    const pagePosts = posts.slice(i * postsPerPage, (i + 1) * postsPerPage);
+
+    let filePath;
+    if (i === 0) {
+      filePath = `${config.dev.outdir}/index.html`;
+    } else {
+      filePath = `${config.dev.outdir}/page/${i + 1}.html`;
+    }
+    const prev = i-1 >= 0 ? i : null;
+    const next = i+1 < numPages ? i + 2: null;
+
+    console.log('prev', prev, 'next', next)
+    fs.writeFile(`${filePath}`, homepage(pagePosts, prev, next), e => {
         if (e) throw e;
         console.log(`page/${i + 1}.html was created successfully`);
       }
