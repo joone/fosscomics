@@ -1,7 +1,7 @@
 /* Markdown */
 :root{
   --maincolor: #bcc9fc;
-  --bordercl:#545454;
+  --bordercl:rgb(99, 108, 118);
   --callouctcolor:dodgerblue;
   --hovercolor:navy;
   --darkMaincolor: #50fa7b;
@@ -43,7 +43,7 @@
   
   blockquote {
     border-left: 3px solid var(--bordercl);
-    color: #737373;
+    color:rgb(99, 108, 118);
     margin: 0;
     padding-left: 1em;
 
