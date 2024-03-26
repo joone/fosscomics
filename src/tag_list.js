@@ -68,6 +68,8 @@ function createTagListPage(tagMap) {
      tagArray.push({ name:  tag, path: tag.replace(/\s+/g, "_") });
   }
 
+  tagArray.sort((a, b) => a.name.localeCompare(b.name));
+
   if (!fs.existsSync(`${config.dev.outdir}/tags/`))
       fs.mkdirSync(`${config.dev.outdir}/tags/`);
   fs.writeFile(`${config.dev.outdir}/tags/index.html`, tagListPage(tagArray), e => {
