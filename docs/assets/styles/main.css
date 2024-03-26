@@ -228,7 +228,10 @@
   article .title {
     margin-bottom: 1em;
   }
-  
+
+  .disable-link {
+    color: grey;
+  }
   
   /* Callout */
   .callout {

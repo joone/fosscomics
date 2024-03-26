@@ -56,8 +56,8 @@ const homepage = (posts, prev, next) => `
             </main>
             <nav role="navigation" class="post-navigation">
               <h1 class="assistive-text">Post navigation</h1>
-              ${prev ? `<div class="nav-previous"><a href="/page/${prev}.html"><span class="meta-nav">←</span>prev</a></div>` : `<div class="nav-previous"><span class="meta-nav">←</span>prev</div>`}
-              ${next ? `<div class="nav-next"><a href="page/${next}.html">next<span class="meta-nav">→</span></a></div>` : `<div class="nav-next">next<span class="meta-nav">→</span></div>`}
+              ${prev ? `<div class="nav-previous"><a href="/page/${prev}.html"><span class="meta-nav">←</span>prev</a></div>` : `<div class="nav-previous disable-link"><span class="meta-nav">←</span>prev</div>`}
+              ${next ? `<div class="nav-next"><a href="page/${next}.html">next<span class="meta-nav">→</span></a></div>` : `<div class="nav-next disable-link">next<span class="meta-nav">→</span></div>`}
             </nav>
 
             <footer>
