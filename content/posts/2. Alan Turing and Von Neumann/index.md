@@ -1,6 +1,7 @@
 ---
 title: 2. Alan Turing and Von Neumann
 date: "2019-05-29"
+image: image2.png
 description: story about Alan Turing and Von Neumann
 tags: Alan Turing, Von Neumann, Kurt Göde, EDVAC, EDSAC, Automatic Computing Engine
 ---

@@ -1,6 +1,7 @@
 ---
 title: 5. The beginning of software engineering
 date: "2022-12-11"
+image: feature.png
 description: Until the 1960s, hardware was the main focus of computer engineering... 
 tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, bug, women, RMS
 ---

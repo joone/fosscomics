@@ -1,6 +1,7 @@
 ---
 title: 3. The Era of Commercial Computers
 date: "2019-06-25"
+image: image3.png
 description: The computer was developed in earnest during World War II and was mainly used for military purposes..
 tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, Fortran, John Backus, IBM 701, IBM 704, The Art of Computer Programming
 ---

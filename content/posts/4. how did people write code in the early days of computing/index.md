@@ -1,6 +1,7 @@
 ---
 title: 4. how did people write code in the early days of computing?
 date: "2022-12-03"
+image: feature.png
 description: When computers were first introduced commercially, how did people write code for computers? ...
 tags: ENIAC, machine code, EDSAC, Assembly language, Multics, Punch card, Fortran
 ---

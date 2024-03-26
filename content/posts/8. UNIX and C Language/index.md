@@ -1,6 +1,7 @@
 ---
 title: 8. UNIX and C Language
 date: "2023-09-04"
+image: feature.png
 description: The groundbreaking Unix and C language, which would go on to change the world, were being developed...
 tags: UNIX, C Language, Ken Thompson,  Dennis Ritchie, B language, Bell Labs., Multics, PDP-11, 1970s
 ---

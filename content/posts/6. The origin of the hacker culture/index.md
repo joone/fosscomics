@@ -1,6 +1,7 @@
 ---
 title: 6. The origin of the hacker culture
 date: "2022-12-17"
+image: feature.png
 description: If you visit the Wikipedia page on the History of Programming Languages, you will find a list of the programming languages that were developed in the early days of computing... 
 tags: PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond
 ---
