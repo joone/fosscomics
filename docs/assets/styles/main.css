@@ -182,6 +182,17 @@
     font-size: 1rem;
   }
 
+  /* navigation */
+  h1.assistive-text {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-size: small;
+  }
+
   /* Footer */
   footer {
     display: flex;
