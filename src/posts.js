@@ -46,6 +46,11 @@ const posthtml = data => `
                     ${data.body}
                   </section>
               </article>
+              <nav role="navigation" class="site-navigation post-navigation">
+			          <h1 class="assistive-text">Post navigation</h1>
+                ${data.previous ? `<div class="nav-previous"><a href="../${data.previous.path}"><span class="meta-nav">←</span>${data.previous.attributes.title}</a></div>` : ""}
+                ${data.next ? `<div class="nav-next"><a href="../${data.next.path}">${data.next.attributes.title}<span class="meta-nav">→</span></a></div>` : ""}
+              </nav>
               <div class="comments">
                 <script src="https://utteranc.es/client.js"
                             repo="joone/fosscomics"
@@ -129,6 +134,16 @@ function readArticles() {
   posts.sort(function(a, b) {
     return new Date(b.attributes.date) - new Date(a.attributes.date);
   });
+
+  // loop through posts and add previous and next post to each post
+  for (let i = 0; i < posts.length; i++) {
+    if (i > 0) {
+      posts[i].next = posts[i - 1];
+    }
+    if (i < posts.length - 1) {
+      posts[i].previous = posts[i + 1];
+    }
+  }
 
   return posts;
 }
