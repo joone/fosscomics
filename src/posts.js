@@ -135,8 +135,10 @@ function readArticles() {
 
 const createPosts = posts => {
   posts.forEach(post => {
-    if (!fs.existsSync(`${config.dev.outdir}/${post.path}`))
-      fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
+    if (fs.existsSync(`${config.dev.outdir}/${post.path}`))
+      fs.rmdirSync(`${config.dev.outdir}/${post.path}`, { recursive: true });
+
+    fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
 
     fs.writeFile(
       `${config.dev.outdir}/${post.path}/index.html`,

@@ -58,9 +58,30 @@ const tagListPage = tags => `
 </html>
 `;
 
-function createTagListPage(tagMap) {
+function gatherTags(posts) {
+  const tags = new Map(); // Changed to a Map
+  posts.forEach(post => {
+    const tagArray = post.attributes.tags.split(",");
+    tagArray.forEach(tag => {
+      tag = tag.trim(); // Remove leading and trailing whitespace
+      if (!tags.has(tag)) {
+        tags.set(tag, []); // Initialize an empty array for new tags
+      }
+      tags.get(tag).push({path: post.path,
+        title: post.attributes.title, date: post.attributes.date, description: post.attributes.description
+      });
+    });
+  });
+
+  // Convert Map to desired output
+  return tags;
+}
+
+function createTagListPage(posts) {
 
   //tagArray = Array.from(tags.keys());
+
+  const tagMap = gatherTags(posts);
 
   let tagArray = [];
   for (let [tag, posts] of tagMap) {
@@ -76,6 +97,8 @@ function createTagListPage(tagMap) {
     if (e) throw e;
     console.log(`index.html for tags was created successfully`);
   });
+
+  return tagMap;
 };
 
 module.exports = createTagListPage;
