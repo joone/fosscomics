@@ -77,6 +77,19 @@ const posthtml = data => `
 const readArticle = postPath => {
   const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}/index.md`, "utf8");
   const content = fm(data);
+
+  // Override function
+  const renderer = {
+    image(href, title, text) {
+      let titleAttribute = title ? `title="${title}" ` : "";
+      return `
+        <div style="text-align: center;">
+          <img src="${href}" alt="${text}" ${titleAttribute}>
+        </div>`;
+    },
+  };
+
+  marked.use({ renderer });
   content.body = marked.parse(content.body);
   content.path = postPath;
   console.log(content.attributes.tags)
