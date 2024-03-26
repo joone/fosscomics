@@ -5,7 +5,7 @@ description: The computer was developed in earnest during World War II and was m
 tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, Fortran, John Backus, IBM 701, IBM 704, The Art of Computer Programming
 ---
 
-![Figures of J. Presper Eckert & John Mauchly](images/image3.png "J. Presper Eckert & John Mauchly")
+![Figures of J. Presper Eckert & John Mauchly](images/image3.png "J. Presper Eckert & John Mauchly size:50%")
 
 The computer was developed in earnest during World War II and was mainly used for military purposes: breaking German ciphers and calculating the ballistic range of missiles.
 
