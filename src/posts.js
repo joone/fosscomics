@@ -117,6 +117,22 @@ const readArticle = postPath => {
   return content;
 };
 
+function readArticles() {
+  const posts = [];
+  const postPaths = fs.readdirSync(config.dev.postsdir);
+  postPaths.forEach(postPath => {
+    const post = readArticle(postPath);
+    post.path = postPath;
+    posts.push(post);
+  });
+  // sort by date
+  posts.sort(function(a, b) {
+    return new Date(b.attributes.date) - new Date(a.attributes.date);
+  });
+
+  return posts;
+}
+
 const createPosts = posts => {
   posts.forEach(post => {
     if (!fs.existsSync(`${config.dev.outdir}/${post.path}`))
@@ -145,6 +161,6 @@ const createPosts = posts => {
 };
 
 module.exports = {
-  readArticle: readArticle,
+  readArticles: readArticles,
   createPosts: createPosts
 };

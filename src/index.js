@@ -28,12 +28,7 @@ function gatherTags(posts) {
 }
 
 // Read all markdown articles from content/posts and sort them by date
-const posts = fs
-  .readdirSync(config.dev.postsdir)
-  .map(post => postMethods.readArticle(post))
-  .sort(function(a, b) {
-    return new Date(b.attributes.date) - new Date(a.attributes.date);
-  });
+const posts = postMethods.readArticles();
 
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
