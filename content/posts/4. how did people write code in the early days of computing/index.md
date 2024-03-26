@@ -7,22 +7,21 @@ tags: ENIAC, machine code, EDSAC, Assembly language, Multics, Punch card, Fortra
 
 When computers were first introduced commercially, how did people write code for computers? In fact, there was no software similar to what we have today. All functionalities were implemented as functional units in circuits. [ENIAC](https://en.wikipedia.org/wiki/ENIAC) was also able to run various programs by wiring each functional unit and used punch cards as a storage device[&#91;1&#93;][1].
 
-![](images/image1.png)
-
-"This is a computer for arithmetic operations"\
-“That is a computer for breaking German ciphers”\
-"Can I make a computer for ballistics calculation?"\
-"How many relays and vacuum tubes are needed for this?"
+![](images/image1.png "size:80%")
+> "This is a computer for arithmetic operations"\
+> “That is a computer for breaking German ciphers”\
+> "Can I make a computer for ballistics calculation?"\
+> "How many relays and vacuum tubes are needed for this?"
 
 Actual computer programming has been possible since stored-program computers such as [EDVAC](https://en.wikipedia.org/wiki/EDVAC) and [EDSAC](https://en.wikipedia.org/wiki/EDSAC) were introduced in 1949. Basically, the program can be executed after it is loaded into memory.
 
 A program is made up of instructions that the machine can understand, which is called [machine code](https://en.wikipedia.org/wiki/Machine_code). The machine language is difficult for humans to understand because it consists only of binary numbers such as 0 and 1.
 
-![](images/image2.png)
+![Neo scans binary numbers](images/image2.png "size:90%")
 
-So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC \[2].
+So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC[&#91;2&#93;][2].
 
-![](images/image9.png)Operation code, unused, mnemonic, meaning
+![](images/image9.png "Operation code, unused, mnemonic, meaning")
 
 All machine language instructions used in EDSAC are composed of 17 bits. The first column is the operation code, and the second column, 1 bit, is not used. Third column is the operand, representing the address. The last bit indicates whether the current instruction is 17 bits or 35 bits.
 
@@ -38,13 +37,13 @@ In the early days, assembling was done by hand, so the term, hand assembling, wa
 
  If there is no assembly tool, you still have to assemble assembly code manually by looking at the mnemonic conversion table.
 
-![](images/image7.png)
-“I’m writing code”
+![](images/image7.png "size:80%")
+> "I’m writing code"
 
 However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964 \[3], and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.
 
-![](images/image6.png)
-“Finally, I got a computer with a keyboard and a monitor”
+![](images/image6.png "size:80%")
+> "Finally, I got a computer with a keyboard and a monitor"
 
 Early programmers used punched cards to write code. Punch cards were originally used for data storage from the late 19th century, and were used by the US Census Bureau for census purposes. It is easy to understand if you think of the current [OMR](https://en.wikipedia.org/wiki/Optical_mark_recognition) sheet to mark answers.
 
@@ -60,16 +59,20 @@ For example, the early programmers used punch cards as a development tool. First
 Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.
 
 :![img\_0677](images/image4.png)
-“Can you take a look at my code?”\
-“Next person”
+> "Can you take a look at my code?"\
+> "Next person"
 
 The interesting thing is that just copying a punch card is the same as copying a program, so it was possible to copy programs by writing at the time.
 
-![](images/image5.png)
+![](images/image5.png "size:80%")
 
 ## References
+1. [Celebrating Penn Engineering History: ENIAC](http://www.seas.upenn.edu/about-seas/eniac/operation.php)
+2. [EDSAC Initial Orders and Squares Program](http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf)
+3. [History of the Computer Keyboard](http://theinventors.org/library/inventors/blcomputer_keyboard.htm)
+
 [1]: http://www.seas.upenn.edu/about-seas/eniac/operation.php "Celebrating Penn Engineering History: ENIAC"
 
 [2]: http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "EDSAC Initial Orders and Squares Program"
 
-[3]: http://theinventors.org/library/inventors/blcomputer_keyboard.htm "[History of the Computer Keyboard"
+[3]: http://theinventors.org/library/inventors/blcomputer_keyboard.htm "History of the Computer Keyboard"
