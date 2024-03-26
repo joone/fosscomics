@@ -5,8 +5,7 @@ description: The computer was developed in earnest during World War II and was m
 tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, Fortran, John Backus, IBM 701, IBM 704, The Art of Computer Programming
 ---
 
-![](images/image3.png)
-J. Presper Eckert & John Mauchly
+![Figures of J. Presper Eckert & John Mauchly](images/image3.png "J. Presper Eckert & John Mauchly")
 
 The computer was developed in earnest during World War II and was mainly used for military purposes: breaking German ciphers and calculating the ballistic range of missiles.
 
@@ -34,7 +33,7 @@ The company was then expected to supply UNIVAC via contracts with the Army, Navy
 
 Mauchly was also suspected and forced to leave the company, and it took him two years to get back to work. In the meantime, the company was in financial difficulty and it was eventually sold to [Remington Rand](https://en.wikipedia.org/wiki/Remington_Rand) in early 1950.
 
-![](images/image4.png) \
+![](images/image4.png)
 > “Get Bolsheviks out!”
 
 In fact, the idea for the von Neumann architecture was initiated by Mockley and Eckert, but their credits were removed from von Neumann's paper, [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC), dated June 30, 1945. Their business was not successful, also due to political reasons.
