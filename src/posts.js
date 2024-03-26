@@ -66,7 +66,7 @@ const posthtml = data => `
               <div class="footer-info">
                 ${`© ${new Date().getFullYear()} ${
                   config.authorName
-                } |  <a href="https://github.com/joone/archie">Archie Theme</a> | Built with <a href="https://github.com/joone/fosscomics">fosscomics</a>`}
+                } |  <a href="/">Home</a> | Built with <a href="https://github.com/joone/fosscomics">fosscomics</a>`}
               </div>
             </footer>
         </div>
