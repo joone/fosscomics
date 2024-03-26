@@ -2,8 +2,8 @@
 title: 6. The origin of the hacker culture
 date: "2022-12-17"
 image: feature.png
-description: If you visit the Wikipedia page on the History of Programming Languages, you will find a list of the programming languages that were developed in the early days of computing... 
-tags: PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond
+description: The origins of hacker culture trace back to the 1960s, starting with MIT's introduction of the PDP-1 computer. Early enthusiasts, often with backgrounds in mathematics, physics, or engineering, engaged in creating foundational software like Spacewar!, text editors, and music programs. This culture evolved into today's open-source hacker community, expanding with the advent of ARPAnet, the precursor to the internet... 
+tags: hacker, PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond, ARPAnet
 ---
 
 Note: These comics were written with a reference to  “[A Brief History of Hackerdom](https://www.google.com/url?q=http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/\&sa=D\&source=editors\&ust=1711344815826052\&usg=AOvVaw1hhNtgiZ4iwOVv7n966JhY)” by Eric S. Raymond.

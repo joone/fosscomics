@@ -2,7 +2,7 @@
 title: 8. UNIX and C Language
 date: "2023-09-04"
 image: feature.png
-description: The groundbreaking Unix and C language, which would go on to change the world, were being developed...
+description: In the 1960s, while ITS was developed at MIT, AT&T Bell Labs fostered a similar hacker spirit, creating Unix and the C language. Ken Thompson and Dennis Ritchie, transitioning from the Multics project, aimed for simplicity and efficiency, developing Unix on PDP-7 and later porting it to PDP-11. The creation of the C language, evolving from B, allowed Unix to be rewritten in a high-level language, setting a foundational standard for modern computing and operating system development...
 tags: UNIX, C Language, Ken Thompson,  Dennis Ritchie, B language, Bell Labs., Multics, PDP-11, 1970s
 ---
 

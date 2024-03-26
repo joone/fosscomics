@@ -2,7 +2,7 @@
 title: 4. how did people write code in the early days of computing?
 date: "2022-12-03"
 image: feature.png
-description: When computers were first introduced commercially, how did people write code for computers? ...
+description: In the early days of computing, programming was done at the hardware level, with functionality embedded in circuits. ENIAC, for example, ran programs by manual rewiring. With the advent of stored-program computers like EDVAC and EDSAC, programming involved writing machine code, a binary language difficult for humans. Assembly language, using mnemonics for machine instructions, simplified the process. Programmers wrote code on paper, debugged it mentally, then transferred it to punch cards for execution, a tedious process that involved waiting for machine time and results...
 tags: ENIAC, machine code, EDSAC, Assembly language, Multics, Punch card, Fortran
 ---
 

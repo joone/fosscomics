@@ -2,7 +2,7 @@
 title: 2. Alan Turing and Von Neumann
 date: "2019-05-29"
 image: image2.png
-description: story about Alan Turing and Von Neumann
+description: After World War II, countries sought to develop computers. Alan Turing first proposed a theoretical computer model, influencing the design of modern computing. He aimed to prove Gödel's incompleteness theorems by designing a theoretical machine, leading to the Turing machine concept. Concurrently, the U.S. developed ENIAC, a general-purpose computer, evolving into the EDVAC with Von Neumann's input, establishing the foundation for modern computer architecture...
 tags: Alan Turing, Von Neumann, Kurt Göde, EDVAC, EDSAC, Automatic Computing Engine
 ---
 
