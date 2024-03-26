@@ -37,12 +37,12 @@ In the early days, assembling was done by hand, so the term, hand assembling, wa
 
  If there is no assembly tool, you still have to assemble assembly code manually by looking at the mnemonic conversion table.
 
-![](images/image7.png "size:80%")
+![](images/image7.png "size:70%")
 > "I’m writing code"
 
 However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964[&lbrack;3&rbrack;][3], and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.
 
-![](images/image6.png "size:80%")
+![](images/image6.png "size:70%")
 > "Finally, I got a computer with a keyboard and a monitor"
 
 Early programmers used punched cards to write code. Punch cards were originally used for data storage from the late 19th century, and were used by the US Census Bureau for census purposes. It is easy to understand if you think of the current [OMR](https://en.wikipedia.org/wiki/Optical_mark_recognition) sheet to mark answers.
