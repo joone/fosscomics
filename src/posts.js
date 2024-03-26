@@ -29,7 +29,7 @@ const posthtml = data => `
                 <div class="main">
                   <a href="..">F/OSS Comics</a>
                 </div>
-                <nav>
+                <nav class="site-navigation">
                   <a href="/">Home</a>
                   <a href="/posts.html">All posts</a>
                   <a href="/about.html">About</a>
@@ -46,7 +46,7 @@ const posthtml = data => `
                     ${data.body}
                   </section>
               </article>
-              <nav role="navigation" class="site-navigation post-navigation">
+              <nav role="navigation" class="post-navigation">
 			          <h1 class="assistive-text">Post navigation</h1>
                 ${data.previous ? `<div class="nav-previous"><a href="../${data.previous.path}"><span class="meta-nav">←</span>${data.previous.attributes.title}</a></div>` : ""}
                 ${data.next ? `<div class="nav-next"><a href="../${data.next.path}">${data.next.attributes.title}<span class="meta-nav">→</span></a></div>` : ""}

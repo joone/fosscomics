@@ -186,7 +186,7 @@
   h1.assistive-text {
     display: none;
   }
-  nav {
+  nav.post-navigation {
     display: flex;
     justify-content: space-between;
     margin: 1em 0;
