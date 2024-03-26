@@ -46,7 +46,8 @@ const homepage = posts => `
                         <time>${new Date(
                           post.attributes.date
                         ).toDateString()}</time>
-                      <div><img src="/${post.path}/images/${post.attributes.image}" alt="${post.attributes.title}" style="width:40%">
+                      <div class="responsive-image">
+                         <img src="/${post.path}/images/${post.attributes.image}" alt="${post.attributes.title}">
                       </div>
                       <div class="description">${post.attributes.description}</div>
                     </section>`

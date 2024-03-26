@@ -75,7 +75,19 @@
   img {
     max-width: 100%;
   }
-  
+
+  /* Default style */
+   .responsive-image {
+    width: 40%;
+  }
+
+  /* for iOS */
+  @media only screen and (hover: none) and (pointer: coarse){
+    .responsive-image {
+      width: 80%;
+    }
+  }
+
   figure {
     box-sizing: border-box;
     display: inline-block;
