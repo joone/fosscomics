@@ -67,7 +67,7 @@ const listpage = posts => `
 const createAllPostsPage = posts => {
   fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), e => {
     if (e) throw e;
-    console.log(`index.html was created successfully`);
+    console.log(`posts.html was created successfully`);
   });
 };
 

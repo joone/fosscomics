@@ -75,7 +75,7 @@ const homepage = posts => `
 const createHomePage = posts => {
   fs.writeFile(`${config.dev.outdir}/index.html`, homepage(posts), e => {
     if (e) throw e;
-    console.log(`index.html was created successfully`);
+    console.log(`index.html for home was created successfully`);
   });
 };
 

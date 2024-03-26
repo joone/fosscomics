@@ -95,7 +95,7 @@ function createTagListPage(posts) {
       fs.mkdirSync(`${config.dev.outdir}/tags/`);
   fs.writeFile(`${config.dev.outdir}/tags/index.html`, tagListPage(tagArray), e => {
     if (e) throw e;
-    console.log(`index.html for tags was created successfully`);
+    console.log(`tags/index.html for tags was created successfully`);
   });
 
   return tagMap;

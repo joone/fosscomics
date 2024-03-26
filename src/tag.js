@@ -71,7 +71,7 @@ function createTagPage(tag, posts) {
       fs.mkdirSync(`${config.dev.outdir}/tags/${tagPath}`);
   fs.writeFile(`${config.dev.outdir}/tags/${tagPath}/index.html`, tagPage(tag, posts), e => {
     if (e) throw e;
-    console.log(`index.html was created successfully`);
+    console.log(`/tags/${tagPath}/index.html was created successfully`);
   });
 };
 
