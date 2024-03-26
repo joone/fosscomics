@@ -3,7 +3,7 @@ const fs = require("fs");
 const postMethods = require("./posts");
 const aboutMethod = require("./about");
 const config = require("./config");
-const createHomePage = require("./home");
+const home = require("./home");
 const createAllPostsPage = require("./list");
 const createTagPage = require("./tag");
 const createTagListPage = require("./tag_list");
@@ -16,8 +16,8 @@ if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 // Create posts in docs/posts
 postMethods.createPosts(posts);
 
-createHomePage(posts);
-//createPagenation(posts);
+home.createHomePage(posts);
+home.createPagenation(posts);
 createAllPostsPage(posts);
 
 const tagMap = createTagListPage(posts);

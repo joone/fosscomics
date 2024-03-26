@@ -79,4 +79,30 @@ const createHomePage = posts => {
   });
 };
 
-module.exports = createHomePage;
+const createPagenation = posts => {
+  const postsPerPage = 5;
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  if (fs.existsSync(`${config.dev.outdir}/page`))
+    fs.rmdirSync(`${config.dev.outdir}/page`, { recursive: true });
+
+  fs.mkdirSync(`${config.dev.outdir}/page`);
+
+
+  for (let i = 0; i < numPages; i++) {
+    const startIndex = (numPages - i - 1) * postsPerPage;
+    const endIndex = startIndex + postsPerPage;
+    const pagePosts = posts.slice(startIndex, endIndex);
+    fs.writeFile(`${config.dev.outdir}/page/${i + 1}.html`, homepage(pagePosts), e => {
+        if (e) throw e;
+        console.log(`page/${i + 1}.html was created successfully`);
+      }
+    );
+  }
+}
+
+module.exports = {
+  createHomePage: createHomePage,
+  createPagenation: createPagenation
+};
+
