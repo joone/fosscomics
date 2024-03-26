@@ -8,7 +8,9 @@ tags: ITS, hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics
 The hacker culture started with the [Tech Model Railroad Club](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club\&sa=D\&source=editors\&ust=1711344849233469\&usg=AOvVaw2jW8lhPjzCxir-TXAa-SBG) at MIT. This club made moving model trains and studied how the trains would not collide with each other[&lbrack;1&rbrack;][1].
 
 ![](images/image1.png)
-> “How can we keep trains from colliding with each other?” "Well" "Wouldn't it be possible to control the trains with the newly introduced computer PDP-1?" \
+> “How can we keep trains from colliding with each other?”\
+> "Well"\
+> "Wouldn't it be possible to control the trains with the newly introduced computer PDP-1?" \
 > “You control the trains with PDP-1?” \
 > “Yeah, we can implement a train control program.”
 
