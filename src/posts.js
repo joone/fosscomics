@@ -81,11 +81,13 @@ const readArticle = postPath => {
   // Override function
   const renderer = {
     image(href, title, text) {
-      let titleAttribute = title ? `title="${title}" ` : "";
       return `
-        <div style="text-align: center;">
-          <img src="${href}" alt="${text}" ${titleAttribute}>
-        </div>`;
+     <div style="text-align: center;">
+        <figure style="text-align: center;">
+          <img src="${href}" alt="${text}">
+          ${title ? `<figcaption>${title}</figcaption>` : ""}
+        </figure>
+      </div>`;
     },
   };
 
