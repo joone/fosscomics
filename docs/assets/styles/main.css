@@ -9,7 +9,7 @@
   html {
     color: #232333;
     font-family: 'Roboto Mono', monospace;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.6em;
   }
 
@@ -32,7 +32,6 @@
   }
   
   p {
-    font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
   }
   
@@ -47,6 +46,10 @@
     color: #737373;
     margin: 0;
     padding-left: 1em;
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
   
   a {
