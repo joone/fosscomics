@@ -19,7 +19,7 @@ A program is made up of instructions that the machine can understand, which is c
 
 ![Neo scans binary numbers](images/image2.png "size:90%")
 
-So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC[&#91;2&#93;][2].
+So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC[&lbrack;2&rbrack;][2].
 
 ![](images/image9.png "Operation code, unused, mnemonic, meaning")
 
@@ -40,7 +40,7 @@ In the early days, assembling was done by hand, so the term, hand assembling, wa
 ![](images/image7.png "size:80%")
 > "I’m writing code"
 
-However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964 \[3], and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.
+However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964[&lbrack;3&rbrack;][3], and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.
 
 ![](images/image6.png "size:80%")
 > "Finally, I got a computer with a keyboard and a monitor"

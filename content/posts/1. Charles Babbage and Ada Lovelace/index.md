@@ -17,11 +17,12 @@ In the West, in the 17th century, [Pascal](https://en.wikipedia.org/wiki/Pascal%
 
 ![Pascal says,"This mechanical calculator is capable of multiplication and division."](images/image2.png)
 
+## Charles Babbage and his difference engine
 In 1822, the British mathematician Charles Babbage designed a difference engine consisting of memories, an arithmetic unit and input/output devices like the computers we use now, but in a mechanical way.
 
-![A girl is using a abacus](images/image3.png)
+![Charles Babbage and his difference engine](images/image3.png "size:80%")
 
-## Charles Babbage and his difference engine
+
 Ada Lovelace, born in 1815, the daughter of George Gordon Byron, a representative Romantic poet in England, grew up with a single mother because her father had earlier abandoned her family. Since her mother was afraid that her daughter would take after her father, she only allowed Ada to learn mathematics and science instead of literature.
 
  ![Text image: Ada, with a puzzled expression, says, "Why does my mom only want me to learn mathematics?"](images/image10.png)
