@@ -77,7 +77,7 @@ function gatherTags(posts) {
   return tags;
 }
 
-function createTagListPage(articles) {
+function createTagPages(articles) {
 
   //tagArray = Array.from(tags.keys());
 
@@ -104,5 +104,5 @@ function createTagListPage(articles) {
 };
 
 module.exports = {
-  createTagListPage: createTagListPage
+  createTagPages: createTagPages
 }
