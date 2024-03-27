@@ -32,7 +32,7 @@ const posthtml = data => `
         <meta property="og:description" content="${data.attributes.description}" />
         <meta property="og:image" content="${config.blogsite}/${data.path}/images/${data.attributes.image}" />
 
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="${config.twitter}" />
         <meta name="twitter:title" content="${data.attributes.title}" />
         <meta name="twitter:description" content="${data.attributes.description}" />
