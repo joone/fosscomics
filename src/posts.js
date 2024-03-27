@@ -60,6 +60,13 @@ const posthtml = data => `
                   <section class="body">
                     ${data.body}
                   </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        ${data.attributes.tags.map(tag => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
+                      </ul>
+                    </nav>
+                  </div>
               </article>
               <nav role="navigation" class="post-navigation">
 			          <h1 class="assistive-text">Post navigation</h1>
@@ -154,7 +161,10 @@ const readArticle = postPath => {
   marked.use({ renderer });
   content.body = marked.parse(content.body);
   content.path = postPath;
-  console.log(content.attributes.tags)
+  const tagArray = content.attributes.tags.split(",");
+  const trimedTagArray = tagArray.map((tag) => tag.trim());
+  content.attributes.tags = trimedTagArray;
+
   return content;
 };
 

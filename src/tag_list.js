@@ -61,9 +61,8 @@ const tagListPage = tags => `
 function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
   posts.forEach(post => {
-    const tagArray = post.attributes.tags.split(",");
-    tagArray.forEach(tag => {
-      tag = tag.trim(); // Remove leading and trailing whitespace
+   // const tagArray = post.attributes.tags.split(",");
+   post.attributes.tags.forEach(tag => {
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
