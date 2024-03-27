@@ -11,13 +11,13 @@ In the 1960's, [the Incompatible Timesharing System (ITS)](https://en.wikipedia.
 The groundbreaking Unix and C language, which would go on to change the world, were being developed.
 
 ![](images/image15.png "MIT vs. Bell Lab.")
-> “I feel the force somewhere…”                                          
+> "I feel the force somewhere…"
 
 Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also working on ITS and Unix, including [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) and [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs.
 
 ![](images/image1.png)
 > "I think we need to step away from the Multics project now."\
-> “Yeah, the development time has become way longer than we expected."
+> "Yeah, the development time has become way longer than we expected."
 
 The Multics project began in 1964, but due to the large code size and complexity, the schedule fell far behind Bell Labs' expectations.
 
