@@ -13,12 +13,12 @@ const articles = posts.renderArticles();
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
 // Create posts in docs/posts
-posts.createPosts(articles);
+posts.createPostPages(articles);
 
 home.createPagenation(articles);
 list.createAllPostsPage(articles);
 tag.createTagPages(articles);
 
 // Create about page
-about.createAbout(config.dev.about);
+about.createAboutPage(config.dev.about);
 

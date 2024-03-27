@@ -194,7 +194,7 @@ function renderArticles() {
   return posts;
 }
 
-const createPosts = posts => {
+const createPostPages = posts => {
   posts.forEach(post => {
     if (fs.existsSync(`${config.dev.outdir}/${post.path}`))
       fs.rmdirSync(`${config.dev.outdir}/${post.path}`, { recursive: true });
@@ -225,5 +225,5 @@ const createPosts = posts => {
 
 module.exports = {
   renderArticles: renderArticles,
-  createPosts: createPosts
+  createPostPages: createPostPages
 };

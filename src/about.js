@@ -84,7 +84,7 @@ const readAbout = aboutPath => {
   return content;
 };
 
-const createAbout = aboutPath => {
+const createAboutPage = aboutPath => {
   const about = readAbout(aboutPath);
   fs.writeFile(
     `${config.dev.outdir}/about.html`,
@@ -98,5 +98,5 @@ const createAbout = aboutPath => {
 } 
 
 module.exports = {
-  createAbout: createAbout
+  createAboutPage: createAboutPage
 };
