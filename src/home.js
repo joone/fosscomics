@@ -27,7 +27,7 @@ const homepage = (posts, prev, next) => `
         <meta property="og:image" content="${config.image}" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="${config.blogsite}" />
+        <meta name="twitter:site" content="${config.twitter}" />
         <meta name="twitter:title" content="${config.blogName}" />
         <meta name="twitter:description" content="${config.blogDescription}" />
         <meta name="twitter:image" content="${config.image}" />
