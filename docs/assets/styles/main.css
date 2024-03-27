@@ -40,16 +40,21 @@
     border-top: 3px dotted var(--bordercl);
     margin: 1em 0;
   }
-  
-  blockquote {
-    border-left: 3px solid var(--bordercl);
-    color:rgb(99, 108, 118);
-    margin: 0;
-    padding-left: 1em;
 
-    font-family: 'Comic Neue', cursive;
-    font-weight: bold;
-    font-size: 1.1rem;
+
+  .blockquote-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  blockquote {
+    margin: 0;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
   }
   
   a {
