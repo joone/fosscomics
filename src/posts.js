@@ -27,13 +27,13 @@ const posthtml = data => `
         <meta property="og:url" content="${config.blogsite}/${data.path}/" />
         <meta property="og:title" content="${data.attributes.title}" />
         <meta property="og:description" content="${data.attributes.description}" />
-        <meta property="og:image" content="${data.attributes.image}" />
+        <meta property="og:image" content="${config.blogsite}/${data.path}/images/${data.attributes.image}" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@fosscomics" />
         <meta name="twitter:title" content="${data.attributes.title}" />
         <meta name="twitter:description" content="${data.attributes.description}" />
-        <meta name="twitter:image" content="${data.attributes.image}" />
+        <meta name="twitter:image" content="${config.blogsite}/${data.path}/images/${data.attributes.image}" />
     </head>
     <body>
         <div class="content">
