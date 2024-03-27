@@ -9,21 +9,21 @@ const createTagPage = require("./tag");
 const createTagListPage = require("./tag_list");
 
 // Read all markdown articles from content/posts and sort them by date
-const posts = postMethods.renderArticles();
+const articles = postMethods.renderArticles();
 
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
 // Create posts in docs/posts
-postMethods.createPosts(posts);
+postMethods.createPosts(articles);
 
-home.createPagenation(posts);
-createAllPostsPage(posts);
+home.createPagenation(articles);
+createAllPostsPage(articles);
 
-const tagMap = createTagListPage(posts);
+const tagMap = createTagListPage(articles);
 
-for (let [tag, posts] of tagMap) {
-  console.log(tag, posts);
-  createTagPage(tag, posts);
+for (let [tag, articles] of tagMap) {
+  console.log(tag, articles);
+  createTagPage(tag, articles);
 }
 
 // Create about page
