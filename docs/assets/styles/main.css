@@ -74,13 +74,23 @@
     font-weight: bold;
   }
 
-  /*
+/*
   ul.pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+   ul.pagination {
     display: block;
     text-align: right;
   }
-  */
-  
+*/
+
+  ul.pagination-post {
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* Images */
   img {
     max-width: 100%;

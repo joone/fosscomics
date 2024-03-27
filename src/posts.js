@@ -73,11 +73,14 @@ const posthtml = data => `
                     </nav>
                   </div>
               </article>
-              <nav role="navigation" class="post-navigation">
-			          <h1 class="assistive-text">Post navigation</h1>
-                ${data.previous ? `<div class="nav-previous"><a href="../${data.previous.path}"><span class="meta-nav">←</span>${data.previous.attributes.title}</a></div>` : ""}
-                ${data.next ? `<div class="nav-next"><a href="../${data.next.path}">${data.next.attributes.title}<span class="meta-nav">→</span></a></div>` : ""}
-              </nav>
+              <ul class="pagination-post">
+                <span class="page-item page-prev">
+                ${data.previous ? `<a href="../${data.previous.path}" class="page-link" aria-label="Previous"><span aria-hidden="true">← ${data.previous.attributes.title}</span></a>` : ""}
+                </span>
+                <span class="page-item page-next">
+                ${data.next ? `<a href="../${data.next.path}" class="page-link" aria-label="Next"><span aria-hidden="true">${data.next.attributes.title} →</span></a>` : ""}
+                </span>
+              </ul>
               <div class="comments border">
                 <script src="https://utteranc.es/client.js"
                             repo="joone/fosscomics"
