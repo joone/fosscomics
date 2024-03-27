@@ -24,7 +24,7 @@ const posthtml = data => `
         <meta name="description" content="${data.attributes.description}" />
         <meta property="article:author" content="${config.authorName}" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="${config.blogsite}/${data.path}" />
+        <meta property="og:url" content="${config.blogsite}/${data.path}/" />
         <meta property="og:title" content="${data.attributes.title}" />
         <meta property="og:description" content="${data.attributes.description}" />
         <meta property="og:image" content="${data.attributes.image}" />
