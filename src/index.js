@@ -21,9 +21,8 @@ list.createAllPostsPage(articles);
 
 const tagMap = tagList.createTagListPage(articles);
 
-for (let [tag, articles] of tagMap) {
-  console.log(tag, articles);
-  tagPage.createTagPage(tag, articles);
+for (let [tag, posts] of tagMap) {
+  tagPage.createTagPage(tag, posts);
 }
 
 // Create about page
