@@ -12,7 +12,7 @@ Note: These comics were written with a reference to  “[A Brief History of Hac
 > “In the beginning, there were real programmers.”
 
 ![](images/image1.png "size:70%")
-> “What is a real programmer?”
+> “What is a real programmer?”\
 > “I have been practicing machine coding for 30 years”
 
 ![](images/image7.png "size:70%")
