@@ -73,7 +73,7 @@ const posthtml = data => `
                 ${data.previous ? `<div class="nav-previous"><a href="../${data.previous.path}"><span class="meta-nav">←</span>${data.previous.attributes.title}</a></div>` : ""}
                 ${data.next ? `<div class="nav-next"><a href="../${data.next.path}">${data.next.attributes.title}<span class="meta-nav">→</span></a></div>` : ""}
               </nav>
-              <div class="comments">
+              <div class="comments border">
                 <script src="https://utteranc.es/client.js"
                             repo="joone/fosscomics"
                             issue-term="pathname"
