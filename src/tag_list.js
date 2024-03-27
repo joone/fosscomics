@@ -100,4 +100,6 @@ function createTagListPage(posts) {
   return tagMap;
 };
 
-module.exports = createTagListPage;
+module.exports = {
+  createTagListPage: createTagListPage
+}

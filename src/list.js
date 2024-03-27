@@ -71,4 +71,6 @@ const createAllPostsPage = posts => {
   });
 };
 
-module.exports = createAllPostsPage;
+module.exports = {
+  createAllPostsPage: createAllPostsPage
+};

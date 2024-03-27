@@ -75,4 +75,6 @@ function createTagPage(tag, posts) {
   });
 };
 
-module.exports = createTagPage;
+module.exports = {
+  createTagPage: createTagPage
+}
