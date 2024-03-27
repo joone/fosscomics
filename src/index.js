@@ -5,7 +5,6 @@ const about = require("./about");
 const config = require("./config");
 const home = require("./home");
 const list = require("./list");
-const tagPage = require("./tag");
 const tagList = require("./tag_list");
 
 // Read all markdown articles from content/posts and sort them by date
@@ -18,12 +17,7 @@ posts.createPosts(articles);
 
 home.createPagenation(articles);
 list.createAllPostsPage(articles);
-
-const tagMap = tagList.createTagListPage(articles);
-
-for (let [tag, posts] of tagMap) {
-  tagPage.createTagPage(tag, posts);
-}
+tagList.createTagListPage(articles);
 
 // Create about page
 about.createAbout(config.dev.about);

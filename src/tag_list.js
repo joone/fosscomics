@@ -1,5 +1,6 @@
 const config = require("./config");
 const fs = require("fs");
+const tagPage = require("./tag");
 
 const tagListPage = tags => `
 <!DOCTYPE html>
@@ -76,11 +77,11 @@ function gatherTags(posts) {
   return tags;
 }
 
-function createTagListPage(posts) {
+function createTagListPage(articles) {
 
   //tagArray = Array.from(tags.keys());
 
-  const tagMap = gatherTags(posts);
+  const tagMap = gatherTags(articles);
 
   let tagArray = [];
   for (let [tag, posts] of tagMap) {
@@ -97,7 +98,9 @@ function createTagListPage(posts) {
     console.log(`tags/index.html for tags was created successfully`);
   });
 
-  return tagMap;
+  for (let [tag, posts] of tagMap) {
+    tagPage.createTagPage(tag, posts);
+  }
 };
 
 module.exports = {
