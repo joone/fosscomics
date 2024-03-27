@@ -9,7 +9,6 @@ const posthtml = data => `
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${data.attributes.description}" />
         <link rel="stylesheet" href="../assets/styles/fonts.css">
         <link rel="stylesheet" href="../assets/styles/main.css">
         <!-- Google tag (gtag.js) -->
@@ -22,6 +21,19 @@ const posthtml = data => `
           gtag('config', 'G-M0CWE9F5HJ');
         </script>
         <title>${data.attributes.title}</title>
+        <meta name="description" content="${data.attributes.description}" />
+        <meta property="article:author" content="${config.authorName}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="${config.blogsite}/${data.path}" />
+        <meta property="og:title" content="${data.attributes.title}" />
+        <meta property="og:description" content="${data.attributes.description}" />
+        <meta property="og:image" content="${data.attributes.image}" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:title" content="${data.attributes.title}" />
+        <meta name="twitter:description" content="${data.attributes.description}" />
+        <meta name="twitter:image" content="${data.attributes.image}" />
     </head>
     <body>
         <div class="content">
