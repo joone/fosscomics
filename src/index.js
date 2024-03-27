@@ -15,5 +15,5 @@ const postArray  = posts.createPostPages();
 home.createPagenation(postArray);
 list.createAllPostsPage(postArray);
 tagList.createTagPages(postArray);
-about.createAboutPage(config.dev.about);
+about.createAboutPage();
 

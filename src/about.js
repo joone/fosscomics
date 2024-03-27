@@ -76,7 +76,8 @@ const posthtml = data => `
 </html>
 `;
 
-const readAbout = aboutPath => {
+const readAbout = () => {
+  const aboutPath = config.dev.about;
   const data = fs.readFileSync(aboutPath, "utf8");
   const content = fm(data);
   content.body = marked.parse(content.body);
@@ -84,8 +85,8 @@ const readAbout = aboutPath => {
   return content;
 };
 
-const createAboutPage = aboutPath => {
-  const about = readAbout(aboutPath);
+const createAboutPage = () => {
+  const about = readAbout();
   fs.writeFile(
     `${config.dev.outdir}/about.html`,
     posthtml(about),
@@ -94,8 +95,7 @@ const createAboutPage = aboutPath => {
       console.log(`${about.path}/about.html was created successfully`);
     }
   );
-
-} 
+}
 
 module.exports = {
   createAboutPage: createAboutPage
