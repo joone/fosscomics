@@ -23,6 +23,9 @@ const posthtml = data => `
         <title>${data.attributes.title}</title>
         <meta name="description" content="${data.attributes.description}" />
         <meta property="article:author" content="${config.authorName}" />
+        <meta property="article:published_time" content="${data.attributes.date}" />
+        <meta property="article:tag" content="${data.attributes.tags}" />
+
         <meta property="og:type" content="article" />
         <meta property="og:url" content="${config.blogsite}/${data.path}/" />
         <meta property="og:title" content="${data.attributes.title}" />
