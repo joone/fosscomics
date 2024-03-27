@@ -101,7 +101,7 @@ const posthtml = data => `
 </html>
 `;
 
-const readArticle = postPath => {
+const renderArticle = postPath => {
   const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}/index.md`, "utf8");
   const content = fm(data);
 
@@ -168,11 +168,11 @@ const readArticle = postPath => {
   return content;
 };
 
-function readArticles() {
+function renderArticles() {
   const posts = [];
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach(postPath => {
-    const post = readArticle(postPath);
+    const post = renderArticle(postPath);
     post.path = postPath;
     posts.push(post);
   });
@@ -224,6 +224,6 @@ const createPosts = posts => {
 };
 
 module.exports = {
-  readArticles: readArticles,
+  renderArticles: renderArticles,
   createPosts: createPosts
 };

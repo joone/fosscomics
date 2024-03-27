@@ -9,7 +9,7 @@ const createTagPage = require("./tag");
 const createTagListPage = require("./tag_list");
 
 // Read all markdown articles from content/posts and sort them by date
-const posts = postMethods.readArticles();
+const posts = postMethods.renderArticles();
 
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
