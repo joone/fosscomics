@@ -73,6 +73,13 @@
     content: '* ';
     font-weight: bold;
   }
+
+  /*
+  ul.pagination {
+    display: block;
+    text-align: right;
+  }
+  */
   
   /* Images */
   img {
@@ -191,10 +198,11 @@
   }
   nav.post-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin: 2em 0;
     font-size: small;
   }
+  /* delete */
 
   /* Footer */
   footer {
