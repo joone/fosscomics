@@ -169,11 +169,21 @@ const renderArticle = postPath => {
     },
     blockquote(quote) {
       return `<div class="blockquote-container"><blockquote>${quote}</blockquote></div>`;
+    },
+    paragraph(text) {
+      // remove <p> surrounding the image
+      if (text.includes('<figure style="text-align: center;">')) {
+        return text;
+      } else {
+        return `<p>${text}</p>`;
+      }
     }
   };
 
   marked.use({ renderer });
   content.body = marked.parse(content.body);
+  // remove <p></p> and <p> </p> from the beginning and end of the content.body
+  content.body = content.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
   content.path = postPath;
   const tagArray = content.attributes.tags.split(",");
   const trimedTagArray = tagArray.map((tag) => tag.trim());
