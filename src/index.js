@@ -27,6 +27,5 @@ for (let [tag, articles] of tagMap) {
 }
 
 // Create about page
-const about = aboutMethod.readAbout(config.dev.about);
-aboutMethod.createAbout(about);
+aboutMethod.createAbout(config.dev.about);
 
