@@ -20,10 +20,9 @@ const homepage = (posts, prev, next) => `
         </script>
         <title>${config.blogName}</title>
         <meta name="description" content="${config.blogDescription}" />
-        <meta property="article:author" content="${config.authorName}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="${config.blogsite}" />
-        <meta property="og:title" content="${config.blogName}" />
+        <meta property="og:site_name" content="${config.blogName}" />
         <meta property="og:description" content="${config.blogDescription}" />
         <meta property="og:image" content="${config.image}" />
 

@@ -5,7 +5,7 @@ const config = {
     "Open Source Developer and Comic Artist",
   authorWebsite: "https://fosscomics.com",
   blogsite: "https://fosscomics.com",
-  blogDescription: "Comics about Free and Open Source Software",
+  blogDescription: "F/OSS Comics is a comic series dedicated to Free and Open Source Software. The comics aim to educate and entertain readers about the world of free and open source software.",
   dev: {
     postsdir: "./content/posts",
     content: "./content",
