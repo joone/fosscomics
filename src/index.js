@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const posts = require("./posts");
-const aboutMethod = require("./about");
+const about = require("./about");
 const config = require("./config");
 const home = require("./home");
 const createAllPostsPage = require("./list");
@@ -27,5 +27,5 @@ for (let [tag, articles] of tagMap) {
 }
 
 // Create about page
-aboutMethod.createAbout(config.dev.about);
+about.createAbout(config.dev.about);
 
