@@ -11,11 +11,11 @@ const tag = require("./tag_list");
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
 // Create posts in docs/posts
-const articles  = posts.createPostPages();
+const postArray  = posts.createPostPages();
 
-home.createPagenation(articles);
-list.createAllPostsPage(articles);
-tag.createTagPages(articles);
+home.createPagenation(postArray);
+list.createAllPostsPage(postArray);
+tag.createTagPages(postArray);
 
 // Create about page
 about.createAboutPage(config.dev.about);
