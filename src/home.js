@@ -51,7 +51,7 @@ const homepage = (posts, prev, next) => `
                 ${posts
                   .map(
                     post => `<section class="list-item">
-                    <h1><a href="./${post.path}">${
+                    <h1><a href="/${post.path}">${
                       post.attributes.title
                     }</a></h1>
                         <time>${new Date(
@@ -61,6 +61,7 @@ const homepage = (posts, prev, next) => `
                          <img src="/${post.path}/images/${post.attributes.image}" alt="${post.attributes.title}">
                       </div>
                       <div class="description">${post.attributes.description}</div>
+                      <a class="readmore" href="/${post.path}">Read more ⟶</a>
                     </section>`
                   )
                   .join("")}
