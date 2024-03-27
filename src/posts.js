@@ -168,6 +168,8 @@ const renderArticle = postPath => {
   return content;
 };
 
+
+// Read all markdown articles from content/posts and sort them by date
 function renderArticles() {
   const posts = [];
   const postPaths = fs.readdirSync(config.dev.postsdir);
@@ -194,7 +196,9 @@ function renderArticles() {
   return posts;
 }
 
-const createPostPages = posts => {
+function createPostPages() {
+  const posts = renderArticles();
+
   posts.forEach(post => {
     if (fs.existsSync(`${config.dev.outdir}/${post.path}`))
       fs.rmdirSync(`${config.dev.outdir}/${post.path}`, { recursive: true });
@@ -221,9 +225,10 @@ const createPostPages = posts => {
       );
     });
   });
+
+  return posts;
 };
 
 module.exports = {
-  renderArticles: renderArticles,
   createPostPages: createPostPages
 };
