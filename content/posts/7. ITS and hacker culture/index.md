@@ -46,18 +46,18 @@ After that, students interested in train control in the Tech Model Railway Club 
 
 ![](images/image2.png "size:70%")
 
-And, for fun, the students created the first ever video game called [Spacewar!](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Spacewar!\&sa=D\&source=editors\&ust=1711344849235786\&usg=AOvVaw3ldha_w59EoJjQdfrrO1Vu)
+And, for fun, the students created the first ever video game called [Spacewar!](https://en.wikipedia.org/wiki/Spacewar!)
 
 ![](images/image10.png "size:80%")
 > “Mission complete,  I’m gonna go to the AI Lab.”
 
-At the time, the MIT Artificial Intelligence Lab (AI Lab) was the birthplace of hacker culture, and it was developing an operating system called [Multics](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Multics\&sa=D\&source=editors\&ust=1711344849236077\&usg=AOvVaw3luQGTBxMhxx6q0VoYk-Tw)  with GE and Bell Labs. However, due to different opinions on operating system development, they began to develop their own operating system called ITS (Incompatible Time Sharing System) from the late 1960s.
+At the time, the MIT Artificial Intelligence Lab (AI Lab) was the birthplace of hacker culture, and it was developing an operating system called [Multics](https://en.wikipedia.org/wiki/Multics) with GE and Bell Labs. However, due to different opinions on operating system development, they began to develop their own operating system called ITS (Incompatible Time Sharing System) from the late 1960s.
 
 ![](images/image11.png "size:80%")
 > “When the heck does Multics development end?”\
 > “Should we rather create our own operating system?”
 
-MIT hacker  [Tom Knight](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Tom_Knight_\(scientist\)\&sa=D\&source=editors\&ust=1711344849236352\&usg=AOvVaw1L0Ronjm_V88wZk4O2F71E)(right) developed the first kernel for ITS.
+MIT hacker [Tom Knight](https://en.wikipedia.org/wiki/Tom_Knight_(scientist))(right) developed the first kernel for ITS.
 
 ![](images/image9.png)
 > “We had created a compatible time sharing system before, so let's name it ITS.” \
