@@ -3,6 +3,11 @@ const fm = require("front-matter");
 const fs = require("fs");
 const marked = require("./marked");
 
+function formatDate(date) {
+  const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  return date.toLocaleDateString('en-US', options); // For US English format
+}
+
 const posthtml = data => `
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +60,7 @@ const posthtml = data => `
               <article>
                   <div class="title">
                     <h1 class="title">${data.attributes.title}</h1>
-                    <div class="meta">Posted on ${new Date(data.attributes.date).toDateString()}</div>
+                    <div class="meta">Posted on ${formatDate(new Date(data.attributes.date))}</div>
                   </div>
                   <section class="body">
                     ${data.body}

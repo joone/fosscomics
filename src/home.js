@@ -1,6 +1,11 @@
 const config = require("./config");
 const fs = require("fs");
 
+function formatDate(date) {
+  const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  return date.toLocaleDateString('en-US', options); // For US English format
+}
+
 const homepage = (posts, prev, next) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -54,9 +59,7 @@ const homepage = (posts, prev, next) => `
                     <h1><a href="/${post.path}">${
                       post.attributes.title
                     }</a></h1>
-                        <time>${new Date(
-                          post.attributes.date
-                        ).toDateString()}</time>
+                        <time>${formatDate(new Date(post.attributes.date))}</time>
                       <div class="responsive-image">
                          <img src="/${post.path}/images/${post.attributes.image}" alt="${post.attributes.title}">
                       </div>
