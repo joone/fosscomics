@@ -22,7 +22,7 @@ If you visit [the Wikipedia page on the History of Programming Languages](https:
 
 Of course, we must also acknowledge the contributions of female programmers during this time period.
 
-.![](images/image4.png "size:60%")
+![](images/image4.png "size:60%")
 > “A lot of the real programmers in the beginning were obviously women such as [Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_\(software_engineer\)) and Grace Hopper."
 
 This culture of real programmers has developed computing and networks. In addition, it has evolved into the open source hacker culture of today[&lbrack;1&rbrack;][1].
