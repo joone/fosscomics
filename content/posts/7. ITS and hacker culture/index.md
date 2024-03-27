@@ -15,9 +15,9 @@ The hacker culture started with the [Tech Model Railroad Club](https://www.googl
 > “You control the trains with PDP-1?” \
 > “Yeah, we can implement a train control program.”
 
-For reference, the video below shows why a computer is needed to control a moving model train. \
-![](http://i3.ytimg.com/vi/dqLUUXWgba4/hqdefault.jpg) \
-[https://www.youtube.com/watch?v=dqLUUXWgba4](https\://www\.youtube.com/watch?v=dqLUUXWgba4)
+For reference, the video below shows why a computer is needed to control a moving model train.
+![](http://i3.ytimg.com/vi/dqLUUXWgba4/hqdefault.jpg)
+[Check out the video on YouTube](https://www.youtube.com/watch?v=dqLUUXWgba4 "align:center")
 
 The PDP models made by [DEC](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Programmed_Data_Processor\&sa=D\&source=editors\&ust=1711344849234212\&usg=AOvVaw3XYWFQH-2tnwXYFckFfCPg) contributed greatly to the hacker culture and the birth of free software. It was a kind of mini computer that was sold at a relatively low price and was particularly popular in universities. For reference, DEC donated a PDP-1 to MIT in 1961[&lbrack;2&rbrack;][2].
 

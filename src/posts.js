@@ -128,6 +128,27 @@ const readArticle = postPath => {
         </div>
       `;
     },
+    link(href, title, text) {
+      let align = null;
+      if (title && title.includes('align:')) {
+        // align: left, right, center
+        const alignMatch = title.match(/align:(left|right|center)/);
+        if (alignMatch && alignMatch[1]) {
+          align = alignMatch[1];
+          // Remove the alignment specification from the title
+          title = title.replace(/align:(left|right|center)/g, '').trim();
+        }
+      }
+      // if align is not null, add div with text-align style
+      if (align) {
+        return `
+          <div style="text-align: ${align};">
+            <a href="${href} "${title ? `title="${title}"` : ""}>${text}</a>
+          </div>`;
+      } else {
+        return `<a href="${href} "${title ? `title="${title}"` : ""}>${text}</a>`;
+      }
+    }
   };
 
   marked.use({ renderer });
