@@ -1,12 +1,11 @@
 const fs = require("fs");
 
-const posts = require("./posts");
 const about = require("./about");
 const config = require("./config");
 const home = require("./home");
 const list = require("./list");
+const posts = require("./posts");
 const tag = require("./tag_list");
-
 
 if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
