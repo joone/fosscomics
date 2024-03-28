@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/fonts.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M0CWE9F5HJ');
+        </script>
+        <title>8. UNIX and C Language</title>
+        <meta name="description" content="In the 1960s, while ITS was developed at MIT, AT&T Bell Labs fostered a similar hacker spirit, creating Unix and the C language. Ken Thompson and Dennis Ritchie, transitioning from the Multics project, aimed for simplicity and efficiency, developing Unix on PDP-7 and later porting it to PDP-11. The creation of the C language, evolving from B, allowed Unix to be rewritten in a high-level language, setting a foundational standard for modern computing and operating system development..." />
+        <meta property="article:author" content="Joone Hur" />
+        <meta property="article:published_time" content="2023-09-04" />
+        <meta property="article:tag" content="UNIX,C Language,Ken Thompson,Dennis Ritchie,B language,Bell Labs.,Multics,PDP-11,1970s" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://fosscomics.com/8. UNIX and C Language/" />
+        <meta property="og:title" content="8. UNIX and C Language" />
+        <meta property="og:description" content="In the 1960s, while ITS was developed at MIT, AT&T Bell Labs fostered a similar hacker spirit, creating Unix and the C language. Ken Thompson and Dennis Ritchie, transitioning from the Multics project, aimed for simplicity and efficiency, developing Unix on PDP-7 and later porting it to PDP-11. The creation of the C language, evolving from B, allowed Unix to be rewritten in a high-level language, setting a foundational standard for modern computing and operating system development..." />
+        <meta property="og:image" content="https://fosscomics.com/8. UNIX and C Language/images/feature.png" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:title" content="8. UNIX and C Language" />
+        <meta name="twitter:description" content="In the 1960s, while ITS was developed at MIT, AT&T Bell Labs fostered a similar hacker spirit, creating Unix and the C language. Ken Thompson and Dennis Ritchie, transitioning from the Multics project, aimed for simplicity and efficiency, developing Unix on PDP-7 and later porting it to PDP-11. The creation of the C language, evolving from B, allowed Unix to be rewritten in a high-level language, setting a foundational standard for modern computing and operating system development..." />
+        <meta name="twitter:image" content="https://fosscomics.com/8. UNIX and C Language/images/feature.png" />
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  <a href="..">F/OSS Comics</a>
+                </div>
+                <nav class="site-navigation">
+                  <a href="/">Home</a>
+                  <a href="/posts.html">All posts</a>
+                  <a href="/about.html">About</a>
+                  <a href="/tags">Tags</a>
+                </nav>
+            </header>
+            <main>
+              <article>
+                  <div class="title">
+                    <h1 class="title">8. UNIX and C Language</h1>
+                    <div class="meta">Posted on Sep 3, 2023</div>
+                  </div>
+                  <section class="body">
+                    <p>In the 1960&#39;s, <a href="https://en.wikipedia.org/wiki/Incompatible_Timesharing_System ">the Incompatible Timesharing System (ITS)</a> was being heavily developed at MIT. Meanwhile, at another location on the east coast of the United States, there was another lab with the same hacker spirit: AT&amp;T Bell Laboratories.</p><p>The groundbreaking Unix and C language, which would go on to change the world, were being developed.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image15.png" alt="">
+            <figcaption>MIT vs. Bell Lab.</figcaption>
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;I feel the force somewhere…&quot;</p></blockquote></div><p>Coincidentally, the people who were working on <a href="https://en.wikipedia.org/wiki/Multics ">Multics</a> were also working on ITS and Unix, including <a href="https://en.wikipedia.org/wiki/Ken_Thompson ">Ken Thompson</a> and <a href="https://en.wikipedia.org/wiki/Dennis_Ritchie ">Dennis Ritchie</a> from Bell Labs.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image1.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;I think we need to step away from the Multics project now.&quot;<br>&quot;Yeah, the development time has become way longer than we expected.&quot;</p></blockquote></div><p>The Multics project began in 1964, but due to the large code size and complexity, the schedule fell far behind Bell Labs&#39; expectations.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image4.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;Overdesigned and overbuilt and over everything.&quot;<br>&quot;It was close to unusable<a href="https://en.wikipedia.org/wiki/Multics "title="Multics, Wikipedia">&lbrack;1&rbrack;</a>&quot;</p></blockquote></div><p>In 1969, Bell Lab. pulled out of the development of Multics.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image12.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“We’re leaving because we can&#39;t meet our schedule.”</p></blockquote></div><p>Based on his experience developing Multics, Ken Thompson creates a new operating system by himself at Bell Labs.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image11.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“Dennis, I&#39;m building a new operating system, taking some ideas from Multics. I&#39;m making it smaller and simpler.” <br>“That’s a good idea. Shall I join you?”</p></blockquote></div><p>Ken Thompson reimplemented many of the key features he had developed in Multics in Unix.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image6.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“I can&#39;t make something out of nothing”</p></blockquote></div><p>He adapted the file system he had already implemented in Multics in Unix on PDP-7, and Dennis Richie joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on PDP-7.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image14.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“First of all, I&#39;m working on a file system. How about we call it Unix?” <br>“How about mapping devices to files?”</p></blockquote></div><p>Then, <a href="https://en.wikipedia.org/wiki/PDP-11 ">PDP-11</a> was introduced, which differed in CPU instructions from the PDP-7.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image2.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;Ken, we have a new PDP-11, why don&#39;t we port Unix to it?&quot; <br>&quot;That&#39;s a great idea, but the problem is that the CPU instructions are different, so we&#39;ll have to re-write the Unix code with the PDP-11 assembly language.&quot;</p></blockquote></div>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image9.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“Wow, I finally finished porting!&quot; <br>&quot;But we can&#39;t rewrite the Unix code in assembly every time we buy a new computer, right?</p></blockquote></div>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image8.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“Dennis, shall we rewrite Unix in the B language? Now we are able to build an OS kernel without assembly.&quot; <br>&quot;Maybe we can port Unix to PDP-11 using the B language&quot;  </p></blockquote></div><p>B language was also developed for use in Multics by Ken Thompson and Dennis Ritchie in 1969.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image5.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;First we need to port the B language to the PDP-11, but there&#39;s a problem.&quot;</p></blockquote></div><p>In 1971, Dennis Ritchie added a character type to the B language and rewrote the compiler code to generate PDP-11 machine code[3].</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image10.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“Dennis, how&#39;s the B language porting going?” <br>“There are a lot of issues, first of all, it’s hard to access the character data type on PDP-11.”</p></blockquote></div>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image13.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;Haha, why don&#39;t you completely update the B language this time?” <br>&quot;I might have to rewrite it from scratch.&quot;</p></blockquote></div><p>In 1973, basic functionalities were complete, and it was called C, which was just the next version of B.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image3.png" alt="">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>“How about calling it C?” <br>&quot;Sounds good&quot;</p></blockquote></div><p>Dennis Richie began rewriting Unix in C that same year.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image7.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;Hmm, I don&#39;t have to code in assembly anymore&quot;</p></blockquote></div><p>Dennis added the structure type to the C language to define the user&#39;s custom data. Now, the C language is powerful enough to write Unix kernels.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/image16.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <p>Although Unix and C were created in a short period of time by Ken Thompson and Dannis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.</p><h2>References</h2>
+<ol>
+<li>Multics, <a href="https://en.wikipedia.org/wiki/Multics ">wikipedia</a></li>
+<li>Unix, <a href="https://en.wikipedia.org/wiki/Unix ">wikipedia</a></li>
+<li>History of Unix, <a href="https://en.wikipedia.org/wiki/History_of_Unix ">wikipedia</a></li>
+<li>The Development of the C Language <a href="https://www.bell-labs.com/usr/dmr/www/chist.html ">bell-labs.com</a></li>
+<li>The Evolution of the Unix Time-sharing System <a href="http://www.read.seas.harvard.edu/~kohler/class/aosref/ritchie84evolution.pdf ">www.read.seas.harvard.edu/~kohler</a></li>
+</ol>
+
+                  </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        <li><a href="/tags/UNIX">UNIX</a></li><li><a href="/tags/C_Language">C Language</a></li><li><a href="/tags/Ken_Thompson">Ken Thompson</a></li><li><a href="/tags/Dennis_Ritchie">Dennis Ritchie</a></li><li><a href="/tags/B_language">B language</a></li><li><a href="/tags/Bell_Labs.">Bell Labs.</a></li><li><a href="/tags/Multics">Multics</a></li><li><a href="/tags/PDP-11">PDP-11</a></li><li><a href="/tags/1970s">1970s</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+              </article>
+              <ul class="pagination-post">
+                <span class="page-item page-prev">
+                <a href="../7. ITS and hacker culture" class="page-link" aria-label="Previous"><span aria-hidden="true">← 7. ITS and hacker culture</span></a>
+                </span>
+                <span class="page-item page-next">
+                
+                </span>
+              </ul>
+              <div class="comments border">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/fosscomics/" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2024 Joone Hur |  <a href="/">Home</a> | <a href="https://github.com/joone/fosscomics">fosscomics v1.0.4</a>
+              </div>
+            </footer>
+        </div>
+    </body>
+</html>
