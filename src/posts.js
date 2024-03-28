@@ -84,7 +84,7 @@ function formatDate(date) {
   return date.toLocaleDateString("en-US", options); // For US English format
 }
 
-const posthtml = (data) => `
+const posthtml = (post) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -104,23 +104,23 @@ const posthtml = (data) => `
 
           gtag('config', 'G-M0CWE9F5HJ');
         </script>
-        <title>${data.attributes.title}</title>
-        <meta name="description" content="${data.attributes.description}" />
+        <title>${post.attributes.title}</title>
+        <meta name="description" content="${post.attributes.description}" />
         <meta property="article:author" content="${config.authorName}" />
-        <meta property="article:published_time" content="${data.attributes.date}" />
-        <meta property="article:tag" content="${data.attributes.tags}" />
+        <meta property="article:published_time" content="${post.attributes.date}" />
+        <meta property="article:tag" content="${post.attributes.tags}" />
 
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="${config.blogsite}/${data.path}/" />
-        <meta property="og:title" content="${data.attributes.title}" />
-        <meta property="og:description" content="${data.attributes.description}" />
-        <meta property="og:image" content="${config.blogsite}/${data.path}/images/${data.attributes.image}" />
+        <meta property="og:url" content="${config.blogsite}/${post.path}/" />
+        <meta property="og:title" content="${post.attributes.title}" />
+        <meta property="og:description" content="${post.attributes.description}" />
+        <meta property="og:image" content="${config.blogsite}/${post.path}/images/${post.attributes.image}" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="${config.twitter}" />
-        <meta name="twitter:title" content="${data.attributes.title}" />
-        <meta name="twitter:description" content="${data.attributes.description}" />
-        <meta name="twitter:image" content="${config.blogsite}/${data.path}/images/${data.attributes.image}" />
+        <meta name="twitter:title" content="${post.attributes.title}" />
+        <meta name="twitter:description" content="${post.attributes.description}" />
+        <meta name="twitter:image" content="${config.blogsite}/${post.path}/images/${post.attributes.image}" />
     </head>
     <body>
         <div class="content">
@@ -138,26 +138,26 @@ const posthtml = (data) => `
             <main>
               <article>
                   <div class="title">
-                    <h1 class="title">${data.attributes.title}</h1>
-                    <div class="meta">Posted on ${formatDate(new Date(data.attributes.date))}</div>
+                    <h1 class="title">${post.attributes.title}</h1>
+                    <div class="meta">Posted on ${formatDate(new Date(post.attributes.date))}</div>
                   </div>
                   <section class="body">
-                    ${data.body}
+                    ${post.body}
                   </section>
                   <div class="post-tags">
                     <nav class="nav tags">
                       <ul class="tags">
-                        ${data.attributes.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
+                        ${post.attributes.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
                       </ul>
                     </nav>
                   </div>
               </article>
               <ul class="pagination-post">
                 <span class="page-item page-prev">
-                ${data.previous ? `<a href="../${data.previous.path}" class="page-link" aria-label="Previous"><span aria-hidden="true">← ${data.previous.attributes.title}</span></a>` : ""}
+                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous"><span aria-hidden="true">← ${post.previous.attributes.title}</span></a>` : ""}
                 </span>
                 <span class="page-item page-next">
-                ${data.next ? `<a href="../${data.next.path}" class="page-link" aria-label="Next"><span aria-hidden="true">${data.next.attributes.title} →</span></a>` : ""}
+                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next"><span aria-hidden="true">${post.next.attributes.title} →</span></a>` : ""}
                 </span>
               </ul>
               <div class="comments border">
@@ -189,11 +189,11 @@ const posthtml = (data) => `
 `;
 
 const renderArticle = (postPath) => {
-  const data = fs.readFileSync(
+  const post = fs.readFileSync(
     `${config.dev.postsdir}/${postPath}/index.md`,
     "utf8",
   );
-  const content = fm(data);
+  const content = fm(post);
   content.body = marked.parse(content.body);
   // remove <p></p> and <p> </p> from the beginning and end of the content.body
   content.body = content.body
