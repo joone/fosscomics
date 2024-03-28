@@ -28,7 +28,7 @@ jobs:
 
       - name: Build
         run: npm run build
-        working-directory: src  
+        working-directory: src
 
       # Checkout destination repository
       - name: Checkout dest repo
@@ -39,11 +39,11 @@ jobs:
           ref: gh-pages
 
       # Copy the built website files
-      - name: Copy website built from src/docs folder
+      - name: Copy website built from src/public folder
         working-directory: dest
         run: |
           rm -rf *
-          yes | cp -rf ../src/docs/* .  # Replace '(output_folder)' with your build output dir
+          yes | cp -rf ../src/public/* .  # Replace '(output_folder)' with your build output dir
 
       # Commit and push changes
       - name: Commit website updates
