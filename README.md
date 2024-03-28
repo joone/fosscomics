@@ -26,7 +26,7 @@ The static webpage generator was adapted from [kartiknair's blog](https://github
 
 I welcome contributions and feedback on the comics and the website. If you have suggestions or want to contribute, please submit a pull request or join the discusstions.
 
-# License
+## License
 
 * The [Archie theme](https://github.com/athul/archie) is licensed under its original license([MIT](https://github.com/athul/archie?tab=MIT-1-ov-file#readme)).
 * Node.js code in this project is licensed under the [BSD 3-Clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).  
