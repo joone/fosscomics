@@ -30,9 +30,7 @@ What does mnemonic, TOS, mean? It means that it loads the value of the accumulat
 
 As you can see, machine code is just binary code so it’s difficult for humans to easily understand and remember it. Therefore, assembly language is used to represent each low-level instruction or opcode with mnemonics. When assembly language is converted into machine code, we call it assembling
 
-![](images/image3.png)
-
-    Assembly language               == Assembling == >       machine code
+![](images/image3.png "Assembly language = Assembling => Machine Code")
 
 In the early days, assembling was done by hand, so the term, hand assembling, was used. Assembly language has been around since the 1950s. The early programmers must know how to use assembly language because there was no high-level language at the time.
 
