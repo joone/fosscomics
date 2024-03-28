@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs");
 const path = require("path");
 
@@ -40,11 +42,8 @@ function copyDirectoryRecursive(src, dest) {
 }
 
 function build() {
-  // Set the current date, time, and version in the config.
   config.date_time = formatDate(new Date());
   config.version = require("../package.json").version;
-
-  console.log(config);
 
   // remove the public directory
   if (fs.existsSync(config.dev.outdir))

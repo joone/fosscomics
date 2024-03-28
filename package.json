@@ -1,7 +1,7 @@
 {
   "name": "fosscomics",
   "version": "1.0.3",
-  "description": "",
+  "description": "Static website generator for fosscomics.com",
   "main": "index.js",
   "scripts": {
     "build": "node src",
@@ -9,8 +9,7 @@
     "prettier": "prettier --write ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joone Hur",
   "dependencies": {
     "express": "^4.19.1",
     "front-matter": "^4.0.2",
@@ -19,5 +18,8 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5"
+  },
+  "bin": {
+    "fosscomics": "src/index.js"
   }
 }
