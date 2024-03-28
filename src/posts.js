@@ -180,7 +180,7 @@ const posthtml = (data) => `
               <div class="footer-info">
                 ${`© ${new Date().getFullYear()} ${
                   config.authorName
-                } |  <a href="/">Home</a> | <a href="https://github.com/joone/fosscomics">fosscomics v${config.version}</a>`}
+                } |  <a href="/">Home</a> | <a href="https://github.com/joone/fosscomics">fosscomics v${config.version}</a> | Published on ${config.date_time}`}
               </div>
             </footer>
         </div>
