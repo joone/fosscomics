@@ -132,6 +132,16 @@ const renderArticle = (postPath) => {
           title = title.replace(/size:\d+%/g, "").trim();
         }
       }
+      let align = "center";
+      if (title && title.includes("align:")) {
+        // align: left, right, center
+        const alignMatch = title.match(/align:(left|right|center)/);
+        if (alignMatch && alignMatch[1]) {
+          align = alignMatch[1];
+          // Remove the alignment specification from the title
+          title = title.replace(/align:(left|right|center)/g, "").trim();
+        }
+      }
 
       // Construct the image tag with optional size and title
       let imageTag = `<img src="${href}" alt="${text}"`;
@@ -141,8 +151,8 @@ const renderArticle = (postPath) => {
       imageTag += ">";
 
       return `
-        <div style="text-align: center;">
-          <figure style="text-align: center;">
+        <div style="text-align: ${align};">
+          <figure style="text-align: ${align};">
             ${imageTag}
             ${title ? `<figcaption>${title}</figcaption>` : ""}
           </figure>

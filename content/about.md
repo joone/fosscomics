@@ -13,4 +13,4 @@ https://github.com/sponsors/joone
 
 Thank you!
 
-![My character](/images/author.png "size:60%")
+![My character](/images/author.png "size:40% align:left")
