@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    tags:
+      - 'v*' # Or trigger on tags starting with 'v' (e.g., v1.0.0)
 
 jobs:
   build:
