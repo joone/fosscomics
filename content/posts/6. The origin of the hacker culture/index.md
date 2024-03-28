@@ -43,7 +43,7 @@ At the time, the MIT Artificial Intelligence Lab was the birthplace of hacker cu
 ![](images/image3.png "size:80%")
 
 ## References
-1. Eric Steven Raymond, A Brief History of Hackerdom, [http://www.catb.org](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)
+1. Eric S. Raymond, A Brief History of Hackerdom, [http://www.catb.org](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)
 
 
 [1]: http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/ "Eric Steven Raymond, A Brief History of Hackerdom, http://www.catb.org"
