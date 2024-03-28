@@ -86,7 +86,7 @@ const homepage = (posts, prev, next) => `
               <div class="footer-info">
                 ${`© ${new Date().getFullYear()} ${
                   config.authorName
-                } |  <a href="https://github.com/joone/archie">Archie Theme</a> | Built with <a href="https://github.com/joone/fosscomics">fosscomics</a>`}
+                } | <a href="https://github.com/joone/fosscomics">fosscomics v${config.version}</a> | Published on ${config.date_time}`}
               </div>
             </footer>
         </div>

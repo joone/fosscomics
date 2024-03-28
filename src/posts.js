@@ -104,7 +104,7 @@ const posthtml = data => `
               <div class="footer-info">
                 ${`© ${new Date().getFullYear()} ${
                   config.authorName
-                } |  <a href="/">Home</a> | Built with <a href="https://github.com/joone/fosscomics">fosscomics</a>`}
+                } |  <a href="/">Home</a> | <a href="https://github.com/joone/fosscomics">fosscomics v${config.version}</a>`}
               </div>
             </footer>
         </div>

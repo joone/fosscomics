@@ -8,6 +8,17 @@ const list = require("./list");
 const posts = require("./posts");
 const tagList = require("./tag_list");
 
+function formatDate(date, locale = 'en-US', options = { 
+  year: 'numeric', 
+  month: 'short', 
+  day: 'numeric',
+  //hour: 'numeric',
+ // minute: '2-digit',
+ // hour12: false // This is the key change for 24-hour format
+}) {
+return date.toLocaleDateString(locale, options);
+}
+
 function copyDirectoryRecursive(src, dest) {
   fs.mkdirSync(dest, { recursive: true }); // Ensure destination exists
   const entries = fs.readdirSync(src, { withFileTypes: true });
@@ -23,6 +34,12 @@ function copyDirectoryRecursive(src, dest) {
     }
   }
 }
+
+// Set the current date, time, and version in the config.
+config.date_time = formatDate(new Date());
+config.version = require("../package.json").version;
+
+console.log(config);
 
 // remove the public directory
 if (fs.existsSync(config.dev.outdir)) fs.rmdirSync(config.dev.outdir, { recursive: true });
