@@ -2,8 +2,8 @@ const config = require("./config");
 const fs = require("fs");
 
 function formatDate(date) {
-  const options = { year: 'numeric', month: 'short', day: 'numeric' };
-  return date.toLocaleDateString('en-US', options); // For US English format
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  return date.toLocaleDateString("en-US", options); // For US English format
 }
 
 const homepage = (posts, prev, next) => `
@@ -55,7 +55,7 @@ const homepage = (posts, prev, next) => `
               </div>
                 ${posts
                   .map(
-                    post => `<section class="list-item">
+                    (post) => `<section class="list-item">
                     <h1><a href="/${post.path}">${
                       post.attributes.title
                     }</a></h1>
@@ -65,7 +65,7 @@ const homepage = (posts, prev, next) => `
                       </div>
                       <div class="description">${post.attributes.description}</div>
                       <a class="readmore" href="/${post.path}">Read more ⟶</a>
-                    </section>`
+                    </section>`,
                   )
                   .join("")}
               <ul class="pagination">
@@ -94,26 +94,28 @@ const homepage = (posts, prev, next) => `
 </html>
 `;
 
-const createHomePage = posts => {
-  fs.writeFile(`${config.dev.outdir}/index.html`, homepage(posts), e => {
+const createHomePage = (posts) => {
+  fs.writeFile(`${config.dev.outdir}/index.html`, homepage(posts), (e) => {
     if (e) throw e;
     console.log(`index.html for home was created successfully`);
   });
 };
 
-const createPagenation = posts => {
+const createPagenation = (posts) => {
   const postsPerPage = 5;
   const numPages = Math.ceil(posts.length / postsPerPage);
-
 
   if (fs.existsSync(`${config.dev.outdir}/page`))
     fs.rmdirSync(`${config.dev.outdir}/page`, { recursive: true });
 
   fs.mkdirSync(`${config.dev.outdir}/page`);
 
-   // copy content/page/1.html to docs/page/1.html
-   if (fs.existsSync(`${config.dev.content}/page/1.html`))
-   fs.copyFileSync(`${config.dev.content}/page/1.html`, `${config.dev.outdir}/page/1.html`);
+  // copy content/page/1.html to docs/page/1.html
+  if (fs.existsSync(`${config.dev.content}/page/1.html`))
+    fs.copyFileSync(
+      `${config.dev.content}/page/1.html`,
+      `${config.dev.outdir}/page/1.html`,
+    );
 
   for (let i = 0; i < numPages; i++) {
     const pagePosts = posts.slice(i * postsPerPage, (i + 1) * postsPerPage);
@@ -124,20 +126,18 @@ const createPagenation = posts => {
     } else {
       filePath = `${config.dev.outdir}/page/${i + 1}.html`;
     }
-    const prev = i-1 >= 0 ? i : null;
-    const next = i+1 < numPages ? i + 2: null;
+    const prev = i - 1 >= 0 ? i : null;
+    const next = i + 1 < numPages ? i + 2 : null;
 
-    console.log('prev', prev, 'next', next)
-    fs.writeFile(`${filePath}`, homepage(pagePosts, prev, next), e => {
-        if (e) throw e;
-        console.log(`page/${i + 1}.html was created successfully`);
-      }
-    );
+    console.log("prev", prev, "next", next);
+    fs.writeFile(`${filePath}`, homepage(pagePosts, prev, next), (e) => {
+      if (e) throw e;
+      console.log(`page/${i + 1}.html was created successfully`);
+    });
   }
-}
+};
 
 module.exports = {
   createHomePage: createHomePage,
-  createPagenation: createPagenation
+  createPagenation: createPagenation,
 };
-

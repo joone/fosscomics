@@ -3,7 +3,7 @@ const fm = require("front-matter");
 const fs = require("fs");
 const marked = require("./marked");
 
-const posthtml = data => `
+const posthtml = (data) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -87,16 +87,12 @@ const readAbout = () => {
 
 const createAboutPage = () => {
   const about = readAbout();
-  fs.writeFile(
-    `${config.dev.outdir}/about.html`,
-    posthtml(about),
-    e => {
-      if (e) throw e;
-      console.log(`${about.path}/about.html was created successfully`);
-    }
-  );
-}
+  fs.writeFile(`${config.dev.outdir}/about.html`, posthtml(about), (e) => {
+    if (e) throw e;
+    console.log(`${about.path}/about.html was created successfully`);
+  });
+};
 
 module.exports = {
-  createAboutPage: createAboutPage
+  createAboutPage: createAboutPage,
 };

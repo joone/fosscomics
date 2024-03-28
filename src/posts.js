@@ -4,11 +4,11 @@ const fs = require("fs");
 const marked = require("./marked");
 
 function formatDate(date) {
-  const options = { year: 'numeric', month: 'short', day: 'numeric' };
-  return date.toLocaleDateString('en-US', options); // For US English format
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  return date.toLocaleDateString("en-US", options); // For US English format
 }
 
-const posthtml = data => `
+const posthtml = (data) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -71,7 +71,7 @@ const posthtml = data => `
                   <div class="post-tags">
                     <nav class="nav tags">
                       <ul class="tags">
-                        ${data.attributes.tags.map(tag => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
+                        ${data.attributes.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
                       </ul>
                     </nav>
                   </div>
@@ -112,8 +112,11 @@ const posthtml = data => `
 </html>
 `;
 
-const renderArticle = postPath => {
-  const data = fs.readFileSync(`${config.dev.postsdir}/${postPath}/index.md`, "utf8");
+const renderArticle = (postPath) => {
+  const data = fs.readFileSync(
+    `${config.dev.postsdir}/${postPath}/index.md`,
+    "utf8",
+  );
   const content = fm(data);
 
   // Override function
@@ -121,21 +124,21 @@ const renderArticle = postPath => {
     image(href, title, text) {
       let size = null;
       // Check if the title contains a size specification
-      if (title && title.includes('size:')) {
+      if (title && title.includes("size:")) {
         const sizeMatch = title.match(/size:(\d+%)/);
         if (sizeMatch && sizeMatch[1]) {
-            size = sizeMatch[1];
-            // Remove the size specification from the title
-            title = title.replace(/size:\d+%/g, '').trim();
+          size = sizeMatch[1];
+          // Remove the size specification from the title
+          title = title.replace(/size:\d+%/g, "").trim();
         }
       }
 
       // Construct the image tag with optional size and title
       let imageTag = `<img src="${href}" alt="${text}"`;
       if (size) {
-          imageTag += ` style="width: ${size};"`;
+        imageTag += ` style="width: ${size};"`;
       }
-      imageTag += '>';
+      imageTag += ">";
 
       return `
         <div style="text-align: center;">
@@ -148,13 +151,13 @@ const renderArticle = postPath => {
     },
     link(href, title, text) {
       let align = null;
-      if (title && title.includes('align:')) {
+      if (title && title.includes("align:")) {
         // align: left, right, center
         const alignMatch = title.match(/align:(left|right|center)/);
         if (alignMatch && alignMatch[1]) {
           align = alignMatch[1];
           // Remove the alignment specification from the title
-          title = title.replace(/align:(left|right|center)/g, '').trim();
+          title = title.replace(/align:(left|right|center)/g, "").trim();
         }
       }
       // if align is not null, add div with text-align style
@@ -177,13 +180,15 @@ const renderArticle = postPath => {
       } else {
         return `<p>${text}</p>`;
       }
-    }
+    },
   };
 
   marked.use({ renderer });
   content.body = marked.parse(content.body);
   // remove <p></p> and <p> </p> from the beginning and end of the content.body
-  content.body = content.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
+  content.body = content.body
+    .replace(/<p><\/p>/g, "")
+    .replace(/<p> <\/p>/g, "");
   content.path = postPath;
   const tagArray = content.attributes.tags.split(",");
   const trimedTagArray = tagArray.map((tag) => tag.trim());
@@ -192,18 +197,17 @@ const renderArticle = postPath => {
   return content;
 };
 
-
 // Read all markdown articles from content/posts and sort them by date
 function renderArticles() {
   const posts = [];
   const postPaths = fs.readdirSync(config.dev.postsdir);
-  postPaths.forEach(postPath => {
+  postPaths.forEach((postPath) => {
     const post = renderArticle(postPath);
     post.path = postPath;
     posts.push(post);
   });
   // sort by date
-  posts.sort(function(a, b) {
+  posts.sort(function (a, b) {
     return new Date(b.attributes.date) - new Date(a.attributes.date);
   });
 
@@ -223,7 +227,7 @@ function renderArticles() {
 function createPostPages() {
   const posts = renderArticles();
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     if (fs.existsSync(`${config.dev.outdir}/${post.path}`))
       fs.rmdirSync(`${config.dev.outdir}/${post.path}`, { recursive: true });
 
@@ -232,27 +236,29 @@ function createPostPages() {
     fs.writeFile(
       `${config.dev.outdir}/${post.path}/index.html`,
       posthtml(post),
-      e => {
+      (e) => {
         if (e) throw e;
         console.log(`${post.path}/index.html was created successfully`);
-      }
+      },
     );
 
     // Copy images folder from ${config.dev.postsdir}/${postPath} to ${config.dev.outdir}/${postPath}
     if (!fs.existsSync(`${config.dev.outdir}/${post.path}/images`))
       fs.mkdirSync(`${config.dev.outdir}/${post.path}/images`);
 
-    fs.readdirSync(`${config.dev.postsdir}/${post.path}/images`).forEach(image => {
-      fs.copyFileSync(
-        `${config.dev.postsdir}/${post.path}/images/${image}`,
-        `${config.dev.outdir}/${post.path}/images/${image}`
-      );
-    });
+    fs.readdirSync(`${config.dev.postsdir}/${post.path}/images`).forEach(
+      (image) => {
+        fs.copyFileSync(
+          `${config.dev.postsdir}/${post.path}/images/${image}`,
+          `${config.dev.outdir}/${post.path}/images/${image}`,
+        );
+      },
+    );
   });
 
   return posts;
-};
+}
 
 module.exports = {
-  createPostPages: createPostPages
+  createPostPages: createPostPages,
 };

@@ -2,7 +2,7 @@ const config = require("./config");
 const fs = require("fs");
 const tagPage = require("./tag");
 
-const tagListPage = tags => `
+const tagListPage = (tags) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,10 +36,13 @@ const tagListPage = tags => `
               <h1 class="page-title">All tags</h1>
               <div class="tag-cloud">
               <ul class="tags">
-                ${tags.map(tag => `<li class="post">
+                ${tags
+                  .map(
+                    (tag) => `<li class="post">
                     <a href="${tag.path}">${tag.name}</a>
-                    </li>`
-                  ).join("")}
+                    </li>`,
+                  )
+                  .join("")}
               </ul>
               </div>
             <footer>
@@ -61,15 +64,20 @@ const tagListPage = tags => `
 
 function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
-  posts.forEach(post => {
-   // const tagArray = post.attributes.tags.split(",");
-   post.attributes.tags.forEach(tag => {
+  posts.forEach((post) => {
+    // const tagArray = post.attributes.tags.split(",");
+    post.attributes.tags.forEach((tag) => {
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
-      tags.get(tag).push({path: post.path,
-        title: post.attributes.title, date: post.attributes.date, description: post.attributes.description
-      });
+      tags
+        .get(tag)
+        .push({
+          path: post.path,
+          title: post.attributes.title,
+          date: post.attributes.date,
+          description: post.attributes.description,
+        });
     });
   });
 
@@ -78,7 +86,6 @@ function gatherTags(posts) {
 }
 
 function createTagPages(articles) {
-
   //tagArray = Array.from(tags.keys());
 
   const tagMap = gatherTags(articles);
@@ -86,23 +93,27 @@ function createTagPages(articles) {
   let tagArray = [];
   for (let [tag, posts] of tagMap) {
     console.log(tag, posts);
-     tagArray.push({ name:  tag, path: tag.replace(/\s+/g, "_") });
+    tagArray.push({ name: tag, path: tag.replace(/\s+/g, "_") });
   }
 
   tagArray.sort((a, b) => a.name.localeCompare(b.name));
 
   if (!fs.existsSync(`${config.dev.outdir}/tags/`))
-      fs.mkdirSync(`${config.dev.outdir}/tags/`);
-  fs.writeFile(`${config.dev.outdir}/tags/index.html`, tagListPage(tagArray), e => {
-    if (e) throw e;
-    console.log(`tags/index.html for tags was created successfully`);
-  });
+    fs.mkdirSync(`${config.dev.outdir}/tags/`);
+  fs.writeFile(
+    `${config.dev.outdir}/tags/index.html`,
+    tagListPage(tagArray),
+    (e) => {
+      if (e) throw e;
+      console.log(`tags/index.html for tags was created successfully`);
+    },
+  );
 
   for (let [tag, posts] of tagMap) {
     tagPage.createTagPage(tag, posts);
   }
-};
+}
 
 module.exports = {
-  createTagPages: createTagPages
-}
+  createTagPages: createTagPages,
+};

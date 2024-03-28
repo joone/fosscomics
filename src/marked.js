@@ -2,7 +2,7 @@ const marked = require("marked");
 
 marked.setOptions({
   renderer: new marked.Renderer(),
-  highlight: function(code, language) {
+  highlight: function (code, language) {
     const hljs = require("highlight.js");
     const validLanguage = hljs.getLanguage(language) ? language : "plaintext";
     return hljs.highlight(validLanguage, code).value;
@@ -13,7 +13,7 @@ marked.setOptions({
   sanitize: false,
   smartLists: true,
   smartypants: false,
-  xhtml: false
+  xhtml: false,
 });
 
 module.exports = marked;

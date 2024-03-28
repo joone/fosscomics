@@ -1,7 +1,7 @@
 const config = require("./config");
 const fs = require("fs");
 
-const listpage = posts => `
+const listpage = (posts) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,14 +36,12 @@ const listpage = posts => `
               <ul class="posts">
                 ${posts
                   .map(
-                    post => `<li class="post">
+                    (post) => `<li class="post">
                     <a href="./${post.path}">${
                       post.attributes.title
                     }</a><span class="meta">
-                        ${new Date(
-                          post.attributes.date
-                        ).toDateString()}</span>
-                    </li>`
+                        ${new Date(post.attributes.date).toDateString()}</span>
+                    </li>`,
                   )
                   .join("")}
               </ul>
@@ -64,13 +62,13 @@ const listpage = posts => `
 </html>
 `;
 
-const createAllPostsPage = posts => {
-  fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), e => {
+const createAllPostsPage = (posts) => {
+  fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), (e) => {
     if (e) throw e;
     console.log(`posts.html was created successfully`);
   });
 };
 
 module.exports = {
-  createAllPostsPage: createAllPostsPage
+  createAllPostsPage: createAllPostsPage,
 };

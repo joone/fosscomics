@@ -37,14 +37,10 @@ const tagPage = (tag, posts) => `
 
                 ${posts
                   .map(
-                    post => `<li class="post">
-                    <a href="/${post.path}">${
-                      post.title
-                    }</a><span class="meta">
-                        ${new Date(
-                          post.date
-                        ).toDateString()}</span>
-                    </li>`
+                    (post) => `<li class="post">
+                    <a href="/${post.path}">${post.title}</a><span class="meta">
+                        ${new Date(post.date).toDateString()}</span>
+                    </li>`,
                   )
                   .join("")}
               </ul>
@@ -68,13 +64,17 @@ const tagPage = (tag, posts) => `
 function createTagPage(tag, posts) {
   let tagPath = tag.replace(/\s+/g, "_"); // Replace spaces with underscores
   if (!fs.existsSync(`${config.dev.outdir}/tags/${tagPath}`))
-      fs.mkdirSync(`${config.dev.outdir}/tags/${tagPath}`);
-  fs.writeFile(`${config.dev.outdir}/tags/${tagPath}/index.html`, tagPage(tag, posts), e => {
-    if (e) throw e;
-    console.log(`/tags/${tagPath}/index.html was created successfully`);
-  });
-};
+    fs.mkdirSync(`${config.dev.outdir}/tags/${tagPath}`);
+  fs.writeFile(
+    `${config.dev.outdir}/tags/${tagPath}/index.html`,
+    tagPage(tag, posts),
+    (e) => {
+      if (e) throw e;
+      console.log(`/tags/${tagPath}/index.html was created successfully`);
+    },
+  );
+}
 
 module.exports = {
-  createTagPage: createTagPage
-}
+  createTagPage: createTagPage,
+};

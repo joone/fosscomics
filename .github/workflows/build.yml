@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     tags:
-      - 'v*' # Or trigger on tags starting with 'v' (e.g., v1.0.0)
+      - "v*" # Or trigger on tags starting with 'v' (e.g., v1.0.0)
 
 jobs:
   build:
@@ -21,9 +21,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'  # Or your desired version
+          node-version: "18.x" # Or your desired version
 
-      - name: Install dependencies 
+      - name: Install dependencies
         run: npm install
         working-directory: src
 

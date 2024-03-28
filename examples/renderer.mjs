@@ -1,10 +1,10 @@
 // Create reference instance
-import { marked } from 'marked';
+import { marked } from "marked";
 
 // Override function
 const renderer = {
   heading(text, level) {
-    const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+    const escapedText = text.toLowerCase().replace(/[^\w]+/g, "-");
 
     return `
             <h${level}>
@@ -15,13 +15,12 @@ const renderer = {
             </h${level}>`;
   },
   image(href, title, text) {
-    let titleAttribute = title !="null" ? `title="${title}" ` : "";
+    let titleAttribute = title != "null" ? `title="${title}" ` : "";
     return `
       <div style="text-align: center;">
         <img src="${href}" alt="${text}" ${titleAttribute}/>
       </div>`;
   },
-
 };
 
 marked.use({ renderer });

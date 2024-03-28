@@ -1,5 +1,5 @@
 const fs = require("fs");
-const path = require('path');
+const path = require("path");
 
 const about = require("./about");
 const config = require("./config");
@@ -8,15 +8,19 @@ const list = require("./list");
 const posts = require("./posts");
 const tagList = require("./tag_list");
 
-function formatDate(date, locale = 'en-US', options = { 
-  year: 'numeric',
-  month: 'short', 
-  day: 'numeric',
-  //hour: 'numeric',
- // minute: '2-digit',
- // hour12: false // This is the key change for 24-hour format
-}) {
-return date.toLocaleDateString(locale, options);
+function formatDate(
+  date,
+  locale = "en-US",
+  options = {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    //hour: 'numeric',
+    // minute: '2-digit',
+    // hour12: false // This is the key change for 24-hour format
+  },
+) {
+  return date.toLocaleDateString(locale, options);
 }
 
 function copyDirectoryRecursive(src, dest) {
@@ -43,11 +47,12 @@ function build() {
   console.log(config);
 
   // remove the public directory
-  if (fs.existsSync(config.dev.outdir)) fs.rmdirSync(config.dev.outdir, { recursive: true });
+  if (fs.existsSync(config.dev.outdir))
+    fs.rmdirSync(config.dev.outdir, { recursive: true });
   fs.mkdirSync(config.dev.outdir);
 
   // Create posts in docs/posts
-  const postArray  = posts.createPostPages();
+  const postArray = posts.createPostPages();
 
   home.createPagenation(postArray);
   list.createAllPostsPage(postArray);
@@ -55,20 +60,19 @@ function build() {
   about.createAboutPage();
 
   // copy the static directory to public directory
-  copyDirectoryRecursive('./static/images', './public/images');
-  copyDirectoryRecursive('./themes/archie/assets', './public');
+  copyDirectoryRecursive("./static/images", "./public/images");
+  copyDirectoryRecursive("./themes/archie/assets", "./public");
 
   // create CNAME file for github pages
   if (config.githubCNAME)
     fs.writeFileSync(`${config.dev.outdir}/CNAME`, config.githubCNAME);
 
-  console.log('Build completed successfully');
+  console.log("Build completed successfully");
 }
 
 // Check if 'server' is provided as a runtime argument
-if (process.argv.includes('server')) {
-
-  const express = require('express');
+if (process.argv.includes("server")) {
+  const express = require("express");
 
   // Initialize the Express application
   const app = express();
@@ -80,9 +84,6 @@ if (process.argv.includes('server')) {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
-
 } else {
   build();
 }
-
-
