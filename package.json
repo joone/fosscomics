@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./src/index.js",
-    "start": "node ./webserver"
+    "build": "node src",
+    "start": "node src server"
   },
   "keywords": [],
   "author": "",

@@ -9,7 +9,7 @@ const posts = require("./posts");
 const tagList = require("./tag_list");
 
 function formatDate(date, locale = 'en-US', options = { 
-  year: 'numeric', 
+  year: 'numeric',
   month: 'short', 
   day: 'numeric',
   //hour: 'numeric',
@@ -30,34 +30,59 @@ function copyDirectoryRecursive(src, dest) {
     if (entry.isDirectory()) {
       copyDirectoryRecursive(srcPath, destPath);
     } else {
-      fs.copyFileSync(srcPath, destPath); 
+      fs.copyFileSync(srcPath, destPath);
     }
   }
 }
 
-// Set the current date, time, and version in the config.
-config.date_time = formatDate(new Date());
-config.version = require("../package.json").version;
+function build() {
+  // Set the current date, time, and version in the config.
+  config.date_time = formatDate(new Date());
+  config.version = require("../package.json").version;
 
-console.log(config);
+  console.log(config);
 
-// remove the public directory
-if (fs.existsSync(config.dev.outdir)) fs.rmdirSync(config.dev.outdir, { recursive: true });
-fs.mkdirSync(config.dev.outdir);
+  // remove the public directory
+  if (fs.existsSync(config.dev.outdir)) fs.rmdirSync(config.dev.outdir, { recursive: true });
+  fs.mkdirSync(config.dev.outdir);
 
-// Create posts in docs/posts
-const postArray  = posts.createPostPages();
+  // Create posts in docs/posts
+  const postArray  = posts.createPostPages();
 
-home.createPagenation(postArray);
-list.createAllPostsPage(postArray);
-tagList.createTagPages(postArray);
-about.createAboutPage();
+  home.createPagenation(postArray);
+  list.createAllPostsPage(postArray);
+  tagList.createTagPages(postArray);
+  about.createAboutPage();
 
-// copy the static directory to public directory
-copyDirectoryRecursive('./static/images', './public/images');
-copyDirectoryRecursive('./themes/archie/assets', './public');
+  // copy the static directory to public directory
+  copyDirectoryRecursive('./static/images', './public/images');
+  copyDirectoryRecursive('./themes/archie/assets', './public');
 
-// create CNAME file for github pages
-if (config.githubCNAME)
-  fs.writeFileSync(`${config.dev.outdir}/CNAME`, config.githubCNAME);
+  // create CNAME file for github pages
+  if (config.githubCNAME)
+    fs.writeFileSync(`${config.dev.outdir}/CNAME`, config.githubCNAME);
+
+  console.log('Build completed successfully');
+}
+
+// Check if 'server' is provided as a runtime argument
+if (process.argv.includes('server')) {
+
+  const express = require('express');
+
+  // Initialize the Express application
+  const app = express();
+  const PORT = process.env.PORT || 3000;
+
+  // Define a route for the root of the server
+  app.use(express.static(config.dev.outdir));
+
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+
+} else {
+  build();
+}
+
 
