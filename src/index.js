@@ -6,7 +6,7 @@ const path = require("path");
 const about = require("./about");
 const config = require("./config");
 const home = require("./home");
-const list = require("./list");
+const allPosts = require("./all_posts");
 const posts = require("./posts");
 const tagList = require("./tag_list");
 
@@ -54,7 +54,7 @@ function build() {
   const postArray = posts.createPostPages();
 
   home.createPagenation(postArray);
-  list.createAllPostsPage(postArray);
+  allPosts.createAllPostsPage(postArray);
   tagList.createTagPages(postArray);
   about.createAboutPage();
 
