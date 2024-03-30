@@ -4,6 +4,7 @@ const config = {
   authorDescription: "Open Source Developer and Comic Artist",
   authorWebsite: "https://fosscomics.com",
   githubCNAME: "fosscomics.com",
+  googleAnalyticsID: "G-M0CWE9F5HJ",
   blogsite: "https://fosscomics.com",
   twitter: "@fosscomics",
   blogDescription:

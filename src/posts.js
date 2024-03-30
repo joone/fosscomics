@@ -2,6 +2,7 @@ const config = require("./config");
 const fm = require("front-matter");
 const fs = require("fs");
 const marked = require("./marked");
+const common = require("./common");
 
 // Override function
 const renderer = {
@@ -96,14 +97,7 @@ const posthtml = (post) => `
         <link rel="stylesheet" href="../styles/fonts.css">
         <link rel="stylesheet" href="../styles/main.css">
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-M0CWE9F5HJ');
-        </script>
+        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${post.attributes.title}</title>
         <meta name="description" content="${post.attributes.description}" />
         <meta property="article:author" content="${config.authorName}" />

@@ -1,6 +1,7 @@
 const config = require("./config");
 const fs = require("fs");
 const tagPage = require("./tag");
+const common = require("./common");
 
 const tagListPage = (tags) => `
 <!DOCTYPE html>
@@ -12,14 +13,7 @@ const tagListPage = (tags) => `
         <link rel="stylesheet" href="../styles/fonts.css">
         <link rel="stylesheet" href="../styles/main.css">
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-M0CWE9F5HJ');
-        </script>
+        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}</title>
     </head>
     <body>
@@ -70,14 +64,12 @@ function gatherTags(posts) {
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
-      tags
-        .get(tag)
-        .push({
-          path: post.path,
-          title: post.attributes.title,
-          date: post.attributes.date,
-          description: post.attributes.description,
-        });
+      tags.get(tag).push({
+        path: post.path,
+        title: post.attributes.title,
+        date: post.attributes.date,
+        description: post.attributes.description,
+      });
     });
   });
 
