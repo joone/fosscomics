@@ -110,11 +110,14 @@ const posthtml = (post) => `
         <meta property="og:description" content="${post.attributes.description}" />
         <meta property="og:image" content="${config.blogsite}/${post.path}/images/${post.attributes.image}" />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="${config.twitter}" />
-        <meta name="twitter:title" content="${post.attributes.title}" />
-        <meta name="twitter:description" content="${post.attributes.description}" />
-        <meta name="twitter:image" content="${config.blogsite}/${post.path}/images/${post.attributes.image}" />
+        ${common.twitterCard(
+          "summary",
+          config.siteTwitter,
+          config.authorTwitter,
+          post.attributes.title,
+          post.attributes.description,
+          `${config.blogsite}/${post.path}/images/${post.attributes.image}`,
+        )}
     </head>
     <body>
         <div class="content">

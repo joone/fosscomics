@@ -24,12 +24,15 @@ const homepage = (posts, prev, next) => `
         <meta property="og:site_name" content="${config.blogName}" />
         <meta property="og:description" content="${config.blogDescription}" />
         <meta property="og:image" content="${config.image}" />
-
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="${config.twitter}" />
-        <meta name="twitter:title" content="${config.blogName}" />
-        <meta name="twitter:description" content="${config.blogDescription}" />
-        <meta name="twitter:image" content="${config.image}" />
+        <! -- Twitter Card -->
+        ${common.twitterCard(
+          "summary",
+          config.siteTwitter,
+          config.authorTwitter,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
     </head>
     <body>
         <div class="content">
