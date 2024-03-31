@@ -4,7 +4,7 @@ const fs = require("fs");
 const marked = require("./marked");
 const common = require("./common");
 
-const posthtml = (data) => `
+const posthtml = (post) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,22 +14,22 @@ const posthtml = (data) => `
         <link rel="stylesheet" href="../styles/main.css">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${data.attributes.title}</title>
+        <title>${config.blogName}: ${post.attributes.title}</title>
         <meta name="description" content="${config.blogDescription}" />
         ${common.openGraph(
           "website",
           config.blogName,
           `${config.blogsite}/about.html`,
-          config.blogName,
+          `${config.blogName}: ${post.attributes.title}`,
           config.blogDescription,
           config.image,
         )}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="${config.blogsite}" />
-        <meta name="twitter:title" content="${config.blogName}" />
+        <meta name="twitter:title" content="${config.blogName}: ${post.attributes.title}" />
         <meta name="twitter:description" content="${config.blogDescription}" />
-        <meta name="twitter:image" content="${data.attributes.image}" />
+        <meta name="twitter:image" content="${post.attributes.image}" />
     </head>
     <body>
         <div class="content">
@@ -47,10 +47,10 @@ const posthtml = (data) => `
             <main>
               <article class="content">
                   <div class="title">
-                    <h1 class="title">${data.attributes.title}</h1>
+                    <h1 class="title">${post.attributes.title}</h1>
                   </div>
                   <section class="body">
-                    ${data.body}
+                    ${post.body}
                   </section>
               </article>
             </main>
@@ -74,8 +74,8 @@ const posthtml = (data) => `
 
 const readAbout = () => {
   const aboutPath = config.dev.about;
-  const data = fs.readFileSync(aboutPath, "utf8");
-  const content = fm(data);
+  const post = fs.readFileSync(aboutPath, "utf8");
+  const content = fm(post);
   content.body = marked.parse(content.body);
   content.path = aboutPath;
   return content;
