@@ -1,3 +1,6 @@
+const fs = require("fs");
+const config = require("./config");
+
 const googleAnalytics = (trackingId) => {
   return `<script async src="https://www.googletagmanager.com/gtag/js?id=${trackingId}"></script>
         <script>
@@ -49,8 +52,26 @@ const openGraph = (
   return result;
 };
 
+const footerHTML = fs.readFileSync(
+  "./themes/archie/layouts/partials/footer.html",
+  "utf-8",
+);
+
+const jsString = "return () => " + `\`${footerHTML}\`;`;
+const funcFooter = new Function("config", jsString);
+const result = funcFooter(config)();
+const array = result.split("\n");
+for (let i = 0; i < array.length; i++) {
+  if (i !== 0) array[i] = `              ${array[i]}`;
+}
+
+const footer = () => {
+  return array.join("\n");
+};
+
 module.exports = {
   googleAnalytics,
   twitterCard,
   openGraph,
+  footer,
 };

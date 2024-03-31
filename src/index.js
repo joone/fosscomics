@@ -4,6 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 const config = require("./mod/config");
+config.date_time = formatDate(new Date());
+config.version = require("../package.json").version;
 
 const about = require("./about");
 const home = require("./home");
@@ -43,9 +45,6 @@ function copyDirectoryRecursive(src, dest) {
 }
 
 function build() {
-  config.date_time = formatDate(new Date());
-  config.version = require("../package.json").version;
-
   // remove the public directory
   if (fs.existsSync(config.dev.outdir))
     fs.rmdirSync(config.dev.outdir, { recursive: true });
