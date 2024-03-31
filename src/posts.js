@@ -104,11 +104,13 @@ const posthtml = (post) => `
         <meta property="article:published_time" content="${post.attributes.date}" />
         <meta property="article:tag" content="${post.attributes.tags}" />
 
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="${config.blogsite}/${post.path}/" />
-        <meta property="og:title" content="${post.attributes.title}" />
-        <meta property="og:description" content="${post.attributes.description}" />
-        <meta property="og:image" content="${config.blogsite}/${post.path}/images/${post.attributes.image}" />
+        ${common.openGraph(
+          "article",
+          `${config.blogsite}/${post.path}/`,
+          post.attributes.title,
+          post.attributes.description,
+          `${config.blogsite}/${post.path}/images/${post.attributes.image}`,
+        )}
 
         ${common.twitterCard(
           "summary",

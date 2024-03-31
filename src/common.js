@@ -20,7 +20,16 @@ const twitterCard = (card, site, creator, title, description, image) => {
         <meta name="twitter:image" content="${image}" />`;
 };
 
+const openGraph = (type, url, title, description, image) => {
+  return `<meta property="og:type" content="${type}" />
+        <meta property="og:url" content="${url}" />
+        <meta property="og:title" content="${title}" />
+        <meta property="og:description" content="${description}" />
+        <meta property="og:image" content="${image}" />`;
+};
+
 module.exports = {
   googleAnalytics,
   twitterCard,
+  openGraph,
 };
