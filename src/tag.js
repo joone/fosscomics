@@ -1,6 +1,7 @@
-const config = require("./config");
 const fs = require("fs");
-const common = require("./common");
+
+const common = require("./mod/common");
+const config = require("./mod/config");
 
 const tagPage = (tag, posts, url) => `
 <!DOCTYPE html>

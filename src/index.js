@@ -3,8 +3,9 @@
 const fs = require("fs");
 const path = require("path");
 
+const config = require("./mod/config");
+
 const about = require("./about");
-const config = require("./config");
 const home = require("./home");
 const allPosts = require("./all_posts");
 const posts = require("./posts");

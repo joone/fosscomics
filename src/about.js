@@ -1,8 +1,9 @@
-const config = require("./config");
 const fm = require("front-matter");
 const fs = require("fs");
-const marked = require("./marked");
-const common = require("./common");
+
+const common = require("./mod/common");
+const config = require("./mod/config");
+const marked = require("./mod/marked");
 
 const posthtml = (post) => `
 <!DOCTYPE html>

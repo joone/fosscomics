@@ -1,6 +1,7 @@
-const config = require("./config");
 const fs = require("fs");
-const common = require("./common");
+
+const common = require("./mod/common");
+const config = require("./mod/config");
 
 function formatDate(date) {
   const options = { year: "numeric", month: "short", day: "numeric" };
