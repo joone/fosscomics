@@ -106,6 +106,7 @@ const posthtml = (post) => `
 
         ${common.openGraph(
           "article",
+          config.blogName,
           `${config.blogsite}/${post.path}/`,
           post.attributes.title,
           post.attributes.description,
