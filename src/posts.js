@@ -132,7 +132,7 @@ const posthtml = (post) => `
                 </div>
                 <nav class="site-navigation">
                   <a href="/">Home</a>
-                  <a href="/posts.html">All posts</a>
+                  <a href="/all_posts">All posts</a>
                   <a href="/about">About</a>
                   <a href="/tags">Tags</a>
                 </nav>

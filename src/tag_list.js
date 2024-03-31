@@ -30,7 +30,7 @@ const tagListPage = (tags, pageTitle) => `
                 <div class="main">${config.blogName}</div>
                 <nav>
                   <a href="/">Home</a>
-                  <a href="/posts.html">All posts</a>
+                  <a href="/all_posts">All posts</a>
                   <a href="/about">About</a>
                   Tags
                 </nav>

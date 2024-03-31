@@ -9,8 +9,8 @@ const listpage = (posts, pageTitle) => `
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${config.blogDescription}" />
-        <link rel="stylesheet" href="./styles/fonts.css">
-        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="/styles/fonts.css">
+        <link rel="stylesheet" href="/styles/main.css">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}: ${pageTitle}</title>
@@ -39,7 +39,7 @@ const listpage = (posts, pageTitle) => `
                 ${posts
                   .map(
                     (post) => `<li class="post">
-                    <a href="./${post.path}">${
+                    <a href="/${post.path}">${
                       post.attributes.title
                     }</a><span class="meta">
                         ${new Date(post.attributes.date).toDateString()}</span>
@@ -66,8 +66,10 @@ const listpage = (posts, pageTitle) => `
 
 const createAllPostsPage = (posts) => {
   const pageTitle = "All posts";
+  if (!fs.existsSync(`${config.dev.outdir}/all_posts/`))
+    fs.mkdirSync(`${config.dev.outdir}/all_posts/`);
   fs.writeFile(
-    `${config.dev.outdir}/posts.html`,
+    `${config.dev.outdir}/all_posts/index.html`,
     listpage(posts, pageTitle),
     (e) => {
       if (e) throw e;
