@@ -100,9 +100,6 @@ const posthtml = (post) => `
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${post.attributes.title}</title>
         <meta name="description" content="${post.attributes.description}" />
-        <meta property="article:author" content="${config.authorName}" />
-        <meta property="article:published_time" content="${post.attributes.date}" />
-        ${post.attributes.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}
 
         ${common.openGraph(
           "article",
@@ -111,6 +108,11 @@ const posthtml = (post) => `
           post.attributes.title,
           post.attributes.description,
           `${config.blogsite}/${post.path}/images/${post.attributes.image}`,
+          {
+            authorName: config.authorName,
+            publishedDate: post.attributes.date,
+            tags: post.attributes.tags,
+          },
         )}
 
         ${common.twitterCard(
