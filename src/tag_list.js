@@ -15,6 +15,14 @@ const tagListPage = (tags) => `
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}</title>
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          `${config.blogsite}/tag_list.html`,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
     </head>
     <body>
         <div class="content">

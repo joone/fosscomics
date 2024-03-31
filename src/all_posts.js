@@ -14,6 +14,14 @@ const listpage = (posts) => `
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}</title>
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          `${config.blogsite}/all_posts.html`,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
     </head>
     <body>
         <div class="content">

@@ -2,7 +2,7 @@ const config = require("./config");
 const fs = require("fs");
 const common = require("./common");
 
-const tagPage = (tag, posts) => `
+const tagPage = (tag, posts, url) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,6 +14,14 @@ const tagPage = (tag, posts) => `
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}</title>
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          `${config.blogsite}/${url}`,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
     </head>
     <body>
         <div class="content">
@@ -61,7 +69,7 @@ function createTagPage(tag, posts) {
     fs.mkdirSync(`${config.dev.outdir}/tags/${tagPath}`);
   fs.writeFile(
     `${config.dev.outdir}/tags/${tagPath}/index.html`,
-    tagPage(tag, posts),
+    tagPage(tag, posts, "tags/" + tagPath),
     (e) => {
       if (e) throw e;
       console.log(`/tags/${tagPath}/index.html was created successfully`);

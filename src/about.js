@@ -16,12 +16,14 @@ const posthtml = (data) => `
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${data.attributes.title}</title>
         <meta name="description" content="${config.blogDescription}" />
-        <meta property="article:author" content="${config.authorName}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="${config.blogsite}/about.html" />
-        <meta property="og:title" content="${config.blogName}" />
-        <meta property="og:description" content="${config.blogDescription}" />
-        <meta property="og:image" content="${data.attributes.image}" />
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          `${config.blogsite}/about.html`,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="${config.blogsite}" />
