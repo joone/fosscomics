@@ -2,7 +2,7 @@ const config = require("./config");
 const fs = require("fs");
 const common = require("./common");
 
-const listpage = (posts) => `
+const listpage = (posts, pageTitle) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,12 +13,12 @@ const listpage = (posts) => `
         <link rel="stylesheet" href="./styles/main.css">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}</title>
+        <title>${config.blogName}: ${pageTitle}</title>
         ${common.openGraph(
           "website",
           config.blogName,
           `${config.blogsite}/posts.html`,
-          config.blogName,
+          `${config.blogName}: ${pageTitle}`,
           config.blogDescription,
           config.image,
         )}
@@ -29,12 +29,12 @@ const listpage = (posts) => `
                 <div class="main">${config.blogName}</div>
                 <nav>
                   <a href="/">Home</a>
-                  All posts
+                  ${pageTitle}
                   <a href="/about.html">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
-              <h1 class="page-title">All posts</h1>
+              <h1 class="page-title">${pageTitle}</h1>
               <ul class="posts">
                 ${posts
                   .map(
@@ -65,10 +65,15 @@ const listpage = (posts) => `
 `;
 
 const createAllPostsPage = (posts) => {
-  fs.writeFile(`${config.dev.outdir}/posts.html`, listpage(posts), (e) => {
-    if (e) throw e;
-    console.log(`posts.html was created successfully`);
-  });
+  const pageTitle = "All posts";
+  fs.writeFile(
+    `${config.dev.outdir}/posts.html`,
+    listpage(posts, pageTitle),
+    (e) => {
+      if (e) throw e;
+      console.log(`posts.html was created successfully`);
+    },
+  );
 };
 
 module.exports = {
