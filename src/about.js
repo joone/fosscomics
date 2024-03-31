@@ -83,10 +83,16 @@ const readAbout = () => {
 
 const createAboutPage = () => {
   const about = readAbout();
-  fs.writeFile(`${config.dev.outdir}/about.html`, posthtml(about), (e) => {
-    if (e) throw e;
-    console.log(`${about.path}/about.html was created successfully`);
-  });
+  if (!fs.existsSync(`${config.dev.outdir}/about/`))
+    fs.mkdirSync(`${config.dev.outdir}/about/`);
+  fs.writeFile(
+    `${config.dev.outdir}/about/index.html`,
+    posthtml(about),
+    (e) => {
+      if (e) throw e;
+      console.log(`${about.path}/about/index.html was created successfully`);
+    },
+  );
 };
 
 module.exports = {

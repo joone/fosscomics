@@ -30,7 +30,7 @@ const listpage = (posts, pageTitle) => `
                 <nav>
                   <a href="/">Home</a>
                   ${pageTitle}
-                  <a href="/about.html">About</a>
+                  <a href="/about">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
             </header>

@@ -44,7 +44,7 @@ const homepage = (posts, prev, next) => `
                 <nav>
                   <a href="/">Home</a>
                   <a href="/posts.html">All posts</a>
-                  <a href="/about.html">About</a>
+                  <a href="/about">About</a>
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
