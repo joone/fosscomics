@@ -33,7 +33,7 @@ const posthtml = (data) => `
         <div class="content">
             <header>
                 <div class="main">
-                  F/OSS Comics
+                  ${config.blogName}
                 </div>
                 <nav>
                   <a href="/">Home</a>
