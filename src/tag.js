@@ -13,12 +13,12 @@ const tagPage = (tag, posts, url) => `
         <link rel="stylesheet" href="../../styles/main.css">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}</title>
+        <title>${config.blogName}: Entries tagged - ${tag}</title>
         ${common.openGraph(
           "website",
           config.blogName,
           `${config.blogsite}/${url}`,
-          config.blogName,
+          `${config.blogName}: Entries tagged - ${tag}`,
           config.blogDescription,
           config.image,
         )}
