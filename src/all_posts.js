@@ -17,7 +17,7 @@ const listpage = (posts) => `
         ${common.openGraph(
           "website",
           config.blogName,
-          `${config.blogsite}/all_posts.html`,
+          `${config.blogsite}/posts.html`,
           config.blogName,
           config.blogDescription,
           config.image,
