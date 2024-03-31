@@ -102,7 +102,7 @@ const posthtml = (post) => `
         <meta name="description" content="${post.attributes.description}" />
         <meta property="article:author" content="${config.authorName}" />
         <meta property="article:published_time" content="${post.attributes.date}" />
-        <meta property="article:tag" content="${post.attributes.tags}" />
+        ${post.attributes.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}
 
         ${common.openGraph(
           "article",
