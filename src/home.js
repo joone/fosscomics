@@ -19,11 +19,14 @@ const homepage = (posts, prev, next) => `
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}</title>
         <meta name="description" content="${config.blogDescription}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="${config.blogsite}" />
-        <meta property="og:site_name" content="${config.blogName}" />
-        <meta property="og:description" content="${config.blogDescription}" />
-        <meta property="og:image" content="${config.image}" />
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          config.blogsite,
+          config.blogName,
+          config.blogDescription,
+          config.image,
+        )}
         <! -- Twitter Card -->
         ${common.twitterCard(
           "summary",

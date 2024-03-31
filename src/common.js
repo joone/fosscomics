@@ -46,7 +46,7 @@ const openGraph = (
         ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
     );
   }
-  return;
+  return result;
 };
 
 module.exports = {
