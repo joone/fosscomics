@@ -52,22 +52,28 @@ const openGraph = (
   return result;
 };
 
-const footerHTML = fs.readFileSync(
-  "./themes/archie/layouts/partials/footer.html",
-  "utf-8",
-);
-
-const jsString = "return () => " + `\`${footerHTML}\`;`;
-const funcFooter = new Function("config", jsString);
-const result = funcFooter(config)();
-const array = result.split("\n");
-for (let i = 0; i < array.length; i++) {
-  if (i !== 0) array[i] = `              ${array[i]}`;
-}
+let footerHTML = "";
 
 const footer = () => {
-  return array.join("\n");
+  return footerHTML;
 };
+
+(() => {
+  const footerTemplate = fs.readFileSync(
+    "./themes/archie/layouts/partials/footer.html",
+    "utf-8",
+  );
+
+  const jsString = "return () => " + `\`${footerTemplate}\`;`;
+  const funcFooter = new Function("config", jsString);
+  const result = funcFooter(config)();
+  const array = result.split("\n");
+  for (let i = 0; i < array.length; i++) {
+    if (i !== 0) array[i] = `              ${array[i]}`;
+  }
+
+  footerHTML = array.join("\n");
+})();
 
 module.exports = {
   googleAnalytics,
