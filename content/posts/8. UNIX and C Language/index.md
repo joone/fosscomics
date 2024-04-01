@@ -15,82 +15,84 @@ The groundbreaking Unix and C language, which would go on to change the world, w
 
 Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also working on ITS and Unix, including [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) and [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs.
 
-![](images/image1.png)
+![](images/8_3.png)
 > "I think we need to step away from the Multics project now."\
 > "Yeah, the development time has become way longer than we expected."
 
 The Multics project began in 1964, but due to the large code size and complexity, the schedule fell far behind Bell Labs' expectations.
 
-![](images/image4.png "size:80%")
+![](images/8_4.png "size:80%")
 > "Overdesigned and overbuilt and over everything."\
 > "It was close to unusable[&lbrack;1&rbrack;][1]"
 
 
 In 1969, Bell Lab. pulled out of the development of Multics.
 
-![](images/image12.png "size:80%")
+![](images/8_5.png "size:80%")
 > “We’re leaving because we can't meet our schedule.”
 
 Based on his experience developing Multics, Ken Thompson creates a new operating system by himself at Bell Labs.
 
-![](images/image11.png)
+![](images/8_6.png)
 > “Dennis, I'm building a new operating system, taking some ideas from Multics. I'm making it smaller and simpler.” \
 > “That’s a good idea. Shall I join you?”
 
 Ken Thompson reimplemented many of the key features he had developed in Multics in Unix.
 
-![](images/image6.png)
+![](images/8_7.png)
 > “I can't make something out of nothing”
 
 He adapted the file system he had already implemented in Multics in Unix on PDP-7, and Dennis Richie joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on PDP-7.
 
-![](images/image14.png)
+![](images/8_8.png)
 > “First of all, I'm working on a file system. How about we call it Unix?” \
 > “How about mapping devices to files?”
 
 Then, [PDP-11](https://en.wikipedia.org/wiki/PDP-11) was introduced, which differed in CPU instructions from the PDP-7.
 
-![](images/image2.png)
+![](images/8_9.png)
 > "Ken, we have a new PDP-11, why don't we port Unix to it?" \
 > "That's a great idea, but the problem is that the CPU instructions are different, so we'll have to re-write the Unix code with the PDP-11 assembly language."
 
-![](images/image9.png "size:80%")
+![](images/8_10.png "size:90%")
 > “Wow, I finally finished porting!" \
 > "But we can't rewrite the Unix code in assembly every time we buy a new computer, right?
 
-![](images/image8.png)
+![](images/8_11.png)
 > “Dennis, shall we rewrite Unix in the B language? Now we are able to build an OS kernel without assembly." \
+
+![](images/8_12.png "size:80%")
 > "Maybe we can port Unix to PDP-11 using the B language"  
 
 B language was also developed for use in Multics by Ken Thompson and Dennis Ritchie in 1969.
 
-![](images/image5.png)
+![](images/8_13.png)
 > "First we need to port the B language to the PDP-11, but there's a problem."
 
 In 1971, Dennis Ritchie added a character type to the B language and rewrote the compiler code to generate PDP-11 machine code\[3].
 
-![](images/image10.png "size:80%")
+![](images/8_14.png)
 > “Dennis, how's the B language porting going?” \
 > “There are a lot of issues, first of all, it’s hard to access the character data type on PDP-11.”
 
-![](images/image13.png)
+![](images/8_15.png)
 > "Haha, why don't you completely update the B language this time?” \
 > "I might have to rewrite it from scratch."
 
 In 1973, basic functionalities were complete, and it was called C, which was just the next version of B.
 
-![](images/image3.png)
+![](images/8_16.png)
 > “How about calling it C?” \
 > "Sounds good"
 
 Dennis Richie began rewriting Unix in C that same year.
 
-![](images/image7.png "size:80%")
+![](images/8_17.png "size:80%")
 > "Hmm, I don't have to code in assembly anymore"
 
 Dennis added the structure type to the C language to define the user's custom data. Now, the C language is powerful enough to write Unix kernels.
 
-![](images/image16.png "size:80%")
+![](images/8_18.png "size:80%")
 
 Although Unix and C were created in a short period of time by Ken Thompson and Dannis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.
 
