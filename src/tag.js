@@ -12,6 +12,7 @@ const tagPage = (tag, posts, url) => `
         <meta name="description" content="${config.blogDescription}" />
         <link rel="stylesheet" href="../../styles/fonts.css">
         <link rel="stylesheet" href="../../styles/main.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}: Entries tagged - ${tag}</title>

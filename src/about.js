@@ -13,6 +13,7 @@ const posthtml = (post) => `
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../styles/fonts.css">
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${config.blogName}: ${post.attributes.title}</title>

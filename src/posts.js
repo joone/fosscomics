@@ -97,6 +97,7 @@ const posthtml = (post) => `
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/fonts.css">
         <link rel="stylesheet" href="../styles/main.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
         <title>${post.attributes.title}</title>
