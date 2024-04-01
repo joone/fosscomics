@@ -74,10 +74,10 @@ const homepage = (posts, prev, next) => `
                   .join("")}
               <ul class="pagination" role="navigation">
                 <span class="page-item page-prev">
-                ${prev ? `<a href="/page/${prev}.html" class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>` : `<span class="page-link disable-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></span>`}
+                ${prev ? `<a href="/page/${prev}.html" class="page-link" aria-label="Previous">← Prev</a>` : `<span class="page-link disable-link"><span aria-hidden="true">← Prev</span></span>`}
                 </span>
                 <span class="page-item page-next">
-                ${next ? `<a href="page/${next}.html" class="page-link" aria-label="Next"><span aria-hidden="true">Next →</span></a>` : `<span class="page-link disable-link" aria-label="Next"><span aria-hidden="true">Next →</span></span>`}
+                ${next ? `<a href="page/${next}.html" class="page-link" aria-label="Next">Next →</a>` : `<span class="page-link disable-link"><span aria-hidden="true">Next →</span></span>`}
                 </span>
               </ul>
             </main>
