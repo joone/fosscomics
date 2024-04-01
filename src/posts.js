@@ -156,12 +156,12 @@ const posthtml = (post) => `
                     </nav>
                   </div>
               </article>
-              <ul class="pagination-post">
+              <ul class="pagination-post" role="navigation">
                 <span class="page-item page-prev">
-                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous"><span aria-hidden="true">← ${post.previous.attributes.title}</span></a>` : ""}
+                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous">← ${post.previous.attributes.title}</a>` : ""}
                 </span>
                 <span class="page-item page-next">
-                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next"><span aria-hidden="true">${post.next.attributes.title} →</span></a>` : ""}
+                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next">${post.next.attributes.title} →</a>` : ""}
                 </span>
               </ul>
               <div class="comments border">
