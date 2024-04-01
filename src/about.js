@@ -39,7 +39,7 @@ const posthtml = (post) => `
                 <div class="main">
                   ${config.blogName}
                 </div>
-                <nav>
+                <nav class="site-navigation">
                   <a href="/">Home</a>
                   <a href="/all_posts">All posts</a>
                   About

@@ -130,7 +130,7 @@ const posthtml = (post) => `
         <div class="content">
             <header>
                 <div class="main">
-                  <a href="..">F/OSS Comics</a>
+                  ${config.blogName}
                 </div>
                 <nav class="site-navigation">
                   <a href="/">Home</a>
@@ -140,7 +140,7 @@ const posthtml = (post) => `
                 </nav>
             </header>
             <main>
-              <article>
+              <article class="content">
                   <div class="title">
                     <h1 class="title">${post.attributes.title}</h1>
                     <div class="meta">Posted on ${formatDate(new Date(post.attributes.date))}</div>
