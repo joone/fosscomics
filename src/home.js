@@ -52,12 +52,14 @@ const homepage = (posts, prev, next) => `
             </header>
 
             <main class="list">
-              <div class="site-description">
+              <div class="site-description" aria-label="Site description">
                 <p>Comics about Free and Open Source Software</p>
               </div>
                 ${posts
                   .map(
-                    (post) => `<section class="list-item">
+                    (
+                      post,
+                    ) => `<section class="list-item" aria-label="Summary of Comic post">
                     <h1><a href="/${post.path}">${
                       post.attributes.title
                     }</a></h1>
@@ -70,7 +72,7 @@ const homepage = (posts, prev, next) => `
                     </section>`,
                   )
                   .join("")}
-              <ul class="pagination">
+              <ul class="pagination" role="navigation">
                 <span class="page-item page-prev">
                 ${prev ? `<a href="/page/${prev}.html" class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>` : `<span class="page-link disable-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></span>`}
                 </span>
