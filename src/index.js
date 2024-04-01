@@ -69,20 +69,22 @@ function build() {
   console.log("Build completed successfully");
 }
 
-// Check if 'server' is provided as a runtime argument
-if (process.argv.includes("server")) {
-  const express = require("express");
+(() => {
+  // Check if 'server' is provided as a runtime argument
+  if (process.argv.includes("server")) {
+    const express = require("express");
 
-  // Initialize the Express application
-  const app = express();
-  const PORT = process.env.PORT || 3000;
+    // Initialize the Express application
+    const app = express();
+    const PORT = process.env.PORT || 3000;
 
-  // Define a route for the root of the server
-  app.use(express.static(config.dev.outdir));
+    // Define a route for the root of the server
+    app.use(express.static(config.dev.outdir));
 
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-} else {
-  build();
-}
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  } else {
+    build();
+  }
+})();
