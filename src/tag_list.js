@@ -44,7 +44,7 @@ const tagListPage = (tags, pageTitle) => `
                 ${tags
                   .map(
                     (tag) => `<li class="post">
-                    <a href="${tag.path}">${tag.name}</a>
+                    <a href="${tag.path}">${tag.name}(${tag.count})</a>
                     </li>`,
                   )
                   .join("")}
@@ -86,8 +86,12 @@ function createTagPages(articles) {
 
   let tagArray = [];
   for (let [tag, posts] of tagMap) {
-    console.log(tag, posts);
-    tagArray.push({ name: tag, path: tag.replace(/\s+/g, "_") });
+    //console.log(tag, posts);
+    tagArray.push({
+      name: tag,
+      path: tag.replace(/\s+/g, "_"),
+      count: posts.length,
+    });
   }
 
   tagArray.sort((a, b) => a.name.localeCompare(b.name));
