@@ -208,6 +208,9 @@ class Post {
     this.body = marked.parse(content.body);
     // remove <p></p> and <p> </p> from the beginning and end of the content.body
     this.body = this.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
+
+    this.next = null;
+    this.previous = null;
   }
 }
 
