@@ -41,10 +41,8 @@ const listpage = (posts, pageTitle) => `
                 ${posts
                   .map(
                     (post) => `<li class="post">
-                    <a href="/${post.path}">${
-                      post.attributes.title
-                    }</a><span class="meta">
-                        ${new Date(post.attributes.date).toDateString()}</span>
+                    <a href="/${post.path}">${post.title}</a><span class="meta">
+                        ${new Date(post.date).toDateString()}</span>
                     </li>`,
                   )
                   .join("")}

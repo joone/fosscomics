@@ -100,20 +100,20 @@ const posthtml = (post) => `
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${post.attributes.title}</title>
-        <meta name="description" content="${post.attributes.description}" />
+        <title>${post.title}</title>
+        <meta name="description" content="${post.description}" />
 
         ${common.openGraph(
           "article",
           config.blogName,
           `${config.blogsite}/${post.path}/`,
-          post.attributes.title,
-          post.attributes.description,
-          `${config.blogsite}/${post.path}/images/${post.attributes.image}`,
+          post.title,
+          post.description,
+          `${config.blogsite}/${post.path}/images/${post.image}`,
           {
             authorName: config.authorName,
-            publishedDate: post.attributes.date,
-            tags: post.attributes.tags,
+            publishedDate: post.date,
+            tags: post.tags,
           },
         )}
 
@@ -121,9 +121,9 @@ const posthtml = (post) => `
           "summary",
           config.siteTwitter,
           config.authorTwitter,
-          post.attributes.title,
-          post.attributes.description,
-          `${config.blogsite}/${post.path}/images/${post.attributes.image}`,
+          post.title,
+          post.description,
+          `${config.blogsite}/${post.path}/images/${post.image}`,
         )}
     </head>
     <body>
@@ -142,8 +142,8 @@ const posthtml = (post) => `
             <main>
               <article class="content">
                   <div class="title">
-                    <h1 class="title">${post.attributes.title}</h1>
-                    <div class="meta">Posted on ${formatDate(new Date(post.attributes.date))}</div>
+                    <h1 class="title">${post.title}</h1>
+                    <div class="meta">Posted on ${formatDate(new Date(post.date))}</div>
                   </div>
                   <section class="body">
                     ${post.body}
@@ -151,17 +151,17 @@ const posthtml = (post) => `
                   <div class="post-tags">
                     <nav class="nav tags">
                       <ul class="tags">
-                        ${post.attributes.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
+                        ${post.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
                       </ul>
                     </nav>
                   </div>
               </article>
               <ul class="pagination-post" role="navigation">
                 <span class="page-item page-prev">
-                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous">← ${post.previous.attributes.title}</a>` : ""}
+                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous">← ${post.previous.title}</a>` : ""}
                 </span>
                 <span class="page-item page-next">
-                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next">${post.next.attributes.title} →</a>` : ""}
+                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next">${post.next.title} →</a>` : ""}
                 </span>
               </ul>
               <div class="comments border">
@@ -184,23 +184,32 @@ const posthtml = (post) => `
 `;
 
 const renderArticle = (postPath) => {
-  const post = fs.readFileSync(
+  const postFile = fs.readFileSync(
     `${config.dev.postsdir}/${postPath}/index.md`,
     "utf8",
   );
-  const content = fm(post);
-  content.body = marked.parse(content.body);
-  // remove <p></p> and <p> </p> from the beginning and end of the content.body
-  content.body = content.body
-    .replace(/<p><\/p>/g, "")
-    .replace(/<p> <\/p>/g, "");
-  content.path = postPath;
-  const tagArray = content.attributes.tags.split(",");
-  const trimedTagArray = tagArray.map((tag) => tag.trim());
-  content.attributes.tags = trimedTagArray;
-
-  return content;
+  const content = fm(postFile);
+  const post = new Post(postPath, content);
+  return post;
 };
+
+class Post {
+  constructor(path, content) {
+    this.path = path;
+    this.title = content.attributes.title;
+    this.date = content.attributes.date;
+    this.image = content.attributes.image;
+
+    const tagArray = content.attributes.tags.split(",");
+    this.tags = tagArray.map((tag) => tag.trim());
+
+    this.description = content.attributes.description;
+
+    this.body = marked.parse(content.body);
+    // remove <p></p> and <p> </p> from the beginning and end of the content.body
+    this.body = this.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
+  }
+}
 
 // Read all markdown articles from content/posts and sort them by date
 function renderArticles() {
@@ -208,12 +217,11 @@ function renderArticles() {
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
     const post = renderArticle(postPath);
-    post.path = postPath;
     posts.push(post);
   });
   // sort by date
   posts.sort(function (a, b) {
-    return new Date(b.attributes.date) - new Date(a.attributes.date);
+    return new Date(b.date) - new Date(a.date);
   });
 
   // loop through posts and add previous and next post to each post

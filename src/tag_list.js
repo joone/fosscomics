@@ -62,15 +62,15 @@ function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
   posts.forEach((post) => {
     // const tagArray = post.attributes.tags.split(",");
-    post.attributes.tags.forEach((tag) => {
+    post.tags.forEach((tag) => {
       if (!tags.has(tag)) {
         tags.set(tag, []); // Initialize an empty array for new tags
       }
       tags.get(tag).push({
         path: post.path,
-        title: post.attributes.title,
-        date: post.attributes.date,
-        description: post.attributes.description,
+        title: post.title,
+        date: post.date,
+        description: post.description,
       });
     });
   });

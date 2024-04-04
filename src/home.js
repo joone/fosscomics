@@ -60,14 +60,12 @@ const homepage = (posts, prev, next) => `
                     (
                       post,
                     ) => `<section class="list-item" aria-label="Summary of Comic post">
-                    <h1><a href="/${post.path}">${
-                      post.attributes.title
-                    }</a></h1>
-                        <time>${formatDate(new Date(post.attributes.date))}</time>
+                    <h1><a href="/${post.path}">${post.title}</a></h1>
+                        <time>${formatDate(new Date(post.date))}</time>
                       <div class="responsive-image">
-                         <img src="/${post.path}/images/${post.attributes.image}" alt="${post.attributes.title}">
+                         <img src="/${post.path}/images/${post.image}" alt="${post.title}">
                       </div>
-                      <div class="description">${post.attributes.description}</div>
+                      <div class="description">${post.description}</div>
                       <a class="readmore" href="/${post.path}">Read more ⟶</a>
                     </section>`,
                   )
