@@ -8,6 +8,7 @@ const config = {
   blogsite: "https://fosscomics.com",
   authorTwitter: "@joone",
   siteTwitter: "@fosscomics",
+  githubRepository: "https://github.com/joone/fosscomics",
   blogDescription:
     "F/OSS Comics is a comic series dedicated to Free and Open Source Software. The comics aim to educate and entertain readers about the world of free and open source software.",
   dev: {
