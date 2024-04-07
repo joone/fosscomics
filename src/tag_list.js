@@ -4,59 +4,22 @@ const common = require("./mod/common");
 const config = require("./mod/config");
 const tagPage = require("./tag");
 
-const tagListPage = (tags, pageTitle) => `
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${config.blogDescription}" />
-        <link rel="stylesheet" href="../styles/fonts.css">
-        <link rel="stylesheet" href="../styles/main.css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
+const tagListPage = (tags, pageTitle) => {
+  const pageTemplate = fs.readFileSync(
+    "./themes/archie/layouts/tag_list.html",
+    "utf-8",
+  );
 
-        <!-- Google tag (gtag.js) -->
-        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}: ${pageTitle}</title>
-        ${common.openGraph(
-          "website",
-          config.blogName,
-          `${config.blogsite}/tag_list.html`,
-          `${config.blogName}: ${pageTitle}`,
-          config.blogDescription,
-          config.image,
-        )}
-    </head>
-    <body>
-        <div class="content">
-            <header>
-                <div class="main">${config.blogName}</div>
-                <nav>
-                  <a href="/">Home</a>
-                  <a href="/all_posts">All posts</a>
-                  <a href="/about">About</a>
-                  Tags
-                </nav>
-            </header>
-              <h1 class="page-title">${pageTitle}</h1>
-              <div class="tag-cloud">
-              <ul class="tags">
-                ${tags
-                  .map(
-                    (tag) => `<li class="post">
-                    <a href="${tag.path}">${tag.name}(${tag.count})</a>
-                    </li>`,
-                  )
-                  .join("")}
-              </ul>
-              </div>
-            <footer>
-              ${common.footer()}
-            </footer>
-        </div>
-    </body>
-</html>
-`;
+  const jsString = "return () => " + `\`${pageTemplate}\`;`;
+  const funcPage = new Function("tags, pageTitle, config, common", jsString);
+  const result = funcPage(tags, pageTitle, config, common)();
+  const array = result.split("\n");
+  for (let i = 0; i < array.length; i++) {
+    if (i !== 0) array[i] = `${array[i]}`;
+  }
+
+  return array.join("\n");
+};
 
 function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
