@@ -81,102 +81,23 @@ const renderer = {
 
 marked.use({ renderer });
 
-const posthtml = (post) => `
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/fonts.css">
-        <link rel="stylesheet" href="../styles/main.css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
-        <!-- Google tag (gtag.js) -->
-        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${post.title}</title>
-        <meta name="description" content="${post.description}" />
+const posthtml = (post) => {
+  const postTemplate = fs.readFileSync(
+    "./themes/archie/layouts/post.html",
+    "utf-8",
+  );
 
-        ${common.openGraph(
-          "article",
-          config.blogName,
-          `${config.blogsite}/${post.path}/`,
-          post.title,
-          post.description,
-          `${config.blogsite}/${post.path}/images/${post.image}`,
-          {
-            authorName: config.authorName,
-            publishedDate: post.date,
-            tags: post.tags,
-          },
-        )}
+  const jsString = "return () => " + `\`${postTemplate}\`;`;
+  const funcPost = new Function("post, config, common", jsString);
+  const result = funcPost(post, config, common)();
+  const array = result.split("\n");
+  for (let i = 0; i < array.length; i++) {
+    if (i !== 0) array[i] = `${array[i]}`;
+  }
 
-        ${common.twitterCard(
-          "summary",
-          config.siteTwitter,
-          config.authorTwitter,
-          post.title,
-          post.description,
-          `${config.blogsite}/${post.path}/images/${post.image}`,
-        )}
-    </head>
-    <body>
-        <div class="content">
-            <header>
-                <div class="main">
-                  ${config.blogName}
-                </div>
-                <nav class="site-navigation">
-                  <a href="/">Home</a>
-                  <a href="/all_posts">All posts</a>
-                  <a href="/about">About</a>
-                  <a href="/tags">Tags</a>
-                </nav>
-            </header>
-            <main>
-              <article class="content">
-                  <div class="title">
-                    <h1 class="title">${post.title}</h1>
-                    <div class="meta">Posted on ${common.formatDate(new Date(post.date))}</div>
-                  </div>
-                  <section class="body">
-                    ${post.body}
-                  </section>
-                  <div class="post-tags">
-                    <nav class="nav tags">
-                      <ul class="tags">
-                        ${post.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
-                      </ul>
-                    </nav>
-                  </div>
-              </article>
-              <ul class="pagination-post" role="navigation">
-                <span class="page-item page-prev">
-                ${post.previous ? `<a href="../${post.previous.path}" class="page-link" aria-label="Previous">← ${post.previous.title}</a>` : ""}
-                </span>
-                <span class="page-item page-next">
-                ${post.next ? `<a href="../${post.next.path}" class="page-link" aria-label="Next">${post.next.title} →</a>` : ""}
-                </span>
-              </ul>
-              <div class="comments border">
-                <script src="https://utteranc.es/client.js"
-                            repo="joone/fosscomics"
-                            issue-term="pathname"
-                            theme="github-light"
-                            crossorigin="anonymous"
-                            async>
-                </script>
-              </div>
-            </main>
-
-            <footer>
-              ${common.footer()}
-            </footer>
-        </div>
-    </body>
-</html>
-`;
+  const postHTML = array.join("\n");
+  return postHTML;
+};
 
 const renderArticle = (postPath) => {
   const postFile = fs.readFileSync(
