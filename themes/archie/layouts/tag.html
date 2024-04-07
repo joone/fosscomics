@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="${config.blogDescription}" />
+        <link rel="stylesheet" href="../../styles/fonts.css">
+        <link rel="stylesheet" href="../../styles/main.css">
+        <link rel="icon" type="image/png" href="../images/favicon.png">
+        <!-- Google tag (gtag.js) -->
+        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
+        <title>${config.blogName}: Entries tagged - ${tag}</title>
+        ${common.openGraph(
+          "website",
+          config.blogName,
+          `${config.blogsite}/${url}`,
+          `${config.blogName}: Entries tagged - ${tag}`,
+          config.blogDescription,
+          config.image,
+        )}
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">${config.blogName}</div>
+                <nav>
+                  <a href="/">Home</a>
+                  <a href="/all_posts">All posts</a>
+                  <a href="/about">About</a>
+                  <a href="/tags">Tags</a>
+                </nav>
+            </header>
+              <h1 class="page-title">Entries tagged - "${tag}"</h1>
+              <ul class="posts">
+
+                ${posts
+                  .map(
+                    (post) => `<li class="post">
+                    <a href="/${post.path}">${post.title}</a><span class="meta">
+                        ${new Date(post.date).toDateString()}</span>
+                    </li>`,
+                  )
+                  .join("")}
+              </ul>
+            <footer>
+              ${common.footer()}
+            </footer>
+        </div>
+    </body>
+</html>
