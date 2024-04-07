@@ -3,24 +3,6 @@ const fs = require("fs");
 const common = require("./mod/common");
 const config = require("./mod/config");
 
-const homepage = (posts, prev, next) => {
-  const homeTemplate = fs.readFileSync(
-    "./themes/archie/layouts/home.html",
-    "utf-8",
-  );
-
-  const jsString = "return () => " + `\`${homeTemplate}\`;`;
-  const funcHome = new Function("posts, prev, next, config, common", jsString);
-  const result = funcHome(posts, prev, next, config, common)();
-  const array = result.split("\n");
-  for (let i = 0; i < array.length; i++) {
-    if (i !== 0) array[i] = `${array[i]}`;
-  }
-
-  const homeHTML = array.join("\n");
-  return homeHTML;
-};
-
 const createHomePage = (posts) => {
   fs.writeFile(`${config.dev.outdir}/index.html`, homepage(posts), (e) => {
     if (e) throw e;
@@ -57,10 +39,15 @@ const createPagenation = (posts) => {
     const next = i + 1 < numPages ? i + 2 : null;
 
     console.log("prev", prev, "next", next);
-    fs.writeFile(`${filePath}`, homepage(pagePosts, prev, next), (e) => {
-      if (e) throw e;
-      console.log(`page/${i + 1}.html was created successfully`);
-    });
+    const data = { posts: pagePosts, prev: prev, next: next };
+    fs.writeFile(
+      `${filePath}`,
+      common.generateHTML("./themes/archie/layouts/home.html", data),
+      (e) => {
+        if (e) throw e;
+        console.log(`page/${i + 1}.html was created successfully`);
+      },
+    );
   }
 };
 
