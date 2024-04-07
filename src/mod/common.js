@@ -1,6 +1,11 @@
 const fs = require("fs");
 const config = require("./config");
 
+function formatDate(date) {
+  const options = { year: "numeric", month: "short", day: "numeric" };
+  return date.toLocaleDateString("en-US", options); // For US English format
+}
+
 const googleAnalytics = (trackingId) => {
   return `<script async src="https://www.googletagmanager.com/gtag/js?id=${trackingId}"></script>
         <script>
@@ -80,4 +85,5 @@ module.exports = {
   twitterCard,
   openGraph,
   footer,
+  formatDate,
 };
