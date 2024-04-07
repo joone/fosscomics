@@ -29,7 +29,7 @@ const homepage = (posts, prev, next) => `
           config.blogDescription,
           config.image,
         )}
-        <! -- Twitter Card -->
+        <!-- Twitter Card -->
         ${common.twitterCard(
           "summary",
           config.siteTwitter,
