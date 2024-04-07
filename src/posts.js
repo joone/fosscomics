@@ -81,24 +81,6 @@ const renderer = {
 
 marked.use({ renderer });
 
-const posthtml = (post) => {
-  const postTemplate = fs.readFileSync(
-    "./themes/archie/layouts/post.html",
-    "utf-8",
-  );
-
-  const jsString = "return () => " + `\`${postTemplate}\`;`;
-  const funcPost = new Function("post, config, common", jsString);
-  const result = funcPost(post, config, common)();
-  const array = result.split("\n");
-  for (let i = 0; i < array.length; i++) {
-    if (i !== 0) array[i] = `${array[i]}`;
-  }
-
-  const postHTML = array.join("\n");
-  return postHTML;
-};
-
 const renderArticle = (postPath) => {
   const postFile = fs.readFileSync(
     `${config.dev.postsdir}/${postPath}/index.md`,
@@ -166,9 +148,10 @@ function createPostPages() {
 
     fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
 
+    const data = { post: post };
     fs.writeFile(
       `${config.dev.outdir}/${post.path}/index.html`,
-      posthtml(post),
+      common.generateHTML("./themes/archie/layouts/post.html", data),
       (e) => {
         if (e) throw e;
         console.log(`${post.path}/index.html was created successfully`);

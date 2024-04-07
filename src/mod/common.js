@@ -80,10 +80,34 @@ const footer = () => {
   footerHTML = array.join("\n");
 })();
 
+const generateHTML = (templatePath, data) => {
+  const postTemplate = fs.readFileSync(templatePath, "utf-8");
+
+  const common = {
+    googleAnalytics,
+    twitterCard,
+    openGraph,
+    footer,
+    formatDate,
+  };
+
+  const jsString = "return () => " + `\`${postTemplate}\`;`;
+  const funcPost = new Function("data, config, common", jsString);
+  const result = funcPost(data, config, common)();
+  const array = result.split("\n");
+  for (let i = 0; i < array.length; i++) {
+    if (i !== 0) array[i] = `${array[i]}`;
+  }
+
+  const postHTML = array.join("\n");
+  return postHTML;
+};
+
 module.exports = {
   googleAnalytics,
   twitterCard,
   openGraph,
   footer,
   formatDate,
+  generateHTML,
 };
