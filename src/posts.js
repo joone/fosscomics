@@ -201,8 +201,9 @@ class Post {
     this.image = content.attributes.image;
 
     const tagArray = content.attributes.tags.split(",");
-    this.tags = tagArray.map((tag) => tag.trim());
-
+    this.tags = tagArray
+      .map((tag) => tag.trim())
+      .sort((a, b) => a.localeCompare(b));
     this.description = content.attributes.description;
 
     this.body = marked.parse(content.body);
