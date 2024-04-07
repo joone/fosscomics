@@ -9,12 +9,12 @@
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}: Entries tagged - ${tag}</title>
+        <title>${config.blogName}: Entries tagged - ${data.tag}</title>
         ${common.openGraph(
           "website",
           config.blogName,
-          `${config.blogsite}/${url}`,
-          `${config.blogName}: Entries tagged - ${tag}`,
+          `${config.blogsite}/${data.url}`,
+          `${config.blogName}: Entries tagged - ${data.tag}`,
           config.blogDescription,
           config.image,
         )}
@@ -30,10 +30,10 @@
                   <a href="/tags">Tags</a>
                 </nav>
             </header>
-              <h1 class="page-title">Entries tagged - "${tag}"</h1>
+              <h1 class="page-title">Entries tagged - "${data.tag}"</h1>
               <ul class="posts">
 
-                ${posts
+                ${data.posts
                   .map(
                     (post) => `<li class="post">
                     <a href="/${post.path}">${post.title}</a><span class="meta">
