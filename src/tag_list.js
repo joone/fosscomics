@@ -4,23 +4,6 @@ const common = require("./mod/common");
 const config = require("./mod/config");
 const tagPage = require("./tag");
 
-const tagListPage = (tags, pageTitle) => {
-  const pageTemplate = fs.readFileSync(
-    "./themes/archie/layouts/tag_list.html",
-    "utf-8",
-  );
-
-  const jsString = "return () => " + `\`${pageTemplate}\`;`;
-  const funcPage = new Function("tags, pageTitle, config, common", jsString);
-  const result = funcPage(tags, pageTitle, config, common)();
-  const array = result.split("\n");
-  for (let i = 0; i < array.length; i++) {
-    if (i !== 0) array[i] = `${array[i]}`;
-  }
-
-  return array.join("\n");
-};
-
 function gatherTags(posts) {
   const tags = new Map(); // Changed to a Map
   posts.forEach((post) => {
@@ -61,9 +44,11 @@ function createTagPages(articles) {
 
   if (!fs.existsSync(`${config.dev.outdir}/tags/`))
     fs.mkdirSync(`${config.dev.outdir}/tags/`);
+
+  const data = { tags: tagArray, pageTitle: "All tags" };
   fs.writeFile(
     `${config.dev.outdir}/tags/index.html`,
-    tagListPage(tagArray, "All tags"),
+    common.generateHTML("./themes/archie/layouts/tag_list.html", data),
     (e) => {
       if (e) throw e;
       console.log(`tags/index.html for tags was created successfully`);

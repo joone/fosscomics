@@ -10,12 +10,12 @@
 
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}: ${pageTitle}</title>
+        <title>${config.blogName}: ${data.pageTitle}</title>
         ${common.openGraph(
           "website",
           config.blogName,
           `${config.blogsite}/tag_list.html`,
-          `${config.blogName}: ${pageTitle}`,
+          `${config.blogName}: ${data.pageTitle}`,
           config.blogDescription,
           config.image,
         )}
@@ -31,10 +31,10 @@
                   Tags
                 </nav>
             </header>
-              <h1 class="page-title">${pageTitle}</h1>
+              <h1 class="page-title">${data.pageTitle}</h1>
               <div class="tag-cloud">
               <ul class="tags">
-                ${tags
+                ${data.tags
                   .map(
                     (tag) => `<li class="post">
                     <a href="${tag.path}">${tag.name}(${tag.count})</a>
