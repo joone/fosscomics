@@ -3,13 +3,6 @@ const fs = require("fs");
 const common = require("./mod/common");
 const config = require("./mod/config");
 
-const createHomePage = (posts) => {
-  fs.writeFile(`${config.dev.outdir}/index.html`, homepage(posts), (e) => {
-    if (e) throw e;
-    console.log(`index.html for home was created successfully`);
-  });
-};
-
 const createPagenation = (posts) => {
   const postsPerPage = 5;
   const numPages = Math.ceil(posts.length / postsPerPage);
@@ -52,6 +45,5 @@ const createPagenation = (posts) => {
 };
 
 module.exports = {
-  createHomePage: createHomePage,
   createPagenation: createPagenation,
 };
