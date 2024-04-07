@@ -8,22 +8,22 @@
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
         ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}: ${post.attributes.title}</title>
+        <title>${config.blogName}: ${data.post.attributes.title}</title>
         <meta name="description" content="${config.blogDescription}" />
         ${common.openGraph(
           "website",
           config.blogName,
           `${config.blogsite}/about.html`,
-          `${config.blogName}: ${post.attributes.title}`,
+          `${config.blogName}: ${data.post.attributes.title}`,
           config.blogDescription,
           config.image,
         )}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="${config.blogsite}" />
-        <meta name="twitter:title" content="${config.blogName}: ${post.attributes.title}" />
+        <meta name="twitter:title" content="${config.blogName}: ${data.post.attributes.title}" />
         <meta name="twitter:description" content="${config.blogDescription}" />
-        <meta name="twitter:image" content="${post.attributes.image}" />
+        <meta name="twitter:image" content="${data.post.attributes.image}" />
     </head>
     <body>
         <div class="content">
@@ -41,10 +41,10 @@
             <main>
               <article class="content">
                   <div class="title">
-                    <h1 class="title">${post.attributes.title}</h1>
+                    <h1 class="title">${data.post.attributes.title}</h1>
                   </div>
                   <section class="body">
-                    ${post.body}
+                    ${data.post.body}
                   </section>
               </article>
             </main>
