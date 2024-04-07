@@ -81,11 +81,6 @@ const renderer = {
 
 marked.use({ renderer });
 
-function formatDate(date) {
-  const options = { year: "numeric", month: "short", day: "numeric" };
-  return date.toLocaleDateString("en-US", options); // For US English format
-}
-
 const posthtml = (post) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -143,7 +138,7 @@ const posthtml = (post) => `
               <article class="content">
                   <div class="title">
                     <h1 class="title">${post.title}</h1>
-                    <div class="meta">Posted on ${formatDate(new Date(post.date))}</div>
+                    <div class="meta">Posted on ${common.formatDate(new Date(post.date))}</div>
                   </div>
                   <section class="body">
                     ${post.body}
