@@ -34,9 +34,9 @@ The early hacker culture begins with the introduction of the first computer call
 ![](images/image5.png)
 
 In the YouTube video below, you can see the music playing and Spacewar! running on PDP-1.
-
-![Spacewar! game play screenshot](http://i3.ytimg.com/vi/7bzWnaH-0sg/hqdefault.jpg "size:80%")
-[Check out the video on YouTube](https://www.youtube.com/watch?v=7bzWnaH-0sg "align:center")
+<div style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7bzWnaH-0sg?si=Y6mJVLcK9A5pPsQf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 At the time, the MIT Artificial Intelligence Lab was the birthplace of hacker culture. In the late 1960s, they developed a time-sharing operating system called  [ITS(Incompatible Timesharing System)](https://en.wikipedia.org/wiki/Incompatible_Timesharing_System)that ran on PDP-10 and a language called [LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language)), which was made available free of charge to other universities and corporations. After the early form of the Internet, the ARPAnet, was connected, the hacker culture spread to other universities and institutions along with ITS.
 
