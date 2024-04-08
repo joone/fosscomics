@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node src",
     "start": "node src server",
+    "test": "mocha test",
     "prettier": "prettier --write ."
   },
   "keywords": [],
