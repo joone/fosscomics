@@ -38,11 +38,9 @@ module.exports = class Page {
       "utf-8",
     );
 
-    const data = { title: this.title, conteht: this.contentBody };
-
     const jsString = "return () => " + `\`${postTemplate}\`;`;
-    const funcPost = new Function("data, config, page", jsString);
-    const result = funcPost(data, this.config, this)();
+    const funcPost = new Function("page", jsString);
+    const result = funcPost(this)();
     const array = result.split("\n");
     for (let i = 0; i < array.length; i++) {
       if (i !== 0) array[i] = `${array[i]}`;
