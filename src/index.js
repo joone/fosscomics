@@ -53,7 +53,7 @@ function build() {
   // Create posts in docs/posts
   const postArray = posts.renderArticles();
   postArray.forEach((post) => {
-    post.generateHTML();
+    post.generateOutput();
   });
 
   home.createPagenation(postArray);

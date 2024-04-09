@@ -36,7 +36,7 @@ class Post {
     this.previous = null;
   }
 
-  generateHTML() {
+  generateOutput() {
     if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
       fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
         recursive: true,
