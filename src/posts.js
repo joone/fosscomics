@@ -113,16 +113,6 @@ function renderArticles() {
   return posts;
 }
 
-function createPostPages() {
-  const posts = renderArticles();
-
-  posts.forEach((post) => {
-    post.generateHTML();
-  });
-
-  return posts;
-}
-
 module.exports = {
-  createPostPages: createPostPages,
+  renderArticles: renderArticles,
 };

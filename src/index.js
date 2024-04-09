@@ -51,7 +51,10 @@ function build() {
   fs.mkdirSync(config.dev.outdir);
 
   // Create posts in docs/posts
-  const postArray = posts.createPostPages();
+  const postArray = posts.renderArticles();
+  postArray.forEach((post) => {
+    post.generateHTML();
+  });
 
   home.createPagenation(postArray);
   allPosts.createAllPostsPage(postArray);
