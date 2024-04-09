@@ -35,6 +35,38 @@ class Post {
     this.next = null;
     this.previous = null;
   }
+
+  generateHTML() {
+    if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
+      fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
+        recursive: true,
+      });
+
+    fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
+
+    const data = { post: this };
+    fs.writeFile(
+      `${this.config.dev.outdir}/${this.path}/index.html`,
+      common.generateHTML("./themes/archie/layouts/post.html", data),
+      (e) => {
+        if (e) throw e;
+        console.log(`${this.path}/index.html was created successfully`);
+      },
+    );
+
+    // Copy images folder from ${this.config.dev.postsdir}/${postPath} to ${this.config.dev.outdir}/${postPath}
+    if (!fs.existsSync(`${this.config.dev.outdir}/${this.path}/images`))
+      fs.mkdirSync(`${this.config.dev.outdir}/${this.path}/images`);
+
+    fs.readdirSync(`${this.config.dev.postsdir}/${this.path}/images`).forEach(
+      (image) => {
+        fs.copyFileSync(
+          `${this.config.dev.postsdir}/${this.path}/images/${image}`,
+          `${this.config.dev.outdir}/${this.path}/images/${image}`,
+        );
+      },
+    );
+  }
 }
 
 // Read all markdown articles from content/posts and sort them by date
@@ -68,33 +100,7 @@ function createPostPages() {
   const posts = renderArticles();
 
   posts.forEach((post) => {
-    if (fs.existsSync(`${config.dev.outdir}/${post.path}`))
-      fs.rmdirSync(`${config.dev.outdir}/${post.path}`, { recursive: true });
-
-    fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
-
-    const data = { post: post };
-    fs.writeFile(
-      `${config.dev.outdir}/${post.path}/index.html`,
-      common.generateHTML("./themes/archie/layouts/post.html", data),
-      (e) => {
-        if (e) throw e;
-        console.log(`${post.path}/index.html was created successfully`);
-      },
-    );
-
-    // Copy images folder from ${config.dev.postsdir}/${postPath} to ${config.dev.outdir}/${postPath}
-    if (!fs.existsSync(`${config.dev.outdir}/${post.path}/images`))
-      fs.mkdirSync(`${config.dev.outdir}/${post.path}/images`);
-
-    fs.readdirSync(`${config.dev.postsdir}/${post.path}/images`).forEach(
-      (image) => {
-        fs.copyFileSync(
-          `${config.dev.postsdir}/${post.path}/images/${image}`,
-          `${config.dev.outdir}/${post.path}/images/${image}`,
-        );
-      },
-    );
+    post.generateHTML();
   });
 
   return posts;
