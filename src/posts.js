@@ -6,29 +6,36 @@ const config = require("./mod/config");
 const marked = require("./mod/marked");
 
 const renderArticle = (postPath) => {
-  const postFile = fs.readFileSync(
-    `${config.dev.postsdir}/${postPath}/index.md`,
-    "utf8",
-  );
-  const content = fm(postFile);
-  const post = new Post(postPath, content);
+  const post = new Post(config, postPath);
+  post.readSource(postPath);
   return post;
 };
 
 class Post {
-  constructor(path, content) {
-    this.path = path;
-    this.title = content.attributes.title;
-    this.date = content.attributes.date;
-    this.image = content.attributes.image;
+  constructor(config, postPath) {
+    this.path = postPath;
+    this.config = config;
+    this.content = "";
+  }
 
-    const tagArray = content.attributes.tags.split(",");
+  readSource(postPath) {
+    const postFile = fs.readFileSync(
+      `${config.dev.postsdir}/${postPath}/index.md`,
+      "utf8",
+    );
+    // parsed content by fields and body
+    this.content = fm(postFile);
+
+    this.title = this.content.attributes.title;
+    this.date = this.content.attributes.date;
+    this.image = this.content.attributes.image;
+    const tagArray = this.content.attributes.tags.split(",");
     this.tags = tagArray
       .map((tag) => tag.trim())
       .sort((a, b) => a.localeCompare(b));
-    this.description = content.attributes.description;
 
-    this.body = marked.parse(content.body);
+    this.description = this.content.attributes.description;
+    this.body = marked.parse(this.content.body);
     // remove <p></p> and <p> </p> from the beginning and end of the content.body
     this.body = this.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
 
