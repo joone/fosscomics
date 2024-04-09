@@ -39,9 +39,9 @@ describe("Test", function () {
           content: "test/docs",
         },
       };
-      const page = new Page(theme, config);
-      page.readSource("test/docs/test.md");
-      page.generateOutput("page.html", "test/output/index.html");
+      const page = new Page("archie", config);
+      page.readSource("test.md");
+      page.generateOutput("page.html", "about");
 
       // check if the file exists
       const output = fs.readFileSync("test/output/index.html", "utf8");

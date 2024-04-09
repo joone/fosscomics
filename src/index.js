@@ -7,11 +7,11 @@ const config = require("./mod/config");
 config.date_time = formatDate(new Date());
 config.version = require("../package.json").version;
 
-const about = require("./about");
 const home = require("./home");
 const allPosts = require("./all_posts");
 const posts = require("./posts");
 const tagList = require("./tag_list");
+const Page = require("./page");
 
 function formatDate(
   date,
@@ -56,7 +56,10 @@ function build() {
   home.createPagenation(postArray);
   allPosts.createAllPostsPage(postArray);
   tagList.createTagPages(postArray);
-  about.createAboutPage();
+
+  const aboutPage = new Page("archie", config);
+  aboutPage.readSource("about.md");
+  aboutPage.generateOutput("page.html", "about");
 
   // copy the static directory to public directory
   copyDirectoryRecursive("./static/images", "./public/images");
