@@ -15,7 +15,7 @@ describe("Test", function () {
 
   after(function () {
     // delete test/output directory
-    fs.rmSync("test/output", { recursive: true });
+    //fs.rmSync("test/output", { recursive: true });
   });
 
   describe("Page class", function () {
@@ -26,6 +26,11 @@ describe("Test", function () {
         layoutsPath: "layouts",
       };
       const config = {
+        authorName: "Foo Bar",
+        version: "0.0.1",
+        siteTwitter: "@fosscomics",
+        githubRespository: "https://github/joone/fosscomics",
+        date_time: "2021-01-01",
         blogName: "My blog",
         theme: "archie",
         dev: {
@@ -40,8 +45,9 @@ describe("Test", function () {
 
       // check if the file exists
       const output = fs.readFileSync("test/output/index.html", "utf8");
-      console.log("length", output.length);
       assert.equal(true, output.length > 0);
+      const baseline = fs.readFileSync("test/page_baseline.html", "utf8");
+      assert.equal(baseline, output);
 
       done();
     });
