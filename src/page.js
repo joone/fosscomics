@@ -31,9 +31,10 @@ module.exports = class Page {
       path += "index.html";
     }
 
+    const layoutsPath = `${this.config.dev.themePath}/${this.theme.name}/layouts`;
     // read the template file
     const postTemplate = fs.readFileSync(
-      `${this.theme.layoutsPath}/page.html`,
+      `${layoutsPath}/${templateFile}`,
       "utf-8",
     );
 
@@ -49,7 +50,7 @@ module.exports = class Page {
 
     const postHTML = array.join("\n");
 
-    fs.writeFile(outputPath, postHTML, (e) => {
+    fs.writeFileSync(outputPath, postHTML, (e) => {
       if (e) throw e;
       console.log(`${path} was created successfully`);
     });
