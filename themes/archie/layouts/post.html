@@ -10,38 +10,38 @@
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
-        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${data.post.title}</title>
-        <meta name="description" content="${data.post.description}" />
+        ${page.config.googleAnalyticsID ? common.googleAnalytics(page.config.googleAnalyticsID) : ""}
+        <title>${page.title}</title>
+        <meta name="description" content="${page.description}" />
 
         ${common.openGraph(
           "article",
-          config.blogName,
-          `${config.blogsite}/${data.post.path}/`,
-          data.post.title,
-          data.post.description,
-          `${config.blogsite}/${data.post.path}/images/${data.post.image}`,
+          page.config.blogName,
+          `${page.config.blogsite}/${page.path}/`,
+          page.title,
+          page.description,
+          `${page.config.blogsite}/${page.path}/images/${page.image}`,
           {
-            authorName: config.authorName,
-            publishedDate: data.post.date,
-            tags: data.post.tags,
+            authorName: page.config.authorName,
+            publishedDate: page.date,
+            tags: page.tags,
           },
         )}
 
         ${common.twitterCard(
           "summary",
-          config.siteTwitter,
-          config.authorTwitter,
-          data.post.title,
-          data.post.description,
-          `${config.blogsite}/${data.post.path}/images/${data.post.image}`,
+          page.config.siteTwitter,
+          page.config.authorTwitter,
+          page.title,
+          page.description,
+          `${page.config.blogsite}/${page.path}/images/${page.image}`,
         )}
     </head>
     <body>
         <div class="content">
             <header>
                 <div class="main">
-                  ${config.blogName}
+                  ${page.config.blogName}
                 </div>
                 <nav class="site-navigation">
                   <a href="/">Home</a>
@@ -53,26 +53,26 @@
             <main>
               <article class="content">
                   <div class="title">
-                    <h1 class="title">${data.post.title}</h1>
-                    <div class="meta">Posted on ${common.formatDate(new Date(data.post.date))}</div>
+                    <h1 class="title">${page.title}</h1>
+                    <div class="meta">Posted on ${common.formatDate(new Date(page.date))}</div>
                   </div>
                   <section class="body">
-                    ${data.post.body}
+                    ${page.body}
                   </section>
                   <div class="post-tags">
                     <nav class="nav tags">
                       <ul class="tags">
-                        ${data.post.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
+                        ${page.tags.map((tag) => `<li><a href="/tags/${tag.replace(/\s+/g, "_")}">${tag}</a></li>`).join("")}
                       </ul>
                     </nav>
                   </div>
               </article>
               <ul class="pagination-post" role="navigation">
                 <span class="page-item page-prev">
-                ${data.post.previous ? `<a href="../${data.post.previous.path}" class="page-link" aria-label="Previous">← ${data.post.previous.title}</a>` : ""}
+                ${page.previous ? `<a href="../${page.previous.path}" class="page-link" aria-label="Previous">← ${page.previous.title}</a>` : ""}
                 </span>
                 <span class="page-item page-next">
-                ${data.post.next ? `<a href="../${data.post.next.path}" class="page-link" aria-label="Next">${data.post.next.title} →</a>` : ""}
+                ${page.next ? `<a href="../${page.next.path}" class="page-link" aria-label="Next">${page.next.title} →</a>` : ""}
                 </span>
               </ul>
               <div class="comments border">

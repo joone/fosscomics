@@ -45,9 +45,26 @@ class Post {
     fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
 
     const data = { post: this };
+
+    //const templatePath = `${this.config.dev.themePath}/${this.config.theme}/layouts/post.html`;
+    const postTemplate = fs.readFileSync(
+      "./themes/archie/layouts/post.html",
+      "utf-8",
+    );
+
+    const jsString = "return () => " + `\`${postTemplate}\`;`;
+    const funcPost = new Function("page, common", jsString);
+    const result = funcPost(this, common)();
+    const array = result.split("\n");
+    for (let i = 0; i < array.length; i++) {
+      if (i !== 0) array[i] = `${array[i]}`;
+    }
+
+    const postHTML = array.join("\n");
+
     fs.writeFile(
       `${this.config.dev.outdir}/${this.path}/index.html`,
-      common.generateHTML("./themes/archie/layouts/post.html", data),
+      postHTML,
       (e) => {
         if (e) throw e;
         console.log(`${this.path}/index.html was created successfully`);
