@@ -4,13 +4,6 @@ const fs = require("fs");
 const common = require("./mod/common");
 const config = require("./mod/config");
 const marked = require("./mod/marked");
-
-const renderArticle = (postPath) => {
-  const post = new Post(config, postPath);
-  post.readSource(postPath);
-  return post;
-};
-
 class Post {
   constructor(config, postPath) {
     this.path = postPath;
@@ -49,7 +42,8 @@ function renderArticles() {
   const posts = [];
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
-    const post = renderArticle(postPath);
+    const post = new Post(config, postPath);
+    post.readSource(postPath);
     posts.push(post);
   });
   // sort by date
