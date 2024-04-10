@@ -12,11 +12,8 @@ class Post {
     this.theme = config.theme;
   }
 
-  readSource(postPath) {
-    const postFile = fs.readFileSync(
-      `${config.dev.postsdir}/${postPath}/index.md`,
-      "utf8",
-    );
+  readSource(path) {
+    const postFile = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
     this.content = fm(postFile);
 
@@ -91,7 +88,8 @@ function renderArticles() {
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
     const post = new Post(config, postPath);
-    post.readSource(postPath);
+    const path = `${config.dev.postsdir}/${postPath}/index.md`;
+    post.readSource(path);
     posts.push(post);
   });
   // sort by date
