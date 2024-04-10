@@ -9,6 +9,7 @@ class Post {
     this.path = postPath;
     this.config = config;
     this.content = "";
+    this.theme = config.theme;
   }
 
   readSource(postPath) {
@@ -36,7 +37,7 @@ class Post {
     this.previous = null;
   }
 
-  generateOutput() {
+  generateOutput(templateFile) {
     if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
       fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
         recursive: true,
@@ -46,9 +47,9 @@ class Post {
 
     const data = { post: this };
 
-    //const templatePath = `${this.config.dev.themePath}/${this.config.theme}/layouts/post.html`;
+    const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts`;
     const postTemplate = fs.readFileSync(
-      "./themes/archie/layouts/post.html",
+      `${layoutsPath}/${templateFile}`,
       "utf-8",
     );
 
