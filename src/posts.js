@@ -45,8 +45,6 @@ class Post {
 
     fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
 
-    const data = { post: this };
-
     const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts`;
     const postTemplate = fs.readFileSync(
       `${layoutsPath}/${templateFile}`,
