@@ -13,9 +13,9 @@ class Post {
   }
 
   readSource(path) {
-    const postFile = fs.readFileSync(path, "utf8");
+    const mdContent = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
-    this.content = fm(postFile);
+    this.content = fm(mdContent);
 
     this.title = this.content.attributes.title;
     this.date = this.content.attributes.date;
