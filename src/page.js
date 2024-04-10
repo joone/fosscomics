@@ -14,8 +14,7 @@ module.exports = class Page {
   }
 
   readSource(path) {
-    this.markdownFilePath = `${this.contentPath}/${path}`;
-    const mdContent = fs.readFileSync(`${this.markdownFilePath}`, "utf8");
+    const mdContent = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
     const content = fm(mdContent);
     this.title = content.attributes.title;
