@@ -26,7 +26,6 @@ module.exports = class Page {
   // about/index.html or about/hello.html
   generateOutput(templateFile, outputPath) {
     let path = `${this.config.dev.outdir}/${outputPath}`;
-    let file = "";
     // if file name is not included in the path
     if (path.indexOf(".htm") === -1) {
       if (!fs.existsSync(path)) fs.mkdirSync(path);
