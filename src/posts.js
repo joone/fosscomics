@@ -12,10 +12,11 @@ class Post {
 
   readSource(filePath) {
     this.srcFilePath = filePath;
-    const mdContent = fs.readFileSync(
-      `${config.dev.postsdir}/${filePath}`,
-      "utf8",
-    );
+    const mdContent = fs.readFileSync(filePath, "utf8");
+
+    // get a file name from path  (last -1 element of the array)
+    filePath = filePath.split("/")[filePath.split("/").length - 2];
+
     // parsed content by fields and body
     const content = fm(mdContent);
 
@@ -42,6 +43,7 @@ class Post {
     // this.path is used to create a navigation link in the post.html template
     if (filePath.indexOf("/") !== -1)
       this.path = filePath.split("/").slice(0, -1).join("/");
+    else this.path = filePath;
   }
 
   // FOr a series of posts
@@ -95,7 +97,10 @@ class Post {
     );
 
     // if there is the images foler in the output directory.
-    if (this.path !== "") {
+    if (
+      fs.existsSync(`${this.config.dev.postsdir}/${this.path}/images`) &&
+      this.path !== ""
+    ) {
       // Copy images folder from ${this.config.dev.postsdir}/${postPath} to ${this.config.dev.outdir}/${postPath}
       if (!fs.existsSync(`${this.config.dev.outdir}/${this.path}/images`))
         fs.mkdirSync(`${this.config.dev.outdir}/${this.path}/images`);
@@ -185,7 +190,7 @@ function renderArticles() {
   postPaths.forEach((postPath) => {
     const post = new Post(config);
     const path = `${postPath}/index.md`;
-    post.readSource(path);
+    post.readSource(`${config.dev.postsdir}/${path}`);
     posts.push(post);
   });
   // sort by date

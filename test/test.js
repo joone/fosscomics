@@ -40,7 +40,7 @@ describe("Test", function () {
         },
       };
       const page = new Page(config);
-      page.readSource("test.md");
+      page.readSource(`${config.dev.content}/test.md`);
       page.generateOutputPath("page.html", "about");
 
       // check if the file exists

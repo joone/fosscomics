@@ -61,7 +61,7 @@ function build() {
   tagList.createTagPages(postArray);
 
   const aboutPage = new Page(config);
-  aboutPage.readSource(`about.md`);
+  aboutPage.readSource(`${config.dev.content}/about.md`);
   aboutPage.generateOutputPath("page.html", "about");
 
   // copy the static directory to public directory

@@ -16,10 +16,8 @@ module.exports = class Page {
 
   readSource(filePath) {
     this.srcFilePath = filePath;
-    const mdContent = fs.readFileSync(
-      `${this.config.dev.content}/${filePath}`,
-      "utf8",
-    );
+    const mdContent = fs.readFileSync(filePath, "utf8");
+    filePath = filePath.split("/").pop();
     // parsed content by fields and body
     const content = fm(mdContent);
 
@@ -45,6 +43,7 @@ module.exports = class Page {
     // if filePath is include a directory path
     if (filePath.indexOf("/") !== -1)
       this.path = filePath.split("/").slice(0, -1).join("/");
+    else this.path = filePath;
   }
 
   // For a series of posts
