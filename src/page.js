@@ -1,5 +1,6 @@
 const fm = require("front-matter");
 const fs = require("fs");
+const path = require("path");
 const marked = require("./mod/marked");
 
 module.exports = class Page {
@@ -21,14 +22,12 @@ module.exports = class Page {
 
     const mdContent = fs.readFileSync(this.srcFilePath, "utf8");
 
-    if (filePath.indexOf(".md") !== -1) {
-      const fileNameWithExtension = filePath.split("/").pop(); // Gets 'index.md'
-      filePath = fileNameWithExtension.split(".")[0];
-      this.path = filePath;
+    if (path.extname(filePath) === ".md") {
+      // If the file has a .md extension, extract the file name without the extension
+      this.path = path.basename(filePath, ".md");
     } else {
-      filePath = filePath.split("/").pop();
-      this.path = filePath;
-      filePath = filePath + "/index.md";
+      // If there's no .md extension, just get the last part of the path
+      this.path = path.basename(filePath);
     }
     // parsed content by fields and body
     const content = fm(mdContent);
