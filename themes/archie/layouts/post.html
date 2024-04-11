@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
-        ${page.config.googleAnalyticsID ? common.googleAnalytics(page.config.googleAnalyticsID) : ""}
+        ${page.config.googleAnalyticsID ? page.googleAnalytics(page.config.googleAnalyticsID) : ""}
         <title>${page.title}</title>
         <meta name="description" content="${page.description}" />
 
