@@ -108,6 +108,23 @@ class Post {
       );
     }
   }
+
+  footer() {
+    const footerTemplate = fs.readFileSync(
+      "./themes/archie/layouts/partials/footer.html",
+      "utf-8",
+    );
+
+    const jsString = "return () => " + `\`${footerTemplate}\`;`;
+    const funcFooter = new Function("config", jsString);
+    const result = funcFooter(this.config)();
+    const array = result.split("\n");
+    for (let i = 0; i < array.length; i++) {
+      if (i !== 0) array[i] = `              ${array[i]}`;
+    }
+
+    return array.join("\n");
+  }
 }
 
 // Read all markdown articles from content/posts and sort them by date
