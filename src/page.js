@@ -28,16 +28,29 @@ module.exports = class Page {
 
   // about/index.html or about/hello.html
   generateOutput(templateFile, outputPath) {
-    let path = `${this.config.dev.outdir}/${outputPath}`;
     // if file name is not included in the path
-    if (path.indexOf(".htm") === -1) {
-      if (!fs.existsSync(path)) fs.mkdirSync(path);
-      if (path[path.lengitgth - 1] !== "/") path += "/";
-      path += "index.html";
+    if (outputPath.indexOf(".htm") === -1) {
+      if (outputPath[outputPath.length - 1] !== "/") outputPath += "/";
+      outputPath += "index.html";
+    }
+
+    // if a directory path is included in the path
+    if (outputPath.indexOf("/") !== -1) {
+      this.path = outputPath.split("/").slice(0, -1).join("/");
+
+      if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
+        fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
+          recursive: true,
+        });
+
+      fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
+    } else {
+      // remove the outputPath file if it exists
+      if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
+        fs.unlinkSync(`${this.config.dev.outdir}/${this.path}`);
     }
 
     const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts`;
-    // read the template file
     const postTemplate = fs.readFileSync(
       `${layoutsPath}/${templateFile}`,
       "utf-8",
@@ -53,9 +66,9 @@ module.exports = class Page {
 
     const postHTML = array.join("\n");
 
-    fs.writeFileSync(path, postHTML, (e) => {
+    fs.writeFile(`${this.config.dev.outdir}/${outputPath}`, postHTML, (e) => {
       if (e) throw e;
-      console.log(`${path} was created successfully`);
+      console.log(`${outputPath}/index.html was created successfully`);
     });
   }
 
