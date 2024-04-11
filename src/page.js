@@ -23,6 +23,14 @@ module.exports = class Page {
 
     this.title = content.attributes.title;
     this.image = content.attributes.image;
+
+    if (content.attributes.tags && content.attributes.tags.length > 0) {
+      const tagArray = content.attributes.tags.split(",");
+      this.tags = tagArray
+        .map((tag) => tag.trim())
+        .sort((a, b) => a.localeCompare(b));
+    }
+
     this.contentBody = marked.parse(content.body);
   }
 
