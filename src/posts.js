@@ -1,8 +1,6 @@
-const fm = require("front-matter");
 const fs = require("fs");
 
 const config = require("./mod/config");
-const marked = require("./mod/marked");
 const Page = require("./page");
 
 // Read all markdown articles from content/posts and sort them by date
