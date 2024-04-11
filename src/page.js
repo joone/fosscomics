@@ -33,7 +33,8 @@ module.exports = class Page {
         .sort((a, b) => a.localeCompare(b));
     }
 
-    this.contentBody = marked.parse(content.body);
+    // generated HTML from markdown
+    this.body = marked.parse(content.body);
   }
 
   // about/index.html or about/hello.html
