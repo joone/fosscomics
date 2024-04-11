@@ -11,11 +11,20 @@ class Post {
   }
 
   readSource(filePath) {
-    this.srcFilePath = filePath;
-    const mdContent = fs.readFileSync(filePath, "utf8");
+    if (filePath.indexOf(".md") === -1)
+      this.srcFilePath = filePath + "/index.md";
+    else this.srcFilePath = filePath;
 
-    // get a file name from path  (last -1 element of the array)
-    filePath = filePath.split("/")[filePath.split("/").length - 2];
+    const mdContent = fs.readFileSync(this.srcFilePath, "utf8");
+
+    if (filePath.indexOf(".md") !== -1) {
+      const fileNameWithExtension = filePath.split("/").pop(); // Gets 'index.md'
+      filePath = fileNameWithExtension.split(".")[0];
+    } else {
+      filePath = filePath.split("/").pop();
+      filePath = filePath + "/index.md";
+    }
+    // parsed content by fields and body
 
     // parsed content by fields and body
     const content = fm(mdContent);
@@ -189,8 +198,8 @@ function renderArticles() {
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
     const post = new Post(config);
-    const path = `${postPath}/index.md`;
-    post.readSource(`${config.dev.postsdir}/${path}`);
+    // f.g: postPath = '1. history of linux'
+    post.readSource(`${config.dev.postsdir}/${postPath}`);
     posts.push(post);
   });
   // sort by date

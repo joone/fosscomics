@@ -15,9 +15,19 @@ module.exports = class Page {
   }
 
   readSource(filePath) {
-    this.srcFilePath = filePath;
-    const mdContent = fs.readFileSync(filePath, "utf8");
-    filePath = filePath.split("/").pop();
+    if (filePath.indexOf(".md") === -1)
+      this.srcFilePath = filePath + "/index.md";
+    else this.srcFilePath = filePath;
+
+    const mdContent = fs.readFileSync(this.srcFilePath, "utf8");
+
+    if (filePath.indexOf(".md") !== -1) {
+      const fileNameWithExtension = filePath.split("/").pop(); // Gets 'index.md'
+      filePath = fileNameWithExtension.split(".")[0];
+    } else {
+      filePath = filePath.split("/").pop();
+      filePath = filePath + "/index.md";
+    }
     // parsed content by fields and body
     const content = fm(mdContent);
 
