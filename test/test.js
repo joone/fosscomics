@@ -49,6 +49,16 @@ describe("Test", function () {
       const baseline = fs.readFileSync("test/page_baseline.html", "utf8");
       assert.equal(baseline, output);
 
+      page.readSource(`${config.dev.content}/8. UNIX and C Language`);
+      page.generateOutput("page.html");
+
+      const output2 = fs.readFileSync(
+        "test/output/8. UNIX and C Language/index.html",
+        "utf8",
+      );
+      assert.equal(true, output2.length > 0);
+      assert.equal(baseline, output2);
+
       done();
     });
   });
