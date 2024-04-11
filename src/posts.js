@@ -3,6 +3,7 @@ const fs = require("fs");
 
 const config = require("./mod/config");
 const marked = require("./mod/marked");
+const Page = require("./page");
 class Post {
   constructor(config) {
     this.config = config;
@@ -197,7 +198,7 @@ function renderArticles() {
   // config.dev.postsdir: ./content/posts",
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
-    const post = new Post(config);
+    const post = new Page(config);
     // f.g: postPath = '1. history of linux'
     post.readSource(`${config.dev.postsdir}/${postPath}`);
     posts.push(post);

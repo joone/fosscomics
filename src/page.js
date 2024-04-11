@@ -42,6 +42,7 @@ module.exports = class Page {
         .sort((a, b) => a.localeCompare(b));
     }
 
+    this.description = content.attributes.description;
     // generated HTML from markdown
     this.body = marked.parse(content.body);
 
@@ -177,9 +178,9 @@ module.exports = class Page {
       return (
         result +
         `
-          <meta property="article:author" content="${articleObj.authorName}" />
-          <meta property="article:published_time" content="${articleObj.publishedDate}" />
-          ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
+        <meta property="article:author" content="${articleObj.authorName}" />
+        <meta property="article:published_time" content="${articleObj.publishedDate}" />
+        ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
       );
     }
     return result;
