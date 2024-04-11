@@ -47,7 +47,7 @@ module.exports = class Page {
       this.path = filePath.split("/").slice(0, -1).join("/");
   }
 
-  // FOr a series of posts
+  // For a series of posts
   generateOutput(templateFile) {
     const outputPath = `${this.path}/index.html`;
     this.generateOutputPath(templateFile, outputPath);
@@ -102,6 +102,25 @@ module.exports = class Page {
         console.log(`${outputPath}/index.html was created successfully`);
       },
     );
+
+    // if there is the images foler in the output directory.
+    if (
+      fs.existsSync(`${this.config.dev.postsdir}/${this.path}/images`) &&
+      this.path !== ""
+    ) {
+      // Copy images folder from ${this.config.dev.postsdir}/${postPath} to ${this.config.dev.outdir}/${postPath}
+      if (!fs.existsSync(`${this.config.dev.outdir}/${this.path}/images`))
+        fs.mkdirSync(`${this.config.dev.outdir}/${this.path}/images`);
+
+      fs.readdirSync(`${this.config.dev.postsdir}/${this.path}/images`).forEach(
+        (image) => {
+          fs.copyFileSync(
+            `${this.config.dev.postsdir}/${this.path}/images/${image}`,
+            `${this.config.dev.outdir}/${this.path}/images/${image}`,
+          );
+        },
+      );
+    }
   }
 
   footer() {
