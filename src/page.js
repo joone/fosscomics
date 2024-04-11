@@ -47,6 +47,12 @@ module.exports = class Page {
       this.path = filePath.split("/").slice(0, -1).join("/");
   }
 
+  // FOr a series of posts
+  generateOutput(templateFile) {
+    const outputPath = `${this.path}/index.html`;
+    this.generateOutputPath(templateFile, outputPath);
+  }
+
   // about/index.html or about/hello.html
   generateOutputPath(templateFile, outputPath) {
     // if file name is not included in the path
@@ -88,10 +94,14 @@ module.exports = class Page {
 
     const postHTML = array.join("\n");
 
-    fs.writeFile(`${this.config.dev.outdir}/${outputPath}`, postHTML, (e) => {
-      if (e) throw e;
-      console.log(`${outputPath}/index.html was created successfully`);
-    });
+    fs.writeFileSync(
+      `${this.config.dev.outdir}/${outputPath}`,
+      postHTML,
+      (e) => {
+        if (e) throw e;
+        console.log(`${outputPath}/index.html was created successfully`);
+      },
+    );
   }
 
   footer() {

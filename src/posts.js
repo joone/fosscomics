@@ -83,10 +83,14 @@ class Post {
 
     const postHTML = array.join("\n");
 
-    fs.writeFile(`${this.config.dev.outdir}/${outputPath}`, postHTML, (e) => {
-      if (e) throw e;
-      console.log(`${outputPath} was created successfully`);
-    });
+    fs.writeFileSync(
+      `${this.config.dev.outdir}/${outputPath}`,
+      postHTML,
+      (e) => {
+        if (e) throw e;
+        console.log(`${outputPath} was created successfully`);
+      },
+    );
 
     // if there is the images foler in the output directory.
     if (this.path !== "") {

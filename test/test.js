@@ -41,10 +41,10 @@ describe("Test", function () {
       };
       const page = new Page(config);
       page.readSource("test.md");
-      page.generateOutput("page.html", "about");
+      page.generateOutputPath("page.html", "about");
 
       // check if the file exists
-      const output = fs.readFileSync("test/output/index.html", "utf8");
+      const output = fs.readFileSync("test/output/about/index.html", "utf8");
       assert.equal(true, output.length > 0);
       const baseline = fs.readFileSync("test/page_baseline.html", "utf8");
       assert.equal(baseline, output);
