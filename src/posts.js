@@ -10,7 +10,7 @@ function renderArticles() {
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
     const post = new Page(config);
-    // f.g: postPath = '1. history of linux'
+    // e.g.: postPath = '1. history of linux'
     post.readSource(`${config.dev.postsdir}/${postPath}`);
     posts.push(post);
   });
