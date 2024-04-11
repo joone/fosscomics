@@ -3,10 +3,10 @@ const fs = require("fs");
 const marked = require("./mod/marked");
 
 module.exports = class Page {
-  constructor(theme, config) {
+  constructor(config) {
     this.title = "";
     this.image = "";
-    this.theme = theme;
+    this.theme = config.theme;
     this.srcFilePath = "";
     this.config = config;
     this.contentBody = "";

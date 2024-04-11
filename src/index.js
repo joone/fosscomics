@@ -60,7 +60,7 @@ function build() {
   allPosts.createAllPostsPage(postArray);
   tagList.createTagPages(postArray);
 
-  const aboutPage = new Page("archie", config);
+  const aboutPage = new Page(config);
   aboutPage.readSource(`about.md`);
   aboutPage.generateOutput("page.html", "about");
 

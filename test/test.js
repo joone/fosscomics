@@ -39,7 +39,7 @@ describe("Test", function () {
           content: "test/docs",
         },
       };
-      const page = new Page("archie", config);
+      const page = new Page(config);
       page.readSource("test.md");
       page.generateOutput("page.html", "about");
 
