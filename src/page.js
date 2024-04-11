@@ -9,7 +9,6 @@ module.exports = class Page {
     this.theme = config.theme;
     this.srcFilePath = "";
     this.config = config;
-    this.contentBody = "";
     this.markdownFilePath = ""; // markdown file path
     this.contentPath = config.dev.content; // ./content/
   }
