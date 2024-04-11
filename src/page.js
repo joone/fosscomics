@@ -7,16 +7,20 @@ module.exports = class Page {
     this.title = "";
     this.image = "";
     this.theme = theme;
+    this.srcFilePath = "";
     this.config = config;
     this.contentBody = "";
     this.markdownFilePath = ""; // markdown file path
     this.contentPath = config.dev.content; // ./content/
   }
 
-  readSource(path) {
+  readSource(filePath) {
+    this.srcFilePath = filePath;
+    const path = `${this.config.dev.content}/${filePath}`;
     const mdContent = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
     const content = fm(mdContent);
+
     this.title = content.attributes.title;
     this.image = content.attributes.image;
     this.contentBody = marked.parse(content.body);
@@ -28,7 +32,7 @@ module.exports = class Page {
     // if file name is not included in the path
     if (path.indexOf(".htm") === -1) {
       if (!fs.existsSync(path)) fs.mkdirSync(path);
-      if (path[path.length - 1] !== "/") path += "/";
+      if (path[path.lengitgth - 1] !== "/") path += "/";
       path += "index.html";
     }
 

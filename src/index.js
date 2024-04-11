@@ -63,7 +63,7 @@ function build() {
   tagList.createTagPages(postArray);
 
   const aboutPage = new Page("archie", config);
-  aboutPage.readSource(`${config.dev.content}/about.md`);
+  aboutPage.readSource(`about.md`);
   aboutPage.generateOutput("page.html", "about");
 
   // copy the static directory to public directory
