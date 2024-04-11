@@ -24,8 +24,10 @@ module.exports = class Page {
     if (filePath.indexOf(".md") !== -1) {
       const fileNameWithExtension = filePath.split("/").pop(); // Gets 'index.md'
       filePath = fileNameWithExtension.split(".")[0];
+      this.path = filePath;
     } else {
       filePath = filePath.split("/").pop();
+      this.path = filePath;
       filePath = filePath + "/index.md";
     }
     // parsed content by fields and body
@@ -51,12 +53,6 @@ module.exports = class Page {
     // for generating the navigation link in the post.html template
     this.next = null;
     this.previous = null;
-    this.path = "";
-
-    // if filePath is include a directory path
-    if (filePath.indexOf("/") !== -1)
-      this.path = filePath.split("/").slice(0, -1).join("/");
-    else this.path = filePath;
   }
 
   // For a series of posts
