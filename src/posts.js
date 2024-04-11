@@ -34,19 +34,16 @@ class Post {
 
     this.next = null;
     this.previous = null;
+
+    // this.path is used to create a navigation link in the post.html template
+    this.path = filePath.split("/").slice(0, -1).join("/");
   }
 
-  generateOutput(templateFile, outputPath) {
-    // if file name is not included in the path
-    if (outputPath.indexOf(".htm") === -1) {
-      if (outputPath[outputPath.length - 1] !== "/") outputPath += "/";
-      outputPath += "index.html";
-    }
+  generateOutput(templateFile) {
+    const outputPath = `${this.path}/index.html`;
 
     // if a directory path is included in the path
     if (outputPath.indexOf("/") !== -1) {
-      this.path = outputPath.split("/").slice(0, -1).join("/");
-
       if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
         fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
           recursive: true,
@@ -77,7 +74,7 @@ class Post {
 
     fs.writeFile(`${this.config.dev.outdir}/${outputPath}`, postHTML, (e) => {
       if (e) throw e;
-      console.log(`${outputPath}/index.html was created successfully`);
+      console.log(`${outputPath} was created successfully`);
     });
 
     // if there is the images foler in the output directory.
