@@ -7,7 +7,6 @@ const marked = require("./mod/marked");
 class Post {
   constructor(config) {
     this.config = config;
-    this.content = "";
     this.theme = config.theme;
     this.srcFilePath = "";
   }
@@ -17,24 +16,25 @@ class Post {
     const path = `${config.dev.postsdir}/${filePath}`;
     const mdContent = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
-    this.content = fm(mdContent);
+    const content = fm(mdContent);
 
-    this.title = this.content.attributes.title;
-    this.date = this.content.attributes.date;
-    this.image = this.content.attributes.image;
-    const tagArray = this.content.attributes.tags.split(",");
+    this.title = content.attributes.title;
+    this.date = content.attributes.date;
+    this.image = content.attributes.image;
+    const tagArray = content.attributes.tags.split(",");
     this.tags = tagArray
       .map((tag) => tag.trim())
       .sort((a, b) => a.localeCompare(b));
 
-    this.description = this.content.attributes.description;
-    this.body = marked.parse(this.content.body);
+    this.description = content.attributes.description;
+    this.body = marked.parse(content.body);
     // remove <p></p> and <p> </p> from the beginning and end of the content.body
     this.body = this.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
 
     this.next = null;
     this.previous = null;
 
+    // For a seriese of posts
     // this.path is used to create a navigation link in the post.html template
     this.path = filePath.split("/").slice(0, -1).join("/");
   }
