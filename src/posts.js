@@ -1,7 +1,6 @@
 const fm = require("front-matter");
 const fs = require("fs");
 
-const common = require("./mod/common");
 const config = require("./mod/config");
 const marked = require("./mod/marked");
 class Post {
@@ -74,8 +73,8 @@ class Post {
     );
 
     const jsString = "return () => " + `\`${postTemplate}\`;`;
-    const funcPost = new Function("page, common", jsString);
-    const result = funcPost(this, common)();
+    const funcPost = new Function("page", jsString);
+    const result = funcPost(this)();
     const array = result.split("\n");
     for (let i = 0; i < array.length; i++) {
       if (i !== 0) array[i] = `${array[i]}`;
@@ -124,6 +123,11 @@ class Post {
     }
 
     return array.join("\n");
+  }
+
+  formatDate(date) {
+    const options = { year: "numeric", month: "short", day: "numeric" };
+    return date.toLocaleDateString("en-US", options); // For US English format
   }
 
   // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards

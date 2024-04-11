@@ -139,6 +139,11 @@ module.exports = class Page {
     return array.join("\n");
   }
 
+  formatDate(date) {
+    const options = { year: "numeric", month: "short", day: "numeric" };
+    return date.toLocaleDateString("en-US", options); // For US English format
+  }
+
   // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
   twitterCard(card, site, creator, title, description, image) {
     return `<meta name="twitter:card" content="${card}" />
