@@ -14,7 +14,7 @@
         <title>${page.title}</title>
         <meta name="description" content="${page.description}" />
 
-        ${common.openGraph(
+        ${page.openGraph(
           "article",
           page.config.blogName,
           `${page.config.blogsite}/${page.path}/`,
