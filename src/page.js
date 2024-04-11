@@ -45,6 +45,8 @@ module.exports = class Page {
     this.description = content.attributes.description;
     // generated HTML from markdown
     this.body = marked.parse(content.body);
+    // remove <p></p> and <p> </p> from the beginning and end of the content.body
+    this.body = this.body.replace(/<p><\/p>/g, "").replace(/<p> <\/p>/g, "");
 
     // for generating the navigation link in the post.html template
     this.next = null;
