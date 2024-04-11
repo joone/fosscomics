@@ -91,15 +91,12 @@ module.exports = class Page {
       "utf-8",
     );
 
-    const jsString = "return () => " + `\`${postTemplate}\`;`;
-    const funcPost = new Function("page", jsString);
+    const funcPost = new Function("page", `return () => \`${postTemplate}\`;`);
     const result = funcPost(this)();
-    const array = result.split("\n");
-    for (let i = 0; i < array.length; i++) {
-      if (i !== 0) array[i] = `${array[i]}`;
-    }
-
-    const postHTML = array.join("\n");
+    const postHTML = result
+      .split("\n")
+      .map((line, index) => (index !== 0 ? `${line}` : line))
+      .join("\n");
 
     fs.writeFileSync(
       `${this.config.dev.outdir}/${outputPath}`,
@@ -136,15 +133,17 @@ module.exports = class Page {
       "utf-8",
     );
 
-    const jsString = "return () => " + `\`${footerTemplate}\`;`;
-    const funcFooter = new Function("config", jsString);
+    const funcFooter = new Function(
+      "config",
+      `return () => \`${footerTemplate}\`;`,
+    );
     const result = funcFooter(this.config)();
-    const array = result.split("\n");
-    for (let i = 0; i < array.length; i++) {
-      if (i !== 0) array[i] = `              ${array[i]}`;
-    }
+    const footerHTML = result
+      .split("\n")
+      .map((line, index) => (index !== 0 ? `              ${line}` : line))
+      .join("\n");
 
-    return array.join("\n");
+    return footerHTML;
   }
 
   formatDate(date) {
