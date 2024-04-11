@@ -13,8 +13,10 @@ class Post {
 
   readSource(filePath) {
     this.srcFilePath = filePath;
-    const path = `${config.dev.postsdir}/${filePath}`;
-    const mdContent = fs.readFileSync(path, "utf8");
+    const mdContent = fs.readFileSync(
+      `${config.dev.postsdir}/${filePath}`,
+      "utf8",
+    );
     // parsed content by fields and body
     const content = fm(mdContent);
 

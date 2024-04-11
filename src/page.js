@@ -16,8 +16,10 @@ module.exports = class Page {
 
   readSource(filePath) {
     this.srcFilePath = filePath;
-    const path = `${this.config.dev.content}/${filePath}`;
-    const mdContent = fs.readFileSync(path, "utf8");
+    const mdContent = fs.readFileSync(
+      `${this.config.dev.content}/${filePath}`,
+      "utf8",
+    );
     // parsed content by fields and body
     const content = fm(mdContent);
 
