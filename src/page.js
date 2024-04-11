@@ -40,10 +40,15 @@ module.exports = class Page {
     // for generating the navigation link in the post.html template
     this.next = null;
     this.previous = null;
+    this.path = "";
+
+    // if filePath is include a directory path
+    if (filePath.indexOf("/") !== -1)
+      this.path = filePath.split("/").slice(0, -1).join("/");
   }
 
   // about/index.html or about/hello.html
-  generateOutput(templateFile, outputPath) {
+  generateOutputPath(templateFile, outputPath) {
     // if file name is not included in the path
     if (outputPath.indexOf(".htm") === -1) {
       if (outputPath[outputPath.length - 1] !== "/") outputPath += "/";
@@ -52,7 +57,8 @@ module.exports = class Page {
 
     // if a directory path is included in the path
     if (outputPath.indexOf("/") !== -1) {
-      this.path = outputPath.split("/").slice(0, -1).join("/");
+      if (this.path === "")
+        this.path = outputPath.split("/").slice(0, -1).join("/");
 
       if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
         fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {

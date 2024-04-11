@@ -38,14 +38,23 @@ class Post {
 
     // For a seriese of posts
     // this.path is used to create a navigation link in the post.html template
-    this.path = filePath.split("/").slice(0, -1).join("/");
+    if (filePath.indexOf("/") !== -1)
+      this.path = filePath.split("/").slice(0, -1).join("/");
   }
 
+  // FOr a series of posts
   generateOutput(templateFile) {
     const outputPath = `${this.path}/index.html`;
+    this.generateOutputPath(templateFile, outputPath);
+  }
 
+  generateOutputPath(templateFile, outputPath) {
     // if a directory path is included in the path
     if (outputPath.indexOf("/") !== -1) {
+      // get a directory path from the outputPath
+      if (this.page === "")
+        this.path = outputPath.split("/").slice(0, -1).join("/");
+
       if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
         fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
           recursive: true,

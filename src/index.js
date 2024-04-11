@@ -62,7 +62,7 @@ function build() {
 
   const aboutPage = new Page(config);
   aboutPage.readSource(`about.md`);
-  aboutPage.generateOutput("page.html", "about");
+  aboutPage.generateOutputPath("page.html", "about");
 
   // copy the static directory to public directory
   copyDirectoryRecursive("./static/images", "./public/images");
