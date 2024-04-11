@@ -24,6 +24,7 @@ module.exports = class Page {
     const content = fm(mdContent);
 
     this.title = content.attributes.title;
+    this.date = content.attributes.date;
     this.image = content.attributes.image;
 
     if (content.attributes.tags && content.attributes.tags.length > 0) {
@@ -35,6 +36,10 @@ module.exports = class Page {
 
     // generated HTML from markdown
     this.body = marked.parse(content.body);
+
+    // for generating the navigation link in the post.html template
+    this.next = null;
+    this.previous = null;
   }
 
   // about/index.html or about/hello.html
