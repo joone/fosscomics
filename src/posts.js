@@ -22,10 +22,13 @@ class Post {
     this.title = content.attributes.title;
     this.date = content.attributes.date;
     this.image = content.attributes.image;
-    const tagArray = content.attributes.tags.split(",");
-    this.tags = tagArray
-      .map((tag) => tag.trim())
-      .sort((a, b) => a.localeCompare(b));
+
+    if (content.attributes.tags && content.attributes.tags.length > 0) {
+      const tagArray = content.attributes.tags.split(",");
+      this.tags = tagArray
+        .map((tag) => tag.trim())
+        .sort((a, b) => a.localeCompare(b));
+    }
 
     this.description = content.attributes.description;
     this.body = marked.parse(content.body);

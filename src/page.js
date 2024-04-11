@@ -6,9 +6,10 @@ module.exports = class Page {
   constructor(config) {
     this.title = "";
     this.image = "";
+    this.config = config;
     this.theme = config.theme;
     this.srcFilePath = "";
-    this.config = config;
+
     this.markdownFilePath = ""; // markdown file path
     this.contentPath = config.dev.content; // ./content/
   }
