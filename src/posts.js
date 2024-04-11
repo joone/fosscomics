@@ -5,14 +5,16 @@ const common = require("./mod/common");
 const config = require("./mod/config");
 const marked = require("./mod/marked");
 class Post {
-  constructor(config, postPath) {
-    this.path = postPath;
+  constructor(config) {
     this.config = config;
     this.content = "";
     this.theme = config.theme;
+    this.srcFilePath = "";
   }
 
-  readSource(path) {
+  readSource(filePath) {
+    this.srcFilePath = filePath;
+    const path = `${config.dev.postsdir}/${filePath}`;
     const mdContent = fs.readFileSync(path, "utf8");
     // parsed content by fields and body
     this.content = fm(mdContent);
@@ -34,13 +36,28 @@ class Post {
     this.previous = null;
   }
 
-  generateOutput(templateFile) {
-    if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
-      fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
-        recursive: true,
-      });
+  generateOutput(templateFile, outputPath) {
+    // if file name is not included in the path
+    if (outputPath.indexOf(".htm") === -1) {
+      if (outputPath[outputPath.length - 1] !== "/") outputPath += "/";
+      outputPath += "index.html";
+    }
 
-    fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
+    // if a directory path is included in the path
+    if (outputPath.indexOf("/") !== -1) {
+      this.path = outputPath.split("/").slice(0, -1).join("/");
+
+      if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
+        fs.rmdirSync(`${this.config.dev.outdir}/${this.path}`, {
+          recursive: true,
+        });
+
+      fs.mkdirSync(`${this.config.dev.outdir}/${this.path}`);
+    } else {
+      // remove the outputPath file if it exists
+      if (fs.existsSync(`${this.config.dev.outdir}/${this.path}`))
+        fs.unlinkSync(`${this.config.dev.outdir}/${this.path}`);
+    }
 
     const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts`;
     const postTemplate = fs.readFileSync(
@@ -58,37 +75,37 @@ class Post {
 
     const postHTML = array.join("\n");
 
-    fs.writeFile(
-      `${this.config.dev.outdir}/${this.path}/index.html`,
-      postHTML,
-      (e) => {
-        if (e) throw e;
-        console.log(`${this.path}/index.html was created successfully`);
-      },
-    );
+    fs.writeFile(`${this.config.dev.outdir}/${outputPath}`, postHTML, (e) => {
+      if (e) throw e;
+      console.log(`${outputPath}/index.html was created successfully`);
+    });
 
-    // Copy images folder from ${this.config.dev.postsdir}/${postPath} to ${this.config.dev.outdir}/${postPath}
-    if (!fs.existsSync(`${this.config.dev.outdir}/${this.path}/images`))
-      fs.mkdirSync(`${this.config.dev.outdir}/${this.path}/images`);
+    // if there is the images foler in the output directory.
+    if (this.path !== "") {
+      // Copy images folder from ${this.config.dev.postsdir}/${postPath} to ${this.config.dev.outdir}/${postPath}
+      if (!fs.existsSync(`${this.config.dev.outdir}/${this.path}/images`))
+        fs.mkdirSync(`${this.config.dev.outdir}/${this.path}/images`);
 
-    fs.readdirSync(`${this.config.dev.postsdir}/${this.path}/images`).forEach(
-      (image) => {
-        fs.copyFileSync(
-          `${this.config.dev.postsdir}/${this.path}/images/${image}`,
-          `${this.config.dev.outdir}/${this.path}/images/${image}`,
-        );
-      },
-    );
+      fs.readdirSync(`${this.config.dev.postsdir}/${this.path}/images`).forEach(
+        (image) => {
+          fs.copyFileSync(
+            `${this.config.dev.postsdir}/${this.path}/images/${image}`,
+            `${this.config.dev.outdir}/${this.path}/images/${image}`,
+          );
+        },
+      );
+    }
   }
 }
 
 // Read all markdown articles from content/posts and sort them by date
 function renderArticles() {
   const posts = [];
+  // config.dev.postsdir: ./content/posts",
   const postPaths = fs.readdirSync(config.dev.postsdir);
   postPaths.forEach((postPath) => {
-    const post = new Post(config, postPath);
-    const path = `${config.dev.postsdir}/${postPath}/index.md`;
+    const post = new Post(config);
+    const path = `${postPath}/index.md`;
     post.readSource(path);
     posts.push(post);
   });

@@ -53,7 +53,9 @@ function build() {
   // Create posts in docs/posts
   const postArray = posts.renderArticles();
   postArray.forEach((post) => {
-    post.generateOutput("post.html");
+    const path = post.srcFilePath.split("/").slice(0, -1).join("/");
+    outputFilePath = `${path}/index.html`;
+    post.generateOutput("post.html", outputFilePath);
   });
 
   home.createPagenation(postArray);
