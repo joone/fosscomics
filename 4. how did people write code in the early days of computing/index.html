@@ -68,70 +68,77 @@
                     <p>When computers were first introduced commercially, how did people write code for computers? In fact, there was no software similar to what we have today. All functionalities were implemented as functional units in circuits. <a href="https://en.wikipedia.org/wiki/ENIAC ">ENIAC</a> was also able to run various programs by wiring each functional unit and used punch cards as a storage device<a href="http://www.seas.upenn.edu/about-seas/eniac/operation.php "title="Celebrating Penn Engineering History: ENIAC">&#91;1&#93;</a>.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image1.png" alt="" style="width: 80%;">
+            <img src="images/4_1.png" alt="" style="width: 80%;">
             
           </figure>
         </div>
-      <div class="blockquote-container"><blockquote><p>&quot;This is a computer for arithmetic operations&quot;<br>“That is a computer for breaking German ciphers”<br>&quot;Can I make a computer for ballistics calculation?&quot;<br>&quot;How many relays and vacuum tubes are needed for this?&quot;</p></blockquote></div><p>Actual computer programming has been possible since stored-program computers such as <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> were introduced in 1949. Basically, the program can be executed after it is loaded into memory.</p><p>A program is made up of instructions that the machine can understand, which is called <a href="https://en.wikipedia.org/wiki/Machine_code ">machine code</a>. The machine language is difficult for humans to understand because it consists only of binary numbers such as 0 and 1.</p>
+      <div class="blockquote-container"><blockquote><p>&quot;This is a computer for arithmetic operations&quot;<br>“That is a computer for breaking German ciphers”</p></blockquote></div>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image2.png" alt="Neo scans binary numbers" style="width: 90%;">
+            <img src="images/4_2.png" alt="" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container"><blockquote><p>&quot;Can I make a computer for ballistics calculation?&quot;<br>&quot;How many relays and vacuum tubes are needed for this?&quot;</p></blockquote></div><p>Actual computer programming has been possible since stored-program computers such as <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> were introduced in 1949. Basically, the program can be executed after it is loaded into memory.</p><p>A program is made up of instructions that the machine can understand, which is called <a href="https://en.wikipedia.org/wiki/Machine_code ">machine code</a>. The machine language is difficult for humans to understand because it consists only of binary numbers such as 0 and 1.</p>
+        <div style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_3.png" alt="Neo scans binary numbers" style="width: 70%;">
             
           </figure>
         </div>
       <p>So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC Initial Orders and Squares Program">&lbrack;2&rbrack;</a>.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image9.png" alt="">
-            <figcaption>Operation code, unused, mnemonic, meaning</figcaption>
+            <img src="images/4_4.png" alt="" style="width: 80%;">
+            
           </figure>
         </div>
       <p>All machine language instructions used in EDSAC are composed of 17 bits. The first column is the operation code, and the second column, 1 bit, is not used. Third column is the operand, representing the address. The last bit indicates whether the current instruction is 17 bits or 35 bits.</p><p>What does mnemonic, TOS, mean? It means that it loads the value of the accumulator A into m[0]  and then initializes the accumulator A. The second command H is that it loads the multiplier register R with the data in m[2].</p><p>As you can see, machine code is just binary code so it’s difficult for humans to easily understand and remember it. Therefore, assembly language is used to represent each low-level instruction or opcode with mnemonics. When assembly language is converted into machine code, we call it assembling</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image3.png" alt="">
-            <figcaption>Assembly language = Assembling =&gt; Machine Code</figcaption>
+            <img src="images/4_5.png" alt="">
+            
           </figure>
         </div>
       <p>In the early days, assembling was done by hand, so the term, hand assembling, was used. Assembly language has been around since the 1950s. The early programmers must know how to use assembly language because there was no high-level language at the time.</p><p> If there is no assembly tool, you still have to assemble assembly code manually by looking at the mnemonic conversion table.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image7.png" alt="" style="width: 70%;">
+            <img src="images/4_11.png" alt="" style="width: 70%;">
             
           </figure>
         </div>
       <div class="blockquote-container"><blockquote><p>&quot;I’m writing code&quot;</p></blockquote></div><p>However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964<a href="http://theinventors.org/library/inventors/blcomputer_keyboard.htm "title="History of the Computer Keyboard">&lbrack;3&rbrack;</a>, and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image6.png" alt="" style="width: 70%;">
+            <img src="images/4_6.png" alt="" style="width: 70%;">
             
           </figure>
         </div>
       <div class="blockquote-container"><blockquote><p>&quot;Finally, I got a computer with a keyboard and a monitor&quot;</p></blockquote></div><p>Early programmers used punched cards to write code. Punch cards were originally used for data storage from the late 19th century, and were used by the US Census Bureau for census purposes. It is easy to understand if you think of the current <a href="https://en.wikipedia.org/wiki/Optical_mark_recognition ">OMR</a> sheet to mark answers.</p><p>IBM had developed a punch card system at the time and was supplying the system worldwide so  the punch card was well used as an essential part of early programming.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image8.png" alt="" style="width: 80%;">
+            <img src="images/4_7.png" alt="" style="width: 60%;">
             <figcaption>Punch card for Fortran programming</figcaption>
           </figure>
         </div>
       <p>For example, the early programmers used punch cards as a development tool. First, the programmer wrote assembly code on paper. Then they debugged by running the code in their minds. When they were convinced that there were no more errors in their code. Finally, the code was hand assembled into machine code and they filled out machine code line by line onto a punch card.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image10.png" alt="" style="width: 80%;">
+            <img src="images/4_8.png" alt="" style="width: 70%;">
             
           </figure>
         </div>
       <div class="blockquote-container"><blockquote><p>“I need to write the code on the punch card”</p></blockquote></div><p>Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image4.png" alt="">
+            <img src="images/4_9.png" alt="">
             
           </figure>
         </div>
       <div class="blockquote-container"><blockquote><p>&quot;Can you take a look at my code?&quot;<br>&quot;Next person&quot;</p></blockquote></div><p>The interesting thing is that just copying a punch card is the same as copying a program, so it was possible to copy programs by writing at the time.</p>
         <div style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/image5.png" alt="" style="width: 80%;">
+            <img src="images/4_10.png" alt="" style="width: 70%;">
             
           </figure>
         </div>
@@ -177,7 +184,7 @@
                 <a class="border"></a>
               </div>
               <div class="footer-info">
-                © 2024 Joone Hur | <a href="https://github.com/joone/fosscomics">fosscomics v1.1.3</a> | Published on Apr 11, 2024
+                © 2024 Joone Hur | <a href="https://github.com/joone/fosscomics">fosscomics v1.1.4</a> | Published on Apr 12, 2024
               </div>
             </footer>
         </div>
