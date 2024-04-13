@@ -12,6 +12,7 @@ const allPosts = require("./all_posts");
 const posts = require("./posts");
 const tagList = require("./tag_list");
 const Page = require("./page");
+const PageBase = require("./mod/page_base");
 
 function formatDate(
   date,
@@ -56,9 +57,14 @@ function build() {
     post.generateOutput("post.html");
   });
 
-  home.createPagenation(postArray);
-  allPosts.createAllPostsPage(postArray);
-  tagList.createTagPages(postArray);
+  const pageHome = new PageBase(config);
+  home.createPagenation(postArray, pageHome);
+
+  const pageAllPosts = new PageBase(config);
+  allPosts.createAllPostsPage(postArray, pageAllPosts);
+
+  const pageTag = new PageBase(config);
+  tagList.createTagPages(postArray, pageTag);
 
   const aboutPage = new Page(config);
   aboutPage.readSource(`${config.dev.content}/about.md`);

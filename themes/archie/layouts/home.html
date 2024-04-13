@@ -7,31 +7,17 @@
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="icon" type="image/png" href="/images/favicon.png">
         <!-- Google tag (gtag.js) -->
-        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}</title>
-        <meta name="description" content="${config.blogDescription}" />
-        ${common.openGraph(
-          "website",
-          config.blogName,
-          config.blogsite,
-          config.blogName,
-          config.blogDescription,
-          config.image,
-        )}
+        ${page.config.googleAnalyticsID ? page.googleAnalytics(page.config.googleAnalyticsID) : ""}
+        <title>${page.config.blogName}</title>
+        <meta name="description" content="${page.config.blogDescription}" />
+        ${page.openGraph("website")}
         <!-- Twitter Card -->
-        ${common.twitterCard(
-          "summary",
-          config.siteTwitter,
-          config.authorTwitter,
-          config.blogName,
-          config.blogDescription,
-          config.image,
-        )}
+        ${page.twitterCard("summary")}
     </head>
     <body>
         <div class="content">
             <header>
-                <div class="main">${config.blogName}</div>
+                <div class="main">${page.config.blogName}</div>
                 <nav>
                   Home
                   <a href="/all_posts">All posts</a>
@@ -50,7 +36,7 @@
                       post,
                     ) => `<section class="list-item" aria-label="Summary of Comic post">
                     <h1><a href="/${post.path}">${post.title}</a></h1>
-                        <time>${common.formatDate(new Date(post.date))}</time>
+                        <time>${page.formatDate(new Date(post.date))}</time>
                       <div class="responsive-image">
                          <img src="/${post.path}/images/${post.image}" alt="${post.title}">
                       </div>
@@ -69,7 +55,7 @@
               </ul>
             </main>
             <footer>
-              ${common.footer()}
+              ${page.footer()}
             </footer>
         </div>
     </body>

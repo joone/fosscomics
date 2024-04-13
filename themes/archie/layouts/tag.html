@@ -3,26 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${config.blogDescription}" />
+        <meta name="description" content="${page.config.blogDescription}" />
         <link rel="stylesheet" href="../../styles/fonts.css">
         <link rel="stylesheet" href="../../styles/main.css">
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <!-- Google tag (gtag.js) -->
-        ${config.googleAnalyticsID ? common.googleAnalytics(config.googleAnalyticsID) : ""}
-        <title>${config.blogName}: Entries tagged - ${data.tag}</title>
-        ${common.openGraph(
-          "website",
-          config.blogName,
-          `${config.blogsite}/${data.url}`,
-          `${config.blogName}: Entries tagged - ${data.tag}`,
-          config.blogDescription,
-          config.image,
-        )}
+        ${page.config.googleAnalyticsID ? page.googleAnalytics(page.config.googleAnalyticsID) : ""}
+        <title>${page.config.blogName}: Entries tagged - ${data.tag}</title>
+        ${page.openGraph("website")}
     </head>
     <body>
         <div class="content">
             <header>
-                <div class="main">${config.blogName}</div>
+                <div class="main">${page.config.blogName}</div>
                 <nav>
                   <a href="/">Home</a>
                   <a href="/all_posts">All posts</a>
@@ -43,7 +36,7 @@
                   .join("")}
               </ul>
             <footer>
-              ${common.footer()}
+              ${page.footer()}
             </footer>
         </div>
     </body>
