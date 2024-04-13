@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const PageBase = require("./mod/page_base");
-const tagPage = require("./tag");
+const TagPage = require("./tag");
 
 module.exports = class TagList extends PageBase {
   constructor(config) {
@@ -62,7 +62,8 @@ module.exports = class TagList extends PageBase {
       );
 
     for (let [tag, posts] of tagMap) {
-      tagPage.createTagPage(tag, posts, this);
+      const tagPage = new TagPage(this.config);
+      tagPage.createPages(tag, posts);
     }
   }
 };
