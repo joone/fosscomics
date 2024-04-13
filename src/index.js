@@ -9,7 +9,7 @@ config.version = require("../package.json").version;
 
 const HomePagenation = require("./home");
 const AllPostsPage = require("./all_posts");
-const posts = require("./posts");
+const PostsPage = require("./posts");
 const TagPages = require("./tag_list");
 const Page = require("./page");
 
@@ -51,7 +51,8 @@ function build() {
   fs.mkdirSync(config.dev.outdir);
 
   // Create posts in docs/posts
-  const postArray = posts.renderArticles();
+  const posts = new PostsPage(config);
+  const postArray = posts.readSourceList();
   postArray.forEach((post) => {
     post.generateOutput("post.html");
   });
