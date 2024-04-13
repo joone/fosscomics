@@ -61,8 +61,8 @@ module.exports = class TagList extends PageBase {
         },
       );
 
+    const tagPage = new TagPage(this.config);
     for (let [tag, posts] of tagMap) {
-      const tagPage = new TagPage(this.config);
       tagPage.createPages(tag, posts);
     }
   }
