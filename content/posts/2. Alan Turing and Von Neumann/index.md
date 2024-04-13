@@ -7,7 +7,7 @@ tags: Alan Turing, Von Neumann, Kurt Göde, EDVAC, EDSAC, Automatic Computing En
 ---
 
 
-![ Alan Turing and Von Neumann](images/image2.png " Alan Turing and Von Neumann")
+![ Alan Turing and Von Neumann](images/image2.png " Alan Turing and Von Neumann size:70%")
 
 Who initially made the type of computer we use today? After the Second World War,  many countries tried to develop a computer, but Alan Turing, an English mathematician, was the first to propose a theoretical model of the computer.
 
