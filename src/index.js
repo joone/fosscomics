@@ -10,7 +10,7 @@ config.version = require("../package.json").version;
 const HomePagenation = require("./home");
 const allPosts = require("./all_posts");
 const posts = require("./posts");
-const tagList = require("./tag_list");
+const TagPages = require("./tag_list");
 const Page = require("./page");
 const PageBase = require("./mod/page_base");
 
@@ -63,8 +63,8 @@ function build() {
   const pageAllPosts = new PageBase(config);
   allPosts.createAllPostsPage(postArray, pageAllPosts);
 
-  const pageTag = new PageBase(config);
-  tagList.createTagPages(postArray, pageTag);
+  const tagPages = new TagPages(config);
+  tagPages.createPages(postArray);
 
   const aboutPage = new Page(config);
   aboutPage.readSource(`${config.dev.content}/about.md`);
