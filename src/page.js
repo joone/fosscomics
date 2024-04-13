@@ -2,12 +2,12 @@ const fm = require("front-matter");
 const fs = require("fs");
 const path = require("path");
 const marked = require("./mod/marked");
+const PageBase = require("./mod/page_base");
 
-module.exports = class Page {
+module.exports = class Page extends PageBase {
   constructor(config) {
-    this.title = "";
+    super(config);
     this.image = "";
-    this.config = config;
     this.theme = config.theme;
     this.srcFilePath = "";
 
@@ -127,30 +127,6 @@ module.exports = class Page {
     }
   }
 
-  footer() {
-    const footerTemplate = fs.readFileSync(
-      "./themes/archie/layouts/partials/footer.html",
-      "utf-8",
-    );
-
-    const funcFooter = new Function(
-      "config",
-      `return () => \`${footerTemplate}\`;`,
-    );
-    const result = funcFooter(this.config)();
-    const footerHTML = result
-      .split("\n")
-      .map((line, index) => (index !== 0 ? `              ${line}` : line))
-      .join("\n");
-
-    return footerHTML;
-  }
-
-  formatDate(date) {
-    const options = { year: "numeric", month: "short", day: "numeric" };
-    return date.toLocaleDateString("en-US", options); // For US English format
-  }
-
   // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
   twitterCard(card, site, creator, title, description, image) {
     return `<meta name="twitter:card" content="${card}" />
@@ -180,17 +156,5 @@ module.exports = class Page {
       );
     }
     return result;
-  }
-
-  googleAnalytics(trackingId) {
-    return `<script async src="https://www.googletagmanager.com/gtag/js?id=${trackingId}"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "${trackingId}");
-        </script>`;
   }
 };

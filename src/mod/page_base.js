@@ -64,15 +64,17 @@ module.exports = class PageBase {
       "utf-8",
     );
 
-    const jsString = "return () => " + `\`${footerTemplate}\`;`;
-    const funcFooter = new Function("config", jsString);
+    const funcFooter = new Function(
+      "config",
+      `return () => \`${footerTemplate}\`;`,
+    );
     const result = funcFooter(this.config)();
-    const array = result.split("\n");
-    for (let i = 0; i < array.length; i++) {
-      if (i !== 0) array[i] = `              ${array[i]}`;
-    }
+    const footerHTML = result
+      .split("\n")
+      .map((line, index) => (index !== 0 ? `              ${line}` : line))
+      .join("\n");
 
-    return array.join("\n");
+    return footerHTML;
   }
 
   generateHTML(templatePath, data) {
