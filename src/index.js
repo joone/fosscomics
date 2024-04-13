@@ -10,7 +10,7 @@ config.version = require("../package.json").version;
 const HomePagenation = require("./home");
 const AllPostsPage = require("./all_posts");
 const PostsPage = require("./posts");
-const TagPages = require("./tag_list");
+const TagPages = require("./tag");
 const Page = require("./page");
 
 function formatDate(

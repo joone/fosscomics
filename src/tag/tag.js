@@ -1,5 +1,5 @@
 const fs = require("fs");
-const PageBase = require("./mod/page_base");
+const PageBase = require("../mod/page_base");
 
 module.exports = class TagPage extends PageBase {
   createPages(tag, posts) {
