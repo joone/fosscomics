@@ -8,11 +8,10 @@ config.date_time = formatDate(new Date());
 config.version = require("../package.json").version;
 
 const HomePagenation = require("./home");
-const allPosts = require("./all_posts");
+const AllPostsPage = require("./all_posts");
 const posts = require("./posts");
 const TagPages = require("./tag_list");
 const Page = require("./page");
-const PageBase = require("./mod/page_base");
 
 function formatDate(
   date,
@@ -60,8 +59,8 @@ function build() {
   const homePagenation = new HomePagenation(config);
   homePagenation.createPages(postArray);
 
-  const pageAllPosts = new PageBase(config);
-  allPosts.createAllPostsPage(postArray, pageAllPosts);
+  const allPostsPage = new AllPostsPage(config);
+  allPostsPage.createPages(postArray);
 
   const tagPages = new TagPages(config);
   tagPages.createPages(postArray);
