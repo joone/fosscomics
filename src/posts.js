@@ -36,4 +36,10 @@ module.exports = class PostsPage extends Page {
 
     return this.posts;
   }
+
+  createPages() {
+    this.posts.forEach((post) => {
+      post.generateOutput("post.html");
+    });
+  }
 };

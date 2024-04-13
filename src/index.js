@@ -50,22 +50,24 @@ function build() {
     fs.rmdirSync(config.dev.outdir, { recursive: true });
   fs.mkdirSync(config.dev.outdir);
 
-  // Create posts in docs/posts
+  // Create posts in public directory
   const posts = new PostsPage(config);
   const postArray = posts.readSourceList();
-  postArray.forEach((post) => {
-    post.generateOutput("post.html");
-  });
+  posts.createPages();
 
+  // Create home page and pagination in public/page directory
   const homePagenation = new HomePagenation(config);
   homePagenation.createPages(postArray);
 
+  // Create all posts page in public/all_posts directory
   const allPostsPage = new AllPostsPage(config);
   allPostsPage.createPages(postArray);
 
+  // Create tag pages in public/tags directory
   const tagPages = new TagPages(config);
   tagPages.createPages(postArray);
 
+  // Create about page in public/about directory
   const aboutPage = new Page(config);
   aboutPage.readSource(`${config.dev.content}/about.md`);
   aboutPage.generateOutputPath("page.html", "about");
