@@ -4,6 +4,8 @@ module.exports = class PageBase {
   constructor(config) {
     this.config = config;
     this.title = "";
+    this.image = this.config.image;
+    this.description = this.config.blogDescription;
     this.date = "";
     this.tags = [];
     this.content = "";
@@ -33,8 +35,8 @@ module.exports = class PageBase {
         <meta name="twitter:site" content="${this.config.siteTwitter}" />
         <meta name="twitter:creator" content="${this.config.authorTwitter}" />
         <meta name="twitter:title" content="${this.title}" />
-        <meta name="twitter:description" content="${this.config.blogDescription}" />
-        <meta name="twitter:image" content="${this.config.image}" />`;
+        <meta name="twitter:description" content="${this.description}" />
+        <meta name="twitter:image" content="${this.imageURL}" />`;
   }
 
   // https://ogp.me/

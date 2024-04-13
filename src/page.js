@@ -7,10 +7,8 @@ const PageBase = require("./mod/page_base");
 module.exports = class Page extends PageBase {
   constructor(config) {
     super(config);
-    this.image = "";
     this.theme = config.theme;
     this.srcFilePath = "";
-
     this.markdownFilePath = ""; // markdown file path
     this.contentPath = config.dev.content; // ./content/
   }
@@ -35,6 +33,8 @@ module.exports = class Page extends PageBase {
     this.title = content.attributes.title;
     this.date = content.attributes.date;
     this.image = content.attributes.image;
+    this.description = content.attributes.description;
+    this.imageURL = `${this.config.blogsite}/${this.path}/images/${this.image}`;
 
     if (content.attributes.tags && content.attributes.tags.length > 0) {
       const tagArray = content.attributes.tags.split(",");
@@ -125,16 +125,6 @@ module.exports = class Page extends PageBase {
         },
       );
     }
-  }
-
-  // https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
-  twitterCard(card, site, creator, title, description, image) {
-    return `<meta name="twitter:card" content="${card}" />
-        <meta name="twitter:site" content="${site}" />
-        <meta name="twitter:creator" content="${creator}" />
-        <meta name="twitter:title" content="${title}" />
-        <meta name="twitter:description" content="${description}" />
-        <meta name="twitter:image" content="${image}" />`;
   }
 
   // https://ogp.me/

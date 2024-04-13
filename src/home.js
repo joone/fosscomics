@@ -40,6 +40,7 @@ module.exports = class Pagenation extends PageBase {
       console.log("prev", prev, "next", next);
       this.url = url;
       this.title = `${this.config.blogName}`;
+      this.imageURL = this.config.image;
       const data = { posts: pagePosts, prev: prev, next: next };
       fs.writeFile(
         `${filePath}`,
