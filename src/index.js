@@ -7,7 +7,7 @@ const config = require("./mod/config");
 config.date_time = formatDate(new Date());
 config.version = require("../package.json").version;
 
-const home = require("./home");
+const HomePagenation = require("./home");
 const allPosts = require("./all_posts");
 const posts = require("./posts");
 const tagList = require("./tag_list");
@@ -57,8 +57,8 @@ function build() {
     post.generateOutput("post.html");
   });
 
-  const pageHome = new PageBase(config);
-  home.createPagenation(postArray, pageHome);
+  const homePagenation = new HomePagenation(config);
+  homePagenation.createPages(postArray);
 
   const pageAllPosts = new PageBase(config);
   allPosts.createAllPostsPage(postArray, pageAllPosts);
