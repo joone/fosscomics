@@ -49,6 +49,8 @@ module.exports = class TagList extends PageBase {
     if (!fs.existsSync(`${this.config.dev.outdir}/tags/`))
       fs.mkdirSync(`${this.config.dev.outdir}/tags/`);
 
+    this.imageURL = this.config.image;
+    this.description = "Tag List";
     const data = { tags: tagArray, pageTitle: "All tags" };
     (this.url = `${this.config.blogsite}/tag_list.html`),
       (this.title = `${this.config.blogName}: ${data.pageTitle}`),

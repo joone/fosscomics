@@ -7,10 +7,14 @@ module.exports = class TagPage extends PageBase {
     if (!fs.existsSync(`${this.config.dev.outdir}/tags/${tagPath}`))
       fs.mkdirSync(`${this.config.dev.outdir}/tags/${tagPath}`);
 
+    // FIXME: imageURL should refer to the image related to the tag
+    this.imageURL = this.config.image;
+
     const data = { tag: tag, posts: posts, url: "tags/" + tagPath };
-    (this.url = `${this.config.blogsite}/${data.url}`),
-      (this.title = `${this.config.blogName}: Entries tagged - ${data.tag}`);
-    this.description = `${this.config.description}`;
+    this.url = `${this.config.blogsite}/${data.url}`;
+    this.title = `${this.config.blogName}: Entries tagged - ${data.tag}`;
+    this.description = `List up all comics including '${data.tag}' tag.`;
+
     fs.writeFile(
       `${this.config.dev.outdir}/tags/${tagPath}/index.html`,
       this.generateHTML("./themes/archie/layouts/tag.html", data),

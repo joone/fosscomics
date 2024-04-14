@@ -10,14 +10,7 @@
         ${page.config.googleAnalyticsID ? page.googleAnalytics(page.config.googleAnalyticsID) : ""}
         <title>${page.config.blogName}: ${page.title}</title>
         <meta name="description" content="${page.config.blogDescription}" />
-        ${page.openGraph(
-          "website",
-          page.config.blogName,
-          `${page.config.blogsite}/about.html`,
-          `${page.config.blogName}: ${page.title}`,
-          page.config.blogDescription,
-          page.config.image,
-        )}
+        ${page.openGraph("website")}
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="${page.config.blogsite}" />

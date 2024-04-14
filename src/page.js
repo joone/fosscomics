@@ -30,11 +30,13 @@ module.exports = class Page extends PageBase {
     // parsed content by fields and body
     const content = fm(mdContent);
 
-    this.title = content.attributes.title;
+    this.title = `${content.attributes.title}`;
     this.date = content.attributes.date;
+    this.url = `${this.config.blogsite}/${this.path}/`;
     this.image = content.attributes.image;
     this.description = content.attributes.description;
-    this.imageURL = `${this.config.blogsite}/${this.path}/images/${this.image}`;
+    // default image if no imageURL is specified
+    this.imageURL = this.config.image;
 
     if (content.attributes.tags && content.attributes.tags.length > 0) {
       const tagArray = content.attributes.tags.split(",");
@@ -43,7 +45,7 @@ module.exports = class Page extends PageBase {
         .sort((a, b) => a.localeCompare(b));
     }
 
-    this.description = content.attributes.description;
+    // this.description = content.attributes.description;
     // generated HTML from markdown
     this.body = marked.parse(content.body);
     // remove <p></p> and <p> </p> from the beginning and end of the content.body
@@ -125,26 +127,5 @@ module.exports = class Page extends PageBase {
         },
       );
     }
-  }
-
-  // https://ogp.me/
-  openGraph(type, siteName, url, title, description, image, articleObj) {
-    const result = `<meta property="og:type" content="${type}" />
-        <meta property="og:site_name" content="${siteName}" />
-        <meta property="og:url" content="${url}" />
-        <meta property="og:title" content="${title}" />
-        <meta property="og:description" content="${description}" />
-        <meta property="og:image" content="${image}" />`;
-
-    if (type === "article" && articleObj) {
-      return (
-        result +
-        `
-        <meta property="article:author" content="${articleObj.authorName}" />
-        <meta property="article:published_time" content="${articleObj.publishedDate}" />
-        ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
-      );
-    }
-    return result;
   }
 };

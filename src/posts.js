@@ -17,6 +17,8 @@ module.exports = class PostsPage extends Page {
       const post = new Page(config);
       // e.g.: postPath = '1. history of linux'
       post.readSource(`${this.config.dev.postsdir}/${postPath}`);
+      post.url = `${this.config.blogsite}/${post.path}/`;
+      post.imageURL = `${this.config.blogsite}/${post.path}/images/${post.image}`;
       this.posts.push(post);
     });
     // sort by date

@@ -45,16 +45,16 @@ module.exports = class PageBase {
         <meta property="og:site_name" content="${this.config.blogName}" />
         <meta property="og:url" content="${this.url}" />
         <meta property="og:title" content="${this.title}" />
-        <meta property="og:description" content="${this.config.blogDescription}" />
-        <meta property="og:image" content="${this.config.image}" />`;
+        <meta property="og:description" content="${this.description}" />
+        <meta property="og:image" content="${this.imageURL}" />`;
 
     if (type === "article" && articleObj) {
       return (
         result +
         `
-          <meta property="article:author" content="${articleObj.authorName}" />
-          <meta property="article:published_time" content="${articleObj.publishedDate}" />
-          ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
+        <meta property="article:author" content="${articleObj.authorName}" />
+        <meta property="article:published_time" content="${articleObj.publishedDate}" />
+        ${articleObj.tags.map((tag) => `<meta property="article:tag" content="${tag}">`).join("\n        ")}`
       );
     }
     return result;
