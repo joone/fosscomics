@@ -10,7 +10,7 @@ module.exports = class Posts {
   }
 
   // Read all markdown articles from content/posts and sort them by date
-  readSourceList() {
+  createPostObjects() {
     // config.dev.postsdir: ./content/posts",
     const postPaths = fs.readdirSync(this.config.dev.postsdir);
     postPaths.forEach((postPath) => {

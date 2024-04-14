@@ -52,23 +52,23 @@ function build() {
 
   // Create post pages in public directory
   const posts = new Posts(config);
-  const postArray = posts.readSourceList();
+  const postObjects = posts.createPostObjects();
 
-  postArray.forEach((post) => {
+  postObjects.forEach((post) => {
     post.generateContent("post.html");
   });
 
   // Create home page and pagination in public/page directory
   const homePagenation = new HomePagenation(config);
-  homePagenation.generateContent(postArray);
+  homePagenation.generateContent(postObjects);
 
   // Create all posts page in public/all_posts directory
   const allPostsPage = new AllPostsPage(config);
-  allPostsPage.generateContent(postArray);
+  allPostsPage.generateContent(postObjects);
 
   // Create tag pages in public/tags directory
   const tagPages = new TagPages(config);
-  tagPages.generateContent(postArray);
+  tagPages.generateContent(postObjects);
 
   // Create about page in public/about directory
   const aboutPage = new Page(config);
