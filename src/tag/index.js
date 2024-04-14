@@ -29,7 +29,7 @@ module.exports = class TagList extends PageBase {
     return tags;
   }
 
-  generateContent(articles, pageBase) {
+  generateContent(articles) {
     //tagArray = Array.from(tags.keys());
 
     const tagMap = this.gatherTags(articles);
