@@ -1,8 +1,8 @@
 const fm = require("front-matter");
 const fs = require("fs");
 const path = require("path");
-const marked = require("./mod/marked");
-const PageBase = require("./mod/page_base");
+const marked = require("./marked");
+const PageBase = require("./page_base");
 
 module.exports = class Page extends PageBase {
   constructor(config) {

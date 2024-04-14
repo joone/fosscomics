@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const config = require("./mod/config");
-const Page = require("./page");
+const Page = require("./mod/page");
 
 module.exports = class Posts {
   constructor(config) {

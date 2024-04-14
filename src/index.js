@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const config = require("./mod/config");
+const Page = require("./mod/page");
 config.date_time = formatDate(new Date());
 config.version = require("../package.json").version;
 
@@ -11,7 +12,6 @@ const HomePagenation = require("./home");
 const AllPostsPage = require("./all_posts");
 const Posts = require("./posts");
 const TagPages = require("./tag");
-const Page = require("./page");
 
 function formatDate(
   date,
