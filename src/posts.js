@@ -38,10 +38,4 @@ module.exports = class Posts {
 
     return this.posts;
   }
-
-  createPages() {
-    this.posts.forEach((post) => {
-      post.generateContent("post.html");
-    });
-  }
 };

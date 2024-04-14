@@ -50,10 +50,13 @@ function build() {
     fs.rmdirSync(config.dev.outdir, { recursive: true });
   fs.mkdirSync(config.dev.outdir);
 
-  // Create posts in public directory
+  // Create post pages in public directory
   const posts = new Posts(config);
   const postArray = posts.readSourceList();
-  posts.createPages();
+
+  postArray.forEach((post) => {
+    post.generateContent("post.html");
+  });
 
   // Create home page and pagination in public/page directory
   const homePagenation = new HomePagenation(config);
