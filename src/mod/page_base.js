@@ -82,15 +82,16 @@ module.exports = class PageBase {
   generateHTML(templatePath, data) {
     const postTemplate = fs.readFileSync(templatePath, "utf-8");
 
-    const jsString = "return () => " + `\`${postTemplate}\`;`;
-    const funcPost = new Function("page, data", jsString);
+    const funcPost = new Function(
+      "page, data",
+      `return () => \`${postTemplate}\`;`,
+    );
     const result = funcPost(this, data)();
-    const array = result.split("\n");
-    for (let i = 0; i < array.length; i++) {
-      if (i !== 0) array[i] = `${array[i]}`;
-    }
+    const postHTML = result
+      .split("\n")
+      .map((line, index) => (index !== 0 ? `${line}` : line))
+      .join("\n");
 
-    const postHTML = array.join("\n");
     return postHTML;
   }
 };
