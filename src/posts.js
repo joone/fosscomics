@@ -1,6 +1,5 @@
 const fs = require("fs");
 
-const config = require("./mod/config");
 const Page = require("./mod/page");
 
 module.exports = class Posts {
@@ -14,7 +13,7 @@ module.exports = class Posts {
     // config.dev.postsdir: ./content/posts",
     const postPaths = fs.readdirSync(this.config.dev.postsdir);
     postPaths.forEach((postPath) => {
-      const post = new Page(config);
+      const post = new Page(this.config);
       // e.g.: postPath = '1. history of linux'
       post.readSource(`${this.config.dev.postsdir}/${postPath}`);
       post.url = `${this.config.blogsite}/${post.path}/`;
