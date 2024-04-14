@@ -16,7 +16,7 @@ module.exports = class AllPostsPage extends PageBase {
     this.title = `${this.config.blogName}: ${data.pageTitle}`;
     this.description = "All posts";
     this.imageURL = this.config.image;
-    fs.writeFile(
+    fs.writeFileSync(
       `${this.config.dev.outdir}/all_posts/index.html`,
       this.generateHTML("./themes/archie/layouts/all_posts.html", data),
       (e) => {
