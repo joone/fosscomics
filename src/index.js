@@ -9,7 +9,7 @@ config.version = require("../package.json").version;
 
 const HomePagenation = require("./home");
 const AllPostsPage = require("./all_posts");
-const PostsPage = require("./posts");
+const Posts = require("./posts");
 const TagPages = require("./tag");
 const Page = require("./page");
 
@@ -51,7 +51,7 @@ function build() {
   fs.mkdirSync(config.dev.outdir);
 
   // Create posts in public directory
-  const posts = new PostsPage(config);
+  const posts = new Posts(config);
   const postArray = posts.readSourceList();
   posts.createPages();
 

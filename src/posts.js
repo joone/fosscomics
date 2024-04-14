@@ -3,9 +3,9 @@ const fs = require("fs");
 const config = require("./mod/config");
 const Page = require("./page");
 
-module.exports = class PostsPage extends Page {
+module.exports = class Posts {
   constructor(config) {
-    super(config);
+    this.config = config;
     this.posts = [];
   }
 
