@@ -10,6 +10,7 @@ module.exports = class PageBase {
     this.tags = [];
     this.content = "";
     this.url = "";
+    this.theme = this.config.theme;
   }
 
   formatDate(date) {
@@ -62,7 +63,7 @@ module.exports = class PageBase {
 
   footer() {
     const footerTemplate = fs.readFileSync(
-      "./themes/archie/layouts/partials/footer.html",
+      `./themes/${this.theme}/layouts/partials/footer.html`,
       "utf-8",
     );
 

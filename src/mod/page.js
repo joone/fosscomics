@@ -7,7 +7,6 @@ const PageBase = require("./page_base");
 module.exports = class Page extends PageBase {
   constructor(config) {
     super(config);
-    this.theme = config.theme;
     this.srcFilePath = "";
     this.markdownFilePath = ""; // markdown file path
     this.contentPath = config.dev.content; // ./content/
