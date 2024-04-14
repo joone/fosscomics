@@ -41,7 +41,7 @@ module.exports = class Posts {
 
   createPages() {
     this.posts.forEach((post) => {
-      post.generateOutput("post.html");
+      post.generateContent("post.html");
     });
   }
 };

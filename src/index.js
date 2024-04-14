@@ -57,20 +57,20 @@ function build() {
 
   // Create home page and pagination in public/page directory
   const homePagenation = new HomePagenation(config);
-  homePagenation.createPages(postArray);
+  homePagenation.generateContent(postArray);
 
   // Create all posts page in public/all_posts directory
   const allPostsPage = new AllPostsPage(config);
-  allPostsPage.createPages(postArray);
+  allPostsPage.generateContent(postArray);
 
   // Create tag pages in public/tags directory
   const tagPages = new TagPages(config);
-  tagPages.createPages(postArray);
+  tagPages.generateContent(postArray);
 
   // Create about page in public/about directory
   const aboutPage = new Page(config);
   aboutPage.readSource(`${config.dev.content}/about.md`);
-  aboutPage.generateOutputPath("page.html", "about");
+  aboutPage.generateContent("page.html", "about");
 
   // copy the static directory to public directory
   copyDirectoryRecursive("./static/images", "./public/images");

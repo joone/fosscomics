@@ -6,7 +6,7 @@ module.exports = class Pagenation extends PageBase {
     super(config);
   }
 
-  createPages(posts) {
+  generateContent(posts) {
     const postsPerPage = 5;
     const numPages = Math.ceil(posts.length / postsPerPage);
 

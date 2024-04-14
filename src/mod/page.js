@@ -56,14 +56,10 @@ module.exports = class Page extends PageBase {
     this.previous = null;
   }
 
-  // For a series of posts
-  generateOutput(templateFile) {
-    const outputPath = `${this.path}/index.html`;
-    this.generateOutputPath(templateFile, outputPath);
-  }
-
   // about/index.html or about/hello.html
-  generateOutputPath(templateFile, outputPath) {
+  generateContent(templateFile, outputPath) {
+    // For a series of posts
+    if (outputPath === undefined) outputPath = `${this.path}/index.html`;
     // if file name is not included in the path
     if (outputPath.indexOf(".htm") === -1) {
       if (outputPath[outputPath.length - 1] !== "/") outputPath += "/";

@@ -6,7 +6,8 @@ module.exports = class AllPostsPage extends PageBase {
     super(config);
   }
 
-  createPages(posts) {
+  // posts: array of Page objects
+  generateContent(posts) {
     const pageTitle = "All posts";
     if (!fs.existsSync(`${this.config.dev.outdir}/all_posts/`))
       fs.mkdirSync(`${this.config.dev.outdir}/all_posts/`);
