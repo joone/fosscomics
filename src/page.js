@@ -87,18 +87,8 @@ module.exports = class Page extends PageBase {
         fs.unlinkSync(`${this.config.dev.outdir}/${this.path}`);
     }
 
-    const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts`;
-    const postTemplate = fs.readFileSync(
-      `${layoutsPath}/${templateFile}`,
-      "utf-8",
-    );
-
-    const funcPost = new Function("page", `return () => \`${postTemplate}\`;`);
-    const result = funcPost(this)();
-    const postHTML = result
-      .split("\n")
-      .map((line, index) => (index !== 0 ? `${line}` : line))
-      .join("\n");
+    const layoutsPath = `${this.config.dev.themePath}/${this.theme}/layouts/${templateFile}`;
+    const postHTML = this.generateHTML(layoutsPath);
 
     fs.writeFileSync(
       `${this.config.dev.outdir}/${outputPath}`,
