@@ -39,7 +39,7 @@ In fact, the idea for the von Neumann architecture was initiated by Mockley and 
 
 In the 1950s, a number of companies began to make commercial computers. IBM produced [punch card](https://en.wikipedia.org/wiki/Punched_card%23IBM_punched_card_manufacturing) systems and also released its first computer, the [IBM 701](https://en.wikipedia.org/wiki/IBM_701), in 1952.
 
-![](images/3_6.png)
+![](images/3_6.png "IBM 701 Electronic Data Processing Machine, 1952")
 > “Hmm, this machine is still using vacuum tubes and doesn’t have a monitor and keyboard yet. The memory size is only 36 bits x 2048.”
 
 In particular, IBM developed the [Fortran ](https://en.wikipedia.org/wiki/Fortran)and [LISP](https://en.wikipedia.org/wiki/Lisp_\(programming_language\)) computer languages for its successor, the [IBM 704](https://en.wikipedia.org/wiki/IBM_704), released in 1954.
