@@ -1,7 +1,7 @@
 ---
 title: 3. The Era of Commercial Computers
 date: "2019-06-25"
-image: image3.png
+image: feature.png
 description: n 1947, Eckert and Mauchly, the developers of ENIAC and EDVAC, founded the Eckert-Mauchly Computer Corporation and introduced UNIVAC. Meanwhile, IBM launched the IBM 650, the first mass-produced computer, and developed foundational programming languages like Fortran and LISP. This marked the beginning of widespread commercial computing and software engineering in the 1950s...
 tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, Fortran, John Backus, IBM 701, IBM 704, The Art of Computer Programming
 ---
