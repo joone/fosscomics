@@ -12,11 +12,11 @@ Human beings have made a number of tools to make math calculations more convenie
 
 In Korea, the abacus was introduced from China around the 1400s, and it was used by individuals as well as banks until the 1980s. After that, computers replaced it in banks and it is hardly used for personal use anymore.
 
-![A girl is using a abacus](images/1_2.png size:80%)
+![A girl is using a abacus](images/1_2.png "size:70%")
 
 In the West, in the 17th century, [Pascal](https://en.wikipedia.org/wiki/Pascal%27s_calculator) and Leibniz made mechanical calculators using gears.
 
-![Leibniz says,"This mechanical calculator is capable of multiplication and division."](images/1_3.png "Gottfried Wilhelm Leibniz(1646-1716) size:80%")
+![Leibniz says,"This mechanical calculator is capable of multiplication and division."](images/1_3.png "Gottfried Wilhelm Leibniz(1646-1716) size:70%")
 
 ## Charles Babbage and his difference engine
 In 1822, the British mathematician Charles Babbage designed a difference engine consisting of memories, an arithmetic unit and input/output devices like the computers we use now, but in a mechanical way.
