@@ -8,7 +8,7 @@ tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, bug, women, RM
 
 Until the 1960s, hardware was the main focus of computer engineering. Computers and peripheral devices were large machines that filled big rooms, they were costly and required manpower to operate. Unlike today, software back then was not a separate field of engineering or science
 
-![](images/5_1.png)
+![](images/5_1.png "Honeywell 800 mainframe, 1959")
 > “Installation done!” \
 > “Hmm, how can I program it?
 
@@ -30,7 +30,7 @@ According to the story of [Margaret Hamilton](https://www.google.com/url?q=https
 
 After studying mathematics in university, she began working as a programmer at MIT to support her husband's Ph.D. At that time, without any proper software development training, she joined in the development of a program to predict the weather.
 
-![](images/5_4.png "size:70%")
+![Margaret Hamilton](images/5_4.png "Margaret Hamilton size:70%")
 > “At the time, computer science and software engineering were not part of the regular curriculum. So programmers had to work through hands-on experience.”
 
 Following this, she became a system programming expert and participated in the Apollo 11 mission. At the time, the Apollo 11 mission did not include any budget and schedule for software development, and there was no mention of software in the requirements[&lbrack;1&rbrack;][1] However, software was important enough to control the flight of the spacecraft and the lunar lander. Margaret took her daughter to the office on weekends to develop more reliable software.
@@ -46,7 +46,7 @@ Eventually, in 1968, as many as 400 people participated in the development of th
 
 In particular, she first used the term “software engineering” at the beginning of the Apollo missions so that software could be recognized as an independent domain like hardware. She also helped to create a course work about computer programming at MIT[&lbrack;4&rbrack;][4].
 
-![](images/5_7.png "size:80%")
+![Margaret Hamilton is speaking and the words 'software engineering' appear in a speech bubble.](images/5_7.png "Margaret Hamilton size:80%")
 
 An interesting fact is that many software developers were women until the 1960s, but this is a significant difference compared to the current situation where men dominate the computer programming field. The reason is that at the time, software development was less important than hardware development, so women were mainly in charge, and they were also paid less than men[&lbrack;2&rbrack;][2]. If you look for black and white photos of early computers on the Internet, you can see a lot of women in front of the computers.
 
@@ -72,7 +72,7 @@ Eventually, she found out that the computer wasn't working properly because of t
 
 And while attaching the moth to the workbook, she left a note saying that it was the first computer bug
 
-![](images/5_13.png "size:80%")
+![](images/5_13.png "Grace Hopper size:80%")
 > “I found the first computer bug([a picture from Wikipedia](https://en.wikipedia.org/wiki/Harvard_Mark_II%23/media/File:First_Computer_Bug,_1945.jpg)).
 
 In the early days when computers were used, women played a pioneering role in software development and created the foundation for software engineering to be born.

@@ -14,7 +14,7 @@ The computer was developed in earnest during World War II and was mainly used f
 
 Some engineers involved in early computer development had predicted the commercial potential of computers earlier.
 
-![](images/3_2.png "size:80%")
+![](images/3_2.png "John Mauchly and John Eckert size:80%")
 > "Can we sell EDVAC to government agencies other than the military?" \
 > "That’s a good idea; why not start a company for this opportunity?"
 

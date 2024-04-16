@@ -34,7 +34,7 @@ This culture of real programmers has developed computing and networks. In additi
 
 The early hacker culture begins with the introduction of the first computer called PDP-1 by MIT in 1961[&lbrack;1&rbrack;][1]. At this time, some students who came across the PDP-1 developed the first video game called [Spacewar!](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Spacewar!\&sa=D\&source=editors\&ust=1711344815828204\&usg=AOvVaw2bc_EyRX-19Ol_owmzNTwB) for fun, and also made a text editor and a chess game. They were also the first to play computer music.
 
-![](images/6_7.png)
+![](images/6_7.png "PDP-1")
 
 In the YouTube video below, you can see the music playing and Spacewar! running on PDP-1.
 <div style="text-align:center">

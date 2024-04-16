@@ -54,7 +54,7 @@ IBM had developed a punch card system at the time and was supplying the system w
 
 For example, the early programmers used punch cards as a development tool. First, the programmer wrote assembly code on paper. Then they debugged by running the code in their minds. When they were convinced that there were no more errors in their code. Finally, the code was hand assembled into machine code and they filled out machine code line by line onto a punch card.
 
-![](images/4_8.png "size:70%")
+![](images/4_8.png "IBM 026 keypunch machine size:70%")
 > “I need to write the code on the punch card”
 
 Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.
