@@ -9,11 +9,11 @@ Explore the comics at [fosscomics.com](https://fosscomics.com) or directly read 
 - [1. Charles Babbage and Ada Lovelace](content/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/index.md)
 - [2. Alan Turing and Von Neumann](content/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/index.md)
 - [3. The Era of Commercial Computers](content/posts/3.%20The%20Era%20of%20Commercial%20Computers/index.md)
-- [4. how did people write code in the early days of computing](content/posts/4.%20how%20did%20people%20write%20code%20in%20the%20early%20days%20of%20computing/index.md)
-- [5. The beginning of software engineering/index.md](content/posts/5.%20The%20beginning%20of%20software%20engineering/index.md)
-- [6. The origin of the hacker culture](content/posts/6.%20The%20origin%20of%20the%20hacker%20culture/index.md)
-- [7. ITS and hacker culture/index.md](content/posts/7.%20ITS%20and%20hacker%20culture/index.md)
-- [8. UNIX and C Language/index.md](content/posts/8.%20UNIX%20and%20C%20Language/index.md)
+- [4. How Did People Write Code in the Early Days of Computing](content/posts/4. How Did People Write Code in the Early Days of Computing/index.md)
+- [5. The Beginning of Software Engineering](content/posts/5. The Beginning of Software Engineering/index.md)
+- [6. The Origin of the Hacker Culture](content/posts/6. The Origin of the Hacker Culture/index.md)
+- [7. ITS and Hacker Culture](content/posts/7. ITS and Hacker Culture/index.md)
+- [8. The Origins of Unix and the C Language](content/posts/8. The Origins of Unix and the C Language/index.md)
 
 ## About the Repository
 
