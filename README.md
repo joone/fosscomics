@@ -21,6 +21,21 @@ This repository hosts the source code used to generate the static website for F/
 
 The static webpage generator was adapted from [kartiknair's blog](https://github.com/kartiknair/blog) and is styled using the [Archie theme](https://github.com/athul/archie). I've customized the generator to better suit the needs of the F/OSS Comics series.
 
+## How to Build and View the Comics
+To build the static website for the comics, run:
+
+```bash
+npm run build
+```
+
+After building the site, you can start a local web server to view the comics:
+
+```
+npm start
+```
+
+Open your web browser and navigate to http://localhost:3000 to read the comics.
+
 ## Contributions
 
 I welcome contributions and feedback on the comics and the website. If you have suggestions or want to contribute, please submit a pull request or join the discusstions.
