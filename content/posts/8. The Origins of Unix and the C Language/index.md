@@ -94,7 +94,7 @@ Dennis added the structure type to the C language to define the user's custom da
 
 ![](images/8_18.png "size:80%")
 
-Although Unix and C were created in a short period of time by Ken Thompson and Dannis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.
+Although Unix and C were created in a short period of time by Ken Thompson and Dennis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.
 
 ## References
 1. Multics, [wikipedia](https://en.wikipedia.org/wiki/Multics)
