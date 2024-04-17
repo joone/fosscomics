@@ -13,7 +13,7 @@ The groundbreaking Unix and C language, which would go on to change the world, w
 ![](images/8_2.png "MIT vs. Bell Lab.")
 > "I feel the force somewhere…"
 
-Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also working on ITS and Unix, including [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) and [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs.
+Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also involved in developing ITS and Unix: MIT folks started ITS, and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs created Unix.
 
 ![](images/8_3.png)
 > "I think we need to step away from the Multics project now."\
