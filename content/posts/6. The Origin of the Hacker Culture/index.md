@@ -1,5 +1,5 @@
 ---
-title: 6. The origin of the hacker culture
+title: 6. The Origin of the Hacker Culture
 date: "2022-12-17"
 image: feature.png
 description: The origins of hacker culture trace back to the 1960s, starting with MIT's introduction of the PDP-1 computer. Early enthusiasts, often with backgrounds in mathematics, physics, or engineering, engaged in creating foundational software like Spacewar!, text editors, and music programs. This culture evolved into today's open-source hacker community, expanding with the advent of ARPAnet, the precursor to the internet... 
