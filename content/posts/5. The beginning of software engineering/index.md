@@ -3,7 +3,7 @@ title: 5. The beginning of software engineering
 date: "2022-12-11"
 image: feature.png
 description: Until the 1960s, the focus was on hardware in computing, with software not recognized as a separate engineering discipline. Mathematicians and scientists initially drove programming, evolving into early software engineering roles. Margaret Hamilton, who developed software for the Apollo 11 mission, played a key role in establishing software engineering as a serious discipline, amidst a backdrop where many programmers were women, reflecting the field's undervalued status at the time... 
-tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, bug, women, RMS
+tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, Women in Tech, RMS
 ---
 
 Until the 1960s, hardware was the main focus of computer engineering. Computers and peripheral devices were large machines that filled big rooms, they were costly and required manpower to operate. Unlike today, software back then was not a separate field of engineering or science

@@ -3,7 +3,7 @@ title: 7. ITS and hacker culture
 date: "2022-12-18"
 image: 7-9.png
 description: The hacker culture at MIT began with the Tech Model Railroad Club, which explored controlling trains via the PDP-1. This experimentation fostered the hacker ethos, leading to the development of the first video game, Spacewar!, and the ITS. The open, collaborative nature of ITS at the MIT AI Lab, accessible through ARPAnet, significantly influenced the hacker culture and laid the groundwork for the free/open-source software movement...
-tags: ITS, hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics
+tags: ITS, Hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics
 ---
 
 The hacker culture started with the [Tech Model Railroad Club](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club\&sa=D\&source=editors\&ust=1711344849233469\&usg=AOvVaw2jW8lhPjzCxir-TXAa-SBG) at MIT. This club made moving model trains and studied how the trains would not collide with each other[&lbrack;1&rbrack;][1].
