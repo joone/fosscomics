@@ -18,6 +18,14 @@
 
   }
 
+  /* for desktop  */
+  @media (min-width: 1025px) and (orientation: landscape) {
+    blockquote {
+        display: none;
+    }
+}
+
+
   body{
     display: block;
     margin: 8px;
