@@ -59,7 +59,7 @@ Then, [PDP-11](https://en.wikipedia.org/wiki/PDP-11) was introduced, which diff
 > "But we can't rewrite the Unix code in assembly every time we buy a new computer, right?
 
 ![](images/8_11.png)
-> “Dennis, shall we rewrite Unix in the B language? Now we are able to build an OS kernel without assembly." \
+> “Dennis, shall we rewrite Unix in the B language? Now we are able to build an OS kernel without assembly."
 
 ![](images/8_12.png "size:80%")
 > "Maybe we can port Unix to PDP-11 using the B language"  
