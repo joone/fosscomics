@@ -45,6 +45,11 @@ At the time, the MIT Artificial Intelligence Lab was the birthplace of hacker cu
 
 ![](images/6_8.png "size:80%")
 
+
+## Readings from the Computer History Museum
+1. PDP-1 Restoration Project, [chm](https://www.computerhistory.org/pdp-1)
+2. PDP-1 Demo Lab, [chm](https://computerhistory.org/exhibits/pdp-1/)
+
 ## References
 1. Eric S. Raymond, A Brief History of Hackerdom, [http://www.catb.org](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)
 
