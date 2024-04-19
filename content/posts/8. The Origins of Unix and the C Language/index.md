@@ -96,12 +96,14 @@ Dennis added the structure type to the C language to define the user's custom da
 
 Although Unix and C were created in a short period of time by Ken Thompson and Dennis Richie, most computers, including cell phones, still run on OS based on Unix today. In addition, operating system kernels are still developed in C today.
 
+## Readings from the Computer History Museum
+1. David C. Brock, the earliest unix code: an anniversary source code release, [CHM](https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/)
+
 ## References
 1. Multics, [wikipedia](https://en.wikipedia.org/wiki/Multics)
 2. Unix, [wikipedia](https://en.wikipedia.org/wiki/Unix)
 3. History of Unix, [wikipedia](https://en.wikipedia.org/wiki/History\_of\_Unix)
 4. The Development of the C Language [bell-labs.com](https://www.bell-labs.com/usr/dmr/www/chist.html)
 5. The Evolution of the Unix Time-sharing System [www.read.seas.harvard.edu/~kohler](http://www.read.seas.harvard.edu/~kohler/class/aosref/ritchie84evolution.pdf)
-
 
 [1]: https://en.wikipedia.org/wiki/Multics "Multics, Wikipedia"
