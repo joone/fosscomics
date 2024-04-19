@@ -1,6 +1,6 @@
 {
   "name": "fosscomics",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "description": "Static website generator for fosscomics.com",
   "main": "index.js",
   "scripts": {
