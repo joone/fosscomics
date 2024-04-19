@@ -1,7 +1,7 @@
 const assert = require("assert");
 const fs = require("fs");
 
-const Page = require("../src/page");
+const Page = require("../src/mod/page");
 
 describe("Test", function () {
   before(() => {
@@ -41,7 +41,7 @@ describe("Test", function () {
       };
       const page = new Page(config);
       page.readSource(`${config.dev.content}/test.md`);
-      page.generateOutputPath("page.html", "about");
+      page.generateContent("page.html", "about");
 
       // check if the file exists
       const output = fs.readFileSync("test/output/about/index.html", "utf8");
@@ -50,7 +50,7 @@ describe("Test", function () {
       assert.equal(baseline, output);
 
       page.readSource(`${config.dev.content}/8. UNIX and C Language`);
-      page.generateOutput("page.html");
+      page.generateContent("page.html");
 
       const output2 = fs.readFileSync(
         "test/output/8. UNIX and C Language/index.html",
