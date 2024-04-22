@@ -13,7 +13,7 @@ The groundbreaking Unix and C language, which would go on to change the world, w
 ![](images/8_2.png "MIT vs. Bell Lab.")
 > "I feel the force somewhere…"
 
-Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also involved in developing ITS and Unix: MIT folks started ITS, and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) from Bell Labs created Unix.
+Coincidentally, the people who were working on [Multics](https://en.wikipedia.org/wiki/Multics) were also involved in developing ITS and Unix: MIT folks started ITS, and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) along with [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) and [Joe Ossanna](https://en.wikipedia.org/wiki/Joe_Ossanna) from Bell Labs created Unix.
 
 ![](images/8_3.png)
 > "I think we need to step away from the Multics project now."\
@@ -42,7 +42,7 @@ Ken Thompson reimplemented many of the key features he had developed in Multics 
 ![](images/8_7.png)
 > “I can't make something out of nothing”
 
-He adapted the file system he had already implemented in Multics in Unix on the PDP-7. Dennis Richie, [Joe Ossanna](https://en.wikipedia.org/wiki/Joe_Ossanna), and [Rudd Canaday](https://en.wikipedia.org/wiki/Rudd_Canaday) later joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on the PDP-7.
+He adapted the file system he had already implemented in Multics in Unix on the PDP-7. Dennis Richie, Joe Ossanna, [Rudd Canaday](https://en.wikipedia.org/wiki/Rudd_Canaday) later joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on the PDP-7.
 
 ![](images/8_8.png)
 > “First of all, I'm working on a file system. How about we call it Unix?” \
