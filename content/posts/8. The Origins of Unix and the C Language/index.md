@@ -42,7 +42,7 @@ Ken Thompson reimplemented many of the key features he had developed in Multics 
 ![](images/8_7.png)
 > “I can't make something out of nothing”
 
-He adapted the file system he had already implemented in Multics in Unix on PDP-7, and Dennis Richie joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on PDP-7.
+He adapted the file system he had already implemented in Multics in Unix on the PDP-7. Dennis Richie, [Joe Ossanna](https://en.wikipedia.org/wiki/Joe_Ossanna), and [Rudd Canaday](https://en.wikipedia.org/wiki/Rudd_Canaday) later joined him in the development. Once the development was well underway, a team was organized and they began implementing the operating system features we use today, such as the filesystem, process model, device files, and command line interpreter, for the first time on the PDP-7.
 
 ![](images/8_8.png)
 > “First of all, I'm working on a file system. How about we call it Unix?” \
