@@ -14,6 +14,7 @@ module.exports = {
   image:
     "https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png",
   theme: "archie",
+  postsPath: "posts",
   comments: {
     provider: "utterances",
     repo: "joone/fosscomics",
