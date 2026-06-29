@@ -17,20 +17,25 @@ Explore the comics at [fosscomics.com](https://fosscomics.com) or directly read 
 
 ## About the Repository
 
-This repository hosts the source code used to generate the static website for F/OSS Comics.
-
-The static webpage generator was adapted from [kartiknair's blog](https://github.com/kartiknair/blog) and is styled using the [Archie theme](https://github.com/athul/archie). I've customized the generator to better suit the needs of the F/OSS Comics series.
+This repository hosts the source content for the F/OSS Comics website, published using [fossbook](https://github.com/joone/fossbook) — a lightweight static blog generator for GitHub Pages built with Node.js.
 
 ## How to Build and View the Comics
-To build the static website for the comics, run:
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Build the static site:
 
 ```bash
 npm run build
 ```
 
-After building the site, you can start a local web server to view the comics:
+Preview locally:
 
-```
+```bash
 npm start
 ```
 
@@ -42,6 +47,6 @@ I welcome contributions and feedback on the comics and the website. If you have 
 
 ## License
 
-- The [Archie theme](https://github.com/athul/archie) is licensed under its original license([MIT](https://github.com/athul/archie?tab=MIT-1-ov-file#readme)).
-- Node.js code in this project is licensed under the [BSD 3-Clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+- The [Archie theme](https://github.com/athul/archie) is licensed under its original license ([MIT](https://github.com/athul/archie?tab=MIT-1-ov-file#readme)).
+- This site is powered by [fossbook](https://github.com/joone/fossbook), licensed under the [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause).
 - All rights to the comics files (Markdown, images, and generated contents) are reserved. Contact me for specific usage permissions.
