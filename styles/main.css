@@ -153,10 +153,10 @@
   }
   
   pre {
-    background-color: #ececec;
+    background-color: #f6f8fa;
     line-height: 1.4;
     overflow-x: auto;
-    padding: 1em;
+    padding: 0;
   }
   
   .highlight pre ::selection {
@@ -302,8 +302,18 @@
     color:white;
     background-color: var(--hovercolor); 
   }
-  svg{
+  .soc svg{
     max-height: 15px;
+  }
+  pre.mermaid{
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    overflow-x: auto;
+  }
+  pre.mermaid svg{
+    max-width: 100%;
+    height: auto;
   }
   .soc:hover{
     color: white;
