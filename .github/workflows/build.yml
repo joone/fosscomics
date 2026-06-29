@@ -1,16 +1,18 @@
-name: CI
+name: Deploy
 
 on:
   push:
+    branches:
+      - main
     tags:
-      - "v*" # Or trigger on tags starting with 'v' (e.g., v1.0.0)
+      - "v*"
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         name: Checkout src repo
         with:
           path: src
@@ -19,9 +21,9 @@ jobs:
           submodules: recursive
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x" # Or your desired version
+          node-version: "20.x"
 
       - name: Install dependencies
         run: npm install
@@ -33,7 +35,7 @@ jobs:
 
       # Checkout destination repository
       - name: Checkout dest repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: dest
           fetch-depth: 0
@@ -44,7 +46,7 @@ jobs:
         working-directory: dest
         run: |
           rm -rf *
-          yes | cp -rf ../src/public/* .  # Replace '(output_folder)' with your build output dir
+          cp -rf ../src/public/* .
 
       # Commit and push changes
       - name: Commit website updates
