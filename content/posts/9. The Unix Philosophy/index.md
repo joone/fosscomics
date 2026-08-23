@@ -74,7 +74,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 - Write programs to work together.
 - Write programs to handle text streams, because that is a universal interface.
 
-![](images/9_10.png "size:60%")
+![](images/9_10_en.png "size:60%")
 > "Just like building with LEGO bricks!"
 
 Like LEGO bricks, Unix programs can be connected through their inputs and outputs to build more complex tools. Unix was later rewritten largely in C, making it much easier to port to different computers.
