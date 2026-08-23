@@ -42,7 +42,7 @@ MINIX was developed as a small Unix-like system for teaching operating system de
 ![](images/9_4_en_final.png "size:70%")
 > "How has Unix continued to shape the tech world for so long?"
 
-To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Its developers might simply have said:
+To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:
 
 ![](images/9_5_en_final.png "size:60%")
 > "Keep it simple, stupid."[&lbrack;1&rbrack;][1]
@@ -50,15 +50,15 @@ To find the answer, we need to understand the Unix philosophy. But Unix did not 
 ![](images/9_6_en_clean.png "size:70%")
 > "Come on, you must be joking. Tell me the real philosophy."
 
-![](images/9_7_en_clean.png "size:60%")
-> "Hmm... I just made it."
+![](images/9_7_en_collective.png "size:60%")
+> "Hmm... We just made it."
 
-According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), is a set of cultural norms and philosophical approaches to [minimalist](https://en.wikipedia.org/wiki/Minimalism_%28computing%29), [modular](https://en.wikipedia.org/wiki/Modularity_%28programming%29) [software development](https://en.wikipedia.org/wiki/Software_development). It is based on the experience of leading developers of the [Unix](https://en.wikipedia.org/wiki/Unix) [operating system](https://en.wikipedia.org/wiki/Operating_system)."[&lbrack;1&rbrack;][1]
+According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), is a set of cultural norms and philosophical approaches to [minimalist](https://en.wikipedia.org/wiki/Minimalism_%28computing%29), [modular](https://en.wikipedia.org/wiki/Modularity_%28programming%29) [software development](https://en.wikipedia.org/wiki/Software_development). It is based on the experience of leading developers of the [Unix](https://en.wikipedia.org/wiki/Unix) [operating system](https://en.wikipedia.org/wiki/Operating_system)."[&lbrack;2&rbrack;][2]
 
 ![](images/9_8_en_final.png "size:60%")
 > "I still don't really get it."
 
-In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally documented the philosophy:[&lbrack;1&rbrack;][1]
+In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally documented the philosophy:[&lbrack;3&rbrack;][3]
 
 1. Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.
 2. Expect the output of every program to become the input to another, as yet unknown, program. Do not clutter output with extraneous information. Avoid stringently columnar or binary input formats. Do not insist on interactive input.
@@ -68,7 +68,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 ![](images/9_9_en_final.png "size:60%")
 > "That's too long."
 
-[Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus) later summarized the philosophy once more:[&lbrack;2&rbrack;][2]
+[Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus) later summarized the philosophy once more:[&lbrack;4&rbrack;][4]
 
 - Write programs that do one thing and do it well.
 - Write programs to work together.
@@ -88,8 +88,12 @@ Like LEGO bricks, Unix programs can be connected through their inputs and output
 
 ## References
 
-1. Unix philosophy, [Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)
-2. Peter H. Salus, *A Quarter-Century of Unix*, Addison-Wesley, 1994.
+1. Eric S. Raymond, ["The Unix Philosophy in One Lesson"](http://www.catb.org/esr/writings/taoup/html/ch01s07.html), *The Art of Unix Programming*, Addison-Wesley, 2003.
+2. ["Unix philosophy"](https://en.wikipedia.org/wiki/Unix_philosophy), Wikipedia.
+3. M. D. McIlroy, E. N. Pinson, and B. A. Tague, ["Unix Time-Sharing System: Foreword"](https://archive.org/details/bstj57-6-1899/page/n3/mode/2up), *Bell System Technical Journal* 57, no. 6, 1978, pp. 1899–1904.
+4. Peter H. Salus, [*A Quarter Century of UNIX*](https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up), Addison-Wesley, 1994, pp. 52–53.
 
-[1]: https://en.wikipedia.org/wiki/Unix_philosophy "Unix philosophy, Wikipedia"
-[2]: https://en.wikipedia.org/wiki/Unix_philosophy#Peter_H._Salus "Peter H. Salus's summary of the Unix philosophy"
+[1]: http://www.catb.org/esr/writings/taoup/html/ch01s07.html "Eric S. Raymond's summary of the Unix philosophy"
+[2]: https://en.wikipedia.org/wiki/Unix_philosophy "Unix philosophy, Wikipedia"
+[3]: https://archive.org/details/bstj57-6-1899/page/n3/mode/2up "McIlroy, Pinson, and Tague's Unix principles"
+[4]: https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "Peter H. Salus's summary of the Unix philosophy"
