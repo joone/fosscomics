@@ -10,10 +10,25 @@ Information technology has changed and evolved at an incredible pace. But Unix h
 ![](images/9_1_en_final.png "size:50%")
 > "When do I get to retire?"
 
-Unix's legacy is still all around us. Android and Linux distributions such as Debian, Ubuntu, and Arch Linux use the Linux kernel. Apple's macOS and iOS, which run on Macs and iPhones, are Unix-based too.
+Unix's legacy is still all around us. Android and Linux distributions such as Debian, Ubuntu, and Arch Linux use the Linux kernel. Apple's macOS and iOS, which run on Macs and iPhones, are Unix-based too. Even Windows can run a Linux environment through the Windows Subsystem for Linux (WSL).
 
-![](images/9_2.png)
-
+```mermaid
+%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+flowchart TB
+	Unix([Unix]) --> BSD([BSD])
+	Unix --> SystemV([System V])
+	BSD --> NeXTSTEP([NeXTSTEP])
+	BSD --> FreeBSD([FreeBSD])
+	BSD --> SunOS([SunOS])
+	SunOS --> Solaris([Solaris])
+	SystemV -- SVR4 base --> Solaris
+	Solaris --> OpenSolaris([OpenSolaris])
+	NeXTSTEP --> MacOSX([Mac OS X])
+	MacOSX --> macOS([macOS])
+	MacOSX --> iOS([iOS])
+	MINIX([MINIX]) -. influenced development .-> Linux([Linux])
+	Linux -. runs on Windows through .-> WSL([WSL])
+```
 MINIX was developed as a small Unix-like system for teaching operating system design. For a more detailed family tree, see [Wikipedia](https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg).
 
 ![](images/9_3_1_en_final.png)
