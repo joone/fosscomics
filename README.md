@@ -14,6 +14,7 @@ Explore the comics at [fosscomics.com](https://fosscomics.com) or directly read 
 - [6. The Origin of the Hacker Culture](content/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/index.md)
 - [7. ITS and Hacker Culture](content/posts/7.%20ITS%20and%20Hacker%20Culture/index.md)
 - [8. The Origins of Unix and the C Language](content/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/index.md)
+- [9. The Unix Philosophy](content/posts/9.%20The%20Unix%20Philosophy/index.md)
 
 ## About the Repository
 
