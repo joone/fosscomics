@@ -46,7 +46,7 @@ First came a file system, sketched out by Thompson, [Rudd Canaday](https://en.wi
 > "We'll need a name for this thing." \
 > "How about mapping devices to files?"
 
-It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name as a pun on "Multics."
+It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name as a play on "Multics."
 
 Then a [PDP-11](https://en.wikipedia.org/wiki/PDP-11) arrived. Its CPU instructions were different from the PDP-7's, and Unix was still written in assembly. The code had to be written all over again.
 
