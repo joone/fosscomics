@@ -1,6 +1,6 @@
 {
   "name": "fosscomics",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Static website for fosscomics.com",
   "scripts": {
     "build": "fossbook build",
