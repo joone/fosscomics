@@ -70,11 +70,11 @@ At the time, that was easier said than done. Thompson had created B for the earl
 ![](images/8_13.png)
 > "First we need to port the B language to the PDP-11, but there's a problem."
 
-In 1971, Ritchie began extending B with a character type and an explicit type system that included `int` and `char`. He also rewrote the compiler to generate PDP-11 machine code instead of threaded code. He called the short-lived language NB, for "New B."[&lbrack;3&rbrack;][3]
+In 1971, Ritchie began extending B with a character type and an explicit type system that included `int` and `char`. He also rewrote the compiler to generate PDP-11 machine code directly, instead of slower threaded code that invoked a sequence of prewritten low-level routines. He called the short-lived language NB, for "New B."[&lbrack;3&rbrack;][3]
 
 ![](images/8_14.png)
 > "Dennis, how's the B language porting going?" \
-> "There are a lot of problems. Characters are especially awkward on the PDP-11."
+> "There are a lot of problems. B doesn't handle byte-sized characters well."
 
 ![](images/8_15.png)
 > "Why not tear B apart and fix it properly?" \
