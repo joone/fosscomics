@@ -15,6 +15,18 @@ module.exports = {
     "https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png",
   theme: "archie",
   postsPath: "posts",
+  defaultLanguage: "en",
+  defaultLanguageInSubdir: false,
+  languages: {
+    en: {
+      languageName: "English",
+      locale: "en-US",
+    },
+    ko: {
+      languageName: "한국어",
+      locale: "ko-KR",
+    },
+  },
   comments: {
     provider: "utterances",
     repo: "joone/fosscomics",
