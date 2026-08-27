@@ -6,8 +6,6 @@ description: About F/OSS Comics, an illustrated history of computing, Unix, hack
 
 F/OSS Comics tells the history of computing and free and open source software through comics. It traces the path from early computers and software engineering to hacker culture, Unix, and the free software and open source movements.
 
-Each episode combines simple drawings with short dialogue to make technical history approachable without losing the details that make it interesting. The stories are written for technically curious readers, with no specialist background required.
-
 The series is written and illustrated by [Joone Hur](https://joone.github.io), an open source developer and comic artist. Originally published in [Korean](https://joone.net), the comics are translated and revised for this English edition.
 
 Historical and technical accuracy is a priority, and references are included where useful. Corrections and suggestions are welcome in the comments on each episode or through issues and pull requests on [GitHub](https://github.com/joone/fosscomics).
