@@ -25,34 +25,34 @@ In 1822, British mathematician Charles Babbage proposed the Difference Engine, a
 
 Ada Lovelace was born in 1815 to George Gordon Byron (better known as Lord Byron), a leading English Romantic poet, and Anne Isabella Milbanke. She grew up with her mother because her father had abandoned the family. Since her mother was concerned that Ada might inherit Byron's temperament, she encouraged Ada to study mathematics and logic rather than poetry.
 
- ![Text image: Ada, with a puzzled expression, says, "Why does my mom only want me to learn mathematics?"](images/1_5.png "size:80%")
+ ![Ada Lovelace looks puzzled as she wonders why her mother wants her to study only mathematics.](images/1_5.png "size:80%")
 > "Why does my mom only want me to learn mathematics?"
 
 Ada studied with prominent mathematicians, including Augustus De Morgan, who recognized her talent.
 
-![Text image: Ada in learning De Morgan's law from De Morgan"](images/1_6.png "size:80%")
+![Ada Lovelace learns De Morgan's law from Augustus De Morgan at a chalkboard.](images/1_6.png "size:80%")
 > "When you negate A OR B, it becomes NOT A AND NOT B." \
 > "That's De Morgan's law!"
 
 At seventeen, Ada met Babbage and later saw him demonstrate the completed portion of his Difference Engine.
 
-![Text image: "](images/1_7.png "size:90%")
+![Charles Babbage presents the Difference Engine to Ada Lovelace, who stands beside the machine holding an open book.](images/1_7.png "size:90%")
 > "This is the difference engine!" \
 > "I'd love to help with your research."
 
 To help explain the Analytical Engine, she presented an algorithm for calculating Bernoulli numbers in her published notes. It is often described as the first published computer program.
 
-![Text image: "](images/1_8.png "size:80%")
+![Ada Lovelace sits at a desk and writes notes about the Analytical Engine.](images/1_8.png "size:80%")
 > "I need a good example to explain the Analytical Engine."
 
 Her notes described how the Analytical Engine could repeat a series of operations, an early account of looping. This work is why she is often called the first computer programmer. However, historians debate how much of the Bernoulli-number algorithm originated with Lovelace and how much was developed in collaboration with Babbage. Whatever the precise division of credit, Lovelace's notes remain one of the earliest published examples of programming. In recognition of her pioneering contribution, the programming language Ada was later named after her.
 
-![Text image: Ada is asking"](images/1_9.png "size:70%")
+![Ada Lovelace stands with her arms folded as she considers how the Analytical Engine could repeat operations.](images/1_9.png "size:70%")
 > "So the engine can repeat a sequence of operations?"
 
 Babbage completed neither the Difference Engine nor the Analytical Engine during Lovelace's lifetime because of financial, organizational, and technical difficulties. As a result, her program was never run on the proposed machine.
 
-![Text image: Ada is asking"](images/1_10.png)
+![Ada Lovelace watches as Charles Babbage examines the unfinished Difference Engine.](images/1_10.png)
 > "When can I run my program on the machine?" \
 > "I'm not sure it will ever work."
 
