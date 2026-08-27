@@ -6,11 +6,11 @@ description: In the 19th century, Charles Babbage designed pioneering mechanical
 tags: Charles Babbage,Ada Lovelace
 ---
 
-People have long built tools to make arithmetic easier and more accurate. One of these tools, the abacus, was used by several ancient civilizations.
+Human beings have made a number of tools to make math calculations more convenient and accurate. One of these tools, the abacus, was used by several ancient civilizations.
 
 ![The caveman sees the numbers written on the tree and puts a question mark.](images/1_1.png)
 
-The abacus reached Korea from China around the 15th century. Individuals and banks continued to use it until the 1980s, when computers largely replaced it.
+In Korea, the abacus was introduced from China around the 1400s, and it was used by individuals as well as banks until the 1980s. After that, computers replaced it in banks and it is hardly used for personal use anymore.
 
 ![A girl is using a abacus](images/1_2.png "size:70%")
 
@@ -19,12 +19,11 @@ In 17th-century Europe, [Pascal](https://en.wikipedia.org/wiki/Pascal%27s_calcul
 ![Leibniz says,"This mechanical calculator is capable of multiplication and division."](images/1_3.png "Gottfried Wilhelm Leibniz(1646-1716) size:70%")
 
 ## Charles Babbage and his difference engine
-In 1822, British mathematician Charles Babbage proposed the Difference Engine, a mechanical calculator designed to automatically produce accurate numerical tables, such as logarithmic and trigonometric tables. He later designed the Analytical Engine, a general-purpose mechanical machine with a memory or "store," an arithmetic unit or "mill," punched-card input, and a printer, anticipating several components of modern computers.
+In 1822, British mathematician Charles Babbage proposed the Difference Engine, a mechanical calculator designed to automatically produce accurate numerical tables, such as logarithmic and trigonometric tables. He later designed the Analytical Engine, a general-purpose mechanical machine with a memory or "store", an arithmetic unit or "mill", punched-card input, and a printer, anticipating several components of modern computers.
 
 ![Charles Babbage and his difference engine](images/1_4.png "size:80%")
 
-
-Ada Lovelace was born in 1815 to the poet George Gordon Byron, better known as Lord Byron, and Anne Isabella Milbanke. Her parents separated shortly after her birth. Concerned that Ada might inherit Byron's temperament, her mother directed her education toward mathematics and science rather than literature.
+Ada Lovelace was born in 1815 to George Gordon Byron (better known as Lord Byron), a leading English Romantic poet, and Anne Isabella Milbanke. She grew up with her mother because her father had abandoned the family. Since her mother was concerned that Ada might inherit Byron's temperament, she encouraged Ada to study mathematics and logic rather than poetry.
 
  ![Text image: Ada, with a puzzled expression, says, "Why does my mom only want me to learn mathematics?"](images/1_5.png "size:80%")
 > "Why does my mom only want me to learn mathematics?"
