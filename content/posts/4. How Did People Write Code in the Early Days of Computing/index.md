@@ -2,68 +2,64 @@
 title: 4. How Did People Write Code in the Early Days of Computing?
 date: "2022-12-03"
 image: feature.png
-description: In the early days of computing, programming was done at the hardware level, with functionality embedded in circuits. ENIAC, for example, ran programs by manual rewiring. With the advent of stored-program computers like EDVAC and EDSAC, programming involved writing machine code, a binary language difficult for humans. Assembly language, using mnemonics for machine instructions, simplified the process. Programmers wrote code on paper, debugged it mentally, then transferred it to punch cards for execution, a tedious process that involved waiting for machine time and results...
+description: Early programmers moved from rewiring machines to stored programs, assembly language, paper tape, and punched-card batch processing.
 tags: ENIAC, Machine Code, EDSAC, Assembly Language, Multics, Punch Card, Fortran
 ---
 
-When computers were first introduced commercially, how did people write code for computers? In fact, there was no software similar to what we have today. All functionalities were implemented as functional units in circuits. [ENIAC](https://en.wikipedia.org/wiki/ENIAC) was also able to run various programs by wiring each functional unit and used punch cards as a storage device[&#91;1&#93;][1].
+How did people program the earliest computers? At first, a machine might be built for one particular kind of work, with much of its functionality embodied in its circuits. [ENIAC](https://en.wikipedia.org/wiki/ENIAC) could run different programs, but programmers had to configure switches and reconnect its plugboards. Punched cards were used for input and output, not to store its programs[&#91;1&#93;][1].
 
 ![](images/4_1.png "size:80%")
-> "This is a computer for arithmetic operations"\
-> “That is a computer for breaking German ciphers”
+> "This one does arithmetic." \
+> "That one breaks German military codes."
 
 ![](images/4_2.png "size:80%")
-> "Can I make a computer for ballistics calculation?"\
-> "How many relays and vacuum tubes are needed for this?"
+> "Could I build one for ballistic calculations?" \
+> "How many relays this time? I'll need vacuum tubes too."
 
-Actual computer programming has been possible since stored-program computers such as [EDVAC](https://en.wikipedia.org/wiki/EDVAC) and [EDSAC](https://en.wikipedia.org/wiki/EDSAC) were introduced in 1949. Basically, the program can be executed after it is loaded into memory.
+Stored-program computers made it possible to keep instructions in electronic memory and load a different program without rewiring the machine. The Manchester Baby ran a stored program in 1948, and [EDSAC](https://en.wikipedia.org/wiki/EDSAC) entered regular operation in 1949. [EDVAC](https://en.wikipedia.org/wiki/EDVAC) was highly influential in the development of the stored-program design, although it became operational later.
 
-A program is made up of instructions that the machine can understand, which is called [machine code](https://en.wikipedia.org/wiki/Machine_code). The machine language is difficult for humans to understand because it consists only of binary numbers such as 0 and 1.
+A program consists of instructions a machine can execute. At the lowest level, these instructions are [machine code](https://en.wikipedia.org/wiki/Machine_code), represented as binary numbers that are difficult for people to read and remember.
 
 ![Neo scans binary numbers](images/4_3.png "size:70%")
 
-So, that’s why assembly language was born in the early age of computer programming. For example,  the users wrote executable code on EDSAC using an assembly language called Initial Orders. This is an example of an assembly language used in EDSAC[&lbrack;2&rbrack;][2].
+Assembly language made those instructions easier to express with short symbolic codes. EDSAC programmers used single-letter order codes, while a hard-wired bootstrap called the Initial Orders loaded programs from paper tape and translated those codes into instructions[&lbrack;2&rbrack;][2].
 
 ![](images/4_4.png "size:80%")
 
-All machine language instructions used in EDSAC are composed of 17 bits. The first column is the operation code, and the second column, 1 bit, is not used. Third column is the operand, representing the address. The last bit indicates whether the current instruction is 17 bits or 35 bits.
+Each short EDSAC instruction occupied 17 bits: a five-bit operation code, one unused bit, a ten-bit address, and a final bit indicating a short or long operand.
 
-What does mnemonic, TOS, mean? It means that it loads the value of the accumulator A into m\[0]  and then initializes the accumulator A. The second command H is that it loads the multiplier register R with the data in m\[2].
+For example, `T 0 S` stored the accumulator at memory address 0 and cleared it. `H 2 S` loaded the multiplier register from address 2.
 
-As you can see, machine code is just binary code so it’s difficult for humans to easily understand and remember it. Therefore, assembly language is used to represent each low-level instruction or opcode with mnemonics. When assembly language is converted into machine code, we call it assembling
+Because raw binary instructions are hard to remember, assembly language represents each low-level operation with a mnemonic. Converting assembly language into machine code is called assembling.
 
 ![](images/4_5.png)
 
-In the early days, assembling was done by hand, so the term, hand assembling, was used. Assembly language has been around since the 1950s. The early programmers must know how to use assembly language because there was no high-level language at the time.
-
- If there is no assembly tool, you still have to assemble assembly code manually by looking at the mnemonic conversion table.
+Before assembler programs became widely available, programmers sometimes translated mnemonics into machine code by hand using conversion tables, a process known as hand assembly. Symbolic assembly languages were already in use by the late 1940s and early 1950s, before high-level languages became common.
 
 ![](images/4_11.png "size:70%")
 > "I’m writing code"
 
-However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, which was jointly developed by Bell Labs and MIT in 1964[&lbrack;3&rbrack;][3], and in the 1970s, most computers had a terminal with a screen and keyboard. Then, how could programmers write code and check the results without a monitor and keyboard in the 1960s.
+Interactive keyboards, displays, and teleprinter terminals existed before Multics, but most programmers still did not have direct, interactive access to a computer. Multics, designed beginning in 1964-65 by MIT Project MAC, Bell Labs, and General Electric, was intended to serve many users through remote terminals. By the 1970s, screen-and-keyboard terminals had become much more common. How did programmers work before then?
 
 ![](images/4_6.png "size:70%")
-> "Finally, I got a computer with a keyboard and a monitor"
+> "At last, a keyboard and a monitor."
 
-Early programmers used punched cards to write code. Punch cards were originally used for data storage from the late 19th century, and were used by the US Census Bureau for census purposes. It is easy to understand if you think of the current [OMR](https://en.wikipedia.org/wiki/Optical_mark_recognition) sheet to mark answers.
-
-IBM had developed a punch card system at the time and was supplying the system worldwide so  the punch card was well used as an essential part of early programming.
+Programmers often used punched cards to enter code. Punched cards had been used for data processing since the late nineteenth century, including work for the U.S. Census Bureau. Like a modern [optical mark recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition) sheet, each position on a card represented information. IBM built a major business supplying punched-card equipment around the world.
 
 ![](images/4_7.png "Punch card for Fortran programming size:60%")
 
-For example, the early programmers used punch cards as a development tool. First, the programmer wrote assembly code on paper. Then they debugged by running the code in their minds. When they were convinced that there were no more errors in their code. Finally, the code was hand assembled into machine code and they filled out machine code line by line onto a punch card.
+Programmers commonly drafted code on paper and checked it by working through the instructions in their heads. They or a keypunch operator then transferred the code to cards. Depending on the system and its software, a deck might contain machine code, assembly language, Fortran, or another language.
 
 ![](images/4_8.png "IBM 026 keypunch machine size:70%")
-> “I need to write the code on the punch card”
+> "I'd better get this code onto punched cards."
 
-Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.
+Programmers submitted their card decks to a computer-room operator, who loaded and ran jobs in batches. They might wait hours to receive a printed result. A single mistake could mean punching replacement cards, returning to the queue, and trying again.
 
 ![](images/4_9.png)
-> "Can you take a look at my code?"\
-> "Next person"
+> "Could you check this, please?" \
+> "Next."
 
-The interesting thing is that just copying a punch card is the same as copying a program, so it was possible to copy programs by writing at the time.
+Because a program could be stored as a deck of cards, duplicating the deck with card-reproducing equipment also duplicated the program.
 
 ![](images/4_10.png "size:70%")
 
