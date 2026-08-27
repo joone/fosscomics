@@ -8,12 +8,12 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 ![](images/feature.png "size:80%")
 
-누가 지금과 같은 형태의 컴퓨터를 처음 만들었을까? 컴퓨터는 세계 2차 대전을 겪으면서 여러 나라에서 개발을 시도했지만, 처음으로 이론적 모델을 제시한 사람은 영국의 수학자 [앨런 튜링](https://ko.wikipedia.org/wiki/앨런_튜링)이다.
+누가 지금과 같은 형태의 컴퓨터를 처음 만들었을까? 제2차 세계대전 거치면서 여러 나라의 연구진이 주로 전쟁을 목적으로 전자식 컴퓨터를 개발하기 위해 노력했다. 그보다 앞서 영국의 수학자 [앨런 튜링](https://ko.wikipedia.org/wiki/앨런_튜링)은 하나의 기계가 테이프에 부호화된 설명을 읽어 계산 가능한 모든 절차를 수행할 수 있는 범용 수학 모델을 제시했다. 
 
 ![](images/ko_image2.png)
 > 괴델의 ‘불완전성의 정리’를 증명할 장치를 만들어야겠다.
 
-그는 1937년에 발표한 “[On Computable Numbers, with an Application to the Entscheidungsproblem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)“논문에서 [튜링 기계(Turing Machine)](https://ko.wikipedia.org/wiki/튜링_기계)을 소개하였다. 이는 표에 정의된 각 기호의 규칙대로 긴 테이프에 적힌 기호를 처리하는 추상 장치였는데, 컴퓨터에 대한 수학적 모델을 정의한 것이다[1]. 여기서 튜링 머신에 입력되는 기호가 적인 테이프를 소프트웨어라고 볼 수 있다.
+그는 1937년에 발표한 "[On Computable Numbers, with an Application to the Entscheidungsproblem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)" 논문에서 [튜링 기계(Turing Machine)](https://ko.wikipedia.org/wiki/튜링_기계)을 소개하였다. 이는 표에 정의된 각 기호의 규칙대로 긴 테이프에 적힌 기호를 처리하는 추상 장치였는데, 이 개념은 훗날 등장한 프로그램 내장형 컴퓨터의 기본 원리를 이론적으로 앞서 보여주었다. 그리고 실제 프로그램 내장형 컴퓨터의 구조는 이후 여러 연구진의 공동 작업을 통해 개발되었다.
 
 ![](images/ko_image3.png)
 > 테이프에 적힌 기호를 처리하는 추상 장치라고?

@@ -8,7 +8,7 @@ tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing E
 
 ![](images/feature.png "size:80%")
 
-During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
+Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
 
 ![alt_text](images/2_1.png "size:80%")
 > "I will find a way to prove Gödel's incompleteness theorems."
