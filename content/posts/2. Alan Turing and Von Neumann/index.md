@@ -80,7 +80,7 @@ During World War II, Britain, Germany, and the United States all developed pione
 
 In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world's largest early computer industry.
 
-![John von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. Alan Turing earned a Ph.D. from Princeton University and developed a mathematical model of computation. Kurt Gödel was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine.](images/2_11.png)
+![Alan Turing earned a Ph.D. from Princeton University and developed a mathematical model of computation. John von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. Kurt Gödel was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine.](images/2_11.png)
 
 
 ## References
