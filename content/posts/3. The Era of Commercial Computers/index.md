@@ -2,7 +2,7 @@
 title: 3. The Era of Commercial Computers
 date: "2019-06-25"
 image: feature.png
-description: In 1946, ENIAC and EDVAC engineers J. Presper Eckert and John Mauchly founded a company that became the Eckert-Mauchly Computer Corporation and developed UNIVAC I. During the 1950s, IBM introduced computers including the 701, 704, and mass-produced 650, while Fortran and Lisp helped expand the possibilities of programming.This marked the beginning of widespread commercial computing and software engineering in the 1950s...
+description: In 1946, ENIAC and EDVAC engineers J. Presper Eckert and John Mauchly founded a company that became the Eckert-Mauchly Computer Corporation and developed UNIVAC I. During the 1950s, IBM introduced computers including the 701, 704, and mass-produced 650, while Fortran and Lisp helped expand the possibilities of programming. This marked the beginning of widespread commercial computing.
 
 tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, Fortran, John Backus, IBM 701, IBM 704, The Art of Computer Programming
 ---
@@ -13,19 +13,19 @@ Electronic computing advanced rapidly during World War II, driven partly by mili
 > "Are the firing-table calculations ready?" \
 > "Not yet."
 
-Some of the early computer engineers who recognized the commercial potential of computers were J. Presper Eckert and John Mauchly.
+J. Presper Eckert and John Mauchly were among the engineers who recognized the commercial potential of computers.
 
-![J. Presper Eckert and John Mauchly face each other as one gestures with his hand.](images/3_2.png "John Mauchly and John Eckert size:80%")
+![J. Presper Eckert and John Mauchly face each other as one gestures with his hand.](images/3_2.png "John Mauchly and J. Presper Eckert size:80%")
 > "What if we build computers for civilian agencies too?" \
 > "Then let's start a company."
 
 In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left the University of Pennsylvania and founded the Electronic Control Company. In December 1947, they incorporated and renamed the business [the Eckert-Mauchly Computer Corporation (EMCC)](https://en.wikipedia.org/wiki/Eckert%E2%80%93Mauchly_Computer_Corporation). They developed UNIVAC I, a general-purpose commercial computer designed for data processing. The first UNIVAC I was delivered to the [U.S. Census Bureau](https://en.wikipedia.org/wiki/U.S._Census_Bureau) in 1951.
 
-![One Census Bureau employee speaks on the telephone while another carries a stack of punched cards beside a UNIVAC console.](images/3_3.png "size:80%")
-> "Have you finished the life-expectancy figures?" \
+![Joone speaks on the telephone while a Census Bureau employee examines results being printed by the UNIVAC.](images/3_3.png "size:80%")
+> "Are the life-expectancy figures ready?" \
 > "One moment."
 
-The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force.  However, those contracts were eventually cancelled in 1950 after some employees were suspected as communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
+The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force. However, those contracts were eventually cancelled in 1950 after some employees were suspected as communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
 Mauchly was also suspected and forced to leave the company, and it took him two years to get back to work. 
 
 ![Senator Joseph McCarthy points accusingly at John Mauchly, who responds with open hands.](images/3_4.png "size:80%")
@@ -39,7 +39,7 @@ The security dispute was not the company's only problem. EMCC had underestimated
 
 ## Who should receive credit for the stored-program design?
 
-The historical record does not support attributing the architecture to any one person. It grew out of collaborative work on EDVAC by the ENIAC team, including Eckert and Mauchly, with important contributions from John von Neumann. However, because the widely circulated [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC) listed only von Neumann as its author, we still call this computer architecture the von Neumann architecture, even though he did not devise the design entirely on his own and the allocation of credit remains controversial. Eckert and Mauchly helped usher in the era of commercial computing, but their company was not financially successful, neither man became widely known to the general public, and recognition of their contributions was complicated by decades of disputes over patents and historical credit.
+The historical record does not support attributing the architecture to any one person. It grew out of collaborative work on EDVAC by the ENIAC team, including Eckert and Mauchly, with important contributions from John von Neumann. Because the widely circulated [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC) named only von Neumann as its author, the stored-program design became strongly associated with him and is still commonly known as the von Neumann architecture. Eckert and Mauchly helped usher in the era of commercial computing, but their company was not financially successful, neither man became widely known to the general public, and recognition of their contributions was complicated by decades of disputes over patents and historical credit.
 
 Commercial computer production expanded during the 1950s. IBM, already dominant in [punched-card](https://en.wikipedia.org/wiki/Punched_card%23IBM_punched_card_manufacturing) equipment, announced its first large-scale electronic computer, the [IBM 701](https://en.wikipedia.org/wiki/IBM_701), in 1952.
 
@@ -48,7 +48,7 @@ Commercial computer production expanded during the 1950s. IBM, already dominant 
 
 For the [IBM 704](https://en.wikipedia.org/wiki/IBM_704), announced in 1954, [John Backus](https://en.wikipedia.org/wiki/John_Backus) led the IBM team that developed [Fortran](https://en.wikipedia.org/wiki/Fortran). The language was proposed in 1953, and its first compiler was delivered in 1957. Its ability to optimize high-level programs helped convince programmers that a compiler could produce efficient machine code[&lbrack;4&rbrack;][4]. John McCarthy designed [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) later in the decade, and Steve Russell created an early working implementation on an IBM 704.
 
-![John Backus gestures while explaining Fortran to Joone, who looks surprised.](images/3_7.png "size:80%")
+![John Backus, leader of the team that developed Fortran, gestures while explaining the language to Joone, who looks surprised.](images/3_7.png "size:80%")
 > "We proposed Fortran in 1953 and finished it in 1957. Its optimizing compiler made high-level code practical." \
 > "I didn't realize compilers were around in the 1950s."
 
