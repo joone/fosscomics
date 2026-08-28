@@ -8,7 +8,6 @@ tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, 
 
 Until the 1960s, hardware was the main focus of computer engineering. Computers and peripheral devices were large machines that filled big rooms, they were costly and required manpower to operate. Unlike today, software back then was not a separate field of engineering or science.
 
-
 ![An installer stands beside a room-sized mainframe while a programmer holding a manual looks uncertain.](images/5_1.png "Honeywell 800 mainframe, 1959")
 > "Installation done!" \
 > "Now, how do I program it?"
@@ -28,8 +27,6 @@ Dennis Ritchie, who helped create Unix and the C programming language, studied p
 [Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_\(software_engineer\))participated in the Apollo 11 mission in the 1960s and developed the lunar landing software. Notably she observed that software development was not taken as seriously as engineering and was not even considered a science.
 
 After studying mathematics in university, she began working as a programmer at MIT to support her husband’s Ph.D. At that time, without any proper software development training, she joined in the development of a program to predict the weather.
-
-> studied mathematics and later joined MIT, where she first programmed weather-prediction software and then worked on the SAGE air-defense project. She took the programming job while her husband attended Harvard Law School. At the time, formal training in computer science and software engineering was rare, so programmers largely learned through experience, and software development was not yet treated with the same seriousness as established engineering disciplines.
 
 ![Margaret Hamilton gestures while explaining how early programmers learned their work.](images/5_4.png "Margaret Hamilton size:70%")
 > "Computer science and software engineering weren't regular subjects yet. Programmers learned by doing."
