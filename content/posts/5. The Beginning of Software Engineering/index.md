@@ -12,7 +12,7 @@ Until the 1960s, hardware was the main focus of computer engineering. Computers 
 > "Installation done!" \
 > "Now, how do I program it?"
 
-Mathematicians were involved in the invention of early computers so it was easy for students majoring in mathematics to approach computer programming in the early days
+Mathematicians were involved in the invention of early computers so it was easy for students majoring in mathematics to approach computer programming in the early days.
 
 ![A mathematician fills a board with equations while a programmer waits beside him.](images/5_2.png "size:80%")
 > "This new computer should give us the results in no time."
@@ -24,7 +24,7 @@ People who majored in science or engineering learned programming because they co
 
 Dennis Ritchie, who helped create Unix and the C programming language, studied physics and applied mathematics at university.
 
-[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_\(software_engineer\))participated in the Apollo 11 mission in the 1960s and developed the lunar landing software. Notably she observed that software development was not taken as seriously as engineering and was not even considered a science.
+According to the story of [Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_\(software_engineer\)), who participated in the Apollo 11 mission in the 1960s and developed the lunar lander software, software development was not taken seriously as engineering and was not even considered a science.
 
 After studying mathematics in university, she began working as a programmer at MIT to support her husband’s Ph.D. At that time, without any proper software development training, she joined in the development of a program to predict the weather.
 
@@ -42,7 +42,7 @@ By the late 1960s, the Apollo guidance and software effort had grown to hundreds
 ![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/5_6.png)
 > "Moon landing success!"
 
-In particular, she first used the term “software engineering” at the beginning of the Apollo missions so that software could be recognized as an independent domain like hardware. She also helped to create a course work about computer programming at MIT[&lbrack;4&rbrack;][4].
+Hamilton argued that software should have the same professional standing as other engineering disciplines and helped popularize the term "software engineering." Sources differ on whether she coined the term, but she helped establish the concept[&lbrack;4&rbrack;][4].
 
 ![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/5_7.png "Margaret Hamilton size:80%")
 > "Software Engineering!"
@@ -59,23 +59,22 @@ All the people who did the programming by connecting the functional unit boards 
 
 ![Two women program ENIAC by connecting cables on its control panels, with one reading from a sheet of notes.](images/5_10.png "size:80%")
 
-Grace Hopper, who created the first compiler and did the first debugging(?), is also a woman and a doctor of mathematics. In 1947, Hopper was working on programming with the [Harvard Mark II](https://en.wikipedia.org/wiki/Harvard_Mark_II). One day her punch card input was not working.
-
+Grace Hopper held a doctorate in mathematics and became a pioneering programmer who later developed one of the earliest compilers. In 1947, she was working with the [Harvard Mark II](https://en.wikipedia.org/wiki/Harvard_Mark_II) team when the machine began malfunctioning.
 
 ![Grace Hopper stands with her hands on her hips beside the malfunctioning Harvard Mark II.](images/5_11.png "size:80%")
 > "Why isn't the input working?"
 
-Eventually, she found out that the computer wasn't working properly because of the dead moth inside the relay.
+The team found a moth trapped in one of the machine's relays.
 
 ![Grace Hopper points toward a moth caught among the Harvard Mark II's relays.](images/5_12.png "size:80%")
 > "There's a dead moth inside the relay."
 
-She taped the moth into the logbook with the note "First actual case of bug being found." Engineers had used the word "bug" for technical faults long before this incident, but Hopper and the Mark II team helped popularize "bug" and "debugging" in computing[&lbrack;5&rbrack;][5].
+They taped the moth into the logbook with the note "First actual case of bug being found." Engineers had used the word "bug" for technical faults long before this incident, but Hopper and the Mark II team helped popularize "bug" and "debugging" in computing[&lbrack;5&rbrack;][5].
 
 ![Grace Hopper tapes the moth into the team's logbook and writes beside it.](images/5_13.png "Grace Hopper size:80%")
 > "First actual case of bug being found."
 
-In the early days when computers were used, women played a pioneering role in software development and created the foundation for software engineering to be born.
+Women played a pioneering role in early programming and helped lay the foundations of software engineering.
 
 ## References
 
