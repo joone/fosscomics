@@ -18,7 +18,7 @@ When computers were first introduced, how did people write code for them? In fac
 
 Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and [EDSAC](https://en.wikipedia.org/wiki/EDSAC) entered regular operation in 1949. [EDVAC](https://en.wikipedia.org/wiki/EDVAC) was highly influential in the development of the stored-program design, although it became operational later.
 
-A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called [machine code](https://en.wikipedia.org/wiki/Machine_code). Machine code is represented as binary numbers, such as 0 and 1, so it is difficult for people to read and remember.
+A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called [machine code](https://en.wikipedia.org/wiki/Machine_code). Machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.
 
 ![A programmer in dark glasses stares at rows of binary digits with an exclamation mark overhead.](images/4_3.png "size:70%")
 
@@ -26,7 +26,7 @@ That is why assembly language appeared early in the history of computer programm
 
 ![A diagram divides two 17-bit EDSAC instructions into an operation code, an unused bit, a ten-bit operand, and a length bit, alongside the mnemonics T0S and H2S.](images/4_4.png "size:80%")
 
-All machine language instructions used in EDSAC are composed of 17 bits. The first column is the operation code, and the second column, 1 bit, is not used. Third column is the operand, representing the address. The last bit indicates whether the current instruction is 17 bits or 35 bits.
+Each EDSAC instruction occupied a 17-bit word: a five-bit operation code, one unused bit, a ten-bit address, and a final bit selecting a short or long operand.
 
 The two EDSAC assembly instructions shown above can be explained as follows:
 
@@ -43,29 +43,29 @@ In the early days, programmers sometimes did this work by hand, so the process w
 ![A programmer writes code on paper at a desk beside a model rocket.](images/4_11.png "size:70%")
 > "I'm writing code."
 
-However, keyboards and monitors did not become commercially available until the 1960s. The first computer with a monitor and keyboard was Multics, designed beginning in 1964-65 by MIT Project MAC, Bell Labs, and General Electric, was intended to serve many users through remote terminals[&lbrack;3&rbrack;][3]. By the 1970s, screen-and-keyboard terminals had become much more common. But before then, how did programmers write code and check the results without a monitor and keyboard?
+Interactive terminals with keyboards and displays remained uncommon in the early 1960s. [Multics](https://en.wikipedia.org/wiki/Multics), whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to let many users work interactively through remote terminals[&lbrack;3&rbrack;][3]. By the 1970s, screen-and-keyboard terminals had become much more common. But before such terminals became common, how did programmers write code and check the results?
 
 ![A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer.](images/4_6.png "size:70%")
-> "Finally, I got a computer with a keyboard and a monitor"
+> "At last, a keyboard and a monitor."
 
-Early programmers often used punched cards to write code. Since the late nineteenth century, punched cards had been used to record and store data for machine processing, including work for the U.S. Census Bureau. It is easy to understand the basic idea if you think of a modern OMR([optical mark recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition)) sheet: each position on a card represented information.
+Early programmers often used punched cards to write code. Since the late nineteenth century, punched cards had been used to record and store data for machine processing, including work for the U.S. Census Bureau. The basic idea is loosely comparable to a modern OMR ([optical mark recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition)) sheet: information is encoded by marking, or in this case punching, specific positions.
 
-IBM had developed a punch card system at the time and was supplying the system worldwide so the punch card was well used as an essential part of early programming.[&lbrack;5&rbrack;][5].
+IBM standardized its widely adopted 80-column card in 1928 and supplied cards, keypunches, readers, and tabulating equipment around the world. Punched cards later became an important medium for entering programs and data into computers[&lbrack;5&rbrack;][5].
 
 ![A hand holds a yellow punched card labeled as a Fortran program.](images/4_7.png "Punch card for Fortran programming size:60%")
 
-For example, the early programmers used punch cards as a development tool. First, the programmer wrote assembly code on paper. Then they debugged by running the code in their minds. When they were convinced that there were no more errors in their code. Finally, the code was hand assembled into machine code and they filled out machine code line by line onto a punch card.
+Programmers first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source statement per card. Depending on the language and computer, an assembler or compiler translated the submitted program into machine code.
 
 ![A programmer types at a keypunch machine while a punched card feeds through it.](images/4_8.png "IBM 026 keypunch machine size:70%")
 > "I'd better get this code onto punched cards."
 
-Programmers took the punch card to the operator of the computer room.The operator put the punch card into the punch card reader and the computer was able to execute the code loaded from the punch card reader. In reality, the programmer had to wait in line to hand the punch card to the operator and wait a long time until they received the execution result. If there is something wrong with the result, they had to do the same things over and over to get the result they wanted.
+Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.
 
-![Four programmers wait with punched cards while an operator feeds a job into the machine room.](images/4_9.png)
+![Four programmers queue with punched cards while an operator accepts jobs at the machine-room window.](images/4_9.png)
 > "Could you check this, please?" \
 > "Next."
 
-The interesting thing is that just copying a punch card is the same as copying a program, so it was possible to copy programs by writing at the time.
+Before a program was punched onto cards, copying it could be as simple as transcribing someone else's handwritten source code.
 
 ![Joone glances sideways and secretly copies another programmer's handwritten code before it is entered onto a punched card.](images/4_10.png "size:70%")
 
