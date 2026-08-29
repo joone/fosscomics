@@ -16,7 +16,8 @@ In Korea, the abacus was introduced from China around the 1400s, and it was used
 
 In 17th-century Europe, [Pascal](https://en.wikipedia.org/wiki/Pascal%27s_calculator) and Leibniz built gear-driven mechanical calculators.
 
-![Leibniz says,"This mechanical calculator is capable of multiplication and division."](images/1_3.png "Gottfried Wilhelm Leibniz(1646-1716) size:70%")
+![Leibniz demonstrates a mechanical calculator at a table.](images/1_3.png "Gottfried Wilhelm Leibniz(1646-1716) size:70%")
+> "Multiplication and division are possible!"
 
 ## Charles Babbage and his difference engine
 In 1822, British mathematician Charles Babbage proposed the Difference Engine, a mechanical calculator designed to automatically produce accurate numerical tables, such as logarithmic and trigonometric tables. He later designed the Analytical Engine, a general-purpose mechanical machine with a memory or "store", an arithmetic unit or "mill", punched-card input, and a printer, anticipating several components of modern computers.
