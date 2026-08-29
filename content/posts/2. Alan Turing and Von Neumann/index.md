@@ -36,37 +36,37 @@ The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research
 Most general-purpose computers still use variants of what became known as the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
 
-![A block diagram shows a CPU containing a control unit and arithmetic logic unit connected in both directions to memory.](images/image5.png "Von Neumann Architecture")
+![A block diagram shows a CPU containing a control unit and arithmetic logic unit connected in both directions to memory.](images/2_5.png "Von Neumann Architecture")
 (From [wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg))
 
 As the diagram shows, a basic von Neumann architecture consists of a central processing unit (CPU), memory, and input/output devices. The CPU contains an arithmetic logic unit (ALU), which performs arithmetic and logical operations; processor registers, which hold values needed immediately; and a control unit. The control unit includes registers such as the instruction register and program counter. Memory stores both instructions and data. During the fetch-decode-execute cycle, the CPU retrieves an instruction, interprets it, performs the operation, and stores any result[&lbrack;6&rbrack;][6].
 
 Britain's National Physical Laboratory obtained von Neumann's EDVAC report in 1945.
 
-![A researcher holding von Neumann's design report speaks with Alan Turing beside a stored-program computer.](images/2_5.png "size:90%")
+![A researcher holding von Neumann's design report speaks with Alan Turing beside a stored-program computer.](images/2_6.png "size:90%")
 > "The Americans have already drawn up plans for a stored-program computer!"
 
 The laboratory then asked Turing to design a stored-program computer along the lines of EDVAC. Beginning in 1945, Turing worked on the [Automatic Computing Engine (ACE)](https://en.wikipedia.org/wiki/Automatic_Computing_Engine), giving him an opportunity to turn ideas from his theoretical work into a practical computer design.
 
 
-![Alan Turing discusses computer plans with an NPL official across a desk.](images/2_6.png "size:80%")
+![Alan Turing discusses computer plans with an NPL official across a desk.](images/2_7.png "size:80%")
 > "We need a computer like EDVAC." \
 > "I have a design of my own."
 
 Although Turing's [ACE report](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140), presented in 1946, came after von Neumann's EDVAC report, it contained a detailed design for a stored-program computer. Turing kept the hardware to a minimum and proposed implementing even some arithmetic operations in software. In this respect, ACE anticipated ideas later associated with reduced instruction set computer (RISC) processors. Delays in funding and construction frustrated Turing, and in 1947 he returned to Cambridge on leave before the full ACE could be built[&lbrack;4&rbrack;][4].
 
 
-![Alan Turing holds a rolled blueprint with a frustrated expression.](images/2_7.png "size:80%")
+![Alan Turing holds a rolled blueprint with a frustrated expression.](images/2_8.png "size:80%")
 > "The design is ready. Why haven't they approved the funding?"
 
 Elsewhere in Britain, Cambridge University's Mathematical Laboratory completed the [Electronic Delay Storage Automatic Calculator (EDSAC)](https://en.wikipedia.org/wiki/EDSAC) in 1949, drawing on the stored-program design described in the EDVAC report.
 Meanwhile, Turing's ACE design continued to influence work at NPL, which built a smaller version called the [Pilot ACE](https://en.wikipedia.org/wiki/Pilot_ACE). It ran its first program in 1950.
 
-![A researcher holding a folder stands beside the room-sized EDSAC computer.](images/2_8.png "EDSAC size:80%")
+![A researcher holding a folder stands beside the room-sized EDSAC computer.](images/2_9.png "EDSAC size:80%")
 
 Alan Turing's 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations. Interestingly, Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing's work on computability, later offered Turing a position. Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
 
-![John von Neumann and Alan Turing face one another in conversation.](images/2_9.png "size:80%")
+![John von Neumann and Alan Turing face one another in conversation.](images/2_10.png "size:80%")
 > "Alan, could you tell me more about your universal machine?" \
 > "Of course."
 
@@ -74,13 +74,13 @@ They may have had a conversation like this, though no record of it survives.
 
 During World War II, Britain, Germany, and the United States all developed pioneering computing machines, but the war shaped what happened to them afterward. In Britain, Colossus was built in secret to help break German ciphers. Most Colossus machines were dismantled after the war, and the project remained secret for decades. Germany also produced pioneering computers, including Konrad Zuse's machines, but wartime destruction and Germany's defeat disrupted further development.
 
-![A researcher protests as an official directs a truck loaded with computing equipment away.](images/2_10.png)
+![A researcher protests as an official directs a truck loaded with computing equipment away.](images/2_11.png)
 > "Could we use these machines for other purposes?" \
 > "No. The project must remain secret."
 
 In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world's largest early computer industry.
 
-![Portraits of Alan Turing, John von Neumann, and Kurt Gödel from left to right. Turing earned a Ph.D. from Princeton University and developed a mathematical model of computation. Von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. Gödel was born in Austria-Hungary and later became a U.S. citizen; his incompleteness theorems helped set the stage for the development of the Turing machine.](images/2_11.png)
+![Portraits of Alan Turing, John von Neumann, and Kurt Gödel from left to right. Turing earned a Ph.D. from Princeton University and developed a mathematical model of computation. Von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. Gödel was born in Austria-Hungary and later became a U.S. citizen; his incompleteness theorems helped set the stage for the development of the Turing machine.](images/2_12.png)
 
 
 ## References
