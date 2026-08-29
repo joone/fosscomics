@@ -4,7 +4,7 @@ module.exports = {
   authorDescription: "Open Source Developer and Comic Artist",
   authorWebsite: "https://fosscomics.com",
   blogDescription:
-    "F/OSS Comics is a comic series dedicated to Free and Open Source Software. The comics aim to educate and entertain readers about the world of free and open source software.",
+    "F/OSS Comics is a comic series about free and open source software. Through stories from the history of computing and software, we hope to help readers understand F/OSS and get involved.",
   blogsite: "https://fosscomics.com",
   githubCNAME: "fosscomics.com",
   googleAnalyticsID: "G-M0CWE9F5HJ",
