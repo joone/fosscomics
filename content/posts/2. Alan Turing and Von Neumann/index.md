@@ -42,9 +42,37 @@ The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research
 
 Most general-purpose computers still use variants of what became known as the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
+```mermaid
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontSize": "18.67px"}}}%%
+flowchart LR
+	INPUT["Input Device"]
 
-![A block diagram shows a CPU containing a control unit and arithmetic logic unit connected in both directions to memory.](images/2_5.png "Von Neumann Architecture")
-(From [wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg))
+	subgraph COMPUTER["Computer"]
+		direction TB
+
+		subgraph CPU["Central Processing Unit"]
+			direction TB
+			CU["Control Unit"]
+			ALU["Arithmetic/Logic Unit"]
+		end
+
+		MEMORY["Memory Unit"]
+		CPU <--> MEMORY
+	end
+
+	OUTPUT["Output Device"]
+	INPUT --> CPU
+	CPU --> OUTPUT
+
+	style COMPUTER fill:#d1d5db,stroke:#6b7280,stroke-width:2px,color:#111111
+	style CPU fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style CU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+	style ALU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+	style MEMORY fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style INPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style OUTPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+```
+(Adapted from [Wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg))
 
 As the diagram shows, a basic von Neumann architecture consists of a central processing unit (CPU), memory, and input/output devices. The CPU contains an arithmetic logic unit (ALU), which performs arithmetic and logical operations; processor registers, which hold values needed immediately; and a control unit. The control unit includes registers such as the instruction register and program counter. Memory stores both instructions and data. During the fetch-decode-execute cycle, the CPU retrieves an instruction, interprets it, performs the operation, and stores any result[&lbrack;6&rbrack;][6].
 

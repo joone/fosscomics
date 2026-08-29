@@ -37,7 +37,37 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 지금도 모든 컴퓨터는 이와 같은 컴퓨터 구조를 사용하고 있고, 이를 [폰노이만 구조](https://ko.wikipedia.org/wiki/폰_노이만_구조)라고 부른다.
 
-![제어 장치와 산술·논리 장치로 이루어진 CPU가 메모리와 양방향으로 연결된 블록도.](images/ko_2_5.png)
+```mermaid
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontSize": "18.67px"}}}%%
+flowchart LR
+	INPUT["입력 장치"]
+
+	subgraph COMPUTER["컴퓨터"]
+		direction TB
+
+		subgraph CPU["중앙 처리 장치"]
+			direction TB
+			CU["제어 장치"]
+			ALU["산술·논리 장치"]
+		end
+
+		MEMORY["메모리 장치"]
+		CPU <--> MEMORY
+	end
+
+	OUTPUT["출력 장치"]
+	INPUT --> CPU
+	CPU --> OUTPUT
+
+	style COMPUTER fill:#d1d5db,stroke:#6b7280,stroke-width:2px,color:#111111
+	style CPU fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style CU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+	style ALU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+	style MEMORY fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style INPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+	style OUTPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+```
+(출처: [위키백과](https://ko.wikipedia.org/wiki/폰_노이만_구조#/media/파일:Von_Neumann_Architecture.svg)를 바탕으로 작성)
 
 그림에서 볼 수 있듯이, 폰노이만 구조는 크게 CPU, 메모리, 입출력 장치로 구성되어 있으며, CPU안에는 산술/논리장치, 프로세서 레지스터를 포함하고 있는 처리 장치(Processing Unit)와 명령어 레지스터와 프로그램 카운터를 포함하는 제어장치로 구성된다. 메모리는 데이터와 명령어를 함께 저장할 수 있다.
 
