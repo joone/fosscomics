@@ -6,7 +6,10 @@ description: Alan Turing described an abstract machine that clarified what compu
 tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing Engine
 ---
 
-![Portraits of Alan Turing on the left and John von Neumann on the right.](images/feature.png "size:80%")
+:::panels columns="2" label="Alan Turing and John von Neumann"
+![Portrait of Alan Turing.](images/alan_turing.png "Alan Turing (1912-1954)")
+![Portrait of John von Neumann.](images/john_von_neumann.png "John von Neumann (1903-1957)")
+:::
 
 Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
 
@@ -80,7 +83,11 @@ During World War II, Britain, Germany, and the United States all developed pione
 
 In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world's largest early computer industry.
 
-![Portraits of Alan Turing, John von Neumann, and Kurt Gödel from left to right. Turing earned a Ph.D. from Princeton University and developed a mathematical model of computation. Von Neumann, a Hungarian immigrant, worked on the design of the stored-program computer. Gödel was born in Austria-Hungary and later became a U.S. citizen; his incompleteness theorems helped set the stage for the development of the Turing machine.](images/2_12.png)
+:::panels columns="3" label="Alan Turing, John von Neumann, and Kurt Gödel"
+![Portrait of Alan Turing.](images/2_12_turing.png "Alan Turing (1912-1954) earned a Ph.D. from Princeton University and developed a mathematical model of computation.")
+![Portrait of John von Neumann.](images/2_12_von_neumann.png "John von Neumann (1903-1957), a Hungarian immigrant, worked on the design of the stored-program computer.")
+![Portrait of Kurt Gödel.](images/2_12_godel.png "Kurt Gödel (1906-1978) was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine.")
+:::
 
 
 ## References
