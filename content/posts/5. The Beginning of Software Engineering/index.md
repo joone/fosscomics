@@ -76,6 +76,8 @@ They taped the moth into the logbook with the note "First actual case of bug bei
 
 Women played a pioneering role in early programming and helped lay the foundations of software engineering.
 
+![Margaret Hamilton stands beside a towering stack of printed Apollo flight software.](images/margaret_hamilton.png)
+
 ## References
 
 1. Her Code Got Humans on the Moon—And Invented Software Itself, [wired.com](https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/)
