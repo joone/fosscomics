@@ -18,4 +18,4 @@ F/OSS Comics is an independent project. Sponsorship helps cover the domain, draw
 
 Thank you!
 
-![My character](/images/author.png "size:40% align:left")
+![My character](/images/author.png "size:40% align:right")

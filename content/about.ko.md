@@ -18,4 +18,4 @@ F/OSS Comics는 개인 프로젝트입니다. 여러분의 관심과 후원으�
 
 감사합니다!
 
-![My Character](/images/author.png "size:40% align:left")
+![My Character](/images/author.png "size:40% align:right")
