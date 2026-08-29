@@ -46,10 +46,21 @@ To help explain the Analytical Engine, she presented an algorithm for calculatin
 ![Ada Lovelace sits at a desk and writes notes about the Analytical Engine.](images/1_8.png "size:80%")
 > "I need a good example to explain the Analytical Engine."
 
-Her notes described how the Analytical Engine could repeat a series of operations, an early account of looping. This work is why she is often called the first computer programmer. However, historians debate how much of the Bernoulli-number algorithm originated with Lovelace and how much was developed in collaboration with Babbage. Whatever the precise division of credit, Lovelace's notes remain one of the earliest published examples of programming. In recognition of her pioneering contribution, the programming language Ada was later named after her.
+Her notes described how the Analytical Engine could repeat a series of operations, an early account of looping. This work is why she is often called the first computer programmer. However, historians debate how much of the Bernoulli-number algorithm originated with Lovelace and how much was developed in collaboration with Babbage. Whatever the precise division of credit, Lovelace's notes remain one of the earliest published examples of programming.
 
 ![Ada Lovelace stands with her arms folded as she considers how the Analytical Engine could repeat operations.](images/1_9.png "size:70%")
 > "So the engine can repeat a sequence of operations?"
+
+In recognition of her pioneering contribution, the programming language Ada was later named after her.
+
+```ada
+with Ada.Text_IO;
+procedure Hello is
+begin
+   Ada.Text_IO.Put_Line ("Hello, world!");
+end Hello;
+```
+*A "Hello, world!" program written in Ada.*
 
 Babbage completed neither the Difference Engine nor the Analytical Engine during Lovelace's lifetime because of financial, organizational, and technical difficulties. As a result, her program was never run on the proposed machine.
 
@@ -58,6 +69,8 @@ Babbage completed neither the Difference Engine nor the Analytical Engine during
 > "I'm not sure it will ever work."
 
 In 1991, the Science Museum in London completed the calculating section of a working Difference Engine No. 2 based on Babbage's designs. Its printing mechanism followed in 2002. The engine could calculate results to 31 digits. Lovelace's notes remain an important early account of how a general-purpose computing machine could be programmed.
+
+![Working model of Difference Engine No. 2](images/1_11_difference_engine_2.png "Difference Engine No. 2 size:80%")
 
 ## References
 1. https://en.wikipedia.org/wiki/Charles_Babbage
