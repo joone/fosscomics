@@ -7,8 +7,8 @@ tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing E
 ---
 
 :::panels columns="2" label="Alan Turing and John von Neumann"
-![Portrait of Alan Turing.](images/alan_turing.png "Alan Turing (1912-1954)")
-![Portrait of John von Neumann.](images/john_von_neumann.png "John von Neumann (1903-1957)")
+![Portrait of Alan Turing.](images/alan_turing.png "Alan Turing (1912-1954) size:80%")
+![Portrait of John von Neumann.](images/john_von_neumann.png "John von Neumann (1903-1957) size:80%")
 :::
 
 Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
