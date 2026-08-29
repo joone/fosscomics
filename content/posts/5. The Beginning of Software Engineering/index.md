@@ -20,7 +20,7 @@ Mathematicians were involved in the invention of early computers so it was easy 
 People who majored in science or engineering learned programming because they could do mathematical calculations and various experiments with computers that were previously done manually. Some of them fell in love with programming and changed their jobs as programmers.
 
 ![A scientist and a programmer work together at a console in front of a mainframe.](images/5_3.png "size:90%")
-> "This is way more fun than math."
+> "Isn't it more fun than math?"
 
 Dennis Ritchie, who helped create Unix and the C programming language, studied physics and applied mathematics at university.
 
