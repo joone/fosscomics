@@ -23,7 +23,11 @@ Turing submitted ["On Computable Numbers, with an Application to the Entscheidun
 ![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/2_2.png "size:80%")
 > "Copying these symbols by hand is like copying the program."
 
-During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2]. Many computing machines built during the war were designed for specific tasks. As the war was nearing its end, however, the United States was developing [ENIAC](https://en.wikipedia.org/wiki/ENIAC), a general-purpose electronic computer. J. Presper Eckert, John Mauchly, and their team at the University of Pennsylvania began building it in 1943 and completed it in 1946. The U.S. Army initially used ENIAC to calculate artillery firing tables.
+During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2].
+
+![A woman operates rows of rotating drums on a large British Bombe machine.](images/2_bombe.png "A British-built Bombe used during World War II")
+
+Many computing machines built during the war were designed for specific tasks. As the war was nearing its end, however, the United States was developing [ENIAC](https://en.wikipedia.org/wiki/ENIAC), a general-purpose electronic computer. J. Presper Eckert, John Mauchly, and their team at the University of Pennsylvania began building it in 1943 and completed it in 1946. The U.S. Army initially used ENIAC to calculate artillery firing tables.
 
 Programming ENIAC was very different from programming a modern computer. Instead of loading a program from memory, operators configured switches and connected cables on its plugboards. Running a different program required them to reconfigure the machine. ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed around 150 kilowatts of power[&lbrack;3&rbrack;][3].
 
@@ -33,8 +37,8 @@ Programming ENIAC was very different from programming a modern computer. Instead
 
 The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research Laboratory, making it one of the earliest stored-program computer projects. John von Neumann joined the project as a consultant, and the widely circulated [First Draft of a Report on the EDVAC](http://www.virtualtravelog.net/wp/wp-content/media/2003-08-TheFirstDraft.pdf) appeared under his name. The design stored instructions and data in the same memory. EDVAC was delivered in 1949 but became fully operational later; meanwhile, the Manchester Baby had run a stored program in 1948.
 
-![A researcher stands beside the cabinet-sized EDVAC computer.](images/2_4.png "size:90%")
-> "Unlike ENIAC, EDVAC was designed to use binary arithmetic."
+![J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby.](images/2_von_neumann_edvac_report.png "J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann's role? size:90%")
+
 
 Most general-purpose computers still use variants of what became known as the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
