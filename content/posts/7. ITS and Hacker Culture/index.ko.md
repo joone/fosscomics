@@ -20,7 +20,7 @@ MIT 해커 문화는 [테크 모델 철도 클럽](https://en.wikipedia.org/wiki
 참고로, 아래 동영상을 보면 움직이는 모형 기차를 제어하는 일이 얼마나 복잡했는지 알 수 있다.
 
 <div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dqLUUXWgba4?si=f4QZp3gTxWdDRnrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/dqLUUXWgba4?si=f4QZp3gTxWdDRnrt" title="YouTube video player" style="display:block; width:100%; max-width:560px; aspect-ratio:16 / 9; margin:0 auto; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_Processor)은 해커 문화에 큰 기여를 했고, 후속 기종은 자유 소프트웨어 탄생의 중요한 환경을 제공했다. 이 컴퓨터들은 비교적 저렴한 가격으로 판매되어 특히 대학에서 인기가 많았고 미니컴퓨터라는 분야를 확립하는 데 기여했다. 참고로, DEC는 1961년 PDP-1을 MIT에 기증했다[&lbrack;2&rbrack;][2].
@@ -78,7 +78,7 @@ ITS 개발은 PDP-6에서 시작됐고 시스템은 어셈블리어로 작성됐
 > “암호가 없네.” \
 > “누구나 파일을 편집할 수 있고.”
 
-또한, MIT 내부뿐만 아니라 다른 기관이나 학교에서도 ARPANET을 통해 ITS에 접속할 수 있었다. 이러한 ITS의 열린 철학과 협력적인 공동체 환경은 해커 문화와 자유·오픈 소스 소프트웨어 운동에 큰 영향을 끼쳤다[&lbrack;3&rbrack;][3].
+또한, MIT 내부뿐만 아니라 다른 기관이나 학교에서도 ARPANET을 통해 ITS에 접속할 수 있었다. 이러한 ITS의 열린 철학과 협력적인 공동체 환경은 해커 문화와 자유·오픈 소스 소프트웨어 운동에 큰 영향을 끼쳤으며, 훗날 위키로 구현된 개방형 협업 지식 공유 모델을 앞서 보여 주었다[&lbrack;3&rbrack;][3].
 
 ![ARPANET이라는 선이 MIT 인공지능연구소의 PDP-10과 다른 대학의 ITS 사용자를 연결한다.](images/7_15_ko.png "다른 대학에서 ITS 접속")
 
