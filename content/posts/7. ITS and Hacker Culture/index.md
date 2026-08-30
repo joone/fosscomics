@@ -6,7 +6,7 @@ description: The hacker culture at MIT had roots in the Tech Model Railroad Club
 tags: ITS, Hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics
 ---
 
-The hacker culture started with the [Tech Model Railroad Club](https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club) at MIT. This club built a model railroad and developed relay systems to keep the trains from colliding with each other[&lbrack;1&rbrack;][1].
+MIT's hacker culture started with the [Tech Model Railroad Club](https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club) at MIT. This club built a model railroad and developed relay systems to keep the trains from colliding with each other[&lbrack;1&rbrack;][1].
 
 ![Three TMRC members stand around a model railroad, considering how to prevent collisions.](images/7_1.png)
 > "How do we keep the trains from crashing?"\
@@ -17,7 +17,7 @@ The hacker culture started with the [Tech Model Railroad Club](https://en.wikipe
 > "Control the trains with the PDP-1?" \
 > "Sure. We'd just write a control program."
 
-For reference, the video below shows why a computer is needed to control moving model trains.
+For reference, the video below shows how a computer can be used to control moving model trains.
 <div style="text-align:center">
 <iframe src="https://www.youtube.com/embed/dqLUUXWgba4?si=f4QZp3gTxWdDRnrt" title="YouTube video player" style="display:block; width:100%; max-width:560px; aspect-ratio:16 / 9; margin:0 auto; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -28,7 +28,7 @@ The [PDP series](https://en.wikipedia.org/wiki/Programmed_Data_Processor), made 
 > "What's that round thing?" \
 > "That? It's the display. It shows you what the computer's doing."
 
-After that, members of the Tech Model Railroad Club spent more time with the TX-0 and, later, the PDP-1.
+Members of the Tech Model Railroad Club spent more time with the TX-0 and, later, the PDP-1.
 
 ![Two programmers work at the PDP-1 late at night beside a stack of pizza boxes.](images/7_4.png "size:70%")
 
@@ -56,7 +56,7 @@ For fun, the students created one of the earliest and most influential computer 
 
 At the time, the MIT Artificial Intelligence Group was a center of hacker culture within Project MAC. A separate Project MAC group was developing an operating system called [Multics](https://en.wikipedia.org/wiki/Multics) with GE and Bell Labs. However, because of differing opinions about operating system development, the AI programmers began developing their own operating system, ITS (Incompatible Timesharing System), in 1967[&lbrack;3&rbrack;][3][&lbrack;5&rbrack;][5].
 
-![Two AI group programmers discuss abandoning Multics for an operating system of their own.](images/7_11.png "size:80%")
+![Two AI group programmers discuss building their own operating system instead of Multics.](images/7_11.png "size:80%")
 > "Is Multics ever going to be finished?"\
 > "Why don't we build our own operating system?"
 
@@ -85,7 +85,7 @@ Richard Stallman, who later started the free software movement, also participate
 
 ![Richard Stallman stands at a row of large computer cabinets in the MIT AI Lab.](images/7_16.png "size:80%")
 
-Until then, software was recognized as a bundle of hardware and was copied and used without paying each other. Companies also distributed their software for free, allowing the users to modify and copy it.
+At many institutions, software was treated as part of the hardware package and was shared and used without separate payment. Some companies also distributed their software with source code, allowing users to modify and copy it.
 
 ![One programmer hands another a reel containing the ITS source code.](images/7_17.png "size:80%")
 > "Here's the ITS source code." \
