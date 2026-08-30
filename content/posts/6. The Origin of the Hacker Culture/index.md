@@ -6,7 +6,7 @@ description: The origins of hacker culture reach back to early programming commu
 tags: Hacker, PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond, ARPAnet
 ---
 
-Note: These comics were written with reference to Eric S. Raymond's "[A Brief History of Hackerdom](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)." The phrase "real programmers" is Raymond's retrospective framing, not a neutral historical category.
+Note: These comics were written with reference to Eric S. Raymond's "[A Brief History of Hackerdom](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)."
 
 ![Eric S. Raymond gestures as he introduces his retrospective account of early programmers.](images/6_1.png "size:70%")
 > "In the beginning, there were 'real programmers.'"
