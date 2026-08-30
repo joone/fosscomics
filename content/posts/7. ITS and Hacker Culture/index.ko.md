@@ -36,7 +36,7 @@ DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_P
 
 ![학장이 밤에는 컴퓨터실을 잠그라고 지시하며 학생들이 모형 기차나 만들라고 불평한다.](images/ko_7_5.png "size:80%")
 > “밤에는 컴퓨터실 문을 잠그라고 해!” \
-> “공부는 안 하고 기차나 만들고 있으니...”
+> “공부는 안 하고 기차나 만들 것이지...”
 
 ![프로그래머 세 명이 야간 출입 금지 안내가 붙은 잠긴 컴퓨터실 문 앞에 서 있다.](images/ko_7_6.png "size:90%")
 > “저녁 먹고 오니 문이 잠겼네.” \
@@ -44,7 +44,7 @@ DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_P
 
 ![두 학생이 마지못한 친구를 높은 창문으로 밀어 올린다.](images/ko_7_7.png "size:90%")
 > “꼭 이렇게까지 해야 하나?” \
-> “물론이지. 지금 최초의 비디오 게임을 만드는 역사적인 순간이라고!”
+> “물론이지. 지금 우리가 최초로 비디오 게임을 만드는 역사적인 순간에 함께 있는거야!”
 
 ![두 프로그래머가 밤새 PDP-1 앞에서 작업한다.](images/ko_7_8.png "size:70%")
 
@@ -53,7 +53,7 @@ DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_P
 ![한 학생이 자리를 떠나는 동안 다른 두 사람은 PDP-1의 디스플레이 앞에서 작업을 계속한다.](images/ko_7_9.png "size:80%")
 > “임무 완수. 난 AI Lab으로 갈게.”
 
-당시 MIT [프로젝트 MAC](https://en.wikipedia.org/wiki/Project_MAC)의 인공지능 그룹은 해커 문화의 중심지였다[&lbrack;4&rbrack;][4]. 프로젝트 MAC의 별도 그룹은 GE, 벨 연구소와 함께 [Multics](https://en.wikipedia.org/wiki/Multics)라는 운영체제를 개발하고 있었다. 하지만 운영체제 개발 방향에 대한 생각이 달랐던 인공지능 그룹의 프로그래머들은 1967년부터 자신들의 운영체제인 ITS(Incompatible Timesharing System)를 개발하기 시작했다. 인공지능 그룹은 1970년 프로젝트 MAC에서 분리되어 정식 연구소가 되었다.
+당시 MIT [프로젝트 MAC](https://en.wikipedia.org/wiki/Project_MAC)의 인공지능 그룹은 해커 문화의 중심지였는데[&lbrack;4&rbrack;][4], GE, 벨 연구소와 함께 [Multics](https://en.wikipedia.org/wiki/Multics)라는 운영체제를 개발하고 있었다. 하지만 운영체제 개발 방향에 대한 생각이 달랐던 인공지능 그룹의 프로그래머들은 1967년부터 자신들의 운영체제인 ITS(Incompatible Timesharing System)를 개발하기 시작했다. 인공지능 그룹은 1970년 프로젝트 MAC에서 분리되어 정식 연구소가 되었다.
 
 ![인공지능 그룹 프로그래머 두 명이 Multics를 대신할 자체 운영체제를 만들자고 이야기한다.](images/ko_7_10.png "size:80%")
 > “Multics 개발은 대체 언제 끝나는 거지?” \
