@@ -8,40 +8,40 @@ tags: UNIX, C Language, Ken Thompson, Dennis Ritchie, B Language, Bell Labs., Mu
 
 In the 1960s, while MIT was busy developing [the Incompatible Timesharing System (ITS)](https://en.wikipedia.org/wiki/Incompatible_Timesharing_System), another place on the East Coast was buzzing with the same hacker energy: AT\&T Bell Laboratories. This was where Unix and C, two creations that would change computing, were taking shape.
 
-![](images/8_2.png "MIT vs. Bell Lab.")
+![A programmer at MIT senses a parallel effort at Bell Labs, where two programmers work at a terminal.](images/8_2.png "MIT vs. Bell Lab.")
 > "I sense the Force somewhere..."
 
 ITS and Unix came from different groups. At Bell Labs, people who had worked on [Multics](https://en.wikipedia.org/wiki/Multics) stepped away and began building Unix. At the center of the effort were [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie), and [Joe Ossanna](https://en.wikipedia.org/wiki/Joe_Ossanna).
 
-![](images/8_3.png)
+![Two Bell Labs programmers discuss Multics over cups of coffee.](images/8_3.png)
 > "I think we need to step away from the Multics project now."\
 > "Yeah. It's taking much longer than we expected."
 
 The Multics project began in 1964. But as the code grew larger and more complicated, the project fell far behind Bell Labs' expectations.
 
-![](images/8_4.png "size:80%")
+![A frustrated programmer grips his hair while criticizing the complexity of Multics.](images/8_4.png "size:80%")
 > "Overdesigned and overbuilt and over everything."\
 > "It was close to unusable.[&lbrack;1&rbrack;][1]"
 
 In the end, Bell Labs pulled out of Multics in 1969. Work continued elsewhere, and Multics later became a working commercial system. For Bell Labs, though, it had simply taken too long and cost too much.
 
-![](images/8_5.png "size:80%")
+![A Bell Labs representative walks away while GE and MIT remain seated with a tall stack labeled Multics.](images/8_5.png "size:80%")
 > "We're leaving because we can't meet our schedule."
 
 Back at Bell Labs, Thompson drew on his Multics experience and led the effort to build a smaller, simpler operating system.
 
-![](images/8_6.png)
+![Ken Thompson and Dennis Ritchie hold small light bulbs while discussing a simpler operating system.](images/8_6.png)
 > "Dennis, I'm building a new operating system, taking some ideas from Multics. I'm making it smaller and simpler." \
 > "That's a good idea. Shall I join you?"
 
 Thompson brought several ideas from Multics into Unix, but rebuilt them in a much simpler form.
 
-![](images/8_7.png)
+![Thompson carries balloons labeled command-line interpreter, file system, and dynamic linking while Multics holds a larger cluster.](images/8_7.png)
 > "I can't make something out of nothing."
 
 First came a file system, sketched out by Thompson, [Rudd Canaday](https://en.wikipedia.org/wiki/Rudd_Canaday), and Ritchie. Thompson did most of the design and put it to work on a little-used PDP-7. Ritchie added the idea of device files. Processes, utilities, and a command interpreter followed, with Ossanna and other colleagues joining in as the system grew.[&lbrack;2&rbrack;][2]
 
-![](images/8_8.png)
+![Thompson, Ritchie, and a colleague contribute ideas for the new file system.](images/8_8.png)
 > "First of all, I'm working on a file system." \
 > "We'll need a name for this thing." \
 > "How about mapping devices to files?"
@@ -50,50 +50,50 @@ It was not called Unix at first. Well into 1970, Brian Kernighan suggested the n
 
 Then a [PDP-11](https://en.wikipedia.org/wiki/PDP-11) arrived. Its CPU instructions were different from the PDP-7's, and Unix was still written in assembly. The code had to be written all over again.
 
-![](images/8_9.png)
+![Ritchie tells Thompson that a PDP-11 has arrived and suggests moving Unix to it.](images/8_9.png)
 > "Ken, a new PDP-11 just came in. How about porting Unix to it?" \
 > "Good idea. Trouble is, we'll have to rewrite it in PDP-11 assembly."
 
-![](images/8_10.png "size:90%")
+![Thompson celebrates at a terminal while Ritchie points out the cost of repeated assembly-language ports.](images/8_10.png "size:90%")
 > "Wow, I finally finished the port!" \
 > "But we can't rewrite Unix every time a new computer comes along."
 
-![](images/8_11.png)
+![Thompson holds a sheet marked B while considering whether the language could be used for Unix.](images/8_11.png)
 > "Dennis, think we could rewrite Unix in B?" \
 > "Maybe. But B still has problems on the PDP-11."
 
-![](images/8_12.png "size:80%")
+![Ritchie explains that B must first work properly on the PDP-11.](images/8_12.png "size:80%")
 > "First, we'll have to make B work properly on the PDP-11."
 
 At the time, that was easier said than done. Thompson had created B for the early Unix environment around 1969–70, building it from BCPL. It was small enough for the PDP-7, but the code it produced was much slower than assembly. B also treated everything as a machine word, which made it awkward to use on the byte-addressed PDP-11. Rewriting all of Unix in B was considered only briefly.[&lbrack;3&rbrack;][3]
 
-![](images/8_13.png)
+![Ritchie works at a PDP-11 terminal while describing a problem with porting B.](images/8_13.png)
 > "First we need to port the B language to the PDP-11, but there's a problem."
 
 In 1971, Ritchie began extending B with a character type and an explicit type system that included `int` and `char`. He also rewrote the compiler to generate PDP-11 machine code directly, instead of slower threaded code that invoked a sequence of prewritten low-level routines. He called the short-lived language NB, for "New B."[&lbrack;3&rbrack;][3]
 
-![](images/8_14.png)
+![Thompson asks Ritchie about the B port while Ritchie writes at a desk.](images/8_14.png)
 > "Dennis, how's the B language porting going?" \
 > "There are a lot of problems. B doesn't handle byte-sized characters well."
 
-![](images/8_15.png)
+![Thompson suggests rebuilding B as Ritchie considers the scale of the task.](images/8_15.png)
 > "Why not tear B apart and fix it properly?" \
 > "I may have to rebuild the whole thing."
 
 So Ritchie began tearing B apart and rebuilding it. During 1972, he expanded its type system, reworked arrays and pointers, added structures, and wrote a new compiler. When the new language took shape, he called it C. Whether the name meant the letter after B or continued the letters in BCPL, Ritchie left open. By early 1973, the essentials of modern C were in place.
 
-![](images/8_16.png)
+![Thompson and Ritchie work together at the PDP-11 and agree on the name C.](images/8_16.png)
 > "How about calling it C?" \
 > "Sounds good"
 
 In the summer of 1973, Thompson, Ritchie, and their colleagues rewrote the Unix kernel in C.
 
-![](images/8_17.png "size:80%")
+![Ritchie types at a terminal after the Unix kernel has been rewritten without assembly language.](images/8_17.png "size:80%")
 > "Hmm. No more assembly."
 
 Structures were especially useful. They let C describe data such as Unix directory entries in a way that matched how it was laid out in memory. Now C was powerful enough to write a Unix kernel.
 
-![](images/8_18.png "size:80%")
+![A C-themed superhero lifts a UNIX sign while a smaller figure representing assembly language reacts below.](images/8_18.png "size:80%")
 
 And so Unix and C came together in a remarkably short time, through the work of Thompson, Ritchie, and their Bell Labs colleagues. Unix and Unix-like systems still run on countless servers, personal computers, and phones. And C is still used to build operating-system kernels and other systems software today.
 
