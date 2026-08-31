@@ -63,14 +63,14 @@ tags: 유니박, 에커트, 존 모클리, IBM, IBM 701, IBM 704, IBM 650, 포�
 ## 참고 자료
 
 1. [존 모클리, 위키백과](https://ko.wikipedia.org/wiki/존_모클리)
-2. [Donald Knuth's First Computer](http://www.catonmat.net/blog/donald-knuths-first-computer)
-3. [에커트-모클리 컴퓨터 회사(EMCC), 컴퓨터 역사 박물관](https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/)
+2. [도널드 커누스의 첫 컴퓨터](http://www.catonmat.net/blog/donald-knuths-first-computer)
+3. [에커트-모클리 컴퓨터 회사(EMCC), 미국 컴퓨터 역사 박물관](https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/)
 4. [포트란, IBM 역사](https://www.ibm.com/history/fortran)
 5. [IBM 650, IBM 역사](https://www.ibm.com/history/650)
 
 [1]: https://ko.wikipedia.org/wiki/존_모클리 "존 모클리, 위키백과"
-[2]: http://www.catonmat.net/blog/donald-knuths-first-computer "Donald Knuth's First Computer"
-[3]: https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/ "에커트-모클리 컴퓨터 회사(EMCC), 컴퓨터 역사 박물관"
+[2]: http://www.catonmat.net/blog/donald-knuths-first-computer "도널드 커누스의 첫 컴퓨터"
+[3]: https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/ "에커트-모클리 컴퓨터 회사(EMCC), 미국 컴퓨터 역사 박물관"
 [4]: https://www.ibm.com/history/fortran "포트란, IBM 역사"
 [5]: https://www.ibm.com/history/650 "IBM 650, IBM 역사"
 

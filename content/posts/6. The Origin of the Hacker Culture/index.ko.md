@@ -44,9 +44,9 @@ MIT의 초기 해커 문화는 PDP-1이 도착하기 전 테크 모델 철도 �
 
 ![여러 프로그래머가 공동 컴퓨터 연구실의 각기 다른 단말기에서 작업한다.](images/6_3_ko.png)
 
-## Computer History Museum 읽을거리
-1. PDP-1 Restoration Project, [CHM](https://www.computerhistory.org/pdp-1)
-2. PDP-1 Demo Lab, [CHM](https://computerhistory.org/exhibits/pdp-1/)
+## 미국 컴퓨터 역사 박물관 읽을거리
+1. PDP-1 복원 프로젝트, [미국 컴퓨터 역사 박물관](https://www.computerhistory.org/pdp-1)
+2. PDP-1 시연 연구실, [미국 컴퓨터 역사 박물관](https://computerhistory.org/exhibits/pdp-1/)
 
 ## 참고 자료
 

@@ -129,11 +129,11 @@ flowchart LR
 1. https://ko.wikipedia.org/wiki/튜링_기계
 2. https://ko.wikipedia.org/wiki/앨런_튜링
 3. https://ko.wikipedia.org/wiki/컴퓨터의_역사
-4. [The universal computer, p.167~168, CRC press, 2012](https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192)
+4. [The universal computer, 167~168쪽, CRC 프레스, 2012](https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192)
 5. https://ko.wikipedia.org/wiki/괴델의_불완전성_정리
 6. https://ko.wikipedia.org/wiki/중앙_처리_장치
 
 
 [2]: https://ko.wikipedia.org/wiki/앨런_튜링 "앨런 튜링, 위키백과"
 [3]: https://ko.wikipedia.org/wiki/컴퓨터의_역사 "컴퓨터의 역사, 위키백과"
-[4]: https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192 "The universal computer, p.167~168, CRC press, 2012"
+[4]: https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192 "The universal computer, 167~168쪽, CRC 프레스, 2012"

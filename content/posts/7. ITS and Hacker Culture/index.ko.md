@@ -94,14 +94,14 @@ ITS 개발은 PDP-6에서 시작됐고 시스템은 어셈블리어로 작성됐
 
 ## 참고 자료
 
-1. Hacker, [Wikipedia](https://en.wikipedia.org/wiki/Hacker)
-2. PDP-1, [Wikipedia](https://en.wikipedia.org/wiki/PDP-1)
-3. Incompatible Timesharing System, [Wikipedia](https://en.wikipedia.org/wiki/Incompatible\_Timesharing\_System)
-4. Project MAC, [Wikipedia](https://en.wikipedia.org/wiki/Project_MAC)
-5. Spacewar!, [Computer History Museum](https://www.computerhistory.org/pdp-1/spacewar/)
+1. 해커, [위키백과](https://en.wikipedia.org/wiki/Hacker)
+2. PDP-1, [위키백과](https://en.wikipedia.org/wiki/PDP-1)
+3. 비호환 시분할 시스템(ITS), [위키백과](https://en.wikipedia.org/wiki/Incompatible\_Timesharing\_System)
+4. 프로젝트 MAC, [위키백과](https://en.wikipedia.org/wiki/Project_MAC)
+5. 스페이스워!, [미국 컴퓨터 역사 박물관](https://www.computerhistory.org/pdp-1/spacewar/)
 
-[1]: https://en.wikipedia.org/wiki/Hacker "Hacker, Wikipedia"
-[2]: https://en.wikipedia.org/wiki/PDP-1 "PDP-1, Wikipedia"
-[3]: https://en.wikipedia.org/wiki/Incompatible\_Timesharing\_System "Incompatible Timesharing System, Wikipedia"
-[4]: https://en.wikipedia.org/wiki/Project_MAC "Project MAC, Wikipedia"
-[5]: https://www.computerhistory.org/pdp-1/spacewar/ "Spacewar!, Computer History Museum"
+[1]: https://en.wikipedia.org/wiki/Hacker "해커, 위키백과"
+[2]: https://en.wikipedia.org/wiki/PDP-1 "PDP-1, 위키백과"
+[3]: https://en.wikipedia.org/wiki/Incompatible\_Timesharing\_System "비호환 시분할 시스템(ITS), 위키백과"
+[4]: https://en.wikipedia.org/wiki/Project_MAC "프로젝트 MAC, 위키백과"
+[5]: https://www.computerhistory.org/pdp-1/spacewar/ "스페이스워!, 미국 컴퓨터 역사 박물관"

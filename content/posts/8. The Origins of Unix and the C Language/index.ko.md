@@ -97,9 +97,9 @@ MIT에서는 ITS가 만들어지고 있었고, 공교롭게도 벨 연구소에�
 
 ## 참고 자료
 
-1. Dennis M. Ritchie, [The Evolution of the Unix Time-sharing System](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html)
-2. Dennis M. Ritchie, [The Development of the C Language](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
-3. David C. Brock, [The Earliest Unix Code: An Anniversary Source Code Release](https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/)
+1. 데니스 M. 리치, [유닉스 시분할 시스템의 진화](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html)
+2. 데니스 M. 리치, [C 언어의 발전](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
+3. 데이비드 C. 브록, [최초의 유닉스 코드: 소스 코드 공개 기념](https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/)
 
-[1]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "The Evolution of the Unix Time-sharing System, Dennis M. Ritchie"
-[2]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "The Development of the C Language, Dennis M. Ritchie"
+[1]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "유닉스 시분할 시스템의 진화, 데니스 M. 리치"
+[2]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "C 언어의 발전, 데니스 M. 리치"

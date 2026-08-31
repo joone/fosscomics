@@ -69,18 +69,18 @@ IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, �
 
 ## 참고 자료
 
-1. [Celebrating Penn Engineering History: ENIAC](http://www.seas.upenn.edu/about-seas/eniac/operation.php)
-2. [EDSAC Initial Orders and Squares Program](http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf)
-3. [History of Multics](https://www.multicians.org/history.html)
-4. [ENIAC, Computer History Museum](https://www.computerhistory.org/revolution/birth-of-the-computer/4/78)
-5. [The IBM Punched Card](https://www.ibm.com/history/punched-card)
+1. [펜실베이니아 대학교 공과대학의 역사: 에니악](http://www.seas.upenn.edu/about-seas/eniac/operation.php)
+2. [EDSAC 초기 명령과 제곱수 프로그램](http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf)
+3. [멀틱스의 역사](https://www.multicians.org/history.html)
+4. [에니악, 미국 컴퓨터 역사 박물관](https://www.computerhistory.org/revolution/birth-of-the-computer/4/78)
+5. [IBM 천공카드](https://www.ibm.com/history/punched-card)
 
-[1]: http://www.seas.upenn.edu/about-seas/eniac/operation.php "Celebrating Penn Engineering History: ENIAC"
+[1]: http://www.seas.upenn.edu/about-seas/eniac/operation.php "펜실베이니아 대학교 공과대학의 역사: 에니악"
 
-[2]: http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "EDSAC Initial Orders and Squares Program"
+[2]: http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "EDSAC 초기 명령과 제곱수 프로그램"
 
-[3]: https://www.multicians.org/history.html "History of Multics"
+[3]: https://www.multicians.org/history.html "멀틱스의 역사"
 
-[4]: https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "ENIAC, Computer History Museum"
+[4]: https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "에니악, 미국 컴퓨터 역사 박물관"
 
-[5]: https://www.ibm.com/history/punched-card "The IBM Punched Card"
+[5]: https://www.ibm.com/history/punched-card "IBM 천공카드"

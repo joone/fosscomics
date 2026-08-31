@@ -84,14 +84,14 @@ Mark II 팀은 기계의 릴레이 가운데 하나에 나방이 끼어 있는 �
 
 ## 참고 자료
 
-1. [Her Code Got Humans on the Moon—And Invented Software Itself](https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/), Wired
-2. [Computer Programming Used To Be Women's Work](http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/), Smithsonian Magazine
-3. [How Female ENIAC Programmers Pioneered the Software Industry](https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/), Intel iQ
-4. [Margaret Hamilton's Apollo Code](https://science.nasa.gov/people/margaret-hamilton/), NASA
-5. [Log Book With Computer Bug](https://americanhistory.si.edu/collections/object/nmah_334663), Smithsonian National Museum of American History
+1. [인류를 달에 보낸 코드, 그리고 소프트웨어 자체를 발명하다](https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/), 와이어드
+2. [컴퓨터 프로그래밍은 여성의 일이었다](http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/), 스미스소니언 매거진
+3. [여성 에니악 프로그래머들은 소프트웨어 산업을 어떻게 개척했나](https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/), 인텔 iQ
+4. [마거릿 해밀턴의 아폴로 코드](https://science.nasa.gov/people/margaret-hamilton/), NASA
+5. [컴퓨터 버그가 기록된 로그북](https://americanhistory.si.edu/collections/object/nmah_334663), 스미스소니언 국립 미국사 박물관
 
-[1]: https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/ "Her Code Got Humans on the Moon—And Invented Software Itself, Wired"
-[2]: http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/ "Computer Programming Used To Be Women's Work, Smithsonian Magazine"
-[3]: https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/ "How Female ENIAC Programmers Pioneered the Software Industry, Intel iQ"
-[4]: https://science.nasa.gov/people/margaret-hamilton/ "Margaret Hamilton's Apollo Code, NASA"
-[5]: https://americanhistory.si.edu/collections/object/nmah_334663 "Log Book With Computer Bug, Smithsonian National Museum of American History"
+[1]: https://www.wired.com/2015/10/margaret-hamilton-nasa-apollo/ "인류를 달에 보낸 코드, 그리고 소프트웨어 자체를 발명하다, 와이어드"
+[2]: http://www.smithsonianmag.com/smart-news/computer-programming-used-to-be-womens-work-718061/ "컴퓨터 프로그래밍은 여성의 일이었다, 스미스소니언 매거진"
+[3]: https://web.archive.org/web/20160716023848/https://iq.intel.com/how-female-eniac-programmers-pioneered-the-software-industry/ "여성 에니악 프로그래머들은 소프트웨어 산업을 어떻게 개척했나, 인텔 iQ"
+[4]: https://science.nasa.gov/people/margaret-hamilton/ "마거릿 해밀턴의 아폴로 코드, NASA"
+[5]: https://americanhistory.si.edu/collections/object/nmah_334663 "컴퓨터 버그가 기록된 로그북, 스미스소니언 국립 미국사 박물관"
