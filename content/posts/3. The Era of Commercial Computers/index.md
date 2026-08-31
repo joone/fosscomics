@@ -39,7 +39,7 @@ The security dispute was not the company's only problem. EMCC had underestimated
 
 ## Who should receive credit for the stored-program design?
 
-The historical record does not support attributing the architecture to any one person. It grew out of collaborative work on EDVAC by the ENIAC team, including Eckert and Mauchly, with important contributions from John von Neumann. Because the widely circulated [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC) named only von Neumann as its author, the stored-program design became strongly associated with him and is still commonly known as the von Neumann architecture. Eckert and Mauchly helped usher in the era of commercial computing, but their company was not financially successful, neither man became widely known to the general public, and recognition of their contributions was complicated by decades of disputes over patents and historical credit.
+The historical record does not support attributing the architecture to any one person. It grew out of collaborative work on EDVAC by the ENIAC team, including Eckert and Mauchly, with important contributions from John von Neumann. Because the widely circulated [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC) named only von Neumann as its author, the stored-program design became strongly associated with him and is still commonly known as the von Neumann architecture. Eckert and Mauchly helped usher in the era of commercial computing, but their company was not financially successful and neither man became widely known to the general public. Separately, their ENIAC patent was filed in 1947, granted in 1964, and ruled invalid in the 1973 _Honeywell v. Sperry Rand_ decision[&lbrack;6&rbrack;][6].
 
 Commercial computer production expanded during the 1950s. IBM, already dominant in [punched-card](https://en.wikipedia.org/wiki/Punched_card%23IBM_punched_card_manufacturing) equipment, announced its first large-scale electronic computer, the [IBM 701](https://en.wikipedia.org/wiki/IBM_701), in 1952.
 
@@ -66,6 +66,7 @@ Donald Knuth, later known for [The Art of Computer Programming](https://en.wikip
 3. [Eckert-Mauchly Computer Corporation (EMCC), Computer History Museum](https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/)
 4. [Fortran, IBM History](https://www.ibm.com/history/fortran)
 5. [The IBM 650, IBM History](https://www.ibm.com/history/650)
+6. [Honeywell v. Sperry Rand: ENIAC Patent Case, Iowa State University](https://jva.cs.iastate.edu/courtcase.php)
 
 [1]: https://en.wikipedia.org/wiki/John_Mauchly "John Mauchly, wikipedia"
 
@@ -76,3 +77,5 @@ Donald Knuth, later known for [The Art of Computer Programming](https://en.wikip
 [4]: https://www.ibm.com/history/fortran "Fortran, IBM History"
 
 [5]: https://www.ibm.com/history/650 "The IBM 650, IBM History"
+
+[6]: https://jva.cs.iastate.edu/courtcase.php "Honeywell v. Sperry Rand: ENIAC Patent Case, Iowa State University"

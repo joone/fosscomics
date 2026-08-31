@@ -39,7 +39,7 @@ tags: 유니박, 에커트, 존 모클리, IBM, IBM 701, IBM 704, IBM 650, 포�
 
 ### 프로그램 내장식 설계의 공로는 누구에게 돌아가야 할까?
 
-역사적 기록을 보면 일명 폰 노이만 컴퓨터 아키텍처를 어느 한 사람의 공으로만 돌리기에는 충분치 않다. 이 구조는 에커트와 모클리를 포함한 에니악 팀이 에드박을 개발하는 과정에서 나왔고, 존 폰 노이만도 컨설턴트로 기여를 했다. 그러나 널리 배포된 [「EDVAC에 관한 보고서 초안」(First Draft of a Report on the EDVAC)](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC)에 폰 노이만만이 저자로 기재되어 있었기 때문에, 오늘날에도 이 컴퓨터 구조를 폰 노이만 아키텍처라고 부르고 있다. 하지만 폰 노이만이 이 설계를 혼자 고안한 것은 아니며, 누구에게 공로를 돌려야 하는지는 여전히 논쟁거리다. 에커트와 모클리는 상업용 컴퓨팅 시대를 여는 데 기여했지만, 그들이 세운 회사는 재정적 어려움으로 다른 회사에 인수되었고 두 사람 모두 일반 대중에게 널리 알려지지 않았다. 또한 이들 공로에 대한 평가 역시 수십 년간의 특허 분쟁으로 당대에 평가받지 못했다.
+역사적 기록을 보면 일명 폰 노이만 컴퓨터 아키텍처를 어느 한 사람의 공으로만 돌리기에는 충분치 않다. 이 구조는 에커트와 모클리를 포함한 에니악 팀이 에드박을 개발하는 과정에서 나왔고, 폰 노이만도 컨설턴트로 기여를 했다. 그러나 널리 배포된 [「EDVAC에 관한 보고서 초안」(First Draft of a Report on the EDVAC)](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC)에 폰 노이만만이 저자로 기재되어 있었기 때문에, 오늘날에도 이 컴퓨터 구조를 폰 노이만 아키텍처라고 부르고 있다. 하지만 폰 노이만이 이 설계를 혼자 고안한 것은 아니며, 누구에게 공로를 돌려야 하는지는 여전히 논쟁거리다. 에커트와 모클리는 상업용 컴퓨팅 시대를 여는 데 기여했지만, 그들이 세운 회사는 재정적 어려움으로 다른 회사에 인수되었고 두 사람 모두 일반 대중에게 널리 알려지지 않았다. 이와 별개로 두 사람이 출원한 에니악 특허는 1947년에 출원되어 1964년에 등록되었지만, 1973년 _허니웰 대 스페리 랜드_ 판결에서 무효로 판단되었다[&lbrack;6&rbrack;][6].
 
 1950년대에는 여러 회사에서 다양한 상업용 컴퓨터를 만들기 시작했다. 펀치 카드 장비 시장을 이미 지배하고 있던 IBM도 1952년 최초의 대형 전자식 컴퓨터인 [IBM 701](https://en.wikipedia.org/wiki/IBM_701)을 발표했다.
 
@@ -67,12 +67,14 @@ tags: 유니박, 에커트, 존 모클리, IBM, IBM 701, IBM 704, IBM 650, 포�
 3. [에커트-모클리 컴퓨터 회사(EMCC), 미국 컴퓨터 역사 박물관](https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/)
 4. [포트란, IBM 역사](https://www.ibm.com/history/fortran)
 5. [IBM 650, IBM 역사](https://www.ibm.com/history/650)
+6. [허니웰 대 스페리 랜드: 에니악 특허 소송, 아이오와 주립대학교](https://jva.cs.iastate.edu/courtcase.php)
 
 [1]: https://ko.wikipedia.org/wiki/존_모클리 "존 모클리, 위키백과"
 [2]: http://www.catonmat.net/blog/donald-knuths-first-computer "도널드 커누스의 첫 컴퓨터"
 [3]: https://www.computerhistory.org/brochures/d-f/eckertmauchly-computer-corporation-emcc/ "에커트-모클리 컴퓨터 회사(EMCC), 미국 컴퓨터 역사 박물관"
 [4]: https://www.ibm.com/history/fortran "포트란, IBM 역사"
 [5]: https://www.ibm.com/history/650 "IBM 650, IBM 역사"
+[6]: https://jva.cs.iastate.edu/courtcase.php "허니웰 대 스페리 랜드: 에니악 특허 소송, 아이오와 주립대학교"
 
 ### 더 읽을 글
 
