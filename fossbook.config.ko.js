@@ -7,4 +7,5 @@ module.exports = {
   aboutLabel: "소개",
   tagsLabel: "태그",
   allTagsLabel: "모든 태그",
+  transcriptLabel: "대화 텍스트 표시",
 };
