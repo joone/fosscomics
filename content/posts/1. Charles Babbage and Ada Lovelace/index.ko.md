@@ -73,7 +73,7 @@ end Hello;
 
 ![배비지의 설계를 바탕으로 실제로 작동하는 차분기관 2호의 계산 장치](images/1_11_difference_engine_2.png "차분기관 2호 size:80%")
 
-## 참고 문헌
+## 참고 자료
 
 1. [찰스 배비지, 위키백과](https://ko.wikipedia.org/wiki/찰스_배비지)
 2. [에이다 러브레이스, 위키백과](https://ko.wikipedia.org/wiki/에이다_러브레이스)

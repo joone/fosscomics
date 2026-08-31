@@ -25,7 +25,7 @@ tags: 해커, PDP-1, Spacewar!, MIT, LISP, ITS, ARPAnet, 에릭 레이몬드
 ![레이몬드가 마거릿 해밀턴과 그레이스 호퍼의 초상화를 소개한다.](images/6_4_ko.png)
 > “태초에 진정한 프로그래머들 상당수는 분명 여성이었을겁니다.”
 
-이러한 진정한 프로그래머들이 만들어 놓은 문화는 대화형 컴퓨팅과 네트워크를 발전시켰고, 오늘날의 오픈 소스 해커 문화에도 영향을 주었다[1].
+이러한 진정한 프로그래머들이 만들어 놓은 문화는 대화형 컴퓨팅과 네트워크를 발전시켰고, 오늘날의 오픈 소스 해커 문화에도 영향을 주었다[&lbrack;1&rbrack;][1].
 
 ![각자 다른 컴퓨터를 사용하는 프로그래머들이 소프트웨어와 아이디어의 확산을 나타내는 굽은 선으로 이어져 있다.](images/6_2_ko.png)
 
@@ -48,5 +48,8 @@ MIT의 초기 해커 문화는 PDP-1이 도착하기 전 테크 모델 철도 �
 1. PDP-1 Restoration Project, [CHM](https://www.computerhistory.org/pdp-1)
 2. PDP-1 Demo Lab, [CHM](https://computerhistory.org/exhibits/pdp-1/)
 
-## 참고 문헌
+## 참고 자료
+
 1. 에릭 레이몬드, [해커문화의 짧은 역사](https://github.com/ganadist/catb/blob/master/md/01_brief_history.markdown)
+
+[1]: https://github.com/ganadist/catb/blob/master/md/01_brief_history.markdown "에릭 레이몬드, 해커문화의 짧은 역사"

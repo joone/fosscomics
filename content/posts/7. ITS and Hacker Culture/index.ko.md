@@ -92,7 +92,7 @@ ITS 개발은 PDP-6에서 시작됐고 시스템은 어셈블리어로 작성됐
 > “ITS 소스코드 입니다.” \
 > “ㅎㅎ 밥은 나중에 사지!”
 
-## 참고 문헌
+## 참고 자료
 
 1. Hacker, [Wikipedia](https://en.wikipedia.org/wiki/Hacker)
 2. PDP-1, [Wikipedia](https://en.wikipedia.org/wiki/PDP-1)
