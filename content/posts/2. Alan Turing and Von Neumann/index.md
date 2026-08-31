@@ -23,7 +23,7 @@ Turing submitted ["On Computable Numbers, with an Application to the Entscheidun
 ![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/2_2.png "size:80%")
 > "Copying these symbols by hand is like copying the program."
 
-:::panel
+:::panel rounded="true"
 During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2].
 
 ![A woman operates rows of rotating drums on a large British Bombe machine.](images/2_bombe.png "A British-built Bombe used during World War II")
@@ -42,7 +42,7 @@ The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research
 ![J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby.](images/2_von_neumann_edvac_report.png "J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann's role? size:90%")
 
 
-:::panel
+:::panel rounded="true"
 Most general-purpose computers still use variants of what became known as the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
 ```mermaid
@@ -98,7 +98,7 @@ Although Turing's [ACE report](https://www.amazon.com/Turings-Report-1946-Other-
 ![Alan Turing holds a rolled blueprint with a frustrated expression.](images/2_8.png "size:80%")
 > "The design is ready. Why haven't they approved the funding?"
 
-:::panel
+:::panel rounded="true"
 Elsewhere in Britain, Cambridge University's Mathematical Laboratory completed the [Electronic Delay Storage Automatic Calculator (EDSAC)](https://en.wikipedia.org/wiki/EDSAC) in 1949, drawing on the stored-program design described in the EDVAC report.
 Meanwhile, Turing's ACE design continued to influence work at NPL, which built a smaller version called the [Pilot ACE](https://en.wikipedia.org/wiki/Pilot_ACE). It ran its first program in 1950.
 
@@ -113,7 +113,7 @@ Alan Turing's 1936 concept of a universal machine was an important theoretical p
 
 They may have had a conversation like this, though no record of it survives.
 
-:::panel
+:::panel rounded="true"
 During World War II, Britain, Germany, and the United States all developed pioneering computing machines, but the war shaped what happened to them afterward. In Britain, Colossus was built in secret to help break German ciphers. Most Colossus machines were dismantled after the war, and the project remained secret for decades. Germany also produced pioneering computers, including Konrad Zuse's machines, but wartime destruction and Germany's defeat disrupted further development.
 
 ![A researcher protests as an official directs a truck loaded with computing equipment away.](images/2_11.png)
