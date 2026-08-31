@@ -86,7 +86,7 @@ flowchart LR
 > "우리도 미국에서 만든 EDVAC 같은 컴퓨터가 필요하네!" \
 > "제가 생각하고 있는 설계가 있습니다."
 
-1946년 공개된 [그의 논문](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140)을 보면 비록 폰노이만의 에드박 보고서 보다 늦게 작성되었지만, 프로그램 내장 방식 컴퓨터에 대한 자세한 설계가 담겨져 있다. 게다가 하드웨어는 최소한으로 구성하고 산술명령 조차 소프트웨어로 구현하도록 설계되어 있어 오늘날 RISC 방식의 CPU와 같은 설계 철학을 갖고 있었다.하지만, 예산 집행이 늦어져서 1947년 케임브리지 대학으로 돌아왔다[4].
+1946년 공개된 [그의 논문](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140)을 보면 비록 폰노이만의 에드박 보고서 보다 늦게 작성되었지만, 프로그램 내장 방식 컴퓨터에 대한 자세한 설계가 담겨져 있다. 게다가 하드웨어는 최소한으로 구성하고 산술명령 조차 소프트웨어로 구현하도록 설계되어 있어 오늘날 RISC 방식의 CPU와 같은 설계 철학을 갖고 있었다.하지만, 예산 집행이 늦어져서 1947년 케임브리지 대학으로 돌아왔다[&lbrack;4&rbrack;][4].
 
 ![앨런 튜링이 말아 놓은 설계도를 들고 답답한 표정을 짓는다.](images/2_8_ko.png)
 > "도대체 영국 정부는 언제 개발비를 주는 거지?" \
@@ -124,7 +124,16 @@ flowchart LR
 ![쿠르트 괴델의 초상.](images/2_12_godel.png "쿠르트 괴델(1906-1978)은 오스트리아-헝가리에서 태어나 훗날 미국 시민이 되었다. 그의 불완전성 정리는 튜링 기계가 탄생할 이론적 토대를 마련하는 데 기여했다.")
 :::
 
-- [1] https://ko.wikipedia.org/wiki/튜링_기계
-- [2] https://ko.wikipedia.org/wiki/앨런_튜링
-- [3] https://ko.wikipedia.org/wiki/컴퓨터의_역사
-- [4] The universal computer, p.167~168, CRC press, 2012
+## 참고 자료
+
+1. https://ko.wikipedia.org/wiki/튜링_기계
+2. https://ko.wikipedia.org/wiki/앨런_튜링
+3. https://ko.wikipedia.org/wiki/컴퓨터의_역사
+4. [The universal computer, p.167~168, CRC press, 2012](https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192)
+5. https://ko.wikipedia.org/wiki/괴델의_불완전성_정리
+6. https://ko.wikipedia.org/wiki/중앙_처리_장치
+
+
+[2]: https://ko.wikipedia.org/wiki/앨런_튜링 "앨런 튜링, 위키백과"
+[3]: https://ko.wikipedia.org/wiki/컴퓨터의_역사 "컴퓨터의 역사, 위키백과"
+[4]: https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192 "The universal computer, p.167~168, CRC press, 2012"
