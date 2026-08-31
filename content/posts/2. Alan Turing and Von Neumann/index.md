@@ -13,21 +13,21 @@ tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing E
 
 Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
 
-:::panel label="Alan Turing imagines a universal machine"
 ![Alan Turing walks with his hands behind his back, deep in thought.](images/2_1.png "size:80%")
 > "I will find a way to prove Gödel's incompleteness theorems."
 
 In 1928, [David Hilbert](https://en.wikipedia.org/wiki/David_Hilbert) and Wilhelm Ackermann posed the Entscheidungsproblem: could an algorithm determine whether any statement in first-order logic is valid? [Gödel's incompleteness theorems](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems), published in 1931, had already revealed limits in formal systems capable of expressing arithmetic. Turing approached the separate decision problem by defining a precise mathematical model of computation.
 
 Turing submitted ["On Computable Numbers, with an Application to the Entscheidungsproblem"](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) in 1936, and it was published in 1937. In it, he described an abstract machine that reads and writes symbols on a long tape according to a finite table of rules. This [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) provided a mathematical model of computation and showed that no universal procedure could solve the Entscheidungsproblem[&#91;1&#93;][1]. The symbols on its tape could encode both the data being processed and the instructions for processing it, anticipating the relationship between data and software in modern computers.
-:::
 
 ![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/2_2.png "size:80%")
 > "Copying these symbols by hand is like copying the program."
 
+:::panel
 During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2].
 
 ![A woman operates rows of rotating drums on a large British Bombe machine.](images/2_bombe.png "A British-built Bombe used during World War II")
+:::
 
 Many computing machines built during the war were designed for specific tasks. As the war was nearing its end, however, the United States was developing [ENIAC](https://en.wikipedia.org/wiki/ENIAC), a general-purpose electronic computer. J. Presper Eckert, John Mauchly, and their team at the University of Pennsylvania began building it in 1943 and completed it in 1946. The U.S. Army initially used ENIAC to calculate artillery firing tables.
 
@@ -42,6 +42,7 @@ The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research
 ![J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby.](images/2_von_neumann_edvac_report.png "J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann's role? size:90%")
 
 
+:::panel
 Most general-purpose computers still use variants of what became known as the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture).
 
 ```mermaid
@@ -75,6 +76,7 @@ flowchart LR
 	style OUTPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
 ```
 (Adapted from [Wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg))
+:::
 
 As the diagram shows, a basic von Neumann architecture consists of a central processing unit (CPU), memory, and input/output devices. The CPU contains an arithmetic logic unit (ALU), which performs arithmetic and logical operations; processor registers, which hold values needed immediately; and a control unit. The control unit includes registers such as the instruction register and program counter. Memory stores both instructions and data. During the fetch-decode-execute cycle, the CPU retrieves an instruction, interprets it, performs the operation, and stores any result[&lbrack;6&rbrack;][6].
 
@@ -96,10 +98,12 @@ Although Turing's [ACE report](https://www.amazon.com/Turings-Report-1946-Other-
 ![Alan Turing holds a rolled blueprint with a frustrated expression.](images/2_8.png "size:80%")
 > "The design is ready. Why haven't they approved the funding?"
 
+:::panel
 Elsewhere in Britain, Cambridge University's Mathematical Laboratory completed the [Electronic Delay Storage Automatic Calculator (EDSAC)](https://en.wikipedia.org/wiki/EDSAC) in 1949, drawing on the stored-program design described in the EDVAC report.
 Meanwhile, Turing's ACE design continued to influence work at NPL, which built a smaller version called the [Pilot ACE](https://en.wikipedia.org/wiki/Pilot_ACE). It ran its first program in 1950.
 
 ![A researcher holding a folder stands beside the room-sized EDSAC computer.](images/2_9.png "EDSAC size:80%")
+:::
 
 Alan Turing's 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations. Interestingly, Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing's work on computability, later offered Turing a position. Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
 
@@ -109,11 +113,13 @@ Alan Turing's 1936 concept of a universal machine was an important theoretical p
 
 They may have had a conversation like this, though no record of it survives.
 
+:::panel
 During World War II, Britain, Germany, and the United States all developed pioneering computing machines, but the war shaped what happened to them afterward. In Britain, Colossus was built in secret to help break German ciphers. Most Colossus machines were dismantled after the war, and the project remained secret for decades. Germany also produced pioneering computers, including Konrad Zuse's machines, but wartime destruction and Germany's defeat disrupted further development.
 
 ![A researcher protests as an official directs a truck loaded with computing equipment away.](images/2_11.png)
 > "Could we use these machines for other purposes?" \
 > "No. The project must remain secret."
+:::
 
 In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world's largest early computer industry.
 
