@@ -76,11 +76,7 @@ IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, �
 5. [IBM 천공카드](https://www.ibm.com/history/punched-card)
 
 [1]: http://www.seas.upenn.edu/about-seas/eniac/operation.php "펜실베이니아 대학교 공과대학의 역사: 에니악"
-
 [2]: http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "EDSAC 초기 명령과 제곱수 프로그램"
-
 [3]: https://www.multicians.org/history.html "멀틱스의 역사"
-
 [4]: https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "에니악, 미국 컴퓨터 역사 박물관"
-
 [5]: https://www.ibm.com/history/punched-card "IBM 천공카드"
