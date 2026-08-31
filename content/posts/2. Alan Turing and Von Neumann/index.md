@@ -13,12 +13,14 @@ tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing E
 
 Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.
 
+:::panel label="Alan Turing imagines a universal machine"
 ![Alan Turing walks with his hands behind his back, deep in thought.](images/2_1.png "size:80%")
 > "I will find a way to prove Gödel's incompleteness theorems."
 
 In 1928, [David Hilbert](https://en.wikipedia.org/wiki/David_Hilbert) and Wilhelm Ackermann posed the Entscheidungsproblem: could an algorithm determine whether any statement in first-order logic is valid? [Gödel's incompleteness theorems](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems), published in 1931, had already revealed limits in formal systems capable of expressing arithmetic. Turing approached the separate decision problem by defining a precise mathematical model of computation.
 
 Turing submitted ["On Computable Numbers, with an Application to the Entscheidungsproblem"](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) in 1936, and it was published in 1937. In it, he described an abstract machine that reads and writes symbols on a long tape according to a finite table of rules. This [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) provided a mathematical model of computation and showed that no universal procedure could solve the Entscheidungsproblem[&#91;1&#93;][1]. The symbols on its tape could encode both the data being processed and the instructions for processing it, anticipating the relationship between data and software in modern computers.
+:::
 
 ![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/2_2.png "size:80%")
 > "Copying these symbols by hand is like copying the program."
