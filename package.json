@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "Joone Hur",
   "dependencies": {
-    "fossbook": "0.2.11"
+    "fossbook": "0.2.12"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
