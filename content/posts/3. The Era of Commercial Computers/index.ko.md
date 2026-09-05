@@ -103,4 +103,4 @@ IBM 608 트랜지스터 계산기는 진공관 없이 트랜지스터 회로를 
 
 # 더 읽을 글
 
-- [초기 컴퓨터의 진화](http://blog.lgcns.com/1042), LG CNS 블로그
+- [초기 컴퓨터의 진화](https://web.archive.org/web/20210923140825/https://blog.lgcns.com/1042), LG CNS 블로그
