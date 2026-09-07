@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.2.14">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.2.14">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.2.14">
+        <link rel="icon" type="image/png" href="/ko/images/favicon.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-M0CWE9F5HJ");
+        </script>
+        <title>8. 유닉스와 C언어</title>
+        <meta name="description" content="멀틱스 프로젝트에서 물러난 벨 연구소의 연구자들이 PDP-7에서 유닉스를 만들고, B 언어의 한계를 넘어 NB와 C를 개발해 유닉스 커널을 다시 작성하기까지의 이야기입니다." />
+        <link rel="canonical" href="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/" />
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/8. The Origins of Unix and the C Language/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/8. The Origins of Unix and the C Language/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/8. The Origins of Unix and the C Language/","ko":"/ko/posts/8. The Origins of Unix and the C Language/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="F/OSS 코믹스" />
+        <meta property="og:url" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/" />
+        <meta property="og:title" content="8. 유닉스와 C언어" />
+        <meta property="og:description" content="멀틱스 프로젝트에서 물러난 벨 연구소의 연구자들이 PDP-7에서 유닉스를 만들고, B 언어의 한계를 넘어 NB와 C를 개발해 유닉스 커널을 다시 작성하기까지의 이야기입니다." />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/8_15_ko.png" />
+        <meta property="article:author" content="Joone Hur" />
+        <meta property="article:published_time" content="2023-09-04" />
+        <meta property="article:tag" content="1970년대">
+        <meta property="article:tag" content="B 언어">
+        <meta property="article:tag" content="C 언어">
+        <meta property="article:tag" content="PDP-11">
+        <meta property="article:tag" content="데니스 리치">
+        <meta property="article:tag" content="멀틱스">
+        <meta property="article:tag" content="벨 연구소">
+        <meta property="article:tag" content="유닉스">
+        <meta property="article:tag" content="켄 톰프슨">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:creator" content="@joone" />
+        <meta name="twitter:title" content="8. 유닉스와 C언어" />
+        <meta name="twitter:description" content="멀틱스 프로젝트에서 물러난 벨 연구소의 연구자들이 PDP-7에서 유닉스를 만들고, B 언어의 한계를 넘어 NB와 C를 개발해 유닉스 커널을 다시 작성하기까지의 이야기입니다." />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/8_15_ko.png" />
+        <script>
+          document.documentElement.classList.add("transcripts-hidden");
+          try {
+            if (localStorage.getItem("fossbook-comic-transcript") === "visible") {
+              document.documentElement.classList.remove("transcripts-hidden");
+            }
+          } catch (error) {}
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  F/OSS 코믹스
+                </div>
+                <nav class="site-navigation">
+                  <a href="/ko/">처음</a>
+                  <a href="/ko/all_posts">모든 글</a>
+                  <a href="/ko/about">이곳은</a>
+                  <a href="/ko/tags">태그</a>
+                </nav>
+            </header>
+            <main>
+              <article class="content">
+                  <div class="title">
+                    <h1 class="title">8. 유닉스와 C언어</h1>
+                    <div class="meta">올린 날: 2023년 9월 4일</div>
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/8. The Origins of Unix and the C Language/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/posts/8. The Origins of Unix and the C Language/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
+                  </div>
+                  <div class="post-controls">
+                    <div class="transcript-toggle">
+                      <label for="comic-transcript-toggle">말글 보이기</label>
+                      <input id="comic-transcript-toggle" type="checkbox" role="switch" aria-controls="comic-transcript">
+                    </div>
+                    <button class="copy-link-button" type="button">
+                      <span aria-live="polite">링크 복사</span>
+                    </button>
+                  </div>
+                  <section class="body" id="comic-transcript">
+                    <p>1960년대 MIT에서 <a href="https://ko.wikipedia.org/wiki/호환_시분할_시스템 ">ITS(Incompatible Timesharing System)</a>가 한창 개발되고 있는 동안, 미 동부의 다른 곳에서도 해커의 기운이 물씬 풍기는 곳이 있었는데, 바로 벨 연구소(AT&amp;T Bell Laboratories)였다. 여기서 앞으로 세상을 바꿀 유닉스와 C언어가 개발되고 있었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_15_ko.png" alt="MIT와 벨 연구소의 프로그래머들이 서로 다른 대형 컴퓨터에서 작업한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>어디선가 포스가 느껴진다!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>MIT에서는 ITS가 만들어지고 있었고, 공교롭게도 벨 연구소에서는 <a href="https://ko.wikipedia.org/wiki/멀틱스 ">멀틱스(Multics)</a> 개발에 참여했던 사람들이 나와 유닉스를 만들기 시작했다. 그 중심에는 <a href="https://ko.wikipedia.org/wiki/켄_톰프슨 ">켄 톰프슨</a>, <a href="https://ko.wikipedia.org/wiki/데니스_리치 ">데니스 리치</a>, 조 오산나가 있었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_1_ko.png" alt="벨 연구소 프로그래머 두 명이 커피를 마시며 멀틱스 프로젝트를 이야기한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>이제 멀틱스 개발에서 손을 떼야 할 것 같아.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>예상보다 너무 개발기간이 길어.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>멀틱스 프로젝트는 1964년에 시작되었으나, 코드 크기가 커지고 복잡도가 높아지면서 벨 연구소에서 예상했던 것보다 일정이 많이 지연되고 있었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_4_ko.png" alt="한 프로그래머가 복잡한 프로젝트를 산에 비유하고, 다른 프로그래머는 머리를 감싸 쥔다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>정말이지 프로젝트가 산으로 가고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>코드가 너무 복잡해 기능이 너무 많아<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>결국 벨 연구소는 1969년 멀틱스 개발에서 손을 뗀다. 이후에도 멀틱스 개발은 계속되어 실제 서비스와 상용 시스템으로 운영되었지만, 벨 연구소가 기다리기에는 개발이 너무 늦어지고 비용도 많이 들었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_12_ko.png" alt="벨 연구소 관계자가 떠나는 동안 GE와 MIT 관계자들은 멀틱스라고 적힌 높은 문서 더미 앞에 남아 있다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우리는 일정을 맞추기가 어려워서 떠납니다.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>벨 연구소로 돌아온 켄 톰프슨은 멀틱스 개발 경험을 토대로 좀 더 작고 단순한 운영체제를 만드는 작업을 주도했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_11_ko.png" alt="켄 톰프슨과 데니스 리치가 작은 전구를 들고 더 단순한 운영체제를 이야기한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스, 내가 새롭게 운영체제를 만들고 있는데 멀틱스에서 좋은 아이디어를 가지고 오고, 좀 더 작고 단순하게 하려고.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>괜찮은 생각인데, 나도 껴줘.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>켄 톰프슨은 멀틱스에서 익힌 주요 아이디어를 가져와 더 단순한 형태로 유닉스에 구현했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_6_ko.png" alt="톰프슨이 명령어 라인, 파일 시스템, 동적 링크라고 적힌 풍선을 들고 있고 멀틱스는 더 많은 풍선을 들고 있다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>무에서 유를 창조할수는 없지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>우선 켄 톰프슨, 러드 캐너데이, 데니스 리치가 함께 구상한 파일 시스템을 사용되지 않던 PDP-7에 구현했다. 설계의 대부분은 톰프슨이 맡았고, 리치는 디바이스 파일 아이디어를 보탰다. 이어서 프로세스, 유틸리티, 커맨드 라인 해석기를 추가했고, 조 오산나를 비롯한 동료들도 개발에 참여했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_14_ko.png" alt="톰프슨, 리치, 동료 한 명이 파일 시스템의 이름과 디바이스 파일 아이디어를 논의한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 파일시스템을 만들고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이름은 유닉스 어때?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>디바이스를 파일로 생각하고 관리하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 멀틱스라는 이름을 비튼 &quot;Unix&quot;라는 이름을 제안했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p><p>그 후 <a href="https://ko.wikipedia.org/wiki/PDP-11 ">PDP-11</a>이 도입되었는데, PDP-7과 CPU 명령어가 달랐다. 유닉스는 어셈블리어로 개발되었기 때문에 PDP-11용으로 코드를 다시 짜야 했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_2_ko.png" alt="리치가 새 PDP-11을 소개하자 톰프슨이 어셈블리어 재작성 문제를 설명한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>켄 PDP-11이 새로 들어왔는데, 여기에 유닉스를 포팅하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>좋은 생각인데, 문제는 어셈블리어로 다시 코딩을 해야 한다는거지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_9_ko.png" alt="톰프슨이 포팅 완료를 기뻐하고 리치는 새 컴퓨터마다 어셈블리어를 다시 쓸 수 없다고 말한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>와~ 드디어 포팅 끝!<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>그런데, 매번 새 컴퓨터가 나올 때 마다 어셈블리어로 포팅할 수는 없잖아.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>하지만 새 컴퓨터가 들어올 때마다 어셈블리 코드를 다시 짤 수는 없는 노릇이었다. 그렇다면 B언어로 유닉스를 다시 만들 수 있을까?</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_8_ko.png" alt="톰프슨이 B라고 적힌 종이를 들고 유닉스 재작성을 제안하고, 아래에서는 리치가 PDP-11 포팅 문제를 설명한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>그래? 데니스, 우리 B언어로 유닉스를 다시 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이제, 어셈블리어가 아니어도 OS 커널을 만들수 있을거야.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>PDP-11 정도면 B언어로 유닉스를 포팅할 수 있겠지.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>당시에는 아직 어려웠다. B언어는 켄 톰프슨이 1969~70년 무렵 초기 유닉스 환경을 위해 만든 언어로, BCPL에서 발전한 작고 단순한 언어였다. 하지만 B 컴파일러가 만든 코드는 어셈블리 코드보다 훨씬 느렸고, 모든 데이터를 하나의 기계어 워드로 다루는 방식도 바이트 단위로 메모리에 접근하는 PDP-11과 잘 맞지 않았다. 그래서 유닉스 전체를 B언어로 다시 쓰는 방안은 잠시 검토되었을 뿐이었다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_5_ko.png" alt="리치가 PDP-11 단말기에서 B 언어 포팅 작업을 한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 B언어를 PDP-11에 포팅해야하는데, 문제가 있네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1971년 데니스 리치는 B언어에 문자 타입을 추가하고, <code>int</code>와 <code>char</code>를 명시하는 타입 체계를 만들기 시작했다. 또한 스레드 코드 대신 PDP-11 기계어를 생성하도록 컴파일러를 다시 작성했다. 그는 잠시 존재했던 이 언어를 &quot;New B&quot;라는 뜻의 NB라고 불렀다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_10_ko.png" alt="톰프슨이 리치에게 B 언어 포팅 진행 상황을 묻는다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스 B언어 포팅은 잘 되가?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>문제가 많아. 우선 PDP-11에서는 문자 데이터 타입에 접근하기가 어려워.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_13_ko.png" alt="톰프슨이 B 언어를 완전히 고치자고 제안하자 리치는 다시 짜야 할지도 모른다고 생각한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>하하 이번 기회에 B언어를 싹 뜯어 고치는거야<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>다시 짜야 할지도 모르는데…<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>리치는 B언어를 싹 뜯어고치기 시작했다. 1972년에는 타입 체계를 확장하고 배열과 포인터의 동작을 새로 정리했으며, 구조체와 새로운 컴파일러를 만들었다. 새로운 언어가 모습을 갖추자 C언어라고 이름 붙였다. B의 다음 글자를 따른 것인지, BCPL의 글자를 이어 간 것인지는 리치도 명확히 정하지 않았다. 1973년 초에는 오늘날 C언어의 핵심 기능이 거의 완성되었다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_3_ko.png" alt="톰프슨과 리치가 PDP-11 앞에서 새 언어의 이름을 정한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>C언어라고 부르면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>우와 잘 동작하는데!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1973년 여름, 톰프슨과 리치를 비롯한 동료들은 C언어로 유닉스 커널을 다시 작성했다. 특히 구조체 타입을 추가하면서 디렉터리 항목 같은 데이터를 메모리 구조에 맞게 표현할 수 있게 되었다. 이제 C언어는 유닉스 커널을 작성할 수 있을 정도로 강력해졌다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_7_ko.png" alt="리치가 단말기에 코드를 입력하며 이제 어셈블리어로 코딩하지 않아도 된다고 말한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>ㅎㅎ 더 이상 어셈블리어로 코딩을 하지 않아도 되네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/8_16_ko.png" alt="C 영웅이 UNIX 표지판을 들어 올리고 작은 어셈블리 언어 영웅이 아래에서 바라본다.">
+            
+          </figure>
+        </div>
+      <p>이처럼 유닉스와 C언어는 켄 톰프슨과 데니스 리치를 비롯한 벨 연구소 동료들의 손에서 짧은 기간에 탄생했다. 오늘날에도 유닉스와 유닉스 계열 운영체제는 수많은 서버와 개인용 컴퓨터, 핸드폰에서 동작하고 있다. 또한 C언어는 여전히 운영체제 커널과 시스템 소프트웨어를 개발하는 중요한 언어로 사용되고 있다.</p><h2>참고 자료</h2>
+<ol>
+<li>데니스 M. 리치, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html ">유닉스 시분할 시스템의 진화</a></li>
+<li>데니스 M. 리치, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">C 언어의 발전</a></li>
+<li>데이비드 C. 브록, <a href="https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/ ">최초의 유닉스 코드: 소스 코드 공개 기념</a></li>
+</ol>
+
+                  </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        <li><a href="/ko/tags/1970년대">1970년대</a></li><li><a href="/ko/tags/B_언어">B 언어</a></li><li><a href="/ko/tags/C_언어">C 언어</a></li><li><a href="/ko/tags/PDP-11">PDP-11</a></li><li><a href="/ko/tags/데니스_리치">데니스 리치</a></li><li><a href="/ko/tags/멀틱스">멀틱스</a></li><li><a href="/ko/tags/벨_연구소">벨 연구소</a></li><li><a href="/ko/tags/유닉스">유닉스</a></li><li><a href="/ko/tags/켄_톰프슨">켄 톰프슨</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+              </article>
+              <ul class="pagination-post" role="navigation">
+                <span class="page-item page-prev">
+                <a href="/ko/posts/7. ITS and Hacker Culture" class="page-link" aria-label="Previous">← 7. MIT 해커 문화와 ITS</a>
+                </span>
+                <span class="page-item page-next">
+                
+                </span>
+              </ul>
+              <div class="comments border">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/@fosscomics" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2026 Joone Hur | <a href="https://github.com/joone/fossbook">fossbook v0.2.14</a> | Published on Sep 7, 2026
+              </div>
+            </footer>
+        </div>
+        
+        <script>
+          const copyLinkButton = document.querySelector(".copy-link-button");
+          const copyLinkLabel = copyLinkButton.querySelector("span");
+          const defaultCopyLinkLabel = copyLinkLabel.textContent;
+          let copyLinkResetTimer;
+          const copyEpisodeLink = async () => {
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            const episodeUrl = canonicalLink ? canonicalLink.href : window.location.href;
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(episodeUrl);
+              } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = episodeUrl;
+                textArea.setAttribute("readonly", "");
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.select();
+                const copied = document.execCommand("copy");
+                textArea.remove();
+                if (!copied) throw new Error("Copy command failed");
+              }
+              copyLinkLabel.textContent = "링크를 복사했습니다";
+            } catch (error) {
+              copyLinkLabel.textContent = "링크를 복사하지 못했습니다";
+            }
+            clearTimeout(copyLinkResetTimer);
+            copyLinkResetTimer = setTimeout(() => {
+              copyLinkLabel.textContent = defaultCopyLinkLabel;
+            }, 2000);
+          };
+          copyLinkButton.addEventListener("click", copyEpisodeLink);
+        </script>
+        <script>
+          const transcriptToggle = document.querySelector("#comic-transcript-toggle");
+          const transcriptStorageKey = "fossbook-comic-transcript";
+          const setTranscriptVisibility = (visible) => {
+            document.documentElement.classList.toggle("transcripts-hidden", !visible);
+            transcriptToggle.checked = visible;
+          };
+          setTranscriptVisibility(!document.documentElement.classList.contains("transcripts-hidden"));
+          transcriptToggle.addEventListener("change", () => {
+            const visible = transcriptToggle.checked;
+            setTranscriptVisibility(visible);
+            try {
+              localStorage.setItem(transcriptStorageKey, visible ? "visible" : "hidden");
+            } catch (error) {}
+          });
+
+          document.querySelectorAll(".image-container + .image-dialogue").forEach((dialogue) => {
+            const image = dialogue.previousElementSibling.querySelector("img");
+            const syncDialogueWidth = () => {
+              dialogue.style.setProperty("--dialogue-width", image.getBoundingClientRect().width + "px");
+            };
+            if (!image.complete) image.addEventListener("load", syncDialogueWidth, { once: true });
+            new ResizeObserver(syncDialogueWidth).observe(image);
+            syncDialogueWidth();
+          });
+        </script>
+    </body>
+</html>

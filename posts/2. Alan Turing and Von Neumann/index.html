@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/fonts.css?v=0.2.14">
+        <link rel="stylesheet" href="/styles/main.css?v=0.2.14">
+        <link rel="stylesheet" href="/styles/highlights.css?v=0.2.14">
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-M0CWE9F5HJ");
+        </script>
+        <title>2. Alan Turing and Von Neumann</title>
+        <meta name="description" content="Alan Turing described an abstract machine that clarified what computation could mean. From wartime codebreaking and ENIAC's plugboards to the stored-program designs of EDVAC, ACE, and EDSAC, this episode traces how Turing, John von Neumann, and several engineering teams contributed to the architecture of modern computers." />
+        <link rel="canonical" href="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/" />
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/2. Alan Turing and Von Neumann/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/2. Alan Turing and Von Neumann/","ko":"/ko/posts/2. Alan Turing and Von Neumann/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="F/OSS Comics" />
+        <meta property="og:url" content="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/" />
+        <meta property="og:title" content="2. Alan Turing and Von Neumann" />
+        <meta property="og:description" content="Alan Turing described an abstract machine that clarified what computation could mean. From wartime codebreaking and ENIAC's plugboards to the stored-program designs of EDVAC, ACE, and EDSAC, this episode traces how Turing, John von Neumann, and several engineering teams contributed to the architecture of modern computers." />
+        <meta property="og:image" content="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/images/feature.png" />
+        <meta property="article:author" content="Joone Hur" />
+        <meta property="article:published_time" content="2019-05-29" />
+        <meta property="article:tag" content="Alan Turing">
+        <meta property="article:tag" content="Automatic Computing Engine">
+        <meta property="article:tag" content="EDSAC">
+        <meta property="article:tag" content="EDVAC">
+        <meta property="article:tag" content="Kurt Gödel">
+        <meta property="article:tag" content="Von Neumann">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:creator" content="@joone" />
+        <meta name="twitter:title" content="2. Alan Turing and Von Neumann" />
+        <meta name="twitter:description" content="Alan Turing described an abstract machine that clarified what computation could mean. From wartime codebreaking and ENIAC's plugboards to the stored-program designs of EDVAC, ACE, and EDSAC, this episode traces how Turing, John von Neumann, and several engineering teams contributed to the architecture of modern computers." />
+        <meta name="twitter:image" content="https://fosscomics.com/posts/2. Alan Turing and Von Neumann/images/feature.png" />
+        <script>
+          document.documentElement.classList.add("transcripts-hidden");
+          try {
+            if (localStorage.getItem("fossbook-comic-transcript") === "visible") {
+              document.documentElement.classList.remove("transcripts-hidden");
+            }
+          } catch (error) {}
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  F/OSS Comics
+                </div>
+                <nav class="site-navigation">
+                  <a href="/">Home</a>
+                  <a href="/all_posts">All posts</a>
+                  <a href="/about">About</a>
+                  <a href="/tags">Tags</a>
+                </nav>
+            </header>
+            <main>
+              <article class="content">
+                  <div class="title">
+                    <h1 class="title">2. Alan Turing and Von Neumann</h1>
+                    <div class="meta">Posted on May 29, 2019</div>
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/2. Alan Turing and Von Neumann/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a href="/ko/posts/2. Alan Turing and Von Neumann/" lang="ko" hreflang="ko" aria-label="한국어">KO</a></nav>
+                  </div>
+                  <div class="post-controls">
+                    <div class="transcript-toggle">
+                      <label for="comic-transcript-toggle">Display dialogue text</label>
+                      <input id="comic-transcript-toggle" type="checkbox" role="switch" aria-controls="comic-transcript">
+                    </div>
+                    <button class="copy-link-button" type="button">
+                      <span aria-live="polite">Copy link</span>
+                    </button>
+                  </div>
+                  <section class="body" id="comic-transcript">
+                    <div class="panel-group" style="--panel-columns: 2;" role="group" aria-label="Alan Turing and John von Neumann">
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/alan_turing.png" alt="Portrait of Alan Turing." class="sized-image" style="width: 80%;">
+            <figcaption>Alan Turing (1912-1954)</figcaption>
+          </figure>
+        </div>
+      
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/john_von_neumann.png" alt="Portrait of John von Neumann." class="sized-image" style="width: 80%;">
+            <figcaption>John von Neumann (1903-1957)</figcaption>
+          </figure>
+        </div>
+      </div>
+<p>Who initially made the type of computer we use today? During and after World War II, teams in several countries worked to develop electronic computers. Years earlier, British mathematician Alan Turing had described a universal mathematical model in which one machine could carry out any computable procedure by reading an encoded description from its tape. This was an important theoretical precursor to the stored-program computer, although the architecture of practical stored-program machines was later developed through the work of several teams.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_1.png" alt="Alan Turing walks with his hands behind his back, deep in thought." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I will find a way to prove Gödel&#39;s incompleteness theorems.&quot;</p></blockquote></div><p>In 1928, <a href="https://en.wikipedia.org/wiki/David_Hilbert ">David Hilbert</a> and Wilhelm Ackermann posed the Entscheidungsproblem: could an algorithm determine whether any statement in first-order logic is valid? <a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems ">Gödel&#39;s incompleteness theorems</a>, published in 1931, had already revealed limits in formal systems capable of expressing arithmetic. Turing approached the separate decision problem by defining a precise mathematical model of computation.</p><p>Turing submitted <a href="https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf ">&quot;On Computable Numbers, with an Application to the Entscheidungsproblem&quot;</a> in 1936, and it was published in 1937. In it, he described an abstract machine that reads and writes symbols on a long tape according to a finite table of rules. This <a href="https://en.wikipedia.org/wiki/Turing_machine ">Turing machine</a> provided a mathematical model of computation and showed that no universal procedure could solve the Entscheidungsproblem<a href="https://en.wikipedia.org/wiki/Turing_machine "title="Turing Machine, Wikipedia">&#91;1&#93;</a>. The symbols on its tape could encode both the data being processed and the instructions for processing it, anticipating the relationship between data and software in modern computers.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_2.png" alt="A worker manually feeds a long paper tape marked with binary symbols through a machine." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Copying these symbols by hand is like copying the program.&quot;</p></blockquote></div><section class="comic-panel comic-panel-rounded">
+<p>During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis<a href="https://en.wikipedia.org/wiki/Alan_Turing "title="Alan_Turing, Wikipedia">&lbrack;2&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_bombe.png" alt="A woman operates rows of rotating drums on a large British Bombe machine.">
+            <figcaption>A British-built Bombe used during World War II</figcaption>
+          </figure>
+        </div>
+      </section>
+<p>Many computing machines built during the war were designed for specific tasks. As the war was nearing its end, however, the United States was developing <a href="https://en.wikipedia.org/wiki/ENIAC ">ENIAC</a>, a general-purpose electronic computer. J. Presper Eckert, John Mauchly, and their team at the University of Pennsylvania began building it in 1943 and completed it in 1946. The U.S. Army initially used ENIAC to calculate artillery firing tables.</p><p>Programming ENIAC was very different from programming a modern computer. Instead of loading a program from memory, operators configured switches and connected cables on its plugboards. Running a different program required them to reconfigure the machine. ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed around 150 kilowatts of power<a href="https://en.wikipedia.org/wiki/History_of_computing_hardware "title="History_of_computing_hardware, Wikipedia">&lbrack;3&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_3.png" alt="Programmers reconnect cables on ENIAC&#39;s plugboards while a colleague checks notes.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Is this really programming?&quot; <br>&quot;It&#39;s a start.&quot;</p></blockquote></div><p>The ENIAC team next began designing EDVAC for the U.S. Army&#39;s Ballistic Research Laboratory, making it one of the earliest stored-program computer projects. John von Neumann joined the project as a consultant, and the widely circulated <a href="http://www.virtualtravelog.net/wp/wp-content/media/2003-08-TheFirstDraft.pdf ">First Draft of a Report on the EDVAC</a> appeared under his name. The design stored instructions and data in the same memory. EDVAC was delivered in 1949 but became fully operational later; meanwhile, the Manchester Baby had run a stored program in 1948.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_von_neumann_edvac_report.png" alt="J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby." class="sized-image" style="width: 90%;">
+            <figcaption>J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann&#39;s role?</figcaption>
+          </figure>
+        </div>
+      <section class="comic-panel comic-panel-rounded">
+<p>Most general-purpose computers still use variants of what became known as the <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture ">von Neumann architecture</a>.</p><pre class="mermaid">%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontSize": "18.67px"}}}%%
+flowchart LR
+    INPUT["Input Device"]
+
+    subgraph COMPUTER["Computer"]
+        direction TB
+
+        subgraph CPU["Central Processing Unit"]
+            direction TB
+            CU["Control Unit"]
+            ALU["Arithmetic/Logic Unit"]
+        end
+
+        MEMORY["Memory Unit"]
+        CPU &lt;--&gt; MEMORY
+    end
+
+    OUTPUT["Output Device"]
+    INPUT --&gt; CPU
+    CPU --&gt; OUTPUT
+
+    style COMPUTER fill:#d1d5db,stroke:#6b7280,stroke-width:2px,color:#111111
+    style CPU fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+    style CU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+    style ALU fill:#e5e7eb,stroke:#262626,stroke-width:2px,color:#111111
+    style MEMORY fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+    style INPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111
+    style OUTPUT fill:#ffffff,stroke:#262626,stroke-width:3px,color:#111111</pre><p>(Adapted from <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg ">Wikipedia</a>)</p></section>
+<p>As the diagram shows, a basic von Neumann architecture consists of a central processing unit (CPU), memory, and input/output devices. The CPU contains an arithmetic logic unit (ALU), which performs arithmetic and logical operations; processor registers, which hold values needed immediately; and a control unit. The control unit includes registers such as the instruction register and program counter. Memory stores both instructions and data. During the fetch-decode-execute cycle, the CPU retrieves an instruction, interprets it, performs the operation, and stores any result<a href="https://en.wikipedia.org/wiki/Central_processing_unit "title="Central processing unit, Wikipedia">&lbrack;6&rbrack;</a>.</p><p>Britain&#39;s National Physical Laboratory obtained von Neumann&#39;s EDVAC report in 1945.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_6.png" alt="A researcher holding von Neumann&#39;s design report speaks with Alan Turing beside a stored-program computer." class="sized-image" style="width: 90%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;The Americans have already drawn up plans for a stored-program computer!&quot;</p></blockquote></div><p>The laboratory then asked Turing to design a stored-program computer along the lines of EDVAC. Beginning in 1945, Turing worked on the <a href="https://en.wikipedia.org/wiki/Automatic_Computing_Engine ">Automatic Computing Engine (ACE)</a>, giving him an opportunity to turn ideas from his theoretical work into a practical computer design.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_7.png" alt="Alan Turing discusses computer plans with an NPL official across a desk." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;We need a computer like EDVAC.&quot; <br>&quot;I have a design of my own.&quot;</p></blockquote></div><p>Although Turing&#39;s <a href="https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140 ">ACE report</a>, presented in 1946, came after von Neumann&#39;s EDVAC report, it contained a detailed design for a stored-program computer. Turing kept the hardware to a minimum and proposed implementing even some arithmetic operations in software. In this respect, ACE anticipated ideas later associated with reduced instruction set computer (RISC) processors. Delays in funding and construction frustrated Turing, and in 1947 he returned to Cambridge on leave before the full ACE could be built<a href="https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192 "title="The universal computer, p.167~168, CRC press, 2012">&lbrack;4&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_8.png" alt="Alan Turing holds a rolled blueprint with a frustrated expression." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;The design is ready. Why haven&#39;t they approved the funding?&quot;</p></blockquote></div><section class="comic-panel comic-panel-rounded">
+<p>Elsewhere in Britain, Cambridge University&#39;s Mathematical Laboratory completed the <a href="https://en.wikipedia.org/wiki/EDSAC ">Electronic Delay Storage Automatic Calculator (EDSAC)</a> in 1949, drawing on the stored-program design described in the EDVAC report.
+Meanwhile, Turing&#39;s ACE design continued to influence work at NPL, which built a smaller version called the <a href="https://en.wikipedia.org/wiki/Pilot_ACE ">Pilot ACE</a>. It ran its first program in 1950.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_9.png" alt="A researcher holding a folder stands beside the room-sized EDSAC computer." class="sized-image" style="width: 80%;">
+            <figcaption>EDSAC</figcaption>
+          </figure>
+        </div>
+      </section>
+<p>Alan Turing&#39;s 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations. Interestingly, Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing&#39;s work on computability, later offered Turing a position. Some historians have therefore suggested that Turing&#39;s ideas may have influenced von Neumann&#39;s thinking. However, the extent of that influence is uncertain, and von Neumann&#39;s 1945 EDVAC report did not cite Turing&#39;s 1936 paper.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_10.png" alt="John von Neumann and Alan Turing face one another in conversation." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Alan, could you tell me more about your universal machine?&quot; <br>&quot;Of course.&quot;</p></blockquote></div><p>They may have had a conversation like this, though no record of it survives.</p><section class="comic-panel comic-panel-rounded">
+<p>During World War II, Britain, Germany, and the United States all developed pioneering computing machines, but the war shaped what happened to them afterward. In Britain, Colossus was built in secret to help break German ciphers. Most Colossus machines were dismantled after the war, and the project remained secret for decades. Germany also produced pioneering computers, including Konrad Zuse&#39;s machines, but wartime destruction and Germany&#39;s defeat disrupted further development.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_11.png" alt="A researcher protests as an official directs a truck loaded with computing equipment away.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could we use these machines for other purposes?&quot; <br>&quot;No. The project must remain secret.&quot;</p></blockquote></div></section>
+<p>In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world&#39;s largest early computer industry.</p><div class="panel-group" style="--panel-columns: 3;" role="group" aria-label="Alan Turing, John von Neumann, and Kurt Gödel">
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_12_turing.png" alt="Portrait of Alan Turing.">
+            <figcaption>Alan Turing (1912-1954) earned a Ph.D. from Princeton University and developed a mathematical model of computation.</figcaption>
+          </figure>
+        </div>
+      
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_12_von_neumann.png" alt="Portrait of John von Neumann.">
+            <figcaption>John von Neumann (1903-1957), a Hungarian immigrant, worked on the design of the stored-program computer.</figcaption>
+          </figure>
+        </div>
+      
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/2_12_godel.png" alt="Portrait of Kurt Gödel.">
+            <figcaption>Kurt Gödel (1906-1978) was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine.</figcaption>
+          </figure>
+        </div>
+      </div>
+<h2>References</h2>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Turing_machine ">Turing_machine, Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Alan_Turing ">Alan_Turing, Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/History_of_computing_hardware ">History_of_computing_hardware, Wikipedia</a></li>
+<li><a href="https://www.amazon.com/Universal-Computer-Road-Leibniz-Turing/dp/1466505192 ">The universal computer, p.167~168, CRC press, 2012</a></li>
+<li><a href="https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems ">Gödel&#39;s incompleteness theorems, Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Central_processing_unit ">Central processing unit, Wikipedia</a></li>
+</ol>
+
+                  </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        <li><a href="/tags/Alan_Turing">Alan Turing</a></li><li><a href="/tags/Automatic_Computing_Engine">Automatic Computing Engine</a></li><li><a href="/tags/EDSAC">EDSAC</a></li><li><a href="/tags/EDVAC">EDVAC</a></li><li><a href="/tags/Kurt_Gödel">Kurt Gödel</a></li><li><a href="/tags/Von_Neumann">Von Neumann</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+              </article>
+              <ul class="pagination-post" role="navigation">
+                <span class="page-item page-prev">
+                <a href="/posts/1. Charles Babbage and Ada Lovelace" class="page-link" aria-label="Previous">← 1. Charles Babbage and Ada Lovelace</a>
+                </span>
+                <span class="page-item page-next">
+                <a href="/posts/3. The Era of Commercial Computers" class="page-link" aria-label="Next">3. The Era of Commercial Computers →</a>
+                </span>
+              </ul>
+              <div class="comments border">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/@fosscomics" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2026 Joone Hur | <a href="https://github.com/joone/fossbook">fossbook v0.2.14</a> | Published on Sep 7, 2026
+              </div>
+            </footer>
+        </div>
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+        <script>
+          const copyLinkButton = document.querySelector(".copy-link-button");
+          const copyLinkLabel = copyLinkButton.querySelector("span");
+          const defaultCopyLinkLabel = copyLinkLabel.textContent;
+          let copyLinkResetTimer;
+          const copyEpisodeLink = async () => {
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            const episodeUrl = canonicalLink ? canonicalLink.href : window.location.href;
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(episodeUrl);
+              } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = episodeUrl;
+                textArea.setAttribute("readonly", "");
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.select();
+                const copied = document.execCommand("copy");
+                textArea.remove();
+                if (!copied) throw new Error("Copy command failed");
+              }
+              copyLinkLabel.textContent = "Link copied";
+            } catch (error) {
+              copyLinkLabel.textContent = "Could not copy link";
+            }
+            clearTimeout(copyLinkResetTimer);
+            copyLinkResetTimer = setTimeout(() => {
+              copyLinkLabel.textContent = defaultCopyLinkLabel;
+            }, 2000);
+          };
+          copyLinkButton.addEventListener("click", copyEpisodeLink);
+        </script>
+        <script>
+          const transcriptToggle = document.querySelector("#comic-transcript-toggle");
+          const transcriptStorageKey = "fossbook-comic-transcript";
+          const setTranscriptVisibility = (visible) => {
+            document.documentElement.classList.toggle("transcripts-hidden", !visible);
+            transcriptToggle.checked = visible;
+          };
+          setTranscriptVisibility(!document.documentElement.classList.contains("transcripts-hidden"));
+          transcriptToggle.addEventListener("change", () => {
+            const visible = transcriptToggle.checked;
+            setTranscriptVisibility(visible);
+            try {
+              localStorage.setItem(transcriptStorageKey, visible ? "visible" : "hidden");
+            } catch (error) {}
+          });
+
+          document.querySelectorAll(".image-container + .image-dialogue").forEach((dialogue) => {
+            const image = dialogue.previousElementSibling.querySelector("img");
+            const syncDialogueWidth = () => {
+              dialogue.style.setProperty("--dialogue-width", image.getBoundingClientRect().width + "px");
+            };
+            if (!image.complete) image.addEventListener("load", syncDialogueWidth, { once: true });
+            new ResizeObserver(syncDialogueWidth).observe(image);
+            syncDialogueWidth();
+          });
+        </script>
+    </body>
+</html>

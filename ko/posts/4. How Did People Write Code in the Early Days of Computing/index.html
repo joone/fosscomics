@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.2.14">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.2.14">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.2.14">
+        <link rel="icon" type="image/png" href="/ko/images/favicon.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-M0CWE9F5HJ");
+        </script>
+        <title>4. 처음에는 어떻게 프로그래밍을 했을까?</title>
+        <meta name="description" content="배선판과 기계어에서 어셈블리어와 천공카드 배치 작업으로 이어진 초기 프로그래밍 방식을 소개합니다." />
+        <link rel="canonical" href="https://fosscomics.com/ko/posts/4. How Did People Write Code in the Early Days of Computing/" />
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/4. How Did People Write Code in the Early Days of Computing/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/4. How Did People Write Code in the Early Days of Computing/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/4. How Did People Write Code in the Early Days of Computing/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/4. How Did People Write Code in the Early Days of Computing/","ko":"/ko/posts/4. How Did People Write Code in the Early Days of Computing/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="F/OSS 코믹스" />
+        <meta property="og:url" content="https://fosscomics.com/ko/posts/4. How Did People Write Code in the Early Days of Computing/" />
+        <meta property="og:title" content="4. 처음에는 어떻게 프로그래밍을 했을까?" />
+        <meta property="og:description" content="배선판과 기계어에서 어셈블리어와 천공카드 배치 작업으로 이어진 초기 프로그래밍 방식을 소개합니다." />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/4. How Did People Write Code in the Early Days of Computing/images/4_1_ko.png" />
+        <meta property="article:author" content="Joone Hur" />
+        <meta property="article:published_time" content="2016-12-05" />
+        <meta property="article:tag" content="IBM">
+        <meta property="article:tag" content="기계어">
+        <meta property="article:tag" content="멀틱스">
+        <meta property="article:tag" content="어셈블리어">
+        <meta property="article:tag" content="에니악">
+        <meta property="article:tag" content="에드박">
+        <meta property="article:tag" content="에드삭">
+        <meta property="article:tag" content="천공카드">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:creator" content="@joone" />
+        <meta name="twitter:title" content="4. 처음에는 어떻게 프로그래밍을 했을까?" />
+        <meta name="twitter:description" content="배선판과 기계어에서 어셈블리어와 천공카드 배치 작업으로 이어진 초기 프로그래밍 방식을 소개합니다." />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/4. How Did People Write Code in the Early Days of Computing/images/4_1_ko.png" />
+        <script>
+          document.documentElement.classList.add("transcripts-hidden");
+          try {
+            if (localStorage.getItem("fossbook-comic-transcript") === "visible") {
+              document.documentElement.classList.remove("transcripts-hidden");
+            }
+          } catch (error) {}
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  F/OSS 코믹스
+                </div>
+                <nav class="site-navigation">
+                  <a href="/ko/">처음</a>
+                  <a href="/ko/all_posts">모든 글</a>
+                  <a href="/ko/about">이곳은</a>
+                  <a href="/ko/tags">태그</a>
+                </nav>
+            </header>
+            <main>
+              <article class="content">
+                  <div class="title">
+                    <h1 class="title">4. 처음에는 어떻게 프로그래밍을 했을까?</h1>
+                    <div class="meta">올린 날: 2016년 12월 5일</div>
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/4. How Did People Write Code in the Early Days of Computing/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/posts/4. How Did People Write Code in the Early Days of Computing/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
+                  </div>
+                  <div class="post-controls">
+                    <div class="transcript-toggle">
+                      <label for="comic-transcript-toggle">말글 보이기</label>
+                      <input id="comic-transcript-toggle" type="checkbox" role="switch" aria-controls="comic-transcript">
+                    </div>
+                    <button class="copy-link-button" type="button">
+                      <span aria-live="polite">링크 복사</span>
+                    </button>
+                  </div>
+                  <section class="body" id="comic-transcript">
+                    <p>컴퓨터가 처음 만들어졌을 때, 사람들은 어떻게 프로그래밍을 했을까? 초기 컴퓨터는 오늘날과 같은 소프트웨어는 없었고, 탁상 계산기 같아서 릴레이나 진공관 같은 스위치로  논리회로 구성해서 한가지 용도로만 사용할 수 있었다. 에니악(ENIAC)이 개발되면서 프로그램을 재구성할 수 있는데,  플러그판(plugboard)과 스위치를 이용해서 프로그램을 물리적으로 연결하고 데이터와 명령어를 입력하는 방식이였다. 당연히 매우 번거로운 작업이였고, 프로그램을 변경하려면 배선을 다시해야했다<a href="http://www.seas.upenn.edu/about-seas/eniac/operation.php "title="펜실베이니아 대학교 공과대학의 역사: 에니악">&lbrack;1&rbrack;</a><a href="https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "title="에니악, 미국 컴퓨터 역사 박물관">&lbrack;4&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_1_ko.png" alt="두 기술자가 서로 다른 대형 계산 장치의 제어판을 가리키고, 아래에서는 한 사람이 턱을 괸 채 탄도 계산용 컴퓨터를 구상한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>이건 사칙연산을 위한 계산기<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>독일군 암호 해독을 위한 장치<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>탄도 계산하는 장치를 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이번에는 릴레이가 몇개 필요할까? 진공관도 필요하겠군<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>프로그램 내장형 컴퓨터가 등장하면서 프로그래밍은 훨씬 실용적으로 바뀌었다. 프로그램을 전자식 기억장치로 불러와 배선을 바꾸지 않고 실행할 수 있게 된 것이다. 맨체스터 베이비는 1948년에 프로그램을 실행했고, 에드삭(EDSAC)은 1949년에 정규 운용을 시작했다. 에드박(EDVAC)은 프로그램 내장 방식의 발전에 큰 영향을 주었지만, 실제 가동은 그보다 늦었다.</p><p>프로그램은 기계가 이해하고 실행할 수 있는 명령어로 이루어진다. 가장 낮은 수준의 명령어를 기계어라고 한다. 기계어는 0과 1로 이루어진 이진수 패턴으로 표현되기 때문에 사람이 읽고 기억하기 어렵다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_2_ko.png" alt="검은 안경을 쓴 프로그래머가 길게 늘어선 이진수를 보고 놀란다.">
+            
+          </figure>
+        </div>
+      <p>그래서 컴퓨터 프로그래밍의 초기부터 어셈블리어의 초기 형태가 등장했다. 숫자로 된 기계 명령 대신 니모닉(mnemonic)이라는 짧은 기호를 사용해 명령을 더 쉽게 표현한 것이다. 에드삭 프로그래머들은 한 글자로 된 오더 코드를 사용했고, Initial Orders라는 작은 부트스트랩 프로그램이 종이테이프에서 이 코드를 읽어 기계 명령으로 변환해 메모리에 적재했다<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC 초기 명령과 제곱수 프로그램">&lbrack;2&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_9_ko.png" alt="두 개의 17비트 EDSAC 명령을 동작 코드, 사용하지 않는 비트, 피연산자 주소, 길이 비트로 나누고 T0S와 H2S 니모닉을 함께 표시한 도표.">
+            
+          </figure>
+        </div>
+      <p>EDSAC의 각 명령은 17비트 워드 하나를 차지했다. 다섯 비트는 동작 코드, 다음 한 비트는 사용하지 않는 비트, 이어지는 열 비트는 주소였고, 마지막 비트는 짧은 피연산자와 긴 피연산자 가운데 하나를 선택했다.</p><p>위 그림에 소개된 EDSAC의 두 어셈블리 명령은 아래와 같이 설명할 수 있다.</p><ul>
+<li><code>T 0 S</code>: 누산기(accumulator)의 값을 메모리 주소 <code>0</code>에 저장한 다음, 누산기를 <code>0</code>으로 초기화한다.</li>
+<li><code>H 2 S</code>: 메모리 주소 <code>2</code>의 값을 곱셈 레지스터(multiplier register)로 불러와 곱셈 연산을 준비한다.</li>
+<li>마지막의 <code>S</code>는 이 명령이 EDSAC의 짧은 워드 형식(short-word format)을 사용한다는 뜻이다.</li>
+</ul>
+<p>이와 같이, 기계어는 명령어 자체가 이진수에 불과하기 때문에 사람이 기억하고 바로 코드를 이해하기가 어렵다. 그래서 각각의 명령어를 상징적 기호(mnemonics)로 표현하는 어셈블리(assembly) 언어를 만들었다. 이렇게 표현된 코드를 CPU가 이해할 수 있는 기계어 코드로 변환하는 과정을 어셈블링(assembling)이라고 한다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_3_ko.png" alt="프로그래머가 한쪽 판에 T0S와 H2S를 쓰고, 컴퓨터가 다른 판에 대응하는 이진수 명령을 적는다.">
+            
+          </figure>
+        </div>
+      <p>초기에는 프로그래머가 이 작업을 직접 하기도 했기 때문에 핸드 어셈블리(hand assembly)라고 불렀다. 어셈블러가 없으면 니모닉 변환표를 참고해 어셈블리 코드를 기계어로 직접 바꾸어야 했다. 기호식 어셈블리어는 고급 언어가 널리 쓰이기 전인 1940년대 말과 1950년대 초부터 이미 사용되고 있었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_7_ko.png" alt="프로그래머가 모형 로켓을 옆에 두고 책상에서 종이에 코드를 쓴다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>지금은 코딩중<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1960년대 초까지 키보드와 화면이 있는 대화형 터미널은 흔하지 않았다. 1964~1965년에 MIT Project MAC, 벨 연구소, 제너럴 일렉트릭의 공동 프로젝트로 설계가 시작된 멀틱스(Multics)는 여러 사용자가 원격 터미널을 통해 대화식으로 작업할 수 있도록 디자인되었다<a href="https://www.multicians.org/history.html "title="멀틱스의 역사">&lbrack;3&rbrack;</a>. 1970년대에 들어 화면과 키보드를 갖춘 터미널이 훨씬 보편화되었다. 그렇다면 이런 터미널이 보급되기 전에는 프로그래머들이 어떻게 코드를 작성하고 결과를 확인했을까?</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_6_ko.png" alt="프로그래머가 테이프 릴과 화면, 프린터가 달린 대형 컴퓨터 옆에서 키보드를 사용하며 미소 짓는다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>드디어 키보드와 모니터가<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>초기 프로그래머들은 천공카드를 이용해 코드를 입력하는 경우가 많았다. 천공카드는 19세기 말부터 미국 인구조사를 비롯한 기계 처리 작업에서 데이터를 기록하고 저장하는 데 쓰였다. 원리는 오늘날의 OMR(<a href="https://ko.wikipedia.org/wiki/%EA%B4%91%ED%95%99_%EB%A7%88%ED%81%AC_%EC%9D%B8%EC%8B%9D ">광학 마크 인식</a>) 용지를 생각하면 이해가 쉬운데, OMR 용지는 특정 위치를 표시하고, 천공카드는 특정 위치에 구멍을 뚫어 정보를 표현한다.</p><p>IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, 키펀치, 카드 판독기, 집계 장비를 세계 여러 지역에 공급했다. 이후 천공카드는 프로그램과 데이터를 컴퓨터에 입력하는 중요한 매체가 되었다<a href="https://www.ibm.com/history/punched-card "title="IBM 천공카드">&lbrack;5&rbrack;</a>.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_8_ko.png" alt="손에 든 노란색 천공카드 위에 포트란 프로그래밍용 카드라고 적혀 있다.">
+            
+          </figure>
+        </div>
+      <p>실제 천공카드를 사용하려면, 프로그래머는 먼저 코딩 용지에 소스 코드를 쓰고 손으로 검토했다. 그런 다음 프로그래머나 키펀치 작업자가 프로그램을 카드에 천공했으며, 보통 카드 한 장에 소스 코드 한 문장을 기록했다. 사용한 언어와 컴퓨터에 따라 어셈블러나 컴파일러가 제출된 프로그램을 기계어로 변환했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_10_ko.png" alt="프로그래머가 IBM 026 키펀치 기계에 앉아 코드를 천공카드로 옮긴다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>코드를 어서 천공 카드에 옮겨야지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>프로그래머가 카드 덱을 전산실 오퍼레이터에게 제출하면, 오퍼레이터가 각 작업을 카드 판독기에 넣었다. 카드 덱을 제출하기 위해 줄을 서기도 했고, 인쇄된 결과를 받을 때까지 오랫동안 기다려야 할 수도 있었다. 프로그램이 실패하면 문제가 있는 카드를 수정하거나 교체한 뒤 카드 덱을 다시 제출해야 했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_4_ko.png" alt="네 명의 프로그래머가 천공카드를 들고 전산실 창구에 줄을 서고, 오퍼레이터가 작업을 접수한다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>이거 좀 봐주세요<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>다음 사람<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>프로그램을 카드나 종이테이프에 천공하기 전이라면, 다른 사람이 종이에 손으로 쓴 프로그램을 그대로 베껴 쓰는 것만으로도 프로그램을 복사할 수 있었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/4_5_ko.png" alt="주인공이 옆 사람을 곁눈질하며 천공카드로 옮기기 전의 손글씨 코드를 몰래 베껴 쓴다.">
+            
+          </figure>
+        </div>
+      <h2>참고 자료</h2>
+<ol>
+<li><a href="http://www.seas.upenn.edu/about-seas/eniac/operation.php ">펜실베이니아 대학교 공과대학의 역사: 에니악</a></li>
+<li><a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf ">EDSAC 초기 명령과 제곱수 프로그램</a></li>
+<li><a href="https://www.multicians.org/history.html ">멀틱스의 역사</a></li>
+<li><a href="https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 ">에니악, 미국 컴퓨터 역사 박물관</a></li>
+<li><a href="https://www.ibm.com/history/punched-card ">IBM 천공카드</a></li>
+</ol>
+
+                  </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        <li><a href="/ko/tags/IBM">IBM</a></li><li><a href="/ko/tags/기계어">기계어</a></li><li><a href="/ko/tags/멀틱스">멀틱스</a></li><li><a href="/ko/tags/어셈블리어">어셈블리어</a></li><li><a href="/ko/tags/에니악">에니악</a></li><li><a href="/ko/tags/에드박">에드박</a></li><li><a href="/ko/tags/에드삭">에드삭</a></li><li><a href="/ko/tags/천공카드">천공카드</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+              </article>
+              <ul class="pagination-post" role="navigation">
+                <span class="page-item page-prev">
+                <a href="/ko/posts/3. The Era of Commercial Computers" class="page-link" aria-label="Previous">← 3. 상업용 컴퓨터 시대</a>
+                </span>
+                <span class="page-item page-next">
+                <a href="/ko/posts/5. The Beginning of Software Engineering" class="page-link" aria-label="Next">5. 소프트웨어 공학의 시작 →</a>
+                </span>
+              </ul>
+              <div class="comments border">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/@fosscomics" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2026 Joone Hur | <a href="https://github.com/joone/fossbook">fossbook v0.2.14</a> | Published on Sep 7, 2026
+              </div>
+            </footer>
+        </div>
+        
+        <script>
+          const copyLinkButton = document.querySelector(".copy-link-button");
+          const copyLinkLabel = copyLinkButton.querySelector("span");
+          const defaultCopyLinkLabel = copyLinkLabel.textContent;
+          let copyLinkResetTimer;
+          const copyEpisodeLink = async () => {
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            const episodeUrl = canonicalLink ? canonicalLink.href : window.location.href;
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(episodeUrl);
+              } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = episodeUrl;
+                textArea.setAttribute("readonly", "");
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.select();
+                const copied = document.execCommand("copy");
+                textArea.remove();
+                if (!copied) throw new Error("Copy command failed");
+              }
+              copyLinkLabel.textContent = "링크를 복사했습니다";
+            } catch (error) {
+              copyLinkLabel.textContent = "링크를 복사하지 못했습니다";
+            }
+            clearTimeout(copyLinkResetTimer);
+            copyLinkResetTimer = setTimeout(() => {
+              copyLinkLabel.textContent = defaultCopyLinkLabel;
+            }, 2000);
+          };
+          copyLinkButton.addEventListener("click", copyEpisodeLink);
+        </script>
+        <script>
+          const transcriptToggle = document.querySelector("#comic-transcript-toggle");
+          const transcriptStorageKey = "fossbook-comic-transcript";
+          const setTranscriptVisibility = (visible) => {
+            document.documentElement.classList.toggle("transcripts-hidden", !visible);
+            transcriptToggle.checked = visible;
+          };
+          setTranscriptVisibility(!document.documentElement.classList.contains("transcripts-hidden"));
+          transcriptToggle.addEventListener("change", () => {
+            const visible = transcriptToggle.checked;
+            setTranscriptVisibility(visible);
+            try {
+              localStorage.setItem(transcriptStorageKey, visible ? "visible" : "hidden");
+            } catch (error) {}
+          });
+
+          document.querySelectorAll(".image-container + .image-dialogue").forEach((dialogue) => {
+            const image = dialogue.previousElementSibling.querySelector("img");
+            const syncDialogueWidth = () => {
+              dialogue.style.setProperty("--dialogue-width", image.getBoundingClientRect().width + "px");
+            };
+            if (!image.complete) image.addEventListener("load", syncDialogueWidth, { once: true });
+            new ResizeObserver(syncDialogueWidth).observe(image);
+            syncDialogueWidth();
+          });
+        </script>
+    </body>
+</html>
