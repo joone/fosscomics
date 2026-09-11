@@ -54,7 +54,7 @@
         <meta property="og:url" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/" />
         <meta property="og:title" content="9. 유닉스 철학" />
         <meta property="og:description" content="유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다." />
-        <meta property="og:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature.png" />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature_ko.png" />
         <meta property="article:author" content="Joone Hur" />
         <meta property="article:published_time" content="2026-08-22" />
         <meta property="article:tag" content="BSD">
@@ -72,7 +72,7 @@
         <meta name="twitter:creator" content="@joone" />
         <meta name="twitter:title" content="9. 유닉스 철학" />
         <meta name="twitter:description" content="유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다." />
-        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature.png" />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature_ko.png" />
         <script>
           document.documentElement.classList.add("transcripts-hidden");
           try {
@@ -115,7 +115,7 @@
                     <p>IT 기술은 놀라운 속도로 변화하고 발전해 왔다. 하지만 유닉스는 만들어진 지 반세기가 넘었고, 그 철학과 API 설계, 도구는 유닉스와 유닉스 계열 운영체제에 여전히 살아 있다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_1.png" alt="지팡이를 짚은 수염 긴 노인 모습의 유닉스가 지친 표정을 짓고 있다." class="sized-image" style="width: 50%;">
+            <img src="images/9_1_ko.png" alt="지팡이를 짚은 수염 긴 노인 모습의 유닉스가 지친 표정을 짓고 있다." class="sized-image" style="width: 50%;">
             
           </figure>
         </div>
@@ -133,52 +133,52 @@ flowchart TB
     MacOSX --&gt; macOS([macOS])
     MacOSX --&gt; iOS([iOS])
     MINIX([MINIX]) -. 개발에 영향을 줌 .-&gt; Linux([Linux])
-    Linux -. 윈도우에서 실행 .-&gt; WSL([WSL])</pre><p>미닉스(MINIX)는 운영체제 설계를 가르치기 위해 만든 작은 유닉스 계열 운영체제다. 더 자세한 가계도는 <a href="https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg ">위키피디아</a>를 참고하자.</p>
+    Linux -. 윈도우에서 실행 .-&gt; WSL([WSL])</pre><p>미닉스(MINIX)는 운영체제 설계를 가르치기 위해 만든 작은 유닉스 계열 운영체제다. 더 자세한 가계도는 <a href="https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg ">위키피디아</a>를 참고하자.</p><p>유닉스 소스 코드를 수업에서 더 이상 사용할 수 없게 되자, 타넨바움 교수는 교육용 미닉스를 만들었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_2.png" alt="앤드루 타넨바움이 컴퓨터 앞에서 라이온스의 유닉스 해설서와 함께 작업하고 있다.">
+            <img src="images/9_2_ko.png" alt="앤드루 타넨바움이 컴퓨터 앞에서 라이온스의 유닉스 해설서와 함께 작업하고 있다.">
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>유닉스 소스 코드를 수업에서 더 이상 사용할 수 없게 되자, 타넨바움 교수는 교육용 미닉스를 만들었다.<br><span class="dialogue-quote dialogue-quote-open">“</span>운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span><br><em>(원래 표지는 빨간색이었다.)</em></p></blockquote></div><p>리누스 토발즈는 미닉스를 사용하고 타넨바움의 <em>Operating Systems: Design and Implementation</em>을 읽으며 리눅스 커널 개발을 시작했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_3.png" alt="리누스 토발즈가 컴퓨터 앞에서 운영체제 교재를 읽고 있다.">
+            <img src="images/9_3_ko.png" alt="리누스 토발즈가 컴퓨터 앞에서 운영체제 교재를 읽고 있다.">
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>리누스 토발즈는 미닉스를 사용하고 타넨바움의 <em>Operating Systems: Design and Implementation</em>을 읽으며 리눅스 커널 개발을 시작했다.<br><span class="dialogue-quote dialogue-quote-open">“</span>긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_4.png" alt="발표자가 UNIX라고 적힌 컴퓨터 옆에 앉아 손짓하고 있다." class="sized-image" style="width: 70%;">
+            <img src="images/9_4_ko.png" alt="발표자가 UNIX라고 적힌 컴퓨터 옆에 앉아 손짓하고 있다." class="sized-image" style="width: 70%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>어떻게 유닉스는 지금까지도 기술 세계에 영향을 주고 있을까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>그 해답을 찾으려면 유닉스 철학을 알아야 한다. 물론 유닉스가 처음부터 거창한 철학을 가지고 시작한 것은 아니다. 에릭 S. 레이먼드는 나중에 이를 익숙한 설계 원칙으로 요약했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_5.png" alt="켄 톰프슨과 데니스 리치가 손가락을 하나씩 들고 간결한 설계 원칙을 말한다." class="sized-image" style="width: 60%;">
+            <img src="images/9_5_ko.png" alt="켄 톰프슨과 데니스 리치가 손가락을 하나씩 들고 간결한 설계 원칙을 말한다." class="sized-image" style="width: 60%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>간단하고 멍청하게 하자.<span class="dialogue-quote dialogue-quote-close">”</span><a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html "title="에릭 S. 레이먼드의 유닉스 철학 요약">&lbrack;1&rbrack;</a></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_6.png" alt="발표자가 어리둥절한 표정으로 좀 더 제대로 된 설명을 요구한다." class="sized-image" style="width: 70%;">
+            <img src="images/9_6_ko.png" alt="발표자가 어리둥절한 표정으로 좀 더 제대로 된 설명을 요구한다." class="sized-image" style="width: 70%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>아니, 농담 말고 진짜 철학을 설명해 주세요.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_7.png" alt="톰프슨과 리치, 벨 연구소 동료들이 조금 머뭇거리며 함께 대답한다." class="sized-image" style="width: 60%;">
+            <img src="images/9_7_ko.png" alt="켄 톰프슨이 무표정한 얼굴로 잠시 생각에 잠겨 있다." class="sized-image" style="width: 60%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>음... 그냥 만들었는데...<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>위키피디아에서는 유닉스 철학을 다음과 같이 설명한다. &quot;<a href="https://en.wikipedia.org/wiki/Ken_Thompson ">켄 톰프슨</a>에게서 비롯된 <strong>유닉스 철학</strong>은 <a href="https://en.wikipedia.org/wiki/Minimalism_%28computing%29 ">최소주의</a>와 <a href="https://en.wikipedia.org/wiki/Modularity_%28programming%29 ">모듈화</a>에 기반한 <a href="https://en.wikipedia.org/wiki/Software_development ">소프트웨어 개발</a>의 문화적 규범과 철학적 접근 방식이다. 이는 <a href="https://en.wikipedia.org/wiki/Unix ">유닉스</a> <a href="https://en.wikipedia.org/wiki/Operating_system ">운영체제</a>를 이끈 개발자들의 경험을 바탕으로 한다.&quot;<a href="https://en.wikipedia.org/wiki/Unix_philosophy "title="유닉스 철학, 위키피디아">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_8.png" alt="발표자가 여전히 이해하지 못한 표정으로 머리를 긁적인다." class="sized-image" style="width: 60%;">
+            <img src="images/9_8_ko.png" alt="발표자가 여전히 이해하지 못한 표정으로 머리를 긁적인다." class="sized-image" style="width: 60%;">
             
           </figure>
         </div>
@@ -191,7 +191,7 @@ flowchart TB
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_9.png" alt="수염 난 독자가 긴 목록을 바라보며 너무 길다고 생각한다." class="sized-image" style="width: 60%;">
+            <img src="images/9_9_ko.png" alt="수염 난 톰프슨이 무표정한 얼굴로 생각에 잠겨 있다." class="sized-image" style="width: 60%;">
             
           </figure>
         </div>
@@ -203,21 +203,21 @@ flowchart TB
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_10.png" alt="발표자가 색색의 장난감 블록을 연결해 더 큰 구조물을 만든다." class="sized-image" style="width: 60%;">
+            <img src="images/9_10_ko.png" alt="발표자가 색색의 장난감 블록을 연결해 더 큰 구조물을 만든다." class="sized-image" style="width: 60%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>레고 블록처럼!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>레고 블록처럼 유닉스 프로그램은 입력과 출력을 서로 연결해 더 복잡한 도구를 만들 수 있다. 이후 유닉스의 대부분이 C언어로 다시 작성되면서 여러 컴퓨터로 훨씬 쉽게 이식할 수 있게 되었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_11.png" alt="한 사람이 상자를 들고 떠나자 다른 사람이 뒤에서 부른다." class="sized-image" style="width: 80%;">
+            <img src="images/9_11_ko.png" alt="발표자가 한 손을 입가에 대고 화면 밖의 누군가를 부른다." class="sized-image" style="width: 80%;">
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>물론 유닉스에는 또 다른 장점도 있었지. 소스 코드가 여기저기 돌아다니곤 했거든. 하지만 그 이야기는 다음 기회에...<span class="dialogue-quote dialogue-quote-close">”</span><br><span class="dialogue-quote dialogue-quote-open">“</span>어디 가세요?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <img src="images/9_12.png" alt="선글라스를 쓴 프로그래머가 유닉스 소스 코드가 담긴 자기 테이프 상자를 들고 간다." class="sized-image" style="width: 70%;">
+            <img src="images/9_12_ko.png" alt="선글라스를 쓴 프로그래머가 손잡이 달린 상자를 들고 간다." class="sized-image" style="width: 70%;">
             
           </figure>
         </div>

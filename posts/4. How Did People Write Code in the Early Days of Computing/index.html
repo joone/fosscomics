@@ -124,40 +124,40 @@
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could I build one for ballistic calculations?&quot; <br>&quot;How many relays and vacuum tubes would it need?&quot;</p></blockquote></div><p>Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> entered regular operation in 1949. <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> was highly influential in the development of the stored-program design, although it became operational later.</p><p>A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called <a href="https://en.wikipedia.org/wiki/Machine_code ">machine code</a>. Machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could I build one for ballistic calculations?&quot; <br>&quot;How many relays and vacuum tubes would it need?&quot;</p></blockquote></div><p>Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> entered regular operation in 1949. <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> was highly influential in the development of the stored-program design, although it became operational later.</p><p>A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called <a href="https://en.wikipedia.org/wiki/Machine_code ">machine code</a>. On binary computers such as EDSAC, machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_3.png" alt="A programmer in dark glasses stares at rows of binary digits with an exclamation mark overhead." class="sized-image" style="width: 70%;">
             
           </figure>
         </div>
-      <p>That is why assembly language appeared early in the history of computer programming. Assembly language made machine instructions easier to express with short symbolic codes called mnemonics. EDSAC programmers used single-letter order codes, while a hard-wired bootstrap called the Initial Orders loaded programs from paper tape and translated those codes into instructions<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC Initial Orders and Squares Program">&lbrack;2&rbrack;</a>.</p>
+      <p>That is why assembly language appeared early in the history of computer programming. Assembly language made machine instructions easier to express with short symbolic codes called mnemonics. EDSAC programmers used single-letter order codes. A small bootstrap program called the Initial Orders was loaded into memory from hard-wired switches at startup; it then read programs from paper tape and translated their symbolic notation into machine instructions<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC Initial Orders and Squares Program">&lbrack;2&rbrack;</a><a href="https://en.wikipedia.org/wiki/EDSAC#Memory_and_instructions "title="EDSAC instruction format">&lbrack;6&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_4.png" alt="A diagram divides two 17-bit EDSAC instructions into an operation code, an unused bit, a ten-bit operand, and a length bit, alongside the mnemonics T0S and H2S." class="sized-image" style="width: 80%;">
             
           </figure>
         </div>
-      <p>Each EDSAC instruction occupied a 17-bit word: a five-bit operation code, one unused bit, a ten-bit address, and a final bit selecting a short or long operand.</p><p>The two EDSAC assembly instructions shown above can be explained as follows:</p><ul>
-<li><code>T 0 S</code>: Store the value in the accumulator at memory address <code>0</code>, then clear the accumulator by resetting it to <code>0</code>.</li>
+      <p>Each EDSAC instruction occupied a 17-bit word: a five-bit operation code, one unused bit, a ten-bit operand field (a memory address in these examples), and a final bit selecting a short or long operand. Short operands were 17 bits; long operands were 35 bits<a href="https://en.wikipedia.org/wiki/EDSAC#Memory_and_instructions "title="EDSAC instruction format">&lbrack;6&rbrack;</a>.</p><p>The two EDSAC assembly instructions shown above can be explained as follows:</p><ul>
+<li><code>T 0 S</code>: Store the upper 17 bits of the value in the accumulator at memory address <code>0</code>, then clear the accumulator by resetting it to <code>0</code>.</li>
 <li><code>H 2 S</code>: Load the value stored at memory address <code>2</code> into the multiplier register, preparing it for a multiplication operation.</li>
-<li>The final <code>S</code> indicates that the instruction uses EDSAC&#39;s short-word format.</li>
+<li>The final <code>S</code> selects a short operand, not a shorter instruction.</li>
 </ul>
-<p>As you can see, raw binary instructions are difficult for people to understand and remember. Assembly language therefore represents each low-level instruction, or operation code, with a mnemonic. Converting assembly language into machine code is called assembling.</p>
+<p>The diagram&#39;s <code>m[0]=A</code> is shorthand for the store operation; the <code>T</code> instruction also clears the accumulator. <code>H</code> prepares a value for multiplication but does not itself multiply.</p><p>As you can see, raw binary instructions are difficult for people to understand and remember. Assembly language therefore represents low-level operations with mnemonics. Converting assembly language into machine code is called assembling. An assembler is the program that performs this conversion; it is not the language itself<a href="https://en.wikipedia.org/wiki/Assembly_language "title="Assembly language and assembler concepts and history">&lbrack;7&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_5.png" alt="A programmer writes T0S and H2S on one board while a machine writes the corresponding binary instructions on another.">
             
           </figure>
         </div>
-      <p>In the early days, programmers sometimes did this work by hand, so the process was called hand assembly. Without an assembler, they had to translate assembly code into machine code manually by consulting mnemonic conversion tables. Symbolic assembly languages were already in use by the late 1940s and early 1950s, before high-level languages became common.</p>
+      <p>In the early days, programmers sometimes did this work by hand, so the process was called hand assembly. Without an assembler, they had to translate assembly code into machine code manually by consulting instruction tables, calculating addresses, and combining the fields into complete instructions. This meant doing the translation by hand, not merely writing source code on paper. Not everyone had to do this: EDSAC&#39;s Initial Orders already automated a basic form of assembly. Symbolic assembly languages and early assemblers were in use by the late 1940s and early 1950s, before high-level languages became common<a href="https://en.wikipedia.org/wiki/Assembly_language "title="Assembly language and assembler concepts and history">&lbrack;7&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_11.png" alt="A programmer writes code on paper at a desk beside a model rocket." class="sized-image" style="width: 70%;">
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;m writing code.&quot;</p></blockquote></div><p>Interactive terminals with keyboards and displays remained uncommon in the early 1960s. <a href="https://en.wikipedia.org/wiki/Multics ">Multics</a>, whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to let many users work interactively through remote terminals<a href="https://www.multicians.org/history.html "title="History of Multics">&lbrack;3&rbrack;</a>. By the 1970s, screen-and-keyboard terminals had become much more common. But before such terminals became common, how did programmers write code and check the results?</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;m writing code.&quot;</p></blockquote></div><p>Interactive terminals with keyboards and displays remained uncommon in the early 1960s. Interactive computing did not begin with Multics, however: MIT&#39;s CTSS was first demonstrated in 1961. Early terminals often printed their output on paper rather than displaying it on a screen.</p><p><a href="https://en.wikipedia.org/wiki/Multics ">Multics</a>, whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to let many users work interactively through remote terminals. Time-sharing divided a computer&#39;s processing time among users so that each could work interactively at a terminal<a href="https://www.multicians.org/history.html "title="History of Multics">&lbrack;3&rbrack;</a>. By the 1970s, screen-and-keyboard terminals had become much more common. But without direct access to a terminal, how did programmers write code and check the results?</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_6.png" alt="A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer." class="sized-image" style="width: 70%;">
@@ -171,14 +171,14 @@
             <figcaption>Punch card for Fortran programming</figcaption>
           </figure>
         </div>
-      <p>Programmers first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source statement per card. Depending on the language and computer, an assembler or compiler translated the submitted program into machine code.</p>
+      <p>Programmers often first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source line per card; a long statement could continue across several cards. A keypunch recorded typed characters as holes in cards. Depending on the language and computer, an assembler or compiler running on the computer, not the keypunch, translated the submitted program into machine code.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_8.png" alt="A programmer types at a keypunch machine while a punched card feeds through it." class="sized-image" style="width: 70%;">
             <figcaption>IBM 026 keypunch machine</figcaption>
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;d better get this code onto punched cards.&quot;</p></blockquote></div><p>Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;d better get this code onto punched cards.&quot;</p></blockquote></div><p>Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. Collecting jobs and running them in sequence was called batch processing. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <img src="images/4_9.png" alt="Four programmers queue with punched cards while an operator accepts jobs at the machine-room window.">
@@ -199,6 +199,8 @@
 <li><a href="https://www.multicians.org/history.html ">History of Multics</a></li>
 <li><a href="https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 ">ENIAC, Computer History Museum</a></li>
 <li><a href="https://www.ibm.com/history/punched-card ">The IBM Punched Card</a></li>
+<li><a href="https://en.wikipedia.org/wiki/EDSAC#Memory_and_instructions ">EDSAC: Memory and Instructions</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Assembly_language ">Assembly Language and Assemblers</a></li>
 </ol>
 
                   </section>
