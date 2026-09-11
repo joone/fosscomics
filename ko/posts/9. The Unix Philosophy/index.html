@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.2.15">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.2.15">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.2.15">
+        <link rel="icon" type="image/png" href="/ko/images/favicon.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-M0CWE9F5HJ");
+        </script>
+        <title>9. 유닉스 철학</title>
+        <meta name="description" content="유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다." />
+        <link rel="canonical" href="https://fosscomics.com/ko/posts/9. The Unix Philosophy/" />
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/9. The Unix Philosophy/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/9. The Unix Philosophy/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/9. The Unix Philosophy/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/9. The Unix Philosophy/","ko":"/ko/posts/9. The Unix Philosophy/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
+
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="F/OSS 코믹스" />
+        <meta property="og:url" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/" />
+        <meta property="og:title" content="9. 유닉스 철학" />
+        <meta property="og:description" content="유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다." />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature.png" />
+        <meta property="article:author" content="Joone Hur" />
+        <meta property="article:published_time" content="2026-08-22" />
+        <meta property="article:tag" content="BSD">
+        <meta property="article:tag" content="macOS">
+        <meta property="article:tag" content="더글러스 맥클로이">
+        <meta property="article:tag" content="리눅스">
+        <meta property="article:tag" content="미닉스">
+        <meta property="article:tag" content="유닉스">
+        <meta property="article:tag" content="유닉스 철학">
+        <meta property="article:tag" content="켄 톰프슨">
+        <meta property="article:tag" content="피터 H. 살루스">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@fosscomics" />
+        <meta name="twitter:creator" content="@joone" />
+        <meta name="twitter:title" content="9. 유닉스 철학" />
+        <meta name="twitter:description" content="유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다." />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/9. The Unix Philosophy/images/feature.png" />
+        <script>
+          document.documentElement.classList.add("transcripts-hidden");
+          try {
+            if (localStorage.getItem("fossbook-comic-transcript") === "visible") {
+              document.documentElement.classList.remove("transcripts-hidden");
+            }
+          } catch (error) {}
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <div class="main">
+                  F/OSS 코믹스
+                </div>
+                <nav class="site-navigation">
+                  <a href="/ko/">처음</a>
+                  <a href="/ko/all_posts">모든 글</a>
+                  <a href="/ko/about">이곳은</a>
+                  <a href="/ko/tags">태그</a>
+                </nav>
+            </header>
+            <main>
+              <article class="content">
+                  <div class="title">
+                    <h1 class="title">9. 유닉스 철학</h1>
+                    <div class="meta">올린 날: 2026년 8월 22일</div>
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/9. The Unix Philosophy/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/posts/9. The Unix Philosophy/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
+                  </div>
+                  <div class="post-controls">
+                    <div class="transcript-toggle">
+                      <label for="comic-transcript-toggle">말글 보이기</label>
+                      <input id="comic-transcript-toggle" type="checkbox" role="switch" aria-controls="comic-transcript">
+                    </div>
+                    <button class="copy-link-button" type="button">
+                      <span aria-live="polite">링크 복사</span>
+                    </button>
+                  </div>
+                  <section class="body" id="comic-transcript">
+                    <p>IT 기술은 놀라운 속도로 변화하고 발전해 왔다. 하지만 유닉스는 만들어진 지 반세기가 넘었고, 그 철학과 API 설계, 도구는 유닉스와 유닉스 계열 운영체제에 여전히 살아 있다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_1.png" alt="지팡이를 짚은 수염 긴 노인 모습의 유닉스가 지친 표정을 짓고 있다." class="sized-image" style="width: 50%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>난 언제 은퇴하나?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>유닉스의 유산은 지금도 우리 주변 곳곳에 남아 있다. 데비안, 우분투, 아치 리눅스 같은 리눅스 배포판과 안드로이드는 리눅스 커널을 사용한다. 맥과 아이폰에서 동작하는 애플의 macOS와 iOS도 유닉스를 기반으로 한다. 윈도우에서도 WSL(Windows Subsystem for Linux)을 통해 리눅스 환경을 실행할 수 있다.</p><pre class="mermaid">%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+flowchart TB
+    Unix([Unix]) --&gt; BSD([BSD])
+    Unix --&gt; SystemV([System V])
+    BSD --&gt; NeXTSTEP([NeXTSTEP])
+    BSD --&gt; FreeBSD([FreeBSD])
+    BSD --&gt; SunOS([SunOS])
+    SunOS --&gt; Solaris([Solaris])
+    SystemV -- SVR4 기반 --&gt; Solaris
+    Solaris --&gt; OpenSolaris([OpenSolaris])
+    NeXTSTEP --&gt; MacOSX([Mac OS X])
+    MacOSX --&gt; macOS([macOS])
+    MacOSX --&gt; iOS([iOS])
+    MINIX([MINIX]) -. 개발에 영향을 줌 .-&gt; Linux([Linux])
+    Linux -. 윈도우에서 실행 .-&gt; WSL([WSL])</pre><p>미닉스(MINIX)는 운영체제 설계를 가르치기 위해 만든 작은 유닉스 계열 운영체제다. 더 자세한 가계도는 <a href="https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg ">위키피디아</a>를 참고하자.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_2.png" alt="앤드루 타넨바움이 컴퓨터 앞에서 라이온스의 유닉스 해설서와 함께 작업하고 있다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>유닉스 소스 코드를 수업에서 더 이상 사용할 수 없게 되자, 타넨바움 교수는 교육용 미닉스를 만들었다.<br><span class="dialogue-quote dialogue-quote-open">“</span>운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_3.png" alt="리누스 토발즈가 컴퓨터 앞에서 운영체제 교재를 읽고 있다.">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>리누스 토발즈는 미닉스를 사용하고 타넨바움의 <em>Operating Systems: Design and Implementation</em>을 읽으며 리눅스 커널 개발을 시작했다.<br><span class="dialogue-quote dialogue-quote-open">“</span>긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_4.png" alt="발표자가 UNIX라고 적힌 컴퓨터 옆에 앉아 손짓하고 있다." class="sized-image" style="width: 70%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>어떻게 유닉스는 지금까지도 기술 세계에 영향을 주고 있을까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>그 해답을 찾으려면 유닉스 철학을 알아야 한다. 물론 유닉스가 처음부터 거창한 철학을 가지고 시작한 것은 아니다. 에릭 S. 레이먼드는 나중에 이를 익숙한 설계 원칙으로 요약했다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_5.png" alt="켄 톰프슨과 데니스 리치가 손가락을 하나씩 들고 간결한 설계 원칙을 말한다." class="sized-image" style="width: 60%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>간단하고 멍청하게 하자.<span class="dialogue-quote dialogue-quote-close">”</span><a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html "title="에릭 S. 레이먼드의 유닉스 철학 요약">&lbrack;1&rbrack;</a></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_6.png" alt="발표자가 어리둥절한 표정으로 좀 더 제대로 된 설명을 요구한다." class="sized-image" style="width: 70%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>아니, 농담 말고 진짜 철학을 설명해 주세요.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_7.png" alt="톰프슨과 리치, 벨 연구소 동료들이 조금 머뭇거리며 함께 대답한다." class="sized-image" style="width: 60%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>음... 그냥 만들었는데...<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>위키피디아에서는 유닉스 철학을 다음과 같이 설명한다. &quot;<a href="https://en.wikipedia.org/wiki/Ken_Thompson ">켄 톰프슨</a>에게서 비롯된 <strong>유닉스 철학</strong>은 <a href="https://en.wikipedia.org/wiki/Minimalism_%28computing%29 ">최소주의</a>와 <a href="https://en.wikipedia.org/wiki/Modularity_%28programming%29 ">모듈화</a>에 기반한 <a href="https://en.wikipedia.org/wiki/Software_development ">소프트웨어 개발</a>의 문화적 규범과 철학적 접근 방식이다. 이는 <a href="https://en.wikipedia.org/wiki/Unix ">유닉스</a> <a href="https://en.wikipedia.org/wiki/Operating_system ">운영체제</a>를 이끈 개발자들의 경험을 바탕으로 한다.&quot;<a href="https://en.wikipedia.org/wiki/Unix_philosophy "title="유닉스 철학, 위키피디아">&lbrack;2&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_8.png" alt="발표자가 여전히 이해하지 못한 표정으로 머리를 긁적인다." class="sized-image" style="width: 60%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>그래도 잘 모르겠네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1978년 <a href="https://en.wikipedia.org/wiki/Doug_McIlroy ">더글러스 맥클로이</a>는 이 철학을 공식적으로 문서화했다.<a href="https://archive.org/details/bstj57-6-1899/page/n3/mode/2up "title="맥클로이, 핀슨, 태그의 유닉스 원칙">&lbrack;3&rbrack;</a></p><ol>
+<li>각 프로그램이 하나의 일을 잘하도록 만들 것. 새로운 일을 해야 한다면, 기존 프로그램에 기능을 덧붙여 복잡하게 만들지 말고 새로 만들 것.</li>
+<li>모든 프로그램의 출력은 아직 만들어지지 않은 다른 프로그램의 입력이 될 수 있다고 생각할 것. 출력에 불필요한 정보를 섞지 말 것. 엄격한 열 형식이나 바이너리 입력 형식을 피할 것. 대화형 입력을 고집하지 말 것.</li>
+<li>운영체제를 포함한 소프트웨어를 가능한 한 일찍, 이상적으로는 수 주 안에 시험할 수 있도록 설계하고 만들 것. 서투른 부분을 버리고 다시 만드는 일을 주저하지 말 것.</li>
+<li>프로그래밍 작업을 줄이기 위해 숙련되지 않은 인력보다 도구 사용을 선호할 것. 도구를 만들기 위해 잠시 돌아가야 하거나, 작업을 마친 뒤 그 도구를 버리게 되더라도 마찬가지다.</li>
+</ol>
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_9.png" alt="수염 난 독자가 긴 목록을 바라보며 너무 길다고 생각한다." class="sized-image" style="width: 60%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>너무 긴데.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p><a href="https://en.wikipedia.org/wiki/Peter_H._Salus ">피터 H. 살루스</a>는 이를 다시 한번 요약했다.<a href="https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "title="피터 H. 살루스의 유닉스 철학 요약">&lbrack;4&rbrack;</a></p><ul>
+<li>한 가지 일을 잘하는 프로그램을 만들 것.</li>
+<li>다른 프로그램과 함께 동작하는 프로그램을 만들 것.</li>
+<li>범용 인터페이스인 텍스트 스트림을 처리하는 프로그램을 만들 것.</li>
+</ul>
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_10.png" alt="발표자가 색색의 장난감 블록을 연결해 더 큰 구조물을 만든다." class="sized-image" style="width: 60%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>레고 블록처럼!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>레고 블록처럼 유닉스 프로그램은 입력과 출력을 서로 연결해 더 복잡한 도구를 만들 수 있다. 이후 유닉스의 대부분이 C언어로 다시 작성되면서 여러 컴퓨터로 훨씬 쉽게 이식할 수 있게 되었다.</p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_11.png" alt="한 사람이 상자를 들고 떠나자 다른 사람이 뒤에서 부른다." class="sized-image" style="width: 80%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>물론 유닉스에는 또 다른 장점도 있었지. 소스 코드가 여기저기 돌아다니곤 했거든. 하지만 그 이야기는 다음 기회에...<span class="dialogue-quote dialogue-quote-close">”</span><br><span class="dialogue-quote dialogue-quote-open">“</span>어디 가세요?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <img src="images/9_12.png" alt="선글라스를 쓴 프로그래머가 유닉스 소스 코드가 담긴 자기 테이프 상자를 들고 간다." class="sized-image" style="width: 70%;">
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>비밀.<span class="dialogue-quote dialogue-quote-close">”</span> <em>(유닉스 소스 코드가 담긴 자기 테이프.)</em></p></blockquote></div><h2>참고 자료</h2>
+<ol>
+<li>에릭 S. 레이먼드, <a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html ">&quot;한 문장으로 배우는 유닉스 철학&quot;</a>, <em>The Art of Unix Programming</em>, Addison-Wesley, 2003.</li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy ">&quot;유닉스 철학&quot;</a>, 위키피디아.</li>
+<li>M. D. 맥클로이, E. N. 핀슨, B. A. 태그, <a href="https://archive.org/details/bstj57-6-1899/page/n3/mode/2up ">&quot;Unix Time-Sharing System: Foreword&quot;</a>, <em>Bell System Technical Journal</em> 57, no. 6, 1978, pp. 1899–1904.</li>
+<li>피터 H. 살루스, <a href="https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "><em>A Quarter Century of UNIX</em></a>, Addison-Wesley, 1994, pp. 52–53.</li>
+</ol>
+
+                  </section>
+                  <div class="post-tags">
+                    <nav class="nav tags">
+                      <ul class="tags">
+                        <li><a href="/ko/tags/BSD">BSD</a></li><li><a href="/ko/tags/macOS">macOS</a></li><li><a href="/ko/tags/더글러스_맥클로이">더글러스 맥클로이</a></li><li><a href="/ko/tags/리눅스">리눅스</a></li><li><a href="/ko/tags/미닉스">미닉스</a></li><li><a href="/ko/tags/유닉스">유닉스</a></li><li><a href="/ko/tags/유닉스_철학">유닉스 철학</a></li><li><a href="/ko/tags/켄_톰프슨">켄 톰프슨</a></li><li><a href="/ko/tags/피터_H._살루스">피터 H. 살루스</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+              </article>
+              <ul class="pagination-post" role="navigation">
+                <span class="page-item page-prev">
+                <a href="/ko/posts/8. The Origins of Unix and the C Language" class="page-link" aria-label="Previous">← 8. 유닉스와 C언어</a>
+                </span>
+                <span class="page-item page-next">
+                
+                </span>
+              </ul>
+              <div class="comments border">
+                <script src="https://utteranc.es/client.js"
+                            repo="joone/fosscomics"
+                            issue-term="pathname"
+                            theme="github-light"
+                            crossorigin="anonymous"
+                            async>
+                </script>
+              </div>
+            </main>
+
+            <footer>
+              <div style="display:flex">
+                <a class="soc" href="https://github.com/joone/fosscomics" rel="me" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a class="border"></a><a class="soc" href="https://twitter.com/@fosscomics" rel="me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                <a class="border"></a>
+              </div>
+              <div class="footer-info">
+                © 2026 Joone Hur | <a href="https://github.com/joone/fossbook">fossbook v0.2.15</a> | Published on Sep 11, 2026
+              </div>
+            </footer>
+        </div>
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+        <script>
+          const copyLinkButton = document.querySelector(".copy-link-button");
+          const copyLinkLabel = copyLinkButton.querySelector("span");
+          const defaultCopyLinkLabel = copyLinkLabel.textContent;
+          let copyLinkResetTimer;
+          const copyEpisodeLink = async () => {
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            const episodeUrl = canonicalLink ? canonicalLink.href : window.location.href;
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(episodeUrl);
+              } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = episodeUrl;
+                textArea.setAttribute("readonly", "");
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.select();
+                const copied = document.execCommand("copy");
+                textArea.remove();
+                if (!copied) throw new Error("Copy command failed");
+              }
+              copyLinkLabel.textContent = "링크를 복사했습니다";
+            } catch (error) {
+              copyLinkLabel.textContent = "링크를 복사하지 못했습니다";
+            }
+            clearTimeout(copyLinkResetTimer);
+            copyLinkResetTimer = setTimeout(() => {
+              copyLinkLabel.textContent = defaultCopyLinkLabel;
+            }, 2000);
+          };
+          copyLinkButton.addEventListener("click", copyEpisodeLink);
+        </script>
+        <script>
+          const transcriptToggle = document.querySelector("#comic-transcript-toggle");
+          const transcriptStorageKey = "fossbook-comic-transcript";
+          const setTranscriptVisibility = (visible) => {
+            document.documentElement.classList.toggle("transcripts-hidden", !visible);
+            transcriptToggle.checked = visible;
+          };
+          setTranscriptVisibility(!document.documentElement.classList.contains("transcripts-hidden"));
+          transcriptToggle.addEventListener("change", () => {
+            const visible = transcriptToggle.checked;
+            setTranscriptVisibility(visible);
+            try {
+              localStorage.setItem(transcriptStorageKey, visible ? "visible" : "hidden");
+            } catch (error) {}
+          });
+
+          document.querySelectorAll(".image-container + .image-dialogue").forEach((dialogue) => {
+            const image = dialogue.previousElementSibling.querySelector("img");
+            const syncDialogueWidth = () => {
+              dialogue.style.setProperty("--dialogue-width", image.getBoundingClientRect().width + "px");
+            };
+            if (!image.complete) image.addEventListener("load", syncDialogueWidth, { once: true });
+            new ResizeObserver(syncDialogueWidth).observe(image);
+            syncDialogueWidth();
+          });
+        </script>
+    </body>
+</html>
