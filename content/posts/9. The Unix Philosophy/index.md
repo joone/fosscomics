@@ -31,8 +31,9 @@ flowchart TB
 ```
 MINIX was developed as a small Unix-like system for teaching operating system design. For a more detailed family tree, see [Wikipedia](https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg).
 
+When Unix source code was no longer available for classroom study, Professor Tanenbaum created MINIX for teaching.
+
 ![Andrew Tanenbaum works at a computer beside a copy of Lions' Commentary on Unix.](images/9_2.png)
-> When Unix source code was no longer available for classroom study, Professor Tanenbaum created MINIX for teaching.\
 > "Maybe I should build a simple OS for teaching operating systems."
 
 ![Linus Torvalds reads an operating-systems textbook at a computer.](images/9_3.png)
