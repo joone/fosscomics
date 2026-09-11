@@ -36,9 +36,10 @@ When Unix source code was no longer available for classroom study, Professor Tan
 ![Andrew Tanenbaum works at a computer beside a copy of Lions' Commentary on Unix.](images/9_2.png)
 > "Maybe I should build a simple OS for teaching operating systems."
 
+Linus Torvalds began developing the Linux kernel while using MINIX and reading Tanenbaum's *Operating Systems: Design and Implementation*.
+
 ![Linus Torvalds reads an operating-systems textbook at a computer.](images/9_3.png)
-> Linus Torvalds began developing the Linux kernel while using MINIX and reading Tanenbaum's *Operating Systems: Design and Implementation*.\
-> "I'll read this Minix book while I wait out the long winter break."
+> "Long winter break... I think I'll read this MINIX book."
 
 ![A presenter sits beside a computer displaying the word UNIX and gestures toward it.](images/9_4.png "size:70%")
 > "How has Unix continued to shape the tech world for so long?"
