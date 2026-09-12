@@ -33,24 +33,23 @@ flowchart TB
 
 유닉스 소스 코드를 수업에서 더 이상 사용할 수 없게 되자, 타넨바움 교수는 교육용 미닉스를 만들었다.
 
-![앤드루 타넨바움이 컴퓨터 앞에서 라이온스의 유닉스 해설서와 함께 작업하고 있다.](images/9_2_ko.png)
-> "운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?"\
-> *(원래 표지는 빨간색이었다.)*
+![앤드루 타넨바움이 라이온스의 유닉스 해설서가 놓인 책상에서 컴퓨터 키보드를 두드리고 있다.](images/minix_tanenbaum_ko.png)
+> "운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?"
 
 리누스 토발즈는 미닉스를 사용하고 타넨바움의 *Operating Systems: Design and Implementation*을 읽으며 리눅스 커널 개발을 시작했다.
 
-![리누스 토발즈가 컴퓨터 앞에서 운영체제 교재를 읽고 있다.](images/9_3_ko.png)
+![리누스 토발즈가 컴퓨터 옆에서 펼친 운영체제 교재를 들고 읽고 있다.](images/linus_torvals_reading_minix_ko.png)
 > "긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까."
 
-![발표자가 UNIX라고 적힌 컴퓨터 옆에 앉아 손짓하고 있다.](images/9_4_ko.png "size:70%")
-> "어떻게 유닉스는 지금까지도 기술 세계에 영향을 주고 있을까?"
+![의자에 앉은 발표자가 그래픽 데스크톱이 표시된 썬 스팍스테이션을 가리키고 있다.](images/joone_sun_sparcstation_ko.png "size:70%")
+> "유닉스는 왜 지금까지도 큰 영향을 미칠까?"
 
 그 해답을 찾으려면 유닉스 철학을 알아야 한다. 물론 유닉스가 처음부터 거창한 철학을 가지고 시작한 것은 아니다. 에릭 S. 레이먼드는 나중에 이를 익숙한 설계 원칙으로 요약했다.
 
-![켄 톰프슨과 데니스 리치가 손가락을 하나씩 들고 간결한 설계 원칙을 말한다.](images/9_5_ko.png "size:60%")
+![켄 톰프슨과 데니스 리치가 손가락을 하나씩 들고 간결한 설계 원칙을 말한다.](images/unix_keep_it_simple_stupid_ko.png "size:60%")
 > "간단하고 멍청하게 하자."[&lbrack;1&rbrack;][1]
 
-![발표자가 어리둥절한 표정으로 좀 더 제대로 된 설명을 요구한다.](images/9_6_ko.png "size:70%")
+![발표자가 어색하게 웃으며 머리를 긁적이고 있다.](images/joone_awkward_ko.png "size:70%")
 > "아니, 농담 말고 진짜 철학을 설명해 주세요."
 
 ![켄 톰프슨이 무표정한 얼굴로 잠시 생각에 잠겨 있다.](images/9_7_ko.png "size:60%")
@@ -58,7 +57,7 @@ flowchart TB
 
 위키피디아에서는 유닉스 철학을 다음과 같이 설명한다. "[켄 톰프슨](https://en.wikipedia.org/wiki/Ken_Thompson)에게서 비롯된 **유닉스 철학**은 [최소주의](https://en.wikipedia.org/wiki/Minimalism_%28computing%29)와 [모듈화](https://en.wikipedia.org/wiki/Modularity_%28programming%29)에 기반한 [소프트웨어 개발](https://en.wikipedia.org/wiki/Software_development)의 문화적 규범과 철학적 접근 방식이다. 이는 [유닉스](https://en.wikipedia.org/wiki/Unix) [운영체제](https://en.wikipedia.org/wiki/Operating_system)를 이끈 개발자들의 경험을 바탕으로 한다."[&lbrack;2&rbrack;][2]
 
-![발표자가 여전히 이해하지 못한 표정으로 머리를 긁적인다.](images/9_8_ko.png "size:60%")
+![발표자가 여전히 이해하지 못한 표정으로 머리를 긁적인다.](images/joone_dont_know_ko.png "size:60%")
 > "그래도 잘 모르겠네."
 
 1978년 [더글러스 맥클로이](https://en.wikipedia.org/wiki/Doug_McIlroy)는 이 철학을 공식적으로 문서화했다.[&lbrack;3&rbrack;][3]
@@ -83,7 +82,7 @@ flowchart TB
 레고 블록처럼 유닉스 프로그램은 입력과 출력을 서로 연결해 더 복잡한 도구를 만들 수 있다. 이후 유닉스의 대부분이 C언어로 다시 작성되면서 여러 컴퓨터로 훨씬 쉽게 이식할 수 있게 되었다.
 
 ![발표자가 한 손을 입가에 대고 화면 밖의 누군가를 부른다.](images/9_11_ko.png "size:80%")
-> "물론 유닉스에는 또 다른 장점도 있었지. 소스 코드가 여기저기 돌아다니곤 했거든. 하지만 그 이야기는 다음 기회에..."\
+> "유닉스가 여러 운영체제에 큰 영향을 미친 데에는 기술 말고도 다른 이유가 있었지. 소스 코드가 여기저기 돌아다니곤 했거든. 하지만 그 이야기는 다음 기회에..."\
 > "어디 가세요?"
 
 ![선글라스를 쓴 프로그래머가 손잡이 달린 상자를 들고 간다.](images/9_12_ko.png "size:70%")

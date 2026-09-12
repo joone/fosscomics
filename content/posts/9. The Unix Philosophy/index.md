@@ -33,23 +33,23 @@ MINIX was developed as a small Unix-like system for teaching operating system de
 
 When Unix source code was no longer available for classroom study, Professor Tanenbaum created MINIX for teaching.
 
-![Andrew Tanenbaum works at a computer beside a copy of Lions' Commentary on Unix.](images/9_2.png)
+![Andrew Tanenbaum types at a computer with a copy of Lions' Commentary on Unix on his desk.](images/minix_tanenbaum_en.png)
 > "Maybe I should build a simple OS for teaching operating systems."
 
 Linus Torvalds began developing the Linux kernel while using MINIX and reading Tanenbaum's *Operating Systems: Design and Implementation*.
 
-![Linus Torvalds reads an operating-systems textbook at a computer.](images/9_3.png)
+![Linus Torvalds holds an open operating-systems textbook beside his computer.](images/linus_torvals_reading_minix_en.png)
 > "Long winter break... I think I'll read this MINIX book."
 
-![A presenter sits beside a computer displaying the word UNIX and gestures toward it.](images/9_4.png "size:70%")
+![A seated presenter points to a Sun SPARCstation displaying a graphical desktop.](images/joone_sun_sparcstation_en.png "size:70%")
 > "How has Unix continued to shape the tech world for so long?"
 
 To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:
 
-![Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle.](images/9_5.png "size:60%")
+![Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle.](images/unix_keep_it_simple_stupid_en.png "size:60%")
 > "Keep it simple, stupid."[&lbrack;1&rbrack;][1]
 
-![The presenter looks baffled and asks for a more substantial explanation.](images/9_6.png "size:70%")
+![The presenter scratches his head with an awkward smile.](images/joone_awkward_en.png "size:70%")
 > "Come on, you must be joking. Tell me the real philosophy."
 
 ![Thompson, Ritchie, and other Bell Labs colleagues answer together with mild uncertainty.](images/9_7.png "size:60%")
@@ -57,7 +57,7 @@ To find the answer, we need to understand the Unix philosophy. But Unix did not 
 
 According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), is a set of cultural norms and philosophical approaches to [minimalist](https://en.wikipedia.org/wiki/Minimalism_%28computing%29), [modular](https://en.wikipedia.org/wiki/Modularity_%28programming%29) [software development](https://en.wikipedia.org/wiki/Software_development). It is based on the experience of leading developers of the [Unix](https://en.wikipedia.org/wiki/Unix) [operating system](https://en.wikipedia.org/wiki/Operating_system)."[&lbrack;2&rbrack;][2]
 
-![The presenter scratches his head, still puzzled.](images/9_8.png "size:60%")
+![The presenter scratches his head, still puzzled.](images/joone_dont_know_en.png "size:60%")
 > "I still don't really get it."
 
 In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally documented the philosophy:[&lbrack;3&rbrack;][3]
@@ -81,8 +81,8 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 
 Like LEGO bricks, Unix programs can be connected through their inputs and outputs to build more complex tools. Unix was later rewritten largely in C, making it much easier to port to different computers.
 
-![One character walks away carrying a box while another calls after him.](images/9_11.png "size:80%")
-> "Of course, Unix had another advantage: its source code had a way of traveling. But that's a story for another time..."\
+![The presenter holds a hand near his mouth and calls to someone offscreen.](images/9_11.png "size:80%")
+> "Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that's a story for another time..."\
 > "Where are you going?"
 
 ![A sunglasses-wearing programmer carries a box containing a reel of Unix source code on magnetic tape.](images/9_12.png "size:70%")
