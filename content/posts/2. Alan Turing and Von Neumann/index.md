@@ -60,13 +60,15 @@ Many computing machines built during the war were designed for specific tasks. A
 
 ![J. Presper Eckert and John Mauchly stand side by side; Mauchly folds his arms.](images/pdf_engineers_en.webp "size:70%")
 
-Programming ENIAC was very different from programming a modern computer. Instead of loading a program from memory, operators configured switches and connected cables on its plugboards. Running a different program required them to reconfigure the machine. ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed around 150 kilowatts of power[&lbrack;3&rbrack;][3].
-
-![A vacuum tube has metal electrodes inside a glass envelope and connector pins below its base.](images/pdf_tube_en.webp "size:40%")
+Programming ENIAC was very different from programming a modern computer. Instead of loading a program from memory, operators configured switches and connected cables on its plugboards. Running a different program required them to reconfigure the machine.
 
 ![A programmer reconnects cables on ENIAC's plugboards while a colleague checks notes.](images/pdf_wiring_en.webp)
 > "Is this really programming?" \
 > "It's a start."
+
+ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed around 150 kilowatts of power[&lbrack;3&rbrack;][3].
+
+![A vacuum tube has metal electrodes inside a glass envelope and connector pins below its base.](images/pdf_tube.webp "A vacuum tube used in ENIAC size:40%")
 
 ## EDVAC and the stored-program design
 

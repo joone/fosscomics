@@ -20,6 +20,8 @@ When computers were first built, how did people program them? Early computers ha
 
 [ENIAC](https://en.wikipedia.org/wiki/ENIAC) could run different programs by changing its plugboard wiring and switch settings. This was a cumbersome process, and changing a program could take days. Punched cards were used for input and output, not to store its programs[&#91;1&#93;][1][&#91;4&#93;][4].
 
+![Two programmers configure ENIAC by connecting cables on its plugboards.](images/eniac_programming.webp)
+
 Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and [EDSAC](https://en.wikipedia.org/wiki/EDSAC) entered regular operation in 1949. [EDVAC](https://en.wikipedia.org/wiki/EDVAC) was highly influential in the development of the stored-program design, although it became operational later.
 
 ## From machine code to assembly language
