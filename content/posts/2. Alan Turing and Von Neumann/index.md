@@ -139,7 +139,7 @@ Although Turing's [ACE report](https://www.amazon.com/Turings-Report-1946-Other-
 ![Alan Turing holds a rolled blueprint with a frustrated expression.](images/pdf_funding_en.webp "size:80%")
 > "The design is ready. Why haven't they approved the funding?"
 
-Maurice Wilkes, who led the EDSAC project at Cambridge, studied the EDVAC report. The scene below imagines his reaction to the design.
+Maurice Wilkes, who led the EDSAC project at Cambridge, studied the EDVAC report.
 
 ![Maurice Wilkes reads an open report at a table.](images/pdf_wilkes_en.webp "size:80%")
 > "So this is how we could build a digital computer."
