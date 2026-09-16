@@ -6,6 +6,8 @@ description: Early programmers came from mathematics, science, and engineering. 
 tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, Women in Tech, RMS
 ---
 
+## When Software Was Part of the Hardware
+
 Until the 1960s, software was largely treated as part of the hardware. Computers and their peripherals filled entire rooms, were expensive, and required considerable money and staff to operate. Software was not yet widely recognized as an engineering discipline in its own right.
 
 ![An installer stands beside a room-sized mainframe.](images/pdf_installation_en.webp)
@@ -25,6 +27,8 @@ People studying science or engineering also learned to program, since computers 
 > "Isn't it more fun than math?"
 
 Dennis Ritchie, who helped create Unix and the C programming language, studied physics and applied mathematics at university.
+
+## Margaret Hamilton and Apollo Flight Software
 
 The story of [Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_\(software_engineer\)), who worked on the Apollo program in the 1960s, offers a glimpse of how software was developed and regarded at the time. After studying mathematics at university, she began working as a programmer at MIT to support her husband's studies.
 
@@ -52,6 +56,8 @@ Hamilton argued that software should have the same professional standing as othe
 ![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/pdf_engineering_en.webp "Margaret Hamilton size:80%")
 > "Software Engineering!"
 
+## Women Who Led Early Programming
+
 Many early software developers were women, a striking contrast with today's male-dominated field. Programming was often considered less important than hardware development, assigned to women, and poorly paid[&lbrack;2&rbrack;][2]. This helps explain why so many photographs of early computers show women working at them.
 
 ![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pdf_pay_en.webp "size:80%")
@@ -63,6 +69,8 @@ Many early software developers were women, a striking contrast with today's male
 The six programmers originally assigned to ENIAC were all women[&lbrack;3&rbrack;][3].
 
 ![Two women program ENIAC by connecting cables on its control panels, with one reading from a sheet of notes.](images/pdf_eniac_en.webp "size:80%")
+
+## Grace Hopper and the Computer Bug
 
 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) held a doctorate in mathematics and became a pioneering programmer who later developed one of the earliest compilers. In 1947, she was working with the [Harvard Mark II](https://en.wikipedia.org/wiki/Harvard_Mark_II) team when the machine began malfunctioning.
 
