@@ -101,6 +101,292 @@
     outline-offset: 2px;
   }
 
+  .comic-share-target {
+    position: relative;
+  }
+
+  .comic-panel[id] {
+    scroll-margin-top: 1rem;
+  }
+
+  .comic-share-trigger {
+    align-items: center;
+    background: rgba(255, 255, 255, .92);
+    border: 1px solid var(--bordercl);
+    border-radius: 50%;
+    bottom: .5rem;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    right: .5rem;
+    transition: opacity 120ms ease;
+    width: 2rem;
+    z-index: 2;
+  }
+
+  .comic-share-target:hover .comic-share-trigger,
+  .comic-share-trigger:focus,
+  .comic-share-trigger:focus-visible {
+    opacity: 1;
+  }
+
+  .comic-share-trigger:hover {
+    background: var(--hovercolor);
+    color: #fff;
+  }
+
+  .comic-share-trigger:focus-visible {
+    outline: 2px solid var(--hovercolor);
+    outline-offset: 2px;
+  }
+
+  .comic-share-context-menu {
+    background: #fff;
+    border: 1px solid var(--bordercl);
+    border-radius: 4px;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .18);
+    padding: .25rem;
+    position: fixed;
+    z-index: 20;
+  }
+
+  .comic-share-context-menu[hidden] {
+    display: none;
+  }
+
+  .comic-share-menu-item {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: .45rem .75rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  .comic-share-menu-item:hover,
+  .comic-share-menu-item:focus-visible {
+    background: var(--hovercolor);
+    color: #fff;
+    outline: none;
+  }
+
+  .comic-share-dialog {
+    background: #fff;
+    border: 1px solid var(--bordercl);
+    border-radius: 6px;
+    color: inherit;
+    max-height: calc(100vh - 2rem);
+    max-width: min(34rem, calc(100vw - 2rem));
+    padding: 0;
+    width: 100%;
+  }
+
+  .comic-share-dialog::backdrop {
+    background: rgba(0, 0, 0, .45);
+  }
+
+  .comic-share-dialog-content {
+    display: grid;
+    gap: .65rem;
+    padding: 1rem;
+  }
+
+  .comic-share-dialog-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comic-share-heading {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .comic-share-close {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: .25rem;
+  }
+
+  .comic-share-comment-label {
+    font-size: .78rem;
+  }
+
+  .comic-share-comment-input {
+    border: 1px solid var(--bordercl);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    font-size: .78rem;
+    padding: .4rem;
+    resize: vertical;
+    width: 100%;
+  }
+
+  .comic-share-include-text-label {
+    align-items: center;
+    display: flex;
+    font-size: .78rem;
+    gap: .5rem;
+  }
+
+  .comic-share-body label {
+    display: block;
+    font-size: .78rem;
+  }
+
+  .comic-share-body-text {
+    box-sizing: border-box;
+    font: inherit;
+    font-size: .78rem;
+    resize: vertical;
+    width: 100%;
+  }
+
+  .comic-share-preview {
+    display: grid;
+    gap: .5rem;
+  }
+
+  .comic-share-preview-comment {
+    border-left: 3px solid var(--maincolor);
+    margin: 0;
+    padding: .4rem .6rem;
+    white-space: pre-wrap;
+  }
+
+  .comic-share-preview-block {
+    border: 1px solid var(--bordercl);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .comic-share-preview-content {
+    max-height: 24rem;
+    overflow-y: auto;
+  }
+
+  .comic-share-preview-content .comic-share-preview-panel {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: .75rem;
+  }
+
+  .comic-share-preview-panel img,
+  .comic-share-preview-panel svg {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .comic-share-preview-panel .image-container,
+  .comic-share-preview-panel figure {
+    width: 100% !important;
+  }
+
+  .comic-share-preview-panel .image-dialogue {
+    max-width: 100%;
+    width: auto !important;
+  }
+
+  .transcripts-hidden .comic-share-preview-panel .image-dialogue {
+    clip: auto;
+    clip-path: none;
+    height: auto;
+    margin: 0 auto 1rem;
+    overflow: visible;
+    position: static !important;
+    white-space: normal;
+  }
+
+  .comic-share-capture {
+    background: #fff;
+    box-sizing: border-box;
+    color: #232333;
+    left: -10000px;
+    position: fixed;
+    top: 0;
+    width: 700px;
+  }
+
+  .comic-share-capture .comic-share-preview-content {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .comic-share-help {
+    font-size: .74rem;
+    margin: 0;
+  }
+
+  .comic-share-button:disabled {
+    cursor: wait;
+    opacity: .5;
+  }
+
+  .comic-share-preview-link {
+    border-top: 1px solid var(--bordercl);
+    font-size: .72rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+    padding: .65rem;
+  }
+
+  .comic-share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+  }
+
+  .comic-share-button {
+    background: transparent;
+    border: 1px solid var(--bordercl);
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    font-size: .75rem;
+    line-height: 1.2;
+    min-height: 1.75rem;
+    padding: .15rem .4rem;
+  }
+
+  .comic-share-button:hover {
+    background: var(--hovercolor);
+    color: #fff;
+  }
+
+  .comic-share-button:focus-visible,
+  .comic-share-comment-input:focus-visible,
+  .comic-share-close:focus-visible {
+    outline: 2px solid var(--hovercolor);
+    outline-offset: 2px;
+  }
+
+  .comic-share-status {
+    font-size: .74rem;
+    margin: .4rem 0 0;
+    min-height: 1em;
+  }
+
+  @media (hover: none) {
+    .comic-share-trigger {
+      opacity: .75;
+    }
+  }
+
   .transcript-toggle {
     align-items: center;
     display: inline-flex;
@@ -187,7 +473,10 @@
   }
 
   @media print {
-    .post-controls {
+    .post-controls,
+    .comic-share-trigger,
+    .comic-share-context-menu,
+    .comic-share-dialog {
       display: none;
     }
 
@@ -304,7 +593,8 @@
   }
 
   .panel-group img {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     height: auto;
     width: 100%;
   }
@@ -314,7 +604,7 @@
     text-align: center;
   }
 
-  .comic-panel {
+  .comic-panel-framed {
     margin: 2rem 0;
     padding: 1rem;
     border: 1.5px solid #575752;
@@ -375,11 +665,15 @@
       grid-template-columns: 1fr;
     }
 
+    .comic-share-comment-input {
+      width: 100%;
+    }
+
     .sized-image {
       width: 100% !important;
     }
 
-    .comic-panel {
+    .comic-panel-framed {
       margin: 1.5rem 0;
       padding: 0.75rem;
       border-width: 1px;
