@@ -54,7 +54,7 @@
         <meta property="og:url" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/" />
         <meta property="og:title" content="8. 유닉스와 C언어" />
         <meta property="og:description" content="멀틱스 프로젝트에서 물러난 벨 연구소의 연구자들이 PDP-7에서 유닉스를 만들고, B 언어의 한계를 넘어 NB와 C를 개발해 유닉스 커널을 다시 작성하기까지의 이야기입니다." />
-        <meta property="og:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/8_15_ko.png" />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/pdf_feature_ko.png" />
         <meta property="article:author" content="Joone Hur" />
         <meta property="article:published_time" content="2023-09-04" />
         <meta property="article:tag" content="1970년대">
@@ -72,7 +72,7 @@
         <meta name="twitter:creator" content="@joone" />
         <meta name="twitter:title" content="8. 유닉스와 C언어" />
         <meta name="twitter:description" content="멀틱스 프로젝트에서 물러난 벨 연구소의 연구자들이 PDP-7에서 유닉스를 만들고, B 언어의 한계를 넘어 NB와 C를 개발해 유닉스 커널을 다시 작성하기까지의 이야기입니다." />
-        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/8_15_ko.png" />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/8. The Origins of Unix and the C Language/images/pdf_feature_ko.png" />
         <script>
           document.documentElement.classList.add("transcripts-hidden");
           try {
@@ -112,115 +112,151 @@
                     </button>
                   </div>
                   <section class="body" id="comic-transcript">
-                    <p>1960년대 MIT에서 <a href="https://ko.wikipedia.org/wiki/호환_시분할_시스템 ">ITS(Incompatible Timesharing System)</a>가 한창 개발되고 있는 동안, 미 동부의 다른 곳에서도 해커의 기운이 물씬 풍기는 곳이 있었는데, 바로 벨 연구소(AT&amp;T Bell Laboratories)였다. 여기서 앞으로 세상을 바꿀 유닉스와 C언어가 개발되고 있었다.</p>
+                    <h2>벨 연구소와 멀틱스 프로젝트</h2>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-1">
+<p>1960년대 MIT에서 <a href="https://ko.wikipedia.org/wiki/호환_시분할_시스템 ">ITS(Incompatible Timesharing System)</a>가 한창 개발되고 있는 동안, 미 동부의 다른 곳에서도 해커의 기운이 물씬 풍기는 곳이 있었는데, 바로 벨 연구소(AT&amp;T Bell Laboratories)였다. 여기서 앞으로 세상을 바꿀 유닉스와 C언어가 개발되고 있었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_15_ko-600.webp 600w, images/8_15_ko-800.webp 800w, images/8_15_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_15_ko.png" alt="MIT와 벨 연구소의 프로그래머들이 서로 다른 대형 컴퓨터에서 작업한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_parallel_ko-600.webp 600w, images/pdf_parallel_ko-800.webp 800w, images/pdf_parallel_ko.webp 990w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_parallel_ko.png" alt="MIT와 벨 연구소의 프로그래머들이 서로 다른 대형 컴퓨터에서 작업한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>어디선가 포스가 느껴진다!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>MIT에서는 ITS가 만들어지고 있었고, 공교롭게도 벨 연구소에서는 <a href="https://ko.wikipedia.org/wiki/멀틱스 ">멀틱스(Multics)</a> 개발에 참여했던 사람들이 나와 유닉스를 만들기 시작했다. 그 중심에는 <a href="https://ko.wikipedia.org/wiki/켄_톰프슨 ">켄 톰프슨</a>, <a href="https://ko.wikipedia.org/wiki/데니스_리치 ">데니스 리치</a>, 조 오산나가 있었다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>어디선가 포스가 느껴진다!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<p>MIT에서는 ITS가 만들어지고 있었고, 공교롭게도 벨 연구소에서는 <a href="https://ko.wikipedia.org/wiki/멀틱스 ">멀틱스(Multics)</a> 개발에 참여했던 사람들이 나와 유닉스를 만들기 시작했다. 그 중심에는 <a href="https://ko.wikipedia.org/wiki/켄_톰프슨 ">켄 톰프슨</a>, <a href="https://ko.wikipedia.org/wiki/데니스_리치 ">데니스 리치</a>, 조 오산나가 있었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_1_ko-600.webp 600w, images/8_1_ko-800.webp 800w, images/8_1_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_1_ko.png" alt="벨 연구소 프로그래머 두 명이 커피를 마시며 멀틱스 프로젝트를 이야기한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_coffee_ko-600.webp 600w, images/pdf_coffee_ko-800.webp 800w, images/pdf_coffee_ko.webp 920w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_coffee_ko.png" alt="벨 연구소 프로그래머 두 명이 커피를 마시며 멀틱스 프로젝트를 이야기한다."></picture>
             
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>이제 멀틱스 개발에서 손을 떼야 할 것 같아.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>예상보다 너무 개발기간이 길어.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>멀틱스 프로젝트는 1964년에 시작되었으나, 코드 크기가 커지고 복잡도가 높아지면서 벨 연구소에서 예상했던 것보다 일정이 많이 지연되고 있었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_4_ko-600.webp 600w, images/8_4_ko-800.webp 800w, images/8_4_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_4_ko.png" alt="한 프로그래머가 복잡한 프로젝트를 산에 비유하고, 다른 프로그래머는 머리를 감싸 쥔다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_complexity_ko.webp 576w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_complexity_ko.png" alt="한 프로그래머가 복잡한 프로젝트를 산에 비유하며 머리를 감싸 쥔다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>정말이지 프로젝트가 산으로 가고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>코드가 너무 복잡해 기능이 너무 많아<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>결국 벨 연구소는 1969년 멀틱스 개발에서 손을 뗀다. 이후에도 멀틱스 개발은 계속되어 실제 서비스와 상용 시스템으로 운영되었지만, 벨 연구소가 기다리기에는 개발이 너무 늦어지고 비용도 많이 들었다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>정말이지 프로젝트가 산으로 가고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>코드가 너무 복잡해 기능이 너무 많아<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-2">
+<p>결국 벨 연구소는 1969년 멀틱스 개발에서 손을 뗀다. 이후에도 멀틱스 개발은 계속되어 실제 서비스와 상용 시스템으로 운영되었지만, 벨 연구소가 기다리기에는 개발이 너무 늦어지고 비용도 많이 들었다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_12_ko-600.webp 600w, images/8_12_ko-800.webp 800w, images/8_12_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_12_ko.png" alt="벨 연구소 관계자가 떠나는 동안 GE와 MIT 관계자들은 멀틱스라고 적힌 높은 문서 더미 앞에 남아 있다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_leave_ko-600.webp 600w, images/pdf_leave_ko-800.webp 800w, images/pdf_leave_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_leave_ko.png" alt="AT&amp;T 벨 연구소 관계자가 떠나는 동안 GE와 MIT 대학 관계자들은 멀틱스 OS라고 적힌 높은 문서 더미 앞에 남아 있다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우리는 일정을 맞추기가 어려워서 떠납니다.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>벨 연구소로 돌아온 켄 톰프슨은 멀틱스 개발 경험을 토대로 좀 더 작고 단순한 운영체제를 만드는 작업을 주도했다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우리는 일정을 맞추기가 어려워서 떠납니다.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<h2>PDP-7에서 시작된 유닉스</h2>
+<p>벨 연구소로 돌아온 켄 톰프슨은 멀틱스 개발 경험을 토대로 좀 더 작고 단순한 운영체제를 만드는 작업을 주도했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_11_ko-600.webp 600w, images/8_11_ko-800.webp 800w, images/8_11_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_11_ko.png" alt="켄 톰프슨과 데니스 리치가 작은 전구를 들고 더 단순한 운영체제를 이야기한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_simple_ko-600.webp 600w, images/pdf_simple_ko-800.webp 800w, images/pdf_simple_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_simple_ko.png" alt="켄 톰프슨과 데니스 리치가 전구를 향해 손짓하며 더 단순한 운영체제를 이야기한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스, 내가 새롭게 운영체제를 만들고 있는데 멀틱스에서 좋은 아이디어를 가지고 오고, 좀 더 작고 단순하게 하려고.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>괜찮은 생각인데, 나도 껴줘.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>켄 톰프슨은 멀틱스에서 익힌 주요 아이디어를 가져와 더 단순한 형태로 유닉스에 구현했다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스, 내가 새롭게 운영체제를 만들고 있는데 멀틱스에서 좋은 아이디어를 가지고 오고, 좀 더 작고 단순하게 하려고.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>괜찮은 생각인데, 나도 껴줘.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>켄 톰프슨은 멀틱스에서 구현한 주요 아이디어를 가져와 더 단순한 형태로 유닉스에 구현했다. 여기에는 디렉터리와 사용자 프로그램으로 실행되는 커맨드 라인 해석기 같은 아이디어가 포함된다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_6_ko-600.webp 600w, images/8_6_ko-800.webp 800w, images/8_6_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_6_ko.png" alt="톰프슨이 명령어 라인, 파일 시스템, 동적 링크라고 적힌 풍선을 들고 있고 멀틱스는 더 많은 풍선을 들고 있다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_ideas_ko-600.webp 600w, images/pdf_ideas_ko-800.webp 800w, images/pdf_ideas_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_ideas_ko.png" alt="톰프슨이 명령어 해석기, 파일 시스템, 디렉터리라고 적힌 풍선을 들고 있고 멀틱스는 더 많은 풍선을 들고 있다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>무에서 유를 창조할수는 없지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>우선 켄 톰프슨, 러드 캐너데이, 데니스 리치가 함께 구상한 파일 시스템을 사용되지 않던 PDP-7에 구현했다. 설계의 대부분은 톰프슨이 맡았고, 리치는 디바이스 파일 아이디어를 보탰다. 이어서 프로세스, 유틸리티, 커맨드 라인 해석기를 추가했고, 조 오산나를 비롯한 동료들도 개발에 참여했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>무에서 유를 창조할수는 없지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>우선 켄 톰프슨, 러드 캐너데이, 데니스 리치가 함께 구상한 파일 시스템을 아무도 사용하지 않고 있던 PDP-7에 구현했다. 설계의 대부분은 톰프슨이 맡았고, 리치는 디바이스 파일 아이디어를 보탰다. 이어서 프로세스, 유틸리티, 커맨드 라인 해석기를 추가했고, 조 오산나를 비롯한 동료들도 개발에 참여했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_14_ko-600.webp 600w, images/8_14_ko-800.webp 800w, images/8_14_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_14_ko.png" alt="톰프슨, 리치, 동료 한 명이 파일 시스템의 이름과 디바이스 파일 아이디어를 논의한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_filesystem_ko-600.webp 600w, images/pdf_filesystem_ko-800.webp 800w, images/pdf_filesystem_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_filesystem_ko.png" alt="톰프슨과 리치가 파일 시스템의 이름과 디바이스 파일 아이디어를 논의한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 파일시스템을 만들고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이름은 유닉스 어때?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>디바이스를 파일로 생각하고 관리하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 멀틱스라는 이름을 비튼 &quot;Unix&quot;라는 이름을 제안했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p><p>그 후 <a href="https://ko.wikipedia.org/wiki/PDP-11 ">PDP-11</a>이 도입되었는데, PDP-7과 CPU 명령어가 달랐다. 유닉스는 어셈블리어로 개발되었기 때문에 PDP-11용으로 코드를 다시 짜야 했다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 파일시스템을 만들고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이 운영체제에 이름도 붙여야겠네.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>디바이스를 파일로 생각하고 관리하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 멀틱스라는 이름을 비튼 &quot;Unix&quot;라는 이름을 제안했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p><h2>PDP-11과 B 언어의 한계</h2>
+<p>그 후 <a href="https://ko.wikipedia.org/wiki/PDP-11 ">PDP-11</a>이 도입되었는데, PDP-7과 CPU 명령어가 달랐다. 유닉스는 어셈블리어로 개발되었기 때문에 PDP-11용으로 코드를 다시 짜야 했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_2_ko-600.webp 600w, images/8_2_ko-800.webp 800w, images/8_2_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_2_ko.png" alt="리치가 새 PDP-11을 소개하자 톰프슨이 어셈블리어 재작성 문제를 설명한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_pdp11_ko-600.webp 600w, images/pdf_pdp11_ko-800.webp 800w, images/pdf_pdp11_ko.webp 922w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_pdp11_ko.png" alt="리치가 새 PDP-11을 소개하자 톰프슨이 어셈블리어 재작성 문제를 설명한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>켄 PDP-11이 새로 들어왔는데, 여기에 유닉스를 포팅하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>좋은 생각인데, 문제는 어셈블리어로 다시 코딩을 해야 한다는거지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>켄 PDP-11이 새로 들어왔는데, 여기에 유닉스를 포팅하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>좋은 생각인데, 문제는 어셈블리어로 다시 코딩을 해야 한다는거지<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-3">
+
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_9_ko-600.webp 600w, images/8_9_ko-800.webp 800w, images/8_9_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_9_ko.png" alt="톰프슨이 포팅 완료를 기뻐하고 리치는 새 컴퓨터마다 어셈블리어를 다시 쓸 수 없다고 말한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_port_ko-600.webp 600w, images/pdf_port_ko-800.webp 800w, images/pdf_port_ko.webp 926w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_port_ko.png" alt="톰프슨이 포팅 완료를 기뻐하고 리치는 새 컴퓨터마다 어셈블리어를 다시 쓸 수 없다고 말한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>와~ 드디어 포팅 끝!<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>그런데, 매번 새 컴퓨터가 나올 때 마다 어셈블리어로 포팅할 수는 없잖아.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>하지만 새 컴퓨터가 들어올 때마다 어셈블리 코드를 다시 짤 수는 없는 노릇이었다. 그렇다면 B언어로 유닉스를 다시 만들 수 있을까?</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>와~ 드디어 포팅 끝!<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>그런데, 매번 새 컴퓨터가 나올 때 마다 어셈블리어로 포팅할 수는 없잖아.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_8_ko-600.webp 600w, images/8_8_ko-800.webp 800w, images/8_8_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_8_ko.png" alt="톰프슨이 B라고 적힌 종이를 들고 유닉스 재작성을 제안하고, 아래에서는 리치가 PDP-11 포팅 문제를 설명한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_b_ko-600.webp 600w, images/pdf_b_ko-800.webp 800w, images/pdf_b_ko.webp 922w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_b_ko.png" alt="톰프슨이 B라고 적힌 종이를 들고 유닉스 재작성을 제안한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>그래? 데니스, 우리 B언어로 유닉스를 다시 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이제, 어셈블리어가 아니어도 OS 커널을 만들수 있을거야.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>PDP-11 정도면 B언어로 유닉스를 포팅할 수 있겠지.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>당시에는 아직 어려웠다. B언어는 켄 톰프슨이 1969~70년 무렵 초기 유닉스 환경을 위해 만든 언어로, BCPL에서 발전한 작고 단순한 언어였다. 하지만 B 컴파일러가 만든 코드는 어셈블리 코드보다 훨씬 느렸고, 모든 데이터를 하나의 기계어 워드로 다루는 방식도 바이트 단위로 메모리에 접근하는 PDP-11과 잘 맞지 않았다. 그래서 유닉스 전체를 B언어로 다시 쓰는 방안은 잠시 검토되었을 뿐이었다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>그래? 데니스, 우리 B언어로 유닉스를 다시 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이제 어셈블리어가 아닌 고급언어로도 OS커널을 만들 수 있을거야.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_5_ko-600.webp 600w, images/8_5_ko-800.webp 800w, images/8_5_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_5_ko.png" alt="리치가 PDP-11 단말기에서 B 언어 포팅 작업을 한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_b_first_ko.webp 548w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_b_first_ko.png" alt="리치가 손짓하며 PDP-11에서 B언어가 제대로 동작하도록 만드는 일을 설명한다." class="sized-image" style="width: 80%;"></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 B언어를 PDP-11에 포팅해야하는데, 문제가 있네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1971년 데니스 리치는 B언어에 문자 타입을 추가하고, <code>int</code>와 <code>char</code>를 명시하는 타입 체계를 만들기 시작했다. 또한 스레드 코드 대신 PDP-11 기계어를 생성하도록 컴파일러를 다시 작성했다. 그는 잠시 존재했던 이 언어를 &quot;New B&quot;라는 뜻의 NB라고 불렀다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 B언어가 PDP-11에서 제대로 동작하게 해야 해.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-4">
+<p>B언어는 켄 톰프슨이 1969~70년 무렵 초기 유닉스 환경을 위해 만든 언어로, BCPL에서 발전한 작고 단순한 언어였다. 하지만 B 컴파일러가 만든 코드는 어셈블리 코드보다 훨씬 느렸고, 모든 데이터를 하나의 기계어 워드로 다루는 방식도 바이트 단위로 메모리에 접근하는 PDP-11과 잘 맞지 않았다. 그래서 유닉스 전체를 B언어로 다시 쓰는데 어려움이 많았다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_10_ko-600.webp 600w, images/8_10_ko-800.webp 800w, images/8_10_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_10_ko.png" alt="톰프슨이 리치에게 B 언어 포팅 진행 상황을 묻는다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_b_port_ko-600.webp 600w, images/pdf_b_port_ko-800.webp 800w, images/pdf_b_port_ko.webp 888w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_b_port_ko.png" alt="리치가 PDP-11 단말기에서 B 언어 포팅 작업을 한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스 B언어 포팅은 잘 되가?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>문제가 많아. 우선 PDP-11에서는 문자 데이터 타입에 접근하기가 어려워.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 B언어를 PDP-11에 포팅해야하는데, 문제가 있네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<h2>B에서 NB를 거쳐 C로</h2>
+<p>1971년 데니스 리치는 B언어에 문자 타입을 추가하고, <code>int</code>와 <code>char</code>를 명시하는 타입 체계를 만들기 시작했다. 또한 스레드 코드 대신 PDP-11 기계어를 생성하도록 컴파일러를 다시 작성했다. 그는 잠시 존재했던 이 언어를 &quot;New B&quot;라는 뜻의 NB라고 불렀다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_13_ko-600.webp 600w, images/8_13_ko-800.webp 800w, images/8_13_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_13_ko.png" alt="톰프슨이 B 언어를 완전히 고치자고 제안하자 리치는 다시 짜야 할지도 모른다고 생각한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_bytes_ko-600.webp 600w, images/pdf_bytes_ko-800.webp 800w, images/pdf_bytes_ko.webp 922w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_bytes_ko.png" alt="톰프슨이 리치에게 B 언어 포팅 진행 상황을 묻는다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>하하 이번 기회에 B언어를 싹 뜯어 고치는거야<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>다시 짜야 할지도 모르는데…<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>리치는 B언어를 싹 뜯어고치기 시작했다. 1972년에는 타입 체계를 확장하고 배열과 포인터의 동작을 새로 정리했으며, 구조체와 새로운 컴파일러를 만들었다. 새로운 언어가 모습을 갖추자 C언어라고 이름 붙였다. B의 다음 글자를 따른 것인지, BCPL의 글자를 이어 간 것인지는 리치도 명확히 정하지 않았다. 1973년 초에는 오늘날 C언어의 핵심 기능이 거의 완성되었다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>데니스 B언어 포팅은 잘 되가?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>문제가 많아. B언어는 바이트 크기의 문자를 잘 다루지 못해.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_3_ko-600.webp 600w, images/8_3_ko-800.webp 800w, images/8_3_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_3_ko.png" alt="톰프슨과 리치가 PDP-11 앞에서 새 언어의 이름을 정한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_rebuild_ko-600.webp 600w, images/pdf_rebuild_ko-800.webp 800w, images/pdf_rebuild_ko.webp 922w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_rebuild_ko.png" alt="톰프슨이 B 언어를 완전히 고치자고 제안하자 리치는 다시 짜야 할지도 모른다고 생각한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>C언어라고 부르면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>우와 잘 동작하는데!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>1973년 여름, 톰프슨과 리치를 비롯한 동료들은 C언어로 유닉스 커널을 다시 작성했다. 특히 구조체 타입을 추가하면서 디렉터리 항목 같은 데이터를 메모리 구조에 맞게 표현할 수 있게 되었다. 이제 C언어는 유닉스 커널을 작성할 수 있을 정도로 강력해졌다.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>하하 이번 기회에 B언어를 싹 뜯어 고치는거야<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>다시 짜야 할지도 모르는데...<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>리치는 B언어를 싹 뜯어고치기 시작했다. 1972년에는 타입 체계를 확장하고 배열과 포인터의 동작을 새로 정리했으며, 구조체와 새로운 컴파일러를 만들었다. 새로운 언어가 모습을 갖추자 C언어라고 이름 붙였다. B의 다음 글자를 따른 것인지, BCPL의 글자를 이어 간 것인지는 리치도 명확히 정하지 않았다. 1973년 초에는 오늘날 C언어의 핵심 기능이 거의 완성되었다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "title="C 언어의 발전, 데니스 M. 리치">&lbrack;2&rbrack;</a></p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-5">
+
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_7_ko-600.webp 600w, images/8_7_ko-800.webp 800w, images/8_7_ko.webp 862w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_7_ko.png" alt="리치가 단말기에 코드를 입력하며 이제 어셈블리어로 코딩하지 않아도 된다고 말한다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_c_ko-600.webp 600w, images/pdf_c_ko-800.webp 800w, images/pdf_c_ko.webp 890w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_c_ko.png" alt="톰프슨과 리치가 PDP-11 앞에서 새 언어의 이름을 정한다."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>ㅎㅎ 더 이상 어셈블리어로 코딩을 하지 않아도 되네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>C언어라고 부르면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>우와 잘 동작하는데!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<h2>C로 다시 쓴 유닉스 커널</h2>
+<p>1973년 여름, 톰프슨과 리치를 비롯한 동료들은 유닉스 커널 대부분을 C언어로 다시 작성했다. 하드웨어에 종속된 일부 코드는 여전히 어셈블리어가 필요했다. 특히 구조체 타입을 추가하면서 디렉터리 항목 같은 데이터를 메모리 구조에 맞게 표현할 수 있게 되었다.</p><pre><code class="hljs language-c">  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> {</span>
+    <span class="hljs-type">int</span> x;
+    <span class="hljs-type">int</span> y;
+  };
+
+  <span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span>
+  {
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> <span class="hljs-title">p</span> =</span> { <span class="hljs-number">1</span>, <span class="hljs-number">3</span> };  <span class="hljs-comment">/* initialize variable */</span>
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> <span class="hljs-title">q</span>;</span>             <span class="hljs-comment">/* uninitialized */</span>
+    q = p;                      <span class="hljs-comment">/* copy member values from p into q */</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  }</code></pre><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-6">
+<p>이제 C언어는 유닉스 커널을 작성할 수 있을 정도로 강력해졌다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
-            <picture><source type="image/webp" srcset="images/8_16_ko-600.webp 600w, images/8_16_ko-800.webp 800w, images/8_16_ko.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/8_16_ko.png" alt="C 영웅이 UNIX 표지판을 들어 올리고 작은 어셈블리 언어 영웅이 아래에서 바라본다."></picture>
+            <picture><source type="image/webp" srcset="images/pdf_kernel_ko-600.webp 600w, images/pdf_kernel_ko-800.webp 800w, images/pdf_kernel_ko.webp 918w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_kernel_ko.png" alt="유닉스 커널 대부분을 C언어로 다시 작성한 뒤 리치가 단말기에 코드를 입력한다."></picture>
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>ㅎㅎ 이제 어셈블리어로 짤 부분이 훨씬 줄었네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <picture><source type="image/webp" srcset="images/pdf_hero_ko-600.webp 600w, images/pdf_hero_ko.webp 658w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_hero_ko.png" alt="C 영웅이 UNIX 표지판을 들어 올리고 작은 어셈블리 언어 영웅이 아래에서 바라본다."></picture>
             
           </figure>
         </div>
