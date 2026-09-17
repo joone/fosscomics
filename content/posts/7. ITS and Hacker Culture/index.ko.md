@@ -79,13 +79,13 @@ MIT의 초기 해커 공동체는 인공지능 연구의 선구자인 마빈 민
 > "Multics 개발은 대체 언제 끝나는 거지?" \
 > "차라리 우리만의 운영체제를 만들까?"
 
-MIT 해커 [톰 나이트](https://en.wikipedia.org/wiki/Tom_Knight_(scientist))는 최초의 ITS 커널을 개발했습니다.
+MIT 해커 [톰 나이트](https://en.wikipedia.org/wiki/Tom_Knight_(scientist))는 최초의 ITS 커널을 개발했다.
 
 ![톰 나이트가 다른 프로그래머에게 ITS라는 이름을 제안한다.](images/pdf_name_ko.webp "size:80%")
 > "MIT에 Compatible Time-Sharing System이 있으니, 이건 ITS라고 하자." \
 > "호환 불가 시분할 시스템?"
 
-ITS 개발은 PDP-6에서 시작됐고 시스템은 어셈블리어로 작성됐습니다.
+ITS 개발은 PDP-6에서 시작됐고 시스템은 어셈블리어로 작성되었다.
 
 ![프로그래머가 PDP-6 콘솔과 종이테이프 판독기 옆에서 어셈블리 코드를 작성한다.](images/pdf_assembly_ko.webp "size:70%")
 > "ITS를 어셈블리어로 작성하고 있어."

@@ -70,9 +70,9 @@ MIT's early hacker community also had close ties to the AI research group led by
 
 When [Project MAC](https://www.multicians.org/project-mac.html) began in 1963, Minsky's AI group became part of it[&lbrack;5&rbrack;][5]. Another group within Project MAC was developing an operating system called [Multics](https://en.wikipedia.org/wiki/Multics) with GE and Bell Labs. MIT's initial Multics system used the GE-645[&lbrack;8&rbrack;][8].
 
-But the AI programmers disagreed with the direction of Multics' design and began developing their own operating system, ITS (Incompatible Timesharing System), in 1967[&lbrack;3&rbrack;][3]. In 1970, the group split from Project MAC to become the independent AI Lab[&lbrack;5&rbrack;][5].
-
 ![A person stands among rows of large computer cabinets in a Multics machine room.](images/pdf_multics_en.webp "General Electric model GE-645")
+
+But the AI programmers disagreed with the direction of Multics' design and began developing their own operating system, ITS (Incompatible Timesharing System), in 1967[&lbrack;3&rbrack;][3]. In 1970, the group split from Project MAC to become the independent AI Lab[&lbrack;5&rbrack;][5].
 
 ![Two AI group programmers discuss building their own operating system instead of Multics.](images/pdf_own_os_en.webp "size:80%")
 > "Is Multics ever going to be finished?"\
