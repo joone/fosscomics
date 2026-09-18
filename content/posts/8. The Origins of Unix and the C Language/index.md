@@ -110,6 +110,24 @@ In the summer of 1973, Thompson, Ritchie, and their colleagues rewrote the Unix 
 
 Structures were especially useful. They let C describe data such as Unix directory entries in a way that matched how it was laid out in memory.
 
+```c
+  struct point {
+    int x;
+    int y;
+  };
+
+  int main(void)
+  {
+    struct point p = { 1, 3 };  /* initialize variable */
+    struct point q;             /* uninitialized */
+    q = p;                      /* copy member values from p into q */
+
+    return 0;
+  }
+```
+
+*A structure example in modern C. The structure groups `x` and `y` into one type; `q = p` copies both member values from `p` to `q`.*
+
 :::panel rounded="true"
 Now C was powerful enough to write a Unix kernel.
 
