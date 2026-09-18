@@ -232,7 +232,19 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;How about calling it C?&quot; <br>&quot;Sounds good&quot;</p></blockquote></div></section>
 <h2>Rewriting the Unix Kernel in C</h2>
-<p>In the summer of 1973, Thompson, Ritchie, and their colleagues rewrote the Unix kernel largely in C. A small amount of machine-dependent assembly was still needed.</p><p>Structures were especially useful. They let C describe data such as Unix directory entries in a way that matched how it was laid out in memory.</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-6">
+<p>In the summer of 1973, Thompson, Ritchie, and their colleagues rewrote the Unix kernel largely in C. A small amount of machine-dependent assembly was still needed.</p><p>Structures were especially useful. They let C describe data such as Unix directory entries in a way that matched how it was laid out in memory.</p><pre><code class="hljs language-c">  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> {</span>
+    <span class="hljs-type">int</span> x;
+    <span class="hljs-type">int</span> y;
+  };
+
+  <span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span>
+  {
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> <span class="hljs-title">p</span> =</span> { <span class="hljs-number">1</span>, <span class="hljs-number">3</span> };  <span class="hljs-comment">/* initialize variable */</span>
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> <span class="hljs-title">q</span>;</span>             <span class="hljs-comment">/* uninitialized */</span>
+    q = p;                      <span class="hljs-comment">/* copy member values from p into q */</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  }</code></pre><p><em>A structure example in modern C. The structure groups <code>x</code> and <code>y</code> into one type; <code>q = p</code> copies both member values from <code>p</code> to <code>q</code>.</em></p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-6">
 <p>Now C was powerful enough to write a Unix kernel.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -294,7 +306,7 @@
                 <a class="border"></a>
               </div>
               <div class="footer-info">
-                © 2026 Joone Hur | Published on Sep 17, 2026
+                © 2026 Joone Hur | Published on Sep 18, 2026
               </div>
             </footer>
         </div>
