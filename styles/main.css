@@ -181,9 +181,11 @@
     background: #fff;
     border: 1px solid var(--bordercl);
     border-radius: 6px;
+    box-sizing: border-box;
     color: inherit;
     max-height: calc(100vh - 2rem);
     max-width: min(34rem, calc(100vw - 2rem));
+    overflow: hidden;
     padding: 0;
     width: 100%;
   }
@@ -195,6 +197,9 @@
   .comic-share-dialog-content {
     display: grid;
     gap: .65rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding: 1rem;
   }
 
@@ -318,7 +323,7 @@
     left: -10000px;
     position: fixed;
     top: 0;
-    width: 700px;
+    width: 32rem;
   }
 
   .comic-share-capture .comic-share-preview-content {
@@ -348,6 +353,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: .35rem;
+  }
+
+  .comic-share-web-buttons {
+    border-top: 1px solid var(--bordercl);
+    margin-top: .65rem;
+    padding-top: .65rem;
   }
 
   .comic-share-button {
@@ -384,6 +395,40 @@
   @media (hover: none) {
     .comic-share-trigger {
       opacity: .75;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .comic-share-dialog {
+      max-height: calc(100vh - 1rem);
+      max-height: calc(100dvh - 1rem);
+      max-width: calc(100vw - 1rem);
+    }
+
+    .comic-share-dialog-content {
+      gap: .45rem;
+      max-height: calc(100vh - 1rem);
+      max-height: calc(100dvh - 1rem);
+      padding: .65rem;
+    }
+
+    .comic-share-dialog-header {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .comic-share-preview-content {
+      max-height: 32dvh;
+    }
+
+    .comic-share-preview-content .comic-share-preview-panel {
+      padding: .5rem;
+    }
+
+    .comic-share-button {
+      min-height: 2.25rem;
     }
   }
 
