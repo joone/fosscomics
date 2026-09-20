@@ -306,16 +306,6 @@
     width: auto !important;
   }
 
-  .transcripts-hidden .comic-share-preview-panel .image-dialogue {
-    clip: auto;
-    clip-path: none;
-    height: auto;
-    margin: 0 auto 1rem;
-    overflow: visible;
-    position: static !important;
-    white-space: normal;
-  }
-
   .comic-share-capture {
     background: #fff;
     box-sizing: border-box;

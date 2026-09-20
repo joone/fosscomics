@@ -397,12 +397,16 @@ window.FossbookShareImage = (() => {
       releaseShareImage();
       const generation = renderGeneration;
       shareStatus.textContent = shareDefaults.imagePreparing;
-      bodyTextPreview.hidden = includeTextInput.checked || !bodyTextArea.value;
       const panelPreview = activeBlock.panel.cloneNode(true);
       panelPreview.removeAttribute("id");
       panelPreview.classList.remove("comic-share-target");
       panelPreview.classList.add("comic-share-preview-panel");
       panelPreview.querySelectorAll(".comic-share-trigger").forEach((trigger) => trigger.remove());
+      if (document.documentElement.classList.contains("transcripts-hidden")) {
+        panelPreview.querySelectorAll(".image-dialogue").forEach((dialogue) => dialogue.remove());
+      }
+      bodyTextArea.value = FossbookShareImage.bodyText(panelPreview);
+      bodyTextPreview.hidden = includeTextInput.checked || !bodyTextArea.value;
       const hasArtwork = includeTextInput.checked || FossbookShareImage.artworkOnly(panelPreview);
       namespaceCloneIds(panelPreview, activeBlock.blockId + "-preview-");
       previewContent.replaceChildren(panelPreview);
@@ -435,7 +439,6 @@ window.FossbookShareImage = (() => {
       closeContextMenu();
       commentInput.value = "";
       includeTextInput.checked = true;
-      bodyTextArea.value = FossbookShareImage.bodyText(activeBlock.panel);
       previewLink.textContent = activeBlock.blockUrl;
       updateSharePreview();
       shareDialog.showModal();
