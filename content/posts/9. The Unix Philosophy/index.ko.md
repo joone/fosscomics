@@ -47,7 +47,7 @@ flowchart TB
 
 :::panel rounded="true"
 
-1991년 리누스 토발즈는 새로산 386PC에서 미닉스를 사용하고 있었는데, 타넨바움의 *Operating Systems: Design and Implementation*을 읽으며 리눅스 커널 개발을 시작했다.
+1991년 리누스 토발즈는 새로산 인텔 386PC에서 미닉스를 사용하고 있었는데, 타넨바움의 *Operating Systems: Design and Implementation*을 읽으며 리눅스 커널 개발을 시작했다.
 
 ![리누스 토발즈가 컴퓨터 옆에서 펼친 운영체제 교재를 들고 읽고 있다.](images/pdf_reading_ko.webp)
 > "긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까."

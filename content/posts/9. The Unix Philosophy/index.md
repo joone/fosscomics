@@ -47,7 +47,7 @@ In 1979, the Unix V7 license prohibited using its source code in the classroom. 
 
 :::panel rounded="true"
 
-In 1991, Linus Torvalds was using MINIX on his newly purchased 386 PC. While reading Tanenbaum's *Operating Systems: Design and Implementation*, he began developing the Linux kernel.
+In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. While reading Tanenbaum's *Operating Systems: Design and Implementation*, he began developing the Linux kernel.
 
 ![Linus Torvalds holds an open operating-systems textbook beside his computer.](images/pdf_reading_en.webp)
 > "Long winter break... I think I'll read this MINIX book."
