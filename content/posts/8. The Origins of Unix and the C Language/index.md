@@ -2,7 +2,7 @@
 title: 8. The Origins of Unix and the C Language
 date: "2023-09-04"
 image: pdf_feature_en.webp
-description: In the 1960s, while ITS was developed at MIT, AT&T Bell Labs fostered a similar hacker spirit, creating Unix and the C language. Ken Thompson and Dennis Ritchie, transitioning from the Multics project, aimed for simplicity and efficiency, developing Unix on PDP-7 and later porting it to PDP-11. The creation of the C language, evolving from B, allowed Unix to be rewritten in a high-level language, setting a foundational standard for modern computing and operating system development...
+description: How did Unix begin? Why was C created, and why was Unix rewritten in C? This is the story of the people who created Unix and C.
 tags: UNIX, C Language, Ken Thompson, Dennis Ritchie, B Language, Bell Labs., Multics, PDP-11, 1970s
 ---
 
