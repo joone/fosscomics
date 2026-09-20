@@ -111,6 +111,7 @@
                   </div>
                   <section class="body" id="comic-transcript">
                     <h2>From rewiring to stored programs</h2>
+<section class="comic-panel" id="comic-panel-1">
 <p>When computers were first built, how did people program them? Early computers had nothing like today&#39;s software. More like desk calculators, they used switches such as relays and vacuum tubes to form logic circuits and were designed for a single purpose.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -125,14 +126,18 @@
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could I build one for ballistic calculations?&quot; <br>&quot;How many relays and vacuum tubes would it need?&quot;</p></blockquote></div><p><a href="https://en.wikipedia.org/wiki/ENIAC ">ENIAC</a> could run different programs by changing its plugboard wiring and switch settings. This was a cumbersome process, and changing a program could take days. Punched cards were used for input and output, not to store its programs<a href="http://www.seas.upenn.edu/about-seas/eniac/operation.php "title="Celebrating Penn Engineering History: ENIAC">&#91;1&#93;</a><a href="https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "title="ENIAC, Computer History Museum">&#91;4&#93;</a>.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could I build one for ballistic calculations?&quot; <br>&quot;How many relays and vacuum tubes would it need?&quot;</p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-2">
+<p><a href="https://en.wikipedia.org/wiki/ENIAC ">ENIAC</a> could run different programs by changing its plugboard wiring and switch settings. This was a cumbersome process, and changing a program could take days. Punched cards were used for input and output, not to store its programs<a href="http://www.seas.upenn.edu/about-seas/eniac/operation.php "title="Celebrating Penn Engineering History: ENIAC">&#91;1&#93;</a><a href="https://www.computerhistory.org/revolution/birth-of-the-computer/4/78 "title="ENIAC, Computer History Museum">&#91;4&#93;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/eniac_programming-600.webp 600w, images/eniac_programming.webp 669w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/eniac_programming.png" alt="Two programmers configure ENIAC by connecting cables on its plugboards."></picture>
             
           </figure>
         </div>
-      <p>Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> entered regular operation in 1949. <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> was highly influential in the development of the stored-program design, although it became operational later.</p><h2>From machine code to assembly language</h2>
+      <p>Programming became much more practical when stored-program computers were introduced. A program could be loaded into electronic memory and executed without rewiring the machine. The Manchester Baby ran a stored program in 1948, and <a href="https://en.wikipedia.org/wiki/EDSAC ">EDSAC</a> entered regular operation in 1949. <a href="https://en.wikipedia.org/wiki/EDVAC ">EDVAC</a> was highly influential in the development of the stored-program design, although it became operational later.</p></section>
+<h2>From machine code to assembly language</h2>
+<section class="comic-panel" id="comic-panel-3">
 <p>A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called <a href="https://en.wikipedia.org/wiki/Machine_code ">machine code</a>. On binary computers such as EDSAC, machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -140,7 +145,8 @@
             
           </figure>
         </div>
-      <p>That is why early forms of assembly language appeared near the beginning of computer programming. Instead of numeric machine instructions, they used short symbols called mnemonics to make instructions easier to express. EDSAC programmers used single-letter order codes. A small bootstrap program called the Initial Orders read these codes from paper tape, translated them into machine instructions, and loaded them into memory<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC Initial Orders and Squares Program">&lbrack;2&rbrack;</a>.</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-1">
+      <p>That is why early forms of assembly language appeared near the beginning of computer programming. Instead of numeric machine instructions, they used short symbols called mnemonics to make instructions easier to express. EDSAC programmers used single-letter order codes. A small bootstrap program called the Initial Orders read these codes from paper tape, translated them into machine instructions, and loaded them into memory<a href="http://www.cl.cam.ac.uk/~mr10/edsacposter.pdf "title="EDSAC Initial Orders and Squares Program">&lbrack;2&rbrack;</a>.</p></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-4">
 <p>Each EDSAC instruction occupied one 17-bit word:</p><ul>
 <li>The first five bits were the operation code.</li>
 <li>The next bit was unused.</li>
@@ -159,6 +165,7 @@
 <li><code>H 2 S</code>: Load the value stored at memory address <code>2</code> into the multiplier register, preparing it for a multiplication operation.</li>
 </ul>
 <p>The final <code>S</code> is not an instruction; it indicates that the operand uses the short format. Short operands were 17 bits, while long operands were 35 bits<a href="https://en.wikipedia.org/wiki/EDSAC#Memory_and_instructions "title="EDSAC instruction format">&lbrack;6&rbrack;</a>.</p></section>
+<section class="comic-panel" id="comic-panel-5">
 <p>As you can see, raw binary instructions are difficult for people to understand and remember. Assembly language therefore represents low-level operations with mnemonics. Converting assembly language into machine code is called assembling.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -166,15 +173,18 @@
             
           </figure>
         </div>
-      <p>When no assembler was available, programmers sometimes translated assembly code into machine code themselves. This was called hand assembly. They looked up the numeric code for each mnemonic in an instruction table, calculated the required memory addresses, and constructed the complete machine instructions. Early forms of assembly language were already in use by the late 1940s and early 1950s, before high-level languages became common.</p>
+      </section>
+<section class="comic-panel" id="comic-panel-6">
+<p>When no assembler was available, programmers sometimes translated assembly code into machine code themselves. This was called hand assembly. They looked up the numeric code for each mnemonic in an instruction table, calculated the required memory addresses, and constructed the complete machine instructions. Early forms of assembly language were already in use by the late 1940s and early 1950s, before high-level languages became common.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_writing_en-600.webp 600w, images/pdf_writing_en-800.webp 800w, images/pdf_writing_en.webp 862w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_writing_en.png" alt="A programmer writes code on paper at a desk beside a model rocket." class="sized-image" style="width: 70%;"></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;m writing code.&quot;</p></blockquote></div><h2>Terminals and time-sharing systems</h2>
-<p>Interactive terminals with keyboards and displays remained uncommon in the early 1960s. Interactive computing did not begin with Multics, however: MIT&#39;s CTSS was first demonstrated in 1961. Early terminals often printed their output on paper rather than displaying it on a screen.</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-2">
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;m writing code.&quot;</p></blockquote></div></section>
+<h2>Terminals and time-sharing systems</h2>
+<p>Interactive terminals with keyboards and displays remained uncommon in the early 1960s. Interactive computing did not begin with Multics, however: MIT&#39;s CTSS was first demonstrated in 1961. Early terminals often printed their output on paper rather than displaying it on a screen.</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-7">
 <p><a href="https://en.wikipedia.org/wiki/Multics ">Multics</a>, whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to advance this approach to time-sharing. Time-sharing divided one computer&#39;s processing time into short intervals for multiple users, allowing each person to work interactively at a terminal<a href="https://www.multicians.org/history.html "title="History of Multics">&lbrack;3&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -184,6 +194,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;At last, a keyboard and a monitor.&quot;</p></blockquote></div></section>
 <p>By the 1970s, screen-and-keyboard terminals had become more common. But how did programmers write code and check the results when they did not have direct access to a terminal?</p><h2>Punched cards and batch processing</h2>
+<section class="comic-panel" id="comic-panel-8">
 <p>Early programmers often used punched cards to write code. Since the late nineteenth century, punched cards had been used to record and store data for machine processing, including work for the U.S. Census Bureau. The basic idea is loosely comparable to a modern OMR (<a href="https://en.wikipedia.org/wiki/Optical_mark_recognition ">optical mark recognition</a>) sheet: information is encoded by marking, or in this case punching, specific positions.</p><p>IBM standardized its widely adopted 80-column card in 1928 and supplied cards, keypunches, readers, and tabulating equipment around the world. Punched cards later became an important medium for entering programs and data into computers<a href="https://www.ibm.com/history/punched-card "title="The IBM Punched Card">&lbrack;5&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -191,21 +202,26 @@
             <figcaption>Punch card for Fortran programming</figcaption>
           </figure>
         </div>
-      <p>Programmers often first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source line per card; a long statement could continue across several cards. A keypunch recorded typed characters as holes in cards. Depending on the language and computer, an assembler or compiler running on the computer, not the keypunch, translated the submitted program into machine code.</p>
+      </section>
+<section class="comic-panel" id="comic-panel-9">
+<p>Programmers often first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source line per card; a long statement could continue across several cards. A keypunch recorded typed characters as holes in cards. Depending on the language and computer, an assembler or compiler running on the computer, not the keypunch, translated the submitted program into machine code.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_keypunch_en-600.webp 600w, images/pdf_keypunch_en-800.webp 800w, images/pdf_keypunch_en.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_keypunch_en.png" alt="A programmer types at a keypunch machine while a punched card feeds through it." class="sized-image" style="width: 70%;"></picture>
             <figcaption>IBM 026 keypunch machine</figcaption>
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;d better get this code onto punched cards.&quot;</p></blockquote></div><p>Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.</p>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I&#39;d better get this code onto punched cards.&quot;</p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-10">
+<p>Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_queue_en-600.webp 600w, images/pdf_queue_en-800.webp 800w, images/pdf_queue_en.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_queue_en.png" alt="Four programmers queue with punched cards while an operator accepts jobs at the machine-room window."></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could you check this, please?&quot; <br>&quot;Next.&quot;</p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-3">
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Could you check this, please?&quot; <br>&quot;Next.&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-11">
 <p>Before a program was punched onto cards, copying it could be as simple as transcribing someone else&#39;s handwritten source code.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">

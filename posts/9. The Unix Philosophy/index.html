@@ -113,6 +113,7 @@
                   </div>
                   <section class="body" id="comic-transcript">
                     <h2>Unix&#39;s Legacy Today</h2>
+<section class="comic-panel" id="comic-panel-1">
 <p>Information technology has changed and evolved at an incredible pace. But Unix has been around for more than five decades, and its philosophy, API design, and tools still live on in Unix and Unix-like operating systems.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -120,7 +121,8 @@
             <figcaption>First released in 1971</figcaption>
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;When do I get to retire?&quot;</p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-1">
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;When do I get to retire?&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-2">
 <p>Unix&#39;s legacy is still all around us. Android and Linux distributions such as Debian, Ubuntu, and Arch Linux use the Linux kernel. Apple&#39;s macOS and iOS, which run on Macs and iPhones, are Unix-based too. Even Windows can run a Linux environment through the Windows Subsystem for Linux (WSL).</p><pre class="mermaid">%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
 flowchart TB
     Unix([Unix]) --&gt; BSD([BSD])
@@ -137,6 +139,7 @@ flowchart TB
     MINIX([MINIX]) -. influenced development .-&gt; Linux([Linux])
     Linux -. runs on Windows through .-&gt; WSL([WSL])</pre><p>MINIX was developed as a small Unix-like system for teaching operating system design. For a more detailed family tree, see <a href="https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg ">Wikipedia</a>.</p></section>
 <h2>From MINIX to Linux</h2>
+<section class="comic-panel" id="comic-panel-3">
 <p>In 1979, the Unix V7 license prohibited using its source code in the classroom. In response, Professor Tanenbaum developed MINIX to teach operating system design and released it in 1987.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -144,7 +147,8 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Maybe I should build a simple OS for teaching operating systems.&quot;</p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-2">
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Maybe I should build a simple OS for teaching operating systems.&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-4">
 <p>In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. While reading Tanenbaum&#39;s <em>Operating Systems: Design and Implementation</em>, he began developing the Linux kernel.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -153,6 +157,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Long winter break... I think I&#39;ll read this MINIX book.&quot;</p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-5">
 <p>The Linux kernel did not use MINIX or Unix source code. It implemented POSIX-style standard interfaces so that source code for existing Unix programs could be compiled and run without modification, and the Linux 0.01 release already came with a port of the Bash shell<a href="https://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.01 "title="Notes for Linux release 0.01">&lbrack;5&rbrack;</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -160,7 +165,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I started implementing the system calls I needed to get Bash running.&quot;</p></blockquote></div><h2>What Is the Unix Philosophy?</h2>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I started implementing the system calls I needed to get Bash running.&quot;</p></blockquote></div></section>
+<h2>What Is the Unix Philosophy?</h2>
+<section class="comic-panel" id="comic-panel-6">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -168,8 +175,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;How has Unix continued to shape the tech world for so long?&quot;</p></blockquote></div><p>To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-3">
-
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;How has Unix continued to shape the tech world for so long?&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-7">
+<p>To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_kiss_en-600.webp 600w, images/pdf_kiss_en.webp 772w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_kiss_en.png" alt="Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle." class="sized-image" style="width: 60%;"></picture>
@@ -177,6 +185,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Keep it simple, stupid.&quot;<a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html "title="Eric S. Raymond&#39;s summary of the Unix philosophy">&lbrack;1&rbrack;</a></p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-8">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -191,8 +200,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Hmm... We just made it.&quot;</p></blockquote></div><p>According to Wikipedia, &quot;The <strong>Unix philosophy</strong>, originated by <a href="https://en.wikipedia.org/wiki/Ken_Thompson ">Ken Thompson</a>, is a set of cultural norms and philosophical approaches to <a href="https://en.wikipedia.org/wiki/Minimalism_%28computing%29 ">minimalist</a>, <a href="https://en.wikipedia.org/wiki/Modularity_%28programming%29 ">modular</a> <a href="https://en.wikipedia.org/wiki/Software_development ">software development</a>. It is based on the experience of leading developers of the <a href="https://en.wikipedia.org/wiki/Unix ">Unix</a> <a href="https://en.wikipedia.org/wiki/Operating_system ">operating system</a>.&quot;<a href="https://en.wikipedia.org/wiki/Unix_philosophy "title="Unix philosophy, Wikipedia">&lbrack;2&rbrack;</a></p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-4">
-
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Hmm... We just made it.&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-9">
+<p>According to Wikipedia, &quot;The <strong>Unix philosophy</strong>, originated by <a href="https://en.wikipedia.org/wiki/Ken_Thompson ">Ken Thompson</a>, is a set of cultural norms and philosophical approaches to <a href="https://en.wikipedia.org/wiki/Minimalism_%28computing%29 ">minimalist</a>, <a href="https://en.wikipedia.org/wiki/Modularity_%28programming%29 ">modular</a> <a href="https://en.wikipedia.org/wiki/Software_development ">software development</a>. It is based on the experience of leading developers of the <a href="https://en.wikipedia.org/wiki/Unix ">Unix</a> <a href="https://en.wikipedia.org/wiki/Operating_system ">operating system</a>.&quot;<a href="https://en.wikipedia.org/wiki/Unix_philosophy "title="Unix philosophy, Wikipedia">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_philosophy_en-600.webp 600w, images/pdf_philosophy_en-800.webp 800w, images/pdf_philosophy_en.webp 904w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_philosophy_en.png" alt="Ken Thompson gestures with both hands while explaining the Unix philosophy." class="sized-image" style="width: 80%;"></picture>
@@ -200,6 +210,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Think of small, modular programs. The philosophy grew out of the early Unix developers&#39; experience.&quot;</p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-10">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -207,7 +218,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I still don&#39;t really get it.&quot;</p></blockquote></div><h2>Programs That Do One Thing Well</h2>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;I still don&#39;t really get it.&quot;</p></blockquote></div></section>
+<h2>Programs That Do One Thing Well</h2>
+<section class="comic-panel" id="comic-panel-11">
 <p>In 1978, <a href="https://en.wikipedia.org/wiki/Doug_McIlroy ">Doug McIlroy</a> formally documented the philosophy:<a href="https://archive.org/details/bstj57-6-1899/page/n3/mode/2up "title="McIlroy, Pinson, and Tague&#39;s Unix principles">&lbrack;3&rbrack;</a></p><ol>
 <li>Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.</li>
 <li>Expect the output of every program to become the input to another, as yet unknown, program. Do not clutter output with extraneous information. Avoid stringently columnar or binary input formats. Do not insist on interactive input.</li>
@@ -221,7 +234,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;That&#39;s too long. Make it simpler!&quot;</p></blockquote></div><p><a href="https://en.wikipedia.org/wiki/Peter_H._Salus ">Peter H. Salus</a> later summarized the philosophy once more:<a href="https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "title="Peter H. Salus&#39;s summary of the Unix philosophy">&lbrack;4&rbrack;</a></p><ul>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;That&#39;s too long. Make it simpler!&quot;</p></blockquote></div></section>
+<section class="comic-panel" id="comic-panel-12">
+<p><a href="https://en.wikipedia.org/wiki/Peter_H._Salus ">Peter H. Salus</a> later summarized the philosophy once more:<a href="https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "title="Peter H. Salus&#39;s summary of the Unix philosophy">&lbrack;4&rbrack;</a></p><ul>
 <li>Write programs that do one thing and do it well.</li>
 <li>Write programs to work together.</li>
 <li>Write programs to handle text streams, because that is a universal interface.</li>
@@ -233,9 +248,10 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Just like building with LEGO bricks!&quot;</p></blockquote></div><h2>C and Unix Portability</h2>
-<p>Like LEGO bricks, Unix programs can be connected through their inputs and outputs to build more complex tools. Unix was later rewritten largely in C, making it much easier to port to different computers.</p><p>A compiler translates C source code into machine code for its target processor. Of course, hardware-specific code and low-level assembly routines still need to be adapted for each platform.</p><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-5">
-
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Just like building with LEGO bricks!&quot;</p></blockquote></div></section>
+<h2>C and Unix Portability</h2>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-13">
+<p>Like LEGO bricks, Unix programs can be connected through their inputs and outputs to build more complex tools. Unix was later rewritten largely in C, making it much easier to port to different computers.</p><p>A compiler translates C source code into machine code for its target processor. Of course, hardware-specific code and low-level assembly routines still need to be adapted for each platform.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_portability_en-600.webp 600w, images/pdf_portability_en-800.webp 800w, images/pdf_portability_en.webp 836w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_portability_en.png" alt="C kernel source passes through a compiler to produce target-specific binary code for a PDP-11, Motorola 68010, Intel 386, and SPARC." class="sized-image" style="width: 80%;"></picture>
@@ -243,6 +259,7 @@ flowchart TB
           </figure>
         </div>
       </section>
+<section class="comic-panel" id="comic-panel-14">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -250,7 +267,8 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Back then, kernels were usually written in assembly. Developing C and using it to rewrite an OS kernel—that was quite an idea!&quot;</p></blockquote></div><section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-6">
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Back then, kernels were usually written in assembly. Developing C and using it to rewrite an OS kernel—that was quite an idea!&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-15">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -258,15 +276,15 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that&#39;s a story for another time...&quot;<br>&quot;Where are you going?&quot;</p></blockquote></div></section>
-
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that&#39;s a story for another time...&quot;<br>&quot;Where are you going?&quot;</p></blockquote></div>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_secret_en-600.webp 600w, images/pdf_secret_en-800.webp 800w, images/pdf_secret_en.webp 1000w" sizes="(max-width: 599px) 100vw, 700px"><img src="images/pdf_secret_en.png" alt="Ken Thompson wears sunglasses and walks away carrying a handled case. An arrow points to the case." class="sized-image" style="width: 70%;"></picture>
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;That&#39;s a secret.&quot; <em>(Unix source code on magnetic tape.)</em></p></blockquote></div><h2>References</h2>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;That&#39;s a secret.&quot; <em>(Unix source code on magnetic tape.)</em></p></blockquote></div></section>
+<h2>References</h2>
 <ol>
 <li>Eric S. Raymond, <a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html ">&quot;The Unix Philosophy in One Lesson&quot;</a>, <em>The Art of Unix Programming</em>, Addison-Wesley, 2003.</li>
 <li><a href="https://en.wikipedia.org/wiki/Unix_philosophy ">&quot;Unix philosophy&quot;</a>, Wikipedia.</li>
