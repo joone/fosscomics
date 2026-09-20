@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.2">
-        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.2">
-        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.3.2">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.3">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.3">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.3.3">
         <link rel="icon" type="image/png" href="/ko/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -423,7 +423,7 @@
               const loadSharingScript = (filename) =>
                 new Promise((resolve, reject) => {
                   const script = document.createElement("script");
-                  const src = "/ko/scripts/" + filename + "?v=0.3.2";
+                  const src = "/ko/scripts/" + filename + "?v=0.3.3";
                   script.src = src;
                   script.onload = resolve;
                   script.onerror = () => reject(new Error("Could not load " + src));

@@ -593,7 +593,8 @@
   }
 
   figure img {
-    max-height: 500px;
+    height: auto;
+    max-height: none;
   }
 
   .panel-group {
@@ -704,8 +705,12 @@
       width: 100%;
     }
 
-    .sized-image {
+    .sized-image:not(.panel-group .sized-image) {
       width: 100% !important;
+    }
+
+    .panel-group .sized-image {
+      max-width: 260px;
     }
 
     .comic-panel-framed {
