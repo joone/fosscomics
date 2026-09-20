@@ -1,4 +1,4 @@
-/* global htmlToImage */
+/* global htmlToImage, html2canvas */
 window.FossbookShareImage = (() => {
   const labelSets = {
     en: {
@@ -148,6 +148,15 @@ window.FossbookShareImage = (() => {
       reader.readAsDataURL(blob);
     });
 
+  function rendererScript() {
+    const agent = navigator.userAgent;
+    const iOS = /iPad|iPhone|iPod/.test(agent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const safari = /AppleWebKit/.test(agent) &&
+      !/Chrome|Chromium|Edg\/|OPR\/|Android/.test(agent);
+    return iOS || safari ? "html2canvas.js" : "html-to-image.js";
+  }
+
   async function render(preview, filename) {
     const capture = preview.cloneNode(true);
     capture.classList.add("comic-share-capture");
@@ -183,13 +192,31 @@ window.FossbookShareImage = (() => {
       if (!width || !height || height > 8192) {
         throw new Error("This panel is too large to export as one image.");
       }
-      const blob = await htmlToImage.toBlob(capture, {
-        width,
-        height,
-        pixelRatio: Math.min(2, 8192 / height),
-        backgroundColor: "#ffffff",
-        style: { position: "static", left: "auto", top: "auto", margin: "0" },
-      });
+      const pixelRatio = Math.min(2, 8192 / height);
+      const style = { position: "static", left: "auto", top: "auto", margin: "0" };
+      let blob;
+      if (rendererScript() === "html2canvas.js") {
+        // WebKit can omit raster images inside SVG foreignObject snapshots.
+        const canvas = await html2canvas(capture, {
+          width,
+          height,
+          scale: pixelRatio,
+          backgroundColor: "#ffffff",
+          foreignObjectRendering: false,
+          allowTaint: false,
+          useCORS: true,
+          onclone: (document, element) => Object.assign(element.style, style),
+        });
+        blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+      } else {
+        blob = await htmlToImage.toBlob(capture, {
+          width,
+          height,
+          pixelRatio,
+          backgroundColor: "#ffffff",
+          style,
+        });
+      }
       if (!blob || blob.size === 0)
         throw new Error("The image renderer returned an empty image.");
       return new File([blob], filename, { type: "image/png" });
@@ -255,7 +282,7 @@ window.FossbookShareImage = (() => {
       '<form class="comic-share-dialog-content" method="dialog">' +
         '<div class="comic-share-dialog-header">' +
           '<h2 class="comic-share-heading"></h2>' +
-          '<button class="comic-share-close" type="submit" value="close"></button>' +
+          '<button class="comic-share-close" type="submit" value="close" autofocus></button>' +
         '</div>' +
         '<label class="comic-share-comment-label" for="comic-share-comment"></label>' +
         '<textarea id="comic-share-comment" class="comic-share-comment-input" rows="2"></textarea>' +
@@ -412,7 +439,6 @@ window.FossbookShareImage = (() => {
       previewLink.textContent = activeBlock.blockUrl;
       updateSharePreview();
       shareDialog.showModal();
-      commentInput.focus();
       prepareShareImage();
     };
 
@@ -541,6 +567,7 @@ window.FossbookShareImage = (() => {
 
   return {
     init,
+    rendererScript,
     render,
     labels,
     namespaceCloneIds,
