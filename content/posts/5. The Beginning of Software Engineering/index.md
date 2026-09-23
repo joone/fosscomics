@@ -11,7 +11,7 @@ tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, 
 :::panel
 Until the 1960s, software was largely treated as part of the hardware. Computers and their peripherals filled entire rooms, were expensive, and required considerable money and staff to operate. Software was not yet widely recognized as an engineering discipline in its own right.
 
-![An installer stands beside a room-sized mainframe.](images/pdf_installation_en.webp)
+![An installer stands beside a room-sized mainframe.](images/pdf_installation_en.webp "size:80%")
 > "Installation done!"
 
 ![A programmer holding a manual looks uncertain beside a Honeywell mainframe.](images/pdf_manual_en.webp "Honeywell 800 mainframe, 1959")
@@ -22,7 +22,7 @@ Until the 1960s, software was largely treated as part of the hardware. Computers
 
 Mathematics played a central role in early computing, so students studying mathematics often found their way into programming.
 
-![A mathematician fills a board with equations while a programmer waits beside him.](images/pdf_mathematics_en.webp "size:80%")
+![A mathematician fills a board with equations while a programmer waits beside him.](images/pdf_mathematics_en.webp "size:90%")
 > "This new computer should give us the results in no time."
 :::
 
@@ -66,7 +66,7 @@ After becoming an expert in systems programming, Hamilton joined MIT's Instrumen
 
 By the late 1960s, the Apollo guidance and software effort had grown to hundreds of people, often summarized as roughly 400 contributors[&lbrack;1&rbrack;][1]. In 1969, Apollo 11 successfully landed on the Moon.
 
-![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/pdf_moon_en.webp)
+![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/pdf_moon_en.webp "size:80%")
 > "Moon landing success!"
 :::
 
@@ -74,7 +74,7 @@ By the late 1960s, the Apollo guidance and software effort had grown to hundreds
 
 Hamilton argued that software should have the same professional standing as other engineering disciplines and helped popularize the term "software engineering." Sources differ on whether she coined the term, but she helped establish the concept[&lbrack;4&rbrack;][4].
 
-![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/pdf_engineering_en.webp "Margaret Hamilton size:80%")
+![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/pdf_engineering_en.webp "Margaret Hamilton size:70%")
 > "Software Engineering!"
 :::
 
@@ -83,7 +83,7 @@ Hamilton argued that software should have the same professional standing as othe
 :::panel
 Many early software developers were women, a striking contrast with today's male-dominated field. Programming was often considered less important than hardware development, assigned to women, and poorly paid[&lbrack;2&rbrack;][2]. This helps explain why so many photographs of early computers show women working at them.
 
-![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pdf_pay_en.webp "size:80%")
+![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pdf_pay_en.webp "size:100%")
 > "The salary is too low for what I'm doing."
 
 
@@ -101,7 +101,7 @@ The six programmers originally assigned to ENIAC were all women[&lbrack;3&rbrack
 :::panel
 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) held a doctorate in mathematics and became a pioneering programmer who later developed one of the earliest compilers. In 1947, she was working with the [Harvard Mark II](https://en.wikipedia.org/wiki/Harvard_Mark_II) team when the machine began malfunctioning.
 
-![Grace Hopper stands with her hands on her hips beside the malfunctioning Harvard Mark II.](images/pdf_hopper_en.webp "size:80%")
+![Grace Hopper stands with her hands on her hips beside the malfunctioning Harvard Mark II.](images/pdf_hopper_en.webp "size:90%")
 > "Why isn't the input working?"
 :::
 
@@ -123,7 +123,7 @@ They taped the moth into the logbook with the note "First actual case of bug bei
 :::panel
 Women played a pioneering role in early programming and helped lay the foundations of software engineering.
 
-![Margaret Hamilton stands beside a towering stack of printed Apollo flight software developed by her team.](images/margaret_hamilton.webp)
+![Margaret Hamilton stands beside a towering stack of printed Apollo flight software developed by her team.](images/margaret_hamilton.webp "size:50%")
 :::
 
 ## References

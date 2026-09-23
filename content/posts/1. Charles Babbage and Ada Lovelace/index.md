@@ -9,7 +9,7 @@ tags: Charles Babbage,Ada Lovelace
 :::panel
 Human beings have made a number of tools to make math calculations more convenient and accurate. One of these tools, the abacus, was used by several ancient civilizations. It was introduced to Korea from China around the 1400s.
 
-![A prehistoric person looks up at tally marks carved into a tree trunk.](images/pdf_tallies_en.webp)
+![A prehistoric person looks up at tally marks carved into a tree trunk.](images/pdf_tallies_en.webp "size:70%")
 :::
 
 :::panel
@@ -21,7 +21,7 @@ As late as the 1980s, abacuses were still common in Korean banks, and children a
 :::panel
 In 17th-century Europe, [Pascal](https://en.wikipedia.org/wiki/Pascal%27s_calculator) and [Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz) built gear-driven mechanical calculators.
 
-![Leibniz demonstrates a mechanical calculator at a table.](images/pdf_calculator_en.webp "Gottfried Wilhelm Leibniz(1646-1716) size:70%")
+![Leibniz demonstrates a mechanical calculator at a table.](images/pdf_calculator_en.webp "Gottfried Wilhelm Leibniz(1646-1716) size:90%")
 > "Multiplication and division are possible!"
 :::
 
@@ -35,7 +35,7 @@ In 1822, British mathematician [Charles Babbage](https://en.wikipedia.org/wiki/C
 :::panel rounded="true"
 The Difference Engine used the method of finite differences to tabulate polynomial functions through repeated addition. Polynomials could approximate functions needed for logarithmic and trigonometric tables; this was a specialized calculator, not the programmable Analytical Engine described above. See the [Computer History Museum's explanation of the engines](https://www.computerhistory.org/babbage/engines/).
 
-![Columns of gears form a working section of the Difference Engine.](images/pdf_difference_en.webp)
+![Columns of gears form a working section of the Difference Engine.](images/pdf_difference_en.webp "size:80%")
 :::
 
 ## Ada's education and her meeting with Babbage
@@ -94,7 +94,7 @@ Ada became actively involved in work on the Analytical Engine. In 1843, Lovelace
 
 To help explain the Analytical Engine, she presented an algorithm for calculating [Bernoulli numbers](https://en.wikipedia.org/wiki/Bernoulli_number) in her published notes. It is often described as the first published computer program.
 
-![Ada Lovelace sits at a desk and writes notes about the Analytical Engine.](images/pdf_writing_en.webp)
+![Ada Lovelace sits at a desk and writes notes about the Analytical Engine.](images/pdf_writing_en.webp "size:90%")
 > "I need a good example to explain the Analytical Engine."
 :::
 

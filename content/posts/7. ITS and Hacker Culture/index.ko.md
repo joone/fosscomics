@@ -33,7 +33,7 @@ MIT 해커 문화는 [테크 모델 철도 클럽](https://en.wikipedia.org/wiki
 :::panel
 DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_Processor)은 해커 문화에 큰 기여를 했고, 후속 기종은 자유 소프트웨어 탄생의 중요한 환경을 제공했다. 이 컴퓨터들은 비교적 저렴한 가격으로 판매되어 특히 대학에서 인기가 많았고 미니컴퓨터라는 분야를 확립하는 데 기여했다. 참고로, DEC는 1961년 PDP-1을 MIT에 기증했다[&lbrack;2&rbrack;][2].
 
-![한 회원이 PDP-1의 둥근 디스플레이를 가리키자 다른 회원이 호기심 어린 표정으로 바라본다.](images/pdf_display_ko.webp "size:80%")
+![한 회원이 PDP-1의 둥근 디스플레이를 가리키자 다른 회원이 호기심 어린 표정으로 바라본다.](images/pdf_display_ko.webp "size:90%")
 > "이 둥근 건 뭐지?" \
 > "디스플레이야. 컴퓨터가 뭘 하는지 보여 줘."
 :::
@@ -60,7 +60,7 @@ DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_P
 > "저녁 먹고 오니 문이 잠겼네." \
 > "그러게. 피자 시켜 먹자니까..."
 
-![두 학생이 마지못한 친구를 높은 창문으로 밀어 올린다.](images/pdf_window_ko.webp "size:90%")
+![두 학생이 마지못한 친구를 높은 창문으로 밀어 올린다.](images/pdf_window_ko.webp "size:100%")
 > "꼭 이렇게까지 해야 하나?" \
 > "물론이지. 지금 우리가 초창기 컴퓨터 게임을 만드는 역사적인 순간에 함께 있는거야!"
 :::
@@ -70,7 +70,7 @@ DEC에서 만든 [PDP 시리즈](https://en.wikipedia.org/wiki/Programmed_Data_P
 
 그리고 학생들은 재미를 위해 초창기의 가장 영향력 있는 컴퓨터 게임 가운데 하나인 [Spacewar!](https://en.wikipedia.org/wiki/Spacewar!)를 만들었다[&lbrack;5&rbrack;][5].
 
-![한 학생이 자리를 떠나는 동안 다른 두 사람은 PDP-1의 디스플레이 앞에서 작업을 계속한다.](images/pdf_depart_ko.webp "size:80%")
+![한 학생이 자리를 떠나는 동안 다른 두 사람은 PDP-1의 디스플레이 앞에서 작업을 계속한다.](images/pdf_depart_ko.webp "size:90%")
 > "임무 완수. 난 AI Lab으로 갈게."
 :::
 

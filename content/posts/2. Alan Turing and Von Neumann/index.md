@@ -68,7 +68,7 @@ Around World War II, these mathematical ideas began to take physical form. Teams
 :::panel rounded="true"
 During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2].
 
-![A woman operates rows of rotating drums on a large British Bombe machine.](images/pdf_bombe_en.webp "A British-built Bombe used during World War II")
+![A woman operates rows of rotating drums on a large British Bombe machine.](images/pdf_bombe_en.webp "A British-built Bombe used during World War II size:80%")
 :::
 
 :::panel
@@ -195,7 +195,7 @@ Meanwhile, Turing's ACE design continued to influence work at NPL, which built a
 :::panel
 Alan Turing's 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations. Interestingly, Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing's work on computability, later offered Turing a position. Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
 
-![John von Neumann and Alan Turing face one another in conversation.](images/pdf_conversation_en.webp "size:80%")
+![John von Neumann and Alan Turing face one another in conversation.](images/pdf_conversation_en.webp "size:100%")
 > "Alan, could you tell me more about your universal machine?" \
 > "Of course."
 
@@ -215,9 +215,9 @@ During World War II, Britain, Germany, and the United States all developed pione
 In the United States, immigrants including von Neumann made major contributions alongside engineers, mathematicians, programmers, universities, companies, and government laboratories. Strong government support and a growing commercial market then helped the United States develop the world's largest early computer industry.
 
 :::panels columns="3" label="Alan Turing, John von Neumann, and Kurt Gödel"
-![Portrait of Alan Turing.](images/alan_turing.webp "Alan Turing (1912-1954) earned a Ph.D. from Princeton University and developed a mathematical model of computation.")
-![Portrait of John von Neumann.](images/john_von_neumann.webp "John von Neumann (1903-1957), a Hungarian immigrant, worked on the design of the stored-program computer.")
-![Portrait of Kurt Gödel.](images/Kurt_Friedrich_G%C3%B6del.webp "Kurt Gödel (1906-1978) was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine.")
+![Portrait of Alan Turing.](images/alan_turing.webp "Alan Turing (1912-1954) earned a Ph.D. from Princeton University and developed a mathematical model of computation. size:80%")
+![Portrait of John von Neumann.](images/john_von_neumann.webp "John von Neumann (1903-1957), a Hungarian immigrant, worked on the design of the stored-program computer. size:80%")
+![Portrait of Kurt Gödel.](images/Kurt_Friedrich_G%C3%B6del.webp "Kurt Gödel (1906-1978) was born in Austria-Hungary and later became a U.S. citizen. His incompleteness theorems helped set the stage for the development of the Turing machine. size:80%")
 :::
 
 

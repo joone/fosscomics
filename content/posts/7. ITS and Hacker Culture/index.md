@@ -32,7 +32,7 @@ For reference, the video below shows how a computer can be used to control movin
 :::panel
 The [PDP series](https://en.wikipedia.org/wiki/Programmed_Data_Processor), made by Digital Equipment Corporation (DEC), contributed greatly to hacker culture, and later models provided an important environment for the birth of free software. These relatively inexpensive computers were particularly popular at universities and helped establish the minicomputer category. For reference, DEC donated a PDP-1 to MIT in 1961[&lbrack;2&rbrack;][2].
 
-![A club member points out the PDP-1's round display while another looks puzzled.](images/pdf_display_en.webp "size:80%")
+![A club member points out the PDP-1's round display while another looks puzzled.](images/pdf_display_en.webp "size:100%")
 > "What's that round thing?" \
 > "That? It's the display. It shows you what the computer's doing."
 :::
@@ -59,7 +59,7 @@ Members of the Tech Model Railroad Club spent more time with the TX-0 and, later
 > "Locked out after dinner." \
 > "Should've ordered pizza."
 
-![Two students help a reluctant friend climb through a high window.](images/pdf_window_en.webp "size:90%")
+![Two students help a reluctant friend climb through a high window.](images/pdf_window_en.webp "size:100%")
 > "Do I really have to do this?" \
 > "Of course. This is history. One of the first computer games is being made right now!"
 :::
@@ -69,7 +69,7 @@ Members of the Tech Model Railroad Club spent more time with the TX-0 and, later
 
 For fun, the students created one of the earliest and most influential computer games, called [Spacewar!](https://en.wikipedia.org/wiki/Spacewar/)[&lbrack;4&rbrack;][4].
 
-![A student walks away from the PDP-1 as two others keep working at its display.](images/pdf_depart_en.webp "size:80%")
+![A student walks away from the PDP-1 as two others keep working at its display.](images/pdf_depart_en.webp "size:100%")
 > "Mission accomplished. I'm off to the AI Lab."
 :::
 
@@ -93,7 +93,7 @@ When [Project MAC](https://www.multicians.org/project-mac.html) began in 1963, M
 
 But the AI programmers disagreed with the direction of Multics' design and began developing their own operating system, ITS (Incompatible Timesharing System), in 1967[&lbrack;3&rbrack;][3]. In 1970, the group split from Project MAC to become the independent AI Lab[&lbrack;5&rbrack;][5].
 
-![Two AI group programmers discuss building their own operating system instead of Multics.](images/pdf_own_os_en.webp "size:80%")
+![Two AI group programmers discuss building their own operating system instead of Multics.](images/pdf_own_os_en.webp "size:100%")
 > "Is Multics ever going to be finished?"\
 > "Why don't we build our own operating system?"
 :::

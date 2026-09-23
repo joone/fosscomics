@@ -36,7 +36,7 @@ Programming became much more practical when stored-program computers were introd
 
 A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called [machine code](https://en.wikipedia.org/wiki/Machine_code). On binary computers such as EDSAC, machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.
 
-![A programmer in dark glasses studies rows of binary digits.](images/pdf_binary_en.webp "size:70%")
+![A programmer in dark glasses studies rows of binary digits.](images/pdf_binary_en.webp "size:60%")
 
 That is why early forms of assembly language appeared near the beginning of computer programming. Instead of numeric machine instructions, they used short symbols called mnemonics to make instructions easier to express. EDSAC programmers used single-letter order codes. A small bootstrap program called the Initial Orders read these codes from paper tape, translated them into machine instructions, and loaded them into memory[&lbrack;2&rbrack;][2].
 
@@ -50,7 +50,7 @@ Each EDSAC instruction occupied one 17-bit word:
 - The next ten bits were the operand, representing an address.
 - The final bit selected either a short or long operand.
 
-![A diagram divides two 17-bit EDSAC instructions into an operation code, an unused bit, a ten-bit operand, and a length bit, alongside the mnemonics T0S and H2S.](images/4_4.webp "size:80%")
+![A diagram divides two 17-bit EDSAC instructions into an operation code, an unused bit, a ten-bit operand, and a length bit, alongside the mnemonics T0S and H2S.](images/4_4.webp "size:100%")
 
 The two EDSAC assembly instructions shown above can be explained as follows:
 
@@ -81,7 +81,7 @@ Interactive terminals with keyboards and displays remained uncommon in the early
 :::panel rounded="true"
 [Multics](https://en.wikipedia.org/wiki/Multics), whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to advance this approach to time-sharing. Time-sharing divided one computer's processing time into short intervals for multiple users, allowing each person to work interactively at a terminal[&lbrack;3&rbrack;][3].
 
-![A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer.](images/pdf_terminal_en.webp "size:70%")
+![A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer.](images/pdf_terminal_en.webp "size:100%")
 > "At last, a keyboard and a monitor."
 :::
 

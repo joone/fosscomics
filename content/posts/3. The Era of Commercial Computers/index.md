@@ -30,7 +30,7 @@ J. Presper Eckert and John Mauchly were among the engineers who recognized the c
 
 In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left the University of Pennsylvania and founded the Electronic Control Company. In December 1947, they incorporated and renamed the business [the Eckert-Mauchly Computer Corporation (EMCC)](https://en.wikipedia.org/wiki/Eckert%E2%80%93Mauchly_Computer_Corporation). They developed UNIVAC I, a general-purpose commercial computer designed for data processing. The first UNIVAC I was delivered to the [U.S. Census Bureau](https://en.wikipedia.org/wiki/U.S._Census_Bureau) in 1951.
 
-![Joone speaks on the telephone while a Census Bureau employee examines results being printed by the UNIVAC.](images/pdf_census_en.webp "size:80%")
+![Joone speaks on the telephone while a Census Bureau employee examines results being printed by the UNIVAC.](images/pdf_census_en.webp "size:90%")
 > "Are the life-expectancy figures ready?" \
 > "One moment."
 :::
@@ -40,7 +40,7 @@ In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left 
 The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force. However, those contracts were eventually cancelled in 1950 after some employees were suspected as communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
 Mauchly was also suspected and forced to leave the company, and it took him two years to get back to work. 
 
-![Senator Joseph McCarthy points accusingly at John Mauchly, who responds with open hands.](images/pdf_accusation_en.webp "size:80%")
+![Senator Joseph McCarthy points accusingly at John Mauchly, who responds with open hands.](images/pdf_accusation_en.webp "size:90%")
 > "How can we trust suspected communists with military work?" \
 > "You've got the wrong idea. We build computers."
 :::
@@ -79,7 +79,7 @@ Commercial computer production expanded during the 1950s. IBM, already dominant 
 
 For the [IBM 704](https://en.wikipedia.org/wiki/IBM_704), announced in 1954, [John Backus](https://en.wikipedia.org/wiki/John_Backus) led the IBM team that developed [Fortran](https://en.wikipedia.org/wiki/Fortran). The language was proposed in 1953, and its first compiler was delivered in 1957. Its ability to optimize high-level programs helped convince programmers that a compiler could produce efficient machine code[&lbrack;4&rbrack;][4]. John McCarthy designed [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) later in the decade, and Steve Russell created an early working implementation on an IBM 704.
 
-![John Backus, labeled Fortran team leader, gestures while explaining the language to Joone, who looks surprised.](images/pdf_fortran_en.webp "size:80%")
+![John Backus, labeled Fortran team leader, gestures while explaining the language to Joone, who looks surprised.](images/pdf_fortran_en.webp "size:100%")
 > "We proposed Fortran in 1953 and finished it in 1957. Its optimizing compiler made high-level code practical." \
 > "I didn't realize compilers were around in the 1950s."
 :::
@@ -117,7 +117,7 @@ By the late 1950s, many companies were producing commercial computers, universit
 
 The IBM 608 Transistor Calculator is generally regarded as the first commercial computer to use transistor circuitry without vacuum tubes. Released in December 1957, it used about 3,000 germanium transistors[&lbrack;7&rbrack;][7].
 
-![Four small transistors face a much larger, weary-looking vacuum tube.](images/pdf_transistors_en.webp "size:60%")
+![Four small transistors face a much larger, weary-looking vacuum tube.](images/pdf_transistors_en.webp "size:90%")
 > "Now I can retire from computers. They've worked me too hard."
 :::
 

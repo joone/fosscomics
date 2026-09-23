@@ -11,7 +11,7 @@ tags: UNIX, Unix Philosophy, Ken Thompson, Doug McIlroy, Peter H. Salus, BSD, Li
 :::panel
 Information technology has changed and evolved at an incredible pace. But Unix has been around for more than five decades, and its philosophy, API design, and tools still live on in Unix and Unix-like operating systems.
 
-![An elderly Unix character with a long beard leans on a cane and looks weary.](images/pdf_retirement_en.webp "First released in 1971 size:70%")
+![An elderly Unix character with a long beard leans on a cane and looks weary.](images/pdf_retirement_en.webp "First released in 1971 size:90%")
 > "When do I get to retire?"
 :::
 
@@ -61,7 +61,7 @@ In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. Whi
 :::panel
 The Linux kernel did not use MINIX or Unix source code. It implemented POSIX-style standard interfaces so that source code for existing Unix programs could be compiled and run without modification, and the Linux 0.01 release already came with a port of the Bash shell[&lbrack;5&rbrack;][5].
 
-![Linus Torvalds sits at his computer with a Bash prompt on the screen.](images/pdf_bash_en.webp "size:80%")
+![Linus Torvalds sits at his computer with a Bash prompt on the screen.](images/pdf_bash_en.webp "size:100%")
 > "I started implementing the system calls I needed to get Bash running."
 :::
 
@@ -135,7 +135,7 @@ Like LEGO bricks, Unix programs can be connected through their inputs and output
 
 A compiler translates C source code into machine code for its target processor. Of course, hardware-specific code and low-level assembly routines still need to be adapted for each platform.
 
-![C kernel source passes through a compiler to produce target-specific binary code for a PDP-11, Motorola 68010, Intel 386, and SPARC.](images/pdf_portability_en.webp "size:80%")
+![C kernel source passes through a compiler to produce target-specific binary code for a PDP-11, Motorola 68010, Intel 386, and SPARC.](images/pdf_portability_en.webp "size:90%")
 
 :::
 
@@ -150,7 +150,7 @@ A compiler translates C source code into machine code for its target processor. 
 > "Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that's a story for another time..."\
 > "Where are you going?"
 
-![Ken Thompson wears sunglasses and walks away carrying a handled case. An arrow points to the case.](images/pdf_secret_en.webp "size:70%")
+![Ken Thompson wears sunglasses and walks away carrying a handled case. An arrow points to the case.](images/pdf_secret_en.webp "size:90%")
 > "That's a secret." *(Unix source code on magnetic tape.)*
 :::
 

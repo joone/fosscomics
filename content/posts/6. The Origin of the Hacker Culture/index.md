@@ -28,14 +28,14 @@ Note: These comics were written with reference to Eric S. Raymond's "[A Brief Hi
 
 If you visit [the Wikipedia page on the history of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), you will find a long list of languages developed in the early days of computing. You may encounter some languages on the list that you've never heard of before. These are likely to be ancient, obsolete languages that are no longer in use.
 
-![A bearded programmer works at a computer set on a rough log table.](images/pdf_languages_en.webp "size:80%")
+![A bearded programmer works at a computer set on a rough log table.](images/pdf_languages_en.webp "size:70%")
 > "Do you know ALGOL or Simula?"
 :::
 
 :::panel rounded="true"
 Of course, we must also acknowledge the contributions of women programmers during this period.
 
-![Joone presents labeled portraits of Margaret Hamilton and Grace Hopper.](images/pdf_women_en.webp "size:80%")
+![Joone presents labeled portraits of Margaret Hamilton and Grace Hopper.](images/pdf_women_en.webp "size:90%")
 > "Many early 'real programmers' were women, including Margaret Hamilton and Grace Hopper."
 :::
 
@@ -51,7 +51,7 @@ This culture of early programmers helped develop computing and networks. It also
 :::panel
 MIT's early hacker culture had roots in the Tech Model Railroad Club before the PDP-1 arrived. Digital Equipment Corporation introduced the PDP-1 in 1959, and MIT received an early machine in [1961](https://en.wikipedia.org/wiki/PDP-1#History). Students and staff who encountered it created a text editor and a chess program, experimented with computer music, and developed [Spacewar!](https://en.wikipedia.org/wiki/Spacewar!) for fun. Spacewar! became one of the earliest and most influential video games.
 
-![A programmer operates a PDP-1 console while music plays beside its paper-tape reader and typewriter.](images/pdf_pdp1_en.webp "PDP-1")
+![A programmer operates a PDP-1 console while music plays beside its paper-tape reader and typewriter.](images/pdf_pdp1_en.webp "PDP-1 size:80%")
 :::
 
 :::panel

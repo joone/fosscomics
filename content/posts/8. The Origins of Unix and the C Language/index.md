@@ -26,7 +26,7 @@ ITS and Unix came from different groups. At Bell Labs, people who had worked on 
 :::panel
 The Multics project began in 1964. But as the code grew larger and more complicated, the project fell far behind Bell Labs' expectations.
 
-![A frustrated programmer grips his hair while criticizing the complexity of Multics.](images/pdf_complexity_en.webp "size:80%")
+![A frustrated programmer grips his hair while criticizing the complexity of Multics.](images/pdf_complexity_en.webp "size:70%")
 > "Overdesigned and overbuilt and over everything."\
 > "It was close to unusable.[&lbrack;1&rbrack;][1]"
 :::
@@ -34,7 +34,7 @@ The Multics project began in 1964. But as the code grew larger and more complica
 :::panel rounded="true"
 In the end, Bell Labs pulled out of Multics in 1969. Work continued elsewhere, and Multics later became a working commercial system. For Bell Labs, though, it had simply taken too long and cost too much.
 
-![An AT&T Bell Labs representative walks away while GE and MIT remain seated with a tall stack labeled Multics OS.](images/pdf_leave_en.webp "size:80%")
+![An AT&T Bell Labs representative walks away while GE and MIT remain seated with a tall stack labeled Multics OS.](images/pdf_leave_en.webp "size:100%")
 > "We're leaving because we can't meet our schedule."
 :::
 
@@ -73,7 +73,7 @@ It was not called Unix at first. Well into 1970, Brian Kernighan suggested the n
 :::panel
 Then a [PDP-11](https://en.wikipedia.org/wiki/PDP-11) arrived. Its CPU instructions were different from the PDP-7's, and Unix was still written in assembly. The code had to be written all over again.
 
-![Ritchie tells Thompson that a PDP-11 has arrived and suggests moving Unix to it.](images/pdf_pdp11_en.webp)
+![Ritchie tells Thompson that a PDP-11 has arrived and suggests moving Unix to it.](images/pdf_pdp11_en.webp "size:90%")
 > "Ken, a new PDP-11 just came in. How about porting Unix to it?" \
 > "Good idea. Trouble is, we'll have to rewrite it in PDP-11 assembly."
 :::
@@ -85,11 +85,11 @@ Then a [PDP-11](https://en.wikipedia.org/wiki/PDP-11) arrived. Its CPU instructi
 :::
 
 :::panel
-![Thompson holds a sheet marked B while considering whether the language could be used for Unix.](images/pdf_b_en.webp)
+![Thompson holds a sheet marked B while considering whether the language could be used for Unix.](images/pdf_b_en.webp "size:80%")
 > "Dennis, think we could rewrite Unix in B?" \
 > "Maybe. But B still has problems on the PDP-11."
 
-![Ritchie explains that B must first work properly on the PDP-11.](images/pdf_b_first_en.webp "size:80%")
+![Ritchie explains that B must first work properly on the PDP-11.](images/pdf_b_first_en.webp "size:70%")
 > "First, we'll have to make B work properly on the PDP-11."
 :::
 
@@ -157,7 +157,7 @@ Now C was powerful enough to write a Unix kernel.
 :::
 
 :::panel
-![A C-themed superhero lifts a UNIX sign while a smaller figure representing assembly language reacts below.](images/pdf_hero_en.webp "size:80%")
+![A C-themed superhero lifts a UNIX sign while a smaller figure representing assembly language reacts below.](images/pdf_hero_en.webp "size:70%")
 
 And so Unix and C came together in a remarkably short time, through the work of Thompson, Ritchie, and their Bell Labs colleagues. Unix and Unix-like systems still run on countless servers, personal computers, and phones. And C is still used to build operating-system kernels and other systems software today.
 
