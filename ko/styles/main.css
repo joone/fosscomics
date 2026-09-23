@@ -632,7 +632,6 @@
     display: inline-block;
     vertical-align: top;
     height: auto;
-    width: 100%;
   }
 
   .panel-group figcaption {
@@ -705,10 +704,6 @@
       width: 100%;
     }
 
-    .sized-image:not(.panel-group .sized-image) {
-      width: 100% !important;
-    }
-
     .panel-group .sized-image {
       max-width: 260px;
     }
@@ -727,6 +722,18 @@
 
   .comic-panel[style*="--comic-panel-shadow:"] {
     box-shadow: var(--comic-panel-shadow);
+  }
+
+  .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-margin-top:"] {
+    margin-top: var(--comic-panel-margin-top);
+  }
+
+  .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-margin-bottom:"] {
+    margin-bottom: var(--comic-panel-margin-bottom);
+  }
+
+  .panel-group-nested > .comic-panel[style*="--comic-panel-margin-"] {
+    height: auto;
   }
   
   @media screen and (min-width: 600px) {
