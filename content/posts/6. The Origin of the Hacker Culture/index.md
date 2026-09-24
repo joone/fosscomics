@@ -8,6 +8,8 @@ tags: Hacker, PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond, ARP
 
 Note: These comics were written with reference to Eric S. Raymond's "[A Brief History of Hackerdom](http://www.catb.org/~esr/writings/cathedral-bazaar/hacker-history/)."
 
+Here, "hackers" means people who love exploring computers, building things, and sharing what they learn.
+
 ## Early Programmers
 
 :::panel
@@ -16,17 +18,17 @@ Note: These comics were written with reference to Eric S. Raymond's "[A Brief Hi
 
 ![A long-haired, bearded programmer sits cross-legged and imagines rows of binary digits.](images/pdf_real_en.webp "size:70%")
 > "What is a real programmer?" \
-> "Training in machine code for 30 years."
+> "Thirty years of training... all in machine code."
 :::
 
 :::panel
 ![Raymond points toward two formally dressed programmers working at a large console.](images/pdf_backgrounds_en.webp "size:90%")
-> "These were mostly people who had studied mathematics, physics, or engineering, and they wore dress shirts and ties, thick horn-rimmed glasses, and wrote code in machine language, assembler, Fortran, and ancient computer languages that are now forgotten."
+> "Most came from math, physics, or engineering. They programmed in machine code, assembly, Fortran, and ancient computer languages that are now forgotten."
 :::
 
 :::panel
 
-If you visit [the Wikipedia page on the history of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), you will find a long list of languages developed in the early days of computing. You may encounter some languages on the list that you've never heard of before. These are likely to be ancient, obsolete languages that are no longer in use.
+Early programmers also used many languages that are little known today. Browse [this history of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), and you may find a few unfamiliar names.
 
 ![A bearded programmer works at a computer set on a rough log table.](images/pdf_languages_en.webp "size:70%")
 > "Do you know ALGOL or Simula?"

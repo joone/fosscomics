@@ -144,7 +144,9 @@ flowchart LR
 ```
 (Adapted from [Wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture#/media/File:Von_Neumann_Architecture.svg))
 
-As the diagram shows, a basic von Neumann architecture consists of a central processing unit (CPU), memory, and input/output devices. The CPU contains an arithmetic logic unit (ALU), which performs arithmetic and logical operations; processor registers, which hold values needed immediately; and a control unit. The control unit includes registers such as the instruction register and program counter. Memory stores both instructions and data. During the fetch-decode-execute cycle, the CPU retrieves an instruction, interprets it, performs the operation, and stores any result[&lbrack;6&rbrack;][6].
+A computer needs three basic parts: a central processing unit (CPU) to carry out instructions, memory to hold instructions and data, and devices for input and output. The CPU repeatedly fetches an instruction from memory, decodes it, and carries it out.
+
+Inside the CPU, the arithmetic logic unit (ALU) handles calculations and logical operations. Registers hold values needed right away, while the control unit directs the work. Two key registers help it keep track: the instruction register holds the current instruction, and the program counter tracks which instruction to fetch next[&lbrack;6&rbrack;][6].
 
 :::
 
@@ -193,7 +195,11 @@ Meanwhile, Turing's ACE design continued to influence work at NPL, which built a
 ## Turing and von Neumann
 
 :::panel
-Alan Turing's 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations. Interestingly, Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing's work on computability, later offered Turing a position. Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
+Alan Turing's 1936 concept of a universal machine was an important theoretical precursor to the stored-program computer. In the United States, John von Neumann, J. Presper Eckert, John Mauchly, and others subsequently contributed to the development of the stored-program architecture through the EDVAC project, while British teams pursued their own implementations.
+
+Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while von Neumann was a professor at the nearby Institute for Advanced Study. The two knew one another, and von Neumann, who was familiar with Turing's work on computability, later offered Turing a position.
+
+Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
 
 ![John von Neumann and Alan Turing face one another in conversation.](images/pdf_conversation_en.webp "size:100%")
 > "Alan, could you tell me more about your universal machine?" \

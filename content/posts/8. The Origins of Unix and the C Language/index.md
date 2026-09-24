@@ -45,7 +45,7 @@ Back at Bell Labs, Thompson drew on his Multics experience and led the effort to
 
 ![Ken Thompson and Dennis Ritchie gesture toward a light bulb while discussing a simpler operating system.](images/pdf_simple_en.webp)
 > "Dennis, I'm building a new operating system, taking some ideas from Multics. I'm making it smaller and simpler." \
-> "That's a good idea. Shall I join you?"
+> "Sounds good. Can I help?"
 :::
 
 :::panel
@@ -106,7 +106,7 @@ At the time, that was easier said than done. Thompson had created B for the earl
 In 1971, Ritchie began extending B with a character type and an explicit type system that included `int` and `char`. He also rewrote the compiler to generate PDP-11 machine code directly, instead of slower threaded code that invoked a sequence of prewritten low-level routines. He called the short-lived language NB, for "New B."[&lbrack;3&rbrack;][3]
 
 ![Thompson asks Ritchie about the B port while Ritchie sits at a desk with folded arms.](images/pdf_bytes_en.webp)
-> "Dennis, how's the B language porting going?" \
+> "Dennis, how's the B port going?" \
 > "There are a lot of problems. B doesn't handle byte-sized characters well."
 
 ![Thompson suggests rebuilding B as Ritchie considers the scale of the task.](images/pdf_rebuild_en.webp)
@@ -118,9 +118,9 @@ In 1971, Ritchie began extending B with a character type and an explicit type sy
 
 So Ritchie began tearing B apart and rebuilding it. During 1972, he expanded its type system, reworked arrays and pointers, added structures, and wrote a new compiler. When the new language took shape, he called it C. Whether the name meant the letter after B or continued the letters in BCPL, Ritchie left open. By early 1973, the essentials of modern C were in place.
 
-![Thompson and Ritchie work together at the PDP-11 and agree on the name C.](images/pdf_c_en.webp)
+![Thompson stands behind Ritchie, who works at the PDP-11 keyboard.](images/pdf_c_en.webp)
 > "How about calling it C?" \
-> "Sounds good"
+> "Wow, it works!"
 :::
 
 ## Rewriting the Unix Kernel in C

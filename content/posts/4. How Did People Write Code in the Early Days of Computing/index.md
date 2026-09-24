@@ -90,7 +90,7 @@ By the 1970s, screen-and-keyboard terminals had become more common. But how did 
 ## Punched cards and batch processing
 
 :::panel
-Early programmers often used punched cards to write code. Since the late nineteenth century, punched cards had been used to record and store data for machine processing, including work for the U.S. Census Bureau. The basic idea is loosely comparable to a modern OMR ([optical mark recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition)) sheet: information is encoded by marking, or in this case punching, specific positions.
+Early programmers often used punched cards to write code. Since the late nineteenth century, punched cards had been used to record and store data for machine processing, including work for the U.S. Census Bureau. Think of a multiple-choice answer sheet: the position of each mark carries information. Punched cards used holes instead.
 
 IBM standardized its widely adopted 80-column card in 1928 and supplied cards, keypunches, readers, and tabulating equipment around the world. Punched cards later became an important medium for entering programs and data into computers[&lbrack;5&rbrack;][5].
 
@@ -110,7 +110,7 @@ Programmers often first wrote source code on coding sheets and checked it by han
 Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.
 
 ![Four programmers queue with punched cards while an operator accepts jobs at the machine-room window.](images/pdf_queue_en.webp)
-> "Could you check this, please?" \
+> "Could you run this, please?" \
 > "Next."
 :::
 

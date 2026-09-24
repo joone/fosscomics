@@ -46,7 +46,7 @@ MINIX was developed as a small Unix-like system for teaching operating system de
 In 1979, the Unix V7 license prohibited using its source code in the classroom. In response, Professor Tanenbaum developed MINIX to teach operating system design and released it in 1987.
 
 ![Andrew Tanenbaum types at a computer with a copy of Lions' Commentary on Unix on his desk.](images/pdf_tanenbaum_en.webp)
-> "Maybe I should build a simple OS for teaching operating systems."
+> "Maybe I should build a simple OS for my students."
 :::
 
 :::panel rounded="true"

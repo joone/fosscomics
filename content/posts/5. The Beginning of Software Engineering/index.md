@@ -12,7 +12,7 @@ tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, 
 Until the 1960s, software was largely treated as part of the hardware. Computers and their peripherals filled entire rooms, were expensive, and required considerable money and staff to operate. Software was not yet widely recognized as an engineering discipline in its own right.
 
 ![An installer stands beside a room-sized mainframe.](images/pdf_installation_en.webp "size:80%")
-> "Installation done!"
+> "All set!"
 
 ![A programmer holding a manual looks uncertain beside a Honeywell mainframe.](images/pdf_manual_en.webp "Honeywell 800 mainframe, 1959")
 > "Now, how do I program it?"
@@ -67,7 +67,7 @@ After becoming an expert in systems programming, Hamilton joined MIT's Instrumen
 By the late 1960s, the Apollo guidance and software effort had grown to hundreds of people, often summarized as roughly 400 contributors[&lbrack;1&rbrack;][1]. In 1969, Apollo 11 successfully landed on the Moon.
 
 ![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/pdf_moon_en.webp "size:80%")
-> "Moon landing success!"
+> "They've landed!"
 :::
 
 :::panel rounded="true"
@@ -84,7 +84,7 @@ Hamilton argued that software should have the same professional standing as othe
 Many early software developers were women, a striking contrast with today's male-dominated field. Programming was often considered less important than hardware development, assigned to women, and poorly paid[&lbrack;2&rbrack;][2]. This helps explain why so many photographs of early computers show women working at them.
 
 ![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pdf_pay_en.webp "size:100%")
-> "The salary is too low for what I'm doing."
+> "They don't pay me enough for this work."
 
 
 ![Two male hardware engineers review a large blueprint spread across a table under the label Hardware design.](images/pdf_hardware_en.webp "Designing hardware")

@@ -37,12 +37,12 @@ In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left 
 
 :::panel
 
-The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force. However, those contracts were eventually cancelled in 1950 after some employees were suspected as communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
+The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force. However, those contracts were eventually canceled in 1950 after some employees were suspected of being communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
 Mauchly was also suspected and forced to leave the company, and it took him two years to get back to work. 
 
 ![Senator Joseph McCarthy points accusingly at John Mauchly, who responds with open hands.](images/pdf_accusation_en.webp "size:90%")
 > "How can we trust suspected communists with military work?" \
-> "You've got the wrong idea. We build computers."
+> "You've got the wrong idea. None of our employees are communists."
 :::
 
 :::panel rounded="true"

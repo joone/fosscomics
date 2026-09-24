@@ -7,7 +7,7 @@ tags: Charles Babbage,Ada Lovelace
 ---
 
 :::panel
-Human beings have made a number of tools to make math calculations more convenient and accurate. One of these tools, the abacus, was used by several ancient civilizations. It was introduced to Korea from China around the 1400s.
+People have long built tools to make calculations easier and more accurate. One of these tools, the abacus, was used by several ancient civilizations. It was introduced to Korea from China around the 1400s.
 
 ![A prehistoric person looks up at tally marks carved into a tree trunk.](images/pdf_tallies_en.webp "size:70%")
 :::
@@ -22,18 +22,22 @@ As late as the 1980s, abacuses were still common in Korean banks, and children a
 In 17th-century Europe, [Pascal](https://en.wikipedia.org/wiki/Pascal%27s_calculator) and [Leibniz](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz) built gear-driven mechanical calculators.
 
 ![Leibniz demonstrates a mechanical calculator at a table.](images/pdf_calculator_en.webp "Gottfried Wilhelm Leibniz(1646-1716) size:90%")
-> "Multiplication and division are possible!"
+> "It can multiply and divide, too!"
 :::
 
 ## Charles Babbage and his difference engine
 :::panel
-In 1822, British mathematician [Charles Babbage](https://en.wikipedia.org/wiki/Charles_Babbage) (1791-1871) proposed the Difference Engine, a mechanical calculator designed to automatically produce accurate numerical tables, such as logarithmic and trigonometric tables. He later designed the Analytical Engine, a general-purpose mechanical machine with a memory or "store", an arithmetic unit or "mill", punched-card input, and a printer, anticipating several components of modern computers.
+In 1822, British mathematician [Charles Babbage](https://en.wikipedia.org/wiki/Charles_Babbage) (1791-1871) proposed the Difference Engine. This mechanical calculator would automatically produce accurate tables of numbers for mathematical calculations.
+
+He later designed a more ambitious machine: the Analytical Engine. It was designed to follow instructions for different kinds of calculations, much like a modern computer.
 
 ![Charles Babbage wears a dark coat and bow tie.](images/pdf_babbage_en.webp "size:50%")
 :::
 
 :::panel rounded="true"
-The Difference Engine used the method of finite differences to tabulate polynomial functions through repeated addition. Polynomials could approximate functions needed for logarithmic and trigonometric tables; this was a specialized calculator, not the programmable Analytical Engine described above. See the [Computer History Museum's explanation of the engines](https://www.computerhistory.org/babbage/engines/).
+The Difference Engine was designed to build numerical tables by adding numbers over and over. Unlike the later Analytical Engine, it was designed for a specific kind of calculation.
+
+The mathematics behind it is called the method of finite differences. It uses repeated addition to calculate values of polynomials, which can approximate the functions needed for logarithmic and trigonometric tables. See the [Computer History Museum's explanation of the engines](https://www.computerhistory.org/babbage/engines/).
 
 ![Columns of gears form a working section of the Difference Engine.](images/pdf_difference_en.webp "size:80%")
 :::
@@ -50,7 +54,7 @@ The Difference Engine used the method of finite differences to tabulate polynomi
 Since her mother was concerned that Ada might inherit Byron's temperament, her education emphasized mathematics and science rather than literature.
 
 ![Ada studies beside a schedule labeled in Korean with mathematics and science.](images/pdf_study_en.webp)
-> "Why does my mom only want me to learn mathematics?"
+> "Why does Mom only want me to study math?"
 :::
 
 :::panel
@@ -72,7 +76,7 @@ At seventeen, Ada met Babbage and later saw him demonstrate the completed portio
 ## The Analytical Engine: a machine that could read programs
 
 :::panel
-The [Analytical Engine](https://en.wikipedia.org/wiki/Analytical_engine), described in 1837, went beyond making tables: it was designed for general-purpose computation, like a modern computer. It would have a store, an arithmetic unit, and a printer, with punched cards supplying instructions and numerical data. Its step-by-step instructions can be compared to modern assembly language, and the machine was intended to be powered by a steam engine. The illustration imagines the scale of this proposed machine, rather than a completed engine.
+The [Analytical Engine](https://en.wikipedia.org/wiki/Analytical_engine), described in 1837, went beyond making tables: it was designed for general-purpose computation, like a modern computer. It would have memory (the "store"), a calculating unit (the "mill"), and a printer. Punched cards would supply instructions and numbers. Its step-by-step instructions can be compared to modern assembly language, and the machine was intended to be powered by a steam engine. The illustration imagines the scale of this proposed machine, rather than a completed engine.
 
 ![Ada stands beside a large imagined Analytical Engine with rows of gears and a drive wheel.](images/pdf_analytical_en.webp "What might it have looked like if it had actually been built? size:90%")
 :::
@@ -80,7 +84,7 @@ The [Analytical Engine](https://en.wikipedia.org/wiki/Analytical_engine), descri
 :::panel rounded="true"
 Charles Babbage dreamed big, but the manufacturing technology and funding available at the time were not enough to automate complex calculations with intricate machinery.
 
-The larger ambitions also raised questions about finishing and funding the earlier machine. The following conversation is a dramatization.
+The larger ambitions also raised questions about finishing and funding the earlier machine.
 
 ![A seated official studies a document while Babbage argues for a more general-purpose machine.](images/pdf_funding_en.webp "size:90%")
 > "Shouldn't we finish the Difference Engine first? We're already over budget." \

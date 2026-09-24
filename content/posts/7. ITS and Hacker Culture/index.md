@@ -125,14 +125,14 @@ At the time, the ITS operating system had a unique user environment rarely found
 
 :::panel rounded="true"
 
-In addition, it was possible to access ITS not only inside MIT but also from other institutions or schools through ARPAnet. The wide-open ITS philosophy and collaborative online community had a great impact on hacker culture and the free and open source software movement, and anticipated the open, collaborative knowledge-sharing model later embodied by wikis[&lbrack;3&rbrack;][3].
+People at other universities and institutions could also connect to ITS through ARPANET. This open, collaborative community helped shape hacker culture and the free and open-source software movement. Its approach to sharing knowledge also anticipated later projects such as wikis[&lbrack;3&rbrack;][3].
 
 ![A line labeled ARPANET connects the MIT AI Lab's PDP-10 to a user labeled UC Berkeley and ITS access.](images/pdf_arpanet_en.webp "Access to ITS from other universities")
 :::
 
 :::panel
 
-Richard Stallman, who later started the free software movement, also participated in the development of the ITS operating system as a member of the community while working at the MIT AI Lab beginning in 1971, where he was influenced by the hacker culture.
+Richard Stallman joined the MIT AI Lab in 1971 and helped develop ITS. The hacker culture he found there influenced his later work on the free software movement.
 
 ![Richard Stallman stands at a row of large computer cabinets in the MIT AI Lab.](images/7_16.webp "size:80%")
 :::
