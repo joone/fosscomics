@@ -246,19 +246,6 @@
     gap: .5rem;
   }
 
-  .comic-share-body label {
-    display: block;
-    font-size: .78rem;
-  }
-
-  .comic-share-body-text {
-    box-sizing: border-box;
-    font: inherit;
-    font-size: .78rem;
-    resize: vertical;
-    width: 100%;
-  }
-
   .comic-share-preview {
     display: grid;
     gap: .5rem;

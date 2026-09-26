@@ -5,8 +5,8 @@ window.FossbookShareImage = (() => {
       heading: "Share this block",
       menu: "Share",
       socialShare: "Social sharing...",
-      comment: "Comment",
-      commentPlaceholder: "Add your comment (optional)",
+      comment: "Text",
+      commentPlaceholder: "Add or edit text for your post (optional)",
       close: "Close",
       shareOnX: "Share on X",
       shareOnBluesky: "Share on Bluesky",
@@ -19,17 +19,16 @@ window.FossbookShareImage = (() => {
       downloadImage: "Download panel image",
       copyImage: "Copy panel image",
       shareImage: "Share image via device",
-      copyComment: "Copy comment and link",
+      copyComment: "Copy text and link",
       includeText: "Include comic text in image",
-      bodyText: "Comic text",
       noArtwork:
         "This panel has no artwork. Include comic text to create an image.",
       imageCopied: "Image copied. Paste it into your post.",
       imageDownloaded: "Image downloaded. Attach it to your post.",
       commentCopied:
-        "Comment and link copied. Paste them into your post.",
+        "Text and link copied. Paste them into your post.",
       actionError:
-        "Sharing or copying failed. Download the image or copy the comment manually.",
+        "Sharing or copying failed. Download the image or copy the text manually.",
       attachImage:
         "Attach the downloaded or copied panel image yourself; it is not attached automatically.",
     },
@@ -37,8 +36,8 @@ window.FossbookShareImage = (() => {
       heading: "이 장면 공유",
       menu: "공유",
       socialShare: "소셜 공유…",
-      comment: "의견",
-      commentPlaceholder: "의견을 덧붙여 공유하세요 (선택)",
+      comment: "텍스트",
+      commentPlaceholder: "게시물 텍스트를 추가하거나 수정하세요 (선택)",
       close: "닫기",
       shareOnX: "X에 공유",
       shareOnBluesky: "Bluesky에 공유",
@@ -52,17 +51,16 @@ window.FossbookShareImage = (() => {
       downloadImage: "장면 이미지 저장",
       copyImage: "장면 이미지 복사",
       shareImage: "이미지 공유",
-      copyComment: "의견과 링크 복사",
+      copyComment: "텍스트와 링크 복사",
       includeText: "본문을 이미지에 포함",
-      bodyText: "만화 본문",
       noArtwork:
         "이 장면에는 그림이 없습니다. 본문을 포함하여 이미지를 만드세요.",
       imageCopied: "이미지를 복사했습니다. 게시물에 붙여넣으세요.",
       imageDownloaded: "이미지를 저장했습니다. 게시물에 첨부하세요.",
       commentCopied:
-        "의견과 링크를 복사했습니다. 게시물에 붙여넣으세요.",
+        "텍스트와 링크를 복사했습니다. 게시물에 붙여넣으세요.",
       actionError:
-        "공유 또는 복사에 실패했습니다. 이미지를 저장하거나 의견을 직접 복사하세요.",
+        "공유 또는 복사에 실패했습니다. 이미지를 저장하거나 텍스트를 직접 복사하세요.",
       attachImage:
         "저장하거나 복사한 장면 이미지를 직접 첨부하세요. 자동 첨부되지 않습니다.",
     },
@@ -72,6 +70,15 @@ window.FossbookShareImage = (() => {
     labelSets.en;
   const text = (comment, url) =>
     [comment.trim(), url].filter(Boolean).join("\n\n");
+  const removeAppendedText = (value, appendedText) => {
+    if (!appendedText) return value;
+    const trimmed = value.trim();
+    if (trimmed === appendedText) return "";
+    const suffix = "\n\n" + appendedText;
+    return trimmed.endsWith(suffix)
+      ? trimmed.slice(0, -suffix.length).trim()
+      : value;
+  };
   const artworkSelector = "img, picture, svg, figcaption, .mermaid";
 
   function artworkOnly(root) {
@@ -287,7 +294,7 @@ window.FossbookShareImage = (() => {
         '<label class="comic-share-comment-label" for="comic-share-comment"></label>' +
         '<textarea id="comic-share-comment" class="comic-share-comment-input" rows="2"></textarea>' +
         '<label class="comic-share-include-text-label">' +
-          '<input class="comic-share-include-text" type="checkbox" checked aria-controls="comic-share-preview-content comic-share-body-text">' +
+          '<input class="comic-share-include-text" type="checkbox" checked aria-controls="comic-share-preview-content comic-share-comment">' +
           '<span></span>' +
         '</label>' +
         '<section class="comic-share-preview" aria-live="polite">' +
@@ -297,10 +304,6 @@ window.FossbookShareImage = (() => {
           '</div>' +
           '<p class="comic-share-preview-link"></p>' +
         '</section>' +
-        '<div class="comic-share-body" hidden>' +
-          '<label for="comic-share-body-text"></label>' +
-          '<textarea id="comic-share-body-text" class="comic-share-body-text" rows="4" readonly></textarea>' +
-        '</div>' +
         '<p class="comic-share-help"></p>' +
         '<div class="comic-share-buttons">' +
           '<button class="comic-share-button comic-share-native" type="button" hidden disabled></button>' +
@@ -326,9 +329,6 @@ window.FossbookShareImage = (() => {
     previewContent.id = "comic-share-preview-content";
     const includeTextInput = shareDialog.querySelector(".comic-share-include-text");
     shareDialog.querySelector(".comic-share-include-text-label span").textContent = shareDefaults.includeText;
-    const bodyTextPreview = shareDialog.querySelector(".comic-share-body");
-    bodyTextPreview.querySelector("label").textContent = shareDefaults.bodyText;
-    const bodyTextArea = bodyTextPreview.querySelector("textarea");
     const previewLink = shareDialog.querySelector(".comic-share-preview-link");
     const shareOnXButton = shareDialog.querySelector(".comic-share-x");
     shareOnXButton.textContent = shareDefaults.shareOnX;
@@ -353,6 +353,7 @@ window.FossbookShareImage = (() => {
     let activeBlock = null;
     let contextMenuTrigger = null;
     let dialogTrigger = null;
+    let appendedBodyText = "";
 
     const closeContextMenu = (restoreFocus = false) => {
       contextMenu.hidden = true;
@@ -405,8 +406,15 @@ window.FossbookShareImage = (() => {
       if (document.documentElement.classList.contains("transcripts-hidden")) {
         panelPreview.querySelectorAll(".image-dialogue").forEach((dialogue) => dialogue.remove());
       }
-      bodyTextArea.value = FossbookShareImage.bodyText(panelPreview);
-      bodyTextPreview.hidden = includeTextInput.checked || !bodyTextArea.value;
+      const bodyText = FossbookShareImage.bodyText(panelPreview);
+      if (includeTextInput.checked) {
+        commentInput.value = removeAppendedText(commentInput.value, appendedBodyText);
+        appendedBodyText = "";
+      } else if (bodyText && !appendedBodyText) {
+        commentInput.value = FossbookShareImage.text(commentInput.value, bodyText);
+        appendedBodyText = bodyText;
+      }
+      updateSharePreview();
       const hasArtwork = includeTextInput.checked || FossbookShareImage.artworkOnly(panelPreview);
       namespaceCloneIds(panelPreview, activeBlock.blockId + "-preview-");
       previewContent.replaceChildren(panelPreview);
@@ -576,6 +584,7 @@ window.FossbookShareImage = (() => {
     namespaceCloneIds,
     artworkOnly,
     bodyText,
+    removeAppendedText,
     text,
     nativeData: (file, comment, url) => ({
       files: [file],
