@@ -775,6 +775,22 @@
     padding: 0 1ch;
     word-wrap: break-word;
   }
+
+  .post-layout {
+    max-width: max(700px, var(--comic-max-width, 700px));
+  }
+
+  .comic-content {
+    box-sizing: border-box;
+    max-width: var(--comic-max-width, 700px);
+  }
+
+  @media screen and (max-width: 599px) {
+    .post-layout,
+    .comic-content {
+      max-width: 100%;
+    }
+  }
   
   /* Header */
   header {
