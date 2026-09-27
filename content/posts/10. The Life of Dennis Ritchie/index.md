@@ -8,7 +8,7 @@ tags: C Language, Plan9, Unix
 
 :::panel rounded="true" style="width: 80%; align:center;"
 
-**The man who built an operating system with his colleagues, using a language he created.**
+**The man who built an operating system, using a language he created.**
 
 ![A young Ritchie works at a large computer.](images/feature.webp "size:80%")
 
@@ -36,7 +36,7 @@ At the time, Dennis Ritchie led the research group developing the Inferno operat
 
 :::panel rounded="true"
 
-The two were named recipients of the 1998 National Medal of Technology and received their medals at the White House in April 1999.[&lbrack;11&rbrack;][11]
+Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Technology and received their medals at the White House in April 1999.[&lbrack;11&rbrack;][11]
 
 ![Ritchie stands beside his computer, taking the call.](images/medal.webp "size:80%")
 

@@ -36,7 +36,7 @@ tags: C Language, Plan9, Unix
 
 :::panel rounded="true"
 
-두 사람은 1998년도 미국 국가 기술 훈장 수상자로 선정되어, 1999년 4월 백악관에서 훈장을 받았다.[&lbrack;11&rbrack;][11]
+리치와 켄 톰프슨은 1998년도 미국 국가 기술 훈장 수상자로 선정되어, 1999년 4월 백악관에서 훈장을 받았다.[&lbrack;11&rbrack;][11]
 
 ![컴퓨터 옆에 서서 전화를 받는 리치.](images/medal_ko.webp "size:80%")
 
