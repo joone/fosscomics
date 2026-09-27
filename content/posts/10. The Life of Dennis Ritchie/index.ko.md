@@ -154,7 +154,7 @@ tags: C Language, Plan9, Unix
 
 :::panel style="margin-top: 5rem;"
 
-물리학과 학부 학생이었던 데니스 리치는 컴퓨터의 이론과 실제에 점점 더 많은 흥미를 갖기 시작한다.[&lbrack;3&rbrack;][3]
+물리학과 학부 학생이었던 데니스 리치는 컴퓨터의 이론과 활용에 점점 더 많은 흥미를 갖기 시작한다.[&lbrack;3&rbrack;][3]
 
 ![대형 컴퓨터 앞에서 작업하는 데니스.](images/computing.webp "size:100%")
 
@@ -289,7 +289,7 @@ tags: C Language, Plan9, Unix
 
 :::panel
 
-벨 연구소에서 일하던 브라이언 커니핸은 사내 교육용으로 B언어 튜토리얼을 작성했다. 이후 C언어가 개발되면서 C언어 튜토리얼도 작성하게 된다. 이 튜토리얼은 훗날 책의 바탕이 되었다.[&lbrack;1&rbrack;][1]
+벨 연구소에서 일하던 브라이언 커니핸은 사내 교육용으로 B언어 튜토리얼을 작성했다. 이후 C언어가 개발되자 C언어 튜토리얼도 작성했다. 이 튜토리얼은 훗날 리치와 함께 쓴 책의 바탕이 되었다.[&lbrack;1&rbrack;][1]
 
 ![컴퓨터 앞에서 글을 쓰는 브라이언 커니핸.](images/tutorial.webp "size:100%")
 
@@ -357,7 +357,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::panel
 
-벨 연구소는 1990년대에 다양한 장치와 네트워크에서 사용할 Inferno 운영체제와 Limbo라는 프로그래밍 언어를 개발하기 시작한다. Limbo로 작성한 프로그램은 Dis 가상 머신에서 실행되어 기종에 대한 의존도를 줄였다.[&lbrack;7&rbrack;][7][&lbrack;8&rbrack;][8]
+벨 연구소는 1990년대에 다양한 장치와 네트워크에서 사용할 Inferno 운영체제와 Limbo라는 프로그래밍 언어를 개발하기 시작한다. Limbo로 작성한 프로그램은 Dis 가상 머신에서 실행되어 특정 하드웨어에 대한 의존도를 줄였다.[&lbrack;7&rbrack;][7][&lbrack;8&rbrack;][8]
 
 ![Inferno와 Limbo를 소개하는 칠판 앞에 연구원이 서 있고, 리치의 겸손한 한마디가 곁들여진다.](images/limbo_ko.webp "size:100%")
 
@@ -387,7 +387,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::panel style="margin-top: 5rem;margin-bottom: 5rem;"
 
-마케팅의 어려움 등 여러 이유가 있었겠지만, 이미 쓸 만한 유닉스가 있다는 점도 장벽이었다. 에릭 레이먼드는 『The Art of Unix Programming』에서 Plan 9을 예로 들며 이런 교훈을 이야기했다.[&lbrack;9&rbrack;][9] 아래 대사는 그 요지를 각색한 것이다.
+마케팅의 어려움 등 여러 이유가 있었겠지만, 이미 쓸 만한 유닉스가 있다는 점도 장벽이었다. 에릭 레이먼드는 『The Art of Unix Programming』에서 Plan 9을 예로 들며 이런 교훈을 이야기했다.[&lbrack;9&rbrack;][9]
 
 ![독자를 향해 설명하는 에릭 레이먼드.](images/raymond_ko.webp "size:100%")
 
