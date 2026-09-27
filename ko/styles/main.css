@@ -295,6 +295,8 @@
 
   .comic-share-capture {
     background: #fff;
+    border: 0;
+    border-radius: 0;
     box-sizing: border-box;
     color: #232333;
     left: -10000px;
@@ -587,9 +589,9 @@
   .panel-group {
     display: grid;
     grid-template-columns: repeat(var(--panel-columns), minmax(0, 1fr));
-    gap: var(--panel-gap, 1.5rem);
+    gap: var(--panel-gap, var(--comic-default-panel-gap, 0.75rem));
     align-items: start;
-    margin: 1.5rem 0;
+    margin: var(--comic-default-group-margin, 1.5rem) 0;
   }
 
   .panel-group-nested {
@@ -626,9 +628,12 @@
     text-align: center;
   }
 
+  .comic-panel {
+    margin: var(--comic-default-panel-margin, 2rem) 0;
+  }
+
   .comic-panel-framed {
-    margin: 2rem 0;
-    padding: 1rem;
+    padding: var(--comic-default-panel-padding, 1rem);
     border: 1.5px solid #575752;
     border-radius: var(--comic-panel-border-radius, 0);
     background: var(--comic-panel-background, #fff);
@@ -695,13 +700,54 @@
       max-width: 260px;
     }
 
+    .comic-panel {
+      margin: var(--comic-default-panel-margin, 1.5rem) 0;
+    }
+
     .comic-panel-framed {
-      margin: 1.5rem 0;
-      padding: 0.75rem;
+      padding: var(--comic-default-panel-padding, 0.75rem);
       border-width: 1px;
       box-shadow: 1px 1px 0 rgba(70, 70, 66, 0.14);
     }
   }
+
+
+  /* Site/language spacing defaults; authored panel styles take precedence. */
+  section.body {
+    --comic-default-panel-margin: var(--comic-spacing-panel-margin, 2rem);
+    --comic-default-adjacent-panel-margin: var(--comic-spacing-adjacent-panel-margin, 1rem);
+    --comic-default-group-margin: var(--comic-spacing-group-margin, 1.5rem);
+    --comic-default-panel-gap: var(--comic-spacing-panel-gap, 0.75rem);
+    --comic-default-panel-padding: var(--comic-spacing-panel-padding, 1rem);
+    --comic-default-image-gap: var(--comic-spacing-image-gap, 0);
+  }
+
+  @media screen and (max-width: 599px) {
+    section.body {
+      --comic-default-panel-margin: var(--comic-spacing-mobile-panel-margin, 1.5rem);
+      --comic-default-adjacent-panel-margin: var(--comic-spacing-mobile-adjacent-panel-margin, 0.75rem);
+      --comic-default-group-margin: var(--comic-spacing-mobile-group-margin, 1.5rem);
+      --comic-default-panel-gap: var(--comic-spacing-mobile-panel-gap, 0.75rem);
+      --comic-default-panel-padding: var(--comic-spacing-mobile-panel-padding, 0.75rem);
+      --comic-default-image-gap: var(--comic-spacing-mobile-image-gap, 0);
+    }
+  }
+
+  /* Both adjoining margins must shrink: block margins collapse to the larger one. */
+  section.body > :is(.comic-panel, .panel-group-nested):has(+ .comic-panel, + .panel-group-nested):not([style*="--comic-panel-margin-bottom:"]) {
+    margin-bottom: var(--comic-default-adjacent-panel-margin, 1rem);
+  }
+
+  section.body > :is(.comic-panel, .panel-group-nested) + :is(.comic-panel, .panel-group-nested):not([style*="--comic-panel-margin-top:"]) {
+    margin-top: var(--comic-default-adjacent-panel-margin, 1rem);
+  }
+
+  .comic-panel .image-container {
+    margin-block: var(--comic-default-image-gap, 0);
+  }
+
+  .comic-panel .image-container:first-child { margin-top: 0; }
+  .comic-panel .image-container:last-child { margin-bottom: 0; }
 
   .comic-panel[style*="--comic-panel-border:"] {
     border: var(--comic-panel-border);
@@ -721,6 +767,30 @@
 
   .panel-group-nested > .comic-panel[style*="--comic-panel-margin-"] {
     height: auto;
+  }
+
+  @media screen and (min-width: 600px) {
+    .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-width:"],
+    .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-align:"] {
+      box-sizing: border-box;
+      width: var(--comic-panel-width, 100%);
+      max-width: 100%;
+    }
+
+    .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-align: left;"] {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-align: center;"] {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-align: right;"] {
+      margin-left: auto;
+      margin-right: 0;
+    }
   }
   
   @media screen and (min-width: 600px) {
@@ -813,6 +883,13 @@
 
   h1 { font-size: 1.4rem; }
   h2 { font-size: 1.2rem; }
+  section.body > h2 {
+    margin-top: 2.5em;
+    margin-bottom: 0.75em;
+  }
+  section.body > h2 + .comic-panel:not([style*="--comic-panel-margin-top:"]) {
+    margin-top: 0;
+  }
   h3 { font-size: 1.1rem; }
   h4 {
     font-size: 1rem;
