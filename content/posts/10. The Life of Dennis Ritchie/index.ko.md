@@ -14,7 +14,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-## 1999년, 뜻밖의 전화
+## 1998년, 뜻밖의 전화
 
 :::panel
 
