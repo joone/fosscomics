@@ -1,6 +1,6 @@
 ---
 title: 6. The Origin of the Hacker Culture
-date: "2022-12-17"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: The origins of hacker culture reach back to early programming communities and MIT's PDP-1 enthusiasts, who created software such as Spacewar!, text editors, and music programs. Project MAC, the AI Lab, ITS, and ARPANET helped this culture spread and influence today's open-source hacker community.
 tags: Hacker, PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond, ARPAnet

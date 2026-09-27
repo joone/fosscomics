@@ -1,6 +1,6 @@
 ---
 title: 2. Alan Turing and Von Neumann
-date: "2019-05-29"
+date: "2026-06-29"
 image: feature.webp
 description: Alan Turing described an abstract machine that clarified what computation could mean. From wartime codebreaking and ENIAC's plugboards to the stored-program designs of EDVAC, ACE, and EDSAC, this episode traces how Turing, John von Neumann, and several engineering teams contributed to the architecture of modern computers.
 tags: Alan Turing, Von Neumann, Kurt Gödel, EDVAC, EDSAC, Automatic Computing Engine

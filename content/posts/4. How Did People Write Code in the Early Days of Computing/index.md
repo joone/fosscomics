@@ -1,6 +1,6 @@
 ---
 title: 4. How Did People Write Code in the Early Days of Computing?
-date: "2022-12-03"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: Early programmers moved from rewiring machines to stored programs, assembly language, paper tape, and punched-card batch processing.
 tags: ENIAC, Machine Code, EDSAC, Assembly Language, Multics, Punch Card, Fortran

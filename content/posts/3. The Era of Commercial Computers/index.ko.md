@@ -1,6 +1,6 @@
 ---
 title: 3. 상업용 컴퓨터 시대
-date: "2016-11-22"
+date: "2026-06-29"
 image: pdf_feature_ko.webp
 description: 에커트와 모클리의 유니박 사업부터 IBM 701, 704, 650과 포트란까지 상업용 컴퓨터 시대의 시작을 살펴봅니다.
 tags: 유니박, 에커트, 존 모클리, IBM, IBM 701, IBM 704, IBM 650, 포트란, 도널드 커누스

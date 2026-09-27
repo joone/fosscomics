@@ -1,6 +1,6 @@
 ---
 title: 6. 해커문화의 탄생
-date: "2017-01-02"
+date: "2026-06-29"
 image: pdf_feature_ko.webp
 description: 초기 프로그래머에서 MIT의 PDP-1과 Spacewar!, ITS와 ARPAnet으로 이어진 해커 문화의 탄생을 소개합니다.
 tags: 해커, PDP-1, Spacewar!, MIT, LISP, ITS, ARPAnet, 에릭 레이몬드

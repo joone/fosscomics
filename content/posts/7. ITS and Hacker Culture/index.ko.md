@@ -1,6 +1,6 @@
 ---
 title: 7. MIT 해커 문화와 ITS
-date: "2022-12-18"
+date: "2026-06-29"
 image: pdf_night_ko.webp
 description: MIT 테크 모델 철도 클럽과 PDP-1, Spacewar!, ITS가 협업 중심의 해커 문화를 형성하고 자유 소프트웨어 운동에 영향을 준 과정을 살펴봅니다.
 tags: ITS, 해커, PDP-1, PDP-6, DEC, ARPANET, MIT AI Lab, Multics

@@ -1,6 +1,6 @@
 ---
 title: 3. The Era of Commercial Computers
-date: "2019-06-25"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: In 1946, ENIAC and EDVAC engineers J. Presper Eckert and John Mauchly founded a company that became the Eckert-Mauchly Computer Corporation and developed UNIVAC I. During the 1950s, IBM introduced computers including the 701, 704, and mass-produced 650, while Fortran and Lisp helped expand the possibilities of programming. This marked the beginning of widespread commercial computing.
 

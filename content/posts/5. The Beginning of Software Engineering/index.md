@@ -1,6 +1,6 @@
 ---
 title: 5. The Beginning of Software Engineering
-date: "2022-12-11"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: Early programmers came from mathematics, science, and engineering. Margaret Hamilton and other women helped establish software as a demanding engineering discipline.
 tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, Women in Tech, RMS

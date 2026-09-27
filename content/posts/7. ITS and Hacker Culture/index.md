@@ -1,6 +1,6 @@
 ---
 title: 7. MIT Hacker Culture and ITS
-date: "2022-12-18"
+date: "2026-06-29"
 image: pdf_night_en.webp
 description: The hacker culture at MIT had roots in the Tech Model Railroad Club, whose members later programmed computers including the PDP-1. This experimentation fostered the hacker ethos, leading to the development of one of the earliest and most influential computer games, Spacewar!, and the ITS. The open, collaborative nature of ITS at the MIT AI Lab, accessible through ARPAnet, significantly influenced hacker culture and laid the groundwork for the free/open-source software movement...
 tags: ITS, Hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics

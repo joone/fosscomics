@@ -1,6 +1,6 @@
 ---
 title: 1. Charles Babbage and Ada Lovelace
-date: "2018-12-21"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: In the 19th century, Charles Babbage designed pioneering mechanical computers, and Ada Lovelace's notes on the Analytical Engine included an early published computer program and described how a machine could repeat a sequence of operations.
 tags: Charles Babbage,Ada Lovelace

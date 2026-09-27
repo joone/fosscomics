@@ -1,6 +1,6 @@
 ---
 title: 8. The Origins of Unix and the C Language
-date: "2023-09-04"
+date: "2026-06-29"
 image: pdf_feature_en.webp
 description: How did Unix begin? Why was C created, and why was Unix rewritten in C? This is the story of the people who created Unix and C.
 tags: UNIX, C Language, Ken Thompson, Dennis Ritchie, B Language, Bell Labs., Multics, PDP-11, 1970s
