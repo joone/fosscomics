@@ -113,7 +113,7 @@
                   </div>
                   <section class="body" id="comic-transcript" style="--comic-spacing-panel-margin: 2rem; --comic-spacing-mobile-panel-margin: 1.5rem; --comic-spacing-adjacent-panel-margin: 1rem; --comic-spacing-mobile-adjacent-panel-margin: 0.75rem; --comic-spacing-group-margin: 1.5rem; --comic-spacing-mobile-group-margin: 1.5rem; --comic-spacing-panel-gap: 0.75rem; --comic-spacing-mobile-panel-gap: 0.75rem; --comic-spacing-panel-padding: 1rem; --comic-spacing-mobile-panel-padding: 0.75rem; --comic-spacing-image-gap: 0; --comic-spacing-mobile-image-gap: 0;">
                     <h2>오늘날에도 살아 있는 유닉스</h2>
-<section class="comic-panel" id="comic-panel-1">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-1">
 <p>IT 기술은 놀라운 속도로 변화하고 발전해 왔다. 하지만 유닉스는 만들어진 지 반세기가 넘었고, 그 철학과 API 설계, 도구는 유닉스와 유닉스 계열 운영체제에 여전히 살아 있다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -122,7 +122,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>난 언제 은퇴하나?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-2">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-2">
 <p>유닉스의 유산은 지금도 우리 주변 곳곳에 남아 있다. 데비안, 우분투, 아치 리눅스 같은 리눅스 배포판과 안드로이드는 리눅스 커널을 사용한다. 맥과 아이폰에서 동작하는 애플의 macOS와 iOS도 유닉스를 기반으로 한다. 윈도우에서도 WSL(Windows Subsystem for Linux)을 통해 리눅스 환경을 실행할 수 있다.</p><pre class="mermaid">%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
 flowchart TB
     Unix([Unix]) --&gt; BSD([BSD])
@@ -139,7 +139,7 @@ flowchart TB
     MINIX([MINIX]) -. 개발에 영향을 줌 .-&gt; Linux([Linux])
     Linux -. 윈도우에서 실행 .-&gt; WSL([WSL])</pre><p>미닉스(MINIX)는 운영체제 설계를 가르치기 위해 만든 작은 유닉스 계열 운영체제다. 더 자세한 가계도는 <a href="https://en.wikipedia.org/wiki/Unix_history#/media/File:Unix_history-simple.svg ">위키피디아</a>를 참고하자.</p></section>
 <h2>미닉스에서 리눅스로</h2>
-<section class="comic-panel" id="comic-panel-3">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-3">
 <p>1979년 유닉스 V7의 라이선스는 소스 코드를 수업에 사용하는 것을 금지했다. 이에 타넨바움 교수는 운영체제 교육에 사용할 미닉스(MINIX)를 직접 개발해 1987년 공개했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -148,7 +148,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>운영체제 수업에 쓸 간단한 OS를 하나 만들어 볼까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-4">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 3rem;" id="comic-panel-4">
 <p>1991년 리누스 토발즈는 새로산 인텔 386PC에서 미닉스를 사용하고 있었는데, 타넨바움의 <em>Operating Systems: Design and Implementation</em>을 읽으며 리눅스 커널 개발을 시작했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -157,7 +157,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>긴 겨울 방학인데... 이 미닉스 책이나 읽어볼까.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-bottom: 3rem;" id="comic-panel-5">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-5">
 <p>리눅스 커널은 미닉스나 유닉스의 소스 코드를 사용하지 않았다. 기존 유닉스용 개발된 프로그램의 소스코드를 그대로 컴파일해서 실행할 수 있도록 유닉스 방식의 표준 인터페이스인 POSIX를 구현했으며, 리눅스 0.01 릴리스에는 이미 리눅스로 이식한 Bash 셸이 함께 제공되었다<a href="https://www.kernel.org/pub/linux/kernel/Historic/old-versions/RELNOTES-0.01 "title="리눅스 0.01 릴리스 노트">&lbrack;5&rbrack;</a>. </p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -167,7 +167,7 @@ flowchart TB
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>처음에는 Bash를 실행하는 데 필요한 시스템 호출부터 구현했어요.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
 <h2>유닉스 철학이란 무엇일까?</h2>
-<section class="comic-panel" id="comic-panel-6">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-6">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -176,7 +176,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>유닉스는 왜 지금까지도 큰 영향을 미칠까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-7">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-7">
 <p>그 해답을 찾으려면 유닉스 철학을 알아야 한다. 물론 유닉스가 처음부터 거창한 철학을 가지고 시작한 것은 아니다. 에릭 S. 레이먼드는 나중에 이를 익숙한 설계 원칙으로 요약했다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -185,7 +185,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>간단하고 멍청하게!<span class="dialogue-quote dialogue-quote-close">”</span><a href="http://www.catb.org/esr/writings/taoup/html/ch01s07.html "title="에릭 S. 레이먼드의 유닉스 철학 요약">&lbrack;1&rbrack;</a></p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-8">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-8">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -193,7 +193,9 @@ flowchart TB
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>아니, 농담 말고 진짜 철학을 설명해 주세요.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>아니, 농담 말고 진짜 철학을 설명해 주세요.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-9">
+
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
             <picture><source type="image/webp" srcset="images/pdf_shrug_ko-600.webp 600w, images/pdf_shrug_ko.webp 800w" sizes="(max-width: 599px) 100vw, 600px"><img src="images/pdf_shrug_ko.png" alt="켄 톰프슨이 한 손을 들어 올리며 담담하게 답한다." class="sized-image" style="width: 60%;" width="800"></picture>
@@ -201,7 +203,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>음... 그냥 만들었는데...<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-9">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-10">
 <p>위키피디아에서는 유닉스 철학을 다음과 같이 설명한다. &quot;<a href="https://en.wikipedia.org/wiki/Ken_Thompson ">켄 톰프슨</a>에게서 비롯된 <strong>유닉스 철학</strong>은 <a href="https://en.wikipedia.org/wiki/Minimalism_%28computing%29 ">최소주의</a>와 <a href="https://en.wikipedia.org/wiki/Modularity_%28programming%29 ">모듈화</a>에 기반한 <a href="https://en.wikipedia.org/wiki/Software_development ">소프트웨어 개발</a>의 문화적 규범과 철학적 접근 방식이다. 이는 <a href="https://en.wikipedia.org/wiki/Unix ">유닉스</a> <a href="https://en.wikipedia.org/wiki/Operating_system ">운영체제</a>를 이끈 개발자들의 경험을 바탕으로 한다.&quot;<a href="https://en.wikipedia.org/wiki/Unix_philosophy "title="유닉스 철학, 위키피디아">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -210,7 +212,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>작고 모듈화된 프로그램을 만드는 방식이지. 초기 유닉스 개발자들의 경험에서 나온 생각이야.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-10">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-11">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -220,7 +222,7 @@ flowchart TB
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>그래도 잘 모르겠네.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
 <h2>하나의 일을 잘하는 프로그램</h2>
-<section class="comic-panel" id="comic-panel-11">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-12">
 <p>1978년 <a href="https://en.wikipedia.org/wiki/Doug_McIlroy ">더글러스 맥클로이</a>는 이 철학을 공식적으로 문서화했다.<a href="https://archive.org/details/bstj57-6-1899/page/n3/mode/2up "title="맥클로이, 핀슨, 태그의 유닉스 원칙">&lbrack;3&rbrack;</a></p><ol>
 <li>각 프로그램이 하나의 일을 잘하도록 만들 것. 새로운 일을 해야 한다면, 기존 프로그램에 기능을 덧붙여 복잡하게 만들지 말고 새로 만들 것.</li>
 <li>모든 프로그램의 출력은 아직 만들어지지 않은 다른 프로그램의 입력이 될 수 있다고 생각할 것. 출력에 불필요한 정보를 섞지 말 것. 엄격한 열 형식이나 바이너리 입력 형식을 피할 것. 대화형 입력을 고집하지 말 것.</li>
@@ -235,7 +237,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>너무 길다. 더 단순하게!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-12">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-13">
 <p><a href="https://en.wikipedia.org/wiki/Peter_H._Salus ">피터 H. 살루스</a>는 이를 다시 한번 요약했다.<a href="https://archive.org/details/aquartercenturyofunixpeterh.salus_201910/page/n65/mode/2up "title="피터 H. 살루스의 유닉스 철학 요약">&lbrack;4&rbrack;</a></p><ul>
 <li>한 가지 일을 잘하는 프로그램을 만들 것.</li>
 <li>다른 프로그램과 함께 동작하는 프로그램을 만들 것.</li>
@@ -250,7 +252,7 @@ flowchart TB
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>레고 블록처럼!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
 <h2>C 언어와 유닉스의 이식성</h2>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-13">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 3rem;" id="comic-panel-14">
 <p>레고 블록처럼 유닉스 프로그램은 입력과 출력을 서로 연결해 더 복잡한 도구를 만들 수 있다. 이후 유닉스의 대부분이 C언어로 다시 작성되면서 여러 컴퓨터로 훨씬 쉽게 이식할 수 있게 되었다.</p><p>컴파일러는 C 소스 코드를 대상 프로세서의 기계어로 바꾼다. 물론, 하드웨어에 종속된 코드와 저수준 어셈블리 루틴은 각 플랫폼에 맞게 수정해야 한다.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -259,7 +261,7 @@ flowchart TB
           </figure>
         </div>
       </section>
-<section class="comic-panel" id="comic-panel-14">
+<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-15">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -268,7 +270,7 @@ flowchart TB
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>당시 커널은 보통 어셈블리어로 만들었죠. C언어를 개발해서 OS커널을 다시 작성할 생각을 하다니 정말 대단합니다.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-15">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-16">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
