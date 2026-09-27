@@ -478,19 +478,19 @@ The dialogue is dramatized from historical sources, not a record of actual conve
 
 ## References
 
-- 1. [Dennis M. Ritchie homepage and family memorial](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/)
-- 2. [Dennis M. Ritchie, autobiographical sketch](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html)
-- 3. [Interview with Dennis Ritchie (2003)](https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/)
-- 4. [Dennis M. Ritchie, The Development of the C Language](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
-- 5. [Brian Kernighan, The C Programming Language](https://www.cs.princeton.edu/~bwk/cbook.html)
-- 6. [Plan 9 from Bell Labs: Overview](https://9p.io/plan9/about.html)
-- 7. [Phil Winterbottom and Rob Pike, The Design of the Inferno Virtual Machine](https://www.vitanuova.com/inferno/papers/hotchips.html)
-- 8. [Vita Nuova, Inferno](https://www.vitanuova.com/inferno/)
-- 9. [Eric S. Raymond, The Art of Unix Programming: Plan 9](http://catb.org/~esr/writings/taoup/html/plan9.html)
-- 10. [Rob Pike and Ken Thompson, Hello World](https://9p.io/sys/doc/utf.html)
-- 11. [Dennis M. Ritchie, Letter from Washington](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/medal.html)
-- 12. [David A. Price, Goodbye, Operator](https://www.richmondfed.org/publications/research/econ_focus/2019/q4/economic_history)
-- 13. [Nokia Bell Labs, History](https://www.nokia.com/bell-labs/about/history/)
+1. [Dennis M. Ritchie homepage and family memorial](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/)
+2. [Dennis M. Ritchie, autobiographical sketch](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html)
+3. [Interview with Dennis Ritchie (2003)](https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/)
+4. [Dennis M. Ritchie, The Development of the C Language](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
+5. [Brian Kernighan, The C Programming Language](https://www.cs.princeton.edu/~bwk/cbook.html)
+6. [Plan 9 from Bell Labs: Overview](https://9p.io/plan9/about.html)
+7. [Phil Winterbottom and Rob Pike, The Design of the Inferno Virtual Machine](https://www.vitanuova.com/inferno/papers/hotchips.html)
+8. [Vita Nuova, Inferno](https://www.vitanuova.com/inferno/)
+9. [Eric S. Raymond, The Art of Unix Programming: Plan 9](http://catb.org/~esr/writings/taoup/html/plan9.html)
+10. [Rob Pike and Ken Thompson, Hello World](https://9p.io/sys/doc/utf.html)
+11. [Dennis M. Ritchie, Letter from Washington](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/medal.html)
+12. [David A. Price, Goodbye, Operator](https://www.richmondfed.org/publications/research/econ_focus/2019/q4/economic_history)
+13. [Nokia Bell Labs, History](https://www.nokia.com/bell-labs/about/history/)
 
 [1]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/
 [2]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html

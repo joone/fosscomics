@@ -8,14 +8,14 @@ tags: UNIX, Unix Philosophy, Ken Thompson, Doug McIlroy, Peter H. Salus, BSD, Li
 
 ## Unix's Legacy Today
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 Information technology has changed and evolved at an incredible pace. But Unix has been around for more than five decades, and its philosophy, API design, and tools still live on in Unix and Unix-like operating systems.
 
 ![An elderly Unix character with a long beard leans on a cane and looks weary.](images/pdf_retirement_en.webp "First released in 1971 size:90%")
 > "When do I get to retire?"
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 5rem;"
 
 Unix's legacy is still all around us. Android and Linux distributions such as Debian, Ubuntu, and Arch Linux use the Linux kernel. Apple's macOS and iOS, which run on Macs and iPhones, are Unix-based too. Even Windows can run a Linux environment through the Windows Subsystem for Linux (WSL).
 
@@ -42,14 +42,14 @@ MINIX was developed as a small Unix-like system for teaching operating system de
 
 ## From MINIX to Linux
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 In 1979, the Unix V7 license prohibited using its source code in the classroom. In response, Professor Tanenbaum developed MINIX to teach operating system design and released it in 1987.
 
 ![Andrew Tanenbaum types at a computer with a copy of Lions' Commentary on Unix on his desk.](images/pdf_tanenbaum_en.webp)
 > "Maybe I should build a simple OS for my students."
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 3rem;"
 
 In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. While reading Tanenbaum's *Operating Systems: Design and Implementation*, he began developing the Linux kernel.
 
@@ -58,7 +58,7 @@ In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. Whi
 
 :::
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 The Linux kernel did not use MINIX or Unix source code. It implemented POSIX-style standard interfaces so that source code for existing Unix programs could be compiled and run without modification, and the Linux 0.01 release already came with a port of the Bash shell[&lbrack;5&rbrack;][5].
 
 ![Linus Torvalds sits at his computer with a Bash prompt on the screen.](images/pdf_bash_en.webp "size:100%")
@@ -67,12 +67,12 @@ The Linux kernel did not use MINIX or Unix source code. It implemented POSIX-sty
 
 ## What Is the Unix Philosophy?
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 ![A seated presenter points to a Sun SPARCstation displaying the CDE desktop.](images/pdf_workstation_en.webp "size:70%")
 > "How has Unix continued to shape the tech world for so long?"
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 5rem;"
 To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:
 
 ![Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle.](images/pdf_kiss_en.webp "size:60%")
@@ -80,15 +80,17 @@ To find the answer, we need to understand the Unix philosophy. But Unix did not 
 
 :::
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 ![The presenter scratches his head with an awkward smile.](images/pdf_awkward_en.webp "size:70%")
 > "Come on, you must be joking. Tell me the real philosophy."
+:::
 
+:::panel style="margin-bottom: 5rem;"
 ![Ken Thompson raises one hand in a matter-of-fact shrug.](images/pdf_shrug_en.webp "size:60%")
 > "Hmm... We just made it."
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 5rem;"
 
 According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), is a set of cultural norms and philosophical approaches to [minimalist](https://en.wikipedia.org/wiki/Minimalism_%28computing%29), [modular](https://en.wikipedia.org/wiki/Modularity_%28programming%29) [software development](https://en.wikipedia.org/wiki/Software_development). It is based on the experience of leading developers of the [Unix](https://en.wikipedia.org/wiki/Unix) [operating system](https://en.wikipedia.org/wiki/Operating_system)."[&lbrack;2&rbrack;][2]
 
@@ -97,14 +99,14 @@ According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](h
 
 :::
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 ![The presenter scratches his head, still puzzled.](images/pdf_dont_know_en.webp "size:60%")
 > "I still don't really get it."
 :::
 
 ## Programs That Do One Thing Well
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally documented the philosophy:[&lbrack;3&rbrack;][3]
 
 1. Make each program do one thing well. To do a new job, build afresh rather than complicate old programs by adding new features.
@@ -116,7 +118,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 > "That's too long. Make it simpler!"
 :::
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 
 [Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus) later summarized the philosophy once more:[&lbrack;4&rbrack;][4]
 
@@ -130,7 +132,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 
 ## C and Unix Portability
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 3rem;"
 Like LEGO bricks, Unix programs can be connected through their inputs and outputs to build more complex tools. Unix was later rewritten largely in C, making it much easier to port to different computers.
 
 A compiler translates C source code into machine code for its target processor. Of course, hardware-specific code and low-level assembly routines still need to be adapted for each platform.
@@ -139,12 +141,12 @@ A compiler translates C source code into machine code for its target processor. 
 
 :::
 
-:::panel
+:::panel style="margin-bottom: 5rem;"
 ![A presenter in a suit raises one finger while discussing the move from assembly language to C.](images/pdf_c_rewrite_en.webp "size:80%")
 > "Back then, kernels were usually written in assembly. Developing C and using it to rewrite an OS kernel—that was quite an idea!"
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="margin-bottom: 5rem;"
 
 ![The presenter holds a hand near his mouth and calls to someone offscreen.](images/pdf_calling_en.webp "size:80%")
 > "Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that's a story for another time..."\
