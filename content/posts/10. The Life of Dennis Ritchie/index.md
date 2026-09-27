@@ -387,11 +387,11 @@ Although Ritchie contributed to and advised on their development, Plan 9 and Inf
 
 :::panel style="margin-top: 5rem;margin-bottom: 5rem;"
 
-There were various obstacles, including marketing difficulties. Eric Raymond pointed to another in The Art of Unix Programming: users already had a usable system in Unix. His discussion of Plan 9 is paraphrased below.[&lbrack;9&rbrack;][9]
+There were various obstacles, including marketing difficulties. Eric Raymond pointed to another in The Art of Unix Programming: users already had a usable system in Unix.[&lbrack;9&rbrack;][9]
 
 ![Eric S. Raymond addresses the reader.](images/raymond.webp "size:100%")
 
-> Even a better system has a tough rival: the code people already have that works well enough.
+> The most dangerous enemy of a better solution is an existing codebase that is just good enough.
 
 :::
 
