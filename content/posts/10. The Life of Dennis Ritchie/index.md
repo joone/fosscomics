@@ -22,7 +22,7 @@ At the time, Dennis Ritchie led the research group developing the Inferno operat
 
 ![An older Ritchie sits at his desk, looking at a monitor.](images/inferno.webp "size:80%")
 
-> Will Inferno ever be able to compete with Java?
+> Can Inferno really compete with Java?
 
 :::
 
@@ -40,7 +40,7 @@ Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Tec
 
 ![Ritchie stands beside his computer, taking the call.](images/medal.webp "size:80%")
 
-> President Clinton is giving us the National Medal of Technology? Congratulations, Ken. It looks like we'll have to go to Washington.
+> The National Medal of Technology? Both of us? Well, Ken... looks like we're going to Washington.
 
 :::
 
@@ -81,7 +81,7 @@ In the 1940s, Dennis Ritchie’s father, Alistair E. Ritchie, studied switching 
 ![Young Dennis walks beside his father, who carries a briefcase.](images/father.webp "size:100%")
 
 > What do you do, Dad?\
-> I study switching circuits. They're used to connect phone calls.
+> I work on switching circuits. They help connect phone calls.
 
 :::
 
@@ -118,7 +118,7 @@ A decade or so later.
 
 ![Dennis walks past a university building, carrying books.](images/campus.webp "size:100%")
 
-> Math and physics, both are intriguing.
+> Math or physics... Why do I have to choose?
 
 :::
 
@@ -138,7 +138,7 @@ Around 1960.
 
 ![Dennis raises a hand as an idea takes shape.](images/calculations.webp "size:100%")
 
-> With a computer, I could do the math much faster.
+> Wait... I could make the computer do the calculations.
 
 :::
 
@@ -203,7 +203,7 @@ In 1967, Ritchie joined Bell Labs.[&lbrack;2&rbrack;][2]
 
 ![A colleague introduces the operating system the team is developing.](images/multics.webp "size:100%")
 
-> Welcome to Bell Labs. Our team is co-developing an operating system called Multics with MIT and GE. Are you interested?\
+> Welcome to Bell Labs. We're building an operating system called Multics with MIT and GE. Interested?\
 > A new operating system? Sounds fun.
 
 :::
@@ -212,7 +212,7 @@ In 1967, Ritchie joined Bell Labs.[&lbrack;2&rbrack;][2]
 
 ![Thompson adds a thought, his hand on his chin.](images/collaboration.webp "size:80%")
 
-> Not always. We're working with several organizations...
+> Well... there are three organizations involved.
 
 :::
 
@@ -222,8 +222,8 @@ In 1969, Bell Labs withdrew from the Multics project.[&lbrack;2&rbrack;][2]
 
 ![Dennis and Thompson discuss what comes next.](images/withdrawal.webp "size:100%")
 
-> Finally, we withdrew from the Multics project. But now, what system are we going to use?\
-> Don't worry, I'm working on a new operating system. Interested?
+> So we're out of Multics. What do we use now?\
+> I'm working on something. A new operating system. Want in?
 
 :::
 
@@ -249,22 +249,22 @@ Ken Thompson was building a new operating system that drew on some ideas from Mu
 
 Bell Labs, around 1972.
 
-During Unix development, the team moved from the PDP-7 to the PDP-11. Their incompatible instruction sets meant rewriting the assembly code. Ritchie tried to implement Unix in Thompson’s B language, but B had limitations on the PDP-11.[&lbrack;4&rbrack;][4]
+During Unix development, the team moved from the PDP-7 to the PDP-11. Their incompatible instruction sets meant rewriting the assembly code. Ritchie tried to implement Unix in Thompson's B language, but B had limitations on the PDP-11.[&lbrack;4&rbrack;][4]
 
 ![Thompson stands beside Ritchie's desk and asks what he's doing.](images/b_language.webp "size:100%")
 
-> What are you doing now?\
-> I'm trying to write Unix in B, but it's tough. The language itself needs quite a few changes.
+> How's the Unix rewrite going?\
+> I think B needs some work.
 
 :::
 
 :::panel rounded="true"
 
-B could not fully use the PDP-11’s features. Ritchie added types and reworked the compiler, creating C. In the summer of 1973, the Unix kernel was rewritten in C.[&lbrack;4&rbrack;][4]
+B could not fully use the PDP-11's features. Ritchie added types and reworked the compiler, creating C. In the summer of 1973, the Unix kernel was rewritten in C.[&lbrack;4&rbrack;][4]
 
 ![Ritchie smiles as he codes at a terminal.](images/c_kernel.webp "size:100%")
 
-> Now we can write most of the OS kernel in C.
+> Heh. Barely need assembly anymore.
 
 :::
 
@@ -272,8 +272,7 @@ B could not fully use the PDP-11’s features. Ritchie added types and reworked 
 
 ![A developer sits at the computer while Ritchie looks on, pleased.](images/reaction.webp "size:100%")
 
-> Wow, an OS kernel in C!\
-> Pleased
+> Wow! C is awesome!\
 
 :::
 
@@ -300,7 +299,7 @@ Brian Kernighan, who worked at Bell Labs, wrote a B tutorial for in-house traini
 ![Kernighan makes a suggestion; Ritchie smiles with his arms folded.](images/book.webp "size:100%")
 
 > Dennis, remember my C tutorial? Want to turn it into a book together?\
-> Good idea!
+> Sure. Let's do it.
 
 :::
 
@@ -349,7 +348,7 @@ Plan 9 was used inside Bell Labs, but finding outside customers was difficult. I
 
 ![Ritchie walks with his head lowered.](images/customers.webp "size:100%")
 
-> It's hard to find customers for Plan 9.
+> Now if only we could get people to use Plan 9...
 
 :::
 
@@ -380,7 +379,7 @@ Although Ritchie contributed to and advised on their development, Plan 9 and Inf
 
 ![A manager talks to Ritchie across a desk.](images/handover.webp "size:100%")
 
-> We're struggling to find customers for Inferno too. We'll have to hand it over to another company.\
+> We're not finding many users for Inferno either. It may be time to hand it over.\
 > I'm glad someone can keep it going.
 
 :::
@@ -426,8 +425,8 @@ Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by
 
 ![A colleague and Ritchie talk on the phone from separate locations.](images/health.webp "size:100%")
 
-> How's your health these days? You've lost so much weight since the surgery.\
-> Ha, don't worry. There's still so much to explore.
+> How are you feeling? You've lost a lot of weight since the surgery.\
+> I'm doing all right. Don't worry about me.
 
 :::
 
@@ -462,7 +461,7 @@ Dennis Ritchie died at his home in New Jersey in October 2011.[&lbrack;1&rbrack;
 ![Two people walk away, seen from behind.](images/legacy.webp "size:100%")
 
 > He accomplished so much, but lived so quietly.\
-> He developed a language, then built an operating system with his colleagues...
+> Unix, C... His work is still everywhere.
 
 :::
 

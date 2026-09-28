@@ -264,7 +264,7 @@ tags: C Language, Plan9, Unix
 
 ![리치가 미소를 지으며 터미널에서 코딩한다.](images/c_kernel_ko.webp "size:100%")
 
-> 이제 커널 대부분을 C로 짤 수 있겠네.
+> 흐흐, 이제 어셈블리어는 거의 안 써도 되겠는데.
 
 :::
 
@@ -272,7 +272,7 @@ tags: C Language, Plan9, Unix
 
 ![컴퓨터를 사용하는 개발자 뒤에서 리치가 흐뭇하게 바라본다.](images/reaction_ko.webp "size:100%")
 
-> 와, C로 운영체제 커널도 만들 수 있구나!\
+> 와! C언어 대박인데!\
 > 흐뭇
 
 :::
@@ -308,7 +308,7 @@ tags: C Language, Plan9, Unix
 
 『The C Programming Language』는 1978년 초판이 출간되었고, 1988년 제2판이 나왔다. 여러 언어로 번역되어 C언어를 배우는 독자들에게 널리 읽혔다.[&lbrack;4&rbrack;][4][&lbrack;5&rbrack;][5]
 
-그림은 제2판 표지. 이미지 출처: [위키피디아](https://en.wikipedia.org/wiki/The_C_Programming_Language#/media/File:The_C_Programming_Language_cover.svg).
+그림은 제2판 표지. 이미지 출처: [위키백과](https://en.wikipedia.org/wiki/The_C_Programming_Language#/media/File:The_C_Programming_Language_cover.svg).
 
 ![The C Programming Language 제2판 표지.](images/book_cover.webp "size:70%")
 
