@@ -38,7 +38,7 @@ More precisely, they asked whether an algorithm could determine whether any stat
 
 In 1936, Turing proposed a remarkably simple imaginary machine: it would read one symbol at a time from a long tape, write or erase symbols according to a finite set of rules, and move left or right along the tape.
 
-![Alan Turing walks with his hands behind his back, deep in thought.](images/pdf_walking_en.webp "size:80%")
+![Alan Turing walks with his hands behind his back, deep in thought.](images/walking_en.webp "size:80%")
 > "Can a machine decide whether any statement in logic is valid?"
 
 Today, we call this model the [Turing machine](https://en.wikipedia.org/wiki/Turing_machine).
@@ -52,7 +52,7 @@ His work also introduced another important idea. Instead of building a separate 
 
 This idea appeared in his 1936 paper, ["On Computable Numbers, with an Application to the Entscheidungsproblem"](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf).
 
-![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/pdf_tape_en.webp "size:80%")
+![A worker manually feeds a long paper tape marked with binary symbols through a machine.](images/tape_en.webp "size:80%")
 > "If the rules are written on the tape, the machine can follow them?"
 
 This was not a blueprint for a physical computer. Turing's machine was an abstract mathematical model intended to explain computation.
@@ -68,20 +68,20 @@ Around World War II, these mathematical ideas began to take physical form. Teams
 :::panel rounded="true" style="margin-bottom: 5rem;"
 During World War II, Turing helped design an improved British Bombe that was used to decipher messages encrypted by the German Enigma machine, making an important contribution to Allied cryptanalysis[&lbrack;2&rbrack;][2].
 
-![A woman operates rows of rotating drums on a large British Bombe machine.](images/pdf_bombe_en.webp "A British-built Bombe used during World War II size:80%")
+![A woman operates rows of rotating drums on a large British Bombe machine.](images/bombe_en.webp "A British-built Bombe used during World War II size:80%")
 :::
 
 :::panel style="margin-bottom: 5rem;"
 Many computing machines built during the war were designed for specific tasks. As the war was nearing its end, however, the United States was developing [ENIAC](https://en.wikipedia.org/wiki/ENIAC), a general-purpose electronic computer. J. Presper Eckert, John Mauchly, and their team at the University of Pennsylvania began building it in 1943 and completed it in 1946. The U.S. Army initially used ENIAC to calculate artillery firing tables.
 
-![J. Presper Eckert and John Mauchly stand side by side; Mauchly folds his arms.](images/pdf_engineers_en.webp "size:70%")
+![J. Presper Eckert and John Mauchly stand side by side; Mauchly folds his arms.](images/engineers_en.webp "size:70%")
 :::
 
 :::panel style="margin-bottom: 5rem;"
 
 Programming ENIAC was very different from programming a modern computer. Instead of loading a program from memory, operators configured switches and connected cables on its plugboards. Running a different program required them to reconfigure the machine.
 
-![A programmer reconnects cables on ENIAC's plugboards while a colleague checks notes.](images/pdf_wiring_en.webp)
+![A programmer reconnects cables on ENIAC's plugboards while a colleague checks notes.](images/wiring_en.webp)
 > "Is this really programming?" \
 > "It's a start."
 :::
@@ -90,7 +90,7 @@ Programming ENIAC was very different from programming a modern computer. Instead
 
 ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed around 150 kilowatts of power[&lbrack;3&rbrack;][3].
 
-![A vacuum tube has metal electrodes inside a glass envelope and connector pins below its base.](images/pdf_tube.webp "A vacuum tube used in ENIAC size:40%")
+![A vacuum tube has metal electrodes inside a glass envelope and connector pins below its base.](images/tube.webp "A vacuum tube used in ENIAC size:40%")
 :::
 
 ## EDVAC and the stored-program design
@@ -98,14 +98,14 @@ ENIAC weighed about 30 tons, contained roughly 18,000 vacuum tubes, and consumed
 :::panel style="margin-bottom: 5rem;"
 The ENIAC team next began designing EDVAC for the U.S. Army's Ballistic Research Laboratory, making it one of the earliest stored-program computer projects. John von Neumann joined the project as a consultant, and the widely circulated [First Draft of a Report on the EDVAC](http://www.virtualtravelog.net/wp/wp-content/media/2003-08-TheFirstDraft.pdf) appeared under his name. The design stored instructions and data in the same memory. EDVAC was delivered in 1949 but became fully operational later; meanwhile, the Manchester Baby had run a stored program in 1948.
 
-![J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby.](images/pdf_edvac_report_en.webp "J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann's role? size:90%")
+![J. Presper Eckert and John Mauchly examine the EDVAC plans while John von Neumann takes notes nearby.](images/edvac_report_en.webp "J. Presper Eckert and John Mauchly led the team that designed and built EDVAC. So what exactly was John von Neumann's role? size:90%")
 :::
 
 :::panel style="margin-bottom: 3rem;"
 
 Storing instructions in memory meant that a new program could be loaded without rewiring the computer for every task. Hardware and software still depended on one another, but changing the computation no longer required redesigning its physical connections.
 
-![A character labeled HW waves as a smaller character labeled SW runs away, representing hardware and software.](images/pdf_hardware_software_en.webp "size:80%")
+![A character labeled HW waves as a smaller character labeled SW runs away, representing hardware and software.](images/hardware_software_en.webp "size:80%")
 :::
 
 
@@ -155,7 +155,7 @@ Inside the CPU, the arithmetic logic unit (ALU) handles calculations and logical
 :::panel style="margin-bottom: 5rem;"
 Britain's National Physical Laboratory obtained von Neumann's EDVAC report in 1945.
 
-![An NPL official reads a report at a desk piled with documents.](images/pdf_report_arrives_en.webp "size:90%")
+![An NPL official reads a report at a desk piled with documents.](images/report_arrives_en.webp "size:90%")
 > "The Americans have already drawn up plans for a stored-program computer!"
 :::
 
@@ -164,7 +164,7 @@ Britain's National Physical Laboratory obtained von Neumann's EDVAC report in 19
 The laboratory then asked Turing to design a stored-program computer along the lines of EDVAC. Beginning in 1945, Turing worked on the [Automatic Computing Engine (ACE)](https://en.wikipedia.org/wiki/Automatic_Computing_Engine), giving him an opportunity to turn ideas from his theoretical work into a practical computer design.
 
 
-![Alan Turing discusses computer plans with an NPL official across a desk.](images/pdf_npl_en.webp "size:80%")
+![Alan Turing discusses computer plans with an NPL official across a desk.](images/npl_en.webp "size:80%")
 > "We need a computer like EDVAC." \
 > "I have a design of my own."
 :::
@@ -174,14 +174,14 @@ The laboratory then asked Turing to design a stored-program computer along the l
 Although Turing's [ACE report](https://www.amazon.com/Turings-Report-1946-Other-Papers/dp/0262031140), presented in 1946, came after von Neumann's EDVAC report, it contained a detailed design for a stored-program computer. Turing kept the hardware to a minimum and proposed implementing even some arithmetic operations in software. In this respect, ACE anticipated ideas later associated with reduced instruction set computer (RISC) processors. Delays in funding and construction frustrated Turing, and in 1947 he returned to Cambridge on leave before the full ACE could be built[&lbrack;4&rbrack;][4].
 
 
-![Alan Turing holds a rolled blueprint with a frustrated expression.](images/pdf_funding_en.webp "size:80%")
+![Alan Turing holds a rolled blueprint with a frustrated expression.](images/funding_en.webp "size:80%")
 > "The design is ready. Why haven't they approved the funding?"
 :::
 
 :::panel style="margin-bottom: 3rem;"
 Maurice Wilkes, who led the EDSAC project at Cambridge, studied the EDVAC report.
 
-![Maurice Wilkes reads an open report at a table.](images/pdf_wilkes_en.webp "size:80%")
+![Maurice Wilkes reads an open report at a table.](images/wilkes_en.webp "size:80%")
 > "So this is how we could build a digital computer."
 :::
 
@@ -189,7 +189,7 @@ Maurice Wilkes, who led the EDSAC project at Cambridge, studied the EDVAC report
 Elsewhere in Britain, Cambridge University's Mathematical Laboratory completed the [Electronic Delay Storage Automatic Calculator (EDSAC)](https://en.wikipedia.org/wiki/EDSAC) in 1949, drawing on the stored-program design described in the EDVAC report.
 Meanwhile, Turing's ACE design continued to influence work at NPL, which built a smaller version called the [Pilot ACE](https://en.wikipedia.org/wiki/Pilot_ACE). It ran its first program in 1950.
 
-![A researcher holding a folder stands beside the room-sized EDSAC computer.](images/pdf_edsac_en.webp "EDSAC size:80%")
+![A researcher holding a folder stands beside the room-sized EDSAC computer.](images/edsac_en.webp "EDSAC size:80%")
 :::
 
 ## Turing and von Neumann
@@ -201,7 +201,7 @@ Turing studied for his Ph.D. at Princeton University from 1936 to 1938, while vo
 
 Some historians have therefore suggested that Turing's ideas may have influenced von Neumann's thinking. However, the extent of that influence is uncertain, and von Neumann's 1945 EDVAC report did not cite Turing's 1936 paper.
 
-![John von Neumann and Alan Turing face one another in conversation.](images/pdf_conversation_en.webp "size:100%")
+![John von Neumann and Alan Turing face one another in conversation.](images/conversation_en.webp "size:100%")
 > "Alan, could you tell me more about your universal machine?" \
 > "Of course."
 

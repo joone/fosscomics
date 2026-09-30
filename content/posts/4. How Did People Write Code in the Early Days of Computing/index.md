@@ -1,7 +1,7 @@
 ---
 title: 4. How Did People Write Code in the Early Days of Computing?
 date: "2026-06-29"
-image: pdf_feature_en.webp
+image: feature_en.webp
 description: Early programmers moved from rewiring machines to stored programs, assembly language, paper tape, and punched-card batch processing.
 tags: ENIAC, Machine Code, EDSAC, Assembly Language, Multics, Punch Card, Fortran
 ---
@@ -11,13 +11,13 @@ tags: ENIAC, Machine Code, EDSAC, Assembly Language, Multics, Punch Card, Fortra
 :::panel style="margin-bottom: 5rem;"
 When computers were first built, how did people program them? Early computers had nothing like today's software. More like desk calculators, they used switches such as relays and vacuum tubes to form logic circuits and were designed for a single purpose.
 
-![Two engineers stand beside separate room-sized computers and gesture toward their control panels.](images/pdf_machines_en.webp "size:80%")
+![Two engineers stand beside separate room-sized computers and gesture toward their control panels.](images/machines_en.webp "size:80%")
 > "That one breaks German military codes." \
 > "This one does arithmetic."
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![An engineer studies two banks of wartime computing equipment while considering a purpose-built computer for ballistic calculations.](images/pdf_planning_en.webp "size:80%")
+![An engineer studies two banks of wartime computing equipment while considering a purpose-built computer for ballistic calculations.](images/planning_en.webp "size:80%")
 > "Could I build one for ballistic calculations?" \
 > "How many relays and vacuum tubes would it need?"
 :::
@@ -38,7 +38,7 @@ Programming became much more practical when stored-program computers were introd
 
 A program is made up of instructions that a machine can understand and execute. At the lowest level, these instructions are called [machine code](https://en.wikipedia.org/wiki/Machine_code). On binary computers such as EDSAC, machine code is encoded as patterns of binary digits, or zeros and ones, which are difficult for people to read and remember.
 
-![A programmer in dark glasses studies rows of binary digits.](images/pdf_binary_en.webp "size:60%")
+![A programmer in dark glasses studies rows of binary digits.](images/binary_en.webp "size:60%")
 
 That is why early forms of assembly language appeared near the beginning of computer programming. Instead of numeric machine instructions, they used short symbols called mnemonics to make instructions easier to express. EDSAC programmers used single-letter order codes. A small bootstrap program called the Initial Orders read these codes from paper tape, translated them into machine instructions, and loaded them into memory[&lbrack;2&rbrack;][2].
 
@@ -65,14 +65,14 @@ The final `S` is not an instruction; it indicates that the operand uses the shor
 :::panel style="margin-bottom: 5rem;"
 As you can see, raw binary instructions are difficult for people to understand and remember. Assembly language therefore represents low-level operations with mnemonics. Converting assembly language into machine code is called assembling.
 
-![A programmer writes T0S and H2S on an Assembly language board while a machine writes binary instructions on a Machine code board, linked by an arrow labeled Assembling.](images/pdf_assembly_en.webp)
+![A programmer writes T0S and H2S on an Assembly language board while a machine writes binary instructions on a Machine code board, linked by an arrow labeled Assembling.](images/assembly_en.webp)
 :::
 
 :::panel style="margin-bottom: 5rem;"
 
 When no assembler was available, programmers sometimes translated assembly code into machine code themselves. This was called hand assembly. They looked up the numeric code for each mnemonic in an instruction table, calculated the required memory addresses, and constructed the complete machine instructions. Early forms of assembly language were already in use by the late 1940s and early 1950s, before high-level languages became common.
 
-![A programmer writes code on paper at a desk beside a model rocket.](images/pdf_writing_en.webp "size:70%")
+![A programmer writes code on paper at a desk beside a model rocket.](images/writing_en.webp "size:70%")
 > "I'm writing code."
 :::
 
@@ -83,7 +83,7 @@ Interactive terminals with keyboards and displays remained uncommon in the early
 :::panel rounded="true" style="margin-bottom: 5rem;"
 [Multics](https://en.wikipedia.org/wiki/Multics), whose design began in 1964-65 as a joint project of MIT Project MAC, Bell Labs, and General Electric, was intended to advance this approach to time-sharing. Time-sharing divided one computer's processing time into short intervals for multiple users, allowing each person to work interactively at a terminal[&lbrack;3&rbrack;][3].
 
-![A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer.](images/pdf_terminal_en.webp "size:100%")
+![A smiling programmer uses a keyboard beside a large computer with tape reels, a display, and a printer.](images/terminal_en.webp "size:100%")
 > "At last, a keyboard and a monitor."
 :::
 
@@ -96,14 +96,14 @@ Early programmers often used punched cards to write code. Since the late ninetee
 
 IBM standardized its widely adopted 80-column card in 1928 and supplied cards, keypunches, readers, and tabulating equipment around the world. Punched cards later became an important medium for entering programs and data into computers[&lbrack;5&rbrack;][5].
 
-![A hand holds a yellow punched card with the caption Fortran programming card.](images/pdf_card_en.webp "Punch card for Fortran programming size:60%")
+![A hand holds a yellow punched card with the caption Fortran programming card.](images/card_en.webp "Punch card for Fortran programming size:60%")
 :::
 
 :::panel style="margin-bottom: 5rem;"
 
 Programmers often first wrote source code on coding sheets and checked it by hand. They or a keypunch operator then punched the program onto cards, usually with one source line per card; a long statement could continue across several cards. A keypunch recorded typed characters as holes in cards. Depending on the language and computer, an assembler or compiler running on the computer, not the keypunch, translated the submitted program into machine code.
 
-![A programmer types at a keypunch machine while a punched card feeds through it.](images/pdf_keypunch_en.webp "IBM 026 keypunch machine size:70%")
+![A programmer types at a keypunch machine while a punched card feeds through it.](images/keypunch_en.webp "IBM 026 keypunch machine size:70%")
 > "I'd better get this code onto punched cards."
 :::
 
@@ -111,7 +111,7 @@ Programmers often first wrote source code on coding sheets and checked it by han
 
 Programmers submitted their card decks to a computer-room operator, who loaded each job into a card reader. They often waited in line to submit a deck and might not receive the printed results until much later. If the program failed, they had to correct or replace the affected cards and submit the deck again.
 
-![Four programmers queue with punched cards while an operator accepts jobs at the machine-room window.](images/pdf_queue_en.webp)
+![Four programmers queue with punched cards while an operator accepts jobs at the machine-room window.](images/queue_en.webp)
 > "Could you run this, please?" \
 > "Next."
 :::
@@ -119,7 +119,7 @@ Programmers submitted their card decks to a computer-room operator, who loaded e
 :::panel rounded="true" style="margin-bottom: 5rem;"
 Before a program was punched onto cards, copying it could be as simple as transcribing someone else's handwritten source code.
 
-![Joone glances sideways and secretly copies another programmer's handwritten code before it is entered onto a punched card.](images/pdf_copying_en.webp "size:70%")
+![Joone glances sideways and secretly copies another programmer's handwritten code before it is entered onto a punched card.](images/copying_en.webp "size:70%")
 :::
 
 ## References

@@ -1,7 +1,7 @@
 ---
 title: 5. The Beginning of Software Engineering
 date: "2026-06-29"
-image: pdf_feature_en.webp
+image: feature_en.webp
 description: Early programmers came from mathematics, science, and engineering. Margaret Hamilton and other women helped establish software as a demanding engineering discipline.
 tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, Women in Tech, RMS
 ---
@@ -11,12 +11,12 @@ tags: Margaret Hamilton, Apollo 11, 1960s, Grace Hopper, Mark II, Software Bug, 
 :::panel style="margin-bottom: 5rem;"
 Until the 1960s, software was largely treated as part of the hardware. Computers and their peripherals filled entire rooms, were expensive, and required considerable money and staff to operate. Software was not yet widely recognized as an engineering discipline in its own right.
 
-![An installer stands beside a room-sized mainframe.](images/pdf_installation_en.webp "size:80%")
+![An installer stands beside a room-sized mainframe.](images/installation_en.webp "size:80%")
 > "All set!"
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![A programmer holding a manual looks uncertain beside a Honeywell mainframe.](images/pdf_manual_en.webp "Honeywell 800 mainframe, 1959")
+![A programmer holding a manual looks uncertain beside a Honeywell mainframe.](images/manual_en.webp "Honeywell 800 mainframe, 1959")
 > "Now, how do I program it?"
 :::
 
@@ -24,7 +24,7 @@ Until the 1960s, software was largely treated as part of the hardware. Computers
 
 Mathematics played a central role in early computing, so students studying mathematics often found their way into programming.
 
-![A mathematician fills a board with equations while a programmer waits beside him.](images/pdf_mathematics_en.webp "size:90%")
+![A mathematician fills a board with equations while a programmer waits beside him.](images/mathematics_en.webp "size:90%")
 > "This new computer should give us the results in no time."
 :::
 
@@ -32,7 +32,7 @@ Mathematics played a central role in early computing, so students studying mathe
 
 People studying science or engineering also learned to program, since computers could perform calculations and experiments that had previously been done by hand. Some became so absorbed in programming that they made it their profession.
 
-![Dennis Ritchie watches a programmer working at a console in front of a mainframe.](images/pdf_ritchie_en.webp "size:90%")
+![Dennis Ritchie watches a programmer working at a console in front of a mainframe.](images/ritchie_en.webp "size:90%")
 > "Isn't it more fun than math?"
 
 Dennis Ritchie, who helped create Unix and the C programming language, studied physics and applied mathematics at university.
@@ -51,7 +51,7 @@ The story of [Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton
 
 She first developed weather prediction software with meteorologist Edward Lorenz, then worked on the SAGE air-defense project. Formal courses in computer science and software engineering were hard to find, so programmers mostly learned on the job. Software development was also not taken as seriously as the established engineering disciplines.
 
-![Margaret Hamilton gestures while explaining how early programmers learned their work.](images/pdf_education_en.webp "Margaret Hamilton size:70%")
+![Margaret Hamilton gestures while explaining how early programmers learned their work.](images/education_en.webp "Margaret Hamilton size:70%")
 > "Computer science and software engineering weren't regular subjects yet. Programmers learned by doing."
 :::
 
@@ -59,7 +59,7 @@ She first developed weather prediction software with meteorologist Edward Lorenz
 
 After becoming an expert in systems programming, Hamilton joined MIT's Instrumentation Laboratory. There she led the Software Engineering Division, whose team developed onboard flight software for Apollo's command and lunar modules[&lbrack;4&rbrack;][4]. Software had initially been overlooked in Apollo's budgets, schedules, and requirements[&lbrack;1&rbrack;][1]. Yet it played a critical role in controlling the spacecraft and lunar lander. Hamilton sometimes brought her daughter to work on weekends as she worked to make the software more reliable.
 
-![Margaret Hamilton works at a desk while her daughter waits beside a model of the Saturn V rocket.](images/pdf_daughter_en.webp "size:70%")
+![Margaret Hamilton works at a desk while her daughter waits beside a model of the Saturn V rocket.](images/daughter_en.webp "size:70%")
 > "Mom, when are we going home?" \
 > "I'm done. Let's go."
 :::
@@ -68,7 +68,7 @@ After becoming an expert in systems programming, Hamilton joined MIT's Instrumen
 
 By the late 1960s, the Apollo guidance and software effort had grown to hundreds of people, often summarized as roughly 400 contributors[&lbrack;1&rbrack;][1]. In 1969, Apollo 11 successfully landed on the Moon.
 
-![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/pdf_moon_en.webp "size:80%")
+![A spacecraft follows a looping route between Earth and the Moon while Margaret Hamilton celebrates below.](images/moon_en.webp "size:80%")
 > "They've landed!"
 :::
 
@@ -76,7 +76,7 @@ By the late 1960s, the Apollo guidance and software effort had grown to hundreds
 
 Hamilton argued that software should have the same professional standing as other engineering disciplines and helped popularize the term "software engineering." Sources differ on whether she coined the term, but she helped establish the concept[&lbrack;4&rbrack;][4].
 
-![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/pdf_engineering_en.webp "Margaret Hamilton size:70%")
+![Margaret Hamilton raises one finger to emphasize a new name for the field.](images/engineering_en.webp "Margaret Hamilton size:70%")
 > "Software Engineering!"
 :::
 
@@ -85,18 +85,18 @@ Hamilton argued that software should have the same professional standing as othe
 :::panel style="margin-bottom: 3rem;"
 Many early software developers were women, a striking contrast with today's male-dominated field. Programming was often considered less important than hardware development, assigned to women, and poorly paid[&lbrack;2&rbrack;][2]. This helps explain why so many photographs of early computers show women working at them.
 
-![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pdf_pay_en.webp "size:100%")
+![A woman works at a computer console in front of a large mainframe, with an arrow labeled Coding.](images/pay_en.webp "size:100%")
 > "They don't pay me enough for this work."
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![Two male hardware engineers review a large blueprint spread across a table under the label Hardware design.](images/pdf_hardware_en.webp "Designing hardware")
+![Two male hardware engineers review a large blueprint spread across a table under the label Hardware design.](images/hardware_en.webp "Designing hardware")
 :::
 
 :::panel style="margin-bottom: 5rem;"
 The six programmers originally assigned to ENIAC were all women[&lbrack;3&rbrack;][3].
 
-![Two women program ENIAC by connecting cables on its control panels, with one reading from a sheet of notes.](images/pdf_eniac_en.webp "size:80%")
+![Two women program ENIAC by connecting cables on its control panels, with one reading from a sheet of notes.](images/eniac_en.webp "size:80%")
 :::
 
 ## Grace Hopper and the Computer Bug
@@ -104,14 +104,14 @@ The six programmers originally assigned to ENIAC were all women[&lbrack;3&rbrack
 :::panel style="margin-bottom: 5rem;"
 [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper) held a doctorate in mathematics and became a pioneering programmer who later developed one of the earliest compilers. In 1947, she was working with the [Harvard Mark II](https://en.wikipedia.org/wiki/Harvard_Mark_II) team when the machine began malfunctioning.
 
-![Grace Hopper stands with her hands on her hips beside the malfunctioning Harvard Mark II.](images/pdf_hopper_en.webp "size:90%")
+![Grace Hopper stands with her hands on her hips beside the malfunctioning Harvard Mark II.](images/hopper_en.webp "size:90%")
 > "Why isn't the input working?"
 :::
 
 :::panel style="margin-bottom: 3rem;"
 The team found a moth trapped in one of the machine's relays.
 
-![Grace Hopper points toward a moth caught among the Harvard Mark II's relays.](images/pdf_moth_en.webp "size:80%")
+![Grace Hopper points toward a moth caught among the Harvard Mark II's relays.](images/moth_en.webp "size:80%")
 > "There's a dead moth inside the relay."
 :::
 
@@ -119,7 +119,7 @@ The team found a moth trapped in one of the machine's relays.
 
 They taped the moth into the logbook with the note "First actual case of bug being found." Engineers had used the word "bug" for technical faults long before this incident, but Hopper and the Mark II team helped popularize "bug" and "debugging" in computing[&lbrack;5&rbrack;][5].
 
-![Grace Hopper tapes the moth into the team's logbook and writes beside it.](images/pdf_logbook_en.webp "Grace Hopper size:80%")
+![Grace Hopper tapes the moth into the team's logbook and writes beside it.](images/logbook_en.webp "Grace Hopper size:80%")
 > "First actual case of bug being found."
 :::
 

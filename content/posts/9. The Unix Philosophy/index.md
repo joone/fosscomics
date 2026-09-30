@@ -11,7 +11,7 @@ tags: UNIX, Unix Philosophy, Ken Thompson, Doug McIlroy, Peter H. Salus, BSD, Li
 :::panel style="margin-bottom: 5rem;"
 Information technology has changed and evolved at an incredible pace. But Unix has been around for more than five decades, and its philosophy, API design, and tools still live on in Unix and Unix-like operating systems.
 
-![An elderly Unix character with a long beard leans on a cane and looks weary.](images/pdf_retirement_en.webp "First released in 1971 size:90%")
+![An elderly Unix character with a long beard leans on a cane and looks weary.](images/retirement_en.webp "First released in 1971 size:90%")
 > "When do I get to retire?"
 :::
 
@@ -45,7 +45,7 @@ MINIX was developed as a small Unix-like system for teaching operating system de
 :::panel style="margin-bottom: 5rem;"
 In 1979, the Unix V7 license prohibited using its source code in the classroom. In response, Professor Tanenbaum developed MINIX to teach operating system design and released it in 1987.
 
-![Andrew Tanenbaum types at a computer with a copy of Lions' Commentary on Unix on his desk.](images/pdf_tanenbaum_en.webp)
+![Andrew Tanenbaum types at a computer with a copy of Lions' Commentary on Unix on his desk.](images/tanenbaum_en.webp)
 > "Maybe I should build a simple OS for my students."
 :::
 
@@ -53,7 +53,7 @@ In 1979, the Unix V7 license prohibited using its source code in the classroom. 
 
 In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. While reading Tanenbaum's *Operating Systems: Design and Implementation*, he began developing the Linux kernel.
 
-![Linus Torvalds holds an open operating-systems textbook beside his computer.](images/pdf_reading_en.webp)
+![Linus Torvalds holds an open operating-systems textbook beside his computer.](images/reading_en.webp)
 > "Long winter break... I think I'll read this MINIX book."
 
 :::
@@ -61,32 +61,32 @@ In 1991, Linus Torvalds was using MINIX on his newly purchased Intel 386 PC. Whi
 :::panel style="margin-bottom: 5rem;"
 The Linux kernel did not use MINIX or Unix source code. It implemented POSIX-style standard interfaces so that source code for existing Unix programs could be compiled and run without modification, and the Linux 0.01 release already came with a port of the Bash shell[&lbrack;5&rbrack;][5].
 
-![Linus Torvalds sits at his computer with a Bash prompt on the screen.](images/pdf_bash_en.webp "size:100%")
+![Linus Torvalds sits at his computer with a Bash prompt on the screen.](images/bash_en.webp "size:100%")
 > "I started implementing the system calls I needed to get Bash running."
 :::
 
 ## What Is the Unix Philosophy?
 
 :::panel style="margin-bottom: 5rem;"
-![A seated presenter points to a Sun SPARCstation displaying the CDE desktop.](images/pdf_workstation_en.webp "size:70%")
+![A seated presenter points to a Sun SPARCstation displaying the CDE desktop.](images/workstation_en.webp "size:70%")
 > "How has Unix continued to shape the tech world for so long?"
 :::
 
 :::panel rounded="true" style="margin-bottom: 5rem;"
 To find the answer, we need to understand the Unix philosophy. But Unix did not start with a grand philosophy. Eric S. Raymond later summed it up with a familiar design principle:
 
-![Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle.](images/pdf_kiss_en.webp "size:60%")
+![Ken Thompson and Dennis Ritchie each raise one finger while stating a terse design principle.](images/kiss_en.webp "size:60%")
 > "Keep it simple, stupid."[&lbrack;1&rbrack;][1]
 
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![The presenter scratches his head with an awkward smile.](images/pdf_awkward_en.webp "size:70%")
+![The presenter scratches his head with an awkward smile.](images/awkward_en.webp "size:70%")
 > "Come on, you must be joking. Tell me the real philosophy."
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![Ken Thompson raises one hand in a matter-of-fact shrug.](images/pdf_shrug_en.webp "size:60%")
+![Ken Thompson raises one hand in a matter-of-fact shrug.](images/shrug_en.webp "size:60%")
 > "Hmm... We just made it."
 :::
 
@@ -94,13 +94,13 @@ To find the answer, we need to understand the Unix philosophy. But Unix did not 
 
 According to Wikipedia, "The **Unix philosophy**, originated by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson), is a set of cultural norms and philosophical approaches to [minimalist](https://en.wikipedia.org/wiki/Minimalism_%28computing%29), [modular](https://en.wikipedia.org/wiki/Modularity_%28programming%29) [software development](https://en.wikipedia.org/wiki/Software_development). It is based on the experience of leading developers of the [Unix](https://en.wikipedia.org/wiki/Unix) [operating system](https://en.wikipedia.org/wiki/Operating_system)."[&lbrack;2&rbrack;][2]
 
-![Ken Thompson gestures with both hands while explaining the Unix philosophy.](images/pdf_philosophy_en.webp "size:80%")
+![Ken Thompson gestures with both hands while explaining the Unix philosophy.](images/philosophy_en.webp "size:80%")
 > "Think of small, modular programs. The philosophy grew out of the early Unix developers' experience."
 
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![The presenter scratches his head, still puzzled.](images/pdf_dont_know_en.webp "size:60%")
+![The presenter scratches his head, still puzzled.](images/dont_know_en.webp "size:60%")
 > "I still don't really get it."
 :::
 
@@ -114,7 +114,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 3. Design and build software, even operating systems, to be tried early, ideally within weeks. Do not hesitate to throw away the clumsy parts and rebuild them.
 4. Use tools in preference to unskilled help to lighten a programming task, even if you have to detour to build the tools and expect to throw some of them out after you have finished using them.
 
-![Ken Thompson folds his arms and calls for a shorter explanation.](images/pdf_too_long_en.webp "size:60%")
+![Ken Thompson folds his arms and calls for a shorter explanation.](images/too_long_en.webp "size:60%")
 > "That's too long. Make it simpler!"
 :::
 
@@ -126,7 +126,7 @@ In 1978, [Doug McIlroy](https://en.wikipedia.org/wiki/Doug_McIlroy) formally doc
 - Write programs to work together.
 - Write programs to handle text streams, because that is a universal interface.
 
-![The presenter connects colorful toy bricks into a larger structure.](images/pdf_lego_en.webp "size:60%")
+![The presenter connects colorful toy bricks into a larger structure.](images/lego_en.webp "size:60%")
 > "Just like building with LEGO bricks!"
 :::
 
@@ -137,22 +137,22 @@ Like LEGO bricks, Unix programs can be connected through their inputs and output
 
 A compiler translates C source code into machine code for its target processor. Of course, hardware-specific code and low-level assembly routines still need to be adapted for each platform.
 
-![C kernel source passes through a compiler to produce target-specific binary code for a PDP-11, Motorola 68010, Intel 386, and SPARC.](images/pdf_portability_en.webp "size:90%")
+![C kernel source passes through a compiler to produce target-specific binary code for a PDP-11, Motorola 68010, Intel 386, and SPARC.](images/portability_en.webp "size:90%")
 
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![A presenter in a suit raises one finger while discussing the move from assembly language to C.](images/pdf_c_rewrite_en.webp "size:80%")
+![A presenter in a suit raises one finger while discussing the move from assembly language to C.](images/c_rewrite_en.webp "size:80%")
 > "Back then, kernels were usually written in assembly. Developing C and using it to rewrite an OS kernel—that was quite an idea!"
 :::
 
 :::panel rounded="true" style="margin-bottom: 5rem;"
 
-![The presenter holds a hand near his mouth and calls to someone offscreen.](images/pdf_calling_en.webp "size:80%")
+![The presenter holds a hand near his mouth and calls to someone offscreen.](images/calling_en.webp "size:80%")
 > "Unix influenced many operating systems for more than just technical reasons. Its source code had a way of traveling. But that's a story for another time..."\
 > "Where are you going?"
 
-![Ken Thompson wears sunglasses and walks away carrying a handled case. An arrow points to the case.](images/pdf_secret_en.webp "size:90%")
+![Ken Thompson wears sunglasses and walks away carrying a handled case. An arrow points to the case.](images/secret_en.webp "size:90%")
 > "That's a secret." *(Unix source code on magnetic tape.)*
 :::
 

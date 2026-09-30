@@ -1,7 +1,7 @@
 ---
 title: 6. The Origin of the Hacker Culture
 date: "2026-06-29"
-image: pdf_feature_en.webp
+image: feature.webp
 description: The origins of hacker culture reach back to early programming communities and MIT's PDP-1 enthusiasts, who created software such as Spacewar!, text editors, and music programs. Project MAC, the AI Lab, ITS, and ARPANET helped this culture spread and influence today's open-source hacker community.
 tags: Hacker, PDP-1, Spacewar!, MIT, LISP, ITS, MIT AI Lab, Eric S. Raymond, ARPAnet
 ---
@@ -13,18 +13,18 @@ Here, "hackers" means people who love exploring computers, building things, and 
 ## Early Programmers
 
 :::panel style="margin-bottom: 5rem;"
-![Eric S. Raymond gestures as he introduces his retrospective account of early programmers.](images/pdf_raymond_en.webp "size:70%")
+![Eric S. Raymond gestures as he introduces his retrospective account of early programmers.](images/raymond_en.webp "size:70%")
 > "In the beginning, there were 'real programmers.'"
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![A long-haired, bearded programmer sits cross-legged and imagines rows of binary digits.](images/pdf_real_en.webp "size:70%")
+![A long-haired, bearded programmer sits cross-legged and imagines rows of binary digits.](images/real_en.webp "size:70%")
 > "What is a real programmer?" \
 > "Thirty years of training... all in machine code."
 :::
 
 :::panel style="margin-bottom: 5rem;"
-![Raymond points toward two formally dressed programmers working at a large console.](images/pdf_backgrounds_en.webp "size:90%")
+![Raymond points toward two formally dressed programmers working at a large console.](images/backgrounds_en.webp "size:90%")
 > "Most came from math, physics, or engineering. They programmed in machine code, assembly, Fortran, and ancient computer languages that are now forgotten."
 :::
 
@@ -32,14 +32,14 @@ Here, "hackers" means people who love exploring computers, building things, and 
 
 Early programmers also used many languages that are little known today. Browse [this history of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), and you may find a few unfamiliar names.
 
-![A bearded programmer works at a computer set on a rough log table.](images/pdf_languages_en.webp "size:70%")
+![A bearded programmer works at a computer set on a rough log table.](images/languages_en.webp "size:70%")
 > "Do you know ALGOL or Simula?"
 :::
 
 :::panel rounded="true" style="margin-bottom: 5rem;"
 Of course, we must also acknowledge the contributions of women programmers during this period.
 
-![Joone presents labeled portraits of Margaret Hamilton and Grace Hopper.](images/pdf_women_en.webp "size:90%")
+![Joone presents labeled portraits of Margaret Hamilton and Grace Hopper.](images/women_en.webp "size:90%")
 > "Many early 'real programmers' were women, including Margaret Hamilton and Grace Hopper."
 :::
 
@@ -47,7 +47,7 @@ Of course, we must also acknowledge the contributions of women programmers durin
 
 This culture of early programmers helped develop computing and networks. It also contributed to today's hacker and open-source cultures[&lbrack;1&rbrack;][1].
 
-![Programmers at separate computers are linked by a winding line that represents the spread of shared ideas and software.](images/pdf_sharing_en.webp)
+![Programmers at separate computers are linked by a winding line that represents the spread of shared ideas and software.](images/sharing_en.webp)
 :::
 
 ## MIT's PDP-1 and Spacewar!
@@ -55,7 +55,7 @@ This culture of early programmers helped develop computing and networks. It also
 :::panel style="margin-bottom: 3rem;"
 MIT's early hacker culture had roots in the Tech Model Railroad Club before the PDP-1 arrived. Digital Equipment Corporation introduced the PDP-1 in 1959, and MIT received an early machine in [1961](https://en.wikipedia.org/wiki/PDP-1#History). Students and staff who encountered it created a text editor and a chess program, experimented with computer music, and developed [Spacewar!](https://en.wikipedia.org/wiki/Spacewar!) for fun. Spacewar! became one of the earliest and most influential video games.
 
-![A programmer operates a PDP-1 console while music plays beside its paper-tape reader and typewriter.](images/pdf_pdp1_en.webp "PDP-1 size:80%")
+![A programmer operates a PDP-1 console while music plays beside its paper-tape reader and typewriter.](images/pdp1_en.webp "PDP-1 size:80%")
 :::
 
 :::panel style="margin-bottom: 5rem;"
