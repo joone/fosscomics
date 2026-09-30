@@ -310,6 +310,15 @@
     overflow: visible;
   }
 
+  .comic-share-preview-block > .comic-share-watermark {
+    color: #666;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .75rem;
+    line-height: 1;
+    padding: .5rem .75rem .65rem;
+    text-align: right;
+  }
+
   .comic-share-help {
     font-size: .74rem;
     margin: 0;

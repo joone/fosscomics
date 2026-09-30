@@ -164,13 +164,24 @@ window.FossbookShareImage = (() => {
     return iOS || safari ? "html2canvas.js" : "html-to-image.js";
   }
 
-  async function render(preview, filename) {
+  async function render(preview, filename, watermark = "") {
     const capture = preview.cloneNode(true);
     capture.classList.add("comic-share-capture");
     capture.setAttribute("aria-hidden", "true");
     namespaceCloneIds(capture, `capture-${Date.now()}-`);
     const originalImages = [...preview.querySelectorAll("img")];
     capture.querySelectorAll("source").forEach((source) => source.remove());
+    const watermarkText =
+      typeof watermark === "string" ? watermark.trim() : "";
+    if (watermarkText) {
+      const watermarkElement =
+        capture.querySelector(".comic-share-watermark") ||
+        document.createElement("div");
+      watermarkElement.className = "comic-share-watermark";
+      watermarkElement.textContent = watermarkText;
+      watermarkElement.hidden = false;
+      if (!watermarkElement.parentNode) capture.appendChild(watermarkElement);
+    }
     preview.closest("dialog").appendChild(capture);
     try {
       await document.fonts.ready;
@@ -232,7 +243,11 @@ window.FossbookShareImage = (() => {
     }
   }
 
-  function init({ locale = "en", labels: overrides = {} } = {}) {
+  function init({
+    locale = "en",
+    watermark = "",
+    labels: overrides = {},
+  } = {}) {
     const FossbookShareImage = window.FossbookShareImage;
     const defaults = labels(locale);
     const shareDefaults = Object.fromEntries(
@@ -301,6 +316,7 @@ window.FossbookShareImage = (() => {
           '<p class="comic-share-preview-comment" hidden></p>' +
           '<div class="comic-share-preview-block">' +
             '<div class="comic-share-preview-content"></div>' +
+            '<div class="comic-share-watermark" hidden></div>' +
           '</div>' +
           '<p class="comic-share-preview-link"></p>' +
         '</section>' +
@@ -327,6 +343,11 @@ window.FossbookShareImage = (() => {
     const previewComment = shareDialog.querySelector(".comic-share-preview-comment");
     const previewContent = shareDialog.querySelector(".comic-share-preview-content");
     previewContent.id = "comic-share-preview-content";
+    const previewWatermark = shareDialog.querySelector(".comic-share-watermark");
+    const watermarkText =
+      typeof watermark === "string" ? watermark.trim() : "";
+    previewWatermark.textContent = watermarkText;
+    previewWatermark.hidden = !watermarkText;
     const includeTextInput = shareDialog.querySelector(".comic-share-include-text");
     shareDialog.querySelector(".comic-share-include-text-label span").textContent = shareDefaults.includeText;
     const previewLink = shareDialog.querySelector(".comic-share-preview-link");
@@ -426,6 +447,7 @@ window.FossbookShareImage = (() => {
         const file = await FossbookShareImage.render(
           shareDialog.querySelector(".comic-share-preview-block"),
           activeBlock.blockId + ".png",
+          watermark,
         );
         if (generation !== renderGeneration) return;
         shareFile = file;
