@@ -80,6 +80,20 @@ window.FossbookShareImage = (() => {
       : value;
   };
   const artworkSelector = "img, picture, svg, figcaption, .mermaid";
+  const shareableArtworkSelector = "img, picture, svg, .mermaid";
+
+  function hasShareableArtwork(root) {
+    for (const node of root.childNodes || []) {
+      if (node.nodeType !== 1 || node.matches(".comic-panel")) continue;
+      if (
+        node.matches(shareableArtworkSelector) ||
+        hasShareableArtwork(node)
+      ) {
+        return true;
+      }
+    }
+    return false;
+  }
 
   function artworkOnly(root) {
     for (const node of [...root.childNodes]) {
@@ -565,6 +579,7 @@ window.FossbookShareImage = (() => {
     });
 
     document.querySelectorAll(".comic-panel").forEach((panel, index) => {
+      if (!FossbookShareImage.hasShareableArtwork(panel)) return;
       if (!panel.id) {
         let suffix = index + 1;
         while (document.getElementById("comic-panel-" + suffix)) suffix += 1;
@@ -604,6 +619,7 @@ window.FossbookShareImage = (() => {
     render,
     labels,
     namespaceCloneIds,
+    hasShareableArtwork,
     artworkOnly,
     bodyText,
     removeAppendedText,
