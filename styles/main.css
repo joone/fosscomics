@@ -757,6 +757,10 @@
     box-shadow: var(--comic-panel-shadow);
   }
 
+  .comic-panel[style*="--comic-panel-padding:"] {
+    padding: var(--comic-panel-padding);
+  }
+
   .comic-panel:not(.comic-share-preview-panel)[style*="--comic-panel-margin-top:"] {
     margin-top: var(--comic-panel-margin-top);
   }
