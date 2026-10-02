@@ -35,7 +35,7 @@ In 1973, Ken Thompson and Dennis Ritchie presented Unix at the Symposium on Oper
 ![Two audience members react with surprise, one adjusting his glasses and the other folding his arms.](images/questions_en.webp "size:90%")
 
 > What's C?\
-> An OS in a high-level language?
+> Wait—you can write an OS in a high-level language?
 
 :::
 
@@ -59,7 +59,7 @@ In 1973, Ken Thompson and Dennis Ritchie presented Unix at the Symposium on Oper
 
 ![Members of the audience turn to one another and begin talking.](images/audience_en.webp "size:85%")
 
-> Murmur murmur\
+> murmur murmur\
 > All that on a PDP-11? Impressive...
 
 :::
@@ -89,8 +89,8 @@ Berkeley's computer science, mathematics, and statistics departments jointly pur
 
 ![Standiford holds the package containing the tape while Fabry throws his arms open.](images/delivery_en.webp "size:100%")
 
-> Professor, the Unix tape is here.\
-> Let's get it installed.
+> Professor! The Unix tape is here!\
+> Great! Let's get it running.
 
 :::
 
@@ -105,7 +105,7 @@ Berkeley's computer science, mathematics, and statistics departments jointly pur
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Thompson helped debug the system remotely over a modem. Berkeley's PDP-11/45 had two disks connected to one controller, which could not reliably handle overlapping seek operations. Thompson's debugging helped get Unix running reliably.[&lbrack;2&rbrack;][2]
+Thompson dialed in by modem to help. The trouble came when both disks tried to seek at once—their shared controller couldn't handle it reliably. With his help, Unix was finally running smoothly.[&lbrack;2&rbrack;][2]
 
 ![Thompson raises both arms in celebration at his computer, with a telephone connected by a cable on the desk.](images/running_en.webp "size:85%")
 
@@ -119,7 +119,7 @@ The computer science students liked Unix, but the mathematics and statistics dep
 
 ![Students wait outside a computer room reserved for the statistics department, with a sign barring computer science students.](images/shared_en.webp "size:100%")
 
-> We're the ones who installed Unix...
+> But we're the ones who installed Unix...
 >
 > Door signs: Computer Room. In use by Statistics. No CS students.
 
@@ -147,7 +147,7 @@ There still wasn't enough computer time. Berkeley bought a newer model, the PDP-
 
 ![Thompson answers the phone with one hand on his hip.](images/sabbatical_en.webp "size:100%")
 
-> I'm taking my sabbatical at Berkeley. I'll install Version 6 when I get there.
+> Good timing! I'm taking my sabbatical at Berkeley. I'll install Version 6 when I get there.
 
 :::
 
@@ -155,7 +155,7 @@ There still wasn't enough computer time. Berkeley bought a newer model, the PDP-
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-In 1975, Thompson returned to his alma mater, Berkeley, for a sabbatical as a visiting professor. Together with Jeff Schriebman and Bob Kridle, he brought up Unix Version 6 on the new PDP-11/70. The work that followed at Berkeley would eventually grow into BSD Unix.[&lbrack;2&rbrack;][2]
+In 1975, Thompson returned to his alma mater, Berkeley, for a sabbatical as a visiting professor. Together with Jeff Schriebman and Bob Kridle, he got Unix Version 6 running on the new PDP-11/70. The work that followed at Berkeley would eventually grow into BSD Unix.[&lbrack;2&rbrack;][2]
 
 ![Wearing sunglasses, Thompson walks with a suitcase carrying a Unix source tape.](images/arrival_en.webp "size:80%")
 
