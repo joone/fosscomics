@@ -1,8 +1,8 @@
 ---
 title: "11. BSD 유닉스 1화 – UC 버클리로 간 유닉스 코드"
 date: "2026-09-30"
-image: images/feature_ko.webp
-description: "1973년 유닉스 발표를 계기로 시작된 벨 연구소와 UC 버클리의 협력. 유닉스 테이프의 도착부터 켄 톰슨의 안식년까지, BSD 유닉스의 출발점을 따라갑니다."
+image: feature_ko.webp
+description: "벨 연구소에서 개발된 유닉스는 어떻게 대학과 기업으로 널리 퍼져 나갔을까? 그 실마리는 유닉스 코드를 들고 UC 버클리를 찾은 켄 톰슨에게서 찾을 수 있다."
 tags: BSD, Unix
 ---
 
