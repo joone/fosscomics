@@ -183,6 +183,78 @@
     white-space: nowrap;
   }
 
+  .comic-keyboard-help {
+    background: #fff;
+    border: 1px solid var(--bordercl);
+    border-radius: 6px;
+    box-shadow: 0 .4rem 1.5rem rgba(0, 0, 0, .25);
+    color: inherit;
+    max-width: min(28rem, calc(100vw - 2rem));
+    padding: 0;
+    width: 100%;
+  }
+
+  .comic-keyboard-help::backdrop {
+    background: rgba(0, 0, 0, .42);
+  }
+
+  .comic-keyboard-help-content {
+    padding: 1rem;
+  }
+
+  .comic-keyboard-help h2 {
+    font-size: 1.15rem;
+    margin: 0 0 .75rem;
+  }
+
+  .comic-keyboard-help dl {
+    margin: 0 0 1rem;
+  }
+
+  .comic-keyboard-help dl div {
+    align-items: center;
+    border-top: 1px solid var(--bordercl);
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: minmax(8rem, auto) 1fr;
+    padding: .5rem 0;
+  }
+
+  .comic-keyboard-help dt,
+  .comic-keyboard-help dd {
+    margin: 0;
+  }
+
+  .comic-keyboard-help kbd {
+    background: #f3f4f6;
+    border: 1px solid var(--bordercl);
+    border-radius: 3px;
+    box-shadow: 0 1px 0 var(--bordercl);
+    font: inherit;
+    font-size: .82rem;
+    padding: .08rem .3rem;
+  }
+
+  .comic-keyboard-help button {
+    background: transparent;
+    border: 1px solid var(--bordercl);
+    border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: .4rem .75rem;
+  }
+
+  .comic-keyboard-help button:hover {
+    background: var(--hovercolor);
+    color: #fff;
+  }
+
+  .comic-keyboard-help button:focus-visible {
+    outline: 2px solid var(--hovercolor);
+    outline-offset: 2px;
+  }
+
   @media screen and (max-width: 480px) {
     .episode-share-trigger {
       height: 3rem;
@@ -596,6 +668,10 @@
       display: none;
     }
 
+    .comic-keyboard-help {
+      display: none;
+    }
+
     .transcripts-hidden .image-dialogue {
       display: flex;
       clip: auto;
@@ -657,6 +733,11 @@
   /* Default style */
    .responsive-image {
     width: 40%;
+  }
+
+  .list-item .responsive-image.comic-keyboard-selected {
+    outline: 2px solid color-mix(in srgb, var(--hovercolor) 45%, transparent);
+    outline-offset: 4px;
   }
 
   /* for iOS */
@@ -1031,6 +1112,10 @@
   /* navigation */
   h1.assistive-text {
     display: none;
+  }
+
+  .comic-keyboard-selected {
+    outline: none;
   }
   nav {
     font-family: 'Roboto Mono', monospace;

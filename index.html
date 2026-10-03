@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.12">
-        <link rel="stylesheet" href="/styles/main.css?v=0.3.12">
+        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.13">
+        <link rel="stylesheet" href="/styles/main.css?v=0.3.13">
         <link rel="icon" type="image/png" href="/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -69,11 +69,11 @@
                   <div class="main">F/OSS Comics</div>
                   <nav class="language-switcher" aria-label="Languages"><a href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a href="/ko/" lang="ko" hreflang="ko" aria-label="한국어">KO</a></nav>
                 </div>
-                <nav>
+                <nav class="site-navigation" data-keyboard-current-index="0">
                   Home
-                  <a href="/all_posts">All posts</a>
-                  <a href="/about">About</a>
-                  <a href="/tags">Tags</a>
+                  <a data-keyboard-index="1" href="/all_posts">All posts</a>
+                  <a data-keyboard-index="2" href="/about">About</a>
+                  <a data-keyboard-index="3" href="/tags">Tags</a>
                 </nav>
             </header>
 
@@ -82,7 +82,7 @@
                 <p>F/OSS Comics is a comic series about free and open source software. Through stories from the history of computing and software, we hope to help readers understand F/OSS and get involved.</p>
               </div>
                 <section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/11. BSD Unix Part 1 - Unix Code Goes to UC Berkeley">11. BSD Unix, Part 1 - Unix Code Goes to UC Berkeley</a></h1>
+                    <h1><a href="/posts/11. BSD Unix Part 1 - Unix Code Goes to UC Berkeley" data-keyboard-activate>11. BSD Unix, Part 1 - Unix Code Goes to UC Berkeley</a></h1>
                         <time>Sep 30, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/11. BSD Unix Part 1 - Unix Code Goes to UC Berkeley/images/feature_en.png" alt="11. BSD Unix, Part 1 - Unix Code Goes to UC Berkeley">
@@ -90,7 +90,7 @@
                       <div class="description">How did Unix spread from Bell Labs to universities and companies? One clue lies in Ken Thompson's visit to UC Berkeley, with Unix source code in hand.</div>
                       <a class="readmore" href="/posts/11. BSD Unix Part 1 - Unix Code Goes to UC Berkeley">Read more ⟶</a>
                     </section><section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/10. The Life of Dennis Ritchie">10. The Life of Dennis Ritchie</a></h1>
+                    <h1><a href="/posts/10. The Life of Dennis Ritchie" data-keyboard-activate>10. The Life of Dennis Ritchie</a></h1>
                         <time>Sep 26, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/10. The Life of Dennis Ritchie/images/feature.png" alt="10. The Life of Dennis Ritchie">
@@ -98,7 +98,7 @@
                       <div class="description">From Harvard to Bell Labs: the life of Dennis Ritchie, creator of C and co-developer of Unix, and his later work on Plan 9 and Inferno.</div>
                       <a class="readmore" href="/posts/10. The Life of Dennis Ritchie">Read more ⟶</a>
                     </section><section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/9. The Unix Philosophy">9. The Unix Philosophy</a></h1>
+                    <h1><a href="/posts/9. The Unix Philosophy" data-keyboard-activate>9. The Unix Philosophy</a></h1>
                         <time>Aug 22, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/9. The Unix Philosophy/images/feature.png" alt="9. The Unix Philosophy">
@@ -106,7 +106,7 @@
                       <div class="description">More than five decades after Unix was created, its philosophy and code live on in Linux, macOS, and other operating systems. Its lasting influence comes from a simple approach to software—build small programs that do one thing well, work together, and communicate through text streams.</div>
                       <a class="readmore" href="/posts/9. The Unix Philosophy">Read more ⟶</a>
                     </section><section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/8. The Origins of Unix and the C Language">8. The Origins of Unix and the C Language</a></h1>
+                    <h1><a href="/posts/8. The Origins of Unix and the C Language" data-keyboard-activate>8. The Origins of Unix and the C Language</a></h1>
                         <time>Jun 29, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/8. The Origins of Unix and the C Language/images/feature_en.png" alt="8. The Origins of Unix and the C Language">
@@ -114,7 +114,7 @@
                       <div class="description">How did Unix begin? Why was C created, and why was Unix rewritten in C? This is the story of the people who created Unix and C.</div>
                       <a class="readmore" href="/posts/8. The Origins of Unix and the C Language">Read more ⟶</a>
                     </section><section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/7. ITS and Hacker Culture">7. MIT Hacker Culture and ITS</a></h1>
+                    <h1><a href="/posts/7. ITS and Hacker Culture" data-keyboard-activate>7. MIT Hacker Culture and ITS</a></h1>
                         <time>Jun 29, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/7. ITS and Hacker Culture/images/night_en.png" alt="7. MIT Hacker Culture and ITS">
@@ -143,5 +143,9 @@
               </div>
             </footer>
         </div>
+        <script src="/scripts/panel-navigation.js?v=0.3.13"></script>
+        <script>
+          FossbookPanelNavigation.init({"heading":"Keyboard shortcuts","close":"Close","nextPanel":"Next panel","previousPanel":"Previous panel","previousEpisode":"Previous episode","nextEpisode":"Next episode","previousList":"Previous episode list","nextList":"Next episode list","previousSection":"Previous section","nextSection":"Next section","firstPanel":"First panel","lastPanel":"Last panel","openSelection":"Open selected episode","goBack":"Go back","pageTop":"Top of page","pageBottom":"Bottom of page","showHelp":"Show keyboard shortcuts","panelSelector":".list-item .responsive-image"});
+        </script>
     </body>
 </html>

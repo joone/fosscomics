@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.12">
-        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.12">
-        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.3.12">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.13">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.13">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.3.13">
         <link rel="icon" type="image/png" href="/ko/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -87,11 +87,11 @@
                 <div class="main">
                   F/OSS 코믹스
                 </div>
-                <nav class="site-navigation">
-                  <a href="/ko/">처음</a>
-                  <a href="/ko/all_posts">모든 글</a>
-                  <a href="/ko/about">이곳은</a>
-                  <a href="/ko/tags">태그</a>
+                <nav class="site-navigation" data-keyboard-current-index="1">
+                  <a data-keyboard-index="0" href="/ko/">처음</a>
+                  <a data-keyboard-index="1" href="/ko/all_posts">모든 글</a>
+                  <a data-keyboard-index="2" href="/ko/about">이곳은</a>
+                  <a data-keyboard-index="3" href="/ko/tags">태그</a>
                 </nav>
             </header>
             <main>
@@ -295,9 +295,11 @@
             </footer>
         </div>
         
-        <script src="/ko/scripts/panel-navigation.js?v=0.3.12"></script>
-        <script>FossbookPanelNavigation.init();</script>
-        <script src="/ko/scripts/episode-share.js?v=0.3.12"></script>
+        <script src="/ko/scripts/panel-navigation.js?v=0.3.13"></script>
+        <script>
+          FossbookPanelNavigation.init({"heading":"키보드 단축키","close":"닫기","nextPanel":"다음 패널","previousPanel":"이전 패널","previousEpisode":"이전 에피소드","nextEpisode":"다음 에피소드","previousList":"이전 에피소드 목록","nextList":"다음 에피소드 목록","previousSection":"이전 메뉴","nextSection":"다음 메뉴","firstPanel":"첫 패널","lastPanel":"마지막 패널","openSelection":"선택한 에피소드 열기","goBack":"뒤로 가기","pageTop":"페이지 맨 위","pageBottom":"페이지 맨 아래","showHelp":"키보드 단축키 보기"});
+        </script>
+        <script src="/ko/scripts/episode-share.js?v=0.3.13"></script>
         <script>
           FossbookEpisodeShare.init({"copiedLabel":"링크를 복사했습니다","copyErrorLabel":"링크를 복사하지 못했습니다","shareErrorLabel":"에피소드를 공유하지 못했습니다"});
         </script>
@@ -338,7 +340,7 @@
               const loadSharingScript = (filename) =>
                 new Promise((resolve, reject) => {
                   const script = document.createElement("script");
-                  const src = "/ko/scripts/" + filename + "?v=0.3.12";
+                  const src = "/ko/scripts/" + filename + "?v=0.3.13";
                   script.src = src;
                   script.onload = resolve;
                   script.onerror = () => reject(new Error("Could not load " + src));

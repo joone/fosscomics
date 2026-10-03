@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.12">
-        <link rel="stylesheet" href="/styles/main.css?v=0.3.12">
-        <link rel="stylesheet" href="/styles/highlights.css?v=0.3.12">
+        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.13">
+        <link rel="stylesheet" href="/styles/main.css?v=0.3.13">
+        <link rel="stylesheet" href="/styles/highlights.css?v=0.3.13">
         <link rel="icon" type="image/png" href="/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -64,11 +64,11 @@
                 <div class="main">
                   F/OSS Comics
                 </div>
-                <nav class="site-navigation">
-                  <a href="/">Home</a>
-                  <a href="/all_posts">All posts</a>
+                <nav class="site-navigation" data-keyboard-current-index="2">
+                  <a data-keyboard-index="0" href="/">Home</a>
+                  <a data-keyboard-index="1" href="/all_posts">All posts</a>
                   About
-                  <a href="/tags">Tags</a>
+                  <a data-keyboard-index="3" href="/tags">Tags</a>
                 </nav>
             </header>
             <main>
@@ -101,5 +101,9 @@
               </div>
             </footer>
         </div>
+        <script src="/scripts/panel-navigation.js?v=0.3.13"></script>
+        <script>
+          FossbookPanelNavigation.init({"heading":"Keyboard shortcuts","close":"Close","nextPanel":"Next panel","previousPanel":"Previous panel","previousEpisode":"Previous episode","nextEpisode":"Next episode","previousList":"Previous episode list","nextList":"Next episode list","previousSection":"Previous section","nextSection":"Next section","firstPanel":"First panel","lastPanel":"Last panel","openSelection":"Open selected episode","goBack":"Go back","pageTop":"Top of page","pageBottom":"Bottom of page","showHelp":"Show keyboard shortcuts"});
+        </script>
     </body>
 </html>

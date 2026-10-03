@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.12">
-        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.12">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.3.13">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.3.13">
         <link rel="icon" type="image/png" href="/ko/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -65,11 +65,11 @@
                   <div class="main">F/OSS 코믹스</div>
                   <nav class="language-switcher" aria-label="Languages"><a href="/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
                 </div>
-                <nav>
+                <nav class="site-navigation" data-keyboard-current-index="0">
                   처음
-                  <a href="/ko/all_posts">모든 글</a>
-                  <a href="/ko/about">이곳은</a>
-                  <a href="/ko/tags">태그</a>
+                  <a data-keyboard-index="1" href="/ko/all_posts">모든 글</a>
+                  <a data-keyboard-index="2" href="/ko/about">이곳은</a>
+                  <a data-keyboard-index="3" href="/ko/tags">태그</a>
                 </nav>
             </header>
 
@@ -78,7 +78,7 @@
                 <p>F/OSS 코믹스는 자유 및 오픈 소스 소프트웨어를 다루는 만화 시리즈입니다. 컴퓨터와 소프트웨어의 역사를 통해 자유 및 오픈 소스 소프트웨어의 세계를 이해하고 직접 참여할 수 있도록 돕고자 합니다.</p>
               </div>
                 <section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/ko/posts/1. Charles Babbage and Ada Lovelace">1. 찰스 배비지와 에이다 러브레이스</a></h1>
+                    <h1><a href="/ko/posts/1. Charles Babbage and Ada Lovelace" data-keyboard-activate>1. 찰스 배비지와 에이다 러브레이스</a></h1>
                         <time>2026년 6월 29일</time>
                       <div class="responsive-image">
                          <img src="/ko/posts/1. Charles Babbage and Ada Lovelace/images/feature_ko.png" alt="1. 찰스 배비지와 에이다 러브레이스">
@@ -107,5 +107,9 @@
               </div>
             </footer>
         </div>
+        <script src="/ko/scripts/panel-navigation.js?v=0.3.13"></script>
+        <script>
+          FossbookPanelNavigation.init({"heading":"키보드 단축키","close":"닫기","nextPanel":"다음 패널","previousPanel":"이전 패널","previousEpisode":"이전 에피소드","nextEpisode":"다음 에피소드","previousList":"이전 에피소드 목록","nextList":"다음 에피소드 목록","previousSection":"이전 메뉴","nextSection":"다음 메뉴","firstPanel":"첫 패널","lastPanel":"마지막 패널","openSelection":"선택한 에피소드 열기","goBack":"뒤로 가기","pageTop":"페이지 맨 위","pageBottom":"페이지 맨 아래","showHelp":"키보드 단축키 보기","panelSelector":".list-item .responsive-image"});
+        </script>
     </body>
 </html>

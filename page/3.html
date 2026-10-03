@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.12">
-        <link rel="stylesheet" href="/styles/main.css?v=0.3.12">
+        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.13">
+        <link rel="stylesheet" href="/styles/main.css?v=0.3.13">
         <link rel="icon" type="image/png" href="/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -65,11 +65,11 @@
                   <div class="main">F/OSS Comics</div>
                   <nav class="language-switcher" aria-label="Languages"><a href="/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a href="/ko/" lang="ko" hreflang="ko" aria-label="한국어">KO</a></nav>
                 </div>
-                <nav>
+                <nav class="site-navigation" data-keyboard-current-index="0">
                   Home
-                  <a href="/all_posts">All posts</a>
-                  <a href="/about">About</a>
-                  <a href="/tags">Tags</a>
+                  <a data-keyboard-index="1" href="/all_posts">All posts</a>
+                  <a data-keyboard-index="2" href="/about">About</a>
+                  <a data-keyboard-index="3" href="/tags">Tags</a>
                 </nav>
             </header>
 
@@ -78,7 +78,7 @@
                 <p>F/OSS Comics is a comic series about free and open source software. Through stories from the history of computing and software, we hope to help readers understand F/OSS and get involved.</p>
               </div>
                 <section class="list-item" aria-label="Summary of post">
-                    <h1><a href="/posts/1. Charles Babbage and Ada Lovelace">1. Charles Babbage and Ada Lovelace</a></h1>
+                    <h1><a href="/posts/1. Charles Babbage and Ada Lovelace" data-keyboard-activate>1. Charles Babbage and Ada Lovelace</a></h1>
                         <time>Jun 29, 2026</time>
                       <div class="responsive-image">
                          <img src="/posts/1. Charles Babbage and Ada Lovelace/images/feature_en.png" alt="1. Charles Babbage and Ada Lovelace">
@@ -107,5 +107,9 @@
               </div>
             </footer>
         </div>
+        <script src="/scripts/panel-navigation.js?v=0.3.13"></script>
+        <script>
+          FossbookPanelNavigation.init({"heading":"Keyboard shortcuts","close":"Close","nextPanel":"Next panel","previousPanel":"Previous panel","previousEpisode":"Previous episode","nextEpisode":"Next episode","previousList":"Previous episode list","nextList":"Next episode list","previousSection":"Previous section","nextSection":"Next section","firstPanel":"First panel","lastPanel":"Last panel","openSelection":"Open selected episode","goBack":"Go back","pageTop":"Top of page","pageBottom":"Bottom of page","showHelp":"Show keyboard shortcuts","panelSelector":".list-item .responsive-image"});
+        </script>
     </body>
 </html>
