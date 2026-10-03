@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.11">
-        <link rel="stylesheet" href="/styles/main.css?v=0.3.11">
-        <link rel="stylesheet" href="/styles/highlights.css?v=0.3.11">
+        <link rel="stylesheet" href="/styles/fonts.css?v=0.3.12">
+        <link rel="stylesheet" href="/styles/main.css?v=0.3.12">
+        <link rel="stylesheet" href="/styles/highlights.css?v=0.3.12">
         <link rel="icon" type="image/png" href="/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -101,12 +101,24 @@
                       <label for="comic-transcript-toggle">Display dialogue text</label>
                       <input id="comic-transcript-toggle" type="checkbox" role="switch" aria-controls="comic-transcript">
                     </div>
-                    <button class="copy-link-button" type="button">
-                      <span aria-live="polite">Copy link</span>
-                    </button>
+                    <div class="episode-share">
+                      <button class="episode-share-trigger" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="episode-share-menu" aria-label="Share episode" title="Share episode">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .22.02.43.07.63L8.91 9.2a3 3 0 1 0 0 5.6l6.16 3.57A3 3 0 0 0 15 19a3 3 0 1 0 .91-2.15l-6.16-3.57c.16-.4.25-.83.25-1.28s-.09-.88-.25-1.28l6.16-3.57A3 3 0 0 0 18 8Z"/></svg>
+                      </button>
+                      <div id="episode-share-menu" class="episode-share-menu" role="menu" aria-label="Share options" hidden>
+                        <div class="episode-share-heading" role="presentation">Share options</div>
+                        <button class="episode-share-item episode-share-copy" type="button" role="menuitem"><span class="episode-share-service-icon" aria-hidden="true">↗</span>Copy link</button>
+                        <a class="episode-share-item episode-share-facebook" role="menuitem" target="_blank" rel="noopener"><span class="episode-share-service-icon" aria-hidden="true">f</span>Facebook</a>
+                        <a class="episode-share-item episode-share-threads" role="menuitem" target="_blank" rel="noopener"><span class="episode-share-service-icon" aria-hidden="true">@</span>Threads</a>
+                        <a class="episode-share-item episode-share-bluesky" role="menuitem" target="_blank" rel="noopener"><span class="episode-share-service-icon" aria-hidden="true">B</span>Bluesky</a>
+                        <a class="episode-share-item episode-share-x" role="menuitem" target="_blank" rel="noopener"><span class="episode-share-service-icon" aria-hidden="true">X</span>X</a>
+                        <button class="episode-share-item episode-share-native" type="button" role="menuitem" hidden><span class="episode-share-service-icon" aria-hidden="true">•••</span>More sharing options…</button>
+                      </div>
+                      <span class="episode-share-status" role="status" aria-live="polite"></span>
+                    </div>
                   </div>
                   <section class="body" id="comic-transcript" style="--comic-spacing-panel-margin: 2rem; --comic-spacing-mobile-panel-margin: 1.5rem; --comic-spacing-adjacent-panel-margin: 1rem; --comic-spacing-mobile-adjacent-panel-margin: 0.75rem; --comic-spacing-group-margin: 1.5rem; --comic-spacing-mobile-group-margin: 1.5rem; --comic-spacing-panel-gap: 0.75rem; --comic-spacing-mobile-panel-gap: 0.75rem; --comic-spacing-panel-padding: 1rem; --comic-spacing-mobile-panel-padding: 0.75rem; --comic-spacing-image-gap: 0; --comic-spacing-mobile-image-gap: 0;">
-                    <section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-width: 80%; --comic-panel-align: center;" id="comic-panel-feature">
+                    <section class="comic-panel" style="--comic-panel-width: 100%; --comic-panel-align: center;" id="comic-panel-feature">
 <p><strong>The man who built an operating system, using a language he created.</strong></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -116,7 +128,7 @@
         </div>
       </section>
 <h2>An unexpected call in 1998</h2>
-<section class="comic-panel" id="comic-panel-inferno">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-inferno">
 <p>At the time, Dennis Ritchie led the research group developing the Inferno operating system and the Limbo programming language.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/ ">&lbrack;1&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -134,7 +146,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Ring ring!</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-medal">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-medal">
 <p>Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Technology and received their medals at the White House in April 1999.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/medal.html ">&lbrack;11&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -144,7 +156,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>The National Medal of Technology? Both of us? Well, Ken... looks like we&#39;re going to Washington.</p></blockquote></div></section>
 <div class="panel-group panel-group-nested" style="--panel-columns: 2;">
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-awards">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-awards">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -153,7 +165,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Aren&#39;t we getting too many awards?</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-turing-award">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-turing-award">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -163,7 +175,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Yeah. I was happy with just the Turing Award.</p></blockquote></div></section>
 </div>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-same-here">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-same-here">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -173,7 +185,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Ha, same here.</p></blockquote></div></section>
 <h2>His father and Bell Labs</h2>
-<section class="comic-panel" id="comic-panel-father">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-father">
 <p>In the 1940s, Dennis Ritchie’s father, Alistair E. Ritchie, studied switching circuit theory at Bell Labs.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html ">&lbrack;2&rbrack;</a> Automatic telephone exchanges were already in use, but many calls still needed an operator to connect them.<a href="https://www.richmondfed.org/publications/research/econ_focus/2019/q4/economic_history ">&lbrack;12&rbrack;</a> Bell Labs, the Bell System&#39;s research organization, continued developing automatic switching technology in the postwar years.<a href="https://www.nokia.com/bell-labs/about/history/ ">&lbrack;13&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -182,7 +194,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>What do you do, Dad?<br>I work on switching circuits. They help connect phone calls.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-switches">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-switches">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -192,7 +204,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>We can combine switches to make circuits that do calculations. Some colleagues and I are writing a book about it.</p></blockquote></div></section>
 <h2>Discovering computers at Harvard</h2>
-<section class="comic-panel" id="comic-panel-harvard">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-harvard">
 <p>A decade or so later.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -201,7 +213,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Dad, I&#39;ve been accepted to Harvard.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-subjects">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-subjects">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -210,7 +222,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Congratulations. Have you decided whether to study physics or mathematics?<br>I can&#39;t decide. I like both.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-campus">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-campus">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -220,7 +232,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Math or physics... Why do I have to choose?</p></blockquote></div></section>
 <div class="panel-group panel-group-nested" style="--panel-columns: 2;" role="group" aria-label="An introductory computing course and Dennis's idea">
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-notice">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-notice">
 <p>Around 1960.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -229,7 +241,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Introduction to Computing Learn about computers and programming Inquiries: ...</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-calculations">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-calculations">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -239,7 +251,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Wait... I could make the computer do the calculations.</p></blockquote></div></section>
 </div>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-first-class">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-first-class">
 <p>A talk about computers caught Ritchie’s interest, and he took an introductory course. After learning about analog computers and punched-card equipment, his class wrote a program to run on a UNIVAC I.<a href="https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/ ">&lbrack;3&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -248,7 +260,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem;" id="comic-panel-computing">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-computing">
 <p>Although his undergraduate major was physics, Ritchie grew increasingly interested in both the theory and practice of computing.<a href="https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/ ">&lbrack;3&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -257,7 +269,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-professor">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-professor">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -266,7 +278,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>You studied physics, but your research is about computation...<br>It all comes back to math.</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-thesis">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-thesis">
 <p>His graduate thesis concerned hierarchies of recursive functions, a topic now associated with computer science. He studied it as a graduate student in applied mathematics, while computer science was still emerging as a distinct discipline.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html ">&lbrack;2&rbrack;</a><a href="https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/ ">&lbrack;3&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -275,7 +287,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 2rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-teaching">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-teaching">
 <p>Ritchie was also interested in the practical side of computing. For three years, he taught as a teaching assistant in the introductory course he had taken. By then, the course used an IBM 7094.<a href="https://anders.unix.se/2015/10/26/interview-with-dennis-ritchie-2003/ ">&lbrack;3&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -285,7 +297,7 @@
         </div>
       </section>
 <h2>Bell Labs and the birth of Unix</h2>
-<section class="comic-panel" id="comic-panel-welcome">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-welcome">
 <p>In 1967, Ritchie joined Bell Labs.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html ">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -294,7 +306,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Oh, are you Alistair&#39;s son?<br>Yes, I am.<br>I know your father well.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-multics">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-multics">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -312,7 +324,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Well... there are three organizations involved.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-withdrawal">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-withdrawal">
 <p>In 1969, Bell Labs withdrew from the Multics project.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html ">&lbrack;2&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -321,7 +333,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>So we&#39;re out of Multics. What do we use now?<br>I&#39;m working on something. A new operating system. Want in?</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-new-os">
+<section class="comic-panel" id="comic-panel-new-os">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -330,7 +342,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>A new operating system?</p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-unix">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-unix">
 <p>Ken Thompson was building a new operating system that drew on some ideas from Multics. Ritchie and their colleagues joined the effort, and the system became Unix.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/bigbio1st.html ">&lbrack;2&rbrack;</a><a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">&lbrack;4&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -340,7 +352,7 @@
         </div>
       </section>
 <h2>From B to C</h2>
-<section class="comic-panel" id="comic-panel-b-language">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-b-language">
 <p>Bell Labs, around 1972.</p><p>During Unix development, the team moved from the PDP-7 to the PDP-11. Their incompatible instruction sets meant rewriting the assembly code. Ritchie tried to implement Unix in Thompson&#39;s B language, but B had limitations on the PDP-11.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">&lbrack;4&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -349,7 +361,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>How&#39;s the Unix rewrite going?<br>I think B needs some work.</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-c-kernel">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-c-kernel">
 <p>B could not fully use the PDP-11&#39;s features. Ritchie added types and reworked the compiler, creating C. In the summer of 1973, the Unix kernel was rewritten in C.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">&lbrack;4&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -358,7 +370,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Heh. Barely need assembly anymore.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-reaction">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-reaction">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -367,7 +379,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Wow! C is awesome!\</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-system-v">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-system-v">
 <p>Unix and C spread from Bell Labs to universities and other institutions. Later, companies such as HP and Sun Microsystems built their own operating systems based on Unix code, helping make Unix a major industry standard.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -377,7 +389,7 @@
         </div>
       </section>
 <h2>Learning C through a book</h2>
-<section class="comic-panel" id="comic-panel-tutorial">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-tutorial">
 <p>Brian Kernighan, who worked at Bell Labs, wrote a B tutorial for in-house training. After C was developed, he wrote a C tutorial too. It later became the basis for a book.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/ ">&lbrack;1&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -386,7 +398,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-book">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-book">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -395,7 +407,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Dennis, remember my C tutorial? Want to turn it into a book together?<br>Sure. Let&#39;s do it.</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-book-cover">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-book-cover">
 <p>The C Programming Language was first published in 1978, with a second edition following in 1988. Translated into many languages, it became widely read by people learning C.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">&lbrack;4&rbrack;</a><a href="https://www.cs.princeton.edu/~bwk/cbook.html ">&lbrack;5&rbrack;</a></p><p>Second-edition cover. Image source: <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language#/media/File:The_C_Programming_Language_cover.svg ">Wikipedia</a>.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -405,7 +417,7 @@
         </div>
       </section>
 <h2>Beyond Unix: Plan 9</h2>
-<section class="comic-panel" style="--comic-panel-margin-top: 3rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-after-unix">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-after-unix">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -414,7 +426,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Hmm... What comes after Unix?</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" id="comic-panel-plan9">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-plan9">
 <p>Bell Labs began developing an operating system called Plan 9 in the late 1980s as a successor to Unix. This research system rethought how computers could share resources.<a href="https://9p.io/plan9/about.html ">&lbrack;6&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -423,7 +435,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 3rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-caught-coding">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-caught-coding">
 <p>As the research group’s leader, Ritchie mainly managed and advised the team. He joked that his contribution was signing paychecks, though he also admitted to writing a little code himself.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/ ">&lbrack;1&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -432,7 +444,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Are you coding?<br>Ah. You caught me.</p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-customers">
+<section class="comic-panel" style="--comic-panel-margin-top: 3rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-customers">
 <p>Plan 9 was used inside Bell Labs, but finding outside customers was difficult. It did not widely replace Unix.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -442,7 +454,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Now if only we could get people to use Plan 9...</p></blockquote></div></section>
 <h2>Inferno and the ideas that lived on</h2>
-<section class="comic-panel" id="comic-panel-limbo">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-limbo">
 <p>In the 1990s, Bell Labs began developing Inferno and the Limbo programming language for a wide range of devices and networks. Limbo programs ran on the Dis virtual machine, making them less dependent on particular hardware.<a href="https://www.vitanuova.com/inferno/papers/hotchips.html ">&lbrack;7&rbrack;</a><a href="https://www.vitanuova.com/inferno/ ">&lbrack;8&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -451,7 +463,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>All I did was sign the paychecks...</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-java">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-java">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -460,7 +472,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Sun announced Java. Like Inferno, it uses a virtual machine.<br>Yes, I heard.</p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-handover">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-handover">
 <p>Although Ritchie contributed to and advised on their development, Plan 9 and Inferno did not spread as widely as Unix. Vita Nuova later continued Inferno’s development and distribution.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/ ">&lbrack;1&rbrack;</a><a href="https://www.vitanuova.com/inferno/ ">&lbrack;8&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -469,7 +481,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>We&#39;re not finding many users for Inferno either. It may be time to hand it over.<br>I&#39;m glad someone can keep it going.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-raymond">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-raymond">
 <p>Marketing difficulties may have played a part, but Unix already worked well enough for its users, making it hard to replace. In The Art of Unix Programming, Eric S. Raymond drew this lesson from Plan 9.<a href="http://catb.org/~esr/writings/taoup/html/plan9.html ">&lbrack;9&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -478,7 +490,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>The most dangerous enemy of a better solution is an existing codebase that is just good enough.</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-bottom: 5rem;" id="comic-panel-ideas">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-ideas">
 <p>Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by Ken Thompson and Rob Pike, is one example.<a href="https://9p.io/sys/doc/utf.html ">&lbrack;10&rbrack;</a> The system itself did not become widespread, but its ideas lived on.</p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -488,7 +500,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>File interfaces</p></blockquote></div></section>
 <h2>Life after retirement in 2007</h2>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem;" id="comic-panel-retirement">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-retirement">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -497,7 +509,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-plans">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-plans">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -506,7 +518,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>We&#39;ll miss you around here.<br>Time to do some traveling.</p></blockquote></div></section>
-<section class="comic-panel" id="comic-panel-health">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-health">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -515,7 +527,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>How are you feeling? You&#39;ve lost a lot of weight since the surgery.<br>I&#39;m doing all right. Don&#39;t worry about me.</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-no-answer">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-no-answer">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -525,7 +537,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Dennis isn&#39;t answering. I&#39;d better go check on him.</p></blockquote></div></section>
 <h2>A quiet farewell in October 2011</h2>
-<section class="comic-panel" id="comic-panel-goodbye">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-goodbye">
 <p>Dennis Ritchie died at his home in New Jersey in October 2011.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/ ">&lbrack;1&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -534,7 +546,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>Dennis!</p></blockquote></div></section>
-<section class="comic-panel" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-memorial">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-memorial">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -543,7 +555,7 @@
           </figure>
         </div>
       </section>
-<section class="comic-panel" id="comic-panel-legacy">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-legacy">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -552,7 +564,7 @@
           </figure>
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>He accomplished so much, but lived so quietly.<br>Unix, C... His work is still everywhere.</p></blockquote></div></section>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-margin-top: 5rem; --comic-panel-margin-bottom: 5rem;" id="comic-panel-portrait">
+<section class="comic-panel" id="comic-panel-portrait">
 
         <div class="image-container" style="text-align: center;">
           <figure style="text-align: center;">
@@ -613,44 +625,16 @@
                 <a class="border"></a>
               </div>
               <div class="footer-info">
-                © 2026 Joone Hur | Published on Oct 2, 2026
+                © 2026 Joone Hur | Published on Oct 3, 2026
               </div>
             </footer>
         </div>
         
+        <script src="/scripts/panel-navigation.js?v=0.3.12"></script>
+        <script>FossbookPanelNavigation.init();</script>
+        <script src="/scripts/episode-share.js?v=0.3.12"></script>
         <script>
-          const copyLinkButton = document.querySelector(".copy-link-button");
-          const copyLinkLabel = copyLinkButton.querySelector("span");
-          const defaultCopyLinkLabel = copyLinkLabel.textContent;
-          let copyLinkResetTimer;
-          const copyEpisodeLink = async () => {
-            const canonicalLink = document.querySelector('link[rel="canonical"]');
-            const episodeUrl = canonicalLink ? canonicalLink.href : window.location.href;
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(episodeUrl);
-              } else {
-                const textArea = document.createElement("textarea");
-                textArea.value = episodeUrl;
-                textArea.setAttribute("readonly", "");
-                textArea.style.position = "fixed";
-                textArea.style.opacity = "0";
-                document.body.appendChild(textArea);
-                textArea.select();
-                const copied = document.execCommand("copy");
-                textArea.remove();
-                if (!copied) throw new Error("Copy command failed");
-              }
-              copyLinkLabel.textContent = "Link copied";
-            } catch (error) {
-              copyLinkLabel.textContent = "Could not copy link";
-            }
-            clearTimeout(copyLinkResetTimer);
-            copyLinkResetTimer = setTimeout(() => {
-              copyLinkLabel.textContent = defaultCopyLinkLabel;
-            }, 2000);
-          };
-          copyLinkButton.addEventListener("click", copyEpisodeLink);
+          FossbookEpisodeShare.init({"copiedLabel":"Link copied","copyErrorLabel":"Could not copy link","shareErrorLabel":"Could not share this episode"});
         </script>
         <script>
           (async () => {
@@ -689,7 +673,7 @@
               const loadSharingScript = (filename) =>
                 new Promise((resolve, reject) => {
                   const script = document.createElement("script");
-                  const src = "/scripts/" + filename + "?v=0.3.11";
+                  const src = "/scripts/" + filename + "?v=0.3.12";
                   script.src = src;
                   script.onload = resolve;
                   script.onerror = () => reject(new Error("Could not load " + src));
@@ -702,7 +686,7 @@
               return;
             }
 
-            FossbookShareImage.init({"locale":"en-US","watermark":"fosscomics","labels":{"heading":"","menu":"","socialShare":"","comment":"","commentPlaceholder":"","close":"","shareOnX":"","shareOnBluesky":"","popupBlocked":"","imagePreparing":"","imageError":"","imageHelp":"","downloadImage":"","copyImage":"","shareImage":"","copyComment":"","includeText":"","noArtwork":"","imageCopied":"","imageDownloaded":"","commentCopied":"","actionError":"","attachImage":""}});
+            FossbookShareImage.init({"locale":"en-US","watermark":"fosscomics","labels":{"heading":"","menu":"","comment":"","commentPlaceholder":"","close":"","shareOnX":"","shareOnBluesky":"","popupBlocked":"","imagePreparing":"","imageError":"","imageHelp":"","downloadImage":"","copyImage":"","shareImage":"","copyComment":"","includeText":"","noArtwork":"","imageCopied":"","imageDownloaded":"","commentCopied":"","actionError":"","attachImage":""}});
           })();
         </script>
     </body>

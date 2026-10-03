@@ -4,7 +4,6 @@ window.FossbookShareImage = (() => {
     en: {
       heading: "Share this block",
       menu: "Share",
-      socialShare: "Social sharing...",
       comment: "Text",
       commentPlaceholder: "Add or edit text for your post (optional)",
       close: "Close",
@@ -35,7 +34,6 @@ window.FossbookShareImage = (() => {
     ko: {
       heading: "이 장면 공유",
       menu: "공유",
-      socialShare: "소셜 공유…",
       comment: "텍스트",
       commentPlaceholder: "게시물 텍스트를 추가하거나 수정하세요 (선택)",
       close: "닫기",
@@ -302,16 +300,6 @@ window.FossbookShareImage = (() => {
       return true;
     };
 
-    const contextMenu = document.createElement("div");
-    contextMenu.className = "comic-share-context-menu";
-    contextMenu.hidden = true;
-    contextMenu.setAttribute("role", "menu");
-    contextMenu.innerHTML =
-      '<button class="comic-share-menu-item" type="button" role="menuitem"></button>';
-    const contextMenuItem = contextMenu.querySelector(".comic-share-menu-item");
-    contextMenuItem.textContent = shareDefaults.socialShare;
-    document.body.appendChild(contextMenu);
-
     const shareDialog = document.createElement("dialog");
     shareDialog.className = "comic-share-dialog";
     shareDialog.innerHTML =
@@ -386,30 +374,16 @@ window.FossbookShareImage = (() => {
     let shareFileUrl = null;
     let renderGeneration = 0;
     let activeBlock = null;
-    let contextMenuTrigger = null;
     let dialogTrigger = null;
+    let touchActivePanel = null;
     let appendedBodyText = "";
 
-    const closeContextMenu = (restoreFocus = false) => {
-      contextMenu.hidden = true;
-      if (contextMenuTrigger) {
-        contextMenuTrigger.setAttribute("aria-expanded", "false");
+    const revealTouchTrigger = (panel) => {
+      if (touchActivePanel && touchActivePanel !== panel) {
+        touchActivePanel.classList.remove("comic-share-touch-active");
       }
-      if (restoreFocus && contextMenuTrigger) contextMenuTrigger.focus();
-      contextMenuTrigger = null;
-    };
-
-    const openContextMenu = (block, x, y, trigger) => {
-      activeBlock = block;
-      contextMenuTrigger = trigger;
-      trigger.setAttribute("aria-expanded", "true");
-      contextMenu.hidden = false;
-      contextMenu.style.left = x + "px";
-      contextMenu.style.top = y + "px";
-      const bounds = contextMenu.getBoundingClientRect();
-      contextMenu.style.left = Math.max(8, Math.min(x, window.innerWidth - bounds.width - 8)) + "px";
-      contextMenu.style.top = Math.max(8, Math.min(y, window.innerHeight - bounds.height - 8)) + "px";
-      contextMenuItem.focus();
+      touchActivePanel = panel;
+      panel.classList.add("comic-share-touch-active");
     };
 
     const getSharePreview = () =>
@@ -478,9 +452,9 @@ window.FossbookShareImage = (() => {
       }
     };
 
-    const openShareDialog = () => {
-      dialogTrigger = contextMenuTrigger;
-      closeContextMenu();
+    const openShareDialog = (block, trigger) => {
+      activeBlock = block;
+      dialogTrigger = trigger;
       commentInput.value = "";
       includeTextInput.checked = true;
       previewLink.textContent = activeBlock.blockUrl;
@@ -489,26 +463,14 @@ window.FossbookShareImage = (() => {
       prepareShareImage();
     };
 
-    contextMenuItem.addEventListener("click", openShareDialog);
     includeTextInput.addEventListener("change", prepareShareImage);
-    contextMenu.addEventListener("focusout", (event) => {
-      // Touch browsers can blur before delivering the menu item's click.
-      // Outside taps are handled by pointerdown; close here for keyboard focus.
-      if (event.relatedTarget && !contextMenu.contains(event.relatedTarget)) closeContextMenu();
-    });
     commentInput.addEventListener("input", updateSharePreview);
     document.addEventListener("pointerdown", (event) => {
-      if (!contextMenu.hidden && !contextMenu.contains(event.target)) {
-        closeContextMenu();
+      if (touchActivePanel && !touchActivePanel.contains(event.target)) {
+        touchActivePanel.classList.remove("comic-share-touch-active");
+        touchActivePanel = null;
       }
     });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !contextMenu.hidden) {
-        event.preventDefault();
-        closeContextMenu(true);
-      }
-    });
-    window.addEventListener("resize", () => closeContextMenu());
     shareDialog.addEventListener("click", (event) => {
       if (event.target === shareDialog) shareDialog.close();
     });
@@ -595,19 +557,28 @@ window.FossbookShareImage = (() => {
       const trigger = document.createElement("button");
       trigger.className = "comic-share-trigger";
       trigger.type = "button";
-      trigger.textContent = "↗";
+      trigger.innerHTML =
+        '<svg viewBox="0 0 24 24" focusable="false" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .22.02.43.07.63L8.91 9.2a3 3 0 1 0 0 5.6l6.16 3.57A3 3 0 0 0 15 19a3 3 0 1 0 .91-2.15l-6.16-3.57c.16-.4.25-.83.25-1.28s-.09-.88-.25-1.28l6.16-3.57A3 3 0 0 0 18 8Z"/></svg>';
       trigger.setAttribute("aria-label", shareDefaults.menu);
       trigger.setAttribute("title", shareDefaults.menu);
-      trigger.setAttribute("aria-haspopup", "menu");
-      trigger.setAttribute("aria-expanded", "false");
+      trigger.setAttribute("aria-haspopup", "dialog");
       trigger.addEventListener("click", () => {
-        const bounds = trigger.getBoundingClientRect();
-        openContextMenu(block, bounds.right, bounds.bottom, trigger);
+        openShareDialog(block, trigger);
+      });
+      panel.addEventListener("pointerup", (event) => {
+        if (
+          event.pointerType !== "touch" ||
+          !event.target.closest("img, picture, svg") ||
+          event.target.closest("button, a, input, select, textarea, label")
+        ) {
+          return;
+        }
+        revealTouchTrigger(panel);
       });
       panel.addEventListener("contextmenu", (event) => {
         if (event.shiftKey || !event.target.closest("img, picture, svg")) return;
         event.preventDefault();
-        openContextMenu(block, event.clientX, event.clientY, trigger);
+        openShareDialog(block, trigger);
       });
       panel.appendChild(trigger);
     });

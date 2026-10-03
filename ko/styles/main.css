@@ -78,27 +78,124 @@
     margin: .75rem 0 1.5rem;
   }
 
-  .copy-link-button {
-    background: transparent;
-    border: 1px solid var(--bordercl);
-    border-radius: 4px;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    font-size: .78rem;
-    line-height: 1.2;
-    min-height: 1.75rem;
-    padding: .15rem .4rem;
+  .episode-share {
+    position: relative;
   }
 
-  .copy-link-button:hover {
+  .episode-share-trigger {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--bordercl);
+    border-radius: 50%;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    height: 2.25rem;
+    justify-content: center;
+    padding: .45rem;
+    width: 2.25rem;
+  }
+
+  .episode-share-trigger svg {
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  .episode-share-trigger:hover,
+  .episode-share-trigger[aria-expanded="true"] {
     background: var(--hovercolor);
     color: #fff;
   }
 
-  .copy-link-button:focus-visible {
+  .episode-share-trigger:focus-visible,
+  .episode-share-item:focus-visible {
     outline: 2px solid var(--hovercolor);
     outline-offset: 2px;
+  }
+
+  .episode-share-menu {
+    background: #fff;
+    border: 1px solid var(--bordercl);
+    border-radius: 6px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+    min-width: 15rem;
+    padding: .35rem .75rem .5rem;
+    position: absolute;
+    right: 0;
+    top: calc(100% + .4rem);
+    z-index: 30;
+  }
+
+  .episode-share-menu[hidden] {
+    display: none;
+  }
+
+  .episode-share-heading {
+    font-size: .9rem;
+    font-weight: 700;
+    padding: .45rem .15rem;
+  }
+
+  .episode-share-item {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--bordercl);
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    gap: .65rem;
+    padding: .65rem .15rem;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .episode-share-item[hidden] {
+    display: none;
+  }
+
+  .episode-share-item:hover {
+    background: color-mix(in srgb, var(--hovercolor) 12%, transparent);
+    color: inherit;
+  }
+
+  .episode-share-service-icon {
+    align-items: center;
+    border: 1px solid var(--bordercl);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: .75rem;
+    font-weight: 700;
+    height: 1.6rem;
+    justify-content: center;
+    width: 1.6rem;
+  }
+
+  .episode-share-status {
+    font-size: .76rem;
+    position: absolute;
+    right: calc(100% + .5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 480px) {
+    .episode-share-trigger {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .episode-share-menu {
+      bottom: .75rem;
+      left: .75rem;
+      position: fixed;
+      right: .75rem;
+      top: auto;
+    }
   }
 
   .comic-share-target {
@@ -122,6 +219,7 @@
     height: 2rem;
     justify-content: center;
     opacity: 0;
+    padding: .4rem;
     position: absolute;
     right: .5rem;
     transition: opacity 120ms ease;
@@ -130,6 +228,7 @@
   }
 
   .comic-share-target:hover .comic-share-trigger,
+  .comic-share-target.comic-share-touch-active .comic-share-trigger,
   .comic-share-trigger:focus,
   .comic-share-trigger:focus-visible {
     opacity: 1;
@@ -140,41 +239,15 @@
     color: #fff;
   }
 
-  .comic-share-trigger:focus-visible {
-    outline: 2px solid var(--hovercolor);
-    outline-offset: 2px;
-  }
-
-  .comic-share-context-menu {
-    background: #fff;
-    border: 1px solid var(--bordercl);
-    border-radius: 4px;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .18);
-    padding: .25rem;
-    position: fixed;
-    z-index: 20;
-  }
-
-  .comic-share-context-menu[hidden] {
-    display: none;
-  }
-
-  .comic-share-menu-item {
-    background: transparent;
-    border: 0;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    padding: .45rem .75rem;
-    text-align: left;
+  .comic-share-trigger svg {
+    fill: currentColor;
+    height: 100%;
     width: 100%;
   }
 
-  .comic-share-menu-item:hover,
-  .comic-share-menu-item:focus-visible {
-    background: var(--hovercolor);
-    color: #fff;
-    outline: none;
+  .comic-share-trigger:focus-visible {
+    outline: 2px solid var(--hovercolor);
+    outline-offset: 2px;
   }
 
   .comic-share-dialog {
@@ -382,7 +455,18 @@
 
   @media (hover: none) {
     .comic-share-trigger {
-      opacity: .75;
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .comic-share-target:hover .comic-share-trigger {
+      opacity: 0;
+    }
+
+    .comic-share-target.comic-share-touch-active .comic-share-trigger,
+    .comic-share-trigger:focus,
+    .comic-share-trigger:focus-visible {
+      opacity: 1;
     }
   }
 
@@ -508,7 +592,6 @@
   @media print {
     .post-controls,
     .comic-share-trigger,
-    .comic-share-context-menu,
     .comic-share-dialog {
       display: none;
     }
