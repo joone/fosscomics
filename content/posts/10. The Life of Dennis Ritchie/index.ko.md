@@ -6,7 +6,7 @@ description: "하버드에서 벨 연구소까지, C언어를 만들고 동료�
 tags: C Language, Plan9, Unix
 ---
 
-:::panel rounded="true" style="width: 80%; align:center;"
+:::panel style="width: 100%; align:center;"
 
 **자기가 만든 프로그래밍 언어로 운영체제를 개발한 사람.**
 
@@ -16,7 +16,7 @@ tags: C Language, Plan9, Unix
 
 ## 1998년, 뜻밖의 전화
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 당시 데니스 리치는 Inferno 운영체제와 Limbo라는 프로그래밍 언어를 개발하는 연구진을 이끌고 있었다.[&lbrack;1&rbrack;][1]
 
@@ -34,7 +34,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 리치와 켄 톰프슨은 1998년도 미국 국가 기술 훈장 수상자로 선정되어, 1999년 4월 백악관에서 훈장을 받았다.[&lbrack;11&rbrack;][11]
 
@@ -46,7 +46,7 @@ tags: C Language, Plan9, Unix
 
 ::::panels columns="2" label=""
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![전화기 너머에서 이야기하는 켄 톰슨.](images/awards_ko.webp "size:100%")
 
@@ -54,7 +54,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![수화기를 든 리치가 미소를 짓는다.](images/turing_award_ko.webp "size:100%")
 
@@ -64,7 +64,7 @@ tags: C Language, Plan9, Unix
 
 ::::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![톰슨의 작은 얼굴 그림 옆에서 리치가 통화를 이어 간다.](images/same_here_ko.webp "size:80%")
 
@@ -74,7 +74,7 @@ tags: C Language, Plan9, Unix
 
 ## 아버지와 벨 연구소
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1940년대 데니스 리치의 아버지 앨리스터 E. 리치는 벨 연구소에서 스위칭 회로 이론을 연구했다.[&lbrack;2&rbrack;][2] 당시에는 이미 자동 전화 교환기가 쓰이고 있었지만, 여전히 많은 통화는 교환수가 상대방을 연결해 주어야 했다.[&lbrack;12&rbrack;][12] 벨 시스템의 연구기관인 벨 연구소에서는 전후에도 자동 교환 기술을 발전시키기 위한 연구가 이어지고 있었다.[&lbrack;13&rbrack;][13]
 
@@ -85,7 +85,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![아버지가 손짓하며 연구 내용을 설명한다.](images/switches_ko.webp "size:70%")
 
@@ -95,7 +95,7 @@ tags: C Language, Plan9, Unix
 
 ## 하버드 대학에서 컴퓨터를 만나다
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 10여 년 후,
 
@@ -105,7 +105,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![아버지가 묻자 데니스가 대답을 망설인다.](images/subjects_ko.webp "size:100%")
 
@@ -114,7 +114,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![책을 든 데니스가 대학 건물 앞을 걷는다.](images/campus_ko.webp "size:100%")
 
@@ -124,7 +124,7 @@ tags: C Language, Plan9, Unix
 
 ::::panels columns="2" label="컴퓨터 입문 수업과 데니스의 생각"
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1960년 무렵,
 
@@ -134,7 +134,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![생각이 떠오른 듯 손을 들어 올리는 데니스.](images/calculations_ko.webp "size:100%")
 
@@ -144,7 +144,7 @@ tags: C Language, Plan9, Unix
 
 ::::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 데니스 리치는 컴퓨터 강연에 흥미를 느껴 입문 수업을 들었다. 아날로그 컴퓨터와 천공 카드 사용법을 배운 뒤, UNIVAC I에서 실행할 프로그램을 작성했다.[&lbrack;3&rbrack;][3]
 
@@ -152,7 +152,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 물리학과 학부 학생이었던 데니스 리치는 컴퓨터의 이론과 활용에 점점 더 많은 흥미를 갖기 시작한다.[&lbrack;3&rbrack;][3]
 
@@ -160,7 +160,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![데니스가 책상을 사이에 두고 교수와 마주 앉아 있다.](images/professor_ko.webp "size:100%")
 
@@ -169,7 +169,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 대학원 논문 주제도 지금의 전산학에 관한 내용인 재귀 함수의 계층(hierarchies of recursive functions)이었다. 리치는 응용수학을 공부하며 이 주제를 연구했다. 전산학이 독립된 학문으로 자리 잡아 가던 시기였다.[&lbrack;2&rbrack;][2][&lbrack;3&rbrack;][3]
 
@@ -177,7 +177,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 2rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 데니스 리치는 실용적인 측면에도 관심이 많았고, 3년 동안 자신이 수강했던 컴퓨터 입문 수업의 조교로 학생들을 가르쳤다. 그가 컴퓨터를 가르칠 때는 IBM 7094를 사용했다.[&lbrack;3&rbrack;][3]
 
@@ -187,7 +187,7 @@ tags: C Language, Plan9, Unix
 
 ## 벨 연구소와 유닉스의 탄생
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1967년, 데니스 리치는 벨 연구소에서 일을 시작했다.[&lbrack;2&rbrack;][2]
 
@@ -199,7 +199,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![동료가 개발 중인 운영체제를 소개하자 데니스가 관심을 보인다.](images/multics_ko.webp "size:100%")
 
@@ -216,7 +216,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1969년, 벨 연구소는 멀틱스 프로젝트에서 철수했다.[&lbrack;2&rbrack;][2]
 
@@ -227,7 +227,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 
 ![턱을 만지며 새로운 운영체제 이야기를 되묻는 데니스.](images/new_os_ko.webp "size:80%")
 
@@ -235,7 +235,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 켄 톰슨은 멀틱스에서 몇 가지 아이디어를 가져와 새로운 운영체제를 만들고 있었다. 리치와 동료들도 개발에 참여했고, 이 시스템이 유닉스가 되었다.[&lbrack;2&rbrack;][2][&lbrack;4&rbrack;][4]
 
@@ -245,7 +245,7 @@ tags: C Language, Plan9, Unix
 
 ## B언어에서 C언어로
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1972년 무렵, 벨 연구소.
 
@@ -258,7 +258,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 당시 B언어는 PDP-11의 기능을 충분히 활용하지 못했다. 리치는 B언어에 자료형을 더하고 컴파일러를 고쳐 C언어를 만들었다. 그리고 1973년 여름, 유닉스 커널을 C언어로 다시 작성했다.[&lbrack;4&rbrack;][4]
 
@@ -268,7 +268,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![컴퓨터를 사용하는 개발자 뒤에서 리치가 흐뭇하게 바라본다.](images/reaction_ko.webp "size:100%")
 
@@ -277,7 +277,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 유닉스와 C언어는 벨 연구소에서 사용되다가 대학과 여러 기관으로 퍼져 나갔다. 이후 HP, Sun Microsystems 같은 회사도 유닉스 코드를 기반으로 자체 운영체제를 만들면서 유닉스는 업계의 주요 표준으로 자리 잡기 시작한다.
 
@@ -287,7 +287,7 @@ tags: C Language, Plan9, Unix
 
 ## 한 권의 책으로 만난 C
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 벨 연구소에서 일하던 브라이언 커니핸은 사내 교육용으로 B언어 튜토리얼을 작성했다. 이후 C언어가 개발되자 C언어 튜토리얼도 작성했다. 이 튜토리얼은 훗날 리치와 함께 쓴 책의 바탕이 되었다.[&lbrack;1&rbrack;][1]
 
@@ -295,7 +295,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![커니핸이 제안하자 리치가 팔짱을 끼고 미소를 짓는다.](images/book_ko.webp "size:100%")
 
@@ -304,7 +304,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 『The C Programming Language』는 1978년 초판이 출간되었고, 1988년 제2판이 나왔다. 여러 언어로 번역되어 C언어를 배우는 독자들에게 널리 읽혔다.[&lbrack;4&rbrack;][4][&lbrack;5&rbrack;][5]
 
@@ -316,7 +316,7 @@ tags: C Language, Plan9, Unix
 
 ## 유닉스 다음을 찾아서: Plan 9
 
-:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![혼자 서서 다음 운영체제를 생각하는 리치.](images/after_unix_ko.webp "size:100%")
 
@@ -324,7 +324,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 벨 연구소에서는 1980년대 후반부터 유닉스의 후속으로 Plan 9을 개발했다. 여러 컴퓨터의 자원을 함께 쓰는 방식을 새롭게 설계한 연구용 운영체제였다.[&lbrack;6&rbrack;][6]
 
@@ -332,7 +332,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 연구팀을 이끌던 데니스 리치는 주로 관리와 조언을 맡았다. 본인 말로는 급여를 승인하는 업무를 했다고 하는데, 일부 코드를 직접 작성했음을 시인하기도 했다.[&lbrack;1&rbrack;][1]
 
@@ -343,7 +343,7 @@ tags: C Language, Plan9, Unix
 
 :::
 
-:::panel
+:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
 
 Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기는 쉽지 않았다. 유닉스를 널리 대체하지는 못했다.
 
@@ -355,7 +355,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 ## Inferno, 그리고 남은 아이디어
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 벨 연구소는 1990년대에 다양한 장치와 네트워크에서 사용할 Inferno 운영체제와 Limbo라는 프로그래밍 언어를 개발하기 시작한다. Limbo로 작성한 프로그램은 Dis 가상 머신에서 실행되어 특정 하드웨어에 대한 의존도를 줄였다.[&lbrack;7&rbrack;][7][&lbrack;8&rbrack;][8]
 
@@ -365,7 +365,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![동료와 리치가 마주 서서 이야기한다.](images/java_ko.webp "size:100%")
 
@@ -374,7 +374,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::
 
-:::panel 
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 데니스 리치가 개발에 참여하고 조언했지만, Plan 9과 Inferno는 유닉스만큼 널리 보급되지 못했다. Inferno는 이후 Vita Nuova에서 개발과 배포를 이어 갔다.[&lbrack;1&rbrack;][1][&lbrack;8&rbrack;][8]
 
@@ -385,7 +385,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 마케팅의 어려움 등 여러 이유가 있었겠지만, 이미 쓸 만한 유닉스가 있다는 점도 장벽이었다. 에릭 레이먼드는 『The Art of Unix Programming』에서 Plan 9을 예로 들며 이런 교훈을 이야기했다.[&lbrack;9&rbrack;][9]
 
@@ -395,7 +395,7 @@ Plan 9은 벨 연구소 내부에서 쓰였지만 외부에서 고객을 찾기�
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다. 켄 톰슨과 롭 파이크가 Plan 9에서 구현한 UTF-8은 그 대표적인 사례다.[&lbrack;10&rbrack;][10] 시스템 자체가 널리 퍼지지 않아도 그 안의 아이디어는 남았다.
 
@@ -407,13 +407,13 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 ## 2007년, 은퇴 이후의 삶
 
-:::panel style="margin-top: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![동료들이 케이크 주위에 모여 리치의 은퇴를 축하한다.](images/retirement.webp "size:100%")
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![잔을 든 동료가 리치에게 작별 인사를 건넨다.](images/plans_ko.webp "size:100%")
 
@@ -422,7 +422,7 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![서로 다른 장소에서 전화로 이야기하는 동료와 리치.](images/health_ko.webp "size:100%")
 
@@ -431,7 +431,7 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![걱정스러운 표정으로 전화기를 든 동료.](images/no_answer_ko.webp "size:80%")
 
@@ -441,7 +441,7 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 ## 2011년 10월, 조용한 작별
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 데니스 리치는 2011년 10월 뉴저지의 집에서 세상을 떠났다.[&lbrack;1&rbrack;][1]
 
@@ -451,13 +451,13 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![꽃으로 덮인 관 옆에 사람들이 서 있는 상징적인 작별 장면.](images/memorial.webp "size:100%")
 
 :::
 
-:::panel 
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![뒷모습을 보이며 나란히 걸어가는 두 사람.](images/legacy_ko.webp "size:100%")
 
@@ -466,9 +466,7 @@ Plan 9의 몇 가지 아이디어는 다른 시스템에도 영향을 주었다.
 
 :::
 
-:::panel rounded="true" style="margin-top: 5rem;margin-bottom: 5rem;"
-
-
+:::panel
 
 ![넓은 여백 속에 그려진 리치의 초상.](images/portrait.webp "데니스 리치, 1941-2011 size:70%")
 

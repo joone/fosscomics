@@ -6,7 +6,7 @@ description: "From Harvard to Bell Labs: the life of Dennis Ritchie, creator of 
 tags: C Language, Plan9, Unix
 ---
 
-:::panel rounded="true" style="width: 80%; align:center;"
+:::panel style="width: 100%; align:center;"
 
 **The man who built an operating system, using a language he created.**
 
@@ -16,7 +16,7 @@ tags: C Language, Plan9, Unix
 
 ## An unexpected call in 1998
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 At the time, Dennis Ritchie led the research group developing the Inferno operating system and the Limbo programming language.[&lbrack;1&rbrack;][1]
 
@@ -34,7 +34,7 @@ At the time, Dennis Ritchie led the research group developing the Inferno operat
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Technology and received their medals at the White House in April 1999.[&lbrack;11&rbrack;][11]
 
@@ -46,7 +46,7 @@ Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Tec
 
 ::::panels columns="2" label=""
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Ken Thompson at the other end of the line.](images/awards.webp "size:100%")
 
@@ -54,7 +54,7 @@ Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Tec
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Ritchie smiles into the receiver.](images/turing_award.webp "size:100%")
 
@@ -64,7 +64,7 @@ Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Tec
 
 ::::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A small image of Thompson's face appears beside Ritchie as they talk.](images/same_here.webp "size:80%")
 
@@ -74,7 +74,7 @@ Ritchie and Ken Thompson were named recipients of the 1998 National Medal of Tec
 
 ## His father and Bell Labs
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 In the 1940s, Dennis Ritchie’s father, Alistair E. Ritchie, studied switching circuit theory at Bell Labs.[&lbrack;2&rbrack;][2] Automatic telephone exchanges were already in use, but many calls still needed an operator to connect them.[&lbrack;12&rbrack;][12] Bell Labs, the Bell System's research organization, continued developing automatic switching technology in the postwar years.[&lbrack;13&rbrack;][13]
 
@@ -85,7 +85,7 @@ In the 1940s, Dennis Ritchie’s father, Alistair E. Ritchie, studied switching 
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![His father explains his research.](images/switches.webp "size:70%")
 
@@ -95,7 +95,7 @@ In the 1940s, Dennis Ritchie’s father, Alistair E. Ritchie, studied switching 
 
 ## Discovering computers at Harvard
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 A decade or so later.
 
@@ -105,7 +105,7 @@ A decade or so later.
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![His father asks a question; Dennis hesitates over his answer.](images/subjects.webp "size:100%")
 
@@ -114,7 +114,7 @@ A decade or so later.
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Dennis walks past a university building, carrying books.](images/campus.webp "size:100%")
 
@@ -124,7 +124,7 @@ A decade or so later.
 
 ::::panels columns="2" label="An introductory computing course and Dennis's idea"
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Around 1960.
 
@@ -134,7 +134,7 @@ Around 1960.
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Dennis raises a hand as an idea takes shape.](images/calculations.webp "size:100%")
 
@@ -144,7 +144,7 @@ Around 1960.
 
 ::::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 A talk about computers caught Ritchie’s interest, and he took an introductory course. After learning about analog computers and punched-card equipment, his class wrote a program to run on a UNIVAC I.[&lbrack;3&rbrack;][3]
 
@@ -152,7 +152,7 @@ A talk about computers caught Ritchie’s interest, and he took an introductory 
 
 :::
 
-:::panel style="margin-top: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Although his undergraduate major was physics, Ritchie grew increasingly interested in both the theory and practice of computing.[&lbrack;3&rbrack;][3]
 
@@ -160,7 +160,7 @@ Although his undergraduate major was physics, Ritchie grew increasingly interest
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Dennis sits across the desk from a professor.](images/professor.webp "size:100%")
 
@@ -169,7 +169,7 @@ Although his undergraduate major was physics, Ritchie grew increasingly interest
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 His graduate thesis concerned hierarchies of recursive functions, a topic now associated with computer science. He studied it as a graduate student in applied mathematics, while computer science was still emerging as a distinct discipline.[&lbrack;2&rbrack;][2][&lbrack;3&rbrack;][3]
 
@@ -177,7 +177,7 @@ His graduate thesis concerned hierarchies of recursive functions, a topic now as
 
 :::
 
-:::panel style="margin-top: 2rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Ritchie was also interested in the practical side of computing. For three years, he taught as a teaching assistant in the introductory course he had taken. By then, the course used an IBM 7094.[&lbrack;3&rbrack;][3]
 
@@ -187,7 +187,7 @@ Ritchie was also interested in the practical side of computing. For three years,
 
 ## Bell Labs and the birth of Unix
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 In 1967, Ritchie joined Bell Labs.[&lbrack;2&rbrack;][2]
 
@@ -199,7 +199,7 @@ In 1967, Ritchie joined Bell Labs.[&lbrack;2&rbrack;][2]
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A colleague introduces the operating system the team is developing.](images/multics.webp "size:100%")
 
@@ -216,7 +216,7 @@ In 1967, Ritchie joined Bell Labs.[&lbrack;2&rbrack;][2]
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 In 1969, Bell Labs withdrew from the Multics project.[&lbrack;2&rbrack;][2]
 
@@ -227,7 +227,7 @@ In 1969, Bell Labs withdrew from the Multics project.[&lbrack;2&rbrack;][2]
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 
 ![Dennis repeats the idea, touching his chin.](images/new_os.webp "size:80%")
 
@@ -235,7 +235,7 @@ In 1969, Bell Labs withdrew from the Multics project.[&lbrack;2&rbrack;][2]
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Ken Thompson was building a new operating system that drew on some ideas from Multics. Ritchie and their colleagues joined the effort, and the system became Unix.[&lbrack;2&rbrack;][2][&lbrack;4&rbrack;][4]
 
@@ -245,7 +245,7 @@ Ken Thompson was building a new operating system that drew on some ideas from Mu
 
 ## From B to C
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Bell Labs, around 1972.
 
@@ -258,7 +258,7 @@ During Unix development, the team moved from the PDP-7 to the PDP-11. Their inco
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 B could not fully use the PDP-11's features. Ritchie added types and reworked the compiler, creating C. In the summer of 1973, the Unix kernel was rewritten in C.[&lbrack;4&rbrack;][4]
 
@@ -268,7 +268,7 @@ B could not fully use the PDP-11's features. Ritchie added types and reworked th
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A developer sits at the computer while Ritchie looks on, pleased.](images/reaction.webp "size:100%")
 
@@ -276,7 +276,7 @@ B could not fully use the PDP-11's features. Ritchie added types and reworked th
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Unix and C spread from Bell Labs to universities and other institutions. Later, companies such as HP and Sun Microsystems built their own operating systems based on Unix code, helping make Unix a major industry standard.
 
@@ -286,7 +286,7 @@ Unix and C spread from Bell Labs to universities and other institutions. Later, 
 
 ## Learning C through a book
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Brian Kernighan, who worked at Bell Labs, wrote a B tutorial for in-house training. After C was developed, he wrote a C tutorial too. It later became the basis for a book.[&lbrack;1&rbrack;][1]
 
@@ -294,7 +294,7 @@ Brian Kernighan, who worked at Bell Labs, wrote a B tutorial for in-house traini
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Kernighan makes a suggestion; Ritchie smiles with his arms folded.](images/book.webp "size:100%")
 
@@ -303,7 +303,7 @@ Brian Kernighan, who worked at Bell Labs, wrote a B tutorial for in-house traini
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 The C Programming Language was first published in 1978, with a second edition following in 1988. Translated into many languages, it became widely read by people learning C.[&lbrack;4&rbrack;][4][&lbrack;5&rbrack;][5]
 
@@ -315,7 +315,7 @@ Second-edition cover. Image source: [Wikipedia](https://en.wikipedia.org/wiki/Th
 
 ## Beyond Unix: Plan 9
 
-:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Ritchie stands alone, thinking.](images/after_unix.webp "size:100%")
 
@@ -323,7 +323,7 @@ Second-edition cover. Image source: [Wikipedia](https://en.wikipedia.org/wiki/Th
 
 :::
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Bell Labs began developing an operating system called Plan 9 in the late 1980s as a successor to Unix. This research system rethought how computers could share resources.[&lbrack;6&rbrack;][6]
 
@@ -331,7 +331,7 @@ Bell Labs began developing an operating system called Plan 9 in the late 1980s a
 
 :::
 
-:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 As the research group’s leader, Ritchie mainly managed and advised the team. He joked that his contribution was signing paychecks, though he also admitted to writing a little code himself.[&lbrack;1&rbrack;][1]
 
@@ -342,7 +342,7 @@ As the research group’s leader, Ritchie mainly managed and advised the team. H
 
 :::
 
-:::panel
+:::panel style="margin-top: 3rem;margin-bottom: 5rem;"
 
 Plan 9 was used inside Bell Labs, but finding outside customers was difficult. It did not widely replace Unix.
 
@@ -354,7 +354,7 @@ Plan 9 was used inside Bell Labs, but finding outside customers was difficult. I
 
 ## Inferno and the ideas that lived on
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 In the 1990s, Bell Labs began developing Inferno and the Limbo programming language for a wide range of devices and networks. Limbo programs ran on the Dis virtual machine, making them less dependent on particular hardware.[&lbrack;7&rbrack;][7][&lbrack;8&rbrack;][8]
 
@@ -364,7 +364,7 @@ In the 1990s, Bell Labs began developing Inferno and the Limbo programming langu
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A colleague and Ritchie stand talking.](images/java.webp "size:100%")
 
@@ -373,7 +373,7 @@ In the 1990s, Bell Labs began developing Inferno and the Limbo programming langu
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Although Ritchie contributed to and advised on their development, Plan 9 and Inferno did not spread as widely as Unix. Vita Nuova later continued Inferno’s development and distribution.[&lbrack;1&rbrack;][1][&lbrack;8&rbrack;][8]
 
@@ -384,7 +384,7 @@ Although Ritchie contributed to and advised on their development, Plan 9 and Inf
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Marketing difficulties may have played a part, but Unix already worked well enough for its users, making it hard to replace. In The Art of Unix Programming, Eric S. Raymond drew this lesson from Plan 9.[&lbrack;9&rbrack;][9]
 
@@ -394,7 +394,7 @@ Marketing difficulties may have played a part, but Unix already worked well enou
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by Ken Thompson and Rob Pike, is one example.[&lbrack;10&rbrack;][10] The system itself did not become widespread, but its ideas lived on.
 
@@ -406,13 +406,13 @@ Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by
 
 ## Life after retirement in 2007
 
-:::panel style="margin-top: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Colleagues gather around a cake to celebrate Ritchie's retirement.](images/retirement.webp "size:100%")
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A colleague holding a glass says goodbye to Ritchie.](images/plans.webp "size:100%")
 
@@ -421,7 +421,7 @@ Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A colleague and Ritchie talk on the phone from separate locations.](images/health.webp "size:100%")
 
@@ -430,7 +430,7 @@ Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![A worried colleague holds the phone.](images/no_answer.webp "size:80%")
 
@@ -440,7 +440,7 @@ Some ideas from Plan 9 influenced other systems. UTF-8, implemented in Plan 9 by
 
 ## A quiet farewell in October 2011
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Dennis Ritchie died at his home in New Jersey in October 2011.[&lbrack;1&rbrack;][1]
 
@@ -450,13 +450,13 @@ Dennis Ritchie died at his home in New Jersey in October 2011.[&lbrack;1&rbrack;
 
 :::
 
-:::panel style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Mourners stand beside a flower-covered coffin in a symbolic farewell.](images/memorial.webp "size:100%")
 
 :::
 
-:::panel
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 ![Two people walk away, seen from behind.](images/legacy.webp "size:100%")
 
@@ -465,7 +465,7 @@ Dennis Ritchie died at his home in New Jersey in October 2011.[&lbrack;1&rbrack;
 
 :::
 
-:::panel rounded="true" style="margin-top: 5rem;margin-bottom: 5rem;"
+:::panel
 
 ![Ritchie's portrait surrounded by white space.](images/portrait.webp "Dennis Ritchie, 1941-2011 size:70%")
 
