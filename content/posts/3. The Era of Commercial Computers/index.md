@@ -9,7 +9,7 @@ tags: EDVAC, Presper Eckert, John Mauchly, IBM, Donald Knuth, IBM 650, IBM 608, 
 
 ## Eckert and Mauchly build UNIVAC
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 Electronic computing advanced rapidly during World War II, driven partly by military needs such as breaking German ciphers and calculating artillery firing tables. After the war, some of the engineers who had built these machines began to see that computers could also be useful to government agencies, businesses, and other civilian organizations.
 
 ![A soldier and a computer operator speak by telephone beside a room-sized calculating machine, with a missile launcher in the background.](images/military_en.webp)
@@ -17,7 +17,7 @@ Electronic computing advanced rapidly during World War II, driven partly by mili
 > "Not yet."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 J. Presper Eckert and John Mauchly were among the engineers who recognized the commercial potential of computers.
 
@@ -26,7 +26,7 @@ J. Presper Eckert and John Mauchly were among the engineers who recognized the c
 > "Then let's start a company."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left the University of Pennsylvania and founded the Electronic Control Company. In December 1947, they incorporated and renamed the business [the Eckert-Mauchly Computer Corporation (EMCC)](https://en.wikipedia.org/wiki/Eckert%E2%80%93Mauchly_Computer_Corporation). They developed UNIVAC I, a general-purpose commercial computer designed for data processing. The first UNIVAC I was delivered to the [U.S. Census Bureau](https://en.wikipedia.org/wiki/U.S._Census_Bureau) in 1951.
 
@@ -35,7 +35,7 @@ In 1946, Eckert and Mauchly, leading members of the ENIAC and EDVAC teams, left 
 > "One moment."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 The company was then expected to supply UNIVAC via contracts with the Army, Navy, and Air Force. However, those contracts were eventually canceled in 1950 after some employees were suspected of being communists during the [McCarthy](https://en.wikipedia.org/wiki/McCarthyism) era.
 Mauchly was also suspected and forced to leave the company, and it took him two years to get back to work. 
@@ -45,7 +45,7 @@ Mauchly was also suspected and forced to leave the company, and it took him two 
 > "You've got the wrong idea. None of our employees are communists."
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 The security dispute was not the company's only problem. EMCC had underestimated the cost and delivery time of its earlier BINAC project, and developing UNIVAC required more money than the small company could readily raise. Short of cash and struggling to secure government work, EMCC was acquired by [Remington Rand](https://en.wikipedia.org/wiki/Remington_Rand) in February 1950[&lbrack;1&rbrack;][1][&lbrack;3&rbrack;][3]. Eckert and Mauchly remained with the business, and Remington Rand completed the first UNIVAC the following year.
 
@@ -55,7 +55,7 @@ The security dispute was not the company's only problem. EMCC had underestimated
 
 ## Who should receive credit for the stored-program design?
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 The historical record does not support attributing the architecture to any one person. It grew out of collaborative work on EDVAC by the ENIAC team, including Eckert and Mauchly, with important contributions from John von Neumann. Because the widely circulated [First Draft of a Report on the EDVAC](https://en.wikipedia.org/wiki/First_Draft_of_a_Report_on_the_EDVAC) named only von Neumann as its author, the stored-program design became strongly associated with him and is still commonly known as the von Neumann architecture.
 
 ![John von Neumann raises one hand while speaking.](images/von_neumann_en.webp "size:80%")
@@ -67,7 +67,7 @@ Von Neumann did not devise the design alone, and who should receive credit remai
 
 ## The IBM 701 and high-level programming languages
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Commercial computer production expanded during the 1950s. IBM, already dominant in [punched-card](https://en.wikipedia.org/wiki/Punched_card%23IBM_punched_card_manufacturing) equipment, announced its first large-scale electronic computer, the [IBM 701](https://en.wikipedia.org/wiki/IBM_701), in 1952.
 
@@ -75,7 +75,7 @@ Commercial computer production expanded during the 1950s. IBM, already dominant 
 > "It still uses vacuum tubes, and there's no screen or keyboard. Memory is only 2,048 36-bit words."
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 For the [IBM 704](https://en.wikipedia.org/wiki/IBM_704), announced in 1954, [John Backus](https://en.wikipedia.org/wiki/John_Backus) led the IBM team that developed [Fortran](https://en.wikipedia.org/wiki/Fortran). The language was proposed in 1953, and its first compiler was delivered in 1957. Its ability to optimize high-level programs helped convince programmers that a compiler could produce efficient machine code[&lbrack;4&rbrack;][4]. John McCarthy designed [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) later in the decade, and Steve Russell created an early working implementation on an IBM 704.
 
@@ -86,13 +86,13 @@ For the [IBM 704](https://en.wikipedia.org/wiki/IBM_704), announced in 1954, [Jo
 
 ## The IBM 650 and a new generation of programmers
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 IBM announced the [IBM 650](https://en.wikipedia.org/wiki/IBM_650) in 1953 and delivered the first systems in 1954. Often described as the first mass-produced computer, it used a rotating magnetic drum as main memory. The drum was less expensive than the faster memory technologies used in larger machines, helping make the IBM 650 comparatively affordable. IBM eventually installed nearly 2,000 systems and placed many at universities, where students first encountered programming[&lbrack;5&rbrack;][5].
 
 ![An operator sits at the control console of an IBM 650 computer, beside its separate cabinets and card equipment.](images/ibm650_en.webp "<IBM 650>")
 :::
 
-:::panel rounded="true" style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![Donald Knuth sits at the control console of an IBM 650 computer.](images/knuth_en.webp "size:80%")
 > "The IBM 650 was my first computer."
 
@@ -100,7 +100,7 @@ Donald Knuth, later known for [The Art of Computer Programming](https://en.wikip
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel style="margin-top:3rem;"
 ![In an imagined conversation, Joone admires the IBM 650's size, then discovers a second cabinet and a separate card reader and punch beside Knuth.](images/card_reader_en.webp)
 > "Computers have gotten much smaller." \
 > "Not quite." \
@@ -113,7 +113,7 @@ By the late 1950s, many companies were producing commercial computers, universit
 
 ## The First Commercial Transistor Computer
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 The IBM 608 Transistor Calculator is generally regarded as the first commercial computer to use transistor circuitry without vacuum tubes. Released in December 1957, it used about 3,000 germanium transistors[&lbrack;7&rbrack;][7].
 

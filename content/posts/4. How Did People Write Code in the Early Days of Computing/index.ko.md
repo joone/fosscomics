@@ -8,7 +8,7 @@ tags: 에니악, 에드박, 에드삭, 기계어, 어셈블리어, 멀틱스, �
 
 ## 배선에서 프로그램 내장 방식으로
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 컴퓨터가 처음 만들어졌을 때, 사람들은 어떻게 프로그래밍을 했을까? 초기 컴퓨터는 오늘날과 같은 소프트웨어는 없었고, 탁상 계산기 같아서 릴레이나 진공관 같은 스위치로  논리회로 구성해서 한가지 용도로만 사용할 수 있었다. 
 
 ![두 기술자가 서로 다른 대형 계산 장치의 제어판을 가리킨다.](images/machines_ko.webp "size:90%")
@@ -16,13 +16,13 @@ tags: 에니악, 에드박, 에드삭, 기계어, 어셈블리어, 멀틱스, �
 > "이건 사칙연산을 위한 계산기"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![한 사람이 턱을 괸 채 탄도 계산용 컴퓨터를 구상한다.](images/planning_ko.webp "size:90%")
 > "탄도 계산하는 장치를 만들어 볼까?" \
 > "이번에는 릴레이가 몇개 필요할까? 진공관도 필요하겠군"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 에니악(ENIAC)은 플러그판(plugboard)의 배선과 스위치 설정을 바꾸어 서로 다른 프로그램을 실행할 수 있었다. 매우 번거로운 작업으로, 프로그램을 변경하는 데 며칠이 걸리기도 했다. 천공카드는 프로그램을 저장하는 것이 아니라 데이터의 입력과 출력에 사용했다[&lbrack;1&rbrack;][1][&lbrack;4&rbrack;][4].
 
@@ -34,7 +34,7 @@ tags: 에니악, 에드박, 에드삭, 기계어, 어셈블리어, 멀틱스, �
 
 ## 기계어에서 어셈블리어로
 
-:::panel style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 프로그램은 기계가 이해하고 실행할 수 있는 명령어로 이루어진다. 가장 낮은 수준의 명령어를 기계어라고 한다. 기계어는 0과 1로 이루어진 이진수 패턴으로 표현되기 때문에 사람이 읽고 기억하기 어렵다.
 
@@ -44,7 +44,7 @@ tags: 에니악, 에드박, 에드삭, 기계어, 어셈블리어, 멀틱스, �
 
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 EDSAC의 각 명령은 17비트 워드 하나를 차지했다. 
 
 - 첫번째 열, 다섯 비트는 동작 코드(Operation code)
@@ -62,13 +62,13 @@ EDSAC의 각 명령은 17비트 워드 하나를 차지했다.
 마지막 `S`는 명령어 자체가 아니라 피연산자의 길이가 짧은 형식임을 나타낸다. 짧은 피연산자는 17비트, 긴 피연산자는 35비트였다[&lbrack;6&rbrack;][6].
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 이와 같이, 기계어는 명령어 자체가 이진수에 불과하기 때문에 사람이 기억하고 바로 코드를 이해하기가 어렵다. 그래서 각각의 명령어를 상징적 기호(mnemonics)로 표현하는 어셈블리(assembly) 언어를 만들었다. 이렇게 표현된 코드를 CPU가 이해할 수 있는 기계어 코드로 변환하는 과정을 어셈블링(assembling)이라고 한다.
 
 ![프로그래머가 어셈블리어 판에 T0S와 H2S를 쓰고, 컴퓨터가 기계어 코드 판에 이진수 명령을 적는다. 두 판은 어셈블링이라고 표시한 화살표로 이어져 있다.](images/assembly_ko.webp)
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 어셈블러를 이용할 수 없는 환경에서는 프로그래머가 어셈블리 코드를 직접 기계어로 바꾸기도 했다. 이를 핸드 어셈블리(hand assembly)라고 한다. 명령어 표에서 니모닉에 해당하는 숫자 코드를 찾고, 필요한 메모리 주소를 계산해 기계어 명령을 완성하는 작업이었다. 이러한 초기 형태의 어셈블리어는 고급 언어가 널리 쓰이기 전인 1940년대 말과 1950년대 초부터 이미 사용되고 있었다.
 
@@ -80,7 +80,7 @@ EDSAC의 각 명령은 17비트 워드 하나를 차지했다.
 
 1960년대 초에도 터미널에서 명령을 입력하고 결과를 바로 확인하는 대화형 시스템은 있었다. MIT의 CTSS는 1961년에 처음 시연되었다. 다만 초기 터미널은 화면 대신 종이에 결과를 인쇄하는 경우가 많았다. 터미널이 있다고 해서 오늘날처럼 모니터를 보며 작업한 것은 아니었다.
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 1964~1965년에 MIT Project MAC, 벨 연구소, 제너럴 일렉트릭의 공동 프로젝트로 설계가 시작된 멀틱스(Multics)는 이러한 시분할 방식을 발전시키려 했다. 시분할은 컴퓨터 한 대의 처리 시간을 여러 사용자에게 짧게 나누어 주어, 각자가 자기 터미널에서 대화식으로 작업할 수 있게 하는 방식이다[&lbrack;3&rbrack;][3].
 
 ![프로그래머가 테이프 릴과 화면, 프린터가 달린 대형 컴퓨터 옆에서 키보드를 사용하며 미소 짓는다.](images/terminal_ko.webp)
@@ -91,7 +91,7 @@ EDSAC의 각 명령은 17비트 워드 하나를 차지했다.
 
 ## 천공카드와 배치 처리
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 초기 프로그래머들은 천공카드를 이용해 코드를 입력하는 경우가 많았다. 천공카드는 19세기 말부터 미국 인구조사를 비롯한 기계 처리 작업에서 데이터를 기록하고 저장하는 데 쓰였다. 원리는 오늘날의 OMR([광학 마크 인식](https://ko.wikipedia.org/wiki/%EA%B4%91%ED%95%99_%EB%A7%88%ED%81%AC_%EC%9D%B8%EC%8B%9D)) 용지를 생각하면 이해가 쉬운데, OMR 용지는 특정 위치를 표시하고, 천공카드는 특정 위치에 구멍을 뚫어 정보를 표현한다.
 
 IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, 키펀치, 카드 판독기, 집계 장비를 세계 여러 지역에 공급했다. 이후 천공카드는 프로그램과 데이터를 컴퓨터에 입력하는 중요한 매체가 되었다[&lbrack;5&rbrack;][5].
@@ -99,7 +99,7 @@ IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, �
 ![손에 든 노란색 천공카드 위에 포트란 프로그래밍을 위한 천공카드라고 적혀 있다.](images/card_ko.webp "size:80%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 실제 천공카드를 사용하려면, 프로그래머는 먼저 코딩 용지에 소스 코드를 쓰고 손으로 검토했다. 그런 다음 프로그래머나 키펀치 작업자가 프로그램을 카드에 천공했으며, 보통 카드 한 장에 소스 코드 한 줄을 기록했다. 긴 문장은 여러 카드에 걸쳐 이어질 수 있었다. 키펀치는 입력한 문자를 구멍으로 기록했고, 기계어 변환은 키펀치가 아니라 컴퓨터에서 실행되는 어셈블러나 컴파일러가 담당했다.
 
@@ -107,7 +107,7 @@ IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, �
 > "코드를 어서 천공 카드에 옮겨야지"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 프로그래머가 카드 덱을 전산실 오퍼레이터에게 제출하면, 오퍼레이터가 각 작업을 카드 판독기에 넣었다. 카드 덱을 제출하기 위해 줄을 서기도 했고, 인쇄된 결과를 받을 때까지 오랫동안 기다려야 할 수도 있었다. 프로그램이 실패하면 문제가 있는 카드를 수정하거나 교체한 뒤 카드 덱을 다시 제출해야 했다.
 
@@ -116,7 +116,7 @@ IBM은 1928년에 널리 쓰이게 된 80열 카드를 표준화하고 카드, �
 > "다음 사람"
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel style="margin-bottom: 5rem;"
 프로그램을 카드나 종이테이프에 천공하기 전이라면, 다른 사람이 종이에 손으로 쓴 프로그램을 그대로 베껴 쓰는 것만으로도 프로그램을 복사할 수 있었다.
 
 ![주인공이 옆 사람을 곁눈질하며 천공카드로 옮기기 전의 손글씨 코드를 몰래 베껴 쓴다.](images/copying_ko.webp "size:70%")

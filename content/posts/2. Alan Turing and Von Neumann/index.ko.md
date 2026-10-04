@@ -6,12 +6,16 @@ description: 앨런 튜링의 계산 이론과 에니악, 에드박, ACE, 에드
 tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드삭, ACE
 ---
 
-:::panels columns="2" label="앨런 튜링과 존 폰 노이만"
+::::panels columns="2" label="앨런 튜링과 존 폰 노이만"
+:::panel
 ![앨런 튜링의 초상.](images/alan_turing.webp "앨런 튜링 (1912-1954) size:80%")
+:::
+:::panel
 ![존 폰 노이만의 초상.](images/john_von_neumann.webp "존 폰 노이만 (1903-1957) size:80%")
 :::
+::::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 누가 지금과 같은 형태의 컴퓨터를 처음 만들었을까? 제2차 세계대전 거치면서 여러 나라의 연구진이 주로 전쟁을 목적으로 전자식 컴퓨터를 개발하기 위해 노력했다. 그보다 앞서 영국의 수학자 [앨런 튜링](https://ko.wikipedia.org/wiki/앨런_튜링)은 하나의 기계가 테이프에 부호화된 설명을 읽어 계산 가능한 모든 절차를 수행할 수 있는 범용 수학 모델을 제시했다. 
 
 누가 지금과 같은 형태의 컴퓨터를 처음 만들었을까?
@@ -24,7 +28,7 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 ## 튜링 머신, 계산의 가능성과 한계
 
-:::panel style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 하지만 실제 컴퓨터가 등장하기 전, 영국의 수학자 [앨런 튜링](https://ko.wikipedia.org/wiki/앨런_튜링)은 조금 다른 질문을 고민하고 있었다.
 
@@ -38,7 +42,7 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 그런데 이 질문에 답하려면 먼저 ‘정해진 절차에 따라 계산한다’는 것이 정확히 무엇인지 정의해야 했다.
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 1936년 튜링은 이를 설명하기 위해 아주 단순한 가상의 기계를 생각해냈다. 긴 테이프에 적힌 기호를 하나씩 읽고, 정해진 규칙에 따라 기호를 쓰거나 지우고, 테이프 위를 왼쪽이나 오른쪽으로 움직이는 기계였다.
 
@@ -52,7 +56,7 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 그런데 튜링의 연구에서는 또 하나의 중요한 아이디어가 등장했다.
 
 각각의 계산을 위해 별도의 기계를 만드는 대신, **다른 기계의 동작 규칙을 부호화해 테이프에 기록하면 하나의 기계가 여러 종류의 계산을 수행할 수 있다**는 것이었다. 튜링은 이를 ‘universal machine’이라고 불렀다.
@@ -72,19 +76,19 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 제2차 세계대전 전후로 수학자들의 이론은 실제 장치로 구현되기 시작했다. 미국과 영국을 비롯한 여러 나라의 연구진이 전자식 컴퓨터를 개발했고, 프로그램을 기억장치에 저장해 실행하는 실제 컴퓨터의 구조도 여러 연구진의 연구 개발을 통해 발전해 나갔다.
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 제2차 세계대전 동안 튜링은 독일 에니그마 암호 해독에 쓰인 영국 봄브(Bombe)의 개선된 설계를 돕고, 연합군의 암호 분석에 중요한 기여를 했다[&lbrack;2&rbrack;][2].
 
 ![한 여성이 대형 영국 봄브에 여러 줄로 배열된 회전 드럼을 조작한다.](images/bombe_ko.webp "제2차 세계대전 당시 영국에서 제작된 봄브 size:80%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 이처럼, 2차 대전 기간에 만들어진 컴퓨터는 특정 목적에서만 사용되었으나 전쟁이 끝나갈 무렵 미국에서는 범용 전자식 컴퓨터인 [에니악(ENIAC)](https://ko.wikipedia.org/wiki/에니악)을 개발하고 있었다. 펜실베이니아 대학교의 J. 프레스퍼 에커트와 존 모클리, 그리고 동료들은 1943년 개발을 시작해 1946년에 완성했다. 미 육군은 처음에 포병 사격표 계산에 이를 사용했다.
 
 ![J. 프레스퍼 에커트와 존 모클리가 나란히 서 있고, 모클리는 팔짱을 끼고 있다.](images/engineers_ko.webp "size:70%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 에니악의 프로그래밍 방식은 지금과 달랐다. 메모리에서 프로그램을 불러오는 대신 스위치를 설정하고 배선판의 케이블을 연결해야 했으며, 다른 프로그램을 실행하려면 배선판을 다시 구성해야 했다. 
 
@@ -93,7 +97,7 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 > "이제 시작이야!"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 당시 에니악의 무게는 약 30톤이었고, 약 18,000개의 진공관을 사용하며 약 150킬로와트의 전력을 소비했다[&lbrack;3&rbrack;][3].
 
@@ -102,14 +106,14 @@ tags: 앨런 튜링, 폰노이만, 튜링 기계, 에니악, 에드박, 에드�
 
 ## 에드박과 프로그램 내장 방식
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 에니악 팀은 이어 미 육군 탄도연구소를 위한 에드박(EDVAC)을 설계하기 시작했다. 이는 초기 프로그램 내장형 컴퓨터 프로젝트 가운데 하나였다. 존 폰 노이만은 컨설턴트로 참여했고, 1945년 그의 이름으로 작성된 [First Draft of a Report on the EDVAC](http://www.virtualtravelog.net/wp/wp-content/media/2003-08-TheFirstDraft.pdf) 보고서가 널리 배포되었는데, 여기서 같은 메모리에 프로그램과 데이터가 저장되는 컴퓨터 구조를 제안한다.
 
 ![J. 프레스퍼 에커트와 존 모클리가 EDVAC 설계도를 살펴보는 동안 존 폰 노이만이 옆에서 메모한다.](images/edvac_report_ko.webp "J. 프레스퍼 에커트와 존 모클리는 EDVAC을 설계하고 제작한 팀을 이끌었다. 그렇다면 폰 노이만은 어떤 역할을 했을까? size:90%")
 :::
 
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 오늘날 대부분의 컴퓨터는 이와 같은 컴퓨터 구조를 사용하고 있어서 이를 [폰 노이만 구조](https://ko.wikipedia.org/wiki/폰_노이만_구조)라고 부른다.
 
 ```mermaid
@@ -150,14 +154,14 @@ flowchart LR
 
 ## 영국의 프로그램 내장형 컴퓨터: ACE와 에드삭
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 영국 국립물리연구소는 1945년에 폰 노이만의 에드박 보고서를 입수했다.
 
 ![국립물리연구소 관계자가 문서가 쌓인 책상에서 보고서를 읽는다.](images/report_arrives_ko.webp "size:90%")
 > "미국이 벌써 프로그램 내장형 컴퓨터를 설계했다니!"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 그리고, 앨런 튜링에게 에드박과 같은 프로그램 내장 방식의 컴퓨터 개발을 주문했다. 알랜 튜링은 1945년 부터 국립 물리학 연구소에서 [ACE(Automatic Computing Engine)](https://en.wikipedia.org/wiki/Automatic_Computing_Engine)라는 프로그램 내장형 컴퓨터를 개발하면서 자신이 생각한 튜링 머신을 실제 구현해볼 수 있는 기회를 갖게 되었다.
 
@@ -175,14 +179,14 @@ flowchart LR
 > "이렇게 설계도도 있는데..."
 :::
 
-:::panel style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 케임브리지에서 에드삭 프로젝트를 이끈 모리스 윌크스도 에드박 보고서를 읽었다.
 
 ![모리스 윌크스가 책상에서 펼친 보고서를 읽는다.](images/wilkes_ko.webp "size:80%")
 > "이렇게 하면 디지털 컴퓨터를 만들 수 있겠구나."
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 케임브리지 대학교 수학연구소는 에드박 보고서의 프로그램 내장형 설계를 참고해 [에드삭(EDSAC)](https://ko.wikipedia.org/wiki/에드삭)을 개발했고, 1949년에 완성했다. 한편 국립물리연구소에서는 튜링의 ACE 설계를 바탕으로  [파일럿 ACE](https://en.wikipedia.org/wiki/Pilot_ACE)를 개발해 1950년에 첫 프로그램을 실행했다.
 
 ![서류를 든 연구자가 방을 가득 채운 에드삭 컴퓨터 옆에 서 있다.](images/edsac_ko.webp "EDSAC size:80%")
@@ -190,7 +194,7 @@ flowchart LR
 
 ## 튜링과 폰 노이만
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 앨런 튜링이 1936년에 제시한 범용 기계(universal machine)는 하나의 기계가 부호화된 명령을 읽어 다양한 계산을 수행할 수 있음을 수학적으로 보여주었으며, 훗날 등장한 프로그램 내장형 컴퓨터의 중요한 이론적 토대가 되었다. 이후 미국에서는 존 폰 노이만, J. 프레스퍼 에커트, 존 모클리 등이 EDVAC 프로젝트를 통해 프로그램 내장형 아키텍처의 발전에 기여했으며, 영국의 연구진도 독자적으로 이를 구현하고자 했다.
 
 흥미롭게도 튜링은 1936년부터 1938년까지 프린스턴 대학교에서 박사 과정을 밟았고, 당시 폰 노이만은 인근 고등연구소의 교수였다. 두 사람은 서로 알고 지냈으며, 튜링이 계산 가능한 것의 범위와 한계를 연구한 논문을 잘 알고 있던 폰 노이만은 훗날 튜링에게 연구 조교 자리를 제안하기도 했다. 이 때문에 일부 역사학자들은 튜링의 아이디어가 폰 노이만의 내장형 컴퓨터 설계에 영향을 주었을 가능성을 제기해 왔다. 그러나 그 영향이 어느 정도였는지는 확실하지 않으며, 폰 노이만의 1945년 EDVAC 보고서에는 튜링의 1936년 논문이 인용되지 않았다.
@@ -204,7 +208,7 @@ flowchart LR
 
 ## 컴퓨터의 상업적 가능성
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 제2차 세계대전 동안 영국, 독일, 미국은 전기적 계산 장치를 각자 개발했다. 영국의 콜로서스는 독일 암호 해독을 위해 비밀리에 제작되었지만, 전쟁 후 대부분이 해체되었고, 프로젝트는 수십 년 동안 기밀로 남았다. 독일에서도 콘라트 추제의 기계들을 비롯한 선구적인 컴퓨터가 만들어졌으나, 전쟁 중의 파괴와 패전으로 후속 개발에 차질을 빚었다.
 
 사실, 영국은 세계 2차 대전 중에 독일 군 암호 해독을 위해 콜로서스와 같은 컴퓨터를 만들었으나, 전쟁 후 대부분 해체되었고 프로젝트는 수십 년 동안 기밀로 남아, 그 기술을 민간에서 발전시킬 수 없었다. 독일도 마찬가지로 2차 대전 콘라트 추제라는 과학자가 컴퓨터를 만들었지만, 전쟁 후, 독일의 경제 사정으로 인해 연구가 중단되었다.
@@ -216,11 +220,17 @@ flowchart LR
 
 하지만, 미국은 폰노이만 같은 이민자들이 초기 컴퓨터 개발에 많은 공헌을 하였고, 컴퓨터를 상업적으로 계속 발전시켜 컴퓨터 시대를 먼저 열게 되었다.
 
-:::panels columns="3" label="앨런 튜링, 존 폰 노이만, 쿠르트 괴델"
+::::panels columns="3" label="앨런 튜링, 존 폰 노이만, 쿠르트 괴델"
+:::panel
 ![앨런 튜링의 초상.](images/alan_turing.webp "앨런 튜링(1912-1954)은 프린스턴 대학교에서 박사 학위를 받았으며, 계산의 수학적 모델을 개발했다. size:80%")
+:::
+:::panel
 ![존 폰 노이만의 초상.](images/john_von_neumann.webp "존 폰 노이만(1903-1957)은 헝가리 출신 이민자로, 프로그램 내장형 컴퓨터 설계에 참여했다. size:80%")
+:::
+:::panel
 ![쿠르트 괴델의 초상.](images/Kurt_Friedrich_G%C3%B6del.webp "쿠르트 괴델(1906-1978)은 오스트리아-헝가리에서 태어나 훗날 미국 시민이 되었다. 그의 불완전성 정리는 튜링 기계가 탄생할 이론적 토대를 마련하는 데 기여했다. size:80%")
 :::
+::::
 
 ## 참고 자료
 

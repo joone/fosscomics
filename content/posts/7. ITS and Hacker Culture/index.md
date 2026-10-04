@@ -8,7 +8,7 @@ tags: ITS, Hacker, PDP-1, PDP-6, DEC, ARPAnet, MIT AI Lab, Multics
 
 ## From Model Trains to Computers
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 MIT's hacker culture started with the [Tech Model Railroad Club](https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club) at MIT. This club built a model railroad and developed relay systems to keep the trains from colliding with each other[&lbrack;1&rbrack;][1].
 
 ![Three TMRC members stand around a model railroad, considering how to prevent collisions.](images/railroad_en.webp)
@@ -17,13 +17,13 @@ MIT's hacker culture started with the [Tech Model Railroad Club](https://en.wiki
 > "Hmm..."
 :::
 
-:::panel style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![One club member reacts with surprise as another proposes writing a PDP-1 control program.](images/control_en.webp)
 > "Control the trains with the PDP-1?" \
 > "Sure. We'd just write a control program."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 For reference, the video below shows how a computer can be used to control moving model trains.
 <div style="text-align:center">
 <iframe src="https://www.youtube.com/embed/dqLUUXWgba4?si=f4QZp3gTxWdDRnrt" title="YouTube video player" style="display:block; width:100%; max-width:560px; aspect-ratio:16 / 9; margin:0 auto; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -31,7 +31,7 @@ For reference, the video below shows how a computer can be used to control movin
 
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 The [PDP series](https://en.wikipedia.org/wiki/Programmed_Data_Processor), made by Digital Equipment Corporation (DEC), contributed greatly to hacker culture, and later models provided an important environment for the birth of free software. These relatively inexpensive computers were particularly popular at universities and helped establish the minicomputer category. For reference, DEC donated a PDP-1 to MIT in 1961[&lbrack;2&rbrack;][2].
 
 ![A club member points out the PDP-1's round display while another looks puzzled.](images/display_en.webp "size:100%")
@@ -41,40 +41,40 @@ The [PDP series](https://en.wikipedia.org/wiki/Programmed_Data_Processor), made 
 
 ## Late Nights and Spacewar!
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 Members of the Tech Model Railroad Club spent more time with the TX-0 and, later, the PDP-1.
 
 ![Two programmers work at the PDP-1 late at night beside a stack of pizza boxes.](images/pizza_en.webp "size:70%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 ![A manager sits behind a desk marked Dean and frowns at the electric bill.](images/bill_en.webp "size:70%")
 > "How did the electric bill get this high?"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![The manager reads a report and orders the computer room locked.](images/lock_en.webp "size:80%")
 > "Lock the computer room at night." \
 > "They don't study... They should just build model trains."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![Three programmers find the Computer Room door marked Closed and No Entry at Night.](images/door_en.webp "size:90%")
 > "Locked out after dinner." \
 > "Should've ordered pizza."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![Two students help a reluctant friend climb through a high window.](images/window_en.webp "size:100%")
 > "Do I really have to do this?" \
 > "Of course. This is history. One of the first computer games is being made right now!"
 :::
 
-:::panel style="margin-bottom: 3rem;"
+:::panel style="margin-bottom: 3rem;margin-top: 3rem;"
 ![The two programmers continue working at the PDP-1 through the night.](images/night_en.webp "size:70%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 For fun, the students created one of the earliest and most influential computer games, called [Spacewar!](https://en.wikipedia.org/wiki/Spacewar/)[&lbrack;4&rbrack;][4].
 
 ![A student walks away from the PDP-1 as two others keep working at its display.](images/depart_en.webp "size:100%")
@@ -85,19 +85,25 @@ For fun, the students created one of the earliest and most influential computer 
 
 MIT's early hacker community also had close ties to the AI research group led by Marvin Minsky, a pioneer of artificial intelligence, and John McCarthy, the creator of Lisp. Their involvement spanned different periods: McCarthy moved to Stanford in 1962[&lbrack;6&rbrack;][6], while Richard Stallman joined the MIT Artificial Intelligence Laboratory (AI Lab) much later, in 1971[&lbrack;7&rbrack;][7].
 
-:::panels columns="3" label="Richard Stallman, Marvin Minsky, and John McCarthy"
+::::panels columns="3" label="Richard Stallman, Marvin Minsky, and John McCarthy"
+:::panel
 ![Richard Stallman holds a reel of tape labeled Pascal.](images/rms.webp "Richard Stallman size:70%")
+:::
+:::panel
 ![Marvin Minsky wears glasses and a suit and gestures with one hand.](images/marvin_minsky.webp "Marvin Minsky size:70%")
+:::
+:::panel
 ![John McCarthy, with glasses and a beard, stands with his arms crossed.](images/john_mccarthy.webp "John McCarthy size:70%")
 :::
+::::
 
-:::panel style="margin-top: 5rem; margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 When [Project MAC](https://www.multicians.org/project-mac.html) began in 1963, Minsky's AI group became part of it[&lbrack;5&rbrack;][5]. Another group within Project MAC was developing an operating system called [Multics](https://en.wikipedia.org/wiki/Multics) with GE and Bell Labs. MIT's initial Multics system used the GE-645[&lbrack;8&rbrack;][8].
 
 ![A person stands among rows of large computer cabinets in a Multics machine room.](images/multics_en.webp "General Electric model GE-645")
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 But the AI programmers disagreed with the direction of Multics' design and began developing their own operating system, ITS (Incompatible Timesharing System), in 1967[&lbrack;3&rbrack;][3]. In 1970, the group split from Project MAC to become the independent AI Lab[&lbrack;5&rbrack;][5].
 
@@ -106,7 +112,7 @@ But the AI programmers disagreed with the direction of Multics' design and began
 > "Why don't we build our own operating system?"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 MIT hacker [Tom Knight](https://en.wikipedia.org/wiki/Tom_Knight_(scientist)) (right) developed the first kernel for ITS.
 
 ![Tom Knight proposes the name ITS to another programmer.](images/name_en.webp)
@@ -114,7 +120,7 @@ MIT hacker [Tom Knight](https://en.wikipedia.org/wiki/Tom_Knight_(scientist)) (r
 > "Incompatible Timesharing System?"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 Actual development started on the PDP-6, and it was all written in assembly language.
 
 ![A programmer writes assembly code beside a PDP-6 console and paper-tape reader.](images/assembly_en.webp "size:70%")
@@ -123,7 +129,7 @@ Actual development started on the PDP-6, and it was all written in assembly lang
 
 ## An Open System and a Culture of Sharing
 
-:::panel rounded="true"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 At the time, the ITS operating system had a unique user environment rarely found today. In the early days, people could use the system without logging in, and users who identified themselves did not need a password. All files, including documentation and source code, could be edited by anyone.
 
 ![A smiling ITS user sits at a terminal with a loose cable hanging from it.](images/open_en.webp "size:80%")
@@ -131,21 +137,21 @@ At the time, the ITS operating system had a unique user environment rarely found
 > "And anyone can edit the files."
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 People at other universities and institutions could also connect to ITS through ARPANET. This open, collaborative community helped shape hacker culture and the free and open-source software movement. Its approach to sharing knowledge also anticipated later projects such as wikis[&lbrack;3&rbrack;][3].
 
 ![A line labeled ARPANET connects the MIT AI Lab's PDP-10 to a user labeled UC Berkeley and ITS access.](images/arpanet_en.webp "Access to ITS from other universities")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Richard Stallman joined the MIT AI Lab in 1971 and helped develop ITS. The hacker culture he found there influenced his later work on the free software movement.
 
 ![Richard Stallman stands at a row of large computer cabinets in the MIT AI Lab.](images/7_16.webp "size:80%")
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 
 At many institutions, software was treated as part of the hardware package and was shared and used without separate payment. Some companies also distributed their software with source code, allowing users to modify and copy it.
 

@@ -12,23 +12,23 @@ Here, "hackers" means people who love exploring computers, building things, and 
 
 ## Early Programmers
 
-:::panel style="margin-bottom: 5rem;"
+:::panel
 ![Eric S. Raymond gestures as he introduces his retrospective account of early programmers.](images/raymond_en.webp "size:70%")
 > "In the beginning, there were 'real programmers.'"
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black; margin-bottom: 2rem;"
 ![A long-haired, bearded programmer sits cross-legged and imagines rows of binary digits.](images/real_en.webp "size:70%")
 > "What is a real programmer?" \
 > "Thirty years of training... all in machine code."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 ![Raymond points toward two formally dressed programmers working at a large console.](images/backgrounds_en.webp "size:90%")
 > "Most came from math, physics, or engineering. They programmed in machine code, assembly, Fortran, and ancient computer languages that are now forgotten."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 Early programmers also used many languages that are little known today. Browse [this history of programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), and you may find a few unfamiliar names.
 
@@ -36,14 +36,14 @@ Early programmers also used many languages that are little known today. Browse [
 > "Do you know ALGOL or Simula?"
 :::
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 Of course, we must also acknowledge the contributions of women programmers during this period.
 
 ![Joone presents labeled portraits of Margaret Hamilton and Grace Hopper.](images/women_en.webp "size:90%")
 > "Many early 'real programmers' were women, including Margaret Hamilton and Grace Hopper."
 :::
 
-:::panel style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 
 This culture of early programmers helped develop computing and networks. It also contributed to today's hacker and open-source cultures[&lbrack;1&rbrack;][1].
 
@@ -52,7 +52,7 @@ This culture of early programmers helped develop computing and networks. It also
 
 ## MIT's PDP-1 and Spacewar!
 
-:::panel style="margin-bottom: 3rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 MIT's early hacker culture had roots in the Tech Model Railroad Club before the PDP-1 arrived. Digital Equipment Corporation introduced the PDP-1 in 1959, and MIT received an early machine in [1961](https://en.wikipedia.org/wiki/PDP-1#History). Students and staff who encountered it created a text editor and a chess program, experimented with computer music, and developed [Spacewar!](https://en.wikipedia.org/wiki/Spacewar!) for fun. Spacewar! became one of the earliest and most influential video games.
 
 ![A programmer operates a PDP-1 console while music plays beside its paper-tape reader and typewriter.](images/pdp1_en.webp "PDP-1 size:80%")
@@ -68,7 +68,7 @@ In the YouTube video below, you can see the music playing and Spacewar! running 
 
 ## ITS, ARPANET, and a Growing Community
 
-:::panel rounded="true" style="margin-bottom: 5rem;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
 At the time, MIT was becoming a major center of hacker culture through Project MAC's AI group and the later Artificial Intelligence Laboratory. John McCarthy developed [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) at MIT in 1958. Around 1967, programmers in the AI group began developing [ITS (Incompatible Timesharing System)](https://en.wikipedia.org/wiki/Incompatible_Timesharing_System) on the PDP-6; development later continued on PDP-10 computers. They shared software free of charge, along with technical ideas, with other universities and research institutions. After MIT's systems joined ARPANET, a precursor to the Internet, these programs and practices spread more easily to connected communities.
 
 ![Several programmers work independently at terminals in a shared computer laboratory.](images/6_8.webp "size:80%")
