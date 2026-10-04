@@ -65,8 +65,16 @@ MIT에서는 ITS가 만들어지고 있었고, 공교롭게도 벨 연구소에�
 > "우선 파일시스템을 만들고 있어." \
 > "이 운영체제에 이름도 붙여야겠네." \
 > "디바이스를 파일로 생각하고 관리하면 어떨까?"
+:::
 
-처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 멀틱스라는 이름을 비튼 "Unix"라는 이름을 제안했다.[&lbrack;1&rbrack;][1]
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
+처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 그 이름을 제안했다.[&lbrack;1&rbrack;][1]
+
+![브라이언 커니핸이 책상 위 단말기 뒤에 앉아 새 이름을 제안한다.](images/unix_naming_ko.webp)
+> "Multics라... 지금은 한 사람만 쓰는데." \
+> "그럼 Unics라고 하자."
+
+Multics의 'Multiplexed'를 'Un-multiplexed'로 비튼 말장난이었다. 이후 이름의 표기는 Unix로 바뀌었다.[&lbrack;4&rbrack;][4]
 
 :::
 
@@ -173,6 +181,8 @@ B언어는 켄 톰프슨이 1969~70년 무렵 초기 유닉스 환경을 위해 
 1. 데니스 M. 리치, [유닉스 시분할 시스템의 진화](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html)
 2. 데니스 M. 리치, [C 언어의 발전](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
 3. 데이비드 C. 브록, [최초의 유닉스 코드: 소스 코드 공개 기념](https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/)
+4. 워런 투미, [유닉스의 기묘한 탄생과 오랜 생명력](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix), IEEE Spectrum, 2011년 11월 28일.
 
 [1]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "유닉스 시분할 시스템의 진화, 데니스 M. 리치"
 [2]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "C 언어의 발전, 데니스 M. 리치"
+[4]: https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix "유닉스의 기묘한 탄생과 오랜 생명력, 워런 투미"

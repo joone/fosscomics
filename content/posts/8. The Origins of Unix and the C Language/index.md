@@ -65,7 +65,17 @@ First came a file system, sketched out by Thompson, [Rudd Canaday](https://en.wi
 > "We'll need a name for this thing." \
 > "How about mapping devices to files?"
 
-It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name as a play on "Multics."
+:::
+
+:::panel rounded="true" style="border-width: 3px;border-color: black;"
+It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name.[&lbrack;2&rbrack;][2]
+
+![Brian Kernighan sits behind a terminal on his desk and suggests a new name.](images/unix_naming_en.webp)
+> "Multics... but there's only one user." \
+> "Let's call it Unics."
+
+The joke replaced "Multiplexed" in Multics with "Un-multiplexed." The spelling later changed to Unix.[&lbrack;4&rbrack;][4]
+
 :::
 
 ## The PDP-11 and the Limits of B
@@ -174,7 +184,9 @@ And so Unix and C came together in a remarkably short time, through the work of 
 1. Multics, [Wikipedia](https://en.wikipedia.org/wiki/Multics)
 2. Dennis M. Ritchie, [The Evolution of the Unix Time-sharing System](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html)
 3. Dennis M. Ritchie, [The Development of the C Language](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html)
+4. Warren Toomey, [The Strange Birth and Long Life of Unix](https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix), IEEE Spectrum, November 28, 2011.
 
 [1]: https://en.wikipedia.org/wiki/Multics "Multics, Wikipedia"
 [2]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "The Evolution of the Unix Time-sharing System, Dennis M. Ritchie"
 [3]: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html "The Development of the C Language, Dennis M. Ritchie"
+[4]: https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix "The Strange Birth and Long Life of Unix, Warren Toomey"
