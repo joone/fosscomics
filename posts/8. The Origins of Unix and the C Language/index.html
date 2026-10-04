@@ -188,7 +188,16 @@
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;First of all, I&#39;m working on a file system.&quot; <br>&quot;We&#39;ll need a name for this thing.&quot; <br>&quot;How about mapping devices to files?&quot;</p></blockquote></div><p>It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name as a play on &quot;Multics.&quot;</p></section>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;First of all, I&#39;m working on a file system.&quot; <br>&quot;We&#39;ll need a name for this thing.&quot; <br>&quot;How about mapping devices to files?&quot;</p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-unix-naming">
+<p>It was not called Unix at first. Well into 1970, Brian Kernighan suggested the name.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="The Evolution of the Unix Time-sharing System, Dennis M. Ritchie">&lbrack;2&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <picture><source type="image/webp" srcset="images/unix_naming_en-600.webp 600w, images/unix_naming_en.webp 800w" sizes="(max-width: 599px) 100vw, 600px"><img src="images/unix_naming_en.png" alt="Brian Kernighan sits behind a terminal on his desk and suggests a new name." width="800"></picture>
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p>&quot;Multics... but there&#39;s only one user.&quot; <br>&quot;Let&#39;s call it Unics.&quot;</p></blockquote></div><p>The joke replaced &quot;Multiplexed&quot; in Multics with &quot;Un-multiplexed.&quot; The spelling later changed to Unix.<a href="https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix "title="The Strange Birth and Long Life of Unix, Warren Toomey">&lbrack;4&rbrack;</a></p></section>
 <h2>The PDP-11 and the Limits of B</h2>
 <section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-pdp11">
 <p>Then a <a href="https://en.wikipedia.org/wiki/PDP-11 ">PDP-11</a> arrived. Its CPU instructions were different from the PDP-7&#39;s, and Unix was still written in assembly. The code had to be written all over again.</p>
@@ -264,7 +273,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p>&quot;How about calling it C?&quot; <br>&quot;Wow, it works!&quot;</p></blockquote></div></section>
 <h2>Rewriting the Unix Kernel in C</h2>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-16">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-17">
 <p>In the summer of 1973, Thompson, Ritchie, and their colleagues rewrote the Unix kernel largely in C. A small amount of machine-dependent assembly was still needed.</p><p>Structures were especially useful. They let C describe data such as Unix directory entries in a way that matched how it was laid out in memory.</p><pre><code class="hljs language-c">  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> {</span>
     <span class="hljs-type">int</span> x;
     <span class="hljs-type">int</span> y;
@@ -305,6 +314,7 @@
 <li>Multics, <a href="https://en.wikipedia.org/wiki/Multics ">Wikipedia</a></li>
 <li>Dennis M. Ritchie, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html ">The Evolution of the Unix Time-sharing System</a></li>
 <li>Dennis M. Ritchie, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">The Development of the C Language</a></li>
+<li>Warren Toomey, <a href="https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix ">The Strange Birth and Long Life of Unix</a>, IEEE Spectrum, November 28, 2011.</li>
 </ol>
 
                   </section>

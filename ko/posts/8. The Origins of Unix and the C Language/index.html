@@ -188,7 +188,16 @@
             
           </figure>
         </div>
-      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 파일시스템을 만들고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이 운영체제에 이름도 붙여야겠네.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>디바이스를 파일로 생각하고 관리하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 멀틱스라는 이름을 비튼 &quot;Unix&quot;라는 이름을 제안했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p></section>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>우선 파일시스템을 만들고 있어.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>이 운영체제에 이름도 붙여야겠네.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>디바이스를 파일로 생각하고 관리하면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-unix-naming">
+<p>처음부터 이 운영체제를 유닉스라고 부른 것은 아니었다. 1970년이 상당히 지난 뒤에야 브라이언 커니핸이 그 이름을 제안했다.<a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html "title="유닉스 시분할 시스템의 진화, 데니스 M. 리치">&lbrack;1&rbrack;</a></p>
+        <div class="image-container" style="text-align: center;">
+          <figure style="text-align: center;">
+            <picture><source type="image/webp" srcset="images/unix_naming_ko-600.webp 600w, images/unix_naming_ko.webp 800w" sizes="(max-width: 599px) 100vw, 600px"><img src="images/unix_naming_ko.png" alt="브라이언 커니핸이 책상 위 단말기 뒤에 앉아 새 이름을 제안한다." width="800"></picture>
+            
+          </figure>
+        </div>
+      <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>Multics라... 지금은 한 사람만 쓰는데.<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>그럼 Unics라고 하자.<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div><p>Multics의 &#39;Multiplexed&#39;를 &#39;Un-multiplexed&#39;로 비튼 말장난이었다. 이후 이름의 표기는 Unix로 바뀌었다.<a href="https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix "title="유닉스의 기묘한 탄생과 오랜 생명력, 워런 투미">&lbrack;4&rbrack;</a></p></section>
 <h2>PDP-11과 B 언어의 한계</h2>
 <section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-pdp11">
 <p>그 후 <a href="https://ko.wikipedia.org/wiki/PDP-11 ">PDP-11</a>이 도입되었는데, PDP-7과 CPU 명령어가 달랐다. 유닉스는 어셈블리어로 개발되었기 때문에 PDP-11용으로 코드를 다시 짜야 했다.</p>
@@ -264,7 +273,7 @@
         </div>
       <div class="blockquote-container image-dialogue"><blockquote><p><span class="dialogue-quote dialogue-quote-open">“</span>C언어라고 부르면 어떨까?<span class="dialogue-quote dialogue-quote-close">”</span> <br><span class="dialogue-quote dialogue-quote-open">“</span>우와 잘 동작하는데!<span class="dialogue-quote dialogue-quote-close">”</span></p></blockquote></div></section>
 <h2>C로 다시 쓴 유닉스 커널</h2>
-<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-16">
+<section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-17">
 <p>1973년 여름, 톰프슨과 리치를 비롯한 동료들은 유닉스 커널 대부분을 C언어로 다시 작성했다. 하드웨어에 종속된 일부 코드는 여전히 어셈블리어가 필요했다. 특히 구조체 타입을 추가하면서 디렉터리 항목 같은 데이터를 메모리 구조에 맞게 표현할 수 있게 되었다.</p><pre><code class="hljs language-c">  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">point</span> {</span>
     <span class="hljs-type">int</span> x;
     <span class="hljs-type">int</span> y;
@@ -301,6 +310,7 @@
 <li>데니스 M. 리치, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/hist.html ">유닉스 시분할 시스템의 진화</a></li>
 <li>데니스 M. 리치, <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html ">C 언어의 발전</a></li>
 <li>데이비드 C. 브록, <a href="https://computerhistory.org/blog/the-earliest-unix-code-an-anniversary-source-code-release/ ">최초의 유닉스 코드: 소스 코드 공개 기념</a></li>
+<li>워런 투미, <a href="https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix ">유닉스의 기묘한 탄생과 오랜 생명력</a>, IEEE Spectrum, 2011년 11월 28일.</li>
 </ol>
 
                   </section>
