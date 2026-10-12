@@ -104,7 +104,7 @@ PDP-11/70 기계실
 
 다음은 짧은 ed 세션의 예제이다. 명령어와 입력한 텍스트, 출력이 함께 표시되어 있다. `$`는 셸의 프롬프트이며, ed 자체는 보통 프롬프트를 표시하지 않는다.[&lbrack;6&rbrack;][6]
 
-```
+```text
 $ ed
 a
 ed is the standard Unix text editor.
@@ -131,7 +131,7 @@ This is line number two.
 
 최종 결과는 다음의 문자를 포함하는 텍스트 파일이다:
 
-```
+```text
 ed is the standard Unix text editor.
 This is line number two.
 ```

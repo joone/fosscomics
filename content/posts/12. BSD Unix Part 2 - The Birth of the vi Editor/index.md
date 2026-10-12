@@ -104,7 +104,7 @@ Unix came with [ed](https://en.wikipedia.org/wiki/Ed_(text_editor)), a line edit
 
 Here is a short ed session. Commands, typed text, and output appear together. The `$` prompts belong to the shell; ed itself normally has no prompt.[&lbrack;6&rbrack;][6]
 
-```
+```text
 $ ed
 a
 ed is the standard Unix text editor.
