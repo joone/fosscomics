@@ -167,6 +167,76 @@ window.FossbookShareImage = (() => {
       reader.readAsDataURL(blob);
     });
 
+  async function loadCaptureImage(image, src) {
+    let timer;
+    const loaded = new Promise((resolve, reject) => {
+      image.onload = resolve;
+      image.onerror = () => reject(new Error("Capture image decode failed."));
+      timer = setTimeout(() => reject(new Error("Capture image loading timed out.")), 15000);
+    });
+    try {
+      image.src = src;
+      // Some browsers leave decode() pending for ready canvas PNG data URLs.
+      // A successful load (or an already complete image) is drawable too.
+      if (image.complete && image.naturalWidth > 0) return;
+      await Promise.race([loaded, image.decode()]);
+    } finally {
+      clearTimeout(timer);
+      image.onload = image.onerror = null;
+    }
+  }
+
+  async function rasterizeOverlays(capture) {
+    await Promise.all(
+      [...capture.querySelectorAll("svg.text-overlay-image")].map(async (svg) => {
+        const source = svg.querySelector("image");
+        const src = source && source.getAttribute("href");
+        const raw = svg.getAttribute("data-text-overlay-share");
+        if (!src || !raw) throw new Error("This text overlay has no share geometry or artwork. Rebuild the site.");
+        let geometry;
+        try { geometry = JSON.parse(raw); } catch { throw new Error("Invalid text overlay share geometry."); }
+        if (!(geometry.width > 0 && geometry.height > 0) || !Number.isFinite(geometry.width) ||
+            !Number.isFinite(geometry.height) || typeof geometry.paths !== "string" ||
+            /<(?!\/?(?:g|path)\b)|\b(?:href|on\w+)\s*=/i.test(geometry.paths)) {
+          throw new Error("Invalid text overlay share geometry.");
+        }
+        const image = document.createElement("img");
+        let artwork = src;
+        if (!src.startsWith("data:")) {
+          const response = await fetch(src);
+          if (!response.ok)
+            throw new Error(`Overlay image request failed (${response.status})`);
+          artwork = await readDataUrl(await response.blob());
+        }
+        if (!/^data:image\/(?:webp|png);base64,[A-Za-z0-9+/=]+$/.test(artwork))
+          throw new Error("Invalid text overlay raster artwork.");
+        const internalSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="${geometry.width}" height="${geometry.height}" viewBox="0 0 ${geometry.width} ${geometry.height}"><image width="${geometry.width}" height="${geometry.height}" href="${artwork}"/>${geometry.paths}</svg>`;
+        await loadCaptureImage(image, await readDataUrl(new Blob([internalSVG], { type: "image/svg+xml" })));
+        // A data-URL SVG with only embedded artwork and glyph paths is safe for
+        // canvas image mode, unlike foreignObject snapshots or SVG webfonts.
+        const rect = svg.getBoundingClientRect();
+        const width = rect.width;
+        const height = width * image.naturalHeight / image.naturalWidth;
+        if (!width || !height || !Number.isFinite(height))
+          throw new Error("The text overlay has invalid image dimensions.");
+        const scale = Math.min(2, 8192 / width, 8192 / height);
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.ceil(width * scale);
+        canvas.height = Math.ceil(height * scale);
+        const context = canvas.getContext("2d");
+        if (!context) throw new Error("Canvas image rendering is unavailable.");
+        context.drawImage(image, 0, 0, canvas.width, canvas.height);
+        await loadCaptureImage(image, canvas.toDataURL("image/png"));
+        for (const name of ["class", "style", "width", "height"]) {
+          const value = svg.getAttribute(name);
+          if (value !== null) image.setAttribute(name, value);
+        }
+        image.alt = "";
+        svg.replaceWith(image);
+      }),
+    );
+  }
+
   function rendererScript() {
     const agent = navigator.userAgent;
     const iOS = /iPad|iPhone|iPod/.test(agent) ||
@@ -213,10 +283,10 @@ window.FossbookShareImage = (() => {
           image.removeAttribute("srcset");
           image.removeAttribute("sizes");
           image.removeAttribute("loading");
-          image.src = await readDataUrl(await response.blob());
-          await image.decode();
+          await loadCaptureImage(image, await readDataUrl(await response.blob()));
         }),
       );
+      await rasterizeOverlays(capture);
       const width = Math.ceil(capture.getBoundingClientRect().width);
       const height = Math.ceil(capture.scrollHeight);
       if (!width || !height || height > 8192) {
@@ -239,13 +309,29 @@ window.FossbookShareImage = (() => {
         });
         blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
       } else {
-        blob = await htmlToImage.toBlob(capture, {
+        const options = {
           width,
           height,
           pixelRatio,
           backgroundColor: "#ffffff",
           style,
-        });
+        };
+        if (document.visibilityState === "hidden") {
+          // html-to-image's final rasterizer waits for requestAnimationFrame,
+          // which may never run in background tabs. Keep its DOM/font snapshot,
+          // but draw the loaded SVG ourselves without depending on animation.
+          const image = document.createElement("img");
+          await loadCaptureImage(image, await htmlToImage.toSvg(capture, options));
+          const canvas = document.createElement("canvas");
+          canvas.width = Math.ceil(width * pixelRatio);
+          canvas.height = Math.ceil(height * pixelRatio);
+          const context = canvas.getContext("2d");
+          if (!context) throw new Error("Canvas image rendering is unavailable.");
+          context.drawImage(image, 0, 0, canvas.width, canvas.height);
+          blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
+        } else {
+          blob = await htmlToImage.toBlob(capture, options);
+        }
       }
       if (!blob || blob.size === 0)
         throw new Error("The image renderer returned an empty image.");
@@ -415,6 +501,17 @@ window.FossbookShareImage = (() => {
       if (document.documentElement.classList.contains("transcripts-hidden")) {
         panelPreview.querySelectorAll(".image-dialogue").forEach((dialogue) => dialogue.remove());
       }
+      // The SVG already contains its dialogue. Adjacent marked transcripts
+      // remain accessible on the page, but must not repeat in a share card.
+      panelPreview.querySelectorAll("[data-text-overlay-panel]").forEach((svg) => {
+        const container = svg.closest(".image-container");
+        let dialogue = container && container.nextElementSibling;
+        while (dialogue && dialogue.matches(".image-dialogue")) {
+          const next = dialogue.nextElementSibling;
+          dialogue.remove();
+          dialogue = next;
+        }
+      });
       const bodyText = FossbookShareImage.bodyText(panelPreview);
       if (includeTextInput.checked) {
         commentInput.value = removeAppendedText(commentInput.value, appendedBodyText);

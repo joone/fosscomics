@@ -274,6 +274,15 @@
     position: relative;
   }
 
+  .comic-share-target:has(svg.text-overlay-image) {
+    isolation: isolate;
+  }
+
+  .comic-share-target .image-container:has(svg.text-overlay-image) {
+    position: relative;
+    z-index: 0;
+  }
+
   .comic-panel[id] {
     scroll-margin-top: 1rem;
   }
