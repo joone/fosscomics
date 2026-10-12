@@ -102,7 +102,7 @@ Unix came with [ed](https://en.wikipedia.org/wiki/Ed_(text_editor)), a line edit
 
 :::
 
-Here is a short ed session. Commands, typed text, and output appear together. The `$` prompts belong to the shell; ed itself normally has no prompt.
+Here is a short ed session. Commands, typed text, and output appear together. The `$` prompts belong to the shell; ed itself normally has no prompt.[&lbrack;6&rbrack;][6]
 
 ```
 $ ed
@@ -160,7 +160,7 @@ By the 1970s, terminals with CRT screens were becoming common. Unix users were s
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-One day...
+In the summer of 1976, George Coulouris visited Berkeley from Queen Mary College.[&lbrack;5&rbrack;][5]
 
 ![Haley tells Joy about another editor while Joy works at his terminal.](images/discovering-em.en.webp)
 
@@ -190,12 +190,12 @@ One day...
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Joy and Haley built on em to develop ex. By October 1977, Joy had added the full-screen visual mode that became vi.[&lbrack;2&rbrack;][2][&lbrack;3&rbrack;][3]
+Joy and Haley built on em to develop ex. In 1977, Joy added the full-screen visual mode that became vi.[&lbrack;2&rbrack;][2][&lbrack;3&rbrack;][3]
 
 ![Joy develops the ex editor at his terminal.](images/developing-ex.en.webp)
 
 <!-- dialogue: bill-ex-plan -->
-> I'll add em's editing code to ed and build a full-screen visual mode. I'll call it ex.
+> Now I'll add a full-screen visual mode to ex.
 <!-- /dialogue -->
 
 :::
@@ -216,6 +216,8 @@ The visual mode proved popular with BSD users. Invoking the editor as `vi` event
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
+Back to Thompson's time at Berkeley, in 1975-1976.
+
 Thompson also shared his knowledge of Unix. At early meetings of the West Coast Unix Users Group, he walked participants through the kernel source, line by line, over a series of evenings.[&lbrack;1&rbrack;][1]
 
 ![Thompson stands by a board about Unix internals as students unroll long source listings.](images/unix-source-session.en.webp)
@@ -232,7 +234,9 @@ Thompson also shared his knowledge of Unix. At early meetings of the West Coast 
 
 :::panel
 
-That habit of sharing code and explaining how it worked would carry through BSD into the broader free and open source software community.
+That tradition of sharing code and explaining how it worked carried through BSD into the broader free and open source software community. At the time, however, Unix source and early BSD distributions were shared with holders of AT&T source licenses.[&lbrack;1&rbrack;][1][&lbrack;2&rbrack;][2]
+
+At the end of the summer of 1976, Thompson returned to Bell Labs after his sabbatical.[&lbrack;2&rbrack;][2]
 
 ![Joy and Haley say goodbye to Thompson, who carries a suitcase and waves.](images/back-to-bell-labs.en.webp)
 
@@ -249,11 +253,15 @@ That habit of sharing code and explaining how it worked would carry through BSD 
 ## References
 
 1. Andrew Leonard, [BSD Unix: Power to the people, from the code](https://www.salon.com/2000/05/16/chapter_2_part_one/), 2000.
-2. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix](https://www.oreilly.com/openbook/opensources/book/kirkmck.html), in *Open Sources: Voices from the Open Source Revolution*, 1999. The Korean edition, referenced in the original comic, was published by [Hanbit Media](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060) in 2013.
+2. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix](https://www.oreilly.com/openbook/opensources/book/kirkmck.html), in *Open Sources: Voices from the Open Source Revolution*, 1999. The Korean edition, referenced in the original comic, was published by [Hanbit Media](https://www.hanbit.co.kr/books/E5329835060?code=E5329835060) in 2013.
 3. [vi (text editor), Wikipedia](https://en.wikipedia.org/wiki/Vi_(text_editor)).
 4. [ed (text editor), Wikipedia](https://en.wikipedia.org/wiki/Ed_(text_editor)).
+5. George Coulouris, [Bits of History](https://www.coulouris.net/cs_history/em_story/), a firsthand account of em and his 1976 visit to Berkeley.
+6. [GNU ed manual](https://www.gnu.org/software/ed/manual/ed_manual.html).
 
 [1]: https://www.salon.com/2000/05/16/chapter_2_part_one/
 [2]: https://www.oreilly.com/openbook/opensources/book/kirkmck.html
 [3]: https://en.wikipedia.org/wiki/Vi_(text_editor)
 [4]: https://en.wikipedia.org/wiki/Ed_(text_editor)
+[5]: https://www.coulouris.net/cs_history/em_story/
+[6]: https://www.gnu.org/software/ed/manual/ed_manual.html
