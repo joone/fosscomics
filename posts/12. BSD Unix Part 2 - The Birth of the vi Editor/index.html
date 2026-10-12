@@ -220,24 +220,24 @@
 <div class="blockquote-container image-dialogue"><blockquote><p>Wait... how do you edit a document with ed?</p></blockquote></div><!-- /dialogue -->
 
 </section>
-<p>Here is a short ed session. Commands, typed text, and output appear together. The <code>$</code> prompts belong to the shell; ed itself normally has no prompt.<a href="https://www.gnu.org/software/ed/manual/ed_manual.html ">&lbrack;6&rbrack;</a></p><pre><code class="hljs">$ ed
-<span class="hljs-keyword">a</span>
-ed is <span class="hljs-keyword">the</span> standard Unix <span class="hljs-keyword">text</span> editor.
-This is <span class="hljs-built_in">line</span> <span class="hljs-built_in">number</span> <span class="hljs-literal">one</span>.
+<p>Here is a short ed session. Commands, typed text, and output appear together. The <code>$</code> prompts belong to the shell; ed itself normally has no prompt.<a href="https://www.gnu.org/software/ed/manual/ed_manual.html ">&lbrack;6&rbrack;</a></p><pre><code class="hljs language-text">$ ed
+a
+ed is the standard Unix text editor.
+This is line number one.
 .
 ,p
-ed is <span class="hljs-keyword">the</span> standard Unix <span class="hljs-keyword">text</span> editor.
-This is <span class="hljs-built_in">line</span> <span class="hljs-built_in">number</span> <span class="hljs-literal">one</span>.
-<span class="hljs-number">2</span>s/<span class="hljs-literal">one</span>/<span class="hljs-literal">two</span>/
+ed is the standard Unix text editor.
+This is line number one.
+2s/one/two/
 ,p
-ed is <span class="hljs-keyword">the</span> standard Unix <span class="hljs-keyword">text</span> editor.
-This is <span class="hljs-built_in">line</span> <span class="hljs-built_in">number</span> <span class="hljs-literal">two</span>.
-w <span class="hljs-keyword">text</span>
-<span class="hljs-number">62</span>
+ed is the standard Unix text editor.
+This is line number two.
+w text
+62
 q
-$ cat <span class="hljs-keyword">text</span>
-ed is <span class="hljs-keyword">the</span> standard Unix <span class="hljs-keyword">text</span> editor.
-This is <span class="hljs-built_in">line</span> <span class="hljs-built_in">number</span> <span class="hljs-literal">two</span>.</code></pre><p>The <code>a</code> command starts appending text. A period on a line by itself ends input. The command <code>,p</code> prints every line in the buffer.</p><p>To change <code>one</code> to <code>two</code> on the second line, you enter <code>2s/one/two/</code>. Instead of moving a cursor over the text, you specify the line and the substitution. Then <code>w text</code> saves the buffer to a file named <code>text</code>, reporting its size in bytes, and <code>q</code> quits.</p><p>The resulting file contains:</p><pre><code class="hljs language-text">ed is the standard Unix text editor.
+$ cat text
+ed is the standard Unix text editor.
+This is line number two.</code></pre><p>The <code>a</code> command starts appending text. A period on a line by itself ends input. The command <code>,p</code> prints every line in the buffer.</p><p>To change <code>one</code> to <code>two</code> on the second line, you enter <code>2s/one/two/</code>. Instead of moving a cursor over the text, you specify the line and the substitution. Then <code>w text</code> saves the buffer to a file named <code>text</code>, reporting its size in bytes, and <code>q</code> quits.</p><p>The resulting file contains:</p><pre><code class="hljs language-text">ed is the standard Unix text editor.
 This is line number two.</code></pre><section class="comic-panel comic-panel-framed comic-panel-rounded" style="--comic-panel-border-width: 3px; --comic-panel-border-color: black;" id="comic-panel-teletype-model-33">
 <p>In the 1960s, memory was scarce and modems were slow. Many terminals printed onto paper rather than displaying text on a screen. A terse editor made sense in that setting.<a href="https://en.wikipedia.org/wiki/Ed_(text_editor) ">&lbrack;4&rbrack;</a></p>
         <div class="image-container" style="text-align: center;">
