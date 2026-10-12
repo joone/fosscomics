@@ -10,7 +10,7 @@ tags: ITS, 해커, PDP-1, PDP-6, DEC, ARPANET, MIT AI Lab, Multics
 
 :::panel
 
-MIT 해커 문화는 [테크 모델 철도 클럽](https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club)에 뿌리를 두고 있다. 이 동아리는 움직이는 모형 기차를 만들고, 기차끼리 충돌하지 않도록 릴레이 제어 시스템을 연구했다[&lbrack;1&rbrack;][1]. 
+MIT 해커 문화는 [테크 모델 철도 클럽](https://en.wikipedia.org/wiki/Tech_Model_Railroad_Club)에서 시작되었다. 이 동아리는 움직이는 모형 기차를 만들고, 기차끼리 충돌하지 않도록 릴레이 제어 시스템을 연구했다[&lbrack;1&rbrack;][1]. 
 
 ![TMRC 회원 세 명이 모형 철도를 둘러싸고 열차 충돌을 막을 방법을 고민한다.](images/railroad_ko.webp)
 > "어떻게 하면 기차끼리 부딪히지 않을까?" \
