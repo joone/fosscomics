@@ -672,11 +672,6 @@ window.FossbookShareImage = (() => {
         }
         revealTouchTrigger(panel);
       });
-      panel.addEventListener("contextmenu", (event) => {
-        if (event.shiftKey || !event.target.closest("img, picture, svg")) return;
-        event.preventDefault();
-        openShareDialog(block, trigger);
-      });
       panel.appendChild(trigger);
     });
   }
