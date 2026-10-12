@@ -40,7 +40,7 @@ PDP-11/70 기계실
 
 ::::panels columns="2" label=""
 
-:::panel rounded="true" style="border-width: 3px;border-color: black;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;padding: 0;"
 
 ![터미널 앞에서 켄 톰슨이 웃으며 대답한다.](images/plenty-of-work.ko.webp)
 
@@ -50,7 +50,7 @@ PDP-11/70 기계실
 
 :::
 
-:::panel rounded="true" style="border-width: 3px;border-color: black;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;padding: 0;"
 
 ![켄 톰슨이 손가락을 들어 파스칼 작업을 설명한다.](images/pascal-interpreter.ko.webp)
 
@@ -208,11 +208,11 @@ ed에디터가 이렇게 만들어진 것은 1960년대 컴퓨터 메모리가 �
 
 :::
 
-**서해안 유닉스 사용자 그룹**
+**미국 서부 유닉스 사용자 그룹**
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-켄 톰슨은 또한 유닉스를 가르치는 일에도 앞장섰다. 서해안 유닉스 사용자 그룹이라는 모임을 만들어서 밤마다 유닉스 커널 소스코드를 한줄 한줄 설명하였다. 
+켄 톰슨은 또한 유닉스를 가르치는 일에도 앞장섰다. 미국 서부 유닉스 사용자 그룹(West Coast Unix Users Group)이라는 모임을 만들어서 밤마다 유닉스 커널 소스코드를 한줄 한줄 설명하였다.
 
 ![켄 톰슨이 긴 소스코드 출력물을 든 학생들 앞에서 유닉스를 가르친다.](images/unix-source-session.ko.webp)
 

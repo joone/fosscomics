@@ -1,7 +1,7 @@
 ---
 title: "12. BSD Unix, Part 2 - The Birth of the vi Editor"
 date: "2026-10-11"
-image: feature_en.webp
+image: feature.webp
 description: "At UC Berkeley, Bill Joy and Chuck Haley help Ken Thompson improve Pascal, then turn their attention to editing. The path from ed through em and ex leads to vi."
 tags: BSD, VI Editor
 ---
@@ -40,7 +40,7 @@ The PDP-11/70 machine room.
 
 ::::panels columns="2" label=""
 
-:::panel rounded="true" style="border-width: 3px;border-color: black;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;padding: 0;"
 
 ![Thompson smiles from his chair at the terminal.](images/plenty-of-work.en.webp)
 
@@ -50,7 +50,7 @@ The PDP-11/70 machine room.
 
 :::
 
-:::panel rounded="true" style="border-width: 3px;border-color: black;"
+:::panel rounded="true" style="border-width: 3px;border-color: black;padding: 0;"
 
 ![Thompson raises a finger as he explains the Pascal work.](images/pascal-interpreter.en.webp)
 
