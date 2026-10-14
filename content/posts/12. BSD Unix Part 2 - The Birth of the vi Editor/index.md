@@ -33,7 +33,7 @@ The PDP-11/70 machine room.
 <!-- /dialogue -->
 
 <!-- dialogue: ken-welcome -->
-> There you are.
+> Hello at last.
 <!-- /dialogue -->
 
 :::
@@ -70,7 +70,7 @@ The PDP-11/70 machine room.
 > Sure!
 <!-- /dialogue -->
 
-Their improvements made the Pascal system faster to compile and run. It became a favorite among students.[&lbrack;2&rbrack;][2]
+Bill Joy and Chuck Haley improved the Pascal system so programs compiled faster and ran faster. It became popular with students.[&lbrack;2&rbrack;][2]
 
 :::
 
@@ -87,7 +87,7 @@ Unix came with [ed](https://en.wikipedia.org/wiki/Ed_(text_editor)), a line edit
 <!-- /dialogue -->
 
 <!-- dialogue: ken-ed-answer -->
-> Ha! Made for teletypes. Still works for me...
+> I wrote it for teletypes. Still works for me...
 <!-- /dialogue -->
 
 :::
@@ -138,7 +138,7 @@ This is line number two.
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-In the 1960s, memory was scarce and modems were slow. Many terminals printed onto paper rather than displaying text on a screen. A terse editor made sense in that setting.[&lbrack;4&rbrack;][4]
+In the 1960s, memory was scarce and modems were slow. Many terminals printed onto paper rather than displaying text on a screen. An editor with short commands made sense on terminals like these.[&lbrack;4&rbrack;][4]
 
 ![A yellow Teletype Model 33 with a keyboard and paper roll.](images/teletype-model-33.webp)
 
@@ -165,7 +165,7 @@ In the summer of 1976, George Coulouris visited Berkeley from Queen Mary College
 ![Haley tells Joy about another editor while Joy works at his terminal.](images/discovering-em.en.webp)
 
 <!-- dialogue: chuck-em-news -->
-> Bill! George Coulouris from Queen Mary College is visiting. His em editor lets you edit a line on screen.
+> Bill! His editor, em, lets you edit a line right on the screen.
 <!-- /dialogue -->
 
 <!-- dialogue: bill-em-reaction -->
@@ -208,7 +208,7 @@ Joy and Haley built on em to develop ex. In 1977, Joy added the full-screen visu
 > Coding's a lot more fun in visual mode.
 <!-- /dialogue -->
 
-The visual mode proved popular with BSD users. Invoking the editor as `vi` eventually became a way to start directly in that mode. The underlying ex command mode is still part of vi.[&lbrack;3&rbrack;][3]
+The visual mode became popular with BSD users. Starting the editor with the `vi` command opened it directly in visual mode. You can still use ex commands in vi today.[&lbrack;3&rbrack;][3]
 
 :::
 
@@ -223,7 +223,7 @@ Thompson also shared his knowledge of Unix. At early meetings of the West Coast 
 ![Thompson stands by a board about Unix internals as students unroll long source listings.](images/unix-source-session.en.webp)
 
 <!-- dialogue: ken-source-printouts -->
-> Did everyone bring the Unix source?
+> Did everyone bring their printouts?
 <!-- /dialogue -->
 
 <!-- dialogue: student-long-printout -->
