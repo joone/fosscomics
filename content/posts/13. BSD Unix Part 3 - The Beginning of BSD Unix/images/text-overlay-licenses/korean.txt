@@ -1,0 +1,27 @@
+Naver Font Copyright and License Notice
+
+The intellectual property rights for the Nanum fonts, Maru Buri fonts, and
+Clova Nanum Handwriting fonts (collectively, "Naver Fonts") belong to Naver
+and the Naver Cultural Foundation.
+
+Naver Fonts are provided free of charge to all users, including individuals
+and companies. Commercial use is permitted except for selling the font files
+themselves.
+
+Naver Fonts may be bundled with, redistributed with, or sold with other
+software when this copyright notice and the full license are included. The
+fonts may also be freely modified and redistributed.
+
+If including the full Naver Font License is difficult, source attribution is
+recommended. This package includes fonts provided by Naver.
+
+The Maru Buri fonts and Clova Nanum Handwriting fonts use the same open license
+and copyright terms as the Nanum fonts.
+
+Official notice and license:
+https://hangeul.naver.com/font
+https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=3497
+
+Bundled font files:
+- NanumSquareNeoTTF-bRg.woff (Nanum Square Neo)
+- NanumHimNaeRaNeunMarBoDan.woff (Clova Nanum Handwriting)
