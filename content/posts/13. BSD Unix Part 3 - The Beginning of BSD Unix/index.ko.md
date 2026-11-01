@@ -43,7 +43,7 @@ tags: BSD, Unix
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-1977년 초, 빌 조이는 파스칼 시스템과 ex 편집기를 묶어 버클리 소프트웨어 배포판(BSD, Berkeley Software Distribution)을 만들었다. ex는 em을 바탕으로 만든 줄 단위 편집기였다. 초기 BSD는 독립적인 운영체제가 아니라 기존 유닉스에 추가로 설치하는 소프트웨어 모음이었다. 이후 약 1년 동안 30여 개의 복사본이 발송되었다.[&lbrack;1&rbrack;][1]
+1977년 초, 빌 조이는 파스칼 시스템과 ex 편집기를 묶어 버클리 소프트웨어 배포판(BSD, Berkeley Software Distribution)을 만들었다. 초기 BSD는 독립적인 운영체제가 아니라 기존 유닉스에 추가로 설치하는 소프트웨어 모음이었다. 이후 약 1년 동안 30여 개의 복사본을 발송했다.[&lbrack;1&rbrack;][1]
 
 ![자기 테이프가 쌓인 책상에서 빌 조이가 발송할 내용을 적는다.](images/copying-the-first-tapes.ko.webp)
 
@@ -75,12 +75,15 @@ tags: BSD, Unix
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-당시 대학은 비교적 낮은 비용으로 유닉스 소스 라이선스를 얻을 수 있었다. AT&T의 사업에는 반독점 합의에 따른 제약이 있었지만, 유닉스 소스의 라이선스 제공까지 금지된 것은 아니었다.[&lbrack;2&rbrack;][2]
+유닉스의 확산에는 대학과 연구기관이 소스코드를 포함한 유닉스를 적은 라이선스 비용으로 받을 수 있었다는 점도 크게 작용했다.[&lbrack;2&rbrack;][2][&lbrack;6&rbrack;][6]
 
 ![AT&T라고 적힌 망토 차림의 인물이 주먹을 쥐고 생각한다.](images/att-and-unix.ko.webp)
 
 <!-- dialogue: att-business-restrictions -->
-> 대학에는 유닉스를 라이선스할 수 있는데... 컴퓨터 사업은 제한을 받는다니.
+> 유닉스를 갖고 있는데,\
+> 반독점 합의 때문에\
+> 컴퓨터 사업에 진출할 수 없다니...\
+> 그렇다고 제품으로 따로 팔 수도 없고...
 <!-- /dialogue -->
 
 :::
@@ -108,7 +111,7 @@ tags: BSD, Unix
 ![빌 조이가 수화기를 어깨에 끼우고 편지를 읽는다.](images/handling-requests.ko.webp)
 
 <!-- dialogue: bill-another-request -->
-> 아, BSD 배포판이 필요하다고요?
+> 다른 대학교에서도 BSD 배포판을 보내달라고 하네.
 <!-- /dialogue -->
 
 :::
@@ -256,9 +259,11 @@ tags: BSD, Unix
 3. SRI International, [ARPANET][3]. ARPANET의 기원과 1969년 첫 통신.
 4. Ozalp Babaoglu, [개인 소개][4]. 버클리 대학원 시절의 유닉스 가상 메모리 연구.
 5. The Unix Heritage Society (TUHS), [2BSD 원본 배포 아카이브][5]. `2bsd.tar.gz`의 설치 문서 `install.ms`와 소스코드.
+6. Warren Toomey, [The Strange Birth and Long Life of Unix][6], IEEE Spectrum, 2011.
 
 [1]: https://www.oreilly.com/openbook/opensources/book/kirkmck.html
 [2]: https://www.salon.com/2000/05/16/chapter_2_part_one/
 [3]: https://www.sri.com/hoi/arpanet/
 [4]: https://www.cs.unibo.it/~babaoglu/
 [5]: https://www.tuhs.org/Archive/Distributions/UCB/2BSD/
+[6]: https://spectrum.ieee.org/the-strange-birth-and-long-life-of-unix
