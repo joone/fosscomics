@@ -247,8 +247,6 @@ ARPANET had been connecting research institutions funded by the Defense Advanced
 
 :::
 
-*The dialogue in this comic is reconstructed from historical accounts, not quoted verbatim.*
-
 **References**
 
 1. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix][1], in *Open Sources: Voices from the Open Source Revolution*, 1999. [Korean edition, Hanbit Media](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.

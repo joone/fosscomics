@@ -250,8 +250,6 @@ tags: BSD, Unix
 
 끝.
 
-*이 만화의 대사는 당시 기록을 바탕으로 재구성한 것으로, 실제 발언을 그대로 인용한 것은 아닙니다.*
-
 **참고 문헌**
 
 1. 마샬 커크 맥퀴식, [Twenty Years of Berkeley Unix][1], 1999. 한국어판: [버클리 유닉스의 20년, 《오픈소스 혁명의 목소리》, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
