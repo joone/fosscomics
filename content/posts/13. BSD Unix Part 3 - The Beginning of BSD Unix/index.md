@@ -237,7 +237,7 @@ Joy ported ex, vi, the C shell, and other 2BSD tools to the VAX, while Peter Kes
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-ARPANET had been connecting research institutions funded by the Defense Advanced Research Projects Agency, or DARPA, since 1969.[&lbrack;3&rbrack;][3] But the sites used different computers and operating systems, making software expensive to port or rewrite. DARPA became interested in Unix's portability, and took notice of Berkeley's successful distribution of 3BSD to research institutions.[&lbrack;1&rbrack;][1]
+ARPANET had been connecting research institutions funded by the Defense Advanced Research Projects Agency, or DARPA, since 1969.[&lbrack;3&rbrack;][3] But the sites used different computers and operating systems, so they often couldn't share software. Porting the existing software to new machines was also costly. DARPA became interested in Unix's portability, and took notice of Berkeley's successful distribution of 3BSD to research institutions.[&lbrack;1&rbrack;][1]
 
 ![Three users in different locations work at their terminals.](images/bsd-at-research-centers.en.webp)
 

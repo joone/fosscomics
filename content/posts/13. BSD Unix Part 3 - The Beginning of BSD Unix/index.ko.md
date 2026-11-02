@@ -238,7 +238,7 @@ tags: BSD, Unix
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-미국 방위고등연구계획국(DARPA, Defense Advanced Research Projects Agency)의 연구기관들을 연결하는 ARPANET은 이미 1969년부터 운영되고 있었다.[&lbrack;3&rbrack;][3] 하지만 기관마다 컴퓨터와 운영체제가 달라 소프트웨어를 포팅하거나 다시 개발하는데 많은 비용이 들었다. DARPA는 그 대안으로 이식성이 높은 유닉스에 관심을 보였고, 버클리 대학이 여러 기관에 성공적으로 배포한 3BSD를 주목하기 시작했다.[&lbrack;1&rbrack;][1]
+미국 방위고등연구계획국(DARPA, Defense Advanced Research Projects Agency)의 연구기관들을 연결하는 ARPANET은 이미 1969년부터 운영되고 있었다.[&lbrack;3&rbrack;][3] 하지만 기관마다 컴퓨터와 운영체제가 달라 소프트웨어를 서로 공유하기 어려웠다. 기존 소프트웨어를 새 기종으로 이식하는 데도 많은 비용이 들었다. DARPA는 그 대안으로 이식성이 높은 유닉스에 관심을 보였고, 버클리 대학이 여러 기관에 성공적으로 배포한 3BSD를 주목하기 시작했다.[&lbrack;1&rbrack;][1]
 
 ![서로 다른 장소의 사용자 세 명이 각자의 터미널에서 작업한다.](images/bsd-at-research-centers.ko.webp)
 
