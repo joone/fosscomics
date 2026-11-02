@@ -55,7 +55,7 @@ In early 1977, Bill Joy put together the Berkeley Software Distribution, or BSD,
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-At the time, BSD could be distributed only to recipients with an AT&T Unix source license. Berkeley charged a nominal fee for the tape and distribution.[&lbrack;2&rbrack;][2]
+At the time, an AT&T Unix source license was needed to get BSD. Berkeley charged only for the tape and distribution.[&lbrack;2&rbrack;][2]
 
 ![Bill Joy explains the distribution terms over the telephone.](images/licensing-the-distribution.en.webp)
 
@@ -67,7 +67,7 @@ At the time, BSD could be distributed only to recipients with an AT&T Unix sourc
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Berkeley already had a tradition of sharing research software. BSD carried it on. Joy's low-cost distribution policy has also been attributed to Berkeley's Free Speech Movement, hippie culture, and antiwar activism.[&lbrack;2&rbrack;][2]
+Berkeley already had a tradition of sharing research software. BSD carried it on. Berkeley's Free Speech Movement, hippie culture, and antiwar activism are also said to have influenced Joy's decision to charge so little.[&lbrack;2&rbrack;][2]
 
 ![People march together carrying a sign that reads FREE SPEECH.](images/free-speech.webp)
 
@@ -177,7 +177,7 @@ Joy did more than fix bugs. He handled every distribution request, copied BSD on
 > Sure. Let's take a look.
 <!-- /dialogue -->
 
-Babaoglu, a Berkeley graduate student, was implementing virtual memory under Professor Domenico Ferrari's supervision. Joy joined him to integrate the code into 32/V and help debug it.[&lbrack;1&rbrack;][1][&lbrack;4&rbrack;][4]
+Babaoglu was a Berkeley graduate student working with Professor Domenico Ferrari. Joy helped him integrate the virtual-memory code into 32/V and debug it.[&lbrack;1&rbrack;][1][&lbrack;4&rbrack;][4]
 
 :::
 
@@ -196,7 +196,7 @@ Debugging continued through the holidays at the end of 1978.
 <!-- /dialogue -->
 
 <!-- dialogue: bill-quiet-vax -->
-> The VAX is quiet. Good time to debug virtual memory.
+> Might as well debug this while fewer people are using the VAX.
 <!-- /dialogue -->
 
 :::
@@ -230,7 +230,7 @@ Joy ported ex, vi, the C shell, and other 2BSD tools to the VAX, while Peter Kes
 ![Bill Joy puts a tape labeled 3BSD into an envelope.](images/shipping-3bsd.en.webp)
 
 <!-- dialogue: bill-ship-3bsd -->
-> Finally. 32-bit BSD, ready to ship.
+> At last, we can send these out.
 <!-- /dialogue -->
 
 :::
@@ -242,12 +242,10 @@ ARPANET had been connecting research institutions funded by the Defense Advanced
 ![Three users in different locations work at their terminals.](images/bsd-at-research-centers.en.webp)
 
 <!-- dialogue: researcher-bsd-on-vax -->
-> BSD on the VAX. Runs nicely, too.
+> BSD runs pretty well on this VAX.
 <!-- /dialogue -->
 
 :::
-
-The end.
 
 *The dialogue in this comic is reconstructed from historical accounts, not quoted verbatim.*
 
