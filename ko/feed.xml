@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="ko">
+  <title>F/OSS 코믹스</title>
+  <subtitle>F/OSS 코믹스는 자유 및 오픈 소스 소프트웨어를 다루는 만화 시리즈입니다. 컴퓨터와 소프트웨어의 역사를 통해 자유 및 오픈 소스 소프트웨어의 세계를 이해하고 직접 참여할 수 있도록 돕고자 합니다.</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://fosscomics.com/ko/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/"/>
+  <link rel="alternate" type="application/atom+xml" hreflang="en" title="English" href="https://fosscomics.com/feed.xml"/>
+  <id>https://fosscomics.com/ko/</id>
+  <updated>2026-10-30T00:00:00.000Z</updated>
+  <author><name>Joone Hur</name></author>
+  <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
+  <generator uri="https://github.com/joone/fossbook" version="0.5.0">Fossbook</generator>
+  <entry>
+    <title>13. BSD 유닉스 3화 – BSD 유닉스 시작</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>
+    <id>https://fosscomics.com/ko/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/</id>
+    <published>2026-10-30T00:00:00.000Z</published>
+    <updated>2026-10-30T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="Unix"/>
+    <summary>파스칼과 ex를 담은 테이프에서 시작한 BSD. 빌 조이는 배포와 버그 수정을 맡고, 오잘프 바바오글루와 함께 VAX용 유닉스에 가상 메모리를 구현한다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>12. BSD 유닉스 2화 – vi 에디터의 탄생</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/"/>
+    <id>https://fosscomics.com/ko/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/</id>
+    <published>2026-10-11T00:00:00.000Z</published>
+    <updated>2026-10-11T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="VI Editor"/>
+    <summary>1975년 UC 버클리의 빌 조이와 척 핼리는 켄 톰슨의 파스칼 작업을 돕는다. ed와 em에서 출발한 ex의 비주얼 편집 모드는 vi 에디터로 이어진다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>11. BSD 유닉스 1화 – UC 버클리로 간 유닉스 코드</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/"/>
+    <id>https://fosscomics.com/ko/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/</id>
+    <published>2026-09-30T00:00:00.000Z</published>
+    <updated>2026-09-30T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="Unix"/>
+    <summary>벨 연구소에서 개발된 유닉스는 어떻게 대학과 기업으로 널리 퍼져 나갔을까? 그 실마리는 유닉스 코드를 들고 UC 버클리를 찾은 켄 톰슨에게서 찾을 수 있다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>10. C언어의 아버지, 데니스 리치의 일생</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/"/>
+    <id>https://fosscomics.com/ko/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/</id>
+    <published>2026-09-26T00:00:00.000Z</published>
+    <updated>2026-09-26T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="C Language"/>
+    <category term="Plan9"/>
+    <category term="Unix"/>
+    <summary>하버드에서 벨 연구소까지, C언어를 만들고 동료들과 유닉스를 개발한 데니스 리치의 삶과 Plan 9, Inferno 이야기입니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>9. 유닉스 철학</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/9.%20The%20Unix%20Philosophy/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/9.%20The%20Unix%20Philosophy/"/>
+    <id>https://fosscomics.com/ko/posts/9.%20The%20Unix%20Philosophy/</id>
+    <published>2026-08-22T00:00:00.000Z</published>
+    <updated>2026-08-22T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="macOS"/>
+    <category term="더글러스 맥클로이"/>
+    <category term="리눅스"/>
+    <category term="미닉스"/>
+    <category term="유닉스"/>
+    <category term="유닉스 철학"/>
+    <category term="켄 톰프슨"/>
+    <category term="피터 H. 살루스"/>
+    <summary>유닉스가 만들어진 지 반세기가 넘었지만, 그 철학과 코드는 리눅스와 macOS를 비롯한 여러 운영체제에 여전히 살아 있습니다. 하나의 일을 잘하는 작은 프로그램을 만들고, 이들을 함께 동작하게 하며, 텍스트 스트림으로 소통하게 한다는 단순한 접근 방식이 유닉스의 오랜 영향력을 만들었습니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/9.%20The%20Unix%20Philosophy/images/feature_ko.png"/>
+  </entry>
+  <entry>
+    <title>8. 유닉스와 C언어</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/"/>
+    <id>https://fosscomics.com/ko/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="1970년대"/>
+    <category term="B 언어"/>
+    <category term="C 언어"/>
+    <category term="PDP-11"/>
+    <category term="데니스 리치"/>
+    <category term="멀틱스"/>
+    <category term="벨 연구소"/>
+    <category term="유닉스"/>
+    <category term="켄 톰프슨"/>
+    <summary>유닉스는 어떻게 시작되었을까? C언어를 왜 만들었고, 왜 C언어로 유닉스를 다시 구현했을까? 유닉스와 C언어를 만든 사람들의 이야기입니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/images/feature_ko.png"/>
+  </entry>
+  <entry>
+    <title>7. MIT 해커 문화와 ITS</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/7.%20ITS%20and%20Hacker%20Culture/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/7.%20ITS%20and%20Hacker%20Culture/"/>
+    <id>https://fosscomics.com/ko/posts/7.%20ITS%20and%20Hacker%20Culture/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="ARPANET"/>
+    <category term="DEC"/>
+    <category term="ITS"/>
+    <category term="MIT AI Lab"/>
+    <category term="Multics"/>
+    <category term="PDP-1"/>
+    <category term="PDP-6"/>
+    <category term="해커"/>
+    <summary>MIT 테크 모델 철도 클럽과 PDP-1, Spacewar!, ITS가 협업 중심의 해커 문화를 형성하고 자유 소프트웨어 운동에 영향을 준 과정을 살펴봅니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/7.%20ITS%20and%20Hacker%20Culture/images/night_ko.png"/>
+  </entry>
+  <entry>
+    <title>6. 해커문화의 탄생</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/"/>
+    <id>https://fosscomics.com/ko/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="ARPAnet"/>
+    <category term="ITS"/>
+    <category term="LISP"/>
+    <category term="MIT"/>
+    <category term="PDP-1"/>
+    <category term="Spacewar!"/>
+    <category term="에릭 레이몬드"/>
+    <category term="해커"/>
+    <summary>초기 프로그래머에서 MIT의 PDP-1과 Spacewar!, ITS와 ARPAnet으로 이어진 해커 문화의 탄생을 소개합니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>5. 소프트웨어 공학의 시작</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/5.%20The%20Beginning%20of%20Software%20Engineering/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/5.%20The%20Beginning%20of%20Software%20Engineering/"/>
+    <id>https://fosscomics.com/ko/posts/5.%20The%20Beginning%20of%20Software%20Engineering/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="그레이스 호퍼"/>
+    <category term="마거릿 해밀턴"/>
+    <category term="소프트웨어 공학"/>
+    <category term="아폴로 11"/>
+    <category term="에니악"/>
+    <category term="여성 개발자"/>
+    <category term="컴퓨터 버그"/>
+    <summary>초기 프로그래머와 마거릿 해밀턴, 여성 개발자들의 활약을 통해 소프트웨어 공학이 독립된 분야로 자리잡은 과정을 다룹니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/5.%20The%20Beginning%20of%20Software%20Engineering/images/feature_ko.png"/>
+  </entry>
+  <entry>
+    <title>4. 처음에는 어떻게 프로그래밍을 했을까?</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/"/>
+    <id>https://fosscomics.com/ko/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="IBM"/>
+    <category term="기계어"/>
+    <category term="멀틱스"/>
+    <category term="어셈블리어"/>
+    <category term="에니악"/>
+    <category term="에드박"/>
+    <category term="에드삭"/>
+    <category term="천공카드"/>
+    <summary>배선판과 기계어에서 어셈블리어와 천공카드 배치 작업으로 이어진 초기 프로그래밍 방식을 소개합니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/images/feature_ko.png"/>
+  </entry>
+  <entry>
+    <title>3. 상업용 컴퓨터 시대</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/3.%20The%20Era%20of%20Commercial%20Computers/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/3.%20The%20Era%20of%20Commercial%20Computers/"/>
+    <id>https://fosscomics.com/ko/posts/3.%20The%20Era%20of%20Commercial%20Computers/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="IBM"/>
+    <category term="IBM 650"/>
+    <category term="IBM 701"/>
+    <category term="IBM 704"/>
+    <category term="도널드 커누스"/>
+    <category term="에커트"/>
+    <category term="유니박"/>
+    <category term="존 모클리"/>
+    <category term="포트란"/>
+    <summary>에커트와 모클리의 유니박 사업부터 IBM 701, 704, 650과 포트란까지 상업용 컴퓨터 시대의 시작을 살펴봅니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/3.%20The%20Era%20of%20Commercial%20Computers/images/feature_ko.png"/>
+  </entry>
+  <entry>
+    <title>2. 앨런 튜링과 폰노이만</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/"/>
+    <id>https://fosscomics.com/ko/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="ACE"/>
+    <category term="앨런 튜링"/>
+    <category term="에니악"/>
+    <category term="에드박"/>
+    <category term="에드삭"/>
+    <category term="튜링 기계"/>
+    <category term="폰노이만"/>
+    <summary>앨런 튜링의 계산 이론과 에니악, 에드박, ACE, 에드삭을 거쳐 오늘날 컴퓨터 구조가 만들어진 과정을 다룹니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>1. 찰스 배비지와 에이다 러브레이스</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/"/>
+    <id>https://fosscomics.com/ko/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="에이다 러브레이스"/>
+    <category term="차분기관"/>
+    <category term="찰스 배비지"/>
+    <category term="해석기관"/>
+    <summary>19세기 찰스 배비지는 선구적인 기계식 컴퓨터를 설계했고, 에이다 러브레이스는 해석기관에 관한 주석에서 초기에 출판된 컴퓨터 프로그램과 반복 연산을 설명했습니다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/images/feature_ko.png"/>
+  </entry>
+</feed>

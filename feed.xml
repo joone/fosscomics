@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en">
+  <title>F/OSS Comics</title>
+  <subtitle>F/OSS Comics is a comic series about free and open source software. Through stories from the history of computing and software, we hope to help readers understand F/OSS and get involved.</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://fosscomics.com/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://fosscomics.com/"/>
+  <link rel="alternate" type="application/atom+xml" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/feed.xml"/>
+  <id>https://fosscomics.com/</id>
+  <updated>2026-10-30T00:00:00.000Z</updated>
+  <author><name>Joone Hur</name></author>
+  <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
+  <generator uri="https://github.com/joone/fossbook" version="0.5.0">Fossbook</generator>
+  <entry>
+    <title>13. BSD Unix, Part 3 - The Beginning of BSD Unix</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>
+    <id>https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/</id>
+    <published>2026-10-30T00:00:00.000Z</published>
+    <updated>2026-10-30T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="Unix"/>
+    <summary>From Pascal and ex tapes to a VAX system: Bill Joy handles BSD distribution and debugging, then joins Ozalp Babaoglu to bring virtual memory to Unix.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>12. BSD Unix, Part 2 - The Birth of the vi Editor</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/"/>
+    <id>https://fosscomics.com/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/</id>
+    <published>2026-10-11T00:00:00.000Z</published>
+    <updated>2026-10-11T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="VI Editor"/>
+    <summary>At UC Berkeley, Bill Joy and Chuck Haley help Ken Thompson improve Pascal, then turn their attention to editing. The path from ed through em and ex leads to vi.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/12.%20BSD%20Unix%20Part%202%20-%20The%20Birth%20of%20the%20vi%20Editor/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>11. BSD Unix, Part 1 - Unix Code Goes to UC Berkeley</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/"/>
+    <id>https://fosscomics.com/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/</id>
+    <published>2026-09-30T00:00:00.000Z</published>
+    <updated>2026-09-30T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="Unix"/>
+    <summary>How did Unix spread from Bell Labs to universities and companies? One clue lies in Ken Thompson&apos;s visit to UC Berkeley, with Unix source code in hand.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/11.%20BSD%20Unix%20Part%201%20-%20Unix%20Code%20Goes%20to%20UC%20Berkeley/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>10. The Life of Dennis Ritchie</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/"/>
+    <id>https://fosscomics.com/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/</id>
+    <published>2026-09-26T00:00:00.000Z</published>
+    <updated>2026-09-26T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="C Language"/>
+    <category term="Plan9"/>
+    <category term="Unix"/>
+    <summary>From Harvard to Bell Labs: the life of Dennis Ritchie, creator of C and co-developer of Unix, and his later work on Plan 9 and Inferno.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/10.%20The%20Life%20of%20Dennis%20Ritchie/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>9. The Unix Philosophy</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/9.%20The%20Unix%20Philosophy/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/9.%20The%20Unix%20Philosophy/"/>
+    <id>https://fosscomics.com/posts/9.%20The%20Unix%20Philosophy/</id>
+    <published>2026-08-22T00:00:00.000Z</published>
+    <updated>2026-08-22T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="Doug McIlroy"/>
+    <category term="Ken Thompson"/>
+    <category term="Linux"/>
+    <category term="macOS"/>
+    <category term="Minix"/>
+    <category term="Peter H. Salus"/>
+    <category term="UNIX"/>
+    <category term="Unix Philosophy"/>
+    <summary>More than five decades after Unix was created, its philosophy and code live on in Linux, macOS, and other operating systems. Its lasting influence comes from a simple approach to software—build small programs that do one thing well, work together, and communicate through text streams.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/9.%20The%20Unix%20Philosophy/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>8. The Origins of Unix and the C Language</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/"/>
+    <id>https://fosscomics.com/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="1970s"/>
+    <category term="B Language"/>
+    <category term="Bell Labs."/>
+    <category term="C Language"/>
+    <category term="Dennis Ritchie"/>
+    <category term="Ken Thompson"/>
+    <category term="Multics"/>
+    <category term="PDP-11"/>
+    <category term="UNIX"/>
+    <summary>How did Unix begin? Why was C created, and why was Unix rewritten in C? This is the story of the people who created Unix and C.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/8.%20The%20Origins%20of%20Unix%20and%20the%20C%20Language/images/feature_en.png"/>
+  </entry>
+  <entry>
+    <title>7. MIT Hacker Culture and ITS</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/7.%20ITS%20and%20Hacker%20Culture/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/7.%20ITS%20and%20Hacker%20Culture/"/>
+    <id>https://fosscomics.com/posts/7.%20ITS%20and%20Hacker%20Culture/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="ARPAnet"/>
+    <category term="DEC"/>
+    <category term="Hacker"/>
+    <category term="ITS"/>
+    <category term="MIT AI Lab"/>
+    <category term="Multics"/>
+    <category term="PDP-1"/>
+    <category term="PDP-6"/>
+    <summary>The hacker culture at MIT had roots in the Tech Model Railroad Club, whose members later programmed computers including the PDP-1. This experimentation fostered the hacker ethos, leading to the development of one of the earliest and most influential computer games, Spacewar!, and the ITS. The open, collaborative nature of ITS at the MIT AI Lab, accessible through ARPAnet, significantly influenced hacker culture and laid the groundwork for the free/open-source software movement...</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/7.%20ITS%20and%20Hacker%20Culture/images/night_en.png"/>
+  </entry>
+  <entry>
+    <title>6. The Origin of the Hacker Culture</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/"/>
+    <id>https://fosscomics.com/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="ARPAnet"/>
+    <category term="Eric S. Raymond"/>
+    <category term="Hacker"/>
+    <category term="ITS"/>
+    <category term="LISP"/>
+    <category term="MIT"/>
+    <category term="MIT AI Lab"/>
+    <category term="PDP-1"/>
+    <category term="Spacewar!"/>
+    <summary>The origins of hacker culture reach back to early programming communities and MIT&apos;s PDP-1 enthusiasts, who created software such as Spacewar!, text editors, and music programs. Project MAC, the AI Lab, ITS, and ARPANET helped this culture spread and influence today&apos;s open-source hacker community.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/6.%20The%20Origin%20of%20the%20Hacker%20Culture/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>5. The Beginning of Software Engineering</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/5.%20The%20Beginning%20of%20Software%20Engineering/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/5.%20The%20Beginning%20of%20Software%20Engineering/"/>
+    <id>https://fosscomics.com/posts/5.%20The%20Beginning%20of%20Software%20Engineering/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="1960s"/>
+    <category term="Apollo 11"/>
+    <category term="Grace Hopper"/>
+    <category term="Margaret Hamilton"/>
+    <category term="Mark II"/>
+    <category term="RMS"/>
+    <category term="Software Bug"/>
+    <category term="Women in Tech"/>
+    <summary>Early programmers came from mathematics, science, and engineering. Margaret Hamilton and other women helped establish software as a demanding engineering discipline.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/5.%20The%20Beginning%20of%20Software%20Engineering/images/feature_en.png"/>
+  </entry>
+  <entry>
+    <title>4. How Did People Write Code in the Early Days of Computing?</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/"/>
+    <id>https://fosscomics.com/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="Assembly Language"/>
+    <category term="EDSAC"/>
+    <category term="ENIAC"/>
+    <category term="Fortran"/>
+    <category term="Machine Code"/>
+    <category term="Multics"/>
+    <category term="Punch Card"/>
+    <summary>Early programmers moved from rewiring machines to stored programs, assembly language, paper tape, and punched-card batch processing.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/4.%20How%20Did%20People%20Write%20Code%20in%20the%20Early%20Days%20of%20Computing/images/feature_en.png"/>
+  </entry>
+  <entry>
+    <title>3. The Era of Commercial Computers</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/3.%20The%20Era%20of%20Commercial%20Computers/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/3.%20The%20Era%20of%20Commercial%20Computers/"/>
+    <id>https://fosscomics.com/posts/3.%20The%20Era%20of%20Commercial%20Computers/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="Donald Knuth"/>
+    <category term="EDVAC"/>
+    <category term="Fortran"/>
+    <category term="IBM"/>
+    <category term="IBM 1401"/>
+    <category term="IBM 608"/>
+    <category term="IBM 650"/>
+    <category term="IBM 701"/>
+    <category term="IBM 704"/>
+    <category term="John Backus"/>
+    <category term="John Mauchly"/>
+    <category term="Presper Eckert"/>
+    <category term="The Art of Computer Programming"/>
+    <summary>In 1946, ENIAC and EDVAC engineers J. Presper Eckert and John Mauchly founded a company that became the Eckert-Mauchly Computer Corporation and developed UNIVAC I. During the 1950s, IBM introduced computers including the 701, 704, and mass-produced 650, while Fortran and Lisp helped expand the possibilities of programming. This marked the beginning of widespread commercial computing.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/3.%20The%20Era%20of%20Commercial%20Computers/images/feature_en.png"/>
+  </entry>
+  <entry>
+    <title>2. Alan Turing and Von Neumann</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/"/>
+    <id>https://fosscomics.com/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="Alan Turing"/>
+    <category term="Automatic Computing Engine"/>
+    <category term="EDSAC"/>
+    <category term="EDVAC"/>
+    <category term="Kurt Gödel"/>
+    <category term="Von Neumann"/>
+    <summary>Alan Turing described an abstract machine that clarified what computation could mean. From wartime codebreaking and ENIAC&apos;s plugboards to the stored-program designs of EDVAC, ACE, and EDSAC, this episode traces how Turing, John von Neumann, and several engineering teams contributed to the architecture of modern computers.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/2.%20Alan%20Turing%20and%20Von%20Neumann/images/feature.png"/>
+  </entry>
+  <entry>
+    <title>1. Charles Babbage and Ada Lovelace</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/"/>
+    <id>https://fosscomics.com/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/</id>
+    <published>2026-06-29T00:00:00.000Z</published>
+    <updated>2026-06-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="Ada Lovelace"/>
+    <category term="Charles Babbage"/>
+    <summary>In the 19th century, Charles Babbage designed pioneering mechanical computers, and Ada Lovelace&apos;s notes on the Analytical Engine included an early published computer program and described how a machine could repeat a sequence of operations.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/images/feature_en.png"/>
+  </entry>
+</feed>
