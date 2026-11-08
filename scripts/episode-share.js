@@ -101,6 +101,11 @@ window.FossbookEpisodeShare = (() => {
       link.addEventListener("click", () => closeMenu());
     });
 
+    wrapper.querySelector(".episode-share-mastodon").addEventListener("click", () => {
+      closeMenu(true);
+      window.FossbookMastodonShare.open(composedText(metadata));
+    });
+
     wrapper
       .querySelector(".episode-share-copy")
       .addEventListener("click", async () => {

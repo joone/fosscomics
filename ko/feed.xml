@@ -6,10 +6,21 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" title="English" href="https://fosscomics.com/feed.xml"/>
   <id>https://fosscomics.com/ko/</id>
-  <updated>2026-10-30T00:00:00.000Z</updated>
+  <updated>2026-11-07T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.5.0">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.7.0">Fossbook</generator>
+  <entry>
+    <title>14. BSD 유닉스 4화 – CSRG(Computer Systems Research Group) 결성</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/14.%20BSD%20Unix%20Part%204%20-%20The%20Formation%20of%20CSRG/"/>
+    <id>https://fosscomics.com/ko/posts/14.%20BSD%20Unix%20Part%204%20-%20The%20Formation%20of%20CSRG/</id>
+    <published>2026-11-07T00:00:00.000Z</published>
+    <updated>2026-11-07T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <summary>DARPA의 지원으로 꾸려진 버클리의 CSRG. 4BSD 배포와 VMS와의 성능 경쟁을 거쳐, 다음 배포판은 5BSD 대신 4.1BSD라는 이름으로 나온다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/14.%20BSD%20Unix%20Part%204%20-%20The%20Formation%20of%20CSRG/images/feature.png"/>
+  </entry>
   <entry>
     <title>13. BSD 유닉스 3화 – BSD 유닉스 시작</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>

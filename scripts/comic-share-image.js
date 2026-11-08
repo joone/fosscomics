@@ -9,6 +9,7 @@ window.FossbookShareImage = (() => {
       close: "Close",
       shareOnX: "Share on X",
       shareOnBluesky: "Share on Bluesky",
+      shareOnMastodon: "Share on Mastodon",
       popupBlocked: "Pop-up blocked. Allow pop-ups to continue.",
       imagePreparing: "Preparing panel image...",
       imageError:
@@ -39,6 +40,7 @@ window.FossbookShareImage = (() => {
       close: "닫기",
       shareOnX: "X에 공유",
       shareOnBluesky: "Bluesky에 공유",
+      shareOnMastodon: "Mastodon에 공유",
       popupBlocked:
         "팝업이 차단되었습니다. 계속하려면 팝업을 허용하세요.",
       imagePreparing: "장면 이미지를 만드는 중입니다.",
@@ -237,6 +239,41 @@ window.FossbookShareImage = (() => {
     );
   }
 
+  async function rasterizeZoomedImages(capture) {
+    // html2canvas does not support horizontal-only clipping; bake the side crop
+    // into capture copies while keeping the full scaled height.
+    for (const frame of capture.querySelectorAll(".comic-image-zoom-frame")) {
+      const image = frame.querySelector("img");
+      const styles = getComputedStyle(frame);
+      const zoom = Number(styles.getPropertyValue("--comic-image-zoom"));
+      const anchor = styles.getPropertyValue("--comic-image-zoom-origin").trim().split(/\s+/)[0];
+      const fraction = { left: 0, center: 0.5, right: 1 }[anchor];
+      const { width, height } = frame.getBoundingClientRect();
+      if (!image || !Number.isFinite(zoom) || zoom < 1 || fraction === undefined ||
+          !(width > 0 && height > 0) || !Number.isFinite(width) ||
+          !Number.isFinite(height * zoom)) {
+        throw new Error("The zoomed image has invalid capture geometry.");
+      }
+      const scale = Math.min(2, 8192 / width, 8192 / (height * zoom));
+      const canvas = document.createElement("canvas");
+      canvas.width = Math.ceil(width * scale);
+      canvas.height = Math.ceil(height * zoom * scale);
+      const context = canvas.getContext("2d");
+      if (!context) throw new Error("Canvas image rendering is unavailable.");
+      context.drawImage(image, -fraction * (zoom - 1) * canvas.width, 0,
+        canvas.width * zoom, canvas.height);
+      await loadCaptureImage(image, canvas.toDataURL("image/png"));
+      Object.assign(frame.style, {
+        position: "relative", width: width + "px", height: height + "px",
+        overflow: "visible",
+      });
+      Object.assign(image.style, {
+        position: "absolute", left: "0", bottom: "0",
+        width: "100%", height: "auto", transform: "none",
+      });
+    }
+  }
+
   function rendererScript() {
     const agent = navigator.userAgent;
     const iOS = /iPad|iPhone|iPod/.test(agent) ||
@@ -287,6 +324,7 @@ window.FossbookShareImage = (() => {
         }),
       );
       await rasterizeOverlays(capture);
+      if (rendererScript() === "html2canvas.js") await rasterizeZoomedImages(capture);
       const width = Math.ceil(capture.getBoundingClientRect().width);
       const height = Math.ceil(capture.scrollHeight);
       if (!width || !height || height > 8192) {
@@ -418,6 +456,7 @@ window.FossbookShareImage = (() => {
         '<div class="comic-share-buttons comic-share-web-buttons">' +
           '<button class="comic-share-button comic-share-x" type="button"></button>' +
           '<button class="comic-share-button comic-share-bluesky" type="button"></button>' +
+          '<button class="comic-share-button comic-share-mastodon" type="button"></button>' +
         '</div>' +
         '<p class="comic-share-status" role="status" aria-live="polite"></p>' +
       '</form>';
@@ -443,6 +482,8 @@ window.FossbookShareImage = (() => {
     shareOnXButton.textContent = shareDefaults.shareOnX;
     const shareOnBlueskyButton = shareDialog.querySelector(".comic-share-bluesky");
     shareOnBlueskyButton.textContent = shareDefaults.shareOnBluesky;
+    const shareOnMastodonButton = shareDialog.querySelector(".comic-share-mastodon");
+    shareOnMastodonButton.textContent = shareDefaults.shareOnMastodon;
     const shareStatus = shareDialog.querySelector(".comic-share-status");
     shareDialog.querySelector(".comic-share-help").textContent = shareDefaults.imageHelp;
     const downloadButton = shareDialog.querySelector(".comic-share-download");
@@ -497,7 +538,11 @@ window.FossbookShareImage = (() => {
       panelPreview.removeAttribute("id");
       panelPreview.classList.remove("comic-share-target");
       panelPreview.classList.add("comic-share-preview-panel");
-      panelPreview.querySelectorAll(".comic-share-trigger").forEach((trigger) => trigger.remove());
+      panelPreview.querySelectorAll(".comic-share-trigger, .text-overlay-reading-hint").forEach((trigger) => trigger.remove());
+      panelPreview.querySelectorAll(".text-overlay-reading").forEach((viewport) => {
+        viewport.removeAttribute("tabindex");
+        viewport.removeAttribute("aria-describedby");
+      });
       if (document.documentElement.classList.contains("transcripts-hidden")) {
         panelPreview.querySelectorAll(".image-dialogue").forEach((dialogue) => dialogue.remove());
       }
@@ -591,6 +636,14 @@ window.FossbookShareImage = (() => {
       if (!openShareUrl(url)) {
         shareStatus.textContent = shareDefaults.popupBlocked;
       }
+    });
+
+    shareOnMastodonButton.addEventListener("click", () => {
+      shareStatus.textContent = shareDefaults.attachImage;
+      window.FossbookMastodonShare.open(
+        text(commentInput.value, activeBlock.blockUrl),
+        { attachImage: true },
+      );
     });
 
     const copyComment = async () => {
