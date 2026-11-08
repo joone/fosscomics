@@ -302,7 +302,7 @@ comicSpacing:
 :::
 ::::
 
-참고: SRI의 데이비드 캐슈턴(David Kashtan)은 VAX에서 유닉스와 VMS의 성능을 비교했다. 이 결과를 계기로 빌 조이는 커널을 개선했고, 같은 벤치마크에서 VMS에 버금가는 성능을 얻었다. 출처: [매큐직의 회고][1].
+참고: SRI의 데이비드 캐슈턴(David Kashtan)은 VAX에서 유닉스와 VMS의 성능을 비교했다. 이 결과를 계기로 빌 조이는 커널을 개선했고, 같은 벤치마크에서 VMS에 버금가는 성능을 얻었다. 출처: [참고문헌 1번](#reference-1).
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
@@ -405,7 +405,7 @@ BSD는 많은 코드를 추가하고 수정했지만, 여전히 AT&T의 유닉�
 
 **참고 문헌**
 
-1. 마샬 커크 맥퀴식, [Twenty Years of Berkeley Unix][1], 《Open Sources: Voices from the Open Source Revolution》, 1999. DARPA 계약, CSRG, 4BSD와 4.1BSD의 개발 및 배포. [한국어판: 《오픈소스 혁명의 목소리》, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
+1. <span id="reference-1"></span>마샬 커크 맥퀴식, [Twenty Years of Berkeley Unix][1], 《Open Sources: Voices from the Open Source Revolution》, 1999. DARPA 계약, CSRG, 4BSD와 4.1BSD의 개발 및 배포. [한국어판: 《오픈소스 혁명의 목소리》, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
 2. SRI International, [ARPANET][2]. 1969년의 첫 통신과 연구기관을 연결한 네트워크의 역사.
 3. Andrew Leonard, [BSD Unix: Power to the people, from the code][3], Salon, 2000.
 4. The Unix Heritage Society, [System V][4]. System V Release 1의 첫 출시: 1983년 1월.

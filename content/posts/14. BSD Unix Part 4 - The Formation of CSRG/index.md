@@ -309,7 +309,7 @@ Released in October 1980, 4BSD added job control, automatic rebooting, and a fil
 :::
 ::::
 
-Note: SRI's David Kashtan compared Unix and VMS performance on the VAX. Bill Joy responded by improving the kernel, reaching performance comparable to VMS on the same benchmark. See [McKusick's account][1].
+Note: SRI's David Kashtan compared Unix and VMS performance on the VAX. Bill Joy responded by improving the kernel, reaching performance comparable to VMS on the same benchmark. See [reference 1](#reference-1).
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
@@ -414,7 +414,7 @@ Unix began at Bell Labs, but distributing its source let users study and modify 
 
 **References**
 
-1. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix][1], in *Open Sources: Voices from the Open Source Revolution*, 1999. DARPA's contract, CSRG, and the development and distribution of 4BSD and 4.1BSD. [Korean edition, Hanbit Media](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
+1. <span id="reference-1"></span>Marshall Kirk McKusick, [Twenty Years of Berkeley Unix][1], in *Open Sources: Voices from the Open Source Revolution*, 1999. DARPA's contract, CSRG, and the development and distribution of 4BSD and 4.1BSD. [Korean edition, Hanbit Media](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
 2. SRI International, [ARPANET][2]. The first connection in 1969 and the network linking research institutions.
 3. Andrew Leonard, [BSD Unix: Power to the people, from the code][3], *Salon*, 2000.
 4. The Unix Heritage Society, [System V][4]. System V Release 1 first shipped in January 1983.
