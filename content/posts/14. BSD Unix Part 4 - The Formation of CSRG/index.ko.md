@@ -99,8 +99,8 @@ comicSpacing:
 ![같은 발표자가 손가락을 들어 서로 다른 컴퓨터를 쓰는 연구기관들의 사정을 설명한다.](images/different-hardware.ko.webp)
 
 <!-- dialogue: darpa-software-sharing -->
-> 하지만, 하드웨어와 운영체제가 다양해서\
-> 소프트웨어를 서로 공유하기가 어렵습니다.
+> ARPANET이 있어도 하드웨어와 운영체제가 달라\
+> 소프트웨어를 공유하기 어렵습니다.
 <!-- /dialogue -->
 
 <!-- dialogue: darpa-single-vendor -->
@@ -153,7 +153,7 @@ comicSpacing:
 ![회의 참석자가 입가에 손을 대고 ARPANET에 관해 덧붙인다.](images/arpanet-already-connected.ko.webp)
 
 <!-- dialogue: researcher-existing-arpanet -->
-> 앞으로 ARPANET도\
+> 그나저나, 앞으로 ARPANET도\
 > TCP/IP 기반으로 바뀔 거야.
 <!-- /dialogue -->
 

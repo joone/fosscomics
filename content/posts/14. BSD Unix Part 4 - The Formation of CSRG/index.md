@@ -101,8 +101,8 @@ In the late 1970s, the Defense Advanced Research Projects Agency (DARPA) wanted 
 ![The same speaker raises a finger to make another point.](images/different-hardware.en.webp)
 
 <!-- dialogue: darpa-software-sharing -->
-> It's hard to share software when everyone's using\
-> different hardware and operating systems.
+> Even with ARPANET, sharing software is hard\
+> when hardware and operating systems differ.
 <!-- /dialogue -->
 
 <!-- dialogue: darpa-single-vendor -->
@@ -157,8 +157,9 @@ In the late 1970s, the Defense Advanced Research Projects Agency (DARPA) wanted 
 ![A participant cups a hand beside his mouth for an aside about ARPANET.](images/arpanet-already-connected.en.webp)
 
 <!-- dialogue: researcher-existing-arpanet -->
-> ARPANET will eventually\
-> move to TCP/IP.
+> By the way, ARPANET\
+> will eventually\
+> switch to TCP/IP.
 <!-- /dialogue -->
 
 :::
