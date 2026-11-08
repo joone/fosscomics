@@ -55,7 +55,7 @@ In early 1977, Bill Joy put together the Berkeley Software Distribution, or BSD,
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-At the time, an AT&T Unix source license was needed to get BSD. Berkeley charged only for the tape and distribution.[&lbrack;2&rbrack;][2]
+At the time, an AT&T Unix source license was needed to get BSD.[&lbrack;2&rbrack;][2]
 
 ![Bill Joy explains the distribution terms over the telephone.](images/licensing-the-distribution.en.webp)
 
@@ -88,8 +88,6 @@ Universities and research institutions could obtain Unix, including its source c
 **The second distribution: 2BSD**
 
 After the first BSD distribution, Joy improved the Pascal system based on user feedback. He bundled it with vi (ex's visual mode), the C shell, and other tools to form the Second Berkeley Software Distribution, or 2BSD. Nearly seventy-five tapes were shipped over the following year.[&lbrack;1&rbrack;][1][&lbrack;5&rbrack;][5]
-
-Joy did more than fix bugs. He handled every distribution request, copied BSD onto tapes, and mailed them out himself.
 
 ::::panels columns="2" label=""
 
@@ -177,7 +175,7 @@ Joy did more than fix bugs. He handled every distribution request, copied BSD on
 > Sure. Let's take a look.
 <!-- /dialogue -->
 
-Babaoglu was a Berkeley graduate student working with Professor Domenico Ferrari. Joy helped him integrate the virtual-memory code into 32/V and debug it.[&lbrack;1&rbrack;][1][&lbrack;4&rbrack;][4]
+Babaoglu was a Berkeley graduate student advised by Professor Domenico Ferrari. Joy joined him to integrate the code into 32/V and debug it.[&lbrack;1&rbrack;][1][&lbrack;4&rbrack;][4]
 
 :::
 
@@ -187,7 +185,7 @@ At the time, 32/V did not use the VAX hardware's virtual-memory capabilities. A 
 
 Macsyma, developed at MIT beginning in the late 1960s, worked with symbolic expressions. It could factor expressions, compute derivatives, and perform integration.
 
-Debugging continued through the holidays at the end of 1978.
+The end of 1978.
 
 ![Ozalp and Bill Joy sit at two terminals side by side.](images/christmas-debugging.en.webp)
 
