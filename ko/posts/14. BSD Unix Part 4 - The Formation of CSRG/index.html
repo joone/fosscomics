@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Pen+Script&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.7.0">
-        <link rel="stylesheet" href="/ko/styles/main.css?v=0.7.0">
-        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.7.0">
+        <link rel="stylesheet" href="/ko/styles/fonts.css?v=0.8.0">
+        <link rel="stylesheet" href="/ko/styles/main.css?v=0.8.0">
+        <link rel="stylesheet" href="/ko/styles/highlights.css?v=0.8.0">
         <link rel="icon" type="image/png" href="/ko/images/favicon.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0CWE9F5HJ"></script>
@@ -161,7 +161,7 @@
   width: 100%; max-width: 100%; min-width: 0; overflow-x: hidden;
   text-align: left;
 }
-.text-overlay-reading > svg { display: block; max-width: 100% !important; }
+.text-overlay-reading > svg { display: block; max-width: 100% !important; margin-left: auto; margin-right: auto; }
 .text-overlay-reading:focus-visible { outline: 2px solid currentColor; outline-offset: -2px; }
 @media not all and (min-width: 768px) {
   .text-overlay-reading { --comic-lettering-size: 1.1rem; overflow-x: auto; }
@@ -179,18 +179,106 @@
 <script data-text-overlay-reading>(function readingViewportScript() {
   const init = () => {
     const viewports = [...document.querySelectorAll(".text-overlay-reading")];
+    const states = viewports.map(viewport => ({
+      viewport, panel: viewport.closest(".comic-panel") || viewport,
+      started: false, interrupted: false, centered: false,
+    }));
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let current = null;
+    let timer = null;
+    let frame = null;
+    let printing = false;
+    const allowed = () => !motion.matches && !document.hidden && !printing &&
+      !document.querySelector("dialog[open]");
+    const stop = () => {
+      if (timer !== null) clearTimeout(timer);
+      if (frame !== null) cancelAnimationFrame(frame);
+      timer = frame = null;
+      current = null;
+    };
+    const start = (state) => {
+      current = state;
+      timer = setTimeout(() => {
+        timer = null;
+        if (!allowed() || !state.centered || state.interrupted) {
+          stop();
+          return;
+        }
+        state.started = true;
+        let elapsed = 0;
+        let previous = null;
+        state.viewport.scrollLeft = 0;
+        const move = (timestamp) => {
+          frame = null;
+          if (!allowed() || !state.centered || state.interrupted) {
+            stop();
+            return;
+          }
+          const maximum = state.viewport.scrollWidth - state.viewport.clientWidth;
+          if (maximum <= 1) {
+            stop();
+            return;
+          }
+          if (previous !== null) elapsed += Math.min(timestamp - previous, 100);
+          previous = timestamp;
+          const position = Math.min(30 * elapsed / 1000, maximum);
+          state.viewport.scrollLeft = position;
+          if (position >= maximum) stop();
+          else frame = requestAnimationFrame(move);
+        };
+        frame = requestAnimationFrame(move);
+      }, 1500);
+    };
     const update = () => {
-      for (const viewport of viewports) {
+      let candidate = null;
+      let closest = Infinity;
+      for (const state of states) {
+        const { viewport, panel } = state;
         const overflowing = getComputedStyle(viewport).overflowX === "auto" &&
           viewport.scrollWidth > viewport.clientWidth + 1;
         viewport.tabIndex = overflowing ? 0 : -1;
+        const rect = panel.getBoundingClientRect();
+        if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
+          state.started = state.interrupted = false;
+        }
+        const distance = Math.abs((rect.top + rect.bottom) / 2 - window.innerHeight / 2);
+        state.centered = overflowing && rect.bottom > 0 && rect.top < window.innerHeight &&
+          distance <= window.innerHeight * 0.1;
+        if (state.centered && !state.interrupted && (!state.started || current === state) &&
+            distance < closest) {
+          candidate = state;
+          closest = distance;
+        }
+      }
+      if (!allowed()) candidate = null;
+      if (candidate !== current) {
+        stop();
+        if (candidate !== null) start(candidate);
       }
     };
+    for (const state of states) {
+      const interrupt = () => {
+        state.interrupted = true;
+        if (current === state) stop();
+      };
+      for (const event of ["pointerdown", "touchstart", "wheel", "keydown", "focusin"]) {
+        state.panel.addEventListener(event, interrupt, { passive: true });
+      }
+    }
     const observer = new ResizeObserver(update);
     for (const viewport of viewports) {
       observer.observe(viewport);
       observer.observe(viewport.querySelector("svg"));
     }
+    window.addEventListener("scroll", () => {
+      if (timer !== null) stop();
+      update();
+    }, { passive: true });
+    window.addEventListener("resize", update);
+    window.addEventListener("beforeprint", () => { printing = true; update(); });
+    window.addEventListener("afterprint", () => { printing = false; update(); });
+    document.addEventListener("visibilitychange", update);
+    motion.addEventListener("change", update);
     update();
   };
   if (document.readyState === "loading") {
@@ -755,15 +843,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             </footer>
         </div>
         
-        <script src="/ko/scripts/panel-navigation.js?v=0.7.0"></script>
+        <script src="/ko/scripts/panel-navigation.js?v=0.8.0"></script>
         <script>
           FossbookPanelNavigation.init({"heading":"키보드 단축키","close":"닫기","nextPanel":"다음 패널","previousPanel":"이전 패널","previousEpisode":"이전 에피소드","nextEpisode":"다음 에피소드","previousList":"이전 에피소드 목록","nextList":"다음 에피소드 목록","previousSection":"이전 메뉴","nextSection":"다음 메뉴","firstPanel":"첫 패널","lastPanel":"마지막 패널","openSelection":"선택한 에피소드 열기","goBack":"뒤로 가기","pageTop":"페이지 맨 위","pageBottom":"페이지 맨 아래","showHelp":"키보드 단축키 보기"});
         </script>
-        <script src="/ko/scripts/mastodon-share.js?v=0.7.0"></script>
+        <script src="/ko/scripts/mastodon-share.js?v=0.8.0"></script>
         <script>
           FossbookMastodonShare.init({"locale":"ko-KR","labels":{"heading":"","server":"","help":"","submit":"","close":"닫기","invalidServer":"","popupBlocked":"팝업이 차단되었습니다. 계속하려면 팝업을 허용하세요.","storageError":"","attachImage":""}});
         </script>
-        <script src="/ko/scripts/episode-share.js?v=0.7.0"></script>
+        <script src="/ko/scripts/episode-share.js?v=0.8.0"></script>
         <script>
           FossbookEpisodeShare.init({"copiedLabel":"링크를 복사했습니다","copyErrorLabel":"링크를 복사하지 못했습니다","shareErrorLabel":"에피소드를 공유하지 못했습니다"});
         </script>
@@ -805,7 +893,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
               const loadSharingScript = (filename) =>
                 new Promise((resolve, reject) => {
                   const script = document.createElement("script");
-                  const src = "/ko/scripts/" + filename + "?v=0.7.0";
+                  const src = "/ko/scripts/" + filename + "?v=0.8.0";
                   script.src = src;
                   script.onload = resolve;
                   script.onerror = () => reject(new Error("Could not load " + src));

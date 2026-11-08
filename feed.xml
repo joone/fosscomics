@@ -9,7 +9,7 @@
   <updated>2026-10-30T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.7.0">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.8.0">Fossbook</generator>
   <entry>
     <title>13. BSD Unix, Part 3 - The Beginning of BSD Unix</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/"/>
