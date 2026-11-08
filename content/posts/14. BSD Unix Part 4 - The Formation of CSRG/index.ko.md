@@ -43,11 +43,10 @@ comicSpacing:
 ![DARPA 관계자가 정장을 입고 서서 연구기관 간 협력을 이야기한다.](images/discussing-research-network.ko.webp)
 
 <!-- dialogue: darpa-research-cooperation -->
-> 우리가 국방성 연구, 개발\
-> 부분을 담당하고 있지만,\
-> 다른 연구 기관과 대학과의\
-> 효율적인 공동 연구를 위해\
-> 네트워크 활용이 필요합니다.
+> 이 네트워크로 연구소와 대학이\
+> 소프트웨어를 공유해야 합니다.\
+> 하지만 서로 다른 운영체제를\
+> 쓰고 있으니 쉽지 않습니다.
 <!-- /dialogue -->
 
 :::
@@ -70,9 +69,8 @@ comicSpacing:
 ![여러 연구기관의 참석자들이 회의 탁자에 둘러앉아 발표자의 설명을 듣는다.](images/meeting-research-contractors.ko.webp)
 
 <!-- dialogue: darpa-meeting-agenda -->
-> 각 연구기관과 대학이 소프트웨어를\
-> 더 쉽게 공유할 수 있도록\
-> 운영체제 통일 방안을 논의해 봅시다.
+> 아시다시피, 각 연구 기관에 있는 컴퓨터를\
+> 교체할 시점이 다가오고 있습니다.
 <!-- /dialogue -->
 
 :::
@@ -84,14 +82,14 @@ comicSpacing:
 ![발표자가 한 손을 들고 컴퓨터 교체 비용을 설명한다.](images/replacing-research-computers.ko.webp)
 
 <!-- dialogue: darpa-replacement-cycle -->
-> 아시다시피, 각 연구 기관에 있는 컴퓨터를\
-> 교체할 시점이 다가오고 있습니다.
+> 여기서 가장 큰 비용은 연구용 소프트웨어를\
+> 새로운 컴퓨터에 이식하는 것입니다.
 <!-- /dialogue -->
 
 <!-- dialogue: darpa-porting-cost -->
-> 여기서 가장 큰 비용은\
-> 연구용 소프트웨어를 새로운\
-> 컴퓨터에 이식하는 것입니다.
+> 연구용 소프트웨어를\
+> 쉽게 옮길 수 있는\
+> 운영체제가 필요합니다.
 <!-- /dialogue -->
 
 :::
@@ -106,7 +104,7 @@ comicSpacing:
 <!-- /dialogue -->
 
 <!-- dialogue: darpa-single-vendor -->
-> 그렇다고, 각 연구소 마다 요구사항이\
+> 그렇다고, 각 연구소마다 요구사항이\
 > 다른데, 단일 회사의 컴퓨터를\
 > 사용하는 것은 실용적이지 못합니다
 <!-- /dialogue -->
@@ -117,11 +115,11 @@ comicSpacing:
 ::::panels columns="2"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-![정장 차림의 참석자가 손을 들고 운영체제를 통일하자는 의견을 낸다.](images/unifying-operating-systems.ko.webp)
+![정장 차림의 참석자가 손을 들고 운영체제를 맞추는 방안을 의견으로 낸다.](images/unifying-operating-systems.ko.webp)
 
 <!-- dialogue: researcher-common-os -->
-> 하드웨어 대신 운영체제를\
-> 통일하는 방안을 찾아봅시다.
+> 연구기관들이 함께 사용할 수\
+> 있는 운영체제가 필요합니다.
 <!-- /dialogue -->
 
 <!-- dialogue: researcher-shared-software -->
@@ -141,8 +139,8 @@ comicSpacing:
 <!-- /dialogue -->
 
 <!-- dialogue: researcher-unix-portability -->
-> C언어로 개발되어 여러 컴퓨터에\
-> 이식이 쉽고 이미 많은 학교와\
+> C언어로 개발되어 다양한 컴퓨터에\
+> 이식이 쉽고 이미 여러 대학과\
 > 연구소에서 사용하고 있습니다.
 <!-- /dialogue -->
 
@@ -155,8 +153,8 @@ comicSpacing:
 ![회의 참석자가 입가에 손을 대고 ARPANET에 관해 덧붙인다.](images/arpanet-already-connected.ko.webp)
 
 <!-- dialogue: researcher-existing-arpanet -->
-> 오늘날 인터넷으로 이어지는\
-> 아파넷 얘기야.
+> 앞으로 ARPANET도\
+> TCP/IP 기반으로 바뀔 거야.
 <!-- /dialogue -->
 
 :::
@@ -166,10 +164,10 @@ comicSpacing:
 ![DARPA 관계자가 두 손을 들어 버클리의 BSD를 이야기한다.](images/choosing-berkeley.ko.webp)
 
 <!-- dialogue: darpa-berkeley-proposal -->
-> 좋은 생각입니다! 버클리대\
-> 밥 패브리 교수랩에서\
-> BSD라는 유닉스 배포본을\
-> 만드는데, 과제를 맡겨봅시다.
+> 좋은 생각입니다! 버클리의\
+> BSD 프로젝트가 좋은\
+> 평가를 받고 있습니다.\
+> 그쪽에 과제를 맡겨봅시다.
 <!-- /dialogue -->
 
 :::
@@ -224,7 +222,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-버클리대 [밥 패브리](https://en.wikipedia.org/wiki/Bob_Fabry) 교수는 UC 버클리대학내에 CSRG(Computer Systems Research Group)라는 연구 그룹을 만들어 과제를 수행하게 된다. 핵심 멤버로 [키스 보스틱(Keith Bostic)](https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)), [빌 조이(Bill Joy)](https://en.wikipedia.org/wiki/Bill_Joy), [마셜 커크 매큐직(Marshall Kirk McKusick)](https://en.wikipedia.org/wiki/Marshall_Kirk_McKusick), [사무엘 J 래플러(Samuel J Leffler)](https://en.wikipedia.org/wiki/Sam_Leffler), [마이클 J. 캐럴스(Michael J. Karels)](https://en.wikipedia.org/wiki/Mike_Karels) 등이 과제에 참여했다.
+버클리대 [밥 패브리](https://en.wikipedia.org/wiki/Bob_Fabry) 교수는 UC 버클리 대학 내에 CSRG(Computer Systems Research Group)라는 연구 그룹을 만들어 과제를 수행하게 된다. 후일 CSRG를 이끌게 되는 [키스 보스틱(Keith Bostic)](https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)), [빌 조이(Bill Joy)](https://en.wikipedia.org/wiki/Bill_Joy), [마셜 커크 매큐직(Marshall Kirk McKusick)](https://en.wikipedia.org/wiki/Marshall_Kirk_McKusick), [사무엘 J 래플러(Samuel J Leffler)](https://en.wikipedia.org/wiki/Sam_Leffler), [마이클 J. 캐럴스(Michael J. Karels)](https://en.wikipedia.org/wiki/Mike_Karels) 등이 과제에 참여했다.
 
 ![밥 패브리와 빌 조이를 비롯한 다섯 사람이 탁자에 둘러앉아 있다.](images/csrg-researchers.webp "desktop-size:60%")
 
@@ -393,7 +391,7 @@ BSD는 많은 코드를 추가하고 수정했지만, 여전히 AT&T의 유닉�
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-이처럼 유닉스는 벨 연구소에서 개발되었지만, 소스코드와 함께 배포되었기 때문에 누구나 소스 코드를 고칠 수 있었다. 그 결과, 수 많은 외부 기여자에 의해 혁신이 이루어지고 유닉스 발전에 기여하게된다.
+이처럼 유닉스는 벨 연구소에서 개발되었지만, 소스코드와 함께 배포되었기 때문에 누구나 소스 코드를 고칠 수 있었다. 그 결과, 수많은 외부 기여자가 새로운 기능과 개선 사항을 더하면서 유닉스는 빠르게 발전할 수 있었다.
 
 ![같은 사용자가 터미널 앞에서 4.1BSD를 실행한다.](images/trying-41bsd.ko.webp)
 
