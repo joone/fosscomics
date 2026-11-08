@@ -43,7 +43,7 @@ comicSpacing:
 ![DARPA 관계자가 정장을 입고 서서 연구기관 간 협력을 이야기한다.](images/discussing-research-network.ko.webp)
 
 <!-- dialogue: darpa-research-cooperation -->
-> 이 네트워크로 연구소와 대학이\
+> ARPANET으로 연구소와 대학이\
 > 소프트웨어를 공유해야 합니다.\
 > 하지만 서로 다른 운영체제를\
 > 쓰고 있으니 쉽지 않습니다.
