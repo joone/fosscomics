@@ -1154,7 +1154,7 @@
 
   h1 { font-size: 1.4rem; }
   .comic-panel-title > h1:first-child {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     margin: 0 0 0.6rem;
     padding: 12px 12px 0;
@@ -1165,7 +1165,7 @@
   }
   @media screen and (max-width: 599px) {
     .comic-panel-title > h1:first-child {
-      font-size: 1.9rem;
+      font-size: 1.5rem;
     }
   }
   h2 { font-size: 1.2rem; }
