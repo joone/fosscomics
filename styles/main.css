@@ -27,6 +27,8 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     line-height: 1.6em;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   html:lang(ko) {
@@ -1166,6 +1168,7 @@
   @media screen and (max-width: 599px) {
     .comic-panel-title > h1:first-child {
       font-size: 1.5rem;
+      margin-bottom: 1.5rem;
     }
   }
   h2 { font-size: 1.2rem; }
