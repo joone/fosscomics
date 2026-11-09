@@ -30,7 +30,7 @@ comicSpacing:
 
 ::::panels columns="2"
 :::panel title="true" rounded="true" style="border-width: 3px;border-color: black;"
-# BSD Unix, Part 4<br>The Formation of the CSRG
+# BSD Unix, Part 4<br>The Formation of the CSRG (Computer Systems Research Group)
 
 ![Five researchers gather around a table beneath the title introducing CSRG.](images/csrg-title.webp "valign:bottom zoom:120% align:center")
 
