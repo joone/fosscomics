@@ -1,5 +1,5 @@
 ---
-title: "14. BSD Unix, Part 4 - CSRG (Computer Systems Research Group)"
+title: "14. BSD Unix, Part 4 - 4.1BSD"
 date: "2026-11-07"
 image: feature.webp
 description: "DARPA funding brings Berkeley's CSRG together. After shipping 4BSD and tuning Unix to compete with VMS, the team releases 4.1BSD instead of 5BSD."
@@ -30,9 +30,9 @@ comicSpacing:
 
 ::::panels columns="2"
 :::panel title="true" rounded="true" style="border-width: 3px;border-color: black;"
-# BSD Unix, Part 4<br>CSRG (Computer Systems Research Group)
+# BSD Unix, Part 4<br>4.1BSD
 
-![Five researchers gather around a table beneath the title introducing CSRG.](images/csrg-title.webp "valign:bottom zoom:120% align:center")
+![Five researchers gather around a table.](images/csrg-title.webp "valign:bottom zoom:120% align:center")
 
 :::
 

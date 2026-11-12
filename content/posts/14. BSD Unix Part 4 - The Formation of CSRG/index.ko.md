@@ -1,5 +1,5 @@
 ---
-title: "14. BSD 유닉스 4화 – CSRG(Computer Systems Research Group) 결성"
+title: "14. BSD 유닉스 4화 – 4.1BSD"
 date: "2026-11-07"
 image: feature.webp
 description: "DARPA의 지원으로 꾸려진 버클리의 CSRG. 4BSD 배포와 VMS와의 성능 경쟁을 거쳐, 다음 배포판은 5BSD 대신 4.1BSD라는 이름으로 나온다."
@@ -30,9 +30,9 @@ comicSpacing:
 
 ::::panels columns="2"
 :::panel title="true" rounded="true" style="border-width: 3px;border-color: black;"
-# BSD 유닉스 4화 - CSRG<br>(Computer Systems<br> Research Group) 결성
+# BSD 유닉스 4화<br>4.1BSD
 
-![BSD 유닉스: CSRG(Computer Systems Research Group) 결성이라는 제목 아래 다섯 사람이 탁자에 둘러앉아 있다.](images/csrg-title.webp "valign:bottom zoom:120% align:center")
+![다섯 사람이 탁자에 둘러앉아 있다.](images/csrg-title.webp "valign:bottom zoom:120% align:center")
 
 :::
 
