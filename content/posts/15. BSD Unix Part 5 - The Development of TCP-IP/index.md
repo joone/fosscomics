@@ -314,5 +314,5 @@ The TCP/IP meeting scene is a dramatization based on the recollections of John G
 - Pixar, [Our Story](https://www.pixar.com/our-story).
 - [RFC 1122: Requirements for Internet Hosts - Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html), 1989.
 - Modern protocol examples: [IPv6 (RFC 1883)](https://www.rfc-editor.org/rfc/rfc1883.html), 1995; [TLS 1.0 (RFC 2246)](https://www.rfc-editor.org/rfc/rfc2246.html), 1999.
-- https://en.wikipedia.org/wiki/Computer\_Systems\_Research\_Group
+- [Computer Systems Research Group - Wikipedia](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 - https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html
