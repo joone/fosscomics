@@ -42,7 +42,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-## Connecting Unix
+## Integrating TCP/IP
 
 Network protocols were a major part of the ARPANET project. The Defense Advanced Research Projects Agency (DARPA) hired BBN (Bolt Beranek and Newman) to implement TCP/IP for Unix on the VAX.
 
