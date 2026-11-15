@@ -44,7 +44,7 @@ comicSpacing:
 
 ## TCP/IP 통합
 
-아파넷에서 중요한 작업 중 하나는 네트워크 프로토콜을 설계하고 구현하는 일이었다. 미국 국방고등연구계획국(DARPA)은 BBN(Bolt Beranek and Newman)에 VAX용 유닉스의 TCP/IP 구현을 맡겼다.
+TCP/IP는 빈트 서프(Vint Cerf)와 밥 칸(Bob Kahn)이 이끈 공동 연구를 통해 설계되었다. 이후 미국 국방고등연구계획국(DARPA)은 BBN(Bolt Beranek and Newman)에 VAX용 유닉스의 TCP/IP 구현을 맡겼다.
 
 ![BBN의 개발자가 터미널 앞에 앉아 있고 정장을 입은 두 동료가 옆에서 지켜본다.](images/bbn-implementation.webp)
 
@@ -287,6 +287,7 @@ BSD에서 발전한 네트워크 기능은 이후 AT&T의 유닉스에도 도입
 - 마샬 커크 맥퀴식, [버클리 유닉스의 20년, 오픈소스 혁명의 목소리, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013
 - Marshall Kirk McKusick, [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable](https://www.oreilly.com/openbook/opensources/book/kirkmck.html), 1999
 - Robert F. Gurwitz, [VAX-UNIX Networking Support Project — Implementation Description (IEN 168)](https://history.rfc-editor.org/ien/ien168.txt), 1981
+- Computer History Museum, [Internet History of 1970s](https://www.computerhistory.org/internethistory/1970s/)
 - Pixar, [Our Story](https://www.pixar.com/our-story)
 - [RFC 1122: Requirements for Internet Hosts — Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html), 1989
 - 현대 프로토콜 예시: [IPv6 (RFC 1883)](https://www.rfc-editor.org/rfc/rfc1883.html), 1995; [TLS 1.0 (RFC 2246)](https://www.rfc-editor.org/rfc/rfc2246.html), 1999

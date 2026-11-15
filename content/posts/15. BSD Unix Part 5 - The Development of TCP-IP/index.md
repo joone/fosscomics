@@ -44,7 +44,7 @@ comicSpacing:
 
 ## Integrating TCP/IP
 
-Network protocols were a major part of the ARPANET project. The Defense Advanced Research Projects Agency (DARPA) hired BBN (Bolt Beranek and Newman) to implement TCP/IP for Unix on the VAX.
+TCP/IP emerged from collaborative research led by Vint Cerf and Bob Kahn. The Defense Advanced Research Projects Agency (DARPA) later commissioned Bolt Beranek and Newman (BBN) to implement the protocols for Unix on the VAX.
 
 ![A BBN developer sits at a terminal while two colleagues in suits look on.](images/bbn-implementation.webp)
 
@@ -309,6 +309,7 @@ The TCP/IP meeting scene draws on an anecdote told by John Gage, a friend of Bil
 - Marshall Kirk McKusick, [Twenty Years of Berkeley Unix, in *Open Sources: Voices from the Open Source Revolution* (Korean edition, Hanbit Media)](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013.
 - Marshall Kirk McKusick, [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable](https://www.oreilly.com/openbook/opensources/book/kirkmck.html), 1999.
 - Robert F. Gurwitz, [VAX-UNIX Networking Support Project - Implementation Description (IEN 168)](https://history.rfc-editor.org/ien/ien168.txt), 1981.
+- Computer History Museum, [Internet History of 1970s](https://www.computerhistory.org/internethistory/1970s/).
 - Pixar, [Our Story](https://www.pixar.com/our-story).
 - [RFC 1122: Requirements for Internet Hosts - Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html), 1989.
 - Modern protocol examples: [IPv6 (RFC 1883)](https://www.rfc-editor.org/rfc/rfc1883.html), 1995; [TLS 1.0 (RFC 2246)](https://www.rfc-editor.org/rfc/rfc2246.html), 1999.
