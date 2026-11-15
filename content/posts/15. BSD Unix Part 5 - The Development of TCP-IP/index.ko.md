@@ -292,4 +292,4 @@ BSD에서 발전한 네트워크 기능은 이후 AT&T의 유닉스에도 도입
 - [RFC 1122: Requirements for Internet Hosts — Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html), 1989
 - 현대 프로토콜 예시: [IPv6 (RFC 1883)](https://www.rfc-editor.org/rfc/rfc1883.html), 1995; [TLS 1.0 (RFC 2246)](https://www.rfc-editor.org/rfc/rfc2246.html), 1999
 - [컴퓨터 시스템 연구 그룹 - 위키백과, 우리 모두의 백과사전](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%97%B0%EA%B5%AC_%EA%B7%B8%EB%A3%B9)
-- https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html
+- *The Design and Implementation of the 4.4BSD Operating System*, [2.1.13. Network Implementation](https://docs.freebsd.org/en/books/design-44bsd/#overview-network-implementation)
