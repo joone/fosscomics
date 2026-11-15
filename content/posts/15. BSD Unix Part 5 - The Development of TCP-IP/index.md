@@ -142,8 +142,9 @@ At UC Berkeley, the Computer Systems Research Group (CSRG) integrated BBN's earl
 <!-- /dialogue -->
 
 <!-- dialogue: refer-to-tcpip -->
-> Oh... I just followed\
-> the TCP/IP spec.
+> It's very simple —\
+> you read the protocol\
+> and write the code.
 <!-- /dialogue -->
 
 :::
@@ -301,7 +302,7 @@ Networking features developed in BSD later found their way into AT&T's Unix too.
 
 Note: The dialogue is dramatized, not a verbatim record of what these people said.
 
-The TCP/IP meeting scene draws on an anecdote told by John Gage, a friend of Bill Joy and Sun Microsystems' chief researcher. BBN's Rob Gurwitz disputed the account. ([Source](#reference-1))
+The TCP/IP meeting scene is a dramatization based on the recollections of John Gage, a friend of Bill Joy and former chief researcher at Sun Microsystems. BBN's Rob Gurwitz rejected the claim that BBN's code did not work. He said he had attended the relevant DARPA meetings but did not remember hearing Bill Joy say, "It's very simple — you read the protocol and write the code." ([Source](#reference-1))
 
 **References**
 
