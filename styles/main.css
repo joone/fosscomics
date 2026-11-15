@@ -792,14 +792,16 @@
     transform-origin: var(--comic-image-zoom-origin);
   }
 
-  .comic-panel-title:has(.comic-image-zoom-frame) > h1:first-child {
+  .comic-panel-title:has(.comic-image-zoom-frame) > h1:first-child,
+  .comic-panel-title:has(.comic-image-zoom-frame) > h1:first-child + h2 {
     position: relative;
     z-index: 1;
   }
 
   .panel-group {
+    --panel-tracks: initial;
     display: grid;
-    grid-template-columns: repeat(var(--panel-columns), minmax(0, 1fr));
+    grid-template-columns: var(--panel-tracks, repeat(var(--panel-columns), minmax(0, 1fr)));
     gap: var(--panel-gap, var(--comic-default-panel-gap, 0.75rem));
     align-items: start;
     margin: var(--comic-default-group-margin, 1.5rem) 0;
@@ -851,8 +853,25 @@
     box-shadow: var(--comic-panel-shadow, 2px 2px 0 rgba(70, 70, 66, 0.14));
   }
 
-  .comic-panel-framed > p {
+  .comic-panel-framed > :is(p, h1, h2, h3, h4, h5, h6, pre, dl),
+  .comic-panel-framed > .blockquote-container > blockquote,
+  .comic-panel-framed figcaption {
     padding: var(--comic-default-text-padding, 0);
+  }
+
+  .comic-panel-framed > :is(ul, ol) {
+    margin-inline: var(--comic-default-text-padding, 0);
+    padding-block: var(--comic-default-text-padding, 0);
+  }
+
+  .comic-panel-framed > :is(h2, h3, h4, h5, h6):has(+ p) {
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .comic-panel-framed > :is(h2, h3, h4, h5, h6) + p {
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .comic-panel-rounded {
@@ -967,14 +986,19 @@
     margin-block: var(--comic-default-image-gap, 0);
   }
 
+  .comic-panel-narration-boxed > .image-container:not(.image-container ~ .image-container) {
+    border-top: inherit;
+    border-top-width: calc(var(--comic-panel-border-width, 1.5px) * 2 / 3);
+  }
+
   .comic-panel .image-container:first-child { margin-top: 0; }
   .comic-panel .image-container:last-child { margin-bottom: 0; }
 
-  section.body[style*="--comic-spacing-text-bottom-padding:"] .comic-panel-framed > p:has(+ .image-container) {
+  section.body[style*="--comic-spacing-text-bottom-padding:"] .comic-panel-framed > :is(p, h2, h3, h4, h5, h6):not(.comic-panel-title > h1:first-child + h2):has(+ .image-container) {
     padding-bottom: var(--comic-default-text-bottom-padding);
   }
 
-  section.body[style*="--comic-spacing-text-image-gap:"] .comic-panel-framed > p:has(+ .image-container) {
+  section.body[style*="--comic-spacing-text-image-gap:"] .comic-panel-framed > :is(p, h2, h3, h4, h5, h6):not(.comic-panel-title > h1:first-child + h2):has(+ .image-container) {
     margin-bottom: var(--comic-default-text-image-gap);
   }
 
@@ -1158,8 +1182,21 @@
   .comic-panel-title > h1:first-child {
     font-size: 1.6rem;
     line-height: 1.2;
-    margin: 0 0 0.6rem;
+    margin: 0 0 var(--comic-title-heading-gap, 0.6rem);
     padding: 12px 12px 0;
+    text-align: center;
+    text-wrap: balance;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  .comic-panel-title > h1:first-child:has(+ h2) {
+    --comic-title-heading-gap: 0.35rem;
+  }
+  .comic-panel-title > h1:first-child + h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0 0 0.6rem;
+    padding: 0 12px;
     text-align: center;
     text-wrap: balance;
     word-break: keep-all;
@@ -1168,7 +1205,10 @@
   @media screen and (max-width: 599px) {
     .comic-panel-title > h1:first-child {
       font-size: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--comic-title-heading-gap, 1.5rem);
+    }
+    .comic-panel-title > h1:first-child + h2 {
+      font-size: 1.1rem;
     }
   }
   h2 { font-size: 1.2rem; }

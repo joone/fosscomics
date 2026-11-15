@@ -6,10 +6,24 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/feed.xml"/>
   <id>https://fosscomics.com/</id>
-  <updated>2026-11-07T00:00:00.000Z</updated>
+  <updated>2026-11-14T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.8.3">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.8.4">Fossbook</generator>
+  <entry>
+    <title>15. BSD Unix, Part 5 - Bringing TCP/IP to BSD</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/"/>
+    <id>https://fosscomics.com/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/</id>
+    <published>2026-11-14T00:00:00.000Z</published>
+    <updated>2026-11-14T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="CSRG"/>
+    <category term="TCP-IP"/>
+    <summary>BBN&apos;s TCP/IP code comes to Berkeley. CSRG refines the networking stack, Bill Joy leaves for Sun, and 4.2BSD gives Unix users a reason to switch.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/images/feature.png"/>
+  </entry>
   <entry>
     <title>14. BSD Unix, Part 4 - 4.1BSD</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/14.%20BSD%20Unix%20Part%204%20-%20The%20Formation%20of%20CSRG/"/>
