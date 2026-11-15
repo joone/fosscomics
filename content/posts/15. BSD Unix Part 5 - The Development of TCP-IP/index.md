@@ -42,9 +42,9 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-## Integrating TCP/IP
+## Integrating TCP/IP Code into BSD
 
-TCP/IP emerged from collaborative research led by Vint Cerf and Bob Kahn. The Defense Advanced Research Projects Agency (DARPA) later commissioned Bolt Beranek and Newman (BBN) to implement the protocols for Unix on the VAX.
+TCP/IP emerged from collaborative research led by Vint Cerf and Bob Kahn. The Defense Advanced Research Projects Agency (DARPA) later contracted Bolt Beranek and Newman (BBN) to implement the protocols for Unix on the VAX.
 
 ![A BBN developer sits at a terminal while two colleagues in suits look on.](images/bbn-implementation.webp)
 

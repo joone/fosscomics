@@ -42,7 +42,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-## TCP/IP 통합
+## TCP/IP 코드를 BSD에 적용
 
 TCP/IP는 빈트 서프(Vint Cerf)와 밥 칸(Bob Kahn)이 이끈 공동 연구를 통해 설계되었다. 이후 미국 국방고등연구계획국(DARPA)은 BBN(Bolt Beranek and Newman)에 VAX용 유닉스의 TCP/IP 구현을 맡겼다.
 
@@ -54,7 +54,7 @@ TCP/IP는 빈트 서프(Vint Cerf)와 밥 칸(Bob Kahn)이 이끈 공동 연구�
 ::::panels columns="2"
 :::panel narration="boxed" rounded="true" style="border-width: 3px;border-color: black;"
 
-UC 버클리대학의 CSRG(Computer Systems Research Group)는 BBN의 초기 TCP/IP 코드를 받아 BSD에 통합했다. 빌 조이와 사무엘 래플러는 이를 다듬고, 여러 네트워크 프로토콜을 지원하도록 인터페이스를 재설계했다.
+UC 버클리대학의 CSRG(Computer Systems Research Group)는 BBN의 초기 TCP/IP 코드를 BSD에 적용하기 시작했는데, 빌 조이와 사무엘 래플러는 BSD가 여러 네트워크 프로토콜을 지원할 수 있도록 네트워크 코드의 내부 구조와 인터페이스를 재설계했다.
 
 ![빌 조이가 TCP/IP라고 적힌 자기 테이프를 들어 살펴본다.](images/receiving-tcp-ip.ko.webp)
 
