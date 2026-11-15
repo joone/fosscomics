@@ -54,7 +54,7 @@ TCP/IP emerged from collaborative research led by Vint Cerf and Bob Kahn. The De
 ::::panels columns="2"
 :::panel narration="boxed" rounded="true" style="border-width: 3px;border-color: black;"
 
-At UC Berkeley, the Computer Systems Research Group (CSRG) integrated BBN's early TCP/IP code into BSD. Bill Joy and Samuel Leffler refined it and redesigned the interface to support multiple network protocols.
+At UC Berkeley, CSRG integrated BBN's early TCP/IP code into BSD. Bill Joy and Samuel Leffler improved the code and redesigned BSD's networking architecture and interfaces to support multiple network protocols.
 
 ![Bill Joy examines a reel of magnetic tape labeled TCP/IP.](images/receiving-tcp-ip.en.webp)
 
