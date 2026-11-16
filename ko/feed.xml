@@ -9,7 +9,7 @@
   <updated>2026-11-14T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.8.5">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.8.6">Fossbook</generator>
   <entry>
     <title>15. BSD 유닉스 5 화 – TCP/IP 개발</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/"/>
