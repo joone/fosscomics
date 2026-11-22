@@ -257,4 +257,18 @@
     <summary>19세기 찰스 배비지는 선구적인 기계식 컴퓨터를 설계했고, 에이다 러브레이스는 해석기관에 관한 주석에서 초기에 출판된 컴퓨터 프로그램과 반복 연산을 설명했습니다.</summary>
     <media:thumbnail url="https://fosscomics.com/ko/posts/1.%20Charles%20Babbage%20and%20Ada%20Lovelace/images/feature_ko.png"/>
   </entry>
+  <entry>
+    <title>16. BSD 유닉스 6화 – 자유로의 투쟁</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
+    <id>https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/</id>
+    <published>2018-01-29T00:00:00.000Z</published>
+    <updated>2018-01-29T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="AT&amp;T"/>
+    <category term="BSD"/>
+    <category term="CSRG"/>
+    <category term="Unix"/>
+    <summary>BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&amp;T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/images/feature.png"/>
+  </entry>
 </feed>
