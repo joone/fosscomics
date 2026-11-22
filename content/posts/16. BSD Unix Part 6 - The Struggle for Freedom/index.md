@@ -156,13 +156,13 @@ BSD still required an AT&T license. When fees rose, some companies wanted its ne
 
 <!-- dialogue: researcher-bsd-license -->
 > Let's write our own BSD\
-> license. Do what you like\
-> with our code. Just put\
-> the copyright notice in\
-> the manual if you make a\
-> product or redistribute\
-> the source. That'll\
-> throw AT&T off.
+> license. BSD users can use\
+> our code freely. They just\
+> need to put the copyright\
+> notice in the manual if\
+> they make a product or\
+> redistribute the source.\
+> That'll throw AT&T off.
 <!-- /dialogue -->
 
 :::
