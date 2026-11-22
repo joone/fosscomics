@@ -322,15 +322,13 @@ AT&T 유닉스에서 작성된 대부분의 코드를 제거한 후, 1991년 6�
 
 :::panel style="width:412px;align:center;"
 
-![리누스 토발즈가 안경을 쓴 채 한 손을 들어 이야기한다.](images/linus-on-bsd.ko.webp)
+![리누스 토발즈가 안경을 쓴 채 한 손을 들어 이야기한다.](images/linus-on-bsd.ko.webp "리누스 토발즈")
 
 <!-- dialogue: linus-no-linux -->
 > 만약 BSD 유닉스를 제 인텔 386 PC에\
 > 설치할 수 있었다면,\
 > 리눅스를 만들 이유는 없었겠죠.
 <!-- /dialogue -->
-
-리누스 토발즈
 
 :::
 
@@ -342,3 +340,4 @@ AT&T 유닉스에서 작성된 대부분의 코드를 제거한 후, 1991년 6�
 2. 마샬 커크 맥퀴식, [버클리 유닉스의 20년, 오픈소스 혁명의 목소리, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013
 3. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 4. [The Design and Implementation of the 4.4BSD Operating System: Network Implementation](https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html)
+5. Mike Linksvayer, [Interview with Linus Torvalds](https://gondwanaland.com/meta/history/interview.html), Meta Magazine, 1993
