@@ -87,7 +87,15 @@ Early Unix was available through inexpensive source-code licenses because a 1956
 
 But AT&T's breakup in 1984 opened the way for it to sell Unix commercially. AT&T abruptly raised the price from $99 to $250,000 [1].
 
-![Two users stare at an AT&T Unix price-increase sign showing $99 becoming $250,000.](images/raising-license-prices.webp)
+![Two users stare at an AT&T Unix price-increase sign showing $99 becoming $250,000.](images/raising-license-prices-en.en.webp)
+
+<!-- dialogue: unix-license-fees -->
+> AT&T Unix fees
+<!-- /dialogue -->
+
+<!-- dialogue: price-increase-breath -->
+> Khh...
+<!-- /dialogue -->
 
 :::
 ::::
