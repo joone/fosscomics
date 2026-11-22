@@ -77,7 +77,7 @@ Early Unix licenses cost just $99 a copy, with source code included. This was be
 ::::panels columns="2" ratios="45:55"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-The U.S. Defense Department's [Defense Advanced Research Projects Agency (DARPA)](https://en.wikipedia.org/wiki/DARPA) also valued Unix's source-code availability. That was why it chose [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) Unix over [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)'s [VMS](https://en.wikipedia.org/wiki/OpenVMS) for building the Internet [1].
+[Defense Advanced Research Projects Agency (DARPA)](https://en.wikipedia.org/wiki/DARPA) also valued Unix's source-code availability. That was why it chose [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) Unix over [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)'s [VMS](https://en.wikipedia.org/wiki/OpenVMS) for building the Internet [1].
 
 ![A DARPA representative folds his arms over three choices: a DEC VMS installation tape, a BSD installation tape and BSD source code.](images/choosing-bsd.webp)
 
@@ -95,7 +95,7 @@ But AT&T's breakup in 1984 opened the way for it to sell Unix commercially. AT&T
 ::::panels columns="2" ratios="45:55"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-At the time, using BSD still required an AT&T Unix license. When AT&T raised its fees, some companies asked for BSD's networking code to be distributed separately.
+BSD still required an AT&T license. When fees rose, some companies wanted its networking code separately.
 
 ![A user sits at a terminal and considers how to obtain BSD source code.](images/requesting-bsd-code.en.webp)
 
