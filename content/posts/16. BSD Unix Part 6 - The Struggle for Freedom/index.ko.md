@@ -40,7 +40,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-초기 유닉스 라이센스 비용은 카피당 $99로 저렴했고 소스코드도 함께 제공되었다. 그 이유는 AT&T가 IBM과 50년대 맺은 협약 때문인데, IBM은 전화 사업에 그리고 AT&T는 컴퓨터 사업에 진출할 수 없었기 때문이다.
+1956년 반독점 소송의 합의로 AT&T가 상업용 컴퓨터 사업에 진출할 수 없었기 때문에 초기 유닉스는 저렴한 가격에 소스코드와 함께 제공되었다 [6]. 일부 초기 라이선스는 가격이 $99에 불과했다 [1].
 
 ![AT&T 유닉스 소스코드 판매대 앞에 테이프를 든 사용자와 교수, 회사원, 연구원이 줄을 서 있다. 판매자는 “이건 너무싸다.”라고 말하고, 손님들은 “테이프 하나 주세요”, “학교에도?”, “회사에도?”, “연구원도?”라고 묻는다.](images/licensing-unix.webp "valign:bottom")
 
@@ -341,3 +341,5 @@ AT&T 유닉스에서 작성된 대부분의 코드를 제거한 후, 1991년 6�
 3. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 4. [The Design and Implementation of the 4.4BSD Operating System: Network Implementation](https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html)
 5. Mike Linksvayer, [Interview with Linus Torvalds](https://gondwanaland.com/meta/history/interview.html), Meta Magazine, 1993
+6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T](https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell)
+7. Dennis Ritchie, [Old Unix Licenses and Price Lists](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/licenses.html)

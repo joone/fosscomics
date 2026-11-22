@@ -37,13 +37,13 @@ comicSpacing:
 # BSD Unix, Part 6
 ## The Struggle for Freedom
 
-![A helmeted figure and a Unix developer cross red and blue lightsabers.](images/struggle-for-freedom.webp)
+![A helmeted figure and a Unix developer cross red and blue lightsabers.](images/struggle-for-freedom.webp "valign:bottom")
 
 :::
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Early Unix licenses cost just $99 a copy, with source code included. This was because of an agreement AT&T and IBM had made in the 1950s: IBM would stay out of the telephone business, and AT&T out of the computer business.
+Early Unix was available through inexpensive source-code licenses because a 1956 antitrust settlement kept AT&T out of the commercial computer business [6]. Some early licenses cost just $99 [1].
 
 ![At an AT&T Unix source-code stand, a customer, a professor, a company representative and a research-lab representative line up for tapes.](images/licensing-unix-en.en.webp "valign:bottom")
 
@@ -367,7 +367,7 @@ But AT&T's [Unix System V](https://en.wikipedia.org/wiki/UNIX_System_V) also inc
 
 The BSD side filed a countersuit against AT&T.
 
-![The cloaked figure in the high-backed chair now reads a complaint.](images/receiving-countersuit.webp "size:50%")
+![The cloaked figure in the high-backed chair reads a document headed "Complaint".](images/receiving-countersuit-en.webp "size:50%")
 
 :::
 
@@ -401,7 +401,9 @@ Although BSD Unix began with AT&T's code, much of it had been rewritten, and evi
 # References
 
 1. Andrew Leonard, [BSD Unix: Power to the people, from the code](https://www.salon.com/2000/05/16/chapter_2_part_one/), 2000
-2. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix, in Open Sources: Voices from the Open Source Revolution](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), Korean edition, Hanbit Media, 2013
+2. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable](https://www.oreilly.com/openbook/opensources/book/kirkmck.html_original), in Open Sources: Voices from the Open Source Revolution, O'Reilly, 1999
 3. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 4. [The Design and Implementation of the 4.4BSD Operating System: Network Implementation](https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html)
 5. Mike Linksvayer, [Interview with Linus Torvalds](https://gondwanaland.com/meta/history/interview.html), Meta Magazine, 1993
+6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T](https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell)
+7. Dennis Ritchie, [Old Unix Licenses and Price Lists](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/licenses.html)
