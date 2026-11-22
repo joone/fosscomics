@@ -1,6 +1,6 @@
 ---
 title: "16. BSD 유닉스 6화 – 자유로의 투쟁"
-date: "2018-01-29"
+date: "2026-11-21"
 image: feature.webp
 description: "BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다."
 tags: AT&T, BSD, CSRG, Unix
