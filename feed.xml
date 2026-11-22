@@ -6,10 +6,25 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/feed.xml"/>
   <id>https://fosscomics.com/</id>
-  <updated>2026-11-14T00:00:00.000Z</updated>
+  <updated>2026-11-21T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
   <generator uri="https://github.com/joone/fossbook" version="0.8.6">Fossbook</generator>
+  <entry>
+    <title>16. BSD Unix, Part 6 - The Struggle for Freedom</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
+    <id>https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/</id>
+    <published>2026-11-21T00:00:00.000Z</published>
+    <updated>2026-11-21T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="AT&amp;T"/>
+    <category term="BSD"/>
+    <category term="CSRG"/>
+    <category term="Unix"/>
+    <summary>BSD&apos;s networking releases and license, the effort to replace AT&amp;T&apos;s code, and the Unix lawsuit that followed.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/images/feature-freedom.png"/>
+  </entry>
   <entry>
     <title>15. BSD Unix, Part 5 - Bringing TCP/IP to BSD</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/15.%20BSD%20Unix%20Part%205%20-%20The%20Development%20of%20TCP-IP/"/>

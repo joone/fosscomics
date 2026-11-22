@@ -25,15 +25,38 @@
         <link rel="alternate" type="application/atom+xml" title="F/OSS 코믹스 (English)" hreflang="en" href="https://fosscomics.com/feed.xml" />
         <meta name="description" content="BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다." />
         <link rel="canonical" href="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" />
-        
-        
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/16. BSD Unix Part 6 - The Struggle for Freedom/","ko":"/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="F/OSS 코믹스" />
         <meta property="og:url" content="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" />
         <meta property="og:title" content="16. BSD 유닉스 6화 – 자유로의 투쟁" />
         <meta property="og:description" content="BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다." />
-        <meta property="og:image" content="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/images/feature.png" />
+        <meta property="og:image" content="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/images/feature-freedom.png" />
         <meta property="article:author" content="Joone Hur" />
         <meta property="article:published_time" content="2026-11-21" />
         <meta property="article:tag" content="AT&T">
@@ -46,7 +69,7 @@
         <meta name="twitter:creator" content="@joone" />
         <meta name="twitter:title" content="16. BSD 유닉스 6화 – 자유로의 투쟁" />
         <meta name="twitter:description" content="BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다." />
-        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/images/feature.png" />
+        <meta name="twitter:image" content="https://fosscomics.com/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/images/feature-freedom.png" />
         <script>
           document.documentElement.classList.add("transcripts-hidden");
           try {
@@ -134,7 +157,7 @@
                   <div class="title">
                     <h1 class="title">16. BSD 유닉스 6화 – 자유로의 투쟁</h1>
                     <div class="meta">올린 날: 2026년 11월 21일</div>
-                    
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/posts/16. BSD Unix Part 6 - The Struggle for Freedom/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
                   </div>
                   <div class="post-controls">
                     <div class="transcript-toggle">

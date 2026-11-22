@@ -13,6 +13,7 @@
   <entry>
     <title>16. BSD 유닉스 6화 – 자유로의 투쟁</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
     <id>https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/</id>
     <published>2026-11-21T00:00:00.000Z</published>
     <updated>2026-11-21T00:00:00.000Z</updated>
@@ -22,7 +23,7 @@
     <category term="CSRG"/>
     <category term="Unix"/>
     <summary>BSD 네트워킹 배포본과 BSD 라이선스의 탄생, AT&amp;T 코드를 대체하려는 개발자들의 노력, 그리고 유닉스 소송을 다룬다.</summary>
-    <media:thumbnail url="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/images/feature.png"/>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/images/feature-freedom.png"/>
   </entry>
   <entry>
     <title>15. BSD 유닉스 5 화 – TCP/IP 개발</title>
