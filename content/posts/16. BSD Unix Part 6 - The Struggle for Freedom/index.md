@@ -330,7 +330,7 @@ With most of AT&T's Unix code removed, a completely free BSD Unix was finally re
 
 In April 1992, AT&T subsidiary USL sued BSDi. UC Berkeley was added to the lawsuit later.
 
-![A bearded man reads a document headed Complaint.](images/receiving-lawsuit.en.webp)
+![A bearded man reads a document headed Complaint.](images/receiving-lawsuit-en.en.webp)
 
 <!-- dialogue: researcher-lawsuit-surprise -->
 > I thought we'd removed\
