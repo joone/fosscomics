@@ -6,10 +6,23 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" title="English" href="https://fosscomics.com/feed.xml"/>
   <id>https://fosscomics.com/ko/</id>
-  <updated>2026-11-21T00:00:00.000Z</updated>
+  <updated>2026-11-25T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
   <generator uri="https://github.com/joone/fossbook" version="0.8.7">Fossbook</generator>
+  <entry>
+    <title>17. 라이온스 교수의 유닉스 해설서</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/17.%20Lions&apos;%20Commentary%20on%20Unix/"/>
+    <id>https://fosscomics.com/ko/posts/17.%20Lions&apos;%20Commentary%20on%20Unix/</id>
+    <published>2026-11-25T00:00:00.000Z</published>
+    <updated>2026-11-25T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="데니스 리치"/>
+    <category term="유닉스"/>
+    <category term="켄 톰프슨"/>
+    <summary>존 라이온스 교수의 유닉스 해설서가 탄생하고, 배포 제한 속에서도 학생들에게 전해져 정식으로 출판되기까지의 이야기.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/17.%20Lions&apos;%20Commentary%20on%20Unix/images/feature.png"/>
+  </entry>
   <entry>
     <title>16. BSD 유닉스 6화 – 자유로의 투쟁</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/"/>
