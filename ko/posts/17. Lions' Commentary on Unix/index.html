@@ -25,8 +25,31 @@
         <link rel="alternate" type="application/atom+xml" title="F/OSS 코믹스 (English)" hreflang="en" href="https://fosscomics.com/feed.xml" />
         <meta name="description" content="존 라이온스 교수의 유닉스 해설서가 탄생하고, 배포 제한 속에서도 학생들에게 전해져 정식으로 출판되기까지의 이야기." />
         <link rel="canonical" href="https://fosscomics.com/ko/posts/17. Lions' Commentary on Unix/" />
-        
-        
+        <link rel="alternate" hreflang="en" href="https://fosscomics.com/posts/17. Lions&#39; Commentary on Unix/" />
+        <link rel="alternate" hreflang="ko" href="https://fosscomics.com/ko/posts/17. Lions&#39; Commentary on Unix/" />
+        <link rel="alternate" hreflang="x-default" href="https://fosscomics.com/posts/17. Lions&#39; Commentary on Unix/" />
+        <script>
+          (() => {
+            const storageKey = "fossbook-language";
+            const supportedLanguages = ["en","ko"];
+            const languagePaths = {"en":"/posts/17. Lions' Commentary on Unix/","ko":"/ko/posts/17. Lions' Commentary on Unix/"};
+            try {
+              
+              document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('.language-switcher a[hreflang]').forEach((link) => {
+                  link.addEventListener("click", () => {
+                    const language = link.getAttribute("hreflang");
+                    if (supportedLanguages.includes(language)) {
+                      try {
+                        localStorage.setItem(storageKey, language);
+                      } catch (error) {}
+                    }
+                  });
+                });
+              });
+            } catch (error) {}
+          })();
+        </script>
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="F/OSS 코믹스" />
@@ -133,7 +156,7 @@
                   <div class="title">
                     <h1 class="title">17. 라이온스 교수의 유닉스 해설서</h1>
                     <div class="meta">올린 날: 2026년 11월 25일</div>
-                    
+                    <nav class="language-switcher" aria-label="Languages"><a href="/posts/17. Lions&#39; Commentary on Unix/" lang="en" hreflang="en" aria-label="English">EN</a><a href="/ko/posts/17. Lions&#39; Commentary on Unix/" lang="ko" hreflang="ko" aria-label="한국어" aria-current="page">KO</a></nav>
                   </div>
                   <div class="post-controls">
                     <div class="transcript-toggle">
