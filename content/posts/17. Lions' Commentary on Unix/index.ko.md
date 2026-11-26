@@ -1,7 +1,7 @@
 ---
 title: "17. 라이온스 교수의 유닉스 해설서"
 date: "2026-11-25"
-image: feature.webp
+image: lions-commentary.webp
 description: "존 라이온스 교수의 유닉스 해설서가 탄생하고, 배포 제한 속에서도 학생들에게 전해져 정식으로 출판되기까지의 이야기."
 tags: 데니스 리치, 유닉스, 켄 톰프슨
 comicTypography:
@@ -246,7 +246,7 @@ comicSpacing:
 
 정식으로 출판된 책 표지.
 
-해설서의 재구성판은 [PDF](http://www.lemis.com/grog/Documentation/Lions/book.pdf)로 읽을 수 있으며, 정식 출판본은 [아마존의 도서 페이지](https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/)에서 구입할 수 있다. 참고로, Unix version 6 소스코드는 [TUHS](https://www.tuhs.org/Archive/Distributions/Research/Dennis_v6/)에서 다운로드 받을 수 있다.
+해설서의 재구성판은 [PDF](http://www.lemis.com/grog/Documentation/Lions/book.pdf)로 읽을 수 있으며, 정식 출판본은 [아마존](https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/)에서 구입할 수 있다. 참고로, Unix version 6 소스코드는 [TUHS](https://www.tuhs.org/Archive/Distributions/Research/Dennis_v6/)에서 다운로드 받을 수 있다.
 
 :::
 
