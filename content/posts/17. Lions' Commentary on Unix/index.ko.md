@@ -242,9 +242,7 @@ comicSpacing:
 
 :::panel style="padding: 12px;"
 
-![존 라이온스의 《Lions' Commentary on UNIX 6th Edition, with Source Code》 표지. 데니스 리치의 서문이 수록되어 있다.](images/published-book-cover.webp "size:50%")
-
-정식으로 출판된 책 표지.
+![존 라이온스의 《Lions' Commentary on UNIX 6th Edition, with Source Code》 표지. 데니스 리치의 서문이 수록되어 있다.](images/published-book-cover.webp "size:50% 정식으로 출판된 책 표지")
 
 해설서의 재구성판은 [PDF](http://www.lemis.com/grog/Documentation/Lions/book.pdf)로 읽을 수 있으며, 정식 출판본은 [아마존](https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/)에서 구입할 수 있다. 참고로, Unix version 6 소스코드는 [TUHS](https://www.tuhs.org/Archive/Distributions/Research/Dennis_v6/)에서 다운로드 받을 수 있다.
 

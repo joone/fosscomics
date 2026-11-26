@@ -262,9 +262,7 @@ Meanwhile, members of the Unix community, including [Peter H. Salus](https://en.
 
 :::panel style="padding: 12px;"
 
-![The cover of Lions' Commentary on UNIX 6th Edition, with Source Code, including Ritchie's foreword.](images/published-book-cover.webp "size:50%")
-
-The officially published edition.
+![The cover of Lions' Commentary on UNIX 6th Edition, with Source Code, including Ritchie's foreword.](images/published-book-cover.webp "size:50% The officially published edition.")
 
 You can read a reconstructed version of the commentary as a [PDF](http://www.lemis.com/grog/Documentation/Lions/book.pdf), or order a print copy on [Amazon](https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/). The Unix Version 6 source code is available separately from [TUHS](https://www.tuhs.org/Archive/Distributions/Research/Dennis_v6/).
 
