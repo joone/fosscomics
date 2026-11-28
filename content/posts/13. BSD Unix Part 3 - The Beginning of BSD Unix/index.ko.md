@@ -55,7 +55,7 @@ tags: BSD, Unix
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-당시 BSD는 지금처럼 자유롭게 재배포할 수 있는 소프트웨어가 아니었다. 배포를 받으려면 AT&T 유닉스 소스 라이선스가 필요했다.[&lbrack;2&rbrack;][2]
+당시 BSD는 지금처럼 자유롭게 재배포할 수 있는 소프트웨어가 아니었고, 배포를 받으려면 AT&T 유닉스 소스 라이선스가 필요했다.[&lbrack;2&rbrack;][2]
 
 ![빌 조이가 전화 수화기를 들고 배포 조건을 설명한다.](images/licensing-the-distribution.ko.webp)
 
@@ -67,7 +67,7 @@ tags: BSD, Unix
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-버클리에는 연구용 소프트웨어를 서로 나누는 문화가 이미 자리 잡고 있었다. BSD도 그 전통을 이어갔다. 또한 이 당시 빌 조이가 BSD 유닉스를 실비만 받고 무료로 제공한 이유는 당시 버클리 대학이 갖고 있는 자유 스피치 운동, 히피 문화, 반전 운동에 영향을 받았다고 한다. [&lbrack;2&rbrack;][2]
+버클리에는 연구용 소프트웨어를 서로 나누는 문화가 이미 자리 잡고 있었고, BSD도 그 전통을 이어갔다. 또한 이 당시 빌 조이가 BSD 유닉스를 실비만 받고 무료로 제공한 이유는 당시 버클리 대학이 갖고 있는 자유 스피치 운동, 히피 문화, 반전 운동에 영향을 받았다고 한다. [&lbrack;2&rbrack;][2]
 
 ![여러 사람이 FREE SPEECH라고 적힌 팻말을 함께 들고 행진한다.](images/free-speech.webp)
 

@@ -96,7 +96,7 @@ In May 1976, Lions prepared lecture notes explaining the kernel source code of [
 
 :::panel style="padding: 12px;"
 
-By 1977, the notes were circulating among other schools and research institutions with Unix licenses [1][4]. Even Bell Labs wanted copies and eventually took over distribution [2].
+By 1977, the notes were circulating among other schools and research institutions with Unix licenses [\[1\]][reference-1][\[4\]][reference-4]. Even Bell Labs wanted copies and eventually took over distribution [\[2\]][reference-2].
 
 ![Three readers pore over orange copies of the Unix commentary.](images/reading-the-commentary.webp)
 
@@ -105,7 +105,7 @@ By 1977, the notes were circulating among other schools and research institution
 ::::panels columns="2"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Early on, Unix source could be studied in class. But at USENIX in June 1979, AT&T announced new Version 7 license terms restricting courses that disclosed or discussed source code. Distribution of Lions' book was tightly controlled as well [5][6].
+Early on, Unix source could be studied in class. But at USENIX in June 1979, AT&T announced new Version 7 license terms restricting courses that disclosed or discussed source code. Distribution of Lions' book was tightly controlled as well [\[5\]][reference-5][\[6\]][reference-6].
 
 ![A cloaked figure raises a hand and threatens further changes to the license.](images/restricting-source-code.en.webp)
 
@@ -234,7 +234,7 @@ Early on, Unix source could be studied in class. But at USENIX in June 1979, AT&
 
 :::panel style="padding: 12px;"
 
-For roughly twenty years before the official edition appeared, computer-science students studied from unauthorized photocopies. The book helped a generation of students learn to build operating systems of their own [5][8].
+For roughly twenty years before the official edition appeared, computer-science students studied from unauthorized photocopies. The book helped a generation of students learn to build operating systems of their own [\[5\]][reference-5][\[8\]][reference-8].
 
 ![A student studies the commentary beside a computer.](images/learning-from-copies.webp "size:80%")
 
@@ -242,7 +242,7 @@ For roughly twenty years before the official edition appeared, computer-science 
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Meanwhile, members of the Unix community, including [Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus), [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) and Berny Goodheart, kept asking AT&T, [Novell](https://en.wikipedia.org/wiki/Novell) and [the Santa Cruz Operation](https://en.wikipedia.org/wiki/Santa_Cruz_Operation) for permission to publish the book. SCO finally agreed. Peer-to-Peer Communications published the official edition in 1996 [5][7].
+Meanwhile, members of the Unix community, including [Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus), [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) and Berny Goodheart, kept asking AT&T, [Novell](https://en.wikipedia.org/wiki/Novell) and [the Santa Cruz Operation](https://en.wikipedia.org/wiki/Santa_Cruz_Operation) for permission to publish the book. SCO finally agreed. Peer-to-Peer Communications published the official edition in 1996 [\[5\]][reference-5][\[7\]][reference-7].
 
 ![Ritchie holds the published book while talking to Thompson.](images/publishing-the-commentary-en.en.webp "Dennis Ritchie and Ken Thompson")
 
@@ -270,11 +270,19 @@ You can read a reconstructed version of the commentary as a [PDF](http://www.lem
 
 # References
 
-1.  [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
-2.  John Lions, *Lions' Commentary on UNIX 6th Edition, with Source Code*, Peer-to-Peer Communications, 1996 (ISBN 1-57398-013-7).
+1.  [Lions' Commentary on UNIX 6th Edition, with Source Code][reference-1]
+2.  John Lions, *[Lions' Commentary on UNIX 6th Edition, with Source Code][reference-2]*, Peer-to-Peer Communications, 1996 (ISBN 1-57398-013-7).
 3.  [System call](https://en.wikipedia.org/wiki/System_call)
-4.  [UNIX News, Vol. 2 No. 3, March 1977](https://archive.org/details/unix_news_march-1977/page/n3/mode/2up) - John Lions's March 11, 1977 letter and the announcement of book distribution to Unix licensees.
-5.  Rachel Chalmers, ["Code critic"](https://www.salon.com/1999/11/30/lions_2/), *Salon*, November 30, 1999 - recollections from students and Dennis Ritchie, distribution restrictions, and the path to publication.
-6.  Peter H. Salus, [*The Daemon, the GNU and the Penguin*, Chapter 6: "1979"](https://web.archive.org/web/20100505072836/http://www.groklaw.net/article.php?story=20050502114023686), 2005 - the Version 7 license terms announced at USENIX in June 1979 and restrictions on classroom use.
-7.  [Dennis Ritchie's October 22, 1995 letter](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/dmr_to_wkt_1995_10_22.txt) and [Peter H. Salus's July 12, 1996 letter](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/salus_to_wkt_1996_06_12.txt) - publication-permission correspondence preserved by Warren Toomey.
-8.  MIT, ["Xv6, a simple Unix-like teaching operating system"](https://pdos.csail.mit.edu/6.828/2017/xv6.html), "History and Background" - teaching with Lions's commentary and the background to xv6.
+4.  [UNIX News, Vol. 2 No. 3, March 1977][reference-4] - John Lions's March 11, 1977 letter and the announcement of book distribution to Unix licensees.
+5.  Rachel Chalmers, ["Code critic"][reference-5], *Salon*, November 30, 1999 - recollections from students and Dennis Ritchie, distribution restrictions, and the path to publication.
+6.  Peter H. Salus, [*The Daemon, the GNU and the Penguin*, Chapter 6: "1979"][reference-6], 2005 - the Version 7 license terms announced at USENIX in June 1979 and restrictions on classroom use.
+7.  [Dennis Ritchie's October 22, 1995 letter][reference-7] and [Peter H. Salus's July 12, 1996 letter](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/salus_to_wkt_1996_06_12.txt) - publication-permission correspondence preserved by Warren Toomey.
+8.  MIT, ["Xv6, a simple Unix-like teaching operating system"][reference-8], "History and Background" - teaching with Lions's commentary and the background to xv6.
+
+[reference-1]: https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code
+[reference-2]: https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/
+[reference-4]: https://archive.org/details/unix_news_march-1977/page/n3/mode/2up
+[reference-5]: https://www.salon.com/1999/11/30/lions_2/
+[reference-6]: https://web.archive.org/web/20100505072836/http://www.groklaw.net/article.php?story=20050502114023686
+[reference-7]: https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/dmr_to_wkt_1995_10_22.txt
+[reference-8]: https://pdos.csail.mit.edu/6.828/2017/xv6.html

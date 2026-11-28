@@ -87,7 +87,7 @@ comicSpacing:
 ::::
 
 :::panel style="padding: 12px;"
-1977년에는 이 교재가 유닉스 라이선스를 보유한 다른 학교와 연구기관에도 배포된다[1][4]. 특히, AT&T 벨 연구소도 교재를 주문할 정도로 인기가 많았으며, 나중에는 벨 연구소가 직접 유닉스 해설서의 배포를 맡기도 했다[2].
+1977년에는 이 교재가 유닉스 라이선스를 보유한 다른 학교와 연구기관에도 배포된다[\[1\]][reference-1][\[4\]][reference-4]. 특히, AT&T 벨 연구소도 교재를 주문할 정도로 인기가 많았으며, 나중에는 벨 연구소가 직접 유닉스 해설서의 배포를 맡기도 했다[\[2\]][reference-2].
 
 ![서로 다른 세 독자가 주황색 표지의 유닉스 해설서를 펼쳐 읽는다.](images/reading-the-commentary.webp)
 
@@ -96,7 +96,7 @@ comicSpacing:
 ::::panels columns="2"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-초기에는 유닉스 소스코드를 학교 수업에서 공부할 수 있었지만, AT&T가 1979년 6월 USENIX 학회에서 발표한 버전7의 새 라이선스는 소스코드를 공개하거나 설명하는 수업을 제한했으며, 해설서의 배포도 엄격히 통제했다[5][6].
+초기에는 유닉스 소스코드를 학교 수업에서 공부할 수 있었지만, AT&T가 1979년 6월 USENIX 학회에서 발표한 버전7의 새 라이선스는 소스코드를 공개하거나 설명하는 수업을 제한했으며, 해설서의 배포도 엄격히 통제했다[\[5\]][reference-5][\[6\]][reference-6].
 
 ![검은 망토를 걸친 인물이 손을 들어 라이선스 조건을 더 바꿀 수도 있다고 위협한다.](images/restricting-source-code.ko.webp)
 
@@ -215,7 +215,7 @@ comicSpacing:
 
 :::panel style="padding: 12px;"
 
-정식 출판 전까지 약 20년간 전산학을 공부하는 수많은 학생들이 라이온스 교수의 유닉스 해설서를 불법으로 복사하여 공부하였고, 이는 또 다른 운영체제가 만들어지는 밑거름이 되었다[5][8].
+정식 출판 전까지 약 20년간 전산학을 공부하는 수많은 학생들이 라이온스 교수의 유닉스 해설서를 불법으로 복사하여 공부하였고, 이는 또 다른 운영체제가 만들어지는 밑거름이 되었다[\[5\]][reference-5][\[8\]][reference-8].
 
 ![한 학생이 책상 위에 해설서를 펼쳐 놓고 컴퓨터로 공부한다.](images/learning-from-copies.webp "size:80%")
 
@@ -223,7 +223,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-그사이 여러 유닉스 관계자([Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus), [Dennis Ritchie](https://ko.wikipedia.org/wiki/%EB%8D%B0%EB%8B%88%EC%8A%A4_%EB%A6%AC%EC%B9%98), Berny Goodheart 등)들이 책 출판을 허용해달라고 AT&T, [Novell](https://en.wikipedia.org/wiki/Novell), [the Santa Cruz Operation](https://en.wikipedia.org/wiki/Santa_Cruz_Operation)의 관계자들을 설득했다. 마침내 SCO가 출판을 허용했고, 라이온스 교수의 유닉스 해설서는 1996년 Peer-to-Peer Communications에서 정식으로 출판되었다[5][7].
+그사이 여러 유닉스 관계자([Peter H. Salus](https://en.wikipedia.org/wiki/Peter_H._Salus), [Dennis Ritchie](https://ko.wikipedia.org/wiki/%EB%8D%B0%EB%8B%88%EC%8A%A4_%EB%A6%AC%EC%B9%98), Berny Goodheart 등)들이 책 출판을 허용해달라고 AT&T, [Novell](https://en.wikipedia.org/wiki/Novell), [the Santa Cruz Operation](https://en.wikipedia.org/wiki/Santa_Cruz_Operation)의 관계자들을 설득했다. 마침내 SCO가 출판을 허용했고, 라이온스 교수의 유닉스 해설서는 1996년 Peer-to-Peer Communications에서 정식으로 출판되었다[\[5\]][reference-5][\[7\]][reference-7].
 
 ![데니스 리치가 정식 출판된 책을 들고 켄 톰프슨과 이야기한다.](images/publishing-the-commentary.ko.webp)
 
@@ -251,12 +251,20 @@ comicSpacing:
 
 # 참고 문헌
 
-1.  [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
-2.  John Lions, *Lions’ Commentary on UNIX 6th Edition, with Source Code*, Peer-to-Peer Communications, 1996 (ISBN 1-57398-013-7).
+1.  [Lions' Commentary on UNIX 6th Edition, with Source Code][reference-1]
+2.  John Lions, *[Lions’ Commentary on UNIX 6th Edition, with Source Code][reference-2]*, Peer-to-Peer Communications, 1996 (ISBN 1-57398-013-7).
 3.  [시스템 호출(System call)](https://ko.wikipedia.org/wiki/%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%98%B8%EC%B6%9C)
-4.  [UNIX News, Vol. 2 No. 3, March 1977](https://archive.org/details/unix_news_march-1977/page/n3/mode/2up) — John Lions의 1977년 3월 11일 서신과 유닉스 라이선스 보유자를 위한 교재 배포 안내.
-5.  Rachel Chalmers, [“Code critic”](https://www.salon.com/1999/11/30/lions_2/), *Salon*, 1999년 11월 30일 — 학생들과 Dennis Ritchie의 회고, 배포 제한과 정식 출판 과정.
-6.  Peter H. Salus, [*The Daemon, the GNU and the Penguin*, Chapter 6: “1979”](https://web.archive.org/web/20100505072836/http://www.groklaw.net/article.php?story=20050502114023686), 2005 — 1979년 6월 USENIX에서 발표된 버전7 라이선스와 수업 제한.
-7.  [Dennis Ritchie의 1995년 10월 22일 서신](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/dmr_to_wkt_1995_10_22.txt)과 [Peter H. Salus의 1996년 7월 12일 서신](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/salus_to_wkt_1996_06_12.txt) — Warren Toomey가 보존한 출판 허가 협의 기록.
-8.  MIT, [“Xv6, a simple Unix-like teaching operating system”](https://pdos.csail.mit.edu/6.828/2017/xv6.html), “History and Background” — 라이온스 해설서를 활용한 운영체제 수업과 xv6의 배경.
+4.  [UNIX News, Vol. 2 No. 3, March 1977][reference-4] — John Lions의 1977년 3월 11일 서신과 유닉스 라이선스 보유자를 위한 교재 배포 안내.
+5.  Rachel Chalmers, [“Code critic”][reference-5], *Salon*, 1999년 11월 30일 — 학생들과 Dennis Ritchie의 회고, 배포 제한과 정식 출판 과정.
+6.  Peter H. Salus, [*The Daemon, the GNU and the Penguin*, Chapter 6: “1979”][reference-6], 2005 — 1979년 6월 USENIX에서 발표된 버전7 라이선스와 수업 제한.
+7.  [Dennis Ritchie의 1995년 10월 22일 서신][reference-7]과 [Peter H. Salus의 1996년 7월 12일 서신](https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/salus_to_wkt_1996_06_12.txt) — Warren Toomey가 보존한 출판 허가 협의 기록.
+8.  MIT, [“Xv6, a simple Unix-like teaching operating system”][reference-8], “History and Background” — 라이온스 해설서를 활용한 운영체제 수업과 xv6의 배경.
+
+[reference-1]: https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code
+[reference-2]: https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/
+[reference-4]: https://archive.org/details/unix_news_march-1977/page/n3/mode/2up
+[reference-5]: https://www.salon.com/1999/11/30/lions_2/
+[reference-6]: https://web.archive.org/web/20100505072836/http://www.groklaw.net/article.php?story=20050502114023686
+[reference-7]: https://github.com/DoctorWkt/IEEE_Milestone_Lions_Commentary/blob/main/Emails/dmr_to_wkt_1995_10_22.txt
+[reference-8]: https://pdos.csail.mit.edu/6.828/2017/xv6.html
 

@@ -40,7 +40,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-1956년 반독점 소송의 합의로 AT&T가 상업용 컴퓨터 사업에 진출할 수 없었기 때문에 초기 유닉스는 저렴한 가격에 소스코드와 함께 제공되었다 [6]. 일부 초기 라이선스는 가격이 $99에 불과했다 [1].
+1956년 반독점 소송의 합의로 AT&T가 상업용 컴퓨터 사업에 진출할 수 없었기 때문에 초기 유닉스는 저렴한 가격에 소스코드와 함께 제공되었다 [\[6\]][reference-6]. 일부 초기 라이선스는 가격이 $99에 불과했다 [\[1\]][reference-1].
 
 ![AT&T 유닉스 소스코드 판매대 앞에 테이프를 든 사용자와 교수, 회사원, 연구원이 줄을 서 있다. 판매자는 “이건 너무싸다.”라고 말하고, 손님들은 “테이프 하나 주세요”, “학교에도?”, “회사에도?”, “연구원도?”라고 묻는다.](images/licensing-unix.webp "valign:bottom")
 
@@ -50,7 +50,7 @@ comicSpacing:
 ::::panels columns="2" ratios="45:55"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-미국방성 [고등 방위 연구 계획국(DARPA)](https://ko.wikipedia.org/wiki/%EB%B0%A9%EC%9C%84%EA%B3%A0%EB%93%B1%EC%97%B0%EA%B5%AC%EA%B3%84%ED%9A%8D%EA%B5%AD)도 유닉스가 소스코드와 함께 배포되는 부분을 중요하게 생각했다. 이러한 이유로 인터넷 구축에 [DEC](https://ko.wikipedia.org/wiki/%EB%94%94%EC%A7%80%ED%84%B8_%EC%9D%B4%ED%81%85%EB%A8%BC%ED%8A%B8_%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98)가 개발한 [VMS](https://ko.wikipedia.org/wiki/OpenVMS) 대신 [BSD](https://ko.wikipedia.org/wiki/BSD) 유닉스를 선택했다[1].
+미국방성 [고등 방위 연구 계획국(DARPA)](https://ko.wikipedia.org/wiki/%EB%B0%A9%EC%9C%84%EA%B3%A0%EB%93%B1%EC%97%B0%EA%B5%AC%EA%B3%84%ED%9A%8D%EA%B5%AD)도 유닉스가 소스코드와 함께 배포되는 부분을 중요하게 생각했다. 이러한 이유로 인터넷 구축에 [DEC](https://ko.wikipedia.org/wiki/%EB%94%94%EC%A7%80%ED%84%B8_%EC%9D%B4%ED%81%85%EB%A8%BC%ED%8A%B8_%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98)가 개발한 [VMS](https://ko.wikipedia.org/wiki/OpenVMS) 대신 [BSD](https://ko.wikipedia.org/wiki/BSD) 유닉스를 선택했다[\[1\]][reference-1].
 
 ![팔짱을 낀 DARPA 관계자 앞에 DEC VMS 설치 테이프, BSD 설치 테이프, BSD 소스코드가 놓여 있다.](images/choosing-bsd.webp)
 
@@ -58,7 +58,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-하지만, 1984년 AT&T가 여러 회사로 쪼개지면서 유닉스를 상업적으로 판매할 수 있는 길이 열렸고, AT&T는 갑자기 유닉스 가격을 $99에서 $250,000로 올렸다[1].
+하지만, 1984년 AT&T가 여러 회사로 쪼개지면서 유닉스를 상업적으로 판매할 수 있는 길이 열렸고, AT&T는 갑자기 유닉스 가격을 $99에서 $250,000로 올렸다[\[1\]][reference-1].
 
 ![AT&T 유닉스 가격이 $99에서 $250,000로 올랐다는 팻말을 보고 두 사용자가 놀란다.](images/raising-license-prices.webp)
 
@@ -336,10 +336,13 @@ AT&T 유닉스에서 작성된 대부분의 코드를 제거한 후, 1991년 6�
 
 # 참고 문헌
 
-1. ANDREW LEONARD, [BSD Unix: Power to the people, from the code](https://www.salon.com/2000/05/16/chapter_2_part_one/), 2000
+1. ANDREW LEONARD, [BSD Unix: Power to the people, from the code][reference-1], 2000
 2. 마샬 커크 맥퀴식, [버클리 유닉스의 20년, 오픈소스 혁명의 목소리, 한빛출판사](http://www.hanbit.co.kr/store/books/look.php?p_code=E5329835060), 2013
 3. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 4. [The Design and Implementation of the 4.4BSD Operating System: Network Implementation](https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html)
 5. Mike Linksvayer, [Interview with Linus Torvalds](https://gondwanaland.com/meta/history/interview.html), Meta Magazine, 1993
-6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T](https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell)
+6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T][reference-6]
 7. Dennis Ritchie, [Old Unix Licenses and Price Lists](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/licenses.html)
+
+[reference-1]: https://www.salon.com/2000/05/16/chapter_2_part_one/
+[reference-6]: https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell

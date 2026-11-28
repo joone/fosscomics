@@ -43,7 +43,7 @@ comicSpacing:
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-Early Unix was available through inexpensive source-code licenses because a 1956 antitrust settlement kept AT&T out of the commercial computer business [6]. Some early licenses cost just $99 [1].
+Early Unix was available through inexpensive source-code licenses because a 1956 antitrust settlement kept AT&T out of the commercial computer business [\[6\]][reference-6]. Some early licenses cost just $99 [\[1\]][reference-1].
 
 ![At an AT&T Unix source-code stand, a customer, a professor, a company representative and a research-lab representative line up for tapes.](images/licensing-unix-en.en.webp "valign:bottom")
 
@@ -77,7 +77,7 @@ Early Unix was available through inexpensive source-code licenses because a 1956
 ::::panels columns="2" ratios="45:55"
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-[Defense Advanced Research Projects Agency (DARPA)](https://en.wikipedia.org/wiki/DARPA) also valued Unix's source-code availability. That was why it chose [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) Unix over [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)'s [VMS](https://en.wikipedia.org/wiki/OpenVMS) for building the Internet [1].
+[Defense Advanced Research Projects Agency (DARPA)](https://en.wikipedia.org/wiki/DARPA) also valued Unix's source-code availability. That was why it chose [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) Unix over [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)'s [VMS](https://en.wikipedia.org/wiki/OpenVMS) for building the Internet [\[1\]][reference-1].
 
 ![A DARPA representative folds his arms over three choices: a DEC VMS installation tape, a BSD installation tape and BSD source code.](images/choosing-bsd.webp)
 
@@ -85,7 +85,7 @@ Early Unix was available through inexpensive source-code licenses because a 1956
 
 :::panel rounded="true" style="border-width: 3px;border-color: black;"
 
-But AT&T's breakup in 1984 opened the way for it to sell Unix commercially. AT&T abruptly raised the price from $99 to $250,000 [1].
+But AT&T's breakup in 1984 opened the way for it to sell Unix commercially. AT&T abruptly raised the price from $99 to $250,000 [\[1\]][reference-1].
 
 ![Two users stare at an AT&T Unix price-increase sign showing $99 becoming $250,000.](images/raising-license-prices-en.en.webp)
 
@@ -408,10 +408,13 @@ Although BSD Unix began with AT&T's code, much of it had been rewritten, and evi
 
 # References
 
-1. Andrew Leonard, [BSD Unix: Power to the people, from the code](https://www.salon.com/2000/05/16/chapter_2_part_one/), 2000
+1. Andrew Leonard, [BSD Unix: Power to the people, from the code][reference-1], 2000
 2. Marshall Kirk McKusick, [Twenty Years of Berkeley Unix: From AT&T-Owned to Freely Redistributable](https://www.oreilly.com/openbook/opensources/book/kirkmck.html_original), in Open Sources: Voices from the Open Source Revolution, O'Reilly, 1999
 3. [Computer Systems Research Group](https://en.wikipedia.org/wiki/Computer_Systems_Research_Group)
 4. [The Design and Implementation of the 4.4BSD Operating System: Network Implementation](https://www.freebsd.org/doc/en/books/design-44bsd/overview-network-implementation.html)
 5. Mike Linksvayer, [Interview with Linus Torvalds](https://gondwanaland.com/meta/history/interview.html), Meta Magazine, 1993
-6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T](https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell)
+6. Federal Judicial Center, [The Breakup of "Ma Bell": United States v. AT&T][reference-6]
 7. Dennis Ritchie, [Old Unix Licenses and Price Lists](https://www.nokia.com/bell-labs/about/dennis-m-ritchie/licenses.html)
+
+[reference-1]: https://www.salon.com/2000/05/16/chapter_2_part_one/
+[reference-6]: https://www.fjc.gov/history/spotlight-judicial-history/breakup-ma-bell
