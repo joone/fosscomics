@@ -325,15 +325,13 @@ Although 386BSD itself did not become a mainstream operating system, the Jolitze
 
 ## A Few Additional Notes
 
-* Not every workstation used RISC. NeXT used CISC processors such as the [Motorola 68030](https://en.wikipedia.org/wiki/NeXT_Computer).
+* Not every workstation used a RISC processor. For example, NeXT's early systems used the [Motorola 68030](https://en.wikipedia.org/wiki/NeXT_Computer), a CISC processor.
 
-* [Alpha](https://en.wikipedia.org/wiki/DEC_Alpha)-based workstations were first introduced in [November 1992](https://en.wikipedia.org/wiki/DEC_3000_AXP), after the BSD port to the 386 PC had begun. The conversation above is reconstructed from a retrospective account; its exact date is not known[\[1\]][reference-1]. The DEC performance comparison and Intel's forecast also come from that account, which does not identify the DEC computer model.
+* [Alpha](https://en.wikipedia.org/wiki/DEC_Alpha)-based workstations were first introduced in [November 1992](https://en.wikipedia.org/wiki/DEC_3000_AXP), after the 386BSD project had already begun. The conversation above is reconstructed from a retrospective account, and its exact date is unknown.[\[1\]][reference-1] The DEC performance comparison and Intel performance projections also come from that account, which does not identify the DEC system involved.
 
-* The publication dates given here for the *Dr. Dobb's Journal* series come from an article list Jolitz shared in a December 28, 1992 reply on comp.unix.bsd[\[9\]][reference-9].
+* The publication dates for the *Dr. Dobb's Journal* series are based on an article list Jolitz shared in a December 28, 1992, reply on comp.unix.bsd.[\[9\]][reference-9]
 
-* In 2016, older 386BSD source code was made available on [GitHub](https://github.com/386bsd/386bsd)[\[12\]][reference-12].
-
-The dialogue is reconstructed from published accounts.
+* In 2016, historical 386BSD source code was made available on [GitHub](https://github.com/386bsd/386bsd).[\[12\]][reference-12]
 
 ## References
 
