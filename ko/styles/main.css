@@ -864,6 +864,10 @@
     padding-block: var(--comic-default-text-padding, 0);
   }
 
+  :where(section.body[style*="--comic-spacing-paragraph-margin:"]) .comic-panel-framed > p {
+    margin-block: var(--comic-default-paragraph-margin, 1em);
+  }
+
   .comic-panel-framed > :is(h2, h3, h4, h5, h6):has(+ p) {
     padding-bottom: 0;
     margin-bottom: 0.5em;
@@ -930,10 +934,6 @@
       width: 100%;
     }
 
-    .panel-group .sized-image {
-      max-width: 260px;
-    }
-
     .comic-panel {
       margin: var(--comic-default-panel-margin, 1.5rem) 0;
     }
@@ -956,6 +956,7 @@
     --comic-default-text-padding: var(--comic-spacing-text-padding, 0);
     --comic-default-text-bottom-padding: var(--comic-spacing-text-bottom-padding, var(--comic-default-text-padding, 0));
     --comic-default-text-image-gap: var(--comic-spacing-text-image-gap, 1em);
+    --comic-default-paragraph-margin: var(--comic-spacing-paragraph-margin, 1em);
     --comic-default-image-gap: var(--comic-spacing-image-gap, 0);
   }
 
@@ -969,6 +970,7 @@
       --comic-default-text-padding: var(--comic-spacing-mobile-text-padding, 0);
       --comic-default-text-bottom-padding: var(--comic-spacing-mobile-text-bottom-padding, var(--comic-default-text-padding, 0));
       --comic-default-text-image-gap: var(--comic-spacing-mobile-text-image-gap, 1em);
+      --comic-default-paragraph-margin: var(--comic-spacing-mobile-paragraph-margin, 1em);
       --comic-default-image-gap: var(--comic-spacing-mobile-image-gap, 0);
     }
   }

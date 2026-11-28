@@ -6,10 +6,23 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="en" title="English" href="https://fosscomics.com/feed.xml"/>
   <id>https://fosscomics.com/ko/</id>
-  <updated>2026-11-25T00:00:00.000Z</updated>
+  <updated>2026-11-27T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.8.7">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.8.8">Fossbook</generator>
+  <entry>
+    <title>18. 386BSD의 탄생</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/18.%20The%20Birth%20of%20386BSD/"/>
+    <link rel="alternate" type="text/html" hreflang="en" title="English" href="https://fosscomics.com/posts/18.%20The%20Birth%20of%20386BSD/"/>
+    <id>https://fosscomics.com/ko/posts/18.%20The%20Birth%20of%20386BSD/</id>
+    <published>2026-11-27T00:00:00.000Z</published>
+    <updated>2026-11-27T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="BSD"/>
+    <category term="INTEL"/>
+    <summary>윌리암 졸리츠와 린 졸리츠의 인텔 386용 BSD 포팅, 닥터 돕스 저널 연재, 386BSD의 공개와 BSD 공동체의 분화를 다룬다.</summary>
+    <media:thumbnail url="https://fosscomics.com/ko/posts/18.%20The%20Birth%20of%20386BSD/images/feature.png"/>
+  </entry>
   <entry>
     <title>17. 라이온스 교수의 유닉스 해설서</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/ko/posts/17.%20Lions&apos;%20Commentary%20on%20Unix/"/>

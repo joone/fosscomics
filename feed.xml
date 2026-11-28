@@ -6,10 +6,22 @@
   <link rel="alternate" type="text/html" href="https://fosscomics.com/"/>
   <link rel="alternate" type="application/atom+xml" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/feed.xml"/>
   <id>https://fosscomics.com/</id>
-  <updated>2026-11-25T00:00:00.000Z</updated>
+  <updated>2026-11-27T00:00:00.000Z</updated>
   <author><name>Joone Hur</name></author>
   <logo>https://fosscomics.com/8.%20UNIX%20and%20C%20Language/images/feature.png</logo>
-  <generator uri="https://github.com/joone/fossbook" version="0.8.7">Fossbook</generator>
+  <generator uri="https://github.com/joone/fossbook" version="0.8.8">Fossbook</generator>
+  <entry>
+    <title>18. The Birth of 386BSD</title>
+    <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/18.%20The%20Birth%20of%20386BSD/"/>
+    <link rel="alternate" type="text/html" hreflang="ko" title="한국어" href="https://fosscomics.com/ko/posts/18.%20The%20Birth%20of%20386BSD/"/>
+    <id>https://fosscomics.com/posts/18.%20The%20Birth%20of%20386BSD/</id>
+    <published>2026-11-27T00:00:00.000Z</published>
+    <updated>2026-11-27T00:00:00.000Z</updated>
+    <author><name>Joone Hur</name></author>
+    <category term="INTEL"/>
+    <summary>William and Lynne Jolitz port BSD Unix to the Intel 386, share their work in Dr. Dobb&apos;s Journal, and help lay the foundations for FreeBSD and NetBSD.</summary>
+    <media:thumbnail url="https://fosscomics.com/posts/18.%20The%20Birth%20of%20386BSD/images/feature.png"/>
+  </entry>
   <entry>
     <title>17. Lions&apos; Commentary on Unix</title>
     <link rel="alternate" type="text/html" href="https://fosscomics.com/posts/17.%20Lions&apos;%20Commentary%20on%20Unix/"/>
